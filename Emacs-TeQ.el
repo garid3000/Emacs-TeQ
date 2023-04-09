@@ -204,11 +204,12 @@
  ("dag"  ["^\\dag"])
  ("deg"  ["^\\circ"])
  ("env"  ["\\begin{ }\n\\end{ }"])
- ("ff"   ["\\frac{ }{ }"])
- ("bar"  ["\\bar{}"])
- ("ddot" ["\\ddot{}"])
- ("dot" ["\\dot{}"])
- ("hat" ["\\hat{}"])
+
+ ("ff"     ["\\frac{"])
+ ("bar"    ["\\bar{"])
+ ("ddot"   ["\\ddot{"])
+ ("dot"    ["\\dot{"])
+ ("hat"    ["\\hat{"])
 
 
 
