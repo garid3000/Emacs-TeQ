@@ -22,12 +22,43 @@
   (insert "\\begin{aligned}\n\n\\end{aligned}")
   (previous-line)
   (quail-func-end))
+
+(defun quail-TeQ-endline (key idx)
+  (quail-func-init)
+  (end-of-line)
+  (insert "\\begin{aligned}\n\n\\end{aligned}")
+  (previous-line)
+  (quail-func-end))
+  )
+
+(defun quail-TeQ-frac (key idx)
+  (quail-func-init)
+
+  (backward-sexp) (kill-sexp)
+  (if (looking-back "[a-zA-Z]" 0)
+      (progn
+	(backward-word)
+	(if (= (preceding-char) ?\\ )
+	    (progn (message "yes") (kill-word 1)
+		   (backward-delete-char 1) (insert "\\frac{\\")
+		   (yank 1) (yank 2) (insert "}{}"))
+	  (progn (message "no") (forward-word)
+		 (insert "\\frac{") (yank) (insert "}{}")))
+	)
+    (progn (message "no")
+					;(forward-word)
+	   (insert "\\frac{") (yank) (insert "}{}"))
+    )
+  (backward-char)
+
+  (quail-func-end))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
 (quail-define-package
- "Test-Latex" "Test-Latex"  "gry-ltx-" t
- "Test-Latex Keyboard Layout"
+ "TeQ-Math" "Emacs-Teq-Latex"  "TeQ-" t
+ "TeQ-Math input"
  nil t t t t nil nil nil nil nil t)
 
 (quail-define-rules
@@ -283,7 +314,7 @@
 
  ;; geometry
  ("perp"        ["\\perp"])
- ("//"          ["\\parallel"])
+ ("par"         ["\\parallel"])
  ("ang" ["\\angle"])
  ("angm" ["\\measuredangle"]) ("mang" ["\\measuredangle"])
 
