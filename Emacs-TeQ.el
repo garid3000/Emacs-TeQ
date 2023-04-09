@@ -37,21 +37,21 @@
  ("z."    ["\\zeta"      ])  ("Z."    ["Z"           ])
 
  ("eq"  ["\\begin{equation}\n\n\\end{equation}"])
- ("eq*"  ["\\begin{equation*}\n\n\\end{equation*}"])
+ ("eq*" ["\\begin{equation*}\n\n\\end{equation*}"])
  ("eqa" ["\\begin{equation}\n\\begin{aligned}\n\\end{aligned}\n\\end{equation}"])
  ("al"  ["\\begin{align}\n\\end{align}"])
  ("ve"  ["\\vector{ }"])
  ("..." ["\\dots "])
- (".v" ["\\vdots "])
- (".d" ["\\ddots "])
- (".l" ["\\ldots "])
+ (".v"  ["\\vdots "])
+ (".d"  ["\\ddots "])
+ (".l"  ["\\ldots "])
  ("*."  ["\\cdot "])
 
  ;; main arithmetics
  ("+-"  ["\\pm "])
  ("-+"  ["\\mp "])
- ("*x"   ["\\times "])
- (": "   ["\\div "])
+ ("*x"  ["\\times "])
+ (": "  ["\\div "])
 
  ;; arrows
  ("<-"          ["\\leftarrow "])
@@ -95,12 +95,6 @@
  ("dot" ["\\dot{}"])
  ("hat" ["\\hat{}"])
 
- ("ih" ["\\hat{\\imath}"])
- ("jh" ["\\hat{\\jmath}"])
- ("kh" ["\\hat{k}"])
- ("xh" ["\\hat{x}"])
- ("yh" ["\\hat{y}"])
- ("zh" ["\\hat{z}"])
 
 
  ("il" ["\\limits_{ }^{ }"]) ;; probbably not used much
@@ -123,8 +117,6 @@
  ("par" ["\\partial"])
  ("sim" ["\\sim"])
 
- ("ang" ["\\angle"])
- ("angm" ["\\measuredangle"]) ("mang" ["\\measuredangle"])
 
 
 
@@ -206,17 +198,21 @@
  ("<<?"         ["\\stackrel{\\checkmark}{\\ll}"])
  (">>?"         ["\\stackrel{\\checkmark}{\\gg}"])
 
-
- ("perp"                ["\\perp"])
+ ;; geometry
+ ("perp"        ["\\perp"])
  ("//"          ["\\parallel"])
+ ("ang" ["\\angle"])
+ ("angm" ["\\measuredangle"]) ("mang" ["\\measuredangle"])
 
+ ;; logical and or
  ("and"         ["\\land"]) ("andt"     ["\\text{and}"])
  ("or"          ["\\lor"]) ("ort"       ["\\text{or}"])
 
+ ;; sets 
  ("in"          ["\\in"])
  ("inn"         ["\\nin"])
- ("0set"        ["\\emptyset"])
 
+ ("0set"        ["\\emptyset"])
  ("nsR" ["\\mathbb{R}"])   ("nsr" ["\\mathbb{R}"])
  ("nsC" ["\\mathbb{C}"])   ("nsc" ["\\mathbb{C}"])
  ("nsN" ["\\mathbb{N}"])   ("nsn" ["\\mathbb{N}"])
@@ -229,7 +225,6 @@
  ("subn"        ["\\nsubset"])
  ("sub="        ["\\subeseteq"])
  ("sub=n"       ["\\nsubeseteq"]) ("subn="      ["\\nsubeseteq"])
-
  ("sup"         ["\\supset"])
  ("supn"        ["\\nsupset"])
  ("sup="        ["\\supeseteq"])
@@ -252,19 +247,19 @@
  ("sr"   ["^2"])
  ("cb"   ["^3"])
  ("inv"  ["^{-1}"])
- ("po"   ["^{"])
- ("lo"   ["_{"])
- ("li"   ["_i"])
- ("l1"   ["_1"])
- ("l2"   ["_2"])
- ("l3"   ["_3"])
- ("l4"   ["_4"])
+ ("po"   ["^{"]) ("lo"   ["_{"])
+ ("px"   ["^x"]) ("li"   ["_i"])
+ ("p1"   ["^1"]) ("l1"   ["_1"])
+ ("p2"   ["^2"]) ("l2"   ["_2"])
+ ("p3"   ["^3"]) ("l3"   ["_3"])
+ ("p4"   ["^4"]) ("l4"   ["_4"])
+ ("pn"   ["^n"]) ("lnn"  ["_n"])
  ("__"   ["\\underset{ }{ }"] )  ("___"  ["\\underbrace{ }_{ }"] )
  ("^^"   ["\\overset{ }{ }"] )   ("^^^"  ["\\overbrace{ }^{ }"] )
  ;; ("sr"  (delete-backward-char 1))
 
 
- ;;matrices
+ ;;command matrices A-Z
  ("Am"  ["\\mathbf{A}"])
  ("Bm"  ["\\mathbf{B}"])
  ("Cm"  ["\\mathbf{C}"])
@@ -280,4 +275,29 @@
  ("ym"  ["\\mathbf{y}"])
  ("zm"  ["\\mathbf{z}"])
  ("vm"  ["\\mathbf{v}"])
+
+
+
+ ("av"  ["\\vector{a}"])
+ ("bv"  ["\\vector{b}"])
+ ("cv"  ["\\vector{c}"])
+ ("dv"  ["\\vector{d}"])
+ ("rv"  ["\\vector{r}"])
+ ("Rv"  ["\\vector{R}"])
+ ("xv"  ["\\vector{x}"])
+ ("yv"  ["\\vector{y}"])
+ ("zv"  ["\\vector{z}"])
+ ("vv"  ["\\vector{v}"])
+ ("uv"  ["\\vector{u}"])
+
+ ("ih" ["\\hat{\\imath}"])
+ ("jh" ["\\hat{\\jmath}"])
+ ("kh" ["\\hat{k}"])
+ ("xh" ["\\hat{x}"])
+ ("yh" ["\\hat{y}"])
+ ("zh" ["\\hat{z}"])
+ ("rh" ["\\hat{r}"])
  )
+
+
+
