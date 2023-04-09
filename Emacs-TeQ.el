@@ -167,6 +167,7 @@
  ("*x"  ["\\times "])
  ("::"  ["\\div "])
 
+
  ;; arrows
  ("<-"          ["\\leftarrow "])
  ("->"          ["\\rightarrow "])
@@ -230,8 +231,6 @@
  ("hb" ["\\hbar"])
  ("par" ["\\partial"])
  ("sim" ["\\sim"])
-
-
 
 
  ("mat"  ["\\begin{matrix}\n\n\\end{matrix}"])
