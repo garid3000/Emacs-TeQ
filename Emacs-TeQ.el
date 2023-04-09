@@ -1,7 +1,32 @@
 (require 'quail)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun quail-func-init ()
+  (quail-delete-region)
+  (setq quail-current-str nil
+	quail-converting nil
+	quail-conversion-str ""))
+
+(defun quail-func-end ()
+  (throw 'quail-tag nil))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun quail-TeQ-equation (key idx)
+  (quail-func-init)
+  (insert "\\begin{equation}\n\n\\end{equation}")
+  (previous-line)
+  (quail-func-end))
+
+(defun quail-TeQ-aligned (key idx)
+  (quail-func-init)
+  (insert "\\begin{aligned}\n\n\\end{aligned}")
+  (previous-line)
+  (quail-func-end))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
 (quail-define-package
- "Test-Latex" "Test-Latex"  "tltx-" t
+ "Test-Latex" "Test-Latex"  "gry-ltx-" t
  "Test-Latex Keyboard Layout"
  nil t t t t nil nil nil nil nil t)
 
@@ -36,22 +61,21 @@
  ("x."    ["\\chi"       ])  ("X."    ["X"           ])
  ("z."    ["\\zeta"      ])  ("Z."    ["Z"           ])
 
- ("eq"  ["\\begin{equation}\n\n\\end{equation}"])
- ("eq*" ["\\begin{equation*}\n\n\\end{equation*}"])
- ("eqa" ["\\begin{equation}\n\\begin{aligned}\n\\end{aligned}\n\\end{equation}"])
- ("al"  ["\\begin{align}\n\\end{align}"])
- ("ve"  ["\\vector{ }"])
+ ("eq" quail-TeQ-equation)
+ ("al" quail-TeQ-aligned)
+
+ ("ve"  ["\\vec{ }"])
  ("..." ["\\dots "])
  (".v"  ["\\vdots "])
  (".d"  ["\\ddots "])
  (".l"  ["\\ldots "])
- ("*."  ["\\cdot "])
+ ("**"  ["\\cdot "])
 
  ;; main arithmetics
  ("+-"  ["\\pm "])
  ("-+"  ["\\mp "])
  ("*x"  ["\\times "])
- (": "  ["\\div "])
+ ("::"  ["\\div "])
 
  ;; arrows
  ("<-"          ["\\leftarrow "])
@@ -99,7 +123,7 @@
 
  ("il" ["\\limits_{ }^{ }"]) ;; probbably not used much
  ("im" ["\\( \\)"])
- ("imm" ["\\[\n\n\\]"])
+ ("imm" ["\\[ \\]"])
 
  ("lim"  ["\\lim\\limits_{ }"])
  ("int"  ["\\int\\limits_{ }^{ }"])
@@ -208,7 +232,7 @@
  ("and"         ["\\land"]) ("andt"     ["\\text{and}"])
  ("or"          ["\\lor"]) ("ort"       ["\\text{or}"])
 
- ;; sets 
+ ;; sets
  ("in"          ["\\in"])
  ("inn"         ["\\nin"])
 
@@ -244,60 +268,71 @@
  ("ar"          ["\\ar "])
 
  ;; convient
- ("sr"   ["^2"])
- ("cb"   ["^3"])
- ("inv"  ["^{-1}"])
+ ("sr"   ["^2"]) ("cb"   ["^3"]) ("inv"  ["^{-1}"])
  ("po"   ["^{"]) ("lo"   ["_{"])
  ("px"   ["^x"]) ("li"   ["_i"])
+ ("p0"   ["^0"]) ("l0"   ["_0"])
  ("p1"   ["^1"]) ("l1"   ["_1"])
  ("p2"   ["^2"]) ("l2"   ["_2"])
  ("p3"   ["^3"]) ("l3"   ["_3"])
  ("p4"   ["^4"]) ("l4"   ["_4"])
  ("pn"   ["^n"]) ("lnn"  ["_n"])
  ("__"   ["\\underset{ }{ }"] )  ("___"  ["\\underbrace{ }_{ }"] )
- ("^^"   ["\\overset{ }{ }"] )   ("^^^"  ["\\overbrace{ }^{ }"] )
+ ("^^"   ["\\overset{ }{ }"] )   ("^^^"  ["\\overbrace{ }^{ }" ] )
  ;; ("sr"  (delete-backward-char 1))
 
 
- ;;command matrices A-Z
- ("Am"  ["\\mathbf{A}"])
- ("Bm"  ["\\mathbf{B}"])
- ("Cm"  ["\\mathbf{C}"])
- ("Dm"  ["\\mathbf{D}"])
- ("Pm"  ["\\mathbf{P}"])
- ("Im"  ["\\mathbf{I}"])
- ("Hm"  ["\\mathbf{H}"])
- ("Xm"  ["\\mathbf{X}"])
- ("Ym"  ["\\mathbf{Y}"])
- ("Zm"  ["\\mathbf{Z}"])
+ ("Am"  ["\\mathbf{A}"])   ("am"  ["\\mathbf{a}"])
+ ("Bm"  ["\\mathbf{B}"])   ("bm"  ["\\mathbf{b}"])
+ ("Cm"  ["\\mathbf{C}"])   ("cm"  ["\\mathbf{c}"])
+ ("Dm"  ["\\mathbf{D}"])   ("dm"  ["\\mathbf{d}"])
+ ("Em"  ["\\mathbf{E}"])   ("em"  ["\\mathbf{e}"])
+ ("Fm"  ["\\mathbf{F}"])   ("fm"  ["\\mathbf{f}"])
+ ("Gm"  ["\\mathbf{G}"])   ("gm"  ["\\mathbf{g}"])
+ ("Hm"  ["\\mathbf{H}"])   ("hm"  ["\\mathbf{h}"])
+ ("Im"  ["\\mathbf{I}"])   ("im"  ["\\mathbf{i}"])
+ ("Jm"  ["\\mathbf{J}"])   ("jm"  ["\\mathbf{j}"])
+ ("Km"  ["\\mathbf{K}"])   ("km"  ["\\mathbf{k}"])
+ ("Lm"  ["\\mathbf{L}"])   ("lm"  ["\\mathbf{l}"])
+ ("Mm"  ["\\mathbf{M}"])   ("mm"  ["\\mathbf{m}"])
+ ("Nm"  ["\\mathbf{N}"])   ("nm"  ["\\mathbf{n}"])
+ ("Om"  ["\\mathbf{O}"])   ("om"  ["\\mathbf{o}"])
+ ("Pm"  ["\\mathbf{P}"])   ("pm"  ["\\mathbf{p}"])
+ ("Qm"  ["\\mathbf{Q}"])   ("qm"  ["\\mathbf{q}"])
+ ("Rm"  ["\\mathbf{R}"])   ("rm"  ["\\mathbf{r}"])
+ ("Sm"  ["\\mathbf{S}"])   ("sm"  ["\\mathbf{s}"])
+ ("Tm"  ["\\mathbf{T}"])   ("tm"  ["\\mathbf{t}"])
+ ("Um"  ["\\mathbf{U}"])   ("um"  ["\\mathbf{u}"])
+ ("Vm"  ["\\mathbf{V}"])   ("vm"  ["\\mathbf{v}"])
+ ("Wm"  ["\\mathbf{W}"])   ("wm"  ["\\mathbf{w}"])
+ ("Xm"  ["\\mathbf{X}"])   ("xm"  ["\\mathbf{x}"])
+ ("Ym"  ["\\mathbf{Y}"])   ("ym"  ["\\mathbf{y}"])
+ ("Zm"  ["\\mathbf{Z}"])   ("zm"  ["\\mathbf{z}"])
 
- ("xm"  ["\\mathbf{x}"])
- ("ym"  ["\\mathbf{y}"])
- ("zm"  ["\\mathbf{z}"])
- ("vm"  ["\\mathbf{v}"])
-
-
-
- ("av"  ["\\vector{a}"])
- ("bv"  ["\\vector{b}"])
- ("cv"  ["\\vector{c}"])
- ("dv"  ["\\vector{d}"])
- ("rv"  ["\\vector{r}"])
- ("Rv"  ["\\vector{R}"])
- ("xv"  ["\\vector{x}"])
- ("yv"  ["\\vector{y}"])
- ("zv"  ["\\vector{z}"])
- ("vv"  ["\\vector{v}"])
- ("uv"  ["\\vector{u}"])
-
- ("ih" ["\\hat{\\imath}"])
- ("jh" ["\\hat{\\jmath}"])
- ("kh" ["\\hat{k}"])
- ("xh" ["\\hat{x}"])
- ("yh" ["\\hat{y}"])
- ("zh" ["\\hat{z}"])
- ("rh" ["\\hat{r}"])
- )
-
-
-
+ ("ah"  ["\\hat{a}"])      ("av"  ["\\vec{a}"])
+ ("bh"  ["\\hat{b}"])      ("bv"  ["\\vec{b}"])
+ ("ch"  ["\\hat{c}"])      ("cv"  ["\\vec{c}"])
+ ("dh"  ["\\hat{d}"])      ("dv"  ["\\vec{d}"])
+ ("eh"  ["\\hat{e}"])      ("ev"  ["\\vec{e}"])
+ ("fh"  ["\\hat{f}"])      ("fv"  ["\\vec{f}"])
+ ("gh"  ["\\hat{g}"])      ("gv"  ["\\vec{g}"])
+ ("hh"  ["\\hat{h}"])      ("hv"  ["\\vec{h}"])
+ ("ih"  ["\\hat{i}"])      ("iv"  ["\\vec{i}"])
+ ("jh"  ["\\hat{j}"])      ("jv"  ["\\vec{j}"])
+ ("kh"  ["\\hat{k}"])      ("kv"  ["\\vec{k}"])
+ ("lh"  ["\\hat{l}"])      ("lv"  ["\\vec{l}"])
+ ("mh"  ["\\hat{m}"])      ("mv"  ["\\vec{m}"])
+ ("nh"  ["\\hat{n}"])      ("nv"  ["\\vec{n}"])
+ ("oh"  ["\\hat{o}"])      ("ov"  ["\\vec{o}"])
+ ("ph"  ["\\hat{p}"])      ("pv"  ["\\vec{p}"])
+ ("qh"  ["\\hat{q}"])      ("qv"  ["\\vec{q}"])
+ ("rh"  ["\\hat{r}"])      ("rv"  ["\\vec{r}"])
+ ("sh"  ["\\hat{s}"])      ("sv"  ["\\vec{s}"])
+ ("th"  ["\\hat{t}"])      ("tv"  ["\\vec{t}"])
+ ("uh"  ["\\hat{u}"])      ("uv"  ["\\vec{u}"])
+ ("vh"  ["\\hat{v}"])      ("vv"  ["\\vec{v}"])
+ ("wh"  ["\\hat{w}"])      ("wv"  ["\\vec{w}"])
+ ("xh"  ["\\hat{x}"])      ("xv"  ["\\vec{x}"])
+ ("yh"  ["\\hat{y}"])      ("yv"  ["\\vec{y}"])
+ ("zh"  ["\\hat{z}"])      ("zv"  ["\\vec{z}"])
+ ) 
