@@ -150,7 +150,8 @@
 
  ("eq" quail-TeQ-equation)
  ("al" quail-TeQ-aligned)
- ("&=" ["&=\n\\\\"]) ("=&" ["&=\n\\\\"])
+ ("&=" ["&=\n\\\\"])
+ ("=&" ["&=\n\\\\"])
  ("/"  quail-TeQ-frac)
  ("el" quail-TeQ-endline)
 
