@@ -88,6 +88,7 @@
 | ~Xm~ | $\mathbf{X}$ | ~\mathbf{X}~       | ~xm~ | $\mathbf{x}$ | ~\mathbf{x}~       |
 | ~Ym~ | $\mathbf{Y}$ | ~\mathbf{Y}~       | ~ym~ | $\mathbf{y}$ | ~\mathbf{y}~       |
 | ~Zm~ | $\mathbf{Z}$ | ~\mathbf{Z}~       | ~zm~ | $\mathbf{z}$ | ~\mathbf{z}~       |
+| ~Om~ | $\mathbf{0}$ | ~\mathbf{0}~       | ~0m~ | $\mathbf{0}$ | ~\mathbf{0}~       |
 |------+--------------+--------------------+------+--------------+--------------------|
 
 **  Vector & Hat
