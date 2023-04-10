@@ -138,22 +138,10 @@
 | ~el~ | ~quail-TeQ-endofline~ | end of line          |
 |------+-----------------------+----------------------|
 
-* Binary Operation Symbols
-** Simple Arithmetics:
-#+caption: Simple Arithmetics operations
-#+name: tbl-dots
-#+attr_latex: :align |ccl| :placement [H]
-|------+----------+----------|
-| key  | trans    | sym      |
-|------+----------+----------|
-| ~+-~ | ~\pm~    | $\pm$    |
-| ~-+~ | ~\mp~    | $\mp$    |
-| ~*x~ | ~\times~ | $\times$ |
-| ~::~ | ~\div~   | $\div$   |
-| ~**~ | ~\cdot~  | $\cdot$  |
-|------+----------+----------|
 
-* Dots related
+
+* Symbols:
+** Dots related
 #+caption: Multiple Dots Related
 #+name: tbl-dots
 #+attr_latex: :align |cclr| :placement [H]
@@ -166,34 +154,21 @@
 | ~.l~  | ~\ldots~ | $\ldots$ | low dots       |
 |-------+----------+----------+----------------|
 
-* Iterative-like operation:
-#+caption: Integrals, Sums, Products
-#+name: tbl-int-sum-prods
-#+attr_latex: :align |cclr| :placement [H]
-|-----------+---------------------------------------+---------------------------------------+-------------|
-| key       | sym                                   | trans                                 | description |
-|-----------+---------------------------------------+---------------------------------------+-------------|
-| ~il~      | $\sum\limits_{ here }^{here}$         | ~\limits_{ }^{ }~                     |             |
-|-----------+---------------------------------------+---------------------------------------+-------------|
-| ~lim~     | $\lim$                                | ~\lim~                                |             |
-| ~sum~     | $\sum$                                | ~\sum~                                |             |
-| ~prod~    | $\prod$                               | ~\prod~                               |             |
-| ~int~     | $\int$                                | ~\int~                                |             |
-| ~inti~    | $\iint$                               | ~\iint~                               |             |
-| ~intii~   | $\iiint$                              | ~\iiint~                              |             |
-| ~intiii~  | $\iiiint$                             | ~\iiiint~                             |             |
-| ~into~    | $\oint$                               | ~\oint~                               |             |
-|-----------+---------------------------------------+---------------------------------------+-------------|
-| ~sum.~    | $\sum\limits_{ i=1 }^{ n }$           | ~\sum\limits_{ i=1 }^{ n }~           |             |
-| ~prod.~   | $\prod\limits_{ i=1 }^{ n }$          | ~\prod\limits_{ i=1 }^{ n }~          |             |
-| ~int.~    | $\int\limits_{ -\infty }^{ -\infty }$ | ~\int\limits_{ -\infty }^{ -\infty }~ |             |
-| ~inti.~   | $\iint\limits_{ C }$                  | ~\iint\limits_{ C }~                  |             |
-| ~intii.~  | $\iiint\limits_{ C }$                 | ~\iiint\limits_{ C }~                 |             |
-| ~intiii.~ | $\iiiint\limits_{ C }$                | ~\iiiint\limits_{ C }~                |             |
-| ~into.~   | $\oint\limits_{ C }$                  | ~\oint\limits_{ C }~                  |             |
-|-----------+---------------------------------------+---------------------------------------+-------------|
+** Geometry
+#+caption:  
+#+name: 
+#+attr_latex: :align |lclr| :placement [H]
+|---------+------------------+------------------+-------------|
+| key     | sym              | trans            | description |
+|---------+------------------+------------------+-------------|
+| ~perp~  | $\perp$          | ~\perp~          |             |
+| ~perpn~ | $\not\perp$      | ~\perp~          |             |
+| ~para~  | $\parallel$      | ~\parallel~      |             |
+| ~paran~ | $\nparallel$     | ~\nparallel~     |             |
+| ~ang~   | $\angle$         | ~\angle~         |             |
+| ~ang.~  | $\measuredangle$ | ~\measuredangle~ |             |
+|---------+------------------+------------------+-------------|
 
-* Symbols:
 ** Letter like
 #+caption: Letter-like Symbold  
 #+name: tbl-letter-like-sym
@@ -211,6 +186,8 @@
 | ~dd.~ | $\partial$   | ~\partial~   |             |
 | ~ii~  | $\imath$     | ~\imath~     |             |
 | ~jj~  | $\jmath$     | ~\jmath~     |             |
+| ~nab~ | $\nabla$     | ~\nabla~     |             |
+| ~cm~  | $\checkmark$ | ~\checkmark~ |             |
 |-------+--------------+--------------+-------------|
 
 ** Spaces
@@ -223,17 +200,108 @@
 | ~quu~  | $\qquad$  | ~\qquad~  |             |
 |--------+-----------+-----------+-------------|
 
-** tmp other
+** Arrows:
+*** Single:
+#+caption: Single Line arrows
+#+name: tbl-1-line-arrow
+#+attr_latex: :align |llll| :placement [H]
+|------------+--------------------+--------------------+----------------------|
+| key        | trans              | sym                | description          |
+|------------+--------------------+--------------------+----------------------|
+| ~<-~       | ~\leftarrow~       | $\leftarrow$       | left arrow           |
+| ~->~       | ~\rightarrow~      | $\rightarrow$      | right arrow          |
+| ~-^~       | ~\uparrow~         | $\uparrow$         | up arrow             |
+| ~-v~       | ~\downarrow~       | $\downarrow$       | down arrow           |
+| ~<->~      | ~\leftrightarrow~  | $\leftrightarrow$  | left-right arrow     |
+|------------+--------------------+--------------------+----------------------|
+| ~<-n~      | ~\nleftarrow~      | $\nleftarrow$      | not left arrow       |
+| ~->n~      | ~\nrightarrow~     | $\nrightarrow$     | not right arrow      |
+| ~-^n~      | ~\nuparrow~        | $\nuparrow$        | not up arrow         |
+| ~-vn~      | ~\ndownarrow~      | $\ndownarrow$      | not down arrow       |
+| ~<->~      | ~\nleftrightarrow~ | $\nleftrightarrow$ | not left-right arrow |
+|------------+--------------------+--------------------+----------------------|
+| ~-->~      | ~\longrightarrow~  | $\longrightarrow$  |                      |
+| ~<--~      | ~\longleftarrow~   | $\longleftarrow$   |                      |
+| \vert ~->~ | ~\mapsto~          | $\mapsto$          |                      |
+|------------+--------------------+--------------------+----------------------|
+
+*** Double:
+#+caption: Double Line arrows
+#+name: tbl-2-line-arrow
+#+attr_latex: :align |llll| :placement [H]
+|--------+-----------------------+-----------------------+------------------|
+| key    | trans                 | sym                   | description      |
+|--------+-----------------------+-----------------------+------------------|
+| ~<=~   | ~\Leftarrow~          | $\Leftarrow$          | left arrow       |
+| ~=>~   | ~\Rightarrow~         | $\Rightarrow$         | right arrow      |
+| ~=^~   | ~\Uparrow~            | $\Uparrow$            | up arrow         |
+| ~=v~   | ~\Downarrow~          | $\Downarrow$          | down arrow       |
+| ~<=>~  | ~\Leftrightarrow~     | $\Leftrightarrow$     | left-right arrow |
+| ~iff~  | ~\Leftrightarrow~     | $\Leftrightarrow$     | left-right arrow |
+|--------+-----------------------+-----------------------+------------------|
+| ~<=n~  | ~\nLeftarrow~         | $\nLeftarrow$         | left arrow       |
+| ~=>n~  | ~\nRightarrow~        | $\nRightarrow$        | right arrow      |
+| ~<=>n~ | ~\nLeftrightarrow~    | $\nLeftrightarrow$    | left-right arrow |
+| ~iffn~ | ~\nLeftrightarrow~    | $\nLeftrightarrow$    | left-right arrow |
+|--------+-----------------------+-----------------------+------------------|
+| ~<==>~ | ~\Longleftrightarrow~ | $\Longleftrightarrow$ | left-right arrow |
+| ~<==~  | ~\Longleftarrow~      | $\Longleftarrow$      | left-right arrow |
+| ~==>~  | ~\Longrightarrow~     | $\Longrightarrow$     | left-right arrow |
+|--------+-----------------------+-----------------------+------------------|
+
+*** Long arrow with top-bottom entries 
+#+caption: Long arrow Line arrows
+#+name: tbl-2-line-arrow
+#+attr_latex: :align |cclr| :placement [H]
+|--------+----------------------------+----------------------+--------------------------|
+| key    | sym                        | trans                | description              |
+|--------+----------------------------+----------------------+--------------------------|
+| ~<---~ | $\xleftarrow[\Box]{\Box}$  | ~\xleftarrow[ ]{ }~  |                          |
+| ~--->~ | $\xrightarrow[\Box]{\Box}$ | ~\xrightarrow[ ]{ }~ |                          |
+| ~===>~ | $\xRightarrow[\Box]{\Box}$ | ~\xRightarrow[ ]{ }~ | ~mathtools~ lib required |
+| ~<===~ | $\xLeftarrow[\Box]{\Box}$  | ~\xLeftarrow[ ]{ }~  | ~mathtools~ lib required |
+|--------+----------------------------+----------------------+--------------------------|
+
+
+** Accents (variable decoration?)
 #+caption:  
 #+name: 
 #+attr_latex: :align |lclr| :placement [H]
-|-----+-----------+-----------+-------------|
-| key | sym       | trans     | description |
-|-----+-----------+-----------+-------------|
-| ~'~ | $^\prime$ | ~^\prime~ |             |
-|-----+-----------+-----------+-------------|
+|----------+----------------------+--------------+-------------------|
+| key      | sym                  | trans        | description       |
+|----------+----------------------+--------------+-------------------|
+| ~vec~    | $\vec{\Box}$         | ~\vec~       |                   |
+| ~bar~    | $\bar{\Box}$         | ~\bar~       |                   |
+| ~hat~    | $\hat{\Box}$         | ~\hat~       |                   |
+| ~dot~    | $\dot{\Box}$         | ~\dot~       |                   |
+| ~dot.~   | $\ddot{\Box}$        | ~\ddot~      |                   |
+| ~dot..~  | $\dddot{\Box}$       | ~\dddot~     |                   |
+| ~dot...~ | $\ddddot{\Box}$      | ~\ddddot~    |                   |
+| ~dag~    | $\Box^\dagger$       | ~^\dagger~   |                   |
+| ~dag.~   | $\Box^\ddagger$      | ~^\ddagger~  |                   |
+| ~*..~    | $\Box^*$             | ~^*~         |                   |
+| ~deg~    | $\Box^\circ$         | ~^\circ~     |                   |
+| ~tr~     | $\Box^T$             | ~^T~         |                   |
+| ~tr.~    | $\Box^{-T}$          | ~^{-T}~      |                   |
+|----------+----------------------+--------------+-------------------|
 
-* Binary Relations:
+
+* Binary Operation Symbols
+** Simple Arithmetics:
+#+caption: Simple Arithmetics operations
+#+name: tbl-dots
+#+attr_latex: :align |ccl| :placement [H]
+|------+----------+----------|
+| key  | trans    | sym      |
+|------+----------+----------|
+| ~+-~ | ~\pm~    | $\pm$    |
+| ~-+~ | ~\mp~    | $\mp$    |
+| ~*x~ | ~\times~ | $\times$ |
+| ~::~ | ~\div~   | $\div$   |
+| ~**~ | ~\cdot~  | $\cdot$  |
+|------+----------+----------|
+
+** Binary Relations:
 #+caption:  
 #+name: 
 #+attr_latex: :align |lclr| :placement [H]
@@ -275,40 +343,7 @@
 | ~>>y~ | $\stackrel{\checkmark}{\gg}$  | ~\stackrel{\checkmark}{\gg}~  |             |
 |-------+-------------------------------+-------------------------------+-------------|
 
-* Geometry
-
-#+caption:  
-#+name: 
-#+attr_latex: :align |lclr| :placement [H]
-|---------+------------------+------------------+-------------|
-| key     | sym              | trans            | description |
-|---------+------------------+------------------+-------------|
-| ~perp~  | $\perp$          | ~\perp~          |             |
-| ~para~  | $\parallel$      | ~\parallel~      |             |
-| ~paran~ | $\nparallel$     | ~\nparallel~     |             |
-| ~ang~   | $\angle$         | ~\angle~         |             |
-| ~ang.~  | $\measuredangle$ | ~\measuredangle~ |             |
-|---------+------------------+------------------+-------------|
-
-* Logic
-
-#+caption:  
-#+name: 
-#+attr_latex: :align |lclr| :placement [H]
-|--------+----------------+----------------+-------------|
-| key    | sym            | trans          | description |
-|--------+----------------+----------------+-------------|
-| ~or~   | $\lor$         | ~\lor~         |             |
-| ~and~  | $\land$        | ~\lnd~         |             |
-| ~not~  | $\neg$         | ~\neg~         |             |
-| ~or.~  | $\text{ or }$  | ~\text{ or }~  |             |
-| ~and.~ | $\text{ and }$ | ~\text{ and }~ |             |
-| ~not.~ | $\text{ not }$ | ~\text{ not }~ |             |
-|--------+----------------+----------------+-------------|
-
-
-* Set symbols
-
+** Set symbols
 #+caption:  
 #+name: 
 #+attr_latex: :align |lclr| :placement [H]
@@ -339,72 +374,49 @@
 | ~supn=~ | $\nsupseteq$ | ~\nsupseteq~  |             |
 |---------+--------------+---------------+-------------|
 
+** Logic
+#+caption:  
+#+name: 
+#+attr_latex: :align |lclr| :placement [H]
+|--------+----------------+----------------+-------------|
+| key    | sym            | trans          | description |
+|--------+----------------+----------------+-------------|
+| ~or~   | $\lor$         | ~\lor~         |             |
+| ~and~  | $\land$        | ~\lnd~         |             |
+| ~not~  | $\neg$         | ~\neg~         |             |
+| ~or.~  | $\text{ or }$  | ~\text{ or }~  |             |
+| ~and.~ | $\text{ and }$ | ~\text{ and }~ |             |
+| ~not.~ | $\text{ not }$ | ~\text{ not }~ |             |
+|--------+----------------+----------------+-------------|
 
-* Arrows:
-** Single:
-#+caption: Single Line arrows
-#+name: tbl-1-line-arrow
-#+attr_latex: :align |llll| :placement [H]
-|------------+--------------------+--------------------+----------------------|
-| key        | trans              | sym                | description          |
-|------------+--------------------+--------------------+----------------------|
-| ~<-~       | ~\leftarrow~       | $\leftarrow$       | left arrow           |
-| ~->~       | ~\rightarrow~      | $\rightarrow$      | right arrow          |
-| ~-^~       | ~\uparrow~         | $\uparrow$         | up arrow             |
-| ~-v~       | ~\downarrow~       | $\downarrow$       | down arrow           |
-| ~<->~      | ~\leftrightarrow~  | $\leftrightarrow$  | left-right arrow     |
-|------------+--------------------+--------------------+----------------------|
-| ~<-n~      | ~\nleftarrow~      | $\nleftarrow$      | not left arrow       |
-| ~->n~      | ~\nrightarrow~     | $\nrightarrow$     | not right arrow      |
-| ~-^n~      | ~\nuparrow~        | $\nuparrow$        | not up arrow         |
-| ~-vn~      | ~\ndownarrow~      | $\ndownarrow$      | not down arrow       |
-| ~<->~      | ~\nleftrightarrow~ | $\nleftrightarrow$ | not left-right arrow |
-|------------+--------------------+--------------------+----------------------|
-| ~-->~      | ~\longrightarrow~  | $\longrightarrow$  |                      |
-| ~<--~      | ~\longleftarrow~   | $\longleftarrow$   |                      |
-| \vert ~->~ | ~\mapsto~          | $\mapsto$          |                      |
-|------------+--------------------+--------------------+----------------------|
 
-** Double:
-#+caption: Double Line arrows
-#+name: tbl-2-line-arrow
-#+attr_latex: :align |llll| :placement [H]
-|--------+-----------------------+-----------------------+------------------|
-| key    | trans                 | sym                   | description      |
-|--------+-----------------------+-----------------------+------------------|
-| ~<=~   | ~\Leftarrow~          | $\Leftarrow$          | left arrow       |
-| ~=>~   | ~\Rightarrow~         | $\Rightarrow$         | right arrow      |
-| ~=^~   | ~\Uparrow~            | $\Uparrow$            | up arrow         |
-| ~=v~   | ~\Downarrow~          | $\Downarrow$          | down arrow       |
-| ~<=>~  | ~\Leftrightarrow~     | $\Leftrightarrow$     | left-right arrow |
-| ~iff~  | ~\Leftrightarrow~     | $\Leftrightarrow$     | left-right arrow |
-|--------+-----------------------+-----------------------+------------------|
-| ~<=n~  | ~\nLeftarrow~         | $\nLeftarrow$         | left arrow       |
-| ~=>n~  | ~\nRightarrow~        | $\nRightarrow$        | right arrow      |
-| ~<=>n~ | ~\nLeftrightarrow~    | $\nLeftrightarrow$    | left-right arrow |
-| ~iffn~ | ~\nLeftrightarrow~    | $\nLeftrightarrow$    | left-right arrow |
-|--------+-----------------------+-----------------------+------------------|
-| ~<==>~ | ~\Longleftrightarrow~ | $\Longleftrightarrow$ | left-right arrow |
-| ~<==~  | ~\Longleftarrow~      | $\Longleftarrow$      | left-right arrow |
-| ~==>~  | ~\Longrightarrow~     | $\Longrightarrow$     | left-right arrow |
-|--------+-----------------------+-----------------------+------------------|
-
-** Long arrow with 
-#+caption: Long arrow Line arrows
-#+name: tbl-2-line-arrow
+* Functions
+** Function
+#+caption:  
+#+name: 
 #+attr_latex: :align |cclr| :placement [H]
-|--------+--------------------------------+----------------------+--------------------------|
-| key    | sym                            | trans                | description              |
-|--------+--------------------------------+----------------------+--------------------------|
-| ~<---~ | $\xleftarrow[bracket]{brace}$  | ~\xleftarrow[ ]{ }~  |                          |
-| ~--->~ | $\xrightarrow[bracket]{brace}$ | ~\xrightarrow[ ]{ }~ |                          |
-| ~===>~ | $\xRightarrow[bracket]{brace}$ | ~\xRightarrow[ ]{ }~ | ~mathtools~ lib required |
-| ~<===~ | $\xLeftarrow[bracket]{brace}$  | ~\xLeftarrow[ ]{ }~  | ~mathtools~ lib required |
-|--------+--------------------------------+----------------------+--------------------------|
+|---------+---------------------+-----------------+-------------|
+| key     | sym                 | trans           | description |
+|---------+---------------------+-----------------+-------------|
+| ~rank~  | $\mathrm{rank}$     | ~\mathrm{rank}~ |             |
+| ~arg~   | $\arg$              | ~\arg~          |             |
+| ~det~   | $\det$              | ~\det~          |             |
+| ~dim~   | $\dim$              | ~\dim~          |             |
+| ~exp~   | $\exp$              | ~\exp~          |             |
+| ~Im~    | $\mathrm{Im}$       | ~\mathrm{Im}~   |             |
+| ~Re~    | $\mathrm{Re}$       | ~\mathrm{Re}~   |             |
+| ~ln~    | $\ln$               | ~\ln~           |             |
+| ~log~   | $\log$              | ~\log~          |             |
+| ~max~   | $\max$              | ~\max~          |             |
+| ~min~   | $\min$              | ~\min~          |             |
+| ~dim~   | $\dim$              | ~\dim~          |             |
+| ~sqrt~  | $\sqrt[\Box]{\Box}$ | ~\sqrt~         |             |
+| ~mod~   | $\Box \pmod \Box$   | ~\pmod~         |             |
+| ~mod.~  | $\Box \mod \Box$    | ~\mod~          |             |
+| ~mod..~ | $\Box \bmod \Box$   | ~\bmod~         |             |
+|---------+---------------------+-----------------+-------------|
 
-
-
-* Trignometry:
+** Trignometry: function
 #+caption:  
 #+name: 
 #+attr_latex: :align |ccl|ccl| :placement [H]
@@ -421,28 +433,36 @@
 | ~atan~ | $\arctan$ | ~\arctan~ | ~tan.~ | $\arctan$ | ~\arctan~ |
 |--------+-----------+-----------+--------+-----------+-----------|
 
-
-* Functions
-#+caption:  
-#+name: 
+** Iterative-like operation:
+#+caption: Integrals, Sums, Products
+#+name: tbl-int-sum-prods
 #+attr_latex: :align |cclr| :placement [H]
-|--------+-----------------+-----------------+-------------|
-| key    | sym             | trans           | description |
-|--------+-----------------+-----------------+-------------|
-| ~rank~ | $\mathrm{rank}$ | ~\mathrm{rank}~ |             |
-| ~arg~  | $\arg$          | ~\arg~          |             |
-| ~det~  | $\det$          | ~\det~          |             |
-| ~dim~  | $\dim$          | ~\dim~          |             |
-| ~exp~  | $\exp$          | ~\exp~          |             |
-| ~Im~   | $\mathrm{Im}$   | ~\mathrm{Im}~   |             |
-| ~Re~   | $\mathrm{Re}$   | ~\mathrm{Re}~   |             |
-| ~ln~   | $\ln$           | ~\ln~           |             |
-| ~log~  | $\log$          | ~\log~          |             |
-| ~max~  | $\max$          | ~\max~          |             |
-| ~min~  | $\min$          | ~\min~          |             |
-|--------+-----------------+-----------------+-------------|
+|-----------+---------------------------------------+---------------------------------------+-------------|
+| key       | sym                                   | trans                                 | description |
+|-----------+---------------------------------------+---------------------------------------+-------------|
+| ~il~      | $\sum\limits_{ here }^{here}$         | ~\limits_{ }^{ }~                     |             |
+|-----------+---------------------------------------+---------------------------------------+-------------|
+| ~lim~     | $\lim$                                | ~\lim~                                |             |
+| ~sum~     | $\sum$                                | ~\sum~                                |             |
+| ~prod~    | $\prod$                               | ~\prod~                               |             |
+| ~int~     | $\int$                                | ~\int~                                |             |
+| ~inti~    | $\iint$                               | ~\iint~                               |             |
+| ~intii~   | $\iiint$                              | ~\iiint~                              |             |
+| ~intiii~  | $\iiiint$                             | ~\iiiint~                             |             |
+| ~into~    | $\oint$                               | ~\oint~                               |             |
+|-----------+---------------------------------------+---------------------------------------+-------------|
+| ~sum.~    | $\sum\limits_{ i=1 }^{ n }$           | ~\sum\limits_{ i=1 }^{ n }~           |             |
+| ~prod.~   | $\prod\limits_{ i=1 }^{ n }$          | ~\prod\limits_{ i=1 }^{ n }~          |             |
+| ~int.~    | $\int\limits_{ -\infty }^{ -\infty }$ | ~\int\limits_{ -\infty }^{ -\infty }~ |             |
+| ~inti.~   | $\iint\limits_{ C }$                  | ~\iint\limits_{ C }~                  |             |
+| ~intii.~  | $\iiint\limits_{ C }$                 | ~\iiint\limits_{ C }~                 |             |
+| ~intiii.~ | $\iiiint\limits_{ C }$                | ~\iiiint\limits_{ C }~                |             |
+| ~into.~   | $\oint\limits_{ C }$                  | ~\oint\limits_{ C }~                  |             |
+|-----------+---------------------------------------+---------------------------------------+-------------|
 
-* Full Parenthesis
+
+* Structural:
+** Parenthesis Related
 #+caption:  
 #+name: 
 #+attr_latex: :align |lclr| :placement [H]
@@ -460,8 +480,7 @@
 | \vert\vert ~.~ | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~         |             |
 |----------------+-------------------------------------------+----------------------------------+-------------|
 
-
-* Texts:
+** Texts:
 #+caption:  
 #+name: 
 #+attr_latex: :align |lclr| :placement [H]
@@ -474,8 +493,7 @@
 | ~ti~ | $a + \mathit{mathit}$ | ~\mathit{}~ |             |
 |------+-----------------------+-------------+-------------|
 
-* power & lower
-
+** Superscripts (power) & Subsripts (lower)
 #+caption:  
 #+name: 
 #+attr_latex: :align |lcl|lcl| :placement [H]
@@ -495,8 +513,21 @@
 | ~__..~ | $\underline{\Box}$         | ~\underline{ }~      | ~^^..~ | $\overline{\Box}$         | ~\overline{ }~      |
 |--------+----------------------------+----------------------+--------+---------------------------+---------------------|
 
+** Misc.
+#+caption:  
+#+name: 
+#+attr_latex: :align |lclr| :placement [H]
+|---------+----------------------+------------+-------------------|
+| key     | sym                  | trans      | description       |
+|---------+----------------------+------------+-------------------|
+| ~binom~ | $\binom{\Box}{\Box}$ | ~\binom~   |                   |
+| ~box~   | $\boxed{\Box}$       | ~\boxed~   |                   |
+| ~can~   | $\cancel{\Box}$      | ~\cancel~  | requires ~cancel~ |
+| ~&=~    |                      | ~&=\n\\\\~ |                   |
+| ~=&~    |                      | ~&=\n\\\\~ |                   |
+|---------+----------------------+------------+-------------------|
 
-* xy
+** xy Diagram related
 #+caption:  
 #+name: 
 #+attr_latex: :align |lclr| :placement [H]
@@ -508,50 +539,15 @@
 | ~ar~ |           | ~\ar~             |             |
 |------+-----------+-------------------+-------------|
 
-* Tmp symbols
-#+caption:  
-#+name: 
-#+attr_latex: :align |lclr| :placement [H]
-|----------+----------------------+--------------+-------------------|
-| key      | sym                  | trans        | description       |
-|          |                      |              |                   |
-|----------+----------------------+--------------+-------------------|
-| ~vec~    | $\vec{\Box}$         | ~\vec~       |                   |
-| ~bar~    | $\bar{\Box}$         | ~\bar~       |                   |
-| ~hat~    | $\hat{\Box}$         | ~\hat~       |                   |
-| ~dot~    | $\dot{\Box}$         | ~\dot~       |                   |
-| ~dot.~   | $\ddot{\Box}$        | ~\ddot~      |                   |
-| ~dot..~  | $\dddot{\Box}$       | ~\dddot~     |                   |
-| ~dot...~ | $\ddddot{\Box}$      | ~\ddddot~    |                   |
-| ~dag~    | $\Box^\dagger$       | ~^\dagger~   |                   |
-| ~dag.~   | $\Box^\ddagger$      | ~^\ddagger~  |                   |
-| ~*..~    | $\Box^*$             | ~^*~         |                   |
-| ~deg~    | $\Box^\circ$         | ~^\circ~     |                   |
-| ~tr~     | $\Box^T$             | ~^T~         |                   |
-| ~tr.~    | $\Box^{-T}$          | ~^{-T}~      |                   |
-| ~binom~  | $\binom{\Box}{\Box}$ | ~\binom~     |                   |
-| ~box~    | $\boxed{\Box}$       | ~\boxed~     |                   |
-| ~can~    | $\cancel{\Box}$      | ~\cancel~    | requires ~cancel~ |
-| ~nab~    | $\nabla$             | ~\nabla~     |                   |
-| ~mod~    | $\Box \pmod \Box$    | ~\pmod~      |                   |
-| ~mod.~   | $\Box \mod \Box$     | ~\mod~       |                   |
-| ~mod..~  | $\Box \bmod \Box$    | ~\bmod~      |                   |
-| ~dim~    | $\dim$               | ~\dim~       |                   |
-| ~cm~     | $\checkmark$         | ~\checkmark~ |                   |
-| ~sqrt~   | $\sqrt[\Box]{\Box}$  | ~\sqrt~      |                   |
-| ~&=~     |                      | ~&=\n\\\\~   |                   |
-| ~=&~     |                      | ~&=\n\\\\~   |                   |
-|----------+----------------------+--------------+-------------------|
 
-
-
-* Matrix env
+* COMMENT Matrix env
 #+begin_src emacs-lisp
  ("mat"  ["\\begin{matrix}\n\n\\end{matrix}"])
  ("matb" ["\\begin{bmatrix}\n\n\\end{bmatrix}"])
  ("matv" ["\\begin{vmatrix}\n\n\\end{vmatrix}"])
  ("matp" ["\\begin{pmatrix}\n\n\\end{pmatrix}"])
 #+end_src
+
 
 * COMMENT Tmp
  ("case" ["\\begin{cases}\n\\end{cases}"])
