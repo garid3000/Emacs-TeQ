@@ -2,9 +2,7 @@
 #+subtitle: Input Method written in Quail for entering LaTeX math expressions
 #+author:   Garid Zorigoo
 #+auto_tangle: nil
-#+LATEX_HEADER: \usepackage{stmaryrd}
 #+LATEX_HEADER: \usepackage{mathtools}
-
 
 * Alphabet related stuff
 ** Greek
