@@ -446,17 +446,19 @@
 #+caption:  
 #+name: 
 #+attr_latex: :align |lclr| :placement [H]
-|----------------+----------------------------------+----------------------------------+-------------|
-| key            | sym                              | trans                            | description |
-|----------------+----------------------------------+----------------------------------+-------------|
-| ~().~          | $\left( \right)$                 | ~\left( \right)~                 |             |
-| ~()..~         | $\left( \middle\vert  \right)$   | ~\left( \middle\vert  \right)~   |             |
-| ~[].~          | $\left[ \right]$                 | ~\left[ \right]~                 |             |
-| ~[]..~         | $\left[ \middle\vert  \right]$   | ~\left[ \middle\vert  \right]~   |             |
-| ~{}.~          | $\left\{ \right\}$               | ~\left\{ \right\}~               |             |
-| ~{}..~         | $\left\{ \middle\vert  \right\}$ | ~\left\{ \middle\vert  \right\}~ |             |
-| \vert\vert ~.~ | $\left\vert \right\vert$         | ~\left\vert \right\vert~         |             |
-|----------------+----------------------------------+----------------------------------+-------------|
+|----------------+-------------------------------------------+----------------------------------+-------------|
+| key            | sym                                       | trans                            | description |
+|----------------+-------------------------------------------+----------------------------------+-------------|
+| ~().~          | $\left( \Box \right)$                     | ~\left( \right)~                 |             |
+| ~()..~         | $\left( \Box \middle\vert \Box \right)$   | ~\left( \middle\vert  \right)~   |             |
+| ~[].~          | $\left[ \Box \right]$                     | ~\left[ \right]~                 |             |
+| ~[]..~         | $\left[ \Box \middle\vert \Box \right]$   | ~\left[ \middle\vert  \right]~   |             |
+| ~[].c~         | $\lceil \Box \rceil$                      | ~\lceil \rceil~                  |             |
+| ~[].f~         | $\lfloor \Box \rfloor$                    | ~\lfloor \floor~                 |             |
+| ~{}.~          | $\left\{ \Box \right\}$                   | ~\left\{ \right\}~               |             |
+| ~{}..~         | $\left\{ \Box \middle\vert \Box \right\}$ | ~\left\{ \middle\vert  \right\}~ |             |
+| \vert\vert ~.~ | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~         |             |
+|----------------+-------------------------------------------+----------------------------------+-------------|
 
 
 * Texts:
