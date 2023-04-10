@@ -434,8 +434,8 @@
 | ~det~  | $\det$          | ~\det~          |             |
 | ~dim~  | $\dim$          | ~\dim~          |             |
 | ~exp~  | $\exp$          | ~\exp~          |             |
-| ~Im~   | $\Im$           | ~\Im~           |             |
-| ~Re~   | $\Re$           | ~\Re~           |             |
+| ~Im~   | $\mathrm{Im}$   | ~\mathrm{Im}~   |             |
+| ~Re~   | $\mathrm{Re}$   | ~\mathrm{Re}~   |             |
 | ~ln~   | $\ln$           | ~\ln~           |             |
 | ~log~  | $\log$          | ~\log~          |             |
 | ~max~  | $\max$          | ~\max~          |             |
