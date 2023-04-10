@@ -476,7 +476,7 @@
 | ~[].~          | ~\left[ \right]~                 | $\left[ \Box \right]$                     |             |
 | ~[]..~         | ~\left[ \middle\vert  \right]~   | $\left[ \Box \middle\vert \Box \right]$   |             |
 | ~[].c~         | ~\lceil \rceil~                  | $\lceil \Box \rceil$                      |             |
-| ~[].f~         | ~\lfloor \floor~                 | $\lfloor \Box \rfloor$                    |             |
+| ~[].f~         | ~\lfloor \rfloor~                | $\lfloor \Box \rfloor$                    |             |
 | ~{}.~          | ~\left\{ \right\}~               | $\left\{ \Box \right\}$                   |             |
 | ~{}..~         | ~\left\{ \middle\vert  \right\}~ | $\left\{ \Box \middle\vert \Box \right\}$ |             |
 | \vert\vert ~.~ | ~\left\vert \right\vert~         | $\left\vert \Box \right\vert$             |             |
@@ -892,7 +892,7 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("[]."     ["\\left[ \\right]"    ])  ; 
 ("[].."    ["\\left[ \\middle\\vert  \\right]"])  ; 
 ("[].c"    ["\\lceil \\rceil"     ])  ; 
-("[].f"    ["\\lfloor \\floor"    ])  ; 
+("[].f"    ["\\lfloor \\rfloor"   ])  ; 
 ("{}."     ["\\left\\{ \\right\\}"])  ; 
 ("{}.."    ["\\left\\{ \\middle\\vert  \\right\\}"])  ; 
 ("\\vert\\vert ."  ["\\left\\vert \\right\\vert"])  ; 
@@ -987,6 +987,9 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 #+end_src
+
+#+RESULTS: quail-executions
+: quail-TeQ-frac
 
 * Making the ~el~
 #+begin_src elisp :tangle Emacs-TeQ.el :noweb yes

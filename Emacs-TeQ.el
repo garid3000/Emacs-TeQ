@@ -337,7 +337,7 @@
     ("[]."     ["\\left[ \\right]"    ])  ; 
     ("[].."    ["\\left[ \\middle\\vert  \\right]"])  ; 
     ("[].c"    ["\\lceil \\rceil"     ])  ; 
-    ("[].f"    ["\\lfloor \\floor"    ])  ; 
+    ("[].f"    ["\\lfloor \\rfloor"   ])  ; 
     ("{}."     ["\\left\\{ \\right\\}"])  ; 
     ("{}.."    ["\\left\\{ \\middle\\vert  \\right\\}"])  ; 
     ("\\vert\\vert ."  ["\\left\\vert \\right\\vert"])  ; 
