@@ -46,10 +46,10 @@
 |--------+-----------------+---------------------|
 | key    | sym             | latex (lower greek) |
 |--------+-----------------+---------------------|
-| ~e.v~  | $\varepsilon$   | ~\varepsilon~       |
-| ~f.v~  | $\varphi$       | ~\varphi~           |
-| ~s.v~  | $\varsigma$     | ~\varsigma~         |
-| ~t.v~  | $\vartheta$     | ~\vartheta~         |
+| ~e..~  | $\varepsilon$   | ~\varepsilon~       |
+| ~f..~  | $\varphi$       | ~\varphi~           |
+| ~s..~  | $\varsigma$     | ~\varsigma~         |
+| ~t..~  | $\vartheta$     | ~\vartheta~         |
 |--------+-----------------+---------------------|
 
 ** Matrix (aka  bold)
