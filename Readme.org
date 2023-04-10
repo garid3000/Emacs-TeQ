@@ -578,7 +578,7 @@ def format_table_to_elisp_type3col_type2(headcomment, table):
     for line in table:
         key, trans, sym, description = line
         key   = repr(key).replace("\'", "\"").replace("~", "")
-        trans = repr(trans).replace("\'", "\"").replace("~", "")
+        trans = trans.replace("~", "")
         
         print(f"({key:<8}  {trans:<22})  ; {description}")
 
