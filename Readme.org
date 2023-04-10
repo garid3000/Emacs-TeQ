@@ -932,30 +932,7 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 
 
 
-* Making the ~el~
-#+begin_src elisp :tangle /tmp/final.el :noweb yes
-(require 'quail)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-
-<<quail-executions>>
-
-(quail-define-package
- "TeQ-Math" "Emacs-Teq-Latex"  "TeQ-" t
- "TeQ-Math input"
- nil t t t t nil nil nil nil nil t)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-(quail-define-rules
-    ;; Greek Alphabets
-    <<el-from-table>>
-)
-#+end_src
-
-#+RESULTS:
-
-* Execuation el
+* Executable elisp function definition
 #+name: quail-executions
 #+begin_src emacs-lisp
 (defun quail-func-init ()
@@ -1010,6 +987,29 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 #+end_src
+
+* Making the ~el~
+#+begin_src elisp :tangle Emacs-TeQ.el :noweb yes
+(require 'quail)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+<<quail-executions>>
+
+(quail-define-package
+ "TeQ-Math" "Emacs-Teq-Latex"  "TeQ-" t
+ "TeQ-Math input"
+ nil t t t t nil nil nil nil nil t)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(quail-define-rules
+    ;; Greek Alphabets
+    <<el-from-table>>
+)
+#+end_src
+
+#+RESULTS:
 
 * COMMENT Matrix env
 #+begin_src emacs-lisp
