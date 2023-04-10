@@ -6,10 +6,10 @@
 #+LATEX_HEADER: \usepackage{cancel}
 #+startup: show2levels
 
-* Alphabet related stuff
-** Greek
+*  Alphabet related stuff [0/3]:
+**  Greek
 #+caption: Main Greek letters 
-#+name: tbl-greek
+#+name: tbl-alphabet-greek-6column
 #+attr_latex: :align |ccl|ccl|  :placement [H]
 |-------+------------+---------------------+-------+------------+---------------------|
 |   key | sym        | latex (lower greek) |   key | sym        | latex (upper greek) |
@@ -55,9 +55,9 @@
 | ~k..~ | $\varkappa$   | ~\varkappa~         |
 |-------+---------------+---------------------|
 
-** Matrix (aka  bold)
+**  Matrix (aka  bold)
 #+caption: Matrix
-#+name: tbl-matrix-vector
+#+name: tbl-alphabet-matrix-6column
 #+attr_latex: :align |ccl|ccl| :placement [H]
 |------+--------------+--------------------+------+--------------+--------------------|
 | key  | sym          | latex (upper bold) | key  | sym          | latex (lower bold) |
@@ -90,9 +90,9 @@
 | ~Zm~ | $\mathbf{Z}$ | ~\mathbf{Z}~       | ~zm~ | $\mathbf{z}$ | ~\mathbf{z}~       |
 |------+--------------+--------------------+------+--------------+--------------------|
 
-** Vector & Hat
+**  Vector & Hat
 #+caption: Vectors and Hats
-#+name: tbl-vector-hats
+#+name: tbl-alphabet-vec-6column
 #+attr_latex: :align |ccl|ccl| :placement [H]
 |------+-----------+-------------+------+-----------+-------------|
 | key  | sym       | latex (vec) | key  | sym       | latex (hat) |
@@ -125,25 +125,25 @@
 | ~zv~ | $\vec{z}$ | ~\vec{z}~   | ~zh~ | $\hat{z}$ | ~\hat{z}~   |
 |------+-----------+-------------+------+-----------+-------------|
 
-* Function Expansion
+*  Function Expansion
 #+caption: Keys that will execute some elisp functions
-#+name: tbl-function-execution
-#+attr_latex: :align |ccl| :placement [H]
-|------+-----------------------+----------------------|
-| key  | trans                 | description          |
-|------+-----------------------+----------------------|
-| ~/~  | ~quail-TeQ-frac~      | fraction on previous |
-| ~eq~ | ~quail-TeQ-equation~  | equation environment |
-| ~al~ | ~quail-TeQ-aligned~   | aligned environment  |
-| ~el~ | ~quail-TeQ-endofline~ | end of line          |
-|------+-----------------------+----------------------|
+#+name: tbl-2-execute-function
+#+attr_latex: :align |llll| :placement [H]
+|------+-----------------------+---------------------+----------------------|
+| key  | trans                 | sym                 | description          |
+|------+-----------------------+---------------------+----------------------|
+| ~/~  | ~quail-TeQ-frac~      | $\frac{\Box}{\Box}$ | fraction on previous |
+| ~eq~ | ~quail-TeQ-equation~  |                     | equation environment |
+| ~al~ | ~quail-TeQ-aligned~   |                     | aligned environment  |
+| ~el~ | ~quail-TeQ-endofline~ |                     | end of line          |
+|------+-----------------------+---------------------+----------------------|
 
 
 
-* Symbols:
-** Dots related
+*  Symbols [0/5]:
+**  Dots related
 #+caption: Multiple Dots Related
-#+name: tbl-dots
+#+name: tbl-3-sym-dots
 #+attr_latex: :align |cclr| :placement [H]
 |-------+----------+----------+----------------|
 | key   | trans    | sym      | description    |
@@ -154,56 +154,57 @@
 | ~.l~  | ~\ldots~ | $\ldots$ | low dots       |
 |-------+----------+----------+----------------|
 
-** Geometry
+**  Geometry
 #+caption:  
-#+name: 
+#+name: tbl-3-sym-geo
 #+attr_latex: :align |lclr| :placement [H]
 |---------+------------------+------------------+-------------|
-| key     | sym              | trans            | description |
+| key     | trans            | sym              | description |
 |---------+------------------+------------------+-------------|
-| ~perp~  | $\perp$          | ~\perp~          |             |
-| ~perpn~ | $\not\perp$      | ~\perp~          |             |
-| ~para~  | $\parallel$      | ~\parallel~      |             |
-| ~paran~ | $\nparallel$     | ~\nparallel~     |             |
-| ~ang~   | $\angle$         | ~\angle~         |             |
-| ~ang.~  | $\measuredangle$ | ~\measuredangle~ |             |
+| ~perp~  | ~\perp~          | $\perp$          |             |
+| ~perpn~ | ~\perp~          | $\not\perp$      |             |
+| ~para~  | ~\parallel~      | $\parallel$      |             |
+| ~paran~ | ~\nparallel~     | $\nparallel$     |             |
+| ~ang~   | ~\angle~         | $\angle$         |             |
+| ~ang.~  | ~\measuredangle~ | $\measuredangle$ |             |
 |---------+------------------+------------------+-------------|
 
-** Letter like
+**  Letter like
 #+caption: Letter-like Symbold  
-#+name: tbl-letter-like-sym
+#+name: tbl-3-sym-letter
 #+attr_latex: :align |cclr| :placement [H]
 |-------+--------------+--------------+-------------|
-| key   | sym          | trans        | description |
+| key   | trans        | sym          | description |
 |-------+--------------+--------------+-------------|
-| ~inf~ | $\infty$     | ~\infty~     |             |
-| ~ex~  | $\exists$    | ~\exists~    |             |
-| ~ex.~ | $\nexists$   | ~\nexists~   |             |
-| ~fa~  | $\forall$    | ~\forall~    |             |
-| ~hb~  | $\hbar$      | ~\hbar~      |             |
-| ~hb.~ | $\hslash$    | ~\hslash~    |             |
-| ~dd~  | $\mathrm{d}$ | ~\mathrm{d}~ |             |
-| ~dd.~ | $\partial$   | ~\partial~   |             |
-| ~ii~  | $\imath$     | ~\imath~     |             |
-| ~jj~  | $\jmath$     | ~\jmath~     |             |
-| ~nab~ | $\nabla$     | ~\nabla~     |             |
-| ~cm~  | $\checkmark$ | ~\checkmark~ |             |
+| ~inf~ | ~\infty~     | $\infty$     |             |
+| ~ex~  | ~\exists~    | $\exists$    |             |
+| ~ex.~ | ~\nexists~   | $\nexists$   |             |
+| ~fa~  | ~\forall~    | $\forall$    |             |
+| ~hb~  | ~\hbar~      | $\hbar$      |             |
+| ~hb.~ | ~\hslash~    | $\hslash$    |             |
+| ~dd~  | ~\mathrm{d}~ | $\mathrm{d}$ |             |
+| ~dd.~ | ~\partial~   | $\partial$   |             |
+| ~ii~  | ~\imath~     | $\imath$     |             |
+| ~jj~  | ~\jmath~     | $\jmath$     |             |
+| ~nab~ | ~\nabla~     | $\nabla$     |             |
+| ~cm~  | ~\checkmark~ | $\checkmark$ |             |
 |-------+--------------+--------------+-------------|
 
-** Spaces
+**  Spaces
 #+caption: Space Symbold  
+#+name: tbl-3-sym-spc
 #+attr_latex: :align |cclr| :placement [H]
-|--------+-----------+-----------+-------------|
-| key    | sym       | trans     | description |
-|--------+-----------+-----------+-------------|
-| ~qu~   | $\quad$   | ~\quad~   |             |
-| ~quu~  | $\qquad$  | ~\qquad~  |             |
-|--------+-----------+-----------+-------------|
+|-------+----------+----------+-------------|
+| key   | trans    | sym      | description |
+|-------+----------+----------+-------------|
+| ~qu~  | ~\quad~  | $\quad$  |             |
+| ~quu~ | ~\qquad~ | $\qquad$ |             |
+|-------+----------+----------+-------------|
 
-** Arrows:
+**  Arrows:
 *** Single:
 #+caption: Single Line arrows
-#+name: tbl-1-line-arrow
+#+name: tbl-3-sym-arrow-1
 #+attr_latex: :align |llll| :placement [H]
 |------------+--------------------+--------------------+----------------------|
 | key        | trans              | sym                | description          |
@@ -227,7 +228,7 @@
 
 *** Double:
 #+caption: Double Line arrows
-#+name: tbl-2-line-arrow
+#+name: tbl-3-sym-arrow-2
 #+attr_latex: :align |llll| :placement [H]
 |--------+-----------------------+-----------------------+------------------|
 | key    | trans                 | sym                   | description      |
@@ -251,59 +252,59 @@
 
 *** Long arrow with top-bottom entries 
 #+caption: Long arrow Line arrows
-#+name: tbl-2-line-arrow
+#+name: tbl-3-sym-arrow-3
 #+attr_latex: :align |cclr| :placement [H]
-|--------+----------------------------+----------------------+--------------------------|
-| key    | sym                        | trans                | description              |
-|--------+----------------------------+----------------------+--------------------------|
-| ~<---~ | $\xleftarrow[\Box]{\Box}$  | ~\xleftarrow[ ]{ }~  |                          |
-| ~--->~ | $\xrightarrow[\Box]{\Box}$ | ~\xrightarrow[ ]{ }~ |                          |
-| ~===>~ | $\xRightarrow[\Box]{\Box}$ | ~\xRightarrow[ ]{ }~ | ~mathtools~ lib required |
-| ~<===~ | $\xLeftarrow[\Box]{\Box}$  | ~\xLeftarrow[ ]{ }~  | ~mathtools~ lib required |
-|--------+----------------------------+----------------------+--------------------------|
+|--------+----------------------+----------------------------+--------------------------|
+| key    | trans                | sym                        | description              |
+|--------+----------------------+----------------------------+--------------------------|
+| ~<---~ | ~\xleftarrow[ ]{ }~  | $\xleftarrow[\Box]{\Box}$  |                          |
+| ~--->~ | ~\xrightarrow[ ]{ }~ | $\xrightarrow[\Box]{\Box}$ |                          |
+| ~===>~ | ~\xRightarrow[ ]{ }~ | $\xRightarrow[\Box]{\Box}$ | ~mathtools~ lib required |
+| ~<===~ | ~\xLeftarrow[ ]{ }~  | $\xLeftarrow[\Box]{\Box}$  | ~mathtools~ lib required |
+|--------+----------------------+----------------------------+--------------------------|
 
 
-** Accents (variable decoration?)
+*  Symbol Modification
+**  Accents (variable decoration?)
 #+caption:  
-#+name: 
+#+name: tbl_4_sym_mod_1
 #+attr_latex: :align |lclr| :placement [H]
-|----------+----------------------+--------------+-------------------|
-| key      | sym                  | trans        | description       |
-|----------+----------------------+--------------+-------------------|
-| ~vec~    | $\vec{\Box}$         | ~\vec~       |                   |
-| ~bar~    | $\bar{\Box}$         | ~\bar~       |                   |
-| ~hat~    | $\hat{\Box}$         | ~\hat~       |                   |
-| ~dot~    | $\dot{\Box}$         | ~\dot~       |                   |
-| ~dot.~   | $\ddot{\Box}$        | ~\ddot~      |                   |
-| ~dot..~  | $\dddot{\Box}$       | ~\dddot~     |                   |
-| ~dot...~ | $\ddddot{\Box}$      | ~\ddddot~    |                   |
-| ~dag~    | $\Box^\dagger$       | ~^\dagger~   |                   |
-| ~dag.~   | $\Box^\ddagger$      | ~^\ddagger~  |                   |
-| ~*..~    | $\Box^*$             | ~^*~         |                   |
-| ~deg~    | $\Box^\circ$         | ~^\circ~     |                   |
-| ~tr~     | $\Box^T$             | ~^T~         |                   |
-| ~tr.~    | $\Box^{-T}$          | ~^{-T}~      |                   |
-|----------+----------------------+--------------+-------------------|
+|----------+-------------+-----------------+-------------|
+| key      | trans       | sym             | description |
+|----------+-------------+-----------------+-------------|
+| ~vec~    | ~\vec~      | $\vec{\Box}$    |             |
+| ~bar~    | ~\bar~      | $\bar{\Box}$    |             |
+| ~hat~    | ~\hat~      | $\hat{\Box}$    |             |
+| ~dot~    | ~\dot~      | $\dot{\Box}$    |             |
+| ~dot.~   | ~\ddot~     | $\ddot{\Box}$   |             |
+| ~dot..~  | ~\dddot~    | $\dddot{\Box}$  |             |
+| ~dot...~ | ~\ddddot~   | $\ddddot{\Box}$ |             |
+| ~dag~    | ~^\dagger~  | $\Box^\dagger$  |             |
+| ~dag.~   | ~^\ddagger~ | $\Box^\ddagger$ |             |
+| ~*..~    | ~^*~        | $\Box^*$        |             |
+| ~deg~    | ~^\circ~    | $\Box^\circ$    |             |
+| ~tr~     | ~^T~        | $\Box^T$        |             |
+| ~tr.~    | ~^{-T}~     | $\Box^{-T}$     |             |
+|----------+-------------+-----------------+-------------|
 
-
-* Binary Operation Symbols
-** Simple Arithmetics:
+*  Binary Operation Symbols [0/4]
+**  Simple Arithmetics:
 #+caption: Simple Arithmetics operations
-#+name: tbl-dots
-#+attr_latex: :align |ccl| :placement [H]
-|------+----------+----------|
-| key  | trans    | sym      |
-|------+----------+----------|
-| ~+-~ | ~\pm~    | $\pm$    |
-| ~-+~ | ~\mp~    | $\mp$    |
-| ~*x~ | ~\times~ | $\times$ |
-| ~::~ | ~\div~   | $\div$   |
-| ~**~ | ~\cdot~  | $\cdot$  |
-|------+----------+----------|
+#+name: tbl_5_op_arith
+#+attr_latex: :align |llll| :placement [H]
+|------+----------+----------+---|
+| key  | trans    | sym      |   |
+|------+----------+----------+---|
+| ~+-~ | ~\pm~    | $\pm$    |   |
+| ~-+~ | ~\mp~    | $\mp$    |   |
+| ~*x~ | ~\times~ | $\times$ |   |
+| ~::~ | ~\div~   | $\div$   |   |
+| ~**~ | ~\cdot~  | $\cdot$  |   |
+|------+----------+----------+---|
 
-** Binary Relations:
+**  Binary Relations:
 #+caption:  
-#+name: 
+#+name: tbl_5_op_bin
 #+attr_latex: :align |lclr| :placement [H]
 |-------+-------------------------------+-------------------------------+-------------|
 | key   | sym                           | trans                         | description |
@@ -343,9 +344,9 @@
 | ~>>y~ | $\stackrel{\checkmark}{\gg}$  | ~\stackrel{\checkmark}{\gg}~  |             |
 |-------+-------------------------------+-------------------------------+-------------|
 
-** Set symbols
+**  Set symbols
 #+caption:  
-#+name: 
+#+name: tbl_5_op_set
 #+attr_latex: :align |lclr| :placement [H]
 |---------+--------------+---------------+-------------|
 | key     | sym          | trans         | description |
@@ -374,9 +375,9 @@
 | ~supn=~ | $\nsupseteq$ | ~\nsupseteq~  |             |
 |---------+--------------+---------------+-------------|
 
-** Logic
+**  Logic
 #+caption:  
-#+name: 
+#+name: tbl_5_op_logic
 #+attr_latex: :align |lclr| :placement [H]
 |--------+----------------+----------------+-------------|
 | key    | sym            | trans          | description |
@@ -390,10 +391,10 @@
 |--------+----------------+----------------+-------------|
 
 
-* Functions
-** Function
+*  Functions
+**  Function
 #+caption:  
-#+name: 
+#+name: tbl_6_func
 #+attr_latex: :align |cclr| :placement [H]
 |---------+---------------------+-----------------+-------------|
 | key     | sym                 | trans           | description |
@@ -416,9 +417,9 @@
 | ~mod..~ | $\Box \bmod \Box$   | ~\bmod~         |             |
 |---------+---------------------+-----------------+-------------|
 
-** Trignometry: function
+**  Trignometry: function
 #+caption:  
-#+name: 
+#+name: tbl_6_func_trig_6col
 #+attr_latex: :align |ccl|ccl| :placement [H]
 |--------+-----------+-----------+--------+-----------+-----------|
 | key    | sym       | trans     | key    | sym       | trans     |
@@ -433,9 +434,9 @@
 | ~atan~ | $\arctan$ | ~\arctan~ | ~tan.~ | $\arctan$ | ~\arctan~ |
 |--------+-----------+-----------+--------+-----------+-----------|
 
-** Iterative-like operation:
+**  Iterative-like operation:
 #+caption: Integrals, Sums, Products
-#+name: tbl-int-sum-prods
+#+name: tbl_6_func_iter
 #+attr_latex: :align |cclr| :placement [H]
 |-----------+---------------------------------------+---------------------------------------+-------------|
 | key       | sym                                   | trans                                 | description |
@@ -462,9 +463,9 @@
 
 
 * Structural:
-** Parenthesis Related
+**  Parenthesis Related
 #+caption:  
-#+name: 
+#+name: tbl_7_parenthesis
 #+attr_latex: :align |lclr| :placement [H]
 |----------------+-------------------------------------------+----------------------------------+-------------|
 | key            | sym                                       | trans                            | description |
@@ -480,9 +481,9 @@
 | \vert\vert ~.~ | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~         |             |
 |----------------+-------------------------------------------+----------------------------------+-------------|
 
-** Texts:
+**  Texts:
 #+caption:  
-#+name: 
+#+name: tbl_7_text
 #+attr_latex: :align |lclr| :placement [H]
 |------+-----------------------+-------------+-------------|
 | key  | sym                   | trans       | description |
@@ -493,9 +494,9 @@
 | ~ti~ | $a + \mathit{mathit}$ | ~\mathit{}~ |             |
 |------+-----------------------+-------------+-------------|
 
-** Superscripts (power) & Subsripts (lower)
+**  Superscripts (power) & Subsripts (lower)
 #+caption:  
-#+name: 
+#+name: tbl_7_supsubscripts
 #+attr_latex: :align |lcl|lcl| :placement [H]
 |--------+----------------------------+----------------------+--------+---------------------------+---------------------|
 | key    | sym                        | trans                | key    | sym                       | trans               |
@@ -513,9 +514,9 @@
 | ~__..~ | $\underline{\Box}$         | ~\underline{ }~      | ~^^..~ | $\overline{\Box}$         | ~\overline{ }~      |
 |--------+----------------------------+----------------------+--------+---------------------------+---------------------|
 
-** Misc.
+**  Misc.
 #+caption:  
-#+name: 
+#+name: tbl_7_misc
 #+attr_latex: :align |lclr| :placement [H]
 |---------+----------------------+------------+-------------------|
 | key     | sym                  | trans      | description       |
@@ -527,9 +528,9 @@
 | ~=&~    |                      | ~&=\n\\\\~ |                   |
 |---------+----------------------+------------+-------------------|
 
-** xy Diagram related
+**  xy Diagram related
 #+caption:  
-#+name: 
+#+name: tbl_7_xy
 #+attr_latex: :align |lclr| :placement [H]
 |------+-----------+-------------------+-------------|
 | key  | sym       | trans             | description |
@@ -538,6 +539,396 @@
 | ~bu~ | $\bullet$ | ~\bullet~         |             |
 | ~ar~ |           | ~\ar~             |             |
 |------+-----------+-------------------+-------------|
+
+
+
+
+* Formatting Table into Elisp
+  :PROPERTIES:
+  :header-args:  :var tbl_1_greek=tbl-alphabet-greek-6column tbl_1_matrix=tbl-alphabet-matrix-6column tbl_1_vec=tbl-alphabet-vec-6column tbl2_exec_func=tbl-2-execute-function tbl_3_sym_dots=tbl-3-sym-dots tbl_3_sym_geo=tbl-3-sym-geo tbl_3_sym_letter=tbl-3-sym-letter tbl_3_sym_spc=tbl-3-sym-spc tbl_3_sym_arrow_1=tbl-3-sym-arrow-1 tbl_3_sym_arrow_2=tbl-3-sym-arrow-2 tbl_3_sym_arrow_3=tbl-3-sym-arrow-3 tbl_4_sym_mod_1=tbl_4_sym_mod_1 tbl_5_op_arith=tbl_5_op_arith tbl_5_op_bin=tbl_5_op_bin tbl_5_op_set=tbl_5_op_set tbl_5_op_logic=tbl_5_op_logic tbl_6_func=tbl_6_func tbl_6_func_trig_6col=tbl_6_func_trig_6col tbl_6_func_iter=tbl_6_func_iter tbl_7_parenthesis=tbl_7_parenthesis tbl_7_text=tbl_7_text tbl_7_supsubscripts=tbl_7_supsubscripts tbl_7_misc=tbl_7_misc tbl_7_xy=tbl_7_xy
+  :END:
+
+#+BEGIN_SRC python  :hlines no :results output code :wrap SRC elisp :results_switches ":tangle /tmp/tmp.el :noweb yes" :exports both
+def format_table_to_elisp_type6col(headcomment, table):
+    print(f";; {headcomment}")
+    table = table[1:]
+    for line in table:
+        key, sym, trans, key1, sym, trans1 = line
+        key   = repr(key).replace("\'", "\"").replace("~", "")
+        key1   = repr(key).replace("\'", "\"").replace("~", "")
+        trans = repr(trans).replace("\'", "\"").replace("~", "")
+        trans1 = repr(trans).replace("\'", "\"").replace("~", "")
+        
+        print(f"({key:<7}  [{trans:<17}])  ({key:<7}  [{trans:<17}])")
+
+def format_table_to_elisp_type3col_type1(headcomment, table):
+    print(f";; {headcomment}")
+    table = table[1:]
+    for line in table:
+        key, trans, sym, description = line
+        key   = repr(key).replace("\'", "\"").replace("~", "")
+        trans = repr(trans).replace("\'", "\"").replace("~", "")
+        
+        print(f"({key:<8}  {trans:<22})  ; {description}")
+
+def format_table_to_elisp_type3col_type2(headcomment, table):
+    print(f";; {headcomment}")
+    table = table[1:]
+    for line in table:
+        key, trans, sym, description = line
+        key   = repr(key).replace("\'", "\"").replace("~", "")
+        trans = repr(trans).replace("\'", "\"").replace("~", "")
+        
+        print(f"({key:<8}  {trans:<22})  ; {description}")
+
+format_table_to_elisp_type6col("Greek", tbl_1_greek)
+format_table_to_elisp_type6col("Matrix", tbl_1_matrix)
+format_table_to_elisp_type6col("Vector & Hat", tbl_1_vec)
+
+format_table_to_elisp_type3col_type2("Expanding Func", tbl2_exec_func)
+
+format_table_to_elisp_type3col_type1("Symbols-dots", tbl_3_sym_dots)
+format_table_to_elisp_type3col_type1("Symbols-geo", tbl_3_sym_geo)
+format_table_to_elisp_type3col_type1("Symbols", tbl_3_sym_letter)
+format_table_to_elisp_type3col_type1("Symbols spaces", tbl_3_sym_spc)
+format_table_to_elisp_type3col_type1("Symbols arrow1", tbl_3_sym_arrow_1)
+format_table_to_elisp_type3col_type1("Symbols arrow2", tbl_3_sym_arrow_2)
+format_table_to_elisp_type3col_type1("Symbols arrow3", tbl_3_sym_arrow_3)
+
+format_table_to_elisp_type3col_type1("Symbols arrow3", tbl_4_sym_mod_1)
+
+format_table_to_elisp_type3col_type1("Operation: arith", tbl_5_op_arith)
+format_table_to_elisp_type3col_type1("Operation: arith", tbl_5_op_bin)
+format_table_to_elisp_type3col_type1("Operation: arith", tbl_5_op_set)
+format_table_to_elisp_type3col_type1("Operation: arith", tbl_5_op_logic)
+
+format_table_to_elisp_type3col_type1("Func: main", tbl_6_func)
+format_table_to_elisp_type6col("Func: Trig", tbl_6_func_trig_6col)
+format_table_to_elisp_type3col_type1("Func: iter", tbl_6_func_iter)
+
+format_table_to_elisp_type3col_type1("Structural: Parenthesis",  tbl_7_parenthesis)
+format_table_to_elisp_type3col_type1("Structural: Text",  tbl_7_text)
+format_table_to_elisp_type3col_type1("Structural: Text",  tbl_7_text)
+format_table_to_elisp_type6col("Structural: Sub-sup-scripts",  tbl_7_supsubscripts)
+format_table_to_elisp_type3col_type1("Structural: misc",  tbl_7_misc)
+format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
+#+END_SRC
+
+#+RESULTS:
+#+begin_SRC elisp
+;; Greek
+("a."     ["\\alpha"        ])  ("a."     ["\\alpha"        ])
+("b."     ["\\beta"         ])  ("b."     ["\\beta"         ])
+("c."     ["\\psi"          ])  ("c."     ["\\psi"          ])
+("d."     ["\\delta"        ])  ("d."     ["\\delta"        ])
+("e."     ["\\epsilon"      ])  ("e."     ["\\epsilon"      ])
+("f."     ["\\phi"          ])  ("f."     ["\\phi"          ])
+("g."     ["\\gamma"        ])  ("g."     ["\\gamma"        ])
+("h."     ["\\eta"          ])  ("h."     ["\\eta"          ])
+("i."     ["\\iota"         ])  ("i."     ["\\iota"         ])
+("j."     ["\\xi"           ])  ("j."     ["\\xi"           ])
+("k."     ["\\kappa"        ])  ("k."     ["\\kappa"        ])
+("l."     ["\\lambda"       ])  ("l."     ["\\lambda"       ])
+("m."     ["\\mu"           ])  ("m."     ["\\mu"           ])
+("n."     ["\\nu"           ])  ("n."     ["\\nu"           ])
+("o."     ["o"              ])  ("o."     ["o"              ])
+("p."     ["\\pi"           ])  ("p."     ["\\pi"           ])
+("r."     ["\\rho"          ])  ("r."     ["\\rho"          ])
+("s."     ["\\sigma"        ])  ("s."     ["\\sigma"        ])
+("t."     ["\\tau"          ])  ("t."     ["\\tau"          ])
+("th."    ["\\theta"        ])  ("th."    ["\\theta"        ])
+("u."     ["\\upsilon"      ])  ("u."     ["\\upsilon"      ])
+("w."     ["\\omega"        ])  ("w."     ["\\omega"        ])
+("x."     ["\\chi"          ])  ("x."     ["\\chi"          ])
+("z."     ["\\zeta"         ])  ("z."     ["\\zeta"         ])
+;; Matrix
+("Am"     ["\\mathbf{A}"    ])  ("Am"     ["\\mathbf{A}"    ])
+("Bm"     ["\\mathbf{B}"    ])  ("Bm"     ["\\mathbf{B}"    ])
+("Cm"     ["\\mathbf{C}"    ])  ("Cm"     ["\\mathbf{C}"    ])
+("Dm"     ["\\mathbf{D}"    ])  ("Dm"     ["\\mathbf{D}"    ])
+("Em"     ["\\mathbf{E}"    ])  ("Em"     ["\\mathbf{E}"    ])
+("Fm"     ["\\mathbf{F}"    ])  ("Fm"     ["\\mathbf{F}"    ])
+("Gm"     ["\\mathbf{G}"    ])  ("Gm"     ["\\mathbf{G}"    ])
+("Hm"     ["\\mathbf{H}"    ])  ("Hm"     ["\\mathbf{H}"    ])
+("Im"     ["\\mathbf{I}"    ])  ("Im"     ["\\mathbf{I}"    ])
+("Jm"     ["\\mathbf{J}"    ])  ("Jm"     ["\\mathbf{J}"    ])
+("Km"     ["\\mathbf{K}"    ])  ("Km"     ["\\mathbf{K}"    ])
+("Lm"     ["\\mathbf{L}"    ])  ("Lm"     ["\\mathbf{L}"    ])
+("Mm"     ["\\mathbf{M}"    ])  ("Mm"     ["\\mathbf{M}"    ])
+("Nm"     ["\\mathbf{N}"    ])  ("Nm"     ["\\mathbf{N}"    ])
+("Om"     ["\\mathbf{O}"    ])  ("Om"     ["\\mathbf{O}"    ])
+("Pm"     ["\\mathbf{P}"    ])  ("Pm"     ["\\mathbf{P}"    ])
+("Qm"     ["\\mathbf{Q}"    ])  ("Qm"     ["\\mathbf{Q}"    ])
+("Rm"     ["\\mathbf{R}"    ])  ("Rm"     ["\\mathbf{R}"    ])
+("Sm"     ["\\mathbf{S}"    ])  ("Sm"     ["\\mathbf{S}"    ])
+("Tm"     ["\\mathbf{T}"    ])  ("Tm"     ["\\mathbf{T}"    ])
+("Um"     ["\\mathbf{U}"    ])  ("Um"     ["\\mathbf{U}"    ])
+("Vm"     ["\\mathbf{V}"    ])  ("Vm"     ["\\mathbf{V}"    ])
+("Wm"     ["\\mathbf{W}"    ])  ("Wm"     ["\\mathbf{W}"    ])
+("Xm"     ["\\mathbf{X}"    ])  ("Xm"     ["\\mathbf{X}"    ])
+("Ym"     ["\\mathbf{Y}"    ])  ("Ym"     ["\\mathbf{Y}"    ])
+("Zm"     ["\\mathbf{Z}"    ])  ("Zm"     ["\\mathbf{Z}"    ])
+;; Vector & Hat
+("av"     ["\\vec{a}"       ])  ("av"     ["\\vec{a}"       ])
+("bv"     ["\\vec{b}"       ])  ("bv"     ["\\vec{b}"       ])
+("cv"     ["\\vec{c}"       ])  ("cv"     ["\\vec{c}"       ])
+("dv"     ["\\vec{d}"       ])  ("dv"     ["\\vec{d}"       ])
+("ev"     ["\\vec{e}"       ])  ("ev"     ["\\vec{e}"       ])
+("fv"     ["\\vec{f}"       ])  ("fv"     ["\\vec{f}"       ])
+("gv"     ["\\vec{g}"       ])  ("gv"     ["\\vec{g}"       ])
+("hv"     ["\\vec{h}"       ])  ("hv"     ["\\vec{h}"       ])
+("iv"     ["\\vec{i}"       ])  ("iv"     ["\\vec{i}"       ])
+("jv"     ["\\vec{j}"       ])  ("jv"     ["\\vec{j}"       ])
+("kv"     ["\\vec{k}"       ])  ("kv"     ["\\vec{k}"       ])
+("lv"     ["\\vec{l}"       ])  ("lv"     ["\\vec{l}"       ])
+("mv"     ["\\vec{m}"       ])  ("mv"     ["\\vec{m}"       ])
+("nv"     ["\\vec{n}"       ])  ("nv"     ["\\vec{n}"       ])
+("ov"     ["\\vec{o}"       ])  ("ov"     ["\\vec{o}"       ])
+("pv"     ["\\vec{p}"       ])  ("pv"     ["\\vec{p}"       ])
+("qv"     ["\\vec{q}"       ])  ("qv"     ["\\vec{q}"       ])
+("rv"     ["\\vec{r}"       ])  ("rv"     ["\\vec{r}"       ])
+("sv"     ["\\vec{s}"       ])  ("sv"     ["\\vec{s}"       ])
+("tv"     ["\\vec{t}"       ])  ("tv"     ["\\vec{t}"       ])
+("uv"     ["\\vec{u}"       ])  ("uv"     ["\\vec{u}"       ])
+("vv"     ["\\vec{v}"       ])  ("vv"     ["\\vec{v}"       ])
+("wv"     ["\\vec{w}"       ])  ("wv"     ["\\vec{w}"       ])
+("xv"     ["\\vec{x}"       ])  ("xv"     ["\\vec{x}"       ])
+("yv"     ["\\vec{y}"       ])  ("yv"     ["\\vec{y}"       ])
+("zv"     ["\\vec{z}"       ])  ("zv"     ["\\vec{z}"       ])
+;; Expanding Func
+("/"       "quail-TeQ-frac"      )  ; fraction on previous
+("eq"      "quail-TeQ-equation"  )  ; equation environment
+("al"      "quail-TeQ-aligned"   )  ; aligned environment
+("el"      "quail-TeQ-endofline" )  ; end of line
+;; Symbols-dots
+("..."     "\\dots"              )  ; 3 dots
+(".v"      "\\vdots"             )  ; vertical dots
+(".d"      "\\ddots"             )  ; diagonale dots
+(".l"      "\\ldots"             )  ; low dots
+;; Symbols-geo
+("perp"    "\\perp"              )  ; 
+("perpn"   "\\perp"              )  ; 
+("para"    "\\parallel"          )  ; 
+("paran"   "\\nparallel"         )  ; 
+("ang"     "\\angle"             )  ; 
+("ang."    "\\measuredangle"     )  ; 
+;; Symbols
+("inf"     "\\infty"             )  ; 
+("ex"      "\\exists"            )  ; 
+("ex."     "\\nexists"           )  ; 
+("fa"      "\\forall"            )  ; 
+("hb"      "\\hbar"              )  ; 
+("hb."     "\\hslash"            )  ; 
+("dd"      "\\mathrm{d}"         )  ; 
+("dd."     "\\partial"           )  ; 
+("ii"      "\\imath"             )  ; 
+("jj"      "\\jmath"             )  ; 
+("nab"     "\\nabla"             )  ; 
+("cm"      "\\checkmark"         )  ; 
+;; Symbols spaces
+("qu"      "\\quad"              )  ; 
+("quu"     "\\qquad"             )  ; 
+;; Symbols arrow1
+("<-"      "\\leftarrow"         )  ; left arrow
+("->"      "\\rightarrow"        )  ; right arrow
+("-^"      "\\uparrow"           )  ; up arrow
+("-v"      "\\downarrow"         )  ; down arrow
+("<->"     "\\leftrightarrow"    )  ; left-right arrow
+("<-n"     "\\nleftarrow"        )  ; not left arrow
+("->n"     "\\nrightarrow"       )  ; not right arrow
+("-^n"     "\\nuparrow"          )  ; not up arrow
+("-vn"     "\\ndownarrow"        )  ; not down arrow
+("<->"     "\\nleftrightarrow"   )  ; not left-right arrow
+("-->"     "\\longrightarrow"    )  ; 
+("<--"     "\\longleftarrow"     )  ; 
+("\\vert ->"  "\\mapsto"            )  ; 
+;; Symbols arrow2
+("<="      "\\Leftarrow"         )  ; left arrow
+("=>"      "\\Rightarrow"        )  ; right arrow
+("=^"      "\\Uparrow"           )  ; up arrow
+("=v"      "\\Downarrow"         )  ; down arrow
+("<=>"     "\\Leftrightarrow"    )  ; left-right arrow
+("iff"     "\\Leftrightarrow"    )  ; left-right arrow
+("<=n"     "\\nLeftarrow"        )  ; left arrow
+("=>n"     "\\nRightarrow"       )  ; right arrow
+("<=>n"    "\\nLeftrightarrow"   )  ; left-right arrow
+("iffn"    "\\nLeftrightarrow"   )  ; left-right arrow
+("<==>"    "\\Longleftrightarrow")  ; left-right arrow
+("<=="     "\\Longleftarrow"     )  ; left-right arrow
+("==>"     "\\Longrightarrow"    )  ; left-right arrow
+;; Symbols arrow3
+("<---"    "\\xleftarrow[ ]{ }"  )  ; 
+("--->"    "\\xrightarrow[ ]{ }" )  ; 
+("===>"    "\\xRightarrow[ ]{ }" )  ; ~mathtools~ lib required
+("<==="    "\\xLeftarrow[ ]{ }"  )  ; ~mathtools~ lib required
+;; Symbols arrow3
+("vec"     "\\vec"               )  ; 
+("bar"     "\\bar"               )  ; 
+("hat"     "\\hat"               )  ; 
+("dot"     "\\dot"               )  ; 
+("dot."    "\\ddot"              )  ; 
+("dot.."   "\\dddot"             )  ; 
+("dot..."  "\\ddddot"            )  ; 
+("dag"     "^\\dagger"           )  ; 
+("dag."    "^\\ddagger"          )  ; 
+("*.."     "^*"                  )  ; 
+("deg"     "^\\circ"             )  ; 
+("tr"      "^T"                  )  ; 
+("tr."     "^{-T}"               )  ; 
+;; Operation: arith
+("+-"      "\\pm"                )  ; 
+("-+"      "\\mp"                )  ; 
+("*x"      "\\times"             )  ; 
+("::"      "\\div"               )  ; 
+("**"      "\\cdot"              )  ; 
+;; Operation: arith
+("=n"      "$\\neq$"             )  ; 
+("=."      "$\\equiv$"           )  ; 
+("=?"      "$\\stackrel{?}{=}$"  )  ; 
+("=y"      "$\\stackrel{\\checkmark}{=}$")  ; 
+("3="      "$\\equiv$"           )  ; 
+("=:"      "$\\coloneqq$"        )  ; 
+(":="      "$\\coloneqq$"        )  ; 
+("=.="     "$\\sim$"             )  ; 
+("=n="     "$\\nsim$"            )  ; 
+(""        "$\\approx$"          )  ; 
+("<n"      "$\\nless$"           )  ; 
+("<."      "$\\leq$"             )  ; 
+("<.n"     "$\\nleq$"            )  ; 
+("<?"      "$\\stackrel{?}{<}$"  )  ; 
+("<y"      "$\\stackrel{\\checkmark}{<}$")  ; 
+("<.?"     "$\\stackrel{?}{\\leq}$")  ; 
+("<.y"     "$\\stackrel{\\checkmark}{\\leq}$")  ; 
+("<<"      "$\\ll$"              )  ; 
+("<<?"     "$\\stackrel{?}{\\ll}$")  ; 
+("<<y"     "$\\stackrel{\\checkmark}{\\ll}$")  ; 
+(">n"      "$\\ngtr$"            )  ; 
+(">."      "$\\geq$"             )  ; 
+(">.n"     "$\\ngeq$"            )  ; 
+(">?"      "$\\stackrel{?}{>}$"  )  ; 
+(">y"      "$\\stackrel{\\checkmark}{>}$")  ; 
+(">.?"     "$\\stackrel{?}{\\geq}$")  ; 
+(">.y"     "$\\stackrel{\\checkmark}{\\geq}$")  ; 
+(">>"      "$\\gg$"              )  ; 
+(">>?"     "$\\stackrel{?}{\\gg}$")  ; 
+(">>y"     "$\\stackrel{\\checkmark}{\\gg}$")  ; 
+;; Operation: arith
+("in"      "$\\in$"              )  ; 
+("in."     "$\\ni$"              )  ; 
+("ni"      "$\\ni$"              )  ; 
+("inn"     "$\\notin$"           )  ; 
+("0/"      "$\\emptyset$"        )  ; 
+("nsr"     "$\\mathbb{R}$"       )  ; 
+("nsc"     "$\\mathbb{C}$"       )  ; 
+("nsn"     "$\\mathbb{N}$"       )  ; 
+("nsp"     "$\\mathbb{P}$"       )  ; 
+("nsz"     "$\\mathbb{Z}$"       )  ; 
+("nsi"     "$\\mathbb{I}$"       )  ; 
+("sub"     "$\\subset$"          )  ; 
+("subn"    "$\\nsubseteq$"       )  ; 
+("sub="    "$\\subseteq$"        )  ; 
+("sub=n"   "$\\nsubseteq$"       )  ; 
+("subn="   "$\\nsubseteq$"       )  ; 
+("sup"     "$\\supset$"          )  ; 
+("supn"    "$\\nsupseteq$"       )  ; 
+("sup="    "$\\supseteq$"        )  ; 
+("sup=n"   "$\\nsupseteq$"       )  ; 
+("supn="   "$\\nsupseteq$"       )  ; 
+;; Operation: arith
+("or"      "$\\lor$"             )  ; 
+("and"     "$\\land$"            )  ; 
+("not"     "$\\neg$"             )  ; 
+("or."     "$\\text{ or }$"      )  ; 
+("and."    "$\\text{ and }$"     )  ; 
+("not."    "$\\text{ not }$"     )  ; 
+;; Func: main
+("rank"    "$\\mathrm{rank}$"    )  ; 
+("arg"     "$\\arg$"             )  ; 
+("det"     "$\\det$"             )  ; 
+("dim"     "$\\dim$"             )  ; 
+("exp"     "$\\exp$"             )  ; 
+("Im"      "$\\mathrm{Im}$"      )  ; 
+("Re"      "$\\mathrm{Re}$"      )  ; 
+("ln"      "$\\ln$"              )  ; 
+("log"     "$\\log$"             )  ; 
+("max"     "$\\max$"             )  ; 
+("min"     "$\\min$"             )  ; 
+("dim"     "$\\dim$"             )  ; 
+("sqrt"    "$\\sqrt[\\Box]{\\Box}$")  ; 
+("mod"     "$\\Box \\pmod \\Box$")  ; 
+("mod."    "$\\Box \\mod \\Box$" )  ; 
+("mod.."   "$\\Box \\bmod \\Box$")  ; 
+;; Func: Trig
+("cos"    ["\\cos"          ])  ("cos"    ["\\cos"          ])
+("sin"    ["\\sin"          ])  ("sin"    ["\\sin"          ])
+("tan"    ["\\tan"          ])  ("tan"    ["\\tan"          ])
+("cot"    ["\\cot"          ])  ("cot"    ["\\cot"          ])
+("acos"   ["\\arccos"       ])  ("acos"   ["\\arccos"       ])
+("asin"   ["\\arcsin"       ])  ("asin"   ["\\arcsin"       ])
+("atan"   ["\\arctan"       ])  ("atan"   ["\\arctan"       ])
+;; Func: iter
+("il"      "$\\sum\\limits_{ here }^{here}$")  ; 
+("lim"     "$\\lim$"             )  ; 
+("sum"     "$\\sum$"             )  ; 
+("prod"    "$\\prod$"            )  ; 
+("int"     "$\\int$"             )  ; 
+("inti"    "$\\iint$"            )  ; 
+("intii"   "$\\iiint$"           )  ; 
+("intiii"  "$\\iiiint$"          )  ; 
+("into"    "$\\oint$"            )  ; 
+("sum."    "$\\sum\\limits_{ i=1 }^{ n }$")  ; 
+("prod."   "$\\prod\\limits_{ i=1 }^{ n }$")  ; 
+("int."    "$\\int\\limits_{ -\\infty }^{ -\\infty }$")  ; 
+("inti."   "$\\iint\\limits_{ C }$")  ; 
+("intii."  "$\\iiint\\limits_{ C }$")  ; 
+("intiii."  "$\\iiiint\\limits_{ C }$")  ; 
+("into."   "$\\oint\\limits_{ C }$")  ; 
+;; Structural: Parenthesis
+("()."     "$\\left( \\Box \\right)$")  ; 
+("().."    "$\\left( \\Box \\middle\\vert \\Box \\right)$")  ; 
+("[]."     "$\\left[ \\Box \\right]$")  ; 
+("[].."    "$\\left[ \\Box \\middle\\vert \\Box \\right]$")  ; 
+("[].c"    "$\\lceil \\Box \\rceil$")  ; 
+("[].f"    "$\\lfloor \\Box \\rfloor$")  ; 
+("{}."     "$\\left\\{ \\Box \\right\\}$")  ; 
+("{}.."    "$\\left\\{ \\Box \\middle\\vert \\Box \\right\\}$")  ; 
+("\\vert\\vert ."  "$\\left\\vert \\Box \\right\\vert$")  ; 
+;; Structural: Text
+("te"      "$a + \\text{text}$"  )  ; 
+("tr"      "$a + \\mathrm{mathrm}$")  ; 
+("tb"      "$a + \\mathbf{mathbf}$")  ; 
+("ti"      "$a + \\mathit{mathit}$")  ; 
+;; Structural: Text
+("te"      "$a + \\text{text}$"  )  ; 
+("tr"      "$a + \\mathrm{mathrm}$")  ; 
+("tb"      "$a + \\mathbf{mathbf}$")  ; 
+("ti"      "$a + \\mathit{mathit}$")  ; 
+;; Structural: Sub-sup-scripts
+("pp"     ["^{"             ])  ("pp"     ["^{"             ])
+("p0"     ["^0"             ])  ("p0"     ["^0"             ])
+("p1"     ["^1"             ])  ("p1"     ["^1"             ])
+("p2"     ["^2"             ])  ("p2"     ["^2"             ])
+("p3"     ["^3"             ])  ("p3"     ["^3"             ])
+("p4"     ["^4"             ])  ("p4"     ["^4"             ])
+("pn"     ["^n"             ])  ("pn"     ["^n"             ])
+("px"     ["^x"             ])  ("px"     ["^x"             ])
+("__"     ["\\underset{ }{ }"])  ("__"     ["\\underset{ }{ }"])
+("__."    ["\\underbrace{ }_{ }"])  ("__."    ["\\underbrace{ }_{ }"])
+("__.."   ["\\underline{ }" ])  ("__.."   ["\\underline{ }" ])
+;; Structural: misc
+("binom"   "$\\binom{\\Box}{\\Box}$")  ; 
+("box"     "$\\boxed{\\Box}$"    )  ; 
+("can"     "$\\cancel{\\Box}$"   )  ; requires ~cancel~
+("&="      ""                    )  ; 
+("=&"      ""                    )  ; 
+;; Structural: xy
+("xy"      ""                    )  ; 
+("bu"      "$\\bullet$"          )  ; 
+("ar"      ""                    )  ; 
+#+end_SRC
+
+
+
 
 
 * COMMENT Matrix env
