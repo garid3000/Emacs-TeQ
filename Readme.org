@@ -670,6 +670,7 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("Xm"     ["\\mathbf{X}"    ])  ("xm"     ["\\mathbf{x}"    ])
 ("Ym"     ["\\mathbf{Y}"    ])  ("ym"     ["\\mathbf{y}"    ])
 ("Zm"     ["\\mathbf{Z}"    ])  ("zm"     ["\\mathbf{z}"    ])
+("Om"     ["\\mathbf{0}"    ])  ("0m"     ["\\mathbf{0}"    ])
 ;; Vector & Hat
 ("av"     ["\\vec{a}"       ])  ("ah"     ["\\hat{a}"       ])
 ("bv"     ["\\vec{b}"       ])  ("bh"     ["\\hat{b}"       ])
@@ -698,10 +699,10 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("yv"     ["\\vec{y}"       ])  ("yh"     ["\\hat{y}"       ])
 ("zv"     ["\\vec{z}"       ])  ("zh"     ["\\hat{z}"       ])
 ;; Expanding Func
-("/"       "quail-TeQ-frac"      )  ; fraction on previous
-("eq"      "quail-TeQ-equation"  )  ; equation environment
-("al"      "quail-TeQ-aligned"   )  ; aligned environment
-("el"      "quail-TeQ-endofline" )  ; end of line
+("/"       quail-TeQ-frac        )  ; fraction on previous
+("eq"      quail-TeQ-equation    )  ; equation environment
+("al"      quail-TeQ-aligned     )  ; aligned environment
+("el"      quail-TeQ-endofline   )  ; end of line
 ;; Symbols-dots
 ("..."     ["\\dots"              ])  ; 3 dots
 (".v"      ["\\vdots"             ])  ; vertical dots
@@ -935,6 +936,9 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 #+begin_src elisp :tangle /tmp/final.el :noweb yes
 (require 'quail)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+<<quail-executions>>
 
 (quail-define-package
  "TeQ-Math" "Emacs-Teq-Latex"  "TeQ-" t
