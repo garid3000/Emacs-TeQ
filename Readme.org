@@ -3,6 +3,7 @@
 #+author:   Garid Zorigoo
 #+auto_tangle: nil
 #+LATEX_HEADER: \usepackage{mathtools}
+#+LATEX_HEADER: \usepackage{cancel}
 
 * Alphabet related stuff
 ** Greek
