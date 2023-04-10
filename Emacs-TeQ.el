@@ -29,7 +29,6 @@
   (insert "\\begin{aligned}\n\n\\end{aligned}")
   (previous-line)
   (quail-func-end))
-  )
 
 (defun quail-TeQ-frac (key idx)
   (quail-func-init)
@@ -195,12 +194,13 @@
  ("<==="        ["\\Longleftarrow "])
  ("===>"        ["\\Longrightarrow "])
 
- ("<---"        ["\\xleftarrow "])
- ("--->"        ["\\xrightarrow "])
+ ("<---"        ["\\xleftarrow "])       ;;
+ ("--->"        ["\\xrightarrow "])      ;;
 
- ("binom"       ["\\binom{ }{ } "])
- ("box"         ["\\box{ } "])
+ ("binom"       ["\\binom{ }{ } "])     ;;
+ ("box"         ["\\box{ } "])          ;;
 
+ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
  ("case" ["\\begin{cases}\n\\end{cases}"])
  ("dag"  ["^\\dag"])
  ("deg"  ["^\\circ"])
@@ -217,7 +217,6 @@
  ("il" ["\\limits_{ }^{ }"]) ;; probbably not used much
  ("im" ["\\( \\)"])
  ("imm" ["\\[ \\]"])
-
  ("lim"  ["\\lim\\limits_{ }"])
  ("int"  ["\\int\\limits_{ }^{ }"])
  ("intn" ["\\int"])
@@ -229,10 +228,12 @@
  ("inf"  ["\\infty"])
  ("ex" ["\\exists"])
  ("exn" ["\\nexists"]) ("nex" ["\\nexists"])
+
  ("fa" ["\\forall"])
  ("hb" ["\\hbar"])
  ("par" ["\\partial"])
  ("sim" ["\\sim"])
+
 
 
  ("mat"  ["\\begin{matrix}\n\n\\end{matrix}"])
