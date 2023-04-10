@@ -502,6 +502,41 @@
 | ~ar~ |           | ~\ar~             |             |
 |------+-----------+-------------------+-------------|
 
+* Tmp symbols
+#+caption:  
+#+name: 
+#+attr_latex: :align |lclr| :placement [H]
+|----------+----------------------+--------------+-------------------|
+| key      | sym                  | trans        | description       |
+|          |                      |              |                   |
+|----------+----------------------+--------------+-------------------|
+| ~vec~    | $\vec{\Box}$         | ~\vec~       |                   |
+| ~bar~    | $\bar{\Box}$         | ~\bar~       |                   |
+| ~hat~    | $\hat{\Box}$         | ~\hat~       |                   |
+| ~dot~    | $\dot{\Box}$         | ~\dot~       |                   |
+| ~dot.~   | $\ddot{\Box}$        | ~\ddot~      |                   |
+| ~dot..~  | $\dddot{\Box}$       | ~\dddot~     |                   |
+| ~dot...~ | $\ddddot{\Box}$      | ~\ddddot~    |                   |
+| ~dag~    | $\Box^\dagger$       | ~^\dagger~   |                   |
+| ~dag.~   | $\Box^\ddagger$      | ~^\ddagger~  |                   |
+| ~*..~    | $\Box^*$             | ~^*~         |                   |
+| ~deg~    | $\Box^\circ$         | ~^\circ~     |                   |
+| ~tr~     | $\Box^T$             | ~^T~         |                   |
+| ~tr.~    | $\Box^{-T}$          | ~^{-T}~      |                   |
+| ~binom~  | $\binom{\Box}{\Box}$ | ~\binom~     |                   |
+| ~box~    | $\boxed{\Box}$       | ~\boxed~     |                   |
+| ~can~    | $\cancel{\Box}$      | ~\cancel~    | requires ~cancel~ |
+| ~nab~    | $\nabla$             | ~\nabla~     |                   |
+| ~mod~    | $\Box \pmod \Box$    | ~\pmod~      |                   |
+| ~mod.~   | $\Box \mod \Box$     | ~\mod~       |                   |
+| ~mod..~  | $\Box \bmod \Box$    | ~\bmod~      |                   |
+| ~dim~    | $\dim$               | ~\dim~       |                   |
+| ~cm~     | $\checkmark$         | ~\checkmark~ |                   |
+| ~sqrt~   | $\sqrt[\Box]{\Box}$  | ~\sqrt~      |                   |
+| ~&=~     |                      | ~&=\n\\\\~   |                   |
+| ~=&~     |                      | ~&=\n\\\\~   |                   |
+|----------+----------------------+--------------+-------------------|
+
 
 
 * Matrix env
@@ -511,29 +546,11 @@
  ("matv" ["\\begin{vmatrix}\n\n\\end{vmatrix}"])
  ("matp" ["\\begin{pmatrix}\n\n\\end{pmatrix}"])
 #+end_src
+
 * COMMENT Tmp
-| ~ve~    | ~\vec~         |              |
-| ~&=~    | ~["&=\n\\\\"]~ | alignment    |
-| ~=&~    | ~["&=\n\\\\"]~ | -            |
-| ~binom~ | ~\binom~       | $\binom{}{}$ |
-| ~box~   | ~\box~         | $\box{a}$    |
- ("im" ["\\( \\)"])
- ("imm" ["\\[ \\]"])
-
  ("case" ["\\begin{cases}\n\\end{cases}"])
- ("dag"  ["^\\dag"])
- ("deg"  ["^\\circ"])
  ("env"  ["\\begin{ }\n\\end{ }"])
-
  ("ff"     ["\\frac{"])
- ("bar"    ["\\bar{"])
- ("ddot"   ["\\ddot{"])
- ("dot"    ["\\dot{"])
- ("hat"    ["\\hat{"])
-
- ("nab" ["\\nabla"])
- ("can" ["\\cancel{}"])
- ("mod" ["\\mod"])
  ("sqrt" ["\\sqrt {}"])
 
 
