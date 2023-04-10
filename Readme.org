@@ -340,24 +340,31 @@
 ** Single:
 #+caption: Single Line arrows
 #+name: tbl-1-line-arrow
-#+attr_latex: :align |cclr| :placement [H]
-|------------+-------------------+-------------------+-----------------------------|
-| key        | trans             | sym               | description                 |
-|------------+-------------------+-------------------+-----------------------------|
-| ~<-~       | ~\leftarrow~      | $\leftarrow$      | left arrow                  |
-| ~->~       | ~\rightarrow~     | $\rightarrow$     | right arrow                 |
-| ~-^~       | ~\uparrow~        | $\uparrow$        | up arrow                    |
-| ~-v~       | ~\downarrow~      | $\downarrow$      | down arrow                  |
-| ~<->~      | ~\leftrightarrow~ | $\leftrightarrow$ | left-right arrow            |
-| \vert ~->~ | ~\mapsto~         | $\mapsto$         |                             |
-| ~-->~      | ~\longrightarrow~ | $\longrightarrow$ |                             |
-| ~<--~      | ~\longleftarrow~  | $\longleftarrow$  |                             |
-|------------+-------------------+-------------------+-----------------------------|
+#+attr_latex: :align |llll| :placement [H]
+|------------+--------------------+--------------------+----------------------|
+| key        | trans              | sym                | description          |
+|------------+--------------------+--------------------+----------------------|
+| ~<-~       | ~\leftarrow~       | $\leftarrow$       | left arrow           |
+| ~->~       | ~\rightarrow~      | $\rightarrow$      | right arrow          |
+| ~-^~       | ~\uparrow~         | $\uparrow$         | up arrow             |
+| ~-v~       | ~\downarrow~       | $\downarrow$       | down arrow           |
+| ~<->~      | ~\leftrightarrow~  | $\leftrightarrow$  | left-right arrow     |
+|------------+--------------------+--------------------+----------------------|
+| ~<-n~      | ~\nleftarrow~      | $\nleftarrow$      | not left arrow       |
+| ~->n~      | ~\nrightarrow~     | $\nrightarrow$     | not right arrow      |
+| ~-^n~      | ~\nuparrow~        | $\nuparrow$        | not up arrow         |
+| ~-vn~      | ~\ndownarrow~      | $\ndownarrow$      | not down arrow       |
+| ~<->~      | ~\nleftrightarrow~ | $\nleftrightarrow$ | not left-right arrow |
+|------------+--------------------+--------------------+----------------------|
+| ~-->~      | ~\longrightarrow~  | $\longrightarrow$  |                      |
+| ~<--~      | ~\longleftarrow~   | $\longleftarrow$   |                      |
+| \vert ~->~ | ~\mapsto~          | $\mapsto$          |                      |
+|------------+--------------------+--------------------+----------------------|
 
 ** Double:
 #+caption: Double Line arrows
 #+name: tbl-2-line-arrow
-#+attr_latex: :align |cclr| :placement [H]
+#+attr_latex: :align |llll| :placement [H]
 |--------+-----------------------+-----------------------+------------------|
 | key    | trans                 | sym                   | description      |
 |--------+-----------------------+-----------------------+------------------|
@@ -366,8 +373,13 @@
 | ~=^~   | ~\Uparrow~            | $\Uparrow$            | up arrow         |
 | ~=v~   | ~\Downarrow~          | $\Downarrow$          | down arrow       |
 | ~<=>~  | ~\Leftrightarrow~     | $\Leftrightarrow$     | left-right arrow |
-| ~<=>~  | ~\Leftrightarrow~     | $\Leftrightarrow$     | left-right arrow |
 | ~iff~  | ~\Leftrightarrow~     | $\Leftrightarrow$     | left-right arrow |
+|--------+-----------------------+-----------------------+------------------|
+| ~<=n~  | ~\nLeftarrow~         | $\nLeftarrow$         | left arrow       |
+| ~=>n~  | ~\nRightarrow~        | $\nRightarrow$        | right arrow      |
+| ~<=>n~ | ~\nLeftrightarrow~    | $\nLeftrightarrow$    | left-right arrow |
+| ~iffn~ | ~\nLeftrightarrow~    | $\nLeftrightarrow$    | left-right arrow |
+|--------+-----------------------+-----------------------+------------------|
 | ~<==>~ | ~\Longleftrightarrow~ | $\Longleftrightarrow$ | left-right arrow |
 | ~<==~  | ~\Longleftarrow~      | $\Longleftarrow$      | left-right arrow |
 | ~==>~  | ~\Longrightarrow~     | $\Longrightarrow$     | left-right arrow |
