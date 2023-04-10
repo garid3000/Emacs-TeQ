@@ -4,6 +4,7 @@
 #+auto_tangle: nil
 #+LATEX_HEADER: \usepackage{mathtools}
 #+LATEX_HEADER: \usepackage{cancel}
+#+startup: show2levels
 
 * Alphabet related stuff
 ** Greek
@@ -42,14 +43,17 @@
 #+caption: Variation Greek letters 
 #+name: tbl-greek-var
 #+attr_latex: :align |ccl| :placement [H]
-|--------+-----------------+---------------------|
-| key    | sym             | latex (lower greek) |
-|--------+-----------------+---------------------|
-| ~e..~  | $\varepsilon$   | ~\varepsilon~       |
-| ~f..~  | $\varphi$       | ~\varphi~           |
-| ~s..~  | $\varsigma$     | ~\varsigma~         |
-| ~t..~  | $\vartheta$     | ~\vartheta~         |
-|--------+-----------------+---------------------|
+|-------+---------------+---------------------|
+| key   | sym           | latex (lower greek) |
+|-------+---------------+---------------------|
+| ~e..~ | $\varepsilon$ | ~\varepsilon~       |
+| ~f..~ | $\varphi$     | ~\varphi~           |
+| ~s..~ | $\varsigma$   | ~\varsigma~         |
+| ~t..~ | $\vartheta$   | ~\vartheta~         |
+| ~r..~ | $\varrho$     | ~\varrho~           |
+| ~p..~ | $\varpi$      | ~\varpi~            |
+| ~k..~ | $\varkappa$   | ~\varkappa~         |
+|-------+---------------+---------------------|
 
 ** Matrix (aka  bold)
 #+caption: Matrix
