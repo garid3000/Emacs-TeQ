@@ -951,6 +951,61 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 
 #+RESULTS:
 
+* Execuation el
+#+name: quail-executions
+#+begin_src emacs-lisp
+(defun quail-func-init ()
+  (quail-delete-region)
+  (setq quail-current-str nil
+	quail-converting nil
+	quail-conversion-str ""))
+
+(defun quail-func-end ()
+  (throw 'quail-tag nil))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun quail-TeQ-equation (key idx)
+  (quail-func-init)
+  (insert "\\begin{equation}\n\n\\end{equation}")
+  (previous-line)
+  (quail-func-end))
+
+(defun quail-TeQ-aligned (key idx)
+  (quail-func-init)
+  (insert "\\begin{aligned}\n\n\\end{aligned}")
+  (previous-line)
+  (quail-func-end))
+
+(defun quail-TeQ-endofline (key idx)
+  (quail-func-init)
+  (end-of-line)
+  (insert "\\\\\n")
+  (quail-func-end))
+
+(defun quail-TeQ-frac (key idx)
+  (quail-func-init)
+
+  (backward-sexp) (kill-sexp)
+  (if (looking-back "[a-zA-Z]" 0)
+      (progn
+	(backward-word)
+	(if (= (preceding-char) ?\\ )
+	    (progn (message "yes") (kill-word 1)
+		   (backward-delete-char 1) (insert "\\frac{\\")
+		   (yank 1) (yank 2) (insert "}{}"))
+	  (progn (message "no") (forward-word)
+		 (insert "\\frac{") (yank) (insert "}{}")))
+	)
+    (progn (message "no")
+					;(forward-word)
+	   (insert "\\frac{") (yank) (insert "}{}"))
+    )
+  (backward-char)
+
+  (quail-func-end))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+#+end_src
 
 * COMMENT Matrix env
 #+begin_src emacs-lisp
