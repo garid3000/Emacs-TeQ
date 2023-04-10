@@ -1,12 +1,12 @@
 #+title:    Emacs TeQ: (TeX + Quail)
 #+subtitle: Input Method written in Quail for entering LaTeX math expressions
 #+author:   Garid Zorigoo
-#+auto_tangle: nil
+#+auto_tangle: t
 #+LATEX_HEADER: \usepackage{mathtools}
 #+LATEX_HEADER: \usepackage{cancel}
 #+startup: show2levels
 
-*  Alphabet related stuff [0/3]:
+*  Alphabet related stuff :
 **  Greek
 #+caption: Main Greek letters 
 #+name: tbl-alphabet-greek-6column
@@ -140,7 +140,7 @@
 
 
 
-*  Symbols [0/5]:
+*  Symbols :
 **  Dots related
 #+caption: Multiple Dots Related
 #+name: tbl-3-sym-dots
@@ -287,7 +287,7 @@
 | ~tr.~    | ~^{-T}~     | $\Box^{-T}$     |             |
 |----------+-------------+-----------------+-------------|
 
-*  Binary Operation Symbols [0/4]
+*  Binary Operation Symbols
 **  Simple Arithmetics:
 #+caption: Simple Arithmetics operations
 #+name: tbl_5_op_arith
@@ -307,87 +307,87 @@
 #+name: tbl_5_op_bin
 #+attr_latex: :align |lclr| :placement [H]
 |-------+-------------------------------+-------------------------------+-------------|
-| key   | sym                           | trans                         | description |
+| key   | trans                         | sym                           | description |
 |-------+-------------------------------+-------------------------------+-------------|
-| ~=n~  | $\neq$                        | ~\neq~                        |             |
-| ~=.~  | $\equiv$                      | ~\equiv~                      |             |
-| ~=?~  | $\stackrel{?}{=}$             | ~\stackrel{?}{=}~             |             |
-| ~=y~  | $\stackrel{\checkmark}{=}$    | ~\stackrel{\checkmark}{=}~    |             |
-| ~3=~  | $\equiv$                      | ~\equiv~                      |             |
-| ~=:~  | $\coloneqq$                   | ~\coloneqq~                   |             |
-| ~:=~  | $\coloneqq$                   | ~\coloneqq~                   |             |
+| ~=n~  | ~\neq~                        | $\neq$                        |             |
+| ~=.~  | ~\equiv~                      | $\equiv$                      |             |
+| ~=?~  | ~\stackrel{?}{=}~             | $\stackrel{?}{=}$             |             |
+| ~=y~  | ~\stackrel{\checkmark}{=}~    | $\stackrel{\checkmark}{=}$    |             |
+| ~3=~  | ~\equiv~                      | $\equiv$                      |             |
+| ~=:~  | ~\coloneqq~                   | $\coloneqq$                   |             |
+| ~:=~  | ~\coloneqq~                   | $\coloneqq$                   |             |
 |-------+-------------------------------+-------------------------------+-------------|
-| =~.=  | $\sim$                        | ~\sim~                        |             |
-| =~n=  | $\nsim$                       | ~\nsim~                      |             |
-| ~~~~  | $\approx$                     | ~\approx~                     |             |
+| =~.=  | ~\sim~                        | $\sim$                        |             |
+| =~n=  | ~\nsim~                       | $\nsim$                       |             |
+| ~~~~  | ~\approx~                     | $\approx$                     |             |
 |-------+-------------------------------+-------------------------------+-------------|
-| ~<n~  | $\nless$                      | ~\nless~                      |             |
-| ~<.~  | $\leq$                        | ~\leq~                        |             |
-| ~<.n~ | $\nleq$                       | ~\nleq~                       |             |
-| ~<?~  | $\stackrel{?}{<}$             | ~\stackrel{?}{<}~             |             |
-| ~<y~  | $\stackrel{\checkmark}{<}$    | ~\stackrel{\checkmark}{<}~    |             |
-| ~<.?~ | $\stackrel{?}{\leq}$          | ~\stackrel{?}{\leq}~          |             |
-| ~<.y~ | $\stackrel{\checkmark}{\leq}$ | ~\stackrel{\checkmark}{\leq}~ |             |
-| ~<<~  | $\ll$                         | ~\ll~                         |             |
-| ~<<?~ | $\stackrel{?}{\ll}$           | ~\stackrel{?}{\ll}~           |             |
-| ~<<y~ | $\stackrel{\checkmark}{\ll}$  | ~\stackrel{\checkmark}{\ll}~  |             |
+| ~<n~  | ~\nless~                      | $\nless$                      |             |
+| ~<.~  | ~\leq~                        | $\leq$                        |             |
+| ~<.n~ | ~\nleq~                       | $\nleq$                       |             |
+| ~<?~  | ~\stackrel{?}{<}~             | $\stackrel{?}{<}$             |             |
+| ~<y~  | ~\stackrel{\checkmark}{<}~    | $\stackrel{\checkmark}{<}$    |             |
+| ~<.?~ | ~\stackrel{?}{\leq}~          | $\stackrel{?}{\leq}$          |             |
+| ~<.y~ | ~\stackrel{\checkmark}{\leq}~ | $\stackrel{\checkmark}{\leq}$ |             |
+| ~<<~  | ~\ll~                         | $\ll$                         |             |
+| ~<<?~ | ~\stackrel{?}{\ll}~           | $\stackrel{?}{\ll}$           |             |
+| ~<<y~ | ~\stackrel{\checkmark}{\ll}~  | $\stackrel{\checkmark}{\ll}$  |             |
 |-------+-------------------------------+-------------------------------+-------------|
-| ~>n~  | $\ngtr$                       | ~\ngtr~                       |             |
-| ~>.~  | $\geq$                        | ~\geq~                        |             |
-| ~>.n~ | $\ngeq$                       | ~\ngeq~                       |             |
-| ~>?~  | $\stackrel{?}{>}$             | ~\stackrel{?}{>}~             |             |
-| ~>y~  | $\stackrel{\checkmark}{>}$    | ~\stackrel{\checkmark}{>}~    |             |
-| ~>.?~ | $\stackrel{?}{\geq}$          | ~\stackrel{?}{\geq}~          |             |
-| ~>.y~ | $\stackrel{\checkmark}{\geq}$ | ~\stackrel{\checkmark}{\geq}~ |             |
-| ~>>~  | $\gg$                         | ~\gg~                         |             |
-| ~>>?~ | $\stackrel{?}{\gg}$           | ~\stackrel{?}{\gg}~           |             |
-| ~>>y~ | $\stackrel{\checkmark}{\gg}$  | ~\stackrel{\checkmark}{\gg}~  |             |
+| ~>n~  | ~\ngtr~                       | $\ngtr$                       |             |
+| ~>.~  | ~\geq~                        | $\geq$                        |             |
+| ~>.n~ | ~\ngeq~                       | $\ngeq$                       |             |
+| ~>?~  | ~\stackrel{?}{>}~             | $\stackrel{?}{>}$             |             |
+| ~>y~  | ~\stackrel{\checkmark}{>}~    | $\stackrel{\checkmark}{>}$    |             |
+| ~>.?~ | ~\stackrel{?}{\geq}~          | $\stackrel{?}{\geq}$          |             |
+| ~>.y~ | ~\stackrel{\checkmark}{\geq}~ | $\stackrel{\checkmark}{\geq}$ |             |
+| ~>>~  | ~\gg~                         | $\gg$                         |             |
+| ~>>?~ | ~\stackrel{?}{\gg}~           | $\stackrel{?}{\gg}$           |             |
+| ~>>y~ | ~\stackrel{\checkmark}{\gg}~  | $\stackrel{\checkmark}{\gg}$  |             |
 |-------+-------------------------------+-------------------------------+-------------|
 
 **  Set symbols
 #+caption:  
 #+name: tbl_5_op_set
 #+attr_latex: :align |lclr| :placement [H]
-|---------+--------------+---------------+-------------|
-| key     | sym          | trans         | description |
-|---------+--------------+---------------+-------------|
-| ~in~    | $\in$        | ~\in~         |             |
-| ~in.~   | $\ni$        | ~\ni~         |             |
-| ~ni~    | $\ni$        | ~\ni~         |             |
-| ~inn~   | $\notin$     | ~\notin~      |             |
-| ~0/~    | $\emptyset$  | ~\emptyset~   |             |
-| ~nsr~   | $\mathbb{R}$ | ~\mathbb{R}~  |             |
-| ~nsc~   | $\mathbb{C}$ | ~\mathbb{C}~  |             |
-| ~nsn~   | $\mathbb{N}$ | ~\mathbb{N}~  |             |
-| ~nsp~   | $\mathbb{P}$ | ~\mathbb{P}~  |             |
-| ~nsz~   | $\mathbb{Z}$ | ~\mathbb{Z}~  |             |
-| ~nsi~   | $\mathbb{I}$ | ~\mathbb{I}~  |             |
-|---------+--------------+---------------+-------------|
-| ~sub~   | $\subset$    | ~\subset~     |             |
-| ~subn~  | $\nsubseteq$ | ~\nssubseteq~ |             |
-| ~sub=~  | $\subseteq$  | ~\subseteq~   |             |
-| ~sub=n~ | $\nsubseteq$ | ~\nsubseteq~  |             |
-| ~subn=~ | $\nsubseteq$ | ~\nsubseteq~  |             |
-| ~sup~   | $\supset$    | ~\supset~     |             |
-| ~supn~  | $\nsupseteq$ | ~\nsupseteq~  |             |
-| ~sup=~  | $\supseteq$  | ~\supeseteq~  |             |
-| ~sup=n~ | $\nsupseteq$ | ~\nsupseteq~  |             |
-| ~supn=~ | $\nsupseteq$ | ~\nsupseteq~  |             |
-|---------+--------------+---------------+-------------|
+|---------+---------------+--------------+-------------|
+| key     | trans         | sym          | description |
+|---------+---------------+--------------+-------------|
+| ~in~    | ~\in~         | $\in$        |             |
+| ~in.~   | ~\ni~         | $\ni$        |             |
+| ~ni~    | ~\ni~         | $\ni$        |             |
+| ~inn~   | ~\notin~      | $\notin$     |             |
+| ~0/~    | ~\emptyset~   | $\emptyset$  |             |
+| ~nsr~   | ~\mathbb{R}~  | $\mathbb{R}$ |             |
+| ~nsc~   | ~\mathbb{C}~  | $\mathbb{C}$ |             |
+| ~nsn~   | ~\mathbb{N}~  | $\mathbb{N}$ |             |
+| ~nsp~   | ~\mathbb{P}~  | $\mathbb{P}$ |             |
+| ~nsz~   | ~\mathbb{Z}~  | $\mathbb{Z}$ |             |
+| ~nsi~   | ~\mathbb{I}~  | $\mathbb{I}$ |             |
+|---------+---------------+--------------+-------------|
+| ~sub~   | ~\subset~     | $\subset$    |             |
+| ~subn~  | ~\nssubseteq~ | $\nsubseteq$ |             |
+| ~sub=~  | ~\subseteq~   | $\subseteq$  |             |
+| ~sub=n~ | ~\nsubseteq~  | $\nsubseteq$ |             |
+| ~subn=~ | ~\nsubseteq~  | $\nsubseteq$ |             |
+| ~sup~   | ~\supset~     | $\supset$    |             |
+| ~supn~  | ~\nsupseteq~  | $\nsupseteq$ |             |
+| ~sup=~  | ~\supeseteq~  | $\supseteq$  |             |
+| ~sup=n~ | ~\nsupseteq~  | $\nsupseteq$ |             |
+| ~supn=~ | ~\nsupseteq~  | $\nsupseteq$ |             |
+|---------+---------------+--------------+-------------|
 
 **  Logic
 #+caption:  
 #+name: tbl_5_op_logic
 #+attr_latex: :align |lclr| :placement [H]
 |--------+----------------+----------------+-------------|
-| key    | sym            | trans          | description |
+| key    | trans          | sym            | description |
 |--------+----------------+----------------+-------------|
-| ~or~   | $\lor$         | ~\lor~         |             |
-| ~and~  | $\land$        | ~\lnd~         |             |
-| ~not~  | $\neg$         | ~\neg~         |             |
-| ~or.~  | $\text{ or }$  | ~\text{ or }~  |             |
-| ~and.~ | $\text{ and }$ | ~\text{ and }~ |             |
-| ~not.~ | $\text{ not }$ | ~\text{ not }~ |             |
+| ~or~   | ~\lor~         | $\lor$         |             |
+| ~and~  | ~\lnd~         | $\land$        |             |
+| ~not~  | ~\neg~         | $\neg$         |             |
+| ~or.~  | ~\text{ or }~  | $\text{ or }$  |             |
+| ~and.~ | ~\text{ and }~ | $\text{ and }$ |             |
+| ~not.~ | ~\text{ not }~ | $\text{ not }$ |             |
 |--------+----------------+----------------+-------------|
 
 
@@ -396,26 +396,26 @@
 #+caption:  
 #+name: tbl_6_func
 #+attr_latex: :align |cclr| :placement [H]
-|---------+---------------------+-----------------+-------------|
-| key     | sym                 | trans           | description |
-|---------+---------------------+-----------------+-------------|
-| ~rank~  | $\mathrm{rank}$     | ~\mathrm{rank}~ |             |
-| ~arg~   | $\arg$              | ~\arg~          |             |
-| ~det~   | $\det$              | ~\det~          |             |
-| ~dim~   | $\dim$              | ~\dim~          |             |
-| ~exp~   | $\exp$              | ~\exp~          |             |
-| ~Im~    | $\mathrm{Im}$       | ~\mathrm{Im}~   |             |
-| ~Re~    | $\mathrm{Re}$       | ~\mathrm{Re}~   |             |
-| ~ln~    | $\ln$               | ~\ln~           |             |
-| ~log~   | $\log$              | ~\log~          |             |
-| ~max~   | $\max$              | ~\max~          |             |
-| ~min~   | $\min$              | ~\min~          |             |
-| ~dim~   | $\dim$              | ~\dim~          |             |
-| ~sqrt~  | $\sqrt[\Box]{\Box}$ | ~\sqrt~         |             |
-| ~mod~   | $\Box \pmod \Box$   | ~\pmod~         |             |
-| ~mod.~  | $\Box \mod \Box$    | ~\mod~          |             |
-| ~mod..~ | $\Box \bmod \Box$   | ~\bmod~         |             |
-|---------+---------------------+-----------------+-------------|
+|---------+-----------------+---------------------+-------------|
+| key     | trans           | sym                 | description |
+|---------+-----------------+---------------------+-------------|
+| ~rank~  | ~\mathrm{rank}~ | $\mathrm{rank}$     |             |
+| ~arg~   | ~\arg~          | $\arg$              |             |
+| ~det~   | ~\det~          | $\det$              |             |
+| ~dim~   | ~\dim~          | $\dim$              |             |
+| ~exp~   | ~\exp~          | $\exp$              |             |
+| ~Im~    | ~\mathrm{Im}~   | $\mathrm{Im}$       |             |
+| ~Re~    | ~\mathrm{Re}~   | $\mathrm{Re}$       |             |
+| ~ln~    | ~\ln~           | $\ln$               |             |
+| ~log~   | ~\log~          | $\log$              |             |
+| ~max~   | ~\max~          | $\max$              |             |
+| ~min~   | ~\min~          | $\min$              |             |
+| ~dim~   | ~\dim~          | $\dim$              |             |
+| ~sqrt~  | ~\sqrt~         | $\sqrt[\Box]{\Box}$ |             |
+| ~mod~   | ~\pmod~         | $\Box \pmod \Box$   |             |
+| ~mod.~  | ~\mod~          | $\Box \mod \Box$    |             |
+| ~mod..~ | ~\bmod~         | $\Box \bmod \Box$   |             |
+|---------+-----------------+---------------------+-------------|
 
 **  Trignometry: function
 #+caption:  
@@ -439,26 +439,26 @@
 #+name: tbl_6_func_iter
 #+attr_latex: :align |cclr| :placement [H]
 |-----------+---------------------------------------+---------------------------------------+-------------|
-| key       | sym                                   | trans                                 | description |
+| key       | trans                                 | sym                                   | description |
 |-----------+---------------------------------------+---------------------------------------+-------------|
-| ~il~      | $\sum\limits_{ here }^{here}$         | ~\limits_{ }^{ }~                     |             |
+| ~il~      | ~\limits_{ }^{ }~                     | $\sum\limits_{ here }^{here}$         |             |
 |-----------+---------------------------------------+---------------------------------------+-------------|
-| ~lim~     | $\lim$                                | ~\lim~                                |             |
-| ~sum~     | $\sum$                                | ~\sum~                                |             |
-| ~prod~    | $\prod$                               | ~\prod~                               |             |
-| ~int~     | $\int$                                | ~\int~                                |             |
-| ~inti~    | $\iint$                               | ~\iint~                               |             |
-| ~intii~   | $\iiint$                              | ~\iiint~                              |             |
-| ~intiii~  | $\iiiint$                             | ~\iiiint~                             |             |
-| ~into~    | $\oint$                               | ~\oint~                               |             |
+| ~lim~     | ~\lim~                                | $\lim$                                |             |
+| ~sum~     | ~\sum~                                | $\sum$                                |             |
+| ~prod~    | ~\prod~                               | $\prod$                               |             |
+| ~int~     | ~\int~                                | $\int$                                |             |
+| ~inti~    | ~\iint~                               | $\iint$                               |             |
+| ~intii~   | ~\iiint~                              | $\iiint$                              |             |
+| ~intiii~  | ~\iiiint~                             | $\iiiint$                             |             |
+| ~into~    | ~\oint~                               | $\oint$                               |             |
 |-----------+---------------------------------------+---------------------------------------+-------------|
-| ~sum.~    | $\sum\limits_{ i=1 }^{ n }$           | ~\sum\limits_{ i=1 }^{ n }~           |             |
-| ~prod.~   | $\prod\limits_{ i=1 }^{ n }$          | ~\prod\limits_{ i=1 }^{ n }~          |             |
-| ~int.~    | $\int\limits_{ -\infty }^{ -\infty }$ | ~\int\limits_{ -\infty }^{ -\infty }~ |             |
-| ~inti.~   | $\iint\limits_{ C }$                  | ~\iint\limits_{ C }~                  |             |
-| ~intii.~  | $\iiint\limits_{ C }$                 | ~\iiint\limits_{ C }~                 |             |
-| ~intiii.~ | $\iiiint\limits_{ C }$                | ~\iiiint\limits_{ C }~                |             |
-| ~into.~   | $\oint\limits_{ C }$                  | ~\oint\limits_{ C }~                  |             |
+| ~sum.~    | ~\sum\limits_{ i=1 }^{ n }~           | $\sum\limits_{ i=1 }^{ n }$           |             |
+| ~prod.~   | ~\prod\limits_{ i=1 }^{ n }~          | $\prod\limits_{ i=1 }^{ n }$          |             |
+| ~int.~    | ~\int\limits_{ -\infty }^{ -\infty }~ | $\int\limits_{ -\infty }^{ -\infty }$ |             |
+| ~inti.~   | ~\iint\limits_{ C }~                  | $\iint\limits_{ C }$                  |             |
+| ~intii.~  | ~\iiint\limits_{ C }~                 | $\iiint\limits_{ C }$                 |             |
+| ~intiii.~ | ~\iiiint\limits_{ C }~                | $\iiiint\limits_{ C }$                |             |
+| ~into.~   | ~\oint\limits_{ C }~                  | $\oint\limits_{ C }$                  |             |
 |-----------+---------------------------------------+---------------------------------------+-------------|
 
 
@@ -467,32 +467,32 @@
 #+caption:  
 #+name: tbl_7_parenthesis
 #+attr_latex: :align |lclr| :placement [H]
-|----------------+-------------------------------------------+----------------------------------+-------------|
-| key            | sym                                       | trans                            | description |
-|----------------+-------------------------------------------+----------------------------------+-------------|
-| ~().~          | $\left( \Box \right)$                     | ~\left( \right)~                 |             |
-| ~()..~         | $\left( \Box \middle\vert \Box \right)$   | ~\left( \middle\vert  \right)~   |             |
-| ~[].~          | $\left[ \Box \right]$                     | ~\left[ \right]~                 |             |
-| ~[]..~         | $\left[ \Box \middle\vert \Box \right]$   | ~\left[ \middle\vert  \right]~   |             |
-| ~[].c~         | $\lceil \Box \rceil$                      | ~\lceil \rceil~                  |             |
-| ~[].f~         | $\lfloor \Box \rfloor$                    | ~\lfloor \floor~                 |             |
-| ~{}.~          | $\left\{ \Box \right\}$                   | ~\left\{ \right\}~               |             |
-| ~{}..~         | $\left\{ \Box \middle\vert \Box \right\}$ | ~\left\{ \middle\vert  \right\}~ |             |
-| \vert\vert ~.~ | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~         |             |
-|----------------+-------------------------------------------+----------------------------------+-------------|
+|----------------+----------------------------------+-------------------------------------------+-------------|
+| key            | trans                            | sym                                       | description |
+|----------------+----------------------------------+-------------------------------------------+-------------|
+| ~().~          | ~\left( \right)~                 | $\left( \Box \right)$                     |             |
+| ~()..~         | ~\left( \middle\vert  \right)~   | $\left( \Box \middle\vert \Box \right)$   |             |
+| ~[].~          | ~\left[ \right]~                 | $\left[ \Box \right]$                     |             |
+| ~[]..~         | ~\left[ \middle\vert  \right]~   | $\left[ \Box \middle\vert \Box \right]$   |             |
+| ~[].c~         | ~\lceil \rceil~                  | $\lceil \Box \rceil$                      |             |
+| ~[].f~         | ~\lfloor \floor~                 | $\lfloor \Box \rfloor$                    |             |
+| ~{}.~          | ~\left\{ \right\}~               | $\left\{ \Box \right\}$                   |             |
+| ~{}..~         | ~\left\{ \middle\vert  \right\}~ | $\left\{ \Box \middle\vert \Box \right\}$ |             |
+| \vert\vert ~.~ | ~\left\vert \right\vert~         | $\left\vert \Box \right\vert$             |             |
+|----------------+----------------------------------+-------------------------------------------+-------------|
 
 **  Texts:
 #+caption:  
 #+name: tbl_7_text
 #+attr_latex: :align |lclr| :placement [H]
-|------+-----------------------+-------------+-------------|
-| key  | sym                   | trans       | description |
-|------+-----------------------+-------------+-------------|
-| ~te~ | $a + \text{text}$     | ~\text{}~   |             |
-| ~tr~ | $a + \mathrm{mathrm}$ | ~\mathrm{}~ |             |
-| ~tb~ | $a + \mathbf{mathbf}$ | ~\mathbf{}~ |             |
-| ~ti~ | $a + \mathit{mathit}$ | ~\mathit{}~ |             |
-|------+-----------------------+-------------+-------------|
+|------+-------------+-----------------------+-------------|
+| key  | trans       | sym                   | description |
+|------+-------------+-----------------------+-------------|
+| ~te~ | ~\text{}~   | $a + \text{text}$     |             |
+| ~tr~ | ~\mathrm{}~ | $a + \mathrm{mathrm}$ |             |
+| ~tb~ | ~\mathbf{}~ | $a + \mathbf{mathbf}$ |             |
+| ~ti~ | ~\mathit{}~ | $a + \mathit{mathit}$ |             |
+|------+-------------+-----------------------+-------------|
 
 **  Superscripts (power) & Subsripts (lower)
 #+caption:  
@@ -518,27 +518,27 @@
 #+caption:  
 #+name: tbl_7_misc
 #+attr_latex: :align |lclr| :placement [H]
-|---------+----------------------+------------+-------------------|
-| key     | sym                  | trans      | description       |
-|---------+----------------------+------------+-------------------|
-| ~binom~ | $\binom{\Box}{\Box}$ | ~\binom~   |                   |
-| ~box~   | $\boxed{\Box}$       | ~\boxed~   |                   |
-| ~can~   | $\cancel{\Box}$      | ~\cancel~  | requires ~cancel~ |
-| ~&=~    |                      | ~&=\n\\\\~ |                   |
-| ~=&~    |                      | ~&=\n\\\\~ |                   |
-|---------+----------------------+------------+-------------------|
+|---------+------------+----------------------+-------------------|
+| key     | trans      | sym                  | description       |
+|---------+------------+----------------------+-------------------|
+| ~binom~ | ~\binom~   | $\binom{\Box}{\Box}$ |                   |
+| ~box~   | ~\boxed~   | $\boxed{\Box}$       |                   |
+| ~can~   | ~\cancel~  | $\cancel{\Box}$      | requires ~cancel~ |
+| ~&=~    | ~&=\n\\\\~ |                      |                   |
+| ~=&~    | ~&=\n\\\\~ |                      |                   |
+|---------+------------+----------------------+-------------------|
 
 **  xy Diagram related
 #+caption:  
 #+name: tbl_7_xy
 #+attr_latex: :align |lclr| :placement [H]
-|------+-----------+-------------------+-------------|
-| key  | sym       | trans             | description |
-|------+-----------+-------------------+-------------|
-| ~xy~ |           | ~\xymatrix{\n\n}~ |             |
-| ~bu~ | $\bullet$ | ~\bullet~         |             |
-| ~ar~ |           | ~\ar~             |             |
-|------+-----------+-------------------+-------------|
+|------+-------------------+-----------+-------------|
+| key  | trans             | sym       | description |
+|------+-------------------+-----------+-------------|
+| ~xy~ | ~\xymatrix{\n\n}~ |           |             |
+| ~bu~ | ~\bullet~         | $\bullet$ |             |
+| ~ar~ | ~\ar~             |           |             |
+|------+-------------------+-----------+-------------|
 
 
 
@@ -548,18 +548,18 @@
   :header-args:  :var tbl_1_greek=tbl-alphabet-greek-6column tbl_1_matrix=tbl-alphabet-matrix-6column tbl_1_vec=tbl-alphabet-vec-6column tbl2_exec_func=tbl-2-execute-function tbl_3_sym_dots=tbl-3-sym-dots tbl_3_sym_geo=tbl-3-sym-geo tbl_3_sym_letter=tbl-3-sym-letter tbl_3_sym_spc=tbl-3-sym-spc tbl_3_sym_arrow_1=tbl-3-sym-arrow-1 tbl_3_sym_arrow_2=tbl-3-sym-arrow-2 tbl_3_sym_arrow_3=tbl-3-sym-arrow-3 tbl_4_sym_mod_1=tbl_4_sym_mod_1 tbl_5_op_arith=tbl_5_op_arith tbl_5_op_bin=tbl_5_op_bin tbl_5_op_set=tbl_5_op_set tbl_5_op_logic=tbl_5_op_logic tbl_6_func=tbl_6_func tbl_6_func_trig_6col=tbl_6_func_trig_6col tbl_6_func_iter=tbl_6_func_iter tbl_7_parenthesis=tbl_7_parenthesis tbl_7_text=tbl_7_text tbl_7_supsubscripts=tbl_7_supsubscripts tbl_7_misc=tbl_7_misc tbl_7_xy=tbl_7_xy
   :END:
 
-#+BEGIN_SRC python  :hlines no :results output code :wrap SRC elisp :results_switches ":tangle /tmp/tmp.el :noweb yes" :exports both
+#+BEGIN_SRC python  :hlines no :results output code :wrap SRC elisp :results_switches ":tangle no :noweb yes" :exports both
 def format_table_to_elisp_type6col(headcomment, table):
     print(f";; {headcomment}")
     table = table[1:]
     for line in table:
         key, sym, trans, key1, sym, trans1 = line
         key   = repr(key).replace("\'", "\"").replace("~", "")
-        key1   = repr(key).replace("\'", "\"").replace("~", "")
+        key1  = repr(key1).replace("\'", "\"").replace("~", "")
         trans = repr(trans).replace("\'", "\"").replace("~", "")
-        trans1 = repr(trans).replace("\'", "\"").replace("~", "")
+        trans1 = repr(trans1).replace("\'", "\"").replace("~", "")
         
-        print(f"({key:<7}  [{trans:<17}])  ({key:<7}  [{trans:<17}])")
+        print(f"({key:<7}  [{trans:<17}])  ({key1:<7}  [{trans1:<17}])")
 
 def format_table_to_elisp_type3col_type1(headcomment, table):
     print(f";; {headcomment}")
@@ -569,7 +569,7 @@ def format_table_to_elisp_type3col_type1(headcomment, table):
         key   = repr(key).replace("\'", "\"").replace("~", "")
         trans = repr(trans).replace("\'", "\"").replace("~", "")
         
-        print(f"({key:<8}  {trans:<22})  ; {description}")
+        print(f"({key:<8}  [{trans:<22}])  ; {description}")
 
 def format_table_to_elisp_type3col_type2(headcomment, table):
     print(f";; {headcomment}")
@@ -614,321 +614,341 @@ format_table_to_elisp_type3col_type1("Structural: misc",  tbl_7_misc)
 format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 #+END_SRC
 
+#+name: el-from-table
 #+RESULTS:
 #+begin_SRC elisp
 ;; Greek
-("a."     ["\\alpha"        ])  ("a."     ["\\alpha"        ])
-("b."     ["\\beta"         ])  ("b."     ["\\beta"         ])
-("c."     ["\\psi"          ])  ("c."     ["\\psi"          ])
-("d."     ["\\delta"        ])  ("d."     ["\\delta"        ])
-("e."     ["\\epsilon"      ])  ("e."     ["\\epsilon"      ])
-("f."     ["\\phi"          ])  ("f."     ["\\phi"          ])
-("g."     ["\\gamma"        ])  ("g."     ["\\gamma"        ])
-("h."     ["\\eta"          ])  ("h."     ["\\eta"          ])
-("i."     ["\\iota"         ])  ("i."     ["\\iota"         ])
-("j."     ["\\xi"           ])  ("j."     ["\\xi"           ])
-("k."     ["\\kappa"        ])  ("k."     ["\\kappa"        ])
-("l."     ["\\lambda"       ])  ("l."     ["\\lambda"       ])
-("m."     ["\\mu"           ])  ("m."     ["\\mu"           ])
-("n."     ["\\nu"           ])  ("n."     ["\\nu"           ])
-("o."     ["o"              ])  ("o."     ["o"              ])
-("p."     ["\\pi"           ])  ("p."     ["\\pi"           ])
-("r."     ["\\rho"          ])  ("r."     ["\\rho"          ])
-("s."     ["\\sigma"        ])  ("s."     ["\\sigma"        ])
-("t."     ["\\tau"          ])  ("t."     ["\\tau"          ])
-("th."    ["\\theta"        ])  ("th."    ["\\theta"        ])
-("u."     ["\\upsilon"      ])  ("u."     ["\\upsilon"      ])
-("w."     ["\\omega"        ])  ("w."     ["\\omega"        ])
-("x."     ["\\chi"          ])  ("x."     ["\\chi"          ])
-("z."     ["\\zeta"         ])  ("z."     ["\\zeta"         ])
+("a."     ["\\alpha"        ])  ("A."     ["A"              ])
+("b."     ["\\beta"         ])  ("B."     ["B"              ])
+("c."     ["\\psi"          ])  ("C."     ["\\Psi"          ])
+("d."     ["\\delta"        ])  ("D."     ["\\Delta"        ])
+("e."     ["\\epsilon"      ])  ("E."     ["E"              ])
+("f."     ["\\phi"          ])  ("F."     ["\\Phi"          ])
+("g."     ["\\gamma"        ])  ("G."     ["\\Gamma"        ])
+("h."     ["\\eta"          ])  ("H."     ["H"              ])
+("i."     ["\\iota"         ])  ("I."     ["I"              ])
+("j."     ["\\xi"           ])  ("J."     ["\\Xi"           ])
+("k."     ["\\kappa"        ])  ("K."     ["K"              ])
+("l."     ["\\lambda"       ])  ("L."     ["\\Lambda"       ])
+("m."     ["\\mu"           ])  ("M."     ["M"              ])
+("n."     ["\\nu"           ])  ("N."     ["N"              ])
+("o."     ["o"              ])  ("O."     ["O"              ])
+("p."     ["\\pi"           ])  ("P."     ["\\Pi"           ])
+("r."     ["\\rho"          ])  ("R."     ["P"              ])
+("s."     ["\\sigma"        ])  ("S."     ["\\Sigma"        ])
+("t."     ["\\tau"          ])  ("T."     ["T"              ])
+("th."    ["\\theta"        ])  ("Th."    ["\\Theta"        ])
+("u."     ["\\upsilon"      ])  ("U."     ["\\Upsilon"      ])
+("w."     ["\\omega"        ])  ("W."     ["\\Omega"        ])
+("x."     ["\\chi"          ])  ("X."     ["X"              ])
+("z."     ["\\zeta"         ])  ("Z."     ["Z"              ])
 ;; Matrix
-("Am"     ["\\mathbf{A}"    ])  ("Am"     ["\\mathbf{A}"    ])
-("Bm"     ["\\mathbf{B}"    ])  ("Bm"     ["\\mathbf{B}"    ])
-("Cm"     ["\\mathbf{C}"    ])  ("Cm"     ["\\mathbf{C}"    ])
-("Dm"     ["\\mathbf{D}"    ])  ("Dm"     ["\\mathbf{D}"    ])
-("Em"     ["\\mathbf{E}"    ])  ("Em"     ["\\mathbf{E}"    ])
-("Fm"     ["\\mathbf{F}"    ])  ("Fm"     ["\\mathbf{F}"    ])
-("Gm"     ["\\mathbf{G}"    ])  ("Gm"     ["\\mathbf{G}"    ])
-("Hm"     ["\\mathbf{H}"    ])  ("Hm"     ["\\mathbf{H}"    ])
-("Im"     ["\\mathbf{I}"    ])  ("Im"     ["\\mathbf{I}"    ])
-("Jm"     ["\\mathbf{J}"    ])  ("Jm"     ["\\mathbf{J}"    ])
-("Km"     ["\\mathbf{K}"    ])  ("Km"     ["\\mathbf{K}"    ])
-("Lm"     ["\\mathbf{L}"    ])  ("Lm"     ["\\mathbf{L}"    ])
-("Mm"     ["\\mathbf{M}"    ])  ("Mm"     ["\\mathbf{M}"    ])
-("Nm"     ["\\mathbf{N}"    ])  ("Nm"     ["\\mathbf{N}"    ])
-("Om"     ["\\mathbf{O}"    ])  ("Om"     ["\\mathbf{O}"    ])
-("Pm"     ["\\mathbf{P}"    ])  ("Pm"     ["\\mathbf{P}"    ])
-("Qm"     ["\\mathbf{Q}"    ])  ("Qm"     ["\\mathbf{Q}"    ])
-("Rm"     ["\\mathbf{R}"    ])  ("Rm"     ["\\mathbf{R}"    ])
-("Sm"     ["\\mathbf{S}"    ])  ("Sm"     ["\\mathbf{S}"    ])
-("Tm"     ["\\mathbf{T}"    ])  ("Tm"     ["\\mathbf{T}"    ])
-("Um"     ["\\mathbf{U}"    ])  ("Um"     ["\\mathbf{U}"    ])
-("Vm"     ["\\mathbf{V}"    ])  ("Vm"     ["\\mathbf{V}"    ])
-("Wm"     ["\\mathbf{W}"    ])  ("Wm"     ["\\mathbf{W}"    ])
-("Xm"     ["\\mathbf{X}"    ])  ("Xm"     ["\\mathbf{X}"    ])
-("Ym"     ["\\mathbf{Y}"    ])  ("Ym"     ["\\mathbf{Y}"    ])
-("Zm"     ["\\mathbf{Z}"    ])  ("Zm"     ["\\mathbf{Z}"    ])
+("Am"     ["\\mathbf{A}"    ])  ("am"     ["\\mathbf{a}"    ])
+("Bm"     ["\\mathbf{B}"    ])  ("bm"     ["\\mathbf{b}"    ])
+("Cm"     ["\\mathbf{C}"    ])  ("cm"     ["\\mathbf{c}"    ])
+("Dm"     ["\\mathbf{D}"    ])  ("dm"     ["\\mathbf{d}"    ])
+("Em"     ["\\mathbf{E}"    ])  ("em"     ["\\mathbf{e}"    ])
+("Fm"     ["\\mathbf{F}"    ])  ("fm"     ["\\mathbf{f}"    ])
+("Gm"     ["\\mathbf{G}"    ])  ("gm"     ["\\mathbf{g}"    ])
+("Hm"     ["\\mathbf{H}"    ])  ("hm"     ["\\mathbf{h}"    ])
+("Im"     ["\\mathbf{I}"    ])  ("im"     ["\\mathbf{i}"    ])
+("Jm"     ["\\mathbf{J}"    ])  ("jm"     ["\\mathbf{j}"    ])
+("Km"     ["\\mathbf{K}"    ])  ("km"     ["\\mathbf{k}"    ])
+("Lm"     ["\\mathbf{L}"    ])  ("lm"     ["\\mathbf{l}"    ])
+("Mm"     ["\\mathbf{M}"    ])  ("mm"     ["\\mathbf{m}"    ])
+("Nm"     ["\\mathbf{N}"    ])  ("nm"     ["\\mathbf{n}"    ])
+("Om"     ["\\mathbf{O}"    ])  ("om"     ["\\mathbf{o}"    ])
+("Pm"     ["\\mathbf{P}"    ])  ("pm"     ["\\mathbf{p}"    ])
+("Qm"     ["\\mathbf{Q}"    ])  ("qm"     ["\\mathbf{q}"    ])
+("Rm"     ["\\mathbf{R}"    ])  ("rm"     ["\\mathbf{r}"    ])
+("Sm"     ["\\mathbf{S}"    ])  ("sm"     ["\\mathbf{s}"    ])
+("Tm"     ["\\mathbf{T}"    ])  ("tm"     ["\\mathbf{t}"    ])
+("Um"     ["\\mathbf{U}"    ])  ("um"     ["\\mathbf{u}"    ])
+("Vm"     ["\\mathbf{V}"    ])  ("vm"     ["\\mathbf{v}"    ])
+("Wm"     ["\\mathbf{W}"    ])  ("wm"     ["\\mathbf{w}"    ])
+("Xm"     ["\\mathbf{X}"    ])  ("xm"     ["\\mathbf{x}"    ])
+("Ym"     ["\\mathbf{Y}"    ])  ("ym"     ["\\mathbf{y}"    ])
+("Zm"     ["\\mathbf{Z}"    ])  ("zm"     ["\\mathbf{z}"    ])
 ;; Vector & Hat
-("av"     ["\\vec{a}"       ])  ("av"     ["\\vec{a}"       ])
-("bv"     ["\\vec{b}"       ])  ("bv"     ["\\vec{b}"       ])
-("cv"     ["\\vec{c}"       ])  ("cv"     ["\\vec{c}"       ])
-("dv"     ["\\vec{d}"       ])  ("dv"     ["\\vec{d}"       ])
-("ev"     ["\\vec{e}"       ])  ("ev"     ["\\vec{e}"       ])
-("fv"     ["\\vec{f}"       ])  ("fv"     ["\\vec{f}"       ])
-("gv"     ["\\vec{g}"       ])  ("gv"     ["\\vec{g}"       ])
-("hv"     ["\\vec{h}"       ])  ("hv"     ["\\vec{h}"       ])
-("iv"     ["\\vec{i}"       ])  ("iv"     ["\\vec{i}"       ])
-("jv"     ["\\vec{j}"       ])  ("jv"     ["\\vec{j}"       ])
-("kv"     ["\\vec{k}"       ])  ("kv"     ["\\vec{k}"       ])
-("lv"     ["\\vec{l}"       ])  ("lv"     ["\\vec{l}"       ])
-("mv"     ["\\vec{m}"       ])  ("mv"     ["\\vec{m}"       ])
-("nv"     ["\\vec{n}"       ])  ("nv"     ["\\vec{n}"       ])
-("ov"     ["\\vec{o}"       ])  ("ov"     ["\\vec{o}"       ])
-("pv"     ["\\vec{p}"       ])  ("pv"     ["\\vec{p}"       ])
-("qv"     ["\\vec{q}"       ])  ("qv"     ["\\vec{q}"       ])
-("rv"     ["\\vec{r}"       ])  ("rv"     ["\\vec{r}"       ])
-("sv"     ["\\vec{s}"       ])  ("sv"     ["\\vec{s}"       ])
-("tv"     ["\\vec{t}"       ])  ("tv"     ["\\vec{t}"       ])
-("uv"     ["\\vec{u}"       ])  ("uv"     ["\\vec{u}"       ])
-("vv"     ["\\vec{v}"       ])  ("vv"     ["\\vec{v}"       ])
-("wv"     ["\\vec{w}"       ])  ("wv"     ["\\vec{w}"       ])
-("xv"     ["\\vec{x}"       ])  ("xv"     ["\\vec{x}"       ])
-("yv"     ["\\vec{y}"       ])  ("yv"     ["\\vec{y}"       ])
-("zv"     ["\\vec{z}"       ])  ("zv"     ["\\vec{z}"       ])
+("av"     ["\\vec{a}"       ])  ("ah"     ["\\hat{a}"       ])
+("bv"     ["\\vec{b}"       ])  ("bh"     ["\\hat{b}"       ])
+("cv"     ["\\vec{c}"       ])  ("ch"     ["\\hat{c}"       ])
+("dv"     ["\\vec{d}"       ])  ("dh"     ["\\hat{d}"       ])
+("ev"     ["\\vec{e}"       ])  ("eh"     ["\\hat{e}"       ])
+("fv"     ["\\vec{f}"       ])  ("fh"     ["\\hat{f}"       ])
+("gv"     ["\\vec{g}"       ])  ("gh"     ["\\hat{g}"       ])
+("hv"     ["\\vec{h}"       ])  ("hh"     ["\\hat{h}"       ])
+("iv"     ["\\vec{i}"       ])  ("ih"     ["\\hat{i}"       ])
+("jv"     ["\\vec{j}"       ])  ("jh"     ["\\hat{j}"       ])
+("kv"     ["\\vec{k}"       ])  ("kh"     ["\\hat{k}"       ])
+("lv"     ["\\vec{l}"       ])  ("lh"     ["\\hat{l}"       ])
+("mv"     ["\\vec{m}"       ])  ("mh"     ["\\hat{m}"       ])
+("nv"     ["\\vec{n}"       ])  ("nh"     ["\\hat{n}"       ])
+("ov"     ["\\vec{o}"       ])  ("oh"     ["\\hat{o}"       ])
+("pv"     ["\\vec{p}"       ])  ("ph"     ["\\hat{p}"       ])
+("qv"     ["\\vec{q}"       ])  ("qh"     ["\\hat{q}"       ])
+("rv"     ["\\vec{r}"       ])  ("rh"     ["\\hat{r}"       ])
+("sv"     ["\\vec{s}"       ])  ("sh"     ["\\hat{s}"       ])
+("tv"     ["\\vec{t}"       ])  ("th"     ["\\hat{t}"       ])
+("uv"     ["\\vec{u}"       ])  ("uh"     ["\\hat{u}"       ])
+("vv"     ["\\vec{v}"       ])  ("vh"     ["\\hat{v}"       ])
+("wv"     ["\\vec{w}"       ])  ("wh"     ["\\hat{w}"       ])
+("xv"     ["\\vec{x}"       ])  ("xh"     ["\\hat{x}"       ])
+("yv"     ["\\vec{y}"       ])  ("yh"     ["\\hat{y}"       ])
+("zv"     ["\\vec{z}"       ])  ("zh"     ["\\hat{z}"       ])
 ;; Expanding Func
 ("/"       "quail-TeQ-frac"      )  ; fraction on previous
 ("eq"      "quail-TeQ-equation"  )  ; equation environment
 ("al"      "quail-TeQ-aligned"   )  ; aligned environment
 ("el"      "quail-TeQ-endofline" )  ; end of line
 ;; Symbols-dots
-("..."     "\\dots"              )  ; 3 dots
-(".v"      "\\vdots"             )  ; vertical dots
-(".d"      "\\ddots"             )  ; diagonale dots
-(".l"      "\\ldots"             )  ; low dots
+("..."     ["\\dots"              ])  ; 3 dots
+(".v"      ["\\vdots"             ])  ; vertical dots
+(".d"      ["\\ddots"             ])  ; diagonale dots
+(".l"      ["\\ldots"             ])  ; low dots
 ;; Symbols-geo
-("perp"    "\\perp"              )  ; 
-("perpn"   "\\perp"              )  ; 
-("para"    "\\parallel"          )  ; 
-("paran"   "\\nparallel"         )  ; 
-("ang"     "\\angle"             )  ; 
-("ang."    "\\measuredangle"     )  ; 
+("perp"    ["\\perp"              ])  ; 
+("perpn"   ["\\perp"              ])  ; 
+("para"    ["\\parallel"          ])  ; 
+("paran"   ["\\nparallel"         ])  ; 
+("ang"     ["\\angle"             ])  ; 
+("ang."    ["\\measuredangle"     ])  ; 
 ;; Symbols
-("inf"     "\\infty"             )  ; 
-("ex"      "\\exists"            )  ; 
-("ex."     "\\nexists"           )  ; 
-("fa"      "\\forall"            )  ; 
-("hb"      "\\hbar"              )  ; 
-("hb."     "\\hslash"            )  ; 
-("dd"      "\\mathrm{d}"         )  ; 
-("dd."     "\\partial"           )  ; 
-("ii"      "\\imath"             )  ; 
-("jj"      "\\jmath"             )  ; 
-("nab"     "\\nabla"             )  ; 
-("cm"      "\\checkmark"         )  ; 
+("inf"     ["\\infty"             ])  ; 
+("ex"      ["\\exists"            ])  ; 
+("ex."     ["\\nexists"           ])  ; 
+("fa"      ["\\forall"            ])  ; 
+("hb"      ["\\hbar"              ])  ; 
+("hb."     ["\\hslash"            ])  ; 
+("dd"      ["\\mathrm{d}"         ])  ; 
+("dd."     ["\\partial"           ])  ; 
+("ii"      ["\\imath"             ])  ; 
+("jj"      ["\\jmath"             ])  ; 
+("nab"     ["\\nabla"             ])  ; 
+("cm"      ["\\checkmark"         ])  ; 
 ;; Symbols spaces
-("qu"      "\\quad"              )  ; 
-("quu"     "\\qquad"             )  ; 
+("qu"      ["\\quad"              ])  ; 
+("quu"     ["\\qquad"             ])  ; 
 ;; Symbols arrow1
-("<-"      "\\leftarrow"         )  ; left arrow
-("->"      "\\rightarrow"        )  ; right arrow
-("-^"      "\\uparrow"           )  ; up arrow
-("-v"      "\\downarrow"         )  ; down arrow
-("<->"     "\\leftrightarrow"    )  ; left-right arrow
-("<-n"     "\\nleftarrow"        )  ; not left arrow
-("->n"     "\\nrightarrow"       )  ; not right arrow
-("-^n"     "\\nuparrow"          )  ; not up arrow
-("-vn"     "\\ndownarrow"        )  ; not down arrow
-("<->"     "\\nleftrightarrow"   )  ; not left-right arrow
-("-->"     "\\longrightarrow"    )  ; 
-("<--"     "\\longleftarrow"     )  ; 
-("\\vert ->"  "\\mapsto"            )  ; 
+("<-"      ["\\leftarrow"         ])  ; left arrow
+("->"      ["\\rightarrow"        ])  ; right arrow
+("-^"      ["\\uparrow"           ])  ; up arrow
+("-v"      ["\\downarrow"         ])  ; down arrow
+("<->"     ["\\leftrightarrow"    ])  ; left-right arrow
+("<-n"     ["\\nleftarrow"        ])  ; not left arrow
+("->n"     ["\\nrightarrow"       ])  ; not right arrow
+("-^n"     ["\\nuparrow"          ])  ; not up arrow
+("-vn"     ["\\ndownarrow"        ])  ; not down arrow
+("<->"     ["\\nleftrightarrow"   ])  ; not left-right arrow
+("-->"     ["\\longrightarrow"    ])  ; 
+("<--"     ["\\longleftarrow"     ])  ; 
+("\\vert ->"  ["\\mapsto"            ])  ; 
 ;; Symbols arrow2
-("<="      "\\Leftarrow"         )  ; left arrow
-("=>"      "\\Rightarrow"        )  ; right arrow
-("=^"      "\\Uparrow"           )  ; up arrow
-("=v"      "\\Downarrow"         )  ; down arrow
-("<=>"     "\\Leftrightarrow"    )  ; left-right arrow
-("iff"     "\\Leftrightarrow"    )  ; left-right arrow
-("<=n"     "\\nLeftarrow"        )  ; left arrow
-("=>n"     "\\nRightarrow"       )  ; right arrow
-("<=>n"    "\\nLeftrightarrow"   )  ; left-right arrow
-("iffn"    "\\nLeftrightarrow"   )  ; left-right arrow
-("<==>"    "\\Longleftrightarrow")  ; left-right arrow
-("<=="     "\\Longleftarrow"     )  ; left-right arrow
-("==>"     "\\Longrightarrow"    )  ; left-right arrow
+("<="      ["\\Leftarrow"         ])  ; left arrow
+("=>"      ["\\Rightarrow"        ])  ; right arrow
+("=^"      ["\\Uparrow"           ])  ; up arrow
+("=v"      ["\\Downarrow"         ])  ; down arrow
+("<=>"     ["\\Leftrightarrow"    ])  ; left-right arrow
+("iff"     ["\\Leftrightarrow"    ])  ; left-right arrow
+("<=n"     ["\\nLeftarrow"        ])  ; left arrow
+("=>n"     ["\\nRightarrow"       ])  ; right arrow
+("<=>n"    ["\\nLeftrightarrow"   ])  ; left-right arrow
+("iffn"    ["\\nLeftrightarrow"   ])  ; left-right arrow
+("<==>"    ["\\Longleftrightarrow"])  ; left-right arrow
+("<=="     ["\\Longleftarrow"     ])  ; left-right arrow
+("==>"     ["\\Longrightarrow"    ])  ; left-right arrow
 ;; Symbols arrow3
-("<---"    "\\xleftarrow[ ]{ }"  )  ; 
-("--->"    "\\xrightarrow[ ]{ }" )  ; 
-("===>"    "\\xRightarrow[ ]{ }" )  ; ~mathtools~ lib required
-("<==="    "\\xLeftarrow[ ]{ }"  )  ; ~mathtools~ lib required
+("<---"    ["\\xleftarrow[ ]{ }"  ])  ; 
+("--->"    ["\\xrightarrow[ ]{ }" ])  ; 
+("===>"    ["\\xRightarrow[ ]{ }" ])  ; ~mathtools~ lib required
+("<==="    ["\\xLeftarrow[ ]{ }"  ])  ; ~mathtools~ lib required
 ;; Symbols arrow3
-("vec"     "\\vec"               )  ; 
-("bar"     "\\bar"               )  ; 
-("hat"     "\\hat"               )  ; 
-("dot"     "\\dot"               )  ; 
-("dot."    "\\ddot"              )  ; 
-("dot.."   "\\dddot"             )  ; 
-("dot..."  "\\ddddot"            )  ; 
-("dag"     "^\\dagger"           )  ; 
-("dag."    "^\\ddagger"          )  ; 
-("*.."     "^*"                  )  ; 
-("deg"     "^\\circ"             )  ; 
-("tr"      "^T"                  )  ; 
-("tr."     "^{-T}"               )  ; 
+("vec"     ["\\vec"               ])  ; 
+("bar"     ["\\bar"               ])  ; 
+("hat"     ["\\hat"               ])  ; 
+("dot"     ["\\dot"               ])  ; 
+("dot."    ["\\ddot"              ])  ; 
+("dot.."   ["\\dddot"             ])  ; 
+("dot..."  ["\\ddddot"            ])  ; 
+("dag"     ["^\\dagger"           ])  ; 
+("dag."    ["^\\ddagger"          ])  ; 
+("*.."     ["^*"                  ])  ; 
+("deg"     ["^\\circ"             ])  ; 
+("tr"      ["^T"                  ])  ; 
+("tr."     ["^{-T}"               ])  ; 
 ;; Operation: arith
-("+-"      "\\pm"                )  ; 
-("-+"      "\\mp"                )  ; 
-("*x"      "\\times"             )  ; 
-("::"      "\\div"               )  ; 
-("**"      "\\cdot"              )  ; 
+("+-"      ["\\pm"                ])  ; 
+("-+"      ["\\mp"                ])  ; 
+("*x"      ["\\times"             ])  ; 
+("::"      ["\\div"               ])  ; 
+("**"      ["\\cdot"              ])  ; 
 ;; Operation: arith
-("=n"      "$\\neq$"             )  ; 
-("=."      "$\\equiv$"           )  ; 
-("=?"      "$\\stackrel{?}{=}$"  )  ; 
-("=y"      "$\\stackrel{\\checkmark}{=}$")  ; 
-("3="      "$\\equiv$"           )  ; 
-("=:"      "$\\coloneqq$"        )  ; 
-(":="      "$\\coloneqq$"        )  ; 
-("=.="     "$\\sim$"             )  ; 
-("=n="     "$\\nsim$"            )  ; 
-(""        "$\\approx$"          )  ; 
-("<n"      "$\\nless$"           )  ; 
-("<."      "$\\leq$"             )  ; 
-("<.n"     "$\\nleq$"            )  ; 
-("<?"      "$\\stackrel{?}{<}$"  )  ; 
-("<y"      "$\\stackrel{\\checkmark}{<}$")  ; 
-("<.?"     "$\\stackrel{?}{\\leq}$")  ; 
-("<.y"     "$\\stackrel{\\checkmark}{\\leq}$")  ; 
-("<<"      "$\\ll$"              )  ; 
-("<<?"     "$\\stackrel{?}{\\ll}$")  ; 
-("<<y"     "$\\stackrel{\\checkmark}{\\ll}$")  ; 
-(">n"      "$\\ngtr$"            )  ; 
-(">."      "$\\geq$"             )  ; 
-(">.n"     "$\\ngeq$"            )  ; 
-(">?"      "$\\stackrel{?}{>}$"  )  ; 
-(">y"      "$\\stackrel{\\checkmark}{>}$")  ; 
-(">.?"     "$\\stackrel{?}{\\geq}$")  ; 
-(">.y"     "$\\stackrel{\\checkmark}{\\geq}$")  ; 
-(">>"      "$\\gg$"              )  ; 
-(">>?"     "$\\stackrel{?}{\\gg}$")  ; 
-(">>y"     "$\\stackrel{\\checkmark}{\\gg}$")  ; 
+("=n"      ["\\neq"               ])  ; 
+("=."      ["\\equiv"             ])  ; 
+("=?"      ["\\stackrel{?}{=}"    ])  ; 
+("=y"      ["\\stackrel{\\checkmark}{=}"])  ; 
+("3="      ["\\equiv"             ])  ; 
+("=:"      ["\\coloneqq"          ])  ; 
+(":="      ["\\coloneqq"          ])  ; 
+("=.="     ["\\sim"               ])  ; 
+("=n="     ["\\nsim"              ])  ; 
+(""        ["\\approx"            ])  ; 
+("<n"      ["\\nless"             ])  ; 
+("<."      ["\\leq"               ])  ; 
+("<.n"     ["\\nleq"              ])  ; 
+("<?"      ["\\stackrel{?}{<}"    ])  ; 
+("<y"      ["\\stackrel{\\checkmark}{<}"])  ; 
+("<.?"     ["\\stackrel{?}{\\leq}"])  ; 
+("<.y"     ["\\stackrel{\\checkmark}{\\leq}"])  ; 
+("<<"      ["\\ll"                ])  ; 
+("<<?"     ["\\stackrel{?}{\\ll}" ])  ; 
+("<<y"     ["\\stackrel{\\checkmark}{\\ll}"])  ; 
+(">n"      ["\\ngtr"              ])  ; 
+(">."      ["\\geq"               ])  ; 
+(">.n"     ["\\ngeq"              ])  ; 
+(">?"      ["\\stackrel{?}{>}"    ])  ; 
+(">y"      ["\\stackrel{\\checkmark}{>}"])  ; 
+(">.?"     ["\\stackrel{?}{\\geq}"])  ; 
+(">.y"     ["\\stackrel{\\checkmark}{\\geq}"])  ; 
+(">>"      ["\\gg"                ])  ; 
+(">>?"     ["\\stackrel{?}{\\gg}" ])  ; 
+(">>y"     ["\\stackrel{\\checkmark}{\\gg}"])  ; 
 ;; Operation: arith
-("in"      "$\\in$"              )  ; 
-("in."     "$\\ni$"              )  ; 
-("ni"      "$\\ni$"              )  ; 
-("inn"     "$\\notin$"           )  ; 
-("0/"      "$\\emptyset$"        )  ; 
-("nsr"     "$\\mathbb{R}$"       )  ; 
-("nsc"     "$\\mathbb{C}$"       )  ; 
-("nsn"     "$\\mathbb{N}$"       )  ; 
-("nsp"     "$\\mathbb{P}$"       )  ; 
-("nsz"     "$\\mathbb{Z}$"       )  ; 
-("nsi"     "$\\mathbb{I}$"       )  ; 
-("sub"     "$\\subset$"          )  ; 
-("subn"    "$\\nsubseteq$"       )  ; 
-("sub="    "$\\subseteq$"        )  ; 
-("sub=n"   "$\\nsubseteq$"       )  ; 
-("subn="   "$\\nsubseteq$"       )  ; 
-("sup"     "$\\supset$"          )  ; 
-("supn"    "$\\nsupseteq$"       )  ; 
-("sup="    "$\\supseteq$"        )  ; 
-("sup=n"   "$\\nsupseteq$"       )  ; 
-("supn="   "$\\nsupseteq$"       )  ; 
+("in"      ["\\in"                ])  ; 
+("in."     ["\\ni"                ])  ; 
+("ni"      ["\\ni"                ])  ; 
+("inn"     ["\\notin"             ])  ; 
+("0/"      ["\\emptyset"          ])  ; 
+("nsr"     ["\\mathbb{R}"         ])  ; 
+("nsc"     ["\\mathbb{C}"         ])  ; 
+("nsn"     ["\\mathbb{N}"         ])  ; 
+("nsp"     ["\\mathbb{P}"         ])  ; 
+("nsz"     ["\\mathbb{Z}"         ])  ; 
+("nsi"     ["\\mathbb{I}"         ])  ; 
+("sub"     ["\\subset"            ])  ; 
+("subn"    ["\\nssubseteq"        ])  ; 
+("sub="    ["\\subseteq"          ])  ; 
+("sub=n"   ["\\nsubseteq"         ])  ; 
+("subn="   ["\\nsubseteq"         ])  ; 
+("sup"     ["\\supset"            ])  ; 
+("supn"    ["\\nsupseteq"         ])  ; 
+("sup="    ["\\supeseteq"         ])  ; 
+("sup=n"   ["\\nsupseteq"         ])  ; 
+("supn="   ["\\nsupseteq"         ])  ; 
 ;; Operation: arith
-("or"      "$\\lor$"             )  ; 
-("and"     "$\\land$"            )  ; 
-("not"     "$\\neg$"             )  ; 
-("or."     "$\\text{ or }$"      )  ; 
-("and."    "$\\text{ and }$"     )  ; 
-("not."    "$\\text{ not }$"     )  ; 
+("or"      ["\\lor"               ])  ; 
+("and"     ["\\lnd"               ])  ; 
+("not"     ["\\neg"               ])  ; 
+("or."     ["\\text{ or }"        ])  ; 
+("and."    ["\\text{ and }"       ])  ; 
+("not."    ["\\text{ not }"       ])  ; 
 ;; Func: main
-("rank"    "$\\mathrm{rank}$"    )  ; 
-("arg"     "$\\arg$"             )  ; 
-("det"     "$\\det$"             )  ; 
-("dim"     "$\\dim$"             )  ; 
-("exp"     "$\\exp$"             )  ; 
-("Im"      "$\\mathrm{Im}$"      )  ; 
-("Re"      "$\\mathrm{Re}$"      )  ; 
-("ln"      "$\\ln$"              )  ; 
-("log"     "$\\log$"             )  ; 
-("max"     "$\\max$"             )  ; 
-("min"     "$\\min$"             )  ; 
-("dim"     "$\\dim$"             )  ; 
-("sqrt"    "$\\sqrt[\\Box]{\\Box}$")  ; 
-("mod"     "$\\Box \\pmod \\Box$")  ; 
-("mod."    "$\\Box \\mod \\Box$" )  ; 
-("mod.."   "$\\Box \\bmod \\Box$")  ; 
+("rank"    ["\\mathrm{rank}"      ])  ; 
+("arg"     ["\\arg"               ])  ; 
+("det"     ["\\det"               ])  ; 
+("dim"     ["\\dim"               ])  ; 
+("exp"     ["\\exp"               ])  ; 
+("Im"      ["\\mathrm{Im}"        ])  ; 
+("Re"      ["\\mathrm{Re}"        ])  ; 
+("ln"      ["\\ln"                ])  ; 
+("log"     ["\\log"               ])  ; 
+("max"     ["\\max"               ])  ; 
+("min"     ["\\min"               ])  ; 
+("dim"     ["\\dim"               ])  ; 
+("sqrt"    ["\\sqrt"              ])  ; 
+("mod"     ["\\pmod"              ])  ; 
+("mod."    ["\\mod"               ])  ; 
+("mod.."   ["\\bmod"              ])  ; 
 ;; Func: Trig
-("cos"    ["\\cos"          ])  ("cos"    ["\\cos"          ])
-("sin"    ["\\sin"          ])  ("sin"    ["\\sin"          ])
-("tan"    ["\\tan"          ])  ("tan"    ["\\tan"          ])
-("cot"    ["\\cot"          ])  ("cot"    ["\\cot"          ])
-("acos"   ["\\arccos"       ])  ("acos"   ["\\arccos"       ])
-("asin"   ["\\arcsin"       ])  ("asin"   ["\\arcsin"       ])
-("atan"   ["\\arctan"       ])  ("atan"   ["\\arctan"       ])
+("cos"    ["\\cos"          ])  ("cosh"   ["\\cosh"         ])
+("sin"    ["\\sin"          ])  ("sinh"   ["\\sinh"         ])
+("tan"    ["\\tan"          ])  ("tanh"   ["\\tanh"         ])
+("cot"    ["\\cot"          ])  ("coth"   ["\\coth"         ])
+("acos"   ["\\arccos"       ])  ("cos."   ["\\arccos"       ])
+("asin"   ["\\arcsin"       ])  ("sin."   ["\\arcsin"       ])
+("atan"   ["\\arctan"       ])  ("tan."   ["\\arctan"       ])
 ;; Func: iter
-("il"      "$\\sum\\limits_{ here }^{here}$")  ; 
-("lim"     "$\\lim$"             )  ; 
-("sum"     "$\\sum$"             )  ; 
-("prod"    "$\\prod$"            )  ; 
-("int"     "$\\int$"             )  ; 
-("inti"    "$\\iint$"            )  ; 
-("intii"   "$\\iiint$"           )  ; 
-("intiii"  "$\\iiiint$"          )  ; 
-("into"    "$\\oint$"            )  ; 
-("sum."    "$\\sum\\limits_{ i=1 }^{ n }$")  ; 
-("prod."   "$\\prod\\limits_{ i=1 }^{ n }$")  ; 
-("int."    "$\\int\\limits_{ -\\infty }^{ -\\infty }$")  ; 
-("inti."   "$\\iint\\limits_{ C }$")  ; 
-("intii."  "$\\iiint\\limits_{ C }$")  ; 
-("intiii."  "$\\iiiint\\limits_{ C }$")  ; 
-("into."   "$\\oint\\limits_{ C }$")  ; 
+("il"      ["\\limits_{ }^{ }"    ])  ; 
+("lim"     ["\\lim"               ])  ; 
+("sum"     ["\\sum"               ])  ; 
+("prod"    ["\\prod"              ])  ; 
+("int"     ["\\int"               ])  ; 
+("inti"    ["\\iint"              ])  ; 
+("intii"   ["\\iiint"             ])  ; 
+("intiii"  ["\\iiiint"            ])  ; 
+("into"    ["\\oint"              ])  ; 
+("sum."    ["\\sum\\limits_{ i=1 }^{ n }"])  ; 
+("prod."   ["\\prod\\limits_{ i=1 }^{ n }"])  ; 
+("int."    ["\\int\\limits_{ -\\infty }^{ -\\infty }"])  ; 
+("inti."   ["\\iint\\limits_{ C }"])  ; 
+("intii."  ["\\iiint\\limits_{ C }"])  ; 
+("intiii."  ["\\iiiint\\limits_{ C }"])  ; 
+("into."   ["\\oint\\limits_{ C }"])  ; 
 ;; Structural: Parenthesis
-("()."     "$\\left( \\Box \\right)$")  ; 
-("().."    "$\\left( \\Box \\middle\\vert \\Box \\right)$")  ; 
-("[]."     "$\\left[ \\Box \\right]$")  ; 
-("[].."    "$\\left[ \\Box \\middle\\vert \\Box \\right]$")  ; 
-("[].c"    "$\\lceil \\Box \\rceil$")  ; 
-("[].f"    "$\\lfloor \\Box \\rfloor$")  ; 
-("{}."     "$\\left\\{ \\Box \\right\\}$")  ; 
-("{}.."    "$\\left\\{ \\Box \\middle\\vert \\Box \\right\\}$")  ; 
-("\\vert\\vert ."  "$\\left\\vert \\Box \\right\\vert$")  ; 
+("()."     ["\\left( \\right)"    ])  ; 
+("().."    ["\\left( \\middle\\vert  \\right)"])  ; 
+("[]."     ["\\left[ \\right]"    ])  ; 
+("[].."    ["\\left[ \\middle\\vert  \\right]"])  ; 
+("[].c"    ["\\lceil \\rceil"     ])  ; 
+("[].f"    ["\\lfloor \\floor"    ])  ; 
+("{}."     ["\\left\\{ \\right\\}"])  ; 
+("{}.."    ["\\left\\{ \\middle\\vert  \\right\\}"])  ; 
+("\\vert\\vert ."  ["\\left\\vert \\right\\vert"])  ; 
 ;; Structural: Text
-("te"      "$a + \\text{text}$"  )  ; 
-("tr"      "$a + \\mathrm{mathrm}$")  ; 
-("tb"      "$a + \\mathbf{mathbf}$")  ; 
-("ti"      "$a + \\mathit{mathit}$")  ; 
+("te"      ["\\text{}"            ])  ; 
+("tr"      ["\\mathrm{}"          ])  ; 
+("tb"      ["\\mathbf{}"          ])  ; 
+("ti"      ["\\mathit{}"          ])  ; 
 ;; Structural: Text
-("te"      "$a + \\text{text}$"  )  ; 
-("tr"      "$a + \\mathrm{mathrm}$")  ; 
-("tb"      "$a + \\mathbf{mathbf}$")  ; 
-("ti"      "$a + \\mathit{mathit}$")  ; 
+("te"      ["\\text{}"            ])  ; 
+("tr"      ["\\mathrm{}"          ])  ; 
+("tb"      ["\\mathbf{}"          ])  ; 
+("ti"      ["\\mathit{}"          ])  ; 
 ;; Structural: Sub-sup-scripts
-("pp"     ["^{"             ])  ("pp"     ["^{"             ])
-("p0"     ["^0"             ])  ("p0"     ["^0"             ])
-("p1"     ["^1"             ])  ("p1"     ["^1"             ])
-("p2"     ["^2"             ])  ("p2"     ["^2"             ])
-("p3"     ["^3"             ])  ("p3"     ["^3"             ])
-("p4"     ["^4"             ])  ("p4"     ["^4"             ])
-("pn"     ["^n"             ])  ("pn"     ["^n"             ])
-("px"     ["^x"             ])  ("px"     ["^x"             ])
-("__"     ["\\underset{ }{ }"])  ("__"     ["\\underset{ }{ }"])
-("__."    ["\\underbrace{ }_{ }"])  ("__."    ["\\underbrace{ }_{ }"])
-("__.."   ["\\underline{ }" ])  ("__.."   ["\\underline{ }" ])
+("pp"     ["^{"             ])  ("ll"     ["_{"             ])
+("p0"     ["^0"             ])  ("l0"     ["_0"             ])
+("p1"     ["^1"             ])  ("l1"     ["_1"             ])
+("p2"     ["^2"             ])  ("l2"     ["_2"             ])
+("p3"     ["^3"             ])  ("l3"     ["_3"             ])
+("p4"     ["^4"             ])  ("l4"     ["_4"             ])
+("pn"     ["^n"             ])  ("lnn"    ["_n"             ])
+("px"     ["^x"             ])  ("li"     ["_i"             ])
+("__"     ["\\underset{ }{ }"])  ("^^"     ["\\overset{ }{ }"])
+("__."    ["\\underbrace{ }_{ }"])  ("^^."    ["\\overbrace{ }^{ }"])
+("__.."   ["\\underline{ }" ])  ("^^.."   ["\\overline{ }"  ])
 ;; Structural: misc
-("binom"   "$\\binom{\\Box}{\\Box}$")  ; 
-("box"     "$\\boxed{\\Box}$"    )  ; 
-("can"     "$\\cancel{\\Box}$"   )  ; requires ~cancel~
-("&="      ""                    )  ; 
-("=&"      ""                    )  ; 
+("binom"   ["\\binom"             ])  ; 
+("box"     ["\\boxed"             ])  ; 
+("can"     ["\\cancel"            ])  ; requires ~cancel~
+("&="      ["&=\\n\\\\\\\\"       ])  ; 
+("=&"      ["&=\\n\\\\\\\\"       ])  ; 
 ;; Structural: xy
-("xy"      ""                    )  ; 
-("bu"      "$\\bullet$"          )  ; 
-("ar"      ""                    )  ; 
+("xy"      ["\\xymatrix{\\n\\n}"  ])  ; 
+("bu"      ["\\bullet"            ])  ; 
+("ar"      ["\\ar"                ])  ; 
 #+end_SRC
 
 
 
+* Making the ~el~
+#+begin_src elisp :tangle /tmp/final.el :noweb yes
+(require 'quail)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(quail-define-package
+ "TeQ-Math" "Emacs-Teq-Latex"  "TeQ-" t
+ "TeQ-Math input"
+ nil t t t t nil nil nil nil nil t)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(quail-define-rules
+    ;; Greek Alphabets
+    <<el-from-table>>
+)
+#+end_src
+
+#+RESULTS:
 
 
 * COMMENT Matrix env
@@ -939,7 +959,6 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
  ("matp" ["\\begin{pmatrix}\n\n\\end{pmatrix}"])
 #+end_src
 
-
 * COMMENT Tmp
  ("case" ["\\begin{cases}\n\\end{cases}"])
  ("env"  ["\\begin{ }\n\\end{ }"])
@@ -947,7 +966,6 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
  ("sqrt" ["\\sqrt {}"])
 
 
- 
 * COMMENT example table
 #+caption:  
 #+name: 
