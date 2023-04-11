@@ -135,32 +135,32 @@
 |------+-----------+-------------+------+-----------+-------------|
 | key  | sym       | latex (vec) | key  | sym       | latex (hat) |
 |------+-----------+-------------+------+-----------+-------------|
-| ~ad~ | $\dot{a}$ | ~\dot{a}~   | ~Ad~ | $\dot{a}$ | ~\dot{A}~   |
-| ~bd~ | $\dot{b}$ | ~\dot{b}~   | ~Bd~ | $\dot{b}$ | ~\dot{B}~   |
-| ~cd~ | $\dot{c}$ | ~\dot{c}~   | ~Cd~ | $\dot{c}$ | ~\dot{C}~   |
-| ~dd~ | $\dot{d}$ | ~\dot{d}~   | ~Dd~ | $\dot{d}$ | ~\dot{D}~   |
-| ~ed~ | $\dot{e}$ | ~\dot{e}~   | ~Ed~ | $\dot{e}$ | ~\dot{E}~   |
-| ~fd~ | $\dot{f}$ | ~\dot{f}~   | ~Fd~ | $\dot{f}$ | ~\dot{F}~   |
-| ~gd~ | $\dot{g}$ | ~\dot{g}~   | ~Gd~ | $\dot{g}$ | ~\dot{G}~   |
-| ~hd~ | $\dot{h}$ | ~\dot{h}~   | ~Hd~ | $\dot{h}$ | ~\dot{H}~   |
-| ~id~ | $\dot{i}$ | ~\dot{i}~   | ~Id~ | $\dot{i}$ | ~\dot{I}~   |
-| ~jd~ | $\dot{j}$ | ~\dot{j}~   | ~Jd~ | $\dot{j}$ | ~\dot{J}~   |
-| ~kd~ | $\dot{k}$ | ~\dot{k}~   | ~Kd~ | $\dot{k}$ | ~\dot{K}~   |
-| ~ld~ | $\dot{l}$ | ~\dot{l}~   | ~Ld~ | $\dot{l}$ | ~\dot{L}~   |
-| ~md~ | $\dot{m}$ | ~\dot{m}~   | ~Md~ | $\dot{m}$ | ~\dot{M}~   |
-| ~nd~ | $\dot{n}$ | ~\dot{n}~   | ~Nd~ | $\dot{n}$ | ~\dot{N}~   |
-| ~od~ | $\dot{o}$ | ~\dot{o}~   | ~Od~ | $\dot{o}$ | ~\dot{O}~   |
-| ~pd~ | $\dot{p}$ | ~\dot{p}~   | ~Pd~ | $\dot{p}$ | ~\dot{P}~   |
-| ~qd~ | $\dot{q}$ | ~\dot{q}~   | ~Qd~ | $\dot{q}$ | ~\dot{Q}~   |
-| ~rd~ | $\dot{r}$ | ~\dot{r}~   | ~Rd~ | $\dot{r}$ | ~\dot{R}~   |
-| ~sd~ | $\dot{s}$ | ~\dot{s}~   | ~Sd~ | $\dot{s}$ | ~\dot{S}~   |
-| ~td~ | $\dot{t}$ | ~\dot{t}~   | ~Td~ | $\dot{t}$ | ~\dot{T}~   |
-| ~ud~ | $\dot{u}$ | ~\dot{u}~   | ~Ud~ | $\dot{u}$ | ~\dot{U}~   |
-| ~vd~ | $\dot{v}$ | ~\dot{v}~   | ~Vd~ | $\dot{v}$ | ~\dot{V}~   |
-| ~wd~ | $\dot{w}$ | ~\dot{w}~   | ~Wd~ | $\dot{w}$ | ~\dot{W}~   |
-| ~xd~ | $\dot{x}$ | ~\dot{x}~   | ~Xd~ | $\dot{x}$ | ~\dot{X}~   |
-| ~yd~ | $\dot{y}$ | ~\dot{y}~   | ~Yd~ | $\dot{y}$ | ~\dot{Y}~   |
-| ~zd~ | $\dot{z}$ | ~\dot{z}~   | ~Zd~ | $\dot{z}$ | ~\dot{Z}~   |
+| ~ad~ | $\dot{a}$ | ~\dot{a}~   | ~Ad~ | $\dot{A}$ | ~\dot{A}~   |
+| ~bd~ | $\dot{b}$ | ~\dot{b}~   | ~Bd~ | $\dot{B}$ | ~\dot{B}~   |
+| ~cd~ | $\dot{c}$ | ~\dot{c}~   | ~Cd~ | $\dot{C}$ | ~\dot{C}~   |
+| ~dd~ | $\dot{d}$ | ~\dot{d}~   | ~Dd~ | $\dot{D}$ | ~\dot{D}~   |
+| ~ed~ | $\dot{e}$ | ~\dot{e}~   | ~Ed~ | $\dot{E}$ | ~\dot{E}~   |
+| ~fd~ | $\dot{f}$ | ~\dot{f}~   | ~Fd~ | $\dot{F}$ | ~\dot{F}~   |
+| ~gd~ | $\dot{g}$ | ~\dot{g}~   | ~Gd~ | $\dot{G}$ | ~\dot{G}~   |
+| ~hd~ | $\dot{h}$ | ~\dot{h}~   | ~Hd~ | $\dot{H}$ | ~\dot{H}~   |
+| ~id~ | $\dot{i}$ | ~\dot{i}~   | ~Id~ | $\dot{I}$ | ~\dot{I}~   |
+| ~jd~ | $\dot{j}$ | ~\dot{j}~   | ~Jd~ | $\dot{J}$ | ~\dot{J}~   |
+| ~kd~ | $\dot{k}$ | ~\dot{k}~   | ~Kd~ | $\dot{K}$ | ~\dot{K}~   |
+| ~ld~ | $\dot{l}$ | ~\dot{l}~   | ~Ld~ | $\dot{L}$ | ~\dot{L}~   |
+| ~md~ | $\dot{m}$ | ~\dot{m}~   | ~Md~ | $\dot{M}$ | ~\dot{M}~   |
+| ~nd~ | $\dot{n}$ | ~\dot{n}~   | ~Nd~ | $\dot{N}$ | ~\dot{N}~   |
+| ~od~ | $\dot{o}$ | ~\dot{o}~   | ~Od~ | $\dot{O}$ | ~\dot{O}~   |
+| ~pd~ | $\dot{p}$ | ~\dot{p}~   | ~Pd~ | $\dot{P}$ | ~\dot{P}~   |
+| ~qd~ | $\dot{q}$ | ~\dot{q}~   | ~Qd~ | $\dot{Q}$ | ~\dot{Q}~   |
+| ~rd~ | $\dot{r}$ | ~\dot{r}~   | ~Rd~ | $\dot{R}$ | ~\dot{R}~   |
+| ~sd~ | $\dot{s}$ | ~\dot{s}~   | ~Sd~ | $\dot{S}$ | ~\dot{S}~   |
+| ~td~ | $\dot{t}$ | ~\dot{t}~   | ~Td~ | $\dot{T}$ | ~\dot{T}~   |
+| ~ud~ | $\dot{u}$ | ~\dot{u}~   | ~Ud~ | $\dot{U}$ | ~\dot{U}~   |
+| ~vd~ | $\dot{v}$ | ~\dot{v}~   | ~Vd~ | $\dot{V}$ | ~\dot{V}~   |
+| ~wd~ | $\dot{w}$ | ~\dot{w}~   | ~Wd~ | $\dot{W}$ | ~\dot{W}~   |
+| ~xd~ | $\dot{x}$ | ~\dot{x}~   | ~Xd~ | $\dot{X}$ | ~\dot{X}~   |
+| ~yd~ | $\dot{y}$ | ~\dot{y}~   | ~Yd~ | $\dot{Y}$ | ~\dot{Y}~   |
+| ~zd~ | $\dot{z}$ | ~\dot{z}~   | ~Zd~ | $\dot{Z}$ | ~\dot{Z}~   |
 |------+-----------+-------------+------+-----------+-------------|
 **  DDots
 #+caption: DDots
@@ -169,32 +169,32 @@
 |-------+------------+-------------+-------+------------+-------------|
 | key   | sym        | latex (vec) | key   | sym        | latex (hat) |
 |-------+------------+-------------+-------+------------+-------------|
-| ~ad.~ | $\ddot{a}$ | ~\ddot{a}~  | ~Ad.~ | $\ddot{a}$ | ~\ddot{A}~  |
-| ~bd.~ | $\ddot{b}$ | ~\ddot{b}~  | ~Bd.~ | $\ddot{b}$ | ~\ddot{B}~  |
-| ~cd.~ | $\ddot{c}$ | ~\ddot{c}~  | ~Cd.~ | $\ddot{c}$ | ~\ddot{C}~  |
-| ~dd.~ | $\ddot{d}$ | ~\ddot{d}~  | ~Dd.~ | $\ddot{d}$ | ~\ddot{D}~  |
-| ~ed.~ | $\ddot{e}$ | ~\ddot{e}~  | ~Ed.~ | $\ddot{e}$ | ~\ddot{E}~  |
-| ~fd.~ | $\ddot{f}$ | ~\ddot{f}~  | ~Fd.~ | $\ddot{f}$ | ~\ddot{F}~  |
-| ~gd.~ | $\ddot{g}$ | ~\ddot{g}~  | ~Gd.~ | $\ddot{g}$ | ~\ddot{G}~  |
-| ~hd.~ | $\ddot{h}$ | ~\ddot{h}~  | ~Hd.~ | $\ddot{h}$ | ~\ddot{H}~  |
-| ~id.~ | $\ddot{i}$ | ~\ddot{i}~  | ~Id.~ | $\ddot{i}$ | ~\ddot{I}~  |
-| ~jd.~ | $\ddot{j}$ | ~\ddot{j}~  | ~Jd.~ | $\ddot{j}$ | ~\ddot{J}~  |
-| ~kd.~ | $\ddot{k}$ | ~\ddot{k}~  | ~Kd.~ | $\ddot{k}$ | ~\ddot{K}~  |
-| ~ld.~ | $\ddot{l}$ | ~\ddot{l}~  | ~Ld.~ | $\ddot{l}$ | ~\ddot{L}~  |
-| ~md.~ | $\ddot{m}$ | ~\ddot{m}~  | ~Md.~ | $\ddot{m}$ | ~\ddot{M}~  |
-| ~nd.~ | $\ddot{n}$ | ~\ddot{n}~  | ~Nd.~ | $\ddot{n}$ | ~\ddot{N}~  |
-| ~od.~ | $\ddot{o}$ | ~\ddot{o}~  | ~Od.~ | $\ddot{o}$ | ~\ddot{O}~  |
-| ~pd.~ | $\ddot{p}$ | ~\ddot{p}~  | ~Pd.~ | $\ddot{p}$ | ~\ddot{P}~  |
-| ~qd.~ | $\ddot{q}$ | ~\ddot{q}~  | ~Qd.~ | $\ddot{q}$ | ~\ddot{Q}~  |
-| ~rd.~ | $\ddot{r}$ | ~\ddot{r}~  | ~Rd.~ | $\ddot{r}$ | ~\ddot{R}~  |
-| ~sd.~ | $\ddot{s}$ | ~\ddot{s}~  | ~Sd.~ | $\ddot{s}$ | ~\ddot{S}~  |
-| ~td.~ | $\ddot{t}$ | ~\ddot{t}~  | ~Td.~ | $\ddot{t}$ | ~\ddot{T}~  |
-| ~ud.~ | $\ddot{u}$ | ~\ddot{u}~  | ~Ud.~ | $\ddot{u}$ | ~\ddot{U}~  |
-| ~vd.~ | $\ddot{v}$ | ~\ddot{v}~  | ~Vd.~ | $\ddot{v}$ | ~\ddot{V}~  |
-| ~wd.~ | $\ddot{w}$ | ~\ddot{w}~  | ~Wd.~ | $\ddot{w}$ | ~\ddot{W}~  |
-| ~xd.~ | $\ddot{x}$ | ~\ddot{x}~  | ~Xd.~ | $\ddot{x}$ | ~\ddot{X}~  |
-| ~yd.~ | $\ddot{y}$ | ~\ddot{y}~  | ~Yd.~ | $\ddot{y}$ | ~\ddot{Y}~  |
-| ~zd.~ | $\ddot{z}$ | ~\ddot{z}~  | ~Zd.~ | $\ddot{z}$ | ~\ddot{Z}~  |
+| ~ad.~ | $\ddot{a}$ | ~\ddot{a}~  | ~Ad.~ | $\ddot{A}$ | ~\ddot{A}~  |
+| ~bd.~ | $\ddot{b}$ | ~\ddot{b}~  | ~Bd.~ | $\ddot{B}$ | ~\ddot{B}~  |
+| ~cd.~ | $\ddot{c}$ | ~\ddot{c}~  | ~Cd.~ | $\ddot{C}$ | ~\ddot{C}~  |
+| ~dd.~ | $\ddot{d}$ | ~\ddot{d}~  | ~Dd.~ | $\ddot{D}$ | ~\ddot{D}~  |
+| ~ed.~ | $\ddot{e}$ | ~\ddot{e}~  | ~Ed.~ | $\ddot{E}$ | ~\ddot{E}~  |
+| ~fd.~ | $\ddot{f}$ | ~\ddot{f}~  | ~Fd.~ | $\ddot{F}$ | ~\ddot{F}~  |
+| ~gd.~ | $\ddot{g}$ | ~\ddot{g}~  | ~Gd.~ | $\ddot{G}$ | ~\ddot{G}~  |
+| ~hd.~ | $\ddot{h}$ | ~\ddot{h}~  | ~Hd.~ | $\ddot{H}$ | ~\ddot{H}~  |
+| ~id.~ | $\ddot{i}$ | ~\ddot{i}~  | ~Id.~ | $\ddot{I}$ | ~\ddot{I}~  |
+| ~jd.~ | $\ddot{j}$ | ~\ddot{j}~  | ~Jd.~ | $\ddot{J}$ | ~\ddot{J}~  |
+| ~kd.~ | $\ddot{k}$ | ~\ddot{k}~  | ~Kd.~ | $\ddot{K}$ | ~\ddot{K}~  |
+| ~ld.~ | $\ddot{l}$ | ~\ddot{l}~  | ~Ld.~ | $\ddot{L}$ | ~\ddot{L}~  |
+| ~md.~ | $\ddot{m}$ | ~\ddot{m}~  | ~Md.~ | $\ddot{M}$ | ~\ddot{M}~  |
+| ~nd.~ | $\ddot{n}$ | ~\ddot{n}~  | ~Nd.~ | $\ddot{N}$ | ~\ddot{N}~  |
+| ~od.~ | $\ddot{o}$ | ~\ddot{o}~  | ~Od.~ | $\ddot{O}$ | ~\ddot{O}~  |
+| ~pd.~ | $\ddot{p}$ | ~\ddot{p}~  | ~Pd.~ | $\ddot{P}$ | ~\ddot{P}~  |
+| ~qd.~ | $\ddot{q}$ | ~\ddot{q}~  | ~Qd.~ | $\ddot{Q}$ | ~\ddot{Q}~  |
+| ~rd.~ | $\ddot{r}$ | ~\ddot{r}~  | ~Rd.~ | $\ddot{R}$ | ~\ddot{R}~  |
+| ~sd.~ | $\ddot{s}$ | ~\ddot{s}~  | ~Sd.~ | $\ddot{S}$ | ~\ddot{S}~  |
+| ~td.~ | $\ddot{t}$ | ~\ddot{t}~  | ~Td.~ | $\ddot{T}$ | ~\ddot{T}~  |
+| ~ud.~ | $\ddot{u}$ | ~\ddot{u}~  | ~Ud.~ | $\ddot{U}$ | ~\ddot{U}~  |
+| ~vd.~ | $\ddot{v}$ | ~\ddot{v}~  | ~Vd.~ | $\ddot{V}$ | ~\ddot{V}~  |
+| ~wd.~ | $\ddot{w}$ | ~\ddot{w}~  | ~Wd.~ | $\ddot{W}$ | ~\ddot{W}~  |
+| ~xd.~ | $\ddot{x}$ | ~\ddot{x}~  | ~Xd.~ | $\ddot{X}$ | ~\ddot{X}~  |
+| ~yd.~ | $\ddot{y}$ | ~\ddot{y}~  | ~Yd.~ | $\ddot{Y}$ | ~\ddot{Y}~  |
+| ~zd.~ | $\ddot{z}$ | ~\ddot{z}~  | ~Zd.~ | $\ddot{Z}$ | ~\ddot{Z}~  |
 |-------+------------+-------------+-------+------------+-------------|
 
 
@@ -817,7 +817,7 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("xd"     ["\\dot{x}"       ])  ("Xd"     ["\\dot{X}"       ])
 ("yd"     ["\\dot{y}"       ])  ("Yd"     ["\\dot{Y}"       ])
 ("zd"     ["\\dot{z}"       ])  ("Zd"     ["\\dot{Z}"       ])
-;; DDot
+;; DDot  
 ("ad."    ["\\ddot{a}"      ])  ("Ad."    ["\\ddot{A}"      ])
 ("bd."    ["\\ddot{b}"      ])  ("Bd."    ["\\ddot{B}"      ])
 ("cd."    ["\\ddot{c}"      ])  ("Cd."    ["\\ddot{C}"      ])

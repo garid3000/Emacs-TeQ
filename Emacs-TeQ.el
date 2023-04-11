@@ -170,7 +170,7 @@
     ("xd"     ["\\dot{x}"       ])  ("Xd"     ["\\dot{X}"       ])
     ("yd"     ["\\dot{y}"       ])  ("Yd"     ["\\dot{Y}"       ])
     ("zd"     ["\\dot{z}"       ])  ("Zd"     ["\\dot{Z}"       ])
-    ;; DDot
+    ;; DDot  
     ("ad."    ["\\ddot{a}"      ])  ("Ad."    ["\\ddot{A}"      ])
     ("bd."    ["\\ddot{b}"      ])  ("Bd."    ["\\ddot{B}"      ])
     ("cd."    ["\\ddot{c}"      ])  ("Cd."    ["\\ddot{C}"      ])
