@@ -264,13 +264,13 @@
     ("===>"    ["\\xRightarrow[ ]{ }" ])  ; ~mathtools~ lib required
     ("<==="    ["\\xLeftarrow[ ]{ }"  ])  ; ~mathtools~ lib required
     ;; Symbols arrow3
-    ("vec"     ["\\vec"               ])  ; 
-    ("bar"     ["\\bar"               ])  ; 
-    ("hat"     ["\\hat"               ])  ; 
-    ("dot"     ["\\dot"               ])  ; 
-    ("dot."    ["\\ddot"              ])  ; 
-    ("dot.."   ["\\dddot"             ])  ; 
-    ("dot..."  ["\\ddddot"            ])  ; 
+    ("vec"     ["\\vec{"              ])  ; 
+    ("bar"     ["\\bar{"              ])  ; 
+    ("hat"     ["\\hat{"              ])  ; 
+    ("dot"     ["\\dot{"              ])  ; 
+    ("dot."    ["\\ddot{"             ])  ; 
+    ("dot.."   ["\\dddot{"            ])  ; 
+    ("dot..."  ["\\ddddot{"           ])  ; 
     ("dag"     ["^\\dagger"           ])  ; 
     ("dag."    ["^\\ddagger"          ])  ; 
     ("*.."     ["^*"                  ])  ; 
@@ -411,15 +411,15 @@
     (">."      ["\\right>"            ])  ; half-parenthesis
     ("\\vert ."  ["\\Bigg\\vert_{ }^{ }"])  ; definite integral range
     ;; Structural: Text
-    ("te"      ["\\text{}"            ])  ; normal text
-    ("tr"      ["\\mathrm{}"          ])  ; math roman (used for sin,cos,tan ...)
-    ("tb"      ["\\mathbf{}"          ])  ; math bold
-    ("ti"      ["\\mathit{}"          ])  ; math italics
+    ("te"      ["\\text{"             ])  ; normal text
+    ("tr"      ["\\mathrm{"           ])  ; math roman (used for sin,cos,tan ...)
+    ("tb"      ["\\mathbf{"           ])  ; math bold
+    ("ti"      ["\\mathit{"           ])  ; math italics
     ;; Structural: Text
-    ("te"      ["\\text{}"            ])  ; normal text
-    ("tr"      ["\\mathrm{}"          ])  ; math roman (used for sin,cos,tan ...)
-    ("tb"      ["\\mathbf{}"          ])  ; math bold
-    ("ti"      ["\\mathit{}"          ])  ; math italics
+    ("te"      ["\\text{"             ])  ; normal text
+    ("tr"      ["\\mathrm{"           ])  ; math roman (used for sin,cos,tan ...)
+    ("tb"      ["\\mathbf{"           ])  ; math bold
+    ("ti"      ["\\mathit{"           ])  ; math italics
     ;; Structural: Sub-sup-scripts
     ("^"      ["^{"             ])  ("_"      ["_{"             ])
     ("pp"     ["^{"             ])  ("ll"     ["_{"             ])
@@ -434,9 +434,10 @@
     ("__."    ["\\underbrace{ }_{ }"])  ("^^."    ["\\overbrace{ }^{ }"])
     ("__.."   ["\\underline{ }" ])  ("^^.."   ["\\overline{ }"  ])
     ;; Structural: misc
-    ("binom"   ["\\binom"             ])  ; Binom
-    ("box"     ["\\boxed"             ])  ; Putting box around object
-    ("can"     ["\\cancel"            ])  ; requires ~cancel~
+    ("binom"   ["\\binom{}{"          ])  ; Binom
+    ("box"     ["\\boxed{}{"          ])  ; Putting box around object
+    ("fr"      ["\\frac{}{"           ])  ; Fractions
+    ("can"     ["\\cancel"            ])  ; 
     ("&="      ["&=\\n\\\\\\\\"       ])  ; 
     ("=&"      ["&=\\n\\\\\\\\"       ])  ; 
     ;; Structural: xy
