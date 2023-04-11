@@ -232,16 +232,22 @@
 #+caption:  
 #+name: tbl-3-sym-geo
 #+attr_latex: :align |lclr| :placement [H]
-|---------+------------------+------------------+-------------|
-| key     | trans            | sym              | description |
-|---------+------------------+------------------+-------------|
-| ~perp~  | ~\perp~          | $\perp$          |             |
-| ~perpn~ | ~\perp~          | $\not\perp$      |             |
-| ~para~  | ~\parallel~      | $\parallel$      |             |
-| ~paran~ | ~\nparallel~     | $\nparallel$     |             |
-| ~ang~   | ~\angle~         | $\angle$         |             |
-| ~ang.~  | ~\measuredangle~ | $\measuredangle$ |             |
-|---------+------------------+------------------+-------------|
+|---------+----------------------+----------------------+-------------|
+| key     | trans                | sym                  | description |
+|---------+----------------------+----------------------+-------------|
+| ~perp~  | ~\perp~              | $\perp$              |             |
+| ~perpn~ | ~\perp~              | $\not\perp$          |             |
+| ~para~  | ~\parallel~          | $\parallel$          |             |
+| ~paran~ | ~\nparallel~         | $\nparallel$         |             |
+| ~ang~   | ~\angle~             | $\angle$             |             |
+| ~ang.~  | ~\measuredangle~     | $\measuredangle$     |             |
+| ~tri~   | ~\vartriangle~       | $\vartriangle$       |             |
+| ~trin~  | ~\triangledown~      | $\triangledown$      |             |
+| ~squ~   | ~\square~            | $\square$            |             |
+| ~tri.~  | ~\blacktriangle~     | $\blacktriangle$     |             |
+| ~trin.~ | ~\blacktriangledown~ | $\blacktriangledown$ |             |
+| ~squ.~  | ~\blacksquare~       | $\blacksquare$       |             |
+|---------+----------------------+----------------------+-------------|
 
 **  Letter like
 #+caption: Letter-like Symbold  
