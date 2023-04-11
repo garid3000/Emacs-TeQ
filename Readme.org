@@ -467,67 +467,61 @@
 **  Parenthesis Related
 #+caption:  
 #+name: tbl_7_parenthesis
-#+attr_latex: :align |lclr| :placement [H]
-|----------------+----------------------------------+-------------------------------------------+-------------|
-| key            | trans                            | sym                                       | description |
-|----------------+----------------------------------+-------------------------------------------+-------------|
-| ~().~          | ~\left( \right)~                 | $\left( \Box \right)$                     |             |
-| ~()..~         | ~\left( \middle\vert  \right)~   | $\left( \Box \middle\vert \Box \right)$   |             |
-| ~[].~          | ~\left[ \right]~                 | $\left[ \Box \right]$                     |             |
-| ~[]..~         | ~\left[ \middle\vert  \right]~   | $\left[ \Box \middle\vert \Box \right]$   |             |
-| ~[].c~         | ~\lceil \rceil~                  | $\lceil \Box \rceil$                      |             |
-| ~[].f~         | ~\lfloor \rfloor~                | $\lfloor \Box \rfloor$                    |             |
-| ~{}.~          | ~\left\{ \right\}~               | $\left\{ \Box \right\}$                   |             |
-| ~{}..~         | ~\left\{ \middle\vert  \right\}~ | $\left\{ \Box \middle\vert \Box \right\}$ |             |
-| \vert\vert ~.~ | ~\left\vert \right\vert~         | $\left\vert \Box \right\vert$             |             |
-|----------------+----------------------------------+-------------------------------------------+-------------|
+#+attr_latex: :align |llcl| :placement [H]
+|-----------------+----------------------------------+-------------------------------------------+-------------------------|
+| key             | trans                            | sym                                       | description             |
+|-----------------+----------------------------------+-------------------------------------------+-------------------------|
+| ~().~           | ~\left( \right)~                 | $\left( \Box \right)$                     | parenthesis             |
+| ~()..~          | ~\left( \middle\vert  \right)~   | $\left( \Box \middle\vert \Box \right)$   | parenthesis             |
+| ~[].~           | ~\left[ \right]~                 | $\left[ \Box \right]$                     | parenthesis             |
+| ~[]..~          | ~\left[ \middle\vert  \right]~   | $\left[ \Box \middle\vert \Box \right]$   | parenthesis             |
+| ~[].c~          | ~\lceil \rceil~                  | $\lceil \Box \rceil$                      | parenthesis (ceil)      |
+| ~[].f~          | ~\lfloor \rfloor~                | $\lfloor \Box \rfloor$                    | parenthesis (floor)     |
+| ~{}.~           | ~\left\{ \right\}~               | $\left\{ \Box \right\}$                   | parenthesis             |
+| ~{}..~          | ~\left\{ \middle\vert  \right\}~ | $\left\{ \Box \middle\vert \Box \right\}$ | parenthesis (set maker) |
+| ~<>.~           | ~\left< \right>~                 | $\left< \Box \right>$                     | parenthesis             |
+| ~<>..~          | ~\left< \middle\vert \right>~    | $\left< \Box \middle\vert \Box \right>$   | parenthesis             |
+| \vert\vert ~.~  | ~\left\vert \right\vert~         | $\left\vert \Box \right\vert$             | parenthesis (abs)       |
+| \vert\vert ~..~ | ~\left\Vert \right\Vert~         | $\left\Vert \Box \right\Vert$             | parenthesis (abs)       |
+|-----------------+----------------------------------+-------------------------------------------+-------------------------|
+| ~(.~            | ~\left(~                         | \(\left( \Box \right.\)                   | half-parenthesis        |
+| ~).~            | ~\right)~                        | $\left. \Box \right)$                     | half-parenthesis        |
+| ~[.~            | ~\left[~                         | \(\left[ \Box \right.\)                   | half-parenthesis        |
+| ~].~            | ~\right]~                        | $\left. \Box \right]$                     | half-parenthesis        |
+| ~{.~            | ~\left\{~                        | \(\left\{ \Box \right.\)                  | half-parenthesis        |
+| ~}.~            | ~\right\}~                       | $\left. \Box \right\}$                    | half-parenthesis        |
+| ~<.~            | ~\left<~                         | \(\left< \Box \right.\)                   | half-parenthesis        |
+| ~>.~            | ~\right>~                        | $\left. \Box \right>$                     | half-parenthesis        |
+| \vert ~.~       | ~\Bigg\vert_{ }^{ }~             | $\Box\Bigg\vert_{\Box}^{\Box}$            | definite integral range |
+|-----------------+----------------------------------+-------------------------------------------+-------------------------|
 
 **  Texts:
 #+caption:  
 #+name: tbl_7_text
-#+attr_latex: :align |lclr| :placement [H]
-|------+-------------+-----------------------+-------------|
-| key  | trans       | sym                   | description |
-|------+-------------+-----------------------+-------------|
-| ~te~ | ~\text{}~   | $a + \text{text}$     |             |
-| ~tr~ | ~\mathrm{}~ | $a + \mathrm{mathrm}$ |             |
-| ~tb~ | ~\mathbf{}~ | $a + \mathbf{mathbf}$ |             |
-| ~ti~ | ~\mathit{}~ | $a + \mathit{mathit}$ |             |
-|------+-------------+-----------------------+-------------|
-
-**  Superscripts (power) & Subsripts (lower)
-#+caption:  
-#+name: tbl_7_supsubscripts
-#+attr_latex: :align |lcl|lcl| :placement [H]
-|--------+----------------------------+----------------------+--------+---------------------------+---------------------|
-| key    | sym                        | trans                | key    | sym                       | trans               |
-|--------+----------------------------+----------------------+--------+---------------------------+---------------------|
-| ~pp~   | $\Box^\Box$                | ~^{~                 | ~ll~   | $\Box_\Box$               | ~_{~                |
-| ~p0~   | $\Box^0$                   | ~^0~                 | ~l0~   | $\Box_0$                  | ~_0~                |
-| ~p1~   | $\Box^1$                   | ~^1~                 | ~l1~   | $\Box_1$                  | ~_1~                |
-| ~p2~   | $\Box^2$                   | ~^2~                 | ~l2~   | $\Box_2$                  | ~_2~                |
-| ~p3~   | $\Box^3$                   | ~^3~                 | ~l3~   | $\Box_3$                  | ~_3~                |
-| ~p4~   | $\Box^4$                   | ~^4~                 | ~l4~   | $\Box_4$                  | ~_4~                |
-| ~pn~   | $\Box^n$                   | ~^n~                 | ~lnn~  | $\Box_n$                  | ~_n~                |
-| ~px~   | $\Box^x$                   | ~^x~                 | ~li~   | $\Box_i$                  | ~_i~                |
-| ~__~   | $\underset{\Box}{\Box}$    | ~\underset{ }{ }~    | ~^^~   | $\overset{\Box}{\Box}$    | ~\overset{ }{ }~    |
-| ~__.~  | $\underbrace{\Box}_{\Box}$ | ~\underbrace{ }_{ }~ | ~^^.~  | $\overbrace{\Box}^{\Box}$ | ~\overbrace{ }^{ }~ |
-| ~__..~ | $\underline{\Box}$         | ~\underline{ }~      | ~^^..~ | $\overline{\Box}$         | ~\overline{ }~      |
-|--------+----------------------------+----------------------+--------+---------------------------+---------------------|
+#+attr_latex: :align |llll| :placement [H]
+|------+------------+--------------------------+---------------------------------------|
+| key  | trans      | sym                      | description                           |
+|------+------------+--------------------------+---------------------------------------|
+| ~te~ | ~\text{~   | $\Box + \text{text}$     | normal text                           |
+| ~tr~ | ~\mathrm{~ | $\Box + \mathrm{mathrm}$ | math roman (used for sin,cos,tan ...) |
+| ~tb~ | ~\mathbf{~ | $\Box + \mathbf{mathbf}$ | math bold                             |
+| ~ti~ | ~\mathit{~ | $\Box + \mathit{mathit}$ | math italics                          |
+|------+------------+--------------------------+---------------------------------------|
 
 **  Misc.
 #+caption:  
 #+name: tbl_7_misc
-#+attr_latex: :align |lclr| :placement [H]
-|---------+------------+----------------------+-------------------|
-| key     | trans      | sym                  | description       |
-|---------+------------+----------------------+-------------------|
-| ~binom~ | ~\binom~   | $\binom{\Box}{\Box}$ |                   |
-| ~box~   | ~\boxed~   | $\boxed{\Box}$       |                   |
-| ~can~   | ~\cancel~  | $\cancel{\Box}$      | requires ~cancel~ |
-| ~&=~    | ~&=\n\\\\~ |                      |                   |
-| ~=&~    | ~&=\n\\\\~ |                      |                   |
-|---------+------------+----------------------+-------------------|
+#+attr_latex: :align |llll| :placement [H]
+|---------+-------------+----------------------+---------------------------|
+| key     | trans       | sym                  | description               |
+|---------+-------------+----------------------+---------------------------|
+| ~binom~ | ~\binom{}{~ | $\binom{\Box}{\Box}$ | Binom                     |
+| ~box~   | ~\boxed{}{~ | $\boxed{\Box}$       | Putting box around object |
+| ~fr~    | ~\frac{}{~  | $\frac{\Box}{\Box}$  | Fractions                 |
+| ~can~   | ~\cancel~   | $\cancel{\Box}$      |                           |
+| ~&=~    | ~&=\n\\\\~  |                      |                           |
+| ~=&~    | ~&=\n\\\\~  |                      |                           |
+|---------+-------------+----------------------+---------------------------|
 
 **  xy Diagram related
 #+caption:  
