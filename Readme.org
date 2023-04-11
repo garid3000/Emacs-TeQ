@@ -8,6 +8,8 @@
 
 *  Alphabet related stuff :
 **  Greek
+[[file:gifs/example-greek.gif]]
+
 #+caption: Main Greek letters 
 #+name: tbl-alphabet-greek-6column
 #+attr_latex: :align |ccl|ccl|  :placement [H]
@@ -126,6 +128,78 @@
 | ~zv~ | $\vec{z}$ | ~\vec{z}~   | ~zh~ | $\hat{z}$ | ~\hat{z}~   |
 |------+-----------+-------------+------+-----------+-------------|
 
+**  Dots
+#+caption: Dots
+#+name: tbl-alphabet-dot-6column
+#+attr_latex: :align |ccl|ccl| :placement [H]
+|------+-----------+-------------+------+-----------+-------------|
+| key  | sym       | latex (vec) | key  | sym       | latex (hat) |
+|------+-----------+-------------+------+-----------+-------------|
+| ~ad~ | $\dot{a}$ | ~\dot{a}~   | ~Ad~ | $\dot{a}$ | ~\dot{A}~   |
+| ~bd~ | $\dot{b}$ | ~\dot{b}~   | ~Bd~ | $\dot{b}$ | ~\dot{B}~   |
+| ~cd~ | $\dot{c}$ | ~\dot{c}~   | ~Cd~ | $\dot{c}$ | ~\dot{C}~   |
+| ~dd~ | $\dot{d}$ | ~\dot{d}~   | ~Dd~ | $\dot{d}$ | ~\dot{D}~   |
+| ~ed~ | $\dot{e}$ | ~\dot{e}~   | ~Ed~ | $\dot{e}$ | ~\dot{E}~   |
+| ~fd~ | $\dot{f}$ | ~\dot{f}~   | ~Fd~ | $\dot{f}$ | ~\dot{F}~   |
+| ~gd~ | $\dot{g}$ | ~\dot{g}~   | ~Gd~ | $\dot{g}$ | ~\dot{G}~   |
+| ~hd~ | $\dot{h}$ | ~\dot{h}~   | ~Hd~ | $\dot{h}$ | ~\dot{H}~   |
+| ~id~ | $\dot{i}$ | ~\dot{i}~   | ~Id~ | $\dot{i}$ | ~\dot{I}~   |
+| ~jd~ | $\dot{j}$ | ~\dot{j}~   | ~Jd~ | $\dot{j}$ | ~\dot{J}~   |
+| ~kd~ | $\dot{k}$ | ~\dot{k}~   | ~Kd~ | $\dot{k}$ | ~\dot{K}~   |
+| ~ld~ | $\dot{l}$ | ~\dot{l}~   | ~Ld~ | $\dot{l}$ | ~\dot{L}~   |
+| ~md~ | $\dot{m}$ | ~\dot{m}~   | ~Md~ | $\dot{m}$ | ~\dot{M}~   |
+| ~nd~ | $\dot{n}$ | ~\dot{n}~   | ~Nd~ | $\dot{n}$ | ~\dot{N}~   |
+| ~od~ | $\dot{o}$ | ~\dot{o}~   | ~Od~ | $\dot{o}$ | ~\dot{O}~   |
+| ~pd~ | $\dot{p}$ | ~\dot{p}~   | ~Pd~ | $\dot{p}$ | ~\dot{P}~   |
+| ~qd~ | $\dot{q}$ | ~\dot{q}~   | ~Qd~ | $\dot{q}$ | ~\dot{Q}~   |
+| ~rd~ | $\dot{r}$ | ~\dot{r}~   | ~Rd~ | $\dot{r}$ | ~\dot{R}~   |
+| ~sd~ | $\dot{s}$ | ~\dot{s}~   | ~Sd~ | $\dot{s}$ | ~\dot{S}~   |
+| ~td~ | $\dot{t}$ | ~\dot{t}~   | ~Td~ | $\dot{t}$ | ~\dot{T}~   |
+| ~ud~ | $\dot{u}$ | ~\dot{u}~   | ~Ud~ | $\dot{u}$ | ~\dot{U}~   |
+| ~vd~ | $\dot{v}$ | ~\dot{v}~   | ~Vd~ | $\dot{v}$ | ~\dot{V}~   |
+| ~wd~ | $\dot{w}$ | ~\dot{w}~   | ~Wd~ | $\dot{w}$ | ~\dot{W}~   |
+| ~xd~ | $\dot{x}$ | ~\dot{x}~   | ~Xd~ | $\dot{x}$ | ~\dot{X}~   |
+| ~yd~ | $\dot{y}$ | ~\dot{y}~   | ~Yd~ | $\dot{y}$ | ~\dot{Y}~   |
+| ~zd~ | $\dot{z}$ | ~\dot{z}~   | ~Zd~ | $\dot{z}$ | ~\dot{Z}~   |
+|------+-----------+-------------+------+-----------+-------------|
+**  DDots
+#+caption: DDots
+#+name: tbl_alphabet_ddot_6column
+#+attr_latex: :align |ccl|ccl| :placement [H]
+|-------+------------+-------------+-------+------------+-------------|
+| key   | sym        | latex (vec) | key   | sym        | latex (hat) |
+|-------+------------+-------------+-------+------------+-------------|
+| ~ad.~ | $\ddot{a}$ | ~\ddot{a}~  | ~Ad.~ | $\ddot{a}$ | ~\ddot{A}~  |
+| ~bd.~ | $\ddot{b}$ | ~\ddot{b}~  | ~Bd.~ | $\ddot{b}$ | ~\ddot{B}~  |
+| ~cd.~ | $\ddot{c}$ | ~\ddot{c}~  | ~Cd.~ | $\ddot{c}$ | ~\ddot{C}~  |
+| ~dd.~ | $\ddot{d}$ | ~\ddot{d}~  | ~Dd.~ | $\ddot{d}$ | ~\ddot{D}~  |
+| ~ed.~ | $\ddot{e}$ | ~\ddot{e}~  | ~Ed.~ | $\ddot{e}$ | ~\ddot{E}~  |
+| ~fd.~ | $\ddot{f}$ | ~\ddot{f}~  | ~Fd.~ | $\ddot{f}$ | ~\ddot{F}~  |
+| ~gd.~ | $\ddot{g}$ | ~\ddot{g}~  | ~Gd.~ | $\ddot{g}$ | ~\ddot{G}~  |
+| ~hd.~ | $\ddot{h}$ | ~\ddot{h}~  | ~Hd.~ | $\ddot{h}$ | ~\ddot{H}~  |
+| ~id.~ | $\ddot{i}$ | ~\ddot{i}~  | ~Id.~ | $\ddot{i}$ | ~\ddot{I}~  |
+| ~jd.~ | $\ddot{j}$ | ~\ddot{j}~  | ~Jd.~ | $\ddot{j}$ | ~\ddot{J}~  |
+| ~kd.~ | $\ddot{k}$ | ~\ddot{k}~  | ~Kd.~ | $\ddot{k}$ | ~\ddot{K}~  |
+| ~ld.~ | $\ddot{l}$ | ~\ddot{l}~  | ~Ld.~ | $\ddot{l}$ | ~\ddot{L}~  |
+| ~md.~ | $\ddot{m}$ | ~\ddot{m}~  | ~Md.~ | $\ddot{m}$ | ~\ddot{M}~  |
+| ~nd.~ | $\ddot{n}$ | ~\ddot{n}~  | ~Nd.~ | $\ddot{n}$ | ~\ddot{N}~  |
+| ~od.~ | $\ddot{o}$ | ~\ddot{o}~  | ~Od.~ | $\ddot{o}$ | ~\ddot{O}~  |
+| ~pd.~ | $\ddot{p}$ | ~\ddot{p}~  | ~Pd.~ | $\ddot{p}$ | ~\ddot{P}~  |
+| ~qd.~ | $\ddot{q}$ | ~\ddot{q}~  | ~Qd.~ | $\ddot{q}$ | ~\ddot{Q}~  |
+| ~rd.~ | $\ddot{r}$ | ~\ddot{r}~  | ~Rd.~ | $\ddot{r}$ | ~\ddot{R}~  |
+| ~sd.~ | $\ddot{s}$ | ~\ddot{s}~  | ~Sd.~ | $\ddot{s}$ | ~\ddot{S}~  |
+| ~td.~ | $\ddot{t}$ | ~\ddot{t}~  | ~Td.~ | $\ddot{t}$ | ~\ddot{T}~  |
+| ~ud.~ | $\ddot{u}$ | ~\ddot{u}~  | ~Ud.~ | $\ddot{u}$ | ~\ddot{U}~  |
+| ~vd.~ | $\ddot{v}$ | ~\ddot{v}~  | ~Vd.~ | $\ddot{v}$ | ~\ddot{V}~  |
+| ~wd.~ | $\ddot{w}$ | ~\ddot{w}~  | ~Wd.~ | $\ddot{w}$ | ~\ddot{W}~  |
+| ~xd.~ | $\ddot{x}$ | ~\ddot{x}~  | ~Xd.~ | $\ddot{x}$ | ~\ddot{X}~  |
+| ~yd.~ | $\ddot{y}$ | ~\ddot{y}~  | ~Yd.~ | $\ddot{y}$ | ~\ddot{Y}~  |
+| ~zd.~ | $\ddot{z}$ | ~\ddot{z}~  | ~Zd.~ | $\ddot{z}$ | ~\ddot{Z}~  |
+|-------+------------+-------------+-------+------------+-------------|
+
+
+
+
 *  Function Expansion
 #+caption: Keys that will execute some elisp functions
 #+name: tbl-2-execute-function
@@ -138,7 +212,6 @@
 | ~al~ | ~quail-TeQ-aligned~   |                     | aligned environment  |
 | ~el~ | ~quail-TeQ-endofline~ |                     | end of line          |
 |------+-----------------------+---------------------+----------------------|
-
 
 
 *  Symbols :
@@ -273,13 +346,13 @@
 |----------+-------------+-----------------+-------------|
 | key      | trans       | sym             | description |
 |----------+-------------+-----------------+-------------|
-| ~vec~    | ~\vec~      | $\vec{\Box}$    |             |
-| ~bar~    | ~\bar~      | $\bar{\Box}$    |             |
-| ~hat~    | ~\hat~      | $\hat{\Box}$    |             |
-| ~dot~    | ~\dot~      | $\dot{\Box}$    |             |
-| ~dot.~   | ~\ddot~     | $\ddot{\Box}$   |             |
-| ~dot..~  | ~\dddot~    | $\dddot{\Box}$  |             |
-| ~dot...~ | ~\ddddot~   | $\ddddot{\Box}$ |             |
+| ~vec~    | ~\vec{~     | $\vec{\Box}$    |             |
+| ~bar~    | ~\bar{~     | $\bar{\Box}$    |             |
+| ~hat~    | ~\hat{~     | $\hat{\Box}$    |             |
+| ~dot~    | ~\dot{~     | $\dot{\Box}$    |             |
+| ~dot.~   | ~\ddot{~    | $\ddot{\Box}$   |             |
+| ~dot..~  | ~\dddot{~   | $\dddot{\Box}$  |             |
+| ~dot...~ | ~\ddddot{~  | $\ddddot{\Box}$ |             |
 | ~dag~    | ~^\dagger~  | $\Box^\dagger$  |             |
 | ~dag.~   | ~^\ddagger~ | $\Box^\ddagger$ |             |
 | ~*..~    | ~^*~        | $\Box^*$        |             |
@@ -287,6 +360,28 @@
 | ~tr~     | ~^T~        | $\Box^T$        |             |
 | ~tr.~    | ~^{-T}~     | $\Box^{-T}$     |             |
 |----------+-------------+-----------------+-------------|
+
+**  Superscripts & Subsripts (power & lower)
+#+caption:  
+#+name: tbl_7_supsubscripts
+#+attr_latex: :align |lcl|lcl| :placement [H]
+|--------+----------------------------+----------------------+--------+---------------------------+---------------------|
+| key    | sym                        | trans                | key    | sym                       | trans               |
+|--------+----------------------------+----------------------+--------+---------------------------+---------------------|
+| ~^~    | $\Box^\Box$                | ~^{~                 | ~_~    | $\Box_\Box$               | ~_{~                |
+| ~pp~   | $\Box^\Box$                | ~^{~                 | ~ll~   | $\Box_\Box$               | ~_{~                |
+| ~p0~   | $\Box^0$                   | ~^0~                 | ~l0~   | $\Box_0$                  | ~_0~                |
+| ~p1~   | $\Box^1$                   | ~^1~                 | ~l1~   | $\Box_1$                  | ~_1~                |
+| ~p2~   | $\Box^2$                   | ~^2~                 | ~l2~   | $\Box_2$                  | ~_2~                |
+| ~p3~   | $\Box^3$                   | ~^3~                 | ~l3~   | $\Box_3$                  | ~_3~                |
+| ~p4~   | $\Box^4$                   | ~^4~                 | ~l4~   | $\Box_4$                  | ~_4~                |
+| ~pn~   | $\Box^n$                   | ~^n~                 | ~lnn~  | $\Box_n$                  | ~_n~                |
+| ~px~   | $\Box^x$                   | ~^x~                 | ~li~   | $\Box_i$                  | ~_i~                |
+| ~__~   | $\underset{\Box}{\Box}$    | ~\underset{ }{ }~    | ~^^~   | $\overset{\Box}{\Box}$    | ~\overset{ }{ }~    |
+| ~__.~  | $\underbrace{\Box}_{\Box}$ | ~\underbrace{ }_{ }~ | ~^^.~  | $\overbrace{\Box}^{\Box}$ | ~\overbrace{ }^{ }~ |
+| ~__..~ | $\underline{\Box}$         | ~\underline{ }~      | ~^^..~ | $\overline{\Box}$         | ~\overline{ }~      |
+|--------+----------------------------+----------------------+--------+---------------------------+---------------------|
+
 
 *  Binary Operation Symbols
 **  Simple Arithmetics:
@@ -404,16 +499,16 @@
 | ~arg~   | ~\arg~          | $\arg$              |             |
 | ~det~   | ~\det~          | $\det$              |             |
 | ~dim~   | ~\dim~          | $\dim$              |             |
-| ~exp~   | ~\exp~          | $\exp$              |             |
-| ~Im~    | ~\mathrm{Im}~   | $\mathrm{Im}$       |             |
-| ~Re~    | ~\mathrm{Re}~   | $\mathrm{Re}$       |             |
-| ~ln~    | ~\ln~           | $\ln$               |             |
-| ~log~   | ~\log~          | $\log$              |             |
-| ~max~   | ~\max~          | $\max$              |             |
-| ~min~   | ~\min~          | $\min$              |             |
-| ~dim~   | ~\dim~          | $\dim$              |             |
-| ~sqrt~  | ~\sqrt~         | $\sqrt[\Box]{\Box}$ |             |
-| ~mod~   | ~\pmod~         | $\Box \pmod \Box$   |             |
+| ~exp~   | ~\exp(~         | $\exp$              |             |
+| ~Im~    | ~\mathrm{Im}(~  | $\mathrm{Im}$       |             |
+| ~Re~    | ~\mathrm{Re}(~  | $\mathrm{Re}$       |             |
+| ~ln~    | ~\ln(~          | $\ln$               |             |
+| ~log~   | ~\log(~         | $\log$              |             |
+| ~max~   | ~\max(~         | $\max$              |             |
+| ~min~   | ~\min(~         | $\min$              |             |
+| ~dim~   | ~\dim(~         | $\dim$              |             |
+| ~sqrt~  | ~\sqrt(~        | $\sqrt[\Box]{\Box}$ |             |
+| ~mod~   | ~\pmod(~        | $\Box \pmod \Box$   |             |
 | ~mod.~  | ~\mod~          | $\Box \mod \Box$    |             |
 | ~mod..~ | ~\bmod~         | $\Box \bmod \Box$   |             |
 |---------+-----------------+---------------------+-------------|
@@ -422,27 +517,28 @@
 #+caption:  
 #+name: tbl_6_func_trig_6col
 #+attr_latex: :align |ccl|ccl| :placement [H]
-|--------+-----------+-----------+--------+-----------+-----------|
-| key    | sym       | trans     | key    | sym       | trans     |
-|--------+-----------+-----------+--------+-----------+-----------|
-| ~cos~  | $\cos$    | ~\cos~    | ~cosh~ | $\cosh$   | ~\cosh~   |
-| ~sin~  | $\sin$    | ~\sin~    | ~sinh~ | $\sinh$   | ~\sinh~   |
-| ~tan~  | $\tan$    | ~\tan~    | ~tanh~ | $\tanh$   | ~\tanh~   |
-| ~cot~  | $\cot$    | ~\cot~    | ~coth~ | $\coth$   | ~\coth~   |
-|--------+-----------+-----------+--------+-----------+-----------|
-| ~acos~ | $\arccos$ | ~\arccos~ | ~cos.~ | $\arccos$ | ~\arccos~ |
-| ~asin~ | $\arcsin$ | ~\arcsin~ | ~sin.~ | $\arcsin$ | ~\arcsin~ |
-| ~atan~ | $\arctan$ | ~\arctan~ | ~tan.~ | $\arctan$ | ~\arctan~ |
-|--------+-----------+-----------+--------+-----------+-----------|
+|--------+-----------------+------------+--------+-----------------+------------|
+| key    | sym             | trans      | key    | sym             | trans      |
+|--------+-----------------+------------+--------+-----------------+------------|
+| ~cos~  | $\cos(\Box)$    | ~\cos(~    | ~cosh~ | $\cosh(\Box)$   | ~\cosh(~   |
+| ~sin~  | $\sin(\Box)$    | ~\sin(~    | ~sinh~ | $\sinh(\Box)$   | ~\sinh(~   |
+| ~tan~  | $\tan(\Box)$    | ~\tan(~    | ~tanh~ | $\tanh(\Box)$   | ~\tanh(~   |
+| ~cot~  | $\cot(\Box)$    | ~\cot(~    | ~coth~ | $\coth(\Box)$   | ~\coth(~   |
+|--------+-----------------+------------+--------+-----------------+------------|
+| ~acos~ | $\arccos(\Box)$ | ~\arccos(~ | ~cos.~ | $\arccos(\Box)$ | ~\arccos(~ |
+| ~asin~ | $\arcsin(\Box)$ | ~\arcsin(~ | ~sin.~ | $\arcsin(\Box)$ | ~\arcsin(~ |
+| ~atan~ | $\arctan(\Box)$ | ~\arctan(~ | ~tan.~ | $\arctan(\Box)$ | ~\arctan(~ |
+|--------+-----------------+------------+--------+-----------------+------------|
 
 **  Iterative-like operation:
 #+caption: Integrals, Sums, Products
 #+name: tbl_6_func_iter
-#+attr_latex: :align |cclr| :placement [H]
+#+attr_latex: :align |llll| :placement [H]
 |-----------+---------------------------------------+---------------------------------------+-------------|
 | key       | trans                                 | sym                                   | description |
 |-----------+---------------------------------------+---------------------------------------+-------------|
-| ~il~      | ~\limits_{ }^{ }~                     | $\sum\limits_{ here }^{here}$         |             |
+| ~il~      | ~\limits_{ }~                         | $\sum\limits_{\Box}$                  |             |
+| ~il~      | ~\limits_{ }^{ }~                     | $\sum\limits_{ \Box }^{ \Box}$        |             |
 |-----------+---------------------------------------+---------------------------------------+-------------|
 | ~lim~     | ~\lim~                                | $\lim$                                |             |
 | ~sum~     | ~\sum~                                | $\sum$                                |             |
@@ -455,11 +551,13 @@
 |-----------+---------------------------------------+---------------------------------------+-------------|
 | ~sum.~    | ~\sum\limits_{ i=1 }^{ n }~           | $\sum\limits_{ i=1 }^{ n }$           |             |
 | ~prod.~   | ~\prod\limits_{ i=1 }^{ n }~          | $\prod\limits_{ i=1 }^{ n }$          |             |
-| ~int.~    | ~\int\limits_{ -\infty }^{ -\infty }~ | $\int\limits_{ -\infty }^{ -\infty }$ |             |
-| ~inti.~   | ~\iint\limits_{ C }~                  | $\iint\limits_{ C }$                  |             |
-| ~intii.~  | ~\iiint\limits_{ C }~                 | $\iiint\limits_{ C }$                 |             |
-| ~intiii.~ | ~\iiiint\limits_{ C }~                | $\iiiint\limits_{ C }$                |             |
-| ~into.~   | ~\oint\limits_{ C }~                  | $\oint\limits_{ C }$                  |             |
+| ~int.~    | ~\int\limits_{ }^{ }~                 | $\int\limits_{ \Box }^{ \Box }$       |             |
+| ~int..~   | ~\int\limits_{ 0 }^{ +\infty }~       | $\int\limits_{ 0 }^{ +\infty }$       |             |
+| ~int...~  | ~\int\limits_{ -\infty }^{ +\infty }~ | $\int\limits_{ -\infty }^{ +\infty }$ |             |
+| ~inti.~   | ~\iint\limits_{ }~                    | $\iint\limits_{ C }$                  |             |
+| ~intii.~  | ~\iiint\limits_{ }~                   | $\iiint\limits_{ C }$                 |             |
+| ~intiii.~ | ~\iiiint\limits_{ }~                  | $\iiiint\limits_{ C }$                |             |
+| ~into.~   | ~\oint\limits_{ }~                    | $\oint\limits_{ C }$                  |             |
 |-----------+---------------------------------------+---------------------------------------+-------------|
 
 
@@ -983,8 +1081,8 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("__."    ["\\underbrace{ }_{ }"])  ("^^."    ["\\overbrace{ }^{ }"])
 ("__.."   ["\\underline{ }" ])  ("^^.."   ["\\overline{ }"  ])
 ;; Structural: misc
-("binom"   ["\\binom"             ])  ; 
-("box"     ["\\boxed"             ])  ; 
+("binom"   ["\\binom"             ])  ; Binom
+("box"     ["\\boxed"             ])  ; Putting box around object
 ("can"     ["\\cancel"            ])  ; requires ~cancel~
 ("&="      ["&=\\n\\\\\\\\"       ])  ; 
 ("=&"      ["&=\\n\\\\\\\\"       ])  ; 

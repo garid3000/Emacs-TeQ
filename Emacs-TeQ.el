@@ -143,6 +143,60 @@
     ("xv"     ["\\vec{x}"       ])  ("xh"     ["\\hat{x}"       ])
     ("yv"     ["\\vec{y}"       ])  ("yh"     ["\\hat{y}"       ])
     ("zv"     ["\\vec{z}"       ])  ("zh"     ["\\hat{z}"       ])
+    ;; Dot
+    ("ad"     ["\\dot{a}"       ])  ("Ad"     ["\\dot{A}"       ])
+    ("bd"     ["\\dot{b}"       ])  ("Bd"     ["\\dot{B}"       ])
+    ("cd"     ["\\dot{c}"       ])  ("Cd"     ["\\dot{C}"       ])
+    ("dd"     ["\\dot{d}"       ])  ("Dd"     ["\\dot{D}"       ])
+    ("ed"     ["\\dot{e}"       ])  ("Ed"     ["\\dot{E}"       ])
+    ("fd"     ["\\dot{f}"       ])  ("Fd"     ["\\dot{F}"       ])
+    ("gd"     ["\\dot{g}"       ])  ("Gd"     ["\\dot{G}"       ])
+    ("hd"     ["\\dot{h}"       ])  ("Hd"     ["\\dot{H}"       ])
+    ("id"     ["\\dot{i}"       ])  ("Id"     ["\\dot{I}"       ])
+    ("jd"     ["\\dot{j}"       ])  ("Jd"     ["\\dot{J}"       ])
+    ("kd"     ["\\dot{k}"       ])  ("Kd"     ["\\dot{K}"       ])
+    ("ld"     ["\\dot{l}"       ])  ("Ld"     ["\\dot{L}"       ])
+    ("md"     ["\\dot{m}"       ])  ("Md"     ["\\dot{M}"       ])
+    ("nd"     ["\\dot{n}"       ])  ("Nd"     ["\\dot{N}"       ])
+    ("od"     ["\\dot{o}"       ])  ("Od"     ["\\dot{O}"       ])
+    ("pd"     ["\\dot{p}"       ])  ("Pd"     ["\\dot{P}"       ])
+    ("qd"     ["\\dot{q}"       ])  ("Qd"     ["\\dot{Q}"       ])
+    ("rd"     ["\\dot{r}"       ])  ("Rd"     ["\\dot{R}"       ])
+    ("sd"     ["\\dot{s}"       ])  ("Sd"     ["\\dot{S}"       ])
+    ("td"     ["\\dot{t}"       ])  ("Td"     ["\\dot{T}"       ])
+    ("ud"     ["\\dot{u}"       ])  ("Ud"     ["\\dot{U}"       ])
+    ("vd"     ["\\dot{v}"       ])  ("Vd"     ["\\dot{V}"       ])
+    ("wd"     ["\\dot{w}"       ])  ("Wd"     ["\\dot{W}"       ])
+    ("xd"     ["\\dot{x}"       ])  ("Xd"     ["\\dot{X}"       ])
+    ("yd"     ["\\dot{y}"       ])  ("Yd"     ["\\dot{Y}"       ])
+    ("zd"     ["\\dot{z}"       ])  ("Zd"     ["\\dot{Z}"       ])
+    ;; DDot
+    ("ad."    ["\\ddot{a}"      ])  ("Ad."    ["\\ddot{A}"      ])
+    ("bd."    ["\\ddot{b}"      ])  ("Bd."    ["\\ddot{B}"      ])
+    ("cd."    ["\\ddot{c}"      ])  ("Cd."    ["\\ddot{C}"      ])
+    ("dd."    ["\\ddot{d}"      ])  ("Dd."    ["\\ddot{D}"      ])
+    ("ed."    ["\\ddot{e}"      ])  ("Ed."    ["\\ddot{E}"      ])
+    ("fd."    ["\\ddot{f}"      ])  ("Fd."    ["\\ddot{F}"      ])
+    ("gd."    ["\\ddot{g}"      ])  ("Gd."    ["\\ddot{G}"      ])
+    ("hd."    ["\\ddot{h}"      ])  ("Hd."    ["\\ddot{H}"      ])
+    ("id."    ["\\ddot{i}"      ])  ("Id."    ["\\ddot{I}"      ])
+    ("jd."    ["\\ddot{j}"      ])  ("Jd."    ["\\ddot{J}"      ])
+    ("kd."    ["\\ddot{k}"      ])  ("Kd."    ["\\ddot{K}"      ])
+    ("ld."    ["\\ddot{l}"      ])  ("Ld."    ["\\ddot{L}"      ])
+    ("md."    ["\\ddot{m}"      ])  ("Md."    ["\\ddot{M}"      ])
+    ("nd."    ["\\ddot{n}"      ])  ("Nd."    ["\\ddot{N}"      ])
+    ("od."    ["\\ddot{o}"      ])  ("Od."    ["\\ddot{O}"      ])
+    ("pd."    ["\\ddot{p}"      ])  ("Pd."    ["\\ddot{P}"      ])
+    ("qd."    ["\\ddot{q}"      ])  ("Qd."    ["\\ddot{Q}"      ])
+    ("rd."    ["\\ddot{r}"      ])  ("Rd."    ["\\ddot{R}"      ])
+    ("sd."    ["\\ddot{s}"      ])  ("Sd."    ["\\ddot{S}"      ])
+    ("td."    ["\\ddot{t}"      ])  ("Td."    ["\\ddot{T}"      ])
+    ("ud."    ["\\ddot{u}"      ])  ("Ud."    ["\\ddot{U}"      ])
+    ("vd."    ["\\ddot{v}"      ])  ("Vd."    ["\\ddot{V}"      ])
+    ("wd."    ["\\ddot{w}"      ])  ("Wd."    ["\\ddot{W}"      ])
+    ("xd."    ["\\ddot{x}"      ])  ("Xd."    ["\\ddot{X}"      ])
+    ("yd."    ["\\ddot{y}"      ])  ("Yd."    ["\\ddot{Y}"      ])
+    ("zd."    ["\\ddot{z}"      ])  ("Zd."    ["\\ddot{Z}"      ])
     ;; Expanding Func
     ("/"       quail-TeQ-frac        )  ; fraction on previous
     ("eq"      quail-TeQ-equation    )  ; equation environment
@@ -294,27 +348,28 @@
     ("arg"     ["\\arg"               ])  ; 
     ("det"     ["\\det"               ])  ; 
     ("dim"     ["\\dim"               ])  ; 
-    ("exp"     ["\\exp"               ])  ; 
-    ("Im"      ["\\mathrm{Im}"        ])  ; 
-    ("Re"      ["\\mathrm{Re}"        ])  ; 
-    ("ln"      ["\\ln"                ])  ; 
-    ("log"     ["\\log"               ])  ; 
-    ("max"     ["\\max"               ])  ; 
-    ("min"     ["\\min"               ])  ; 
-    ("dim"     ["\\dim"               ])  ; 
-    ("sqrt"    ["\\sqrt"              ])  ; 
-    ("mod"     ["\\pmod"              ])  ; 
+    ("exp"     ["\\exp("              ])  ; 
+    ("Im"      ["\\mathrm{Im}("       ])  ; 
+    ("Re"      ["\\mathrm{Re}("       ])  ; 
+    ("ln"      ["\\ln("               ])  ; 
+    ("log"     ["\\log("              ])  ; 
+    ("max"     ["\\max("              ])  ; 
+    ("min"     ["\\min("              ])  ; 
+    ("dim"     ["\\dim("              ])  ; 
+    ("sqrt"    ["\\sqrt("             ])  ; 
+    ("mod"     ["\\pmod("             ])  ; 
     ("mod."    ["\\mod"               ])  ; 
     ("mod.."   ["\\bmod"              ])  ; 
     ;; Func: Trig
-    ("cos"    ["\\cos"          ])  ("cosh"   ["\\cosh"         ])
-    ("sin"    ["\\sin"          ])  ("sinh"   ["\\sinh"         ])
-    ("tan"    ["\\tan"          ])  ("tanh"   ["\\tanh"         ])
-    ("cot"    ["\\cot"          ])  ("coth"   ["\\coth"         ])
-    ("acos"   ["\\arccos"       ])  ("cos."   ["\\arccos"       ])
-    ("asin"   ["\\arcsin"       ])  ("sin."   ["\\arcsin"       ])
-    ("atan"   ["\\arctan"       ])  ("tan."   ["\\arctan"       ])
+    ("cos"    ["\\cos("         ])  ("cosh"   ["\\cosh("        ])
+    ("sin"    ["\\sin("         ])  ("sinh"   ["\\sinh("        ])
+    ("tan"    ["\\tan("         ])  ("tanh"   ["\\tanh("        ])
+    ("cot"    ["\\cot("         ])  ("coth"   ["\\coth("        ])
+    ("acos"   ["\\arccos("      ])  ("cos."   ["\\arccos("      ])
+    ("asin"   ["\\arcsin("      ])  ("sin."   ["\\arcsin("      ])
+    ("atan"   ["\\arctan("      ])  ("tan."   ["\\arctan("      ])
     ;; Func: iter
+    ("il"      ["\\limits_{ }"        ])  ; 
     ("il"      ["\\limits_{ }^{ }"    ])  ; 
     ("lim"     ["\\lim"               ])  ; 
     ("sum"     ["\\sum"               ])  ; 
@@ -326,32 +381,47 @@
     ("into"    ["\\oint"              ])  ; 
     ("sum."    ["\\sum\\limits_{ i=1 }^{ n }"])  ; 
     ("prod."   ["\\prod\\limits_{ i=1 }^{ n }"])  ; 
-    ("int."    ["\\int\\limits_{ -\\infty }^{ -\\infty }"])  ; 
-    ("inti."   ["\\iint\\limits_{ C }"])  ; 
-    ("intii."  ["\\iiint\\limits_{ C }"])  ; 
-    ("intiii."  ["\\iiiint\\limits_{ C }"])  ; 
-    ("into."   ["\\oint\\limits_{ C }"])  ; 
+    ("int."    ["\\int\\limits_{ }^{ }"])  ; 
+    ("int.."   ["\\int\\limits_{ 0 }^{ +\\infty }"])  ; 
+    ("int..."  ["\\int\\limits_{ -\\infty }^{ +\\infty }"])  ; 
+    ("inti."   ["\\iint\\limits_{ }"  ])  ; 
+    ("intii."  ["\\iiint\\limits_{ }" ])  ; 
+    ("intiii."  ["\\iiiint\\limits_{ }"])  ; 
+    ("into."   ["\\oint\\limits_{ }"  ])  ; 
     ;; Structural: Parenthesis
-    ("()."     ["\\left( \\right)"    ])  ; 
-    ("().."    ["\\left( \\middle\\vert  \\right)"])  ; 
-    ("[]."     ["\\left[ \\right]"    ])  ; 
-    ("[].."    ["\\left[ \\middle\\vert  \\right]"])  ; 
-    ("[].c"    ["\\lceil \\rceil"     ])  ; 
-    ("[].f"    ["\\lfloor \\rfloor"   ])  ; 
-    ("{}."     ["\\left\\{ \\right\\}"])  ; 
-    ("{}.."    ["\\left\\{ \\middle\\vert  \\right\\}"])  ; 
-    ("\\vert\\vert ."  ["\\left\\vert \\right\\vert"])  ; 
+    ("()."     ["\\left( \\right)"    ])  ; parenthesis
+    ("().."    ["\\left( \\middle\\vert  \\right)"])  ; parenthesis
+    ("[]."     ["\\left[ \\right]"    ])  ; parenthesis
+    ("[].."    ["\\left[ \\middle\\vert  \\right]"])  ; parenthesis
+    ("[].c"    ["\\lceil \\rceil"     ])  ; parenthesis (ceil)
+    ("[].f"    ["\\lfloor \\rfloor"   ])  ; parenthesis (floor)
+    ("{}."     ["\\left\\{ \\right\\}"])  ; parenthesis
+    ("{}.."    ["\\left\\{ \\middle\\vert  \\right\\}"])  ; parenthesis (set maker)
+    ("<>."     ["\\left< \\right>"    ])  ; parenthesis
+    ("<>.."    ["\\left< \\middle\\vert \\right>"])  ; parenthesis
+    ("\\vert\\vert ."  ["\\left\\vert \\right\\vert"])  ; parenthesis (abs)
+    ("\\vert\\vert .."  ["\\left\\Vert \\right\\Vert"])  ; parenthesis (abs)
+    ("(."      ["\\left("             ])  ; half-parenthesis
+    (")."      ["\\right)"            ])  ; half-parenthesis
+    ("[."      ["\\left["             ])  ; half-parenthesis
+    ("]."      ["\\right]"            ])  ; half-parenthesis
+    ("{."      ["\\left\\{"           ])  ; half-parenthesis
+    ("}."      ["\\right\\}"          ])  ; half-parenthesis
+    ("<."      ["\\left<"             ])  ; half-parenthesis
+    (">."      ["\\right>"            ])  ; half-parenthesis
+    ("\\vert ."  ["\\Bigg\\vert_{ }^{ }"])  ; definite integral range
     ;; Structural: Text
-    ("te"      ["\\text{}"            ])  ; 
-    ("tr"      ["\\mathrm{}"          ])  ; 
-    ("tb"      ["\\mathbf{}"          ])  ; 
-    ("ti"      ["\\mathit{}"          ])  ; 
+    ("te"      ["\\text{}"            ])  ; normal text
+    ("tr"      ["\\mathrm{}"          ])  ; math roman (used for sin,cos,tan ...)
+    ("tb"      ["\\mathbf{}"          ])  ; math bold
+    ("ti"      ["\\mathit{}"          ])  ; math italics
     ;; Structural: Text
-    ("te"      ["\\text{}"            ])  ; 
-    ("tr"      ["\\mathrm{}"          ])  ; 
-    ("tb"      ["\\mathbf{}"          ])  ; 
-    ("ti"      ["\\mathit{}"          ])  ; 
+    ("te"      ["\\text{}"            ])  ; normal text
+    ("tr"      ["\\mathrm{}"          ])  ; math roman (used for sin,cos,tan ...)
+    ("tb"      ["\\mathbf{}"          ])  ; math bold
+    ("ti"      ["\\mathit{}"          ])  ; math italics
     ;; Structural: Sub-sup-scripts
+    ("^"      ["^{"             ])  ("_"      ["_{"             ])
     ("pp"     ["^{"             ])  ("ll"     ["_{"             ])
     ("p0"     ["^0"             ])  ("l0"     ["_0"             ])
     ("p1"     ["^1"             ])  ("l1"     ["_1"             ])
@@ -364,8 +434,8 @@
     ("__."    ["\\underbrace{ }_{ }"])  ("^^."    ["\\overbrace{ }^{ }"])
     ("__.."   ["\\underline{ }" ])  ("^^.."   ["\\overline{ }"  ])
     ;; Structural: misc
-    ("binom"   ["\\binom"             ])  ; 
-    ("box"     ["\\boxed"             ])  ; 
+    ("binom"   ["\\binom"             ])  ; Binom
+    ("box"     ["\\boxed"             ])  ; Putting box around object
     ("can"     ["\\cancel"            ])  ; requires ~cancel~
     ("&="      ["&=\\n\\\\\\\\"       ])  ; 
     ("=&"      ["&=\\n\\\\\\\\"       ])  ; 
