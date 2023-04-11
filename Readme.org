@@ -849,27 +849,28 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("arg"     ["\\arg"               ])  ; 
 ("det"     ["\\det"               ])  ; 
 ("dim"     ["\\dim"               ])  ; 
-("exp"     ["\\exp"               ])  ; 
-("Im"      ["\\mathrm{Im}"        ])  ; 
-("Re"      ["\\mathrm{Re}"        ])  ; 
-("ln"      ["\\ln"                ])  ; 
-("log"     ["\\log"               ])  ; 
-("max"     ["\\max"               ])  ; 
-("min"     ["\\min"               ])  ; 
-("dim"     ["\\dim"               ])  ; 
-("sqrt"    ["\\sqrt"              ])  ; 
-("mod"     ["\\pmod"              ])  ; 
+("exp"     ["\\exp("              ])  ; 
+("Im"      ["\\mathrm{Im}("       ])  ; 
+("Re"      ["\\mathrm{Re}("       ])  ; 
+("ln"      ["\\ln("               ])  ; 
+("log"     ["\\log("              ])  ; 
+("max"     ["\\max("              ])  ; 
+("min"     ["\\min("              ])  ; 
+("dim"     ["\\dim("              ])  ; 
+("sqrt"    ["\\sqrt("             ])  ; 
+("mod"     ["\\pmod("             ])  ; 
 ("mod."    ["\\mod"               ])  ; 
 ("mod.."   ["\\bmod"              ])  ; 
 ;; Func: Trig
-("cos"    ["\\cos"          ])  ("cosh"   ["\\cosh"         ])
-("sin"    ["\\sin"          ])  ("sinh"   ["\\sinh"         ])
-("tan"    ["\\tan"          ])  ("tanh"   ["\\tanh"         ])
-("cot"    ["\\cot"          ])  ("coth"   ["\\coth"         ])
-("acos"   ["\\arccos"       ])  ("cos."   ["\\arccos"       ])
-("asin"   ["\\arcsin"       ])  ("sin."   ["\\arcsin"       ])
-("atan"   ["\\arctan"       ])  ("tan."   ["\\arctan"       ])
+("cos"    ["\\cos("         ])  ("cosh"   ["\\cosh("        ])
+("sin"    ["\\sin("         ])  ("sinh"   ["\\sinh("        ])
+("tan"    ["\\tan("         ])  ("tanh"   ["\\tanh("        ])
+("cot"    ["\\cot("         ])  ("coth"   ["\\coth("        ])
+("acos"   ["\\arccos("      ])  ("cos."   ["\\arccos("      ])
+("asin"   ["\\arcsin("      ])  ("sin."   ["\\arcsin("      ])
+("atan"   ["\\arctan("      ])  ("tan."   ["\\arctan("      ])
 ;; Func: iter
+("il"      ["\\limits_{ }"        ])  ; 
 ("il"      ["\\limits_{ }^{ }"    ])  ; 
 ("lim"     ["\\lim"               ])  ; 
 ("sum"     ["\\sum"               ])  ; 
