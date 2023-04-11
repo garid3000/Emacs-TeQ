@@ -881,32 +881,47 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("into"    ["\\oint"              ])  ; 
 ("sum."    ["\\sum\\limits_{ i=1 }^{ n }"])  ; 
 ("prod."   ["\\prod\\limits_{ i=1 }^{ n }"])  ; 
-("int."    ["\\int\\limits_{ -\\infty }^{ -\\infty }"])  ; 
-("inti."   ["\\iint\\limits_{ C }"])  ; 
-("intii."  ["\\iiint\\limits_{ C }"])  ; 
-("intiii."  ["\\iiiint\\limits_{ C }"])  ; 
-("into."   ["\\oint\\limits_{ C }"])  ; 
+("int."    ["\\int\\limits_{ }^{ }"])  ; 
+("int.."   ["\\int\\limits_{ 0 }^{ +\\infty }"])  ; 
+("int..."  ["\\int\\limits_{ -\\infty }^{ +\\infty }"])  ; 
+("inti."   ["\\iint\\limits_{ }"  ])  ; 
+("intii."  ["\\iiint\\limits_{ }" ])  ; 
+("intiii."  ["\\iiiint\\limits_{ }"])  ; 
+("into."   ["\\oint\\limits_{ }"  ])  ; 
 ;; Structural: Parenthesis
-("()."     ["\\left( \\right)"    ])  ; 
-("().."    ["\\left( \\middle\\vert  \\right)"])  ; 
-("[]."     ["\\left[ \\right]"    ])  ; 
-("[].."    ["\\left[ \\middle\\vert  \\right]"])  ; 
-("[].c"    ["\\lceil \\rceil"     ])  ; 
-("[].f"    ["\\lfloor \\rfloor"   ])  ; 
-("{}."     ["\\left\\{ \\right\\}"])  ; 
-("{}.."    ["\\left\\{ \\middle\\vert  \\right\\}"])  ; 
-("\\vert\\vert ."  ["\\left\\vert \\right\\vert"])  ; 
+("()."     ["\\left( \\right)"    ])  ; parenthesis
+("().."    ["\\left( \\middle\\vert  \\right)"])  ; parenthesis
+("[]."     ["\\left[ \\right]"    ])  ; parenthesis
+("[].."    ["\\left[ \\middle\\vert  \\right]"])  ; parenthesis
+("[].c"    ["\\lceil \\rceil"     ])  ; parenthesis (ceil)
+("[].f"    ["\\lfloor \\rfloor"   ])  ; parenthesis (floor)
+("{}."     ["\\left\\{ \\right\\}"])  ; parenthesis
+("{}.."    ["\\left\\{ \\middle\\vert  \\right\\}"])  ; parenthesis (set maker)
+("<>."     ["\\left< \\right>"    ])  ; parenthesis
+("<>.."    ["\\left< \\middle\\vert \\right>"])  ; parenthesis
+("\\vert\\vert ."  ["\\left\\vert \\right\\vert"])  ; parenthesis (abs)
+("\\vert\\vert .."  ["\\left\\Vert \\right\\Vert"])  ; parenthesis (abs)
+("(."      ["\\left("             ])  ; half-parenthesis
+(")."      ["\\right)"            ])  ; half-parenthesis
+("[."      ["\\left["             ])  ; half-parenthesis
+("]."      ["\\right]"            ])  ; half-parenthesis
+("{."      ["\\left\\{"           ])  ; half-parenthesis
+("}."      ["\\right\\}"          ])  ; half-parenthesis
+("<."      ["\\left<"             ])  ; half-parenthesis
+(">."      ["\\right>"            ])  ; half-parenthesis
+("\\vert ."  ["\\Bigg\\vert_{ }^{ }"])  ; definite integral range
 ;; Structural: Text
-("te"      ["\\text{}"            ])  ; 
-("tr"      ["\\mathrm{}"          ])  ; 
-("tb"      ["\\mathbf{}"          ])  ; 
-("ti"      ["\\mathit{}"          ])  ; 
+("te"      ["\\text{}"            ])  ; normal text
+("tr"      ["\\mathrm{}"          ])  ; math roman (used for sin,cos,tan ...)
+("tb"      ["\\mathbf{}"          ])  ; math bold
+("ti"      ["\\mathit{}"          ])  ; math italics
 ;; Structural: Text
-("te"      ["\\text{}"            ])  ; 
-("tr"      ["\\mathrm{}"          ])  ; 
-("tb"      ["\\mathbf{}"          ])  ; 
-("ti"      ["\\mathit{}"          ])  ; 
+("te"      ["\\text{}"            ])  ; normal text
+("tr"      ["\\mathrm{}"          ])  ; math roman (used for sin,cos,tan ...)
+("tb"      ["\\mathbf{}"          ])  ; math bold
+("ti"      ["\\mathit{}"          ])  ; math italics
 ;; Structural: Sub-sup-scripts
+("^"      ["^{"             ])  ("_"      ["_{"             ])
 ("pp"     ["^{"             ])  ("ll"     ["_{"             ])
 ("p0"     ["^0"             ])  ("l0"     ["_0"             ])
 ("p1"     ["^1"             ])  ("l1"     ["_1"             ])
