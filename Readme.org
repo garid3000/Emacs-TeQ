@@ -12,7 +12,7 @@
 
 #+caption: Main Greek letters 
 #+name: tbl-alphabet-greek-6column
-#+attr_latex: :align |ccl|ccl|  :placement [H]
+#+attr_latex: :align |lll|lll|  :placement [H]
 |-------+------------+---------------------+-------+------------+---------------------|
 |   key | sym        | latex (lower greek) |   key | sym        | latex (upper greek) |
 |-------+------------+---------------------+-------+------------+---------------------|
@@ -60,7 +60,7 @@
 **  Matrix (aka  bold)
 #+caption: Matrix
 #+name: tbl-alphabet-matrix-6column
-#+attr_latex: :align |ccl|ccl| :placement [H]
+#+attr_latex: :align |lll|lll| :placement [H]
 |------+--------------+--------------------+------+--------------+--------------------|
 | key  | sym          | latex (upper bold) | key  | sym          | latex (lower bold) |
 |------+--------------+--------------------+------+--------------+--------------------|
@@ -96,7 +96,7 @@
 **  Vector & Hat
 #+caption: Vectors and Hats
 #+name: tbl-alphabet-vec-6column
-#+attr_latex: :align |ccl|ccl| :placement [H]
+#+attr_latex: :align |lll|lll| :placement [H]
 |------+-----------+-------------+------+-----------+-------------|
 | key  | sym       | latex (vec) | key  | sym       | latex (hat) |
 |------+-----------+-------------+------+-----------+-------------|
@@ -131,7 +131,7 @@
 **  Dots
 #+caption: Dots
 #+name: tbl-alphabet-dot-6column
-#+attr_latex: :align |ccl|ccl| :placement [H]
+#+attr_latex: :align |lll|lll| :placement [H]
 |------+-----------+-------------+------+-----------+-------------|
 | key  | sym       | latex (vec) | key  | sym       | latex (hat) |
 |------+-----------+-------------+------+-----------+-------------|
@@ -165,7 +165,7 @@
 **  DDots
 #+caption: DDots
 #+name: tbl_alphabet_ddot_6column
-#+attr_latex: :align |ccl|ccl| :placement [H]
+#+attr_latex: :align |lll|lll| :placement [H]
 |-------+------------+-------------+-------+------------+-------------|
 | key   | sym        | latex (vec) | key   | sym        | latex (hat) |
 |-------+------------+-------------+-------+------------+-------------|
