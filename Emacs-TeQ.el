@@ -209,26 +209,26 @@
     (".l"      ["\\ldots"             ])  ; low dots
     ;; Symbols-geo
     ("perp"    ["\\perp"              ])  ; 
-    ("perpn"   ["\\perp"              ])  ; 
+    ("perpn"   ["\\perp"              ])  ; $\perp$  ~n~ (neg)
     ("para"    ["\\parallel"          ])  ; 
-    ("paran"   ["\\nparallel"         ])  ; 
+    ("paran"   ["\\nparallel"         ])  ; $\parallel$ ~n~  (neg)
     ("ang"     ["\\angle"             ])  ; 
-    ("ang."    ["\\measuredangle"     ])  ; 
+    ("ang."    ["\\measuredangle"     ])  ; $\angle$ ~.~ (var)
     ("tri"     ["\\vartriangle"       ])  ; 
-    ("trin"    ["\\triangledown"      ])  ; 
+    ("trin"    ["\\triangledown"      ])  ; $\vartriangle$ ~n~ (neg)
     ("squ"     ["\\square"            ])  ; 
-    ("tri."    ["\\blacktriangle"     ])  ; 
-    ("trin."   ["\\blacktriangledown" ])  ; 
-    ("squ."    ["\\blacksquare"       ])  ; 
+    ("tri."    ["\\blacktriangle"     ])  ; $\vartriangle$ ~.~ (var)
+    ("trin."   ["\\blacktriangledown" ])  ; $\vartriangle$ ~n.~ (neg,var)
+    ("squ."    ["\\blacksquare"       ])  ; $\square$ ~.~ (var)
     ;; Symbols
     ("inf"     ["\\infty"             ])  ; 
     ("ex"      ["\\exists"            ])  ; 
-    ("ex."     ["\\nexists"           ])  ; 
+    ("exn"     ["\\nexists"           ])  ; $\exists$ + _n_ (neg)
     ("fa"      ["\\forall"            ])  ; 
     ("hb"      ["\\hbar"              ])  ; 
-    ("hb."     ["\\hslash"            ])  ; 
+    ("hb."     ["\\hslash"            ])  ; $\hbar$ + _._  (var)
     ("dd"      ["\\mathrm{d}"         ])  ; 
-    ("dd."     ["\\partial"           ])  ; 
+    ("dd."     ["\\partial"           ])  ; $\mathrm{d}$  + _._ (var)
     ("ii"      ["\\imath"             ])  ; 
     ("jj"      ["\\jmath"             ])  ; 
     ("nab"     ["\\nabla"             ])  ; 
@@ -237,35 +237,37 @@
     ("qu"      ["\\quad"              ])  ; 
     ("quu"     ["\\qquad"             ])  ; 
     ;; Symbols arrow1
-    ("<-"      ["\\leftarrow"         ])  ; left arrow
-    ("->"      ["\\rightarrow"        ])  ; right arrow
-    ("-^"      ["\\uparrow"           ])  ; up arrow
-    ("-v"      ["\\downarrow"         ])  ; down arrow
-    ("<->"     ["\\leftrightarrow"    ])  ; left-right arrow
-    ("<-n"     ["\\nleftarrow"        ])  ; not left arrow
-    ("->n"     ["\\nrightarrow"       ])  ; not right arrow
-    ("-^n"     ["\\nuparrow"          ])  ; not up arrow
-    ("-vn"     ["\\ndownarrow"        ])  ; not down arrow
-    ("<->"     ["\\nleftrightarrow"   ])  ; not left-right arrow
-    ("-->"     ["\\longrightarrow"    ])  ; 
+    ("<-"      ["\\leftarrow"         ])  ; 
+    ("->"      ["\\rightarrow"        ])  ; 
+    ("-^"      ["\\uparrow"           ])  ; ~^~ looks like up arrow head
+    ("-v"      ["\\downarrow"         ])  ; ~v~ looks like down arrow head
+    ("<->"     ["\\leftrightarrow"    ])  ; 
+    ("<-n"     ["\\nleftarrow"        ])  ; negate (~n~) of prev. section
+    ("->n"     ["\\nrightarrow"       ])  ; arrows + _n_
+    ("-^n"     ["\\nuparrow"          ])  ; 
+    ("-vn"     ["\\ndownarrow"        ])  ; 
+    ("<->"     ["\\nleftrightarrow"   ])  ; 
+    ("-->"     ["\\longrightarrow"    ])  ; longer arrows, with 2 dashes
     ("<--"     ["\\longleftarrow"     ])  ; 
-    ("|->"     ["\\mapsto"            ])  ; 
+    ("|->"     ["\\mapsto"            ])  ; vertical-bar + ~->~
+    (""        [""                    ])  ; (this rendered wrong on Github)
+    (""        [""                    ])  ; (check from PDF file)
     ;; Symbols arrow2
-    ("<="      ["\\Leftarrow"         ])  ; left arrow
-    ("=>"      ["\\Rightarrow"        ])  ; right arrow
-    ("=^"      ["\\Uparrow"           ])  ; up arrow
-    ("=v"      ["\\Downarrow"         ])  ; down arrow
-    ("<=>"     ["\\Leftrightarrow"    ])  ; left-right arrow
-    ("iff"     ["\\Leftrightarrow"    ])  ; left-right arrow
-    ("<=n"     ["\\nLeftarrow"        ])  ; left arrow
-    ("=>n"     ["\\nRightarrow"       ])  ; right arrow
-    ("<=>n"    ["\\nLeftrightarrow"   ])  ; left-right arrow
-    ("iffn"    ["\\nLeftrightarrow"   ])  ; left-right arrow
-    ("<==>"    ["\\Longleftrightarrow"])  ; left-right arrow
-    ("<=="     ["\\Longleftarrow"     ])  ; left-right arrow
-    ("==>"     ["\\Longrightarrow"    ])  ; left-right arrow
+    ("<="      ["\\Leftarrow"         ])  ; compared to single arrrow
+    ("=>"      ["\\Rightarrow"        ])  ; these uses ~=~ as the arrow shaft
+    ("=^"      ["\\Uparrow"           ])  ; 
+    ("=v"      ["\\Downarrow"         ])  ; 
+    ("<=>"     ["\\Leftrightarrow"    ])  ; 
+    ("iff"     ["\\Leftrightarrow"    ])  ; 
+    ("<=n"     ["\\nLeftarrow"        ])  ; negate (~n~) of prev. section
+    ("=>n"     ["\\nRightarrow"       ])  ; arrows + _n_
+    ("<=>n"    ["\\nLeftrightarrow"   ])  ; 
+    ("iffn"    ["\\nLeftrightarrow"   ])  ; 
+    ("<==>"    ["\\Longleftrightarrow"])  ; longer arrows, with 2 dashes
+    ("<=="     ["\\Longleftarrow"     ])  ; 
+    ("==>"     ["\\Longrightarrow"    ])  ; 
     ;; Symbols arrow3
-    ("<---"    ["\\xleftarrow[ ]{ }"  ])  ; 
+    ("<---"    ["\\xleftarrow[ ]{ }"  ])  ; these uses triple - or =
     ("--->"    ["\\xrightarrow[ ]{ }" ])  ; 
     ("===>"    ["\\xRightarrow[ ]{ }" ])  ; ~mathtools~ lib required
     ("<==="    ["\\xLeftarrow[ ]{ }"  ])  ; ~mathtools~ lib required
@@ -290,65 +292,65 @@
     ("::"      ["\\div"               ])  ; 
     ("**"      ["\\cdot"              ])  ; 
     ;; Operation: arith
-    ("=n"      ["\\neq"               ])  ; 
-    ("=."      ["\\equiv"             ])  ; 
-    ("=?"      ["\\stackrel{?}{=}"    ])  ; 
-    ("=y"      ["\\stackrel{\\checkmark}{=}"])  ; 
+    ("=."      ["\\equiv"             ])  ; Variation on
+    ("<."      ["\\leq"               ])  ; < = >
+    (">."      ["\\geq"               ])  ; symbols
+    ("<<"      ["\\ll"                ])  ; 
+    (">>"      ["\\gg"                ])  ; 
+    ("=n"      ["\\neq"               ])  ; negation
+    ("n"       ["\\nsim"              ])  ; 
+    ("<n"      ["\\nless"             ])  ; 
+    (">n"      ["\\ngtr"              ])  ; 
+    ("<.n"     ["\\nleq"              ])  ; 
+    (">.n"     ["\\ngeq"              ])  ; 
+    ("=?"      ["\\stackrel{?}{=}"    ])  ; with question mark
+    ("<?"      ["\\stackrel{?}{<}"    ])  ; 
+    (">?"      ["\\stackrel{?}{>}"    ])  ; 
+    ("<.?"     ["\\stackrel{?}{\\leq}"])  ; 
+    (">.?"     ["\\stackrel{?}{\\geq}"])  ; 
+    ("<<?"     ["\\stackrel{?}{\\ll}" ])  ; 
+    (">>?"     ["\\stackrel{?}{\\gg}" ])  ; 
+    ("=y"      ["\\stackrel{\\checkmark}{=}"])  ; with check mark
+    ("<y"      ["\\stackrel{\\checkmark}{<}"])  ; 
+    (">y"      ["\\stackrel{\\checkmark}{>}"])  ; 
+    ("<.y"     ["\\stackrel{\\checkmark}{\\leq}"])  ; 
+    (">.y"     ["\\stackrel{\\checkmark}{\\geq}"])  ; 
+    ("<<y"     ["\\stackrel{\\checkmark}{\\ll}"])  ; 
+    (">>y"     ["\\stackrel{\\checkmark}{\\gg}"])  ; 
+    ("."       ["\\sim"               ])  ; Another variations
+    (""        ["\\approx"            ])  ; on =
     ("3="      ["\\equiv"             ])  ; 
     ("=:"      ["\\coloneqq"          ])  ; 
     (":="      ["\\coloneqq"          ])  ; 
-    ("=.="     ["\\sim"               ])  ; 
-    ("=n="     ["\\nsim"              ])  ; 
-    (""        ["\\approx"            ])  ; 
-    ("<n"      ["\\nless"             ])  ; 
-    ("<."      ["\\leq"               ])  ; 
-    ("<.n"     ["\\nleq"              ])  ; 
-    ("<?"      ["\\stackrel{?}{<}"    ])  ; 
-    ("<y"      ["\\stackrel{\\checkmark}{<}"])  ; 
-    ("<.?"     ["\\stackrel{?}{\\leq}"])  ; 
-    ("<.y"     ["\\stackrel{\\checkmark}{\\leq}"])  ; 
-    ("<<"      ["\\ll"                ])  ; 
-    ("<<?"     ["\\stackrel{?}{\\ll}" ])  ; 
-    ("<<y"     ["\\stackrel{\\checkmark}{\\ll}"])  ; 
-    (">n"      ["\\ngtr"              ])  ; 
-    (">."      ["\\geq"               ])  ; 
-    (">.n"     ["\\ngeq"              ])  ; 
-    (">?"      ["\\stackrel{?}{>}"    ])  ; 
-    (">y"      ["\\stackrel{\\checkmark}{>}"])  ; 
-    (">.?"     ["\\stackrel{?}{\\geq}"])  ; 
-    (">.y"     ["\\stackrel{\\checkmark}{\\geq}"])  ; 
-    (">>"      ["\\gg"                ])  ; 
-    (">>?"     ["\\stackrel{?}{\\gg}" ])  ; 
-    (">>y"     ["\\stackrel{\\checkmark}{\\gg}"])  ; 
     ;; Operation: arith
     ("in"      ["\\in"                ])  ; 
     ("in."     ["\\ni"                ])  ; 
     ("ni"      ["\\ni"                ])  ; 
-    ("inn"     ["\\notin"             ])  ; 
+    ("inn"     ["\\notin"             ])  ; (neg)
     ("0/"      ["\\emptyset"          ])  ; 
-    ("nsr"     ["\\mathbb{R}"         ])  ; 
-    ("nsc"     ["\\mathbb{C}"         ])  ; 
-    ("nsn"     ["\\mathbb{N}"         ])  ; 
-    ("nsp"     ["\\mathbb{P}"         ])  ; 
-    ("nsz"     ["\\mathbb{Z}"         ])  ; 
-    ("nsi"     ["\\mathbb{I}"         ])  ; 
+    ("nsr"     ["\\mathbb{R}"         ])  ; (n)umber (s)et (r)eal
+    ("nsc"     ["\\mathbb{C}"         ])  ; (n)umber (s)et (c)omplex
+    ("nsn"     ["\\mathbb{N}"         ])  ; ...
+    ("nsp"     ["\\mathbb{P}"         ])  ; ...
+    ("nsz"     ["\\mathbb{Z}"         ])  ; ...
+    ("nsi"     ["\\mathbb{I}"         ])  ; ...
     ("sub"     ["\\subset"            ])  ; 
-    ("subn"    ["\\nssubseteq"        ])  ; 
-    ("sub="    ["\\subseteq"          ])  ; 
-    ("sub=n"   ["\\nsubseteq"         ])  ; 
-    ("subn="   ["\\nsubseteq"         ])  ; 
+    ("subn"    ["\\nssubseteq"        ])  ; (neg)
+    ("sub."    ["\\subseteq"          ])  ; (var)
+    ("sub.n"   ["\\nsubseteq"         ])  ; (var, neg)
+    ("subn."   ["\\nsubseteq"         ])  ; (neg, var)
     ("sup"     ["\\supset"            ])  ; 
-    ("supn"    ["\\nsupseteq"         ])  ; 
-    ("sup="    ["\\supeseteq"         ])  ; 
-    ("sup=n"   ["\\nsupseteq"         ])  ; 
-    ("supn="   ["\\nsupseteq"         ])  ; 
+    ("supn"    ["\\nsupseteq"         ])  ; (neg)
+    ("sup."    ["\\supeseteq"         ])  ; (var)
+    ("sup.n"   ["\\nsupseteq"         ])  ; (var, neg)
+    ("supn."   ["\\nsupseteq"         ])  ; (neg, var)
     ;; Operation: arith
     ("or"      ["\\lor"               ])  ; 
     ("and"     ["\\lnd"               ])  ; 
     ("not"     ["\\neg"               ])  ; 
-    ("or."     ["\\text{ or }"        ])  ; 
-    ("and."    ["\\text{ and }"       ])  ; 
-    ("not."    ["\\text{ not }"       ])  ; 
+    ("or."     ["\\text{ or }"        ])  ; (var)
+    ("and."    ["\\text{ and }"       ])  ; (var)
+    ("not."    ["\\text{ not }"       ])  ; (var)
     ;; Func: main
     ("rank"    ["\\mathrm{rank}"      ])  ; 
     ("arg"     ["\\arg"               ])  ; 
@@ -395,37 +397,39 @@
     ("intiii."  ["\\iiiint\\limits_{ }"])  ; 
     ("into."   ["\\oint\\limits_{ }"  ])  ; 
     ;; Structural: Parenthesis
-    ("()."     ["\\left( \\right)"    ])  ; parenthesis
-    ("().."    ["\\left( \\middle\\vert  \\right)"])  ; parenthesis
-    ("[]."     ["\\left[ \\right]"    ])  ; parenthesis
-    ("[].."    ["\\left[ \\middle\\vert  \\right]"])  ; parenthesis
-    ("[].c"    ["\\lceil \\rceil"     ])  ; parenthesis (ceil)
-    ("[].f"    ["\\lfloor \\rfloor"   ])  ; parenthesis (floor)
-    ("{}."     ["\\left\\{ \\right\\}"])  ; parenthesis
-    ("{}.."    ["\\left\\{ \\middle\\vert  \\right\\}"])  ; parenthesis (set maker)
-    ("<>."     ["\\left< \\right>"    ])  ; parenthesis
-    ("<>.."    ["\\left< \\middle\\vert \\right>"])  ; parenthesis
-    ("||."     ["\\left\\vert \\right\\vert"])  ; parenthesis (abs)
-    ("||.."    ["\\left\\Vert \\right\\Vert"])  ; parenthesis (abs)
-    ("(."      ["\\left("             ])  ; half-parenthesis
-    (")."      ["\\right)"            ])  ; half-parenthesis
-    ("[."      ["\\left["             ])  ; half-parenthesis
-    ("]."      ["\\right]"            ])  ; half-parenthesis
-    ("{."      ["\\left\\{"           ])  ; half-parenthesis
-    ("}."      ["\\right\\}"          ])  ; half-parenthesis
-    ("<."      ["\\left<"             ])  ; half-parenthesis
-    (">."      ["\\right>"            ])  ; half-parenthesis
+    ("()."     ["\\left( \\right)"    ])  ; 
+    ("().."    ["\\left( \\middle\\vert  \\right)"])  ; 
+    ("[]."     ["\\left[ \\right]"    ])  ; 
+    ("[].."    ["\\left[ \\middle\\vert  \\right]"])  ; (var)
+    ("[].c"    ["\\lceil \\rceil"     ])  ; (var) (ceil)
+    ("[].f"    ["\\lfloor \\rfloor"   ])  ; (var) (floor)
+    ("{}."     ["\\left\\{ \\right\\}"])  ; 
+    ("{}.."    ["\\left\\{ \\middle\\vert  \\right\\}"])  ; (var)
+    ("<>."     ["\\left< \\right>"    ])  ; 
+    ("<>.."    ["\\left< \\middle\\vert \\right>"])  ; (var)
+    ("||."     ["\\left\\vert \\right\\vert"])  ; 
+    ("||.."    ["\\left\\Vert \\right\\Vert"])  ; (var)
+    ("(."      ["\\left("             ])  ; half (
+    (")."      ["\\right)"            ])  ; half )
+    ("[."      ["\\left["             ])  ; half [
+    ("]."      ["\\right]"            ])  ; half ]
+    ("{."      ["\\left\\{"           ])  ; half {
+    ("}."      ["\\right\\}"          ])  ; half }
+    ("<."      ["\\left<"             ])  ; half <
+    (">."      ["\\right>"            ])  ; half >
+    ("(.."     ["\\left."             ])  ; half left .
+    (").."     ["\\right."            ])  ; half right .
     ("|."      ["\\Bigg\\vert_{ }^{ }"])  ; definite integral range
     ;; Structural: Text
-    ("te"      ["\\text{"             ])  ; normal text
-    ("tr"      ["\\mathrm{"           ])  ; math roman (used for sin,cos,tan ...)
-    ("tb"      ["\\mathbf{"           ])  ; math bold
-    ("ti"      ["\\mathit{"           ])  ; math italics
+    ("te"      ["\\text{"             ])  ; (te)xt
+    ("tr"      ["\\mathrm{"           ])  ; (t)ext (r)oman
+    ("tb"      ["\\mathbf{"           ])  ; (t)ext (b)old
+    ("ti"      ["\\mathit{"           ])  ; (t)ext (i)talics
     ;; Structural: Text
-    ("te"      ["\\text{"             ])  ; normal text
-    ("tr"      ["\\mathrm{"           ])  ; math roman (used for sin,cos,tan ...)
-    ("tb"      ["\\mathbf{"           ])  ; math bold
-    ("ti"      ["\\mathit{"           ])  ; math italics
+    ("te"      ["\\text{"             ])  ; (te)xt
+    ("tr"      ["\\mathrm{"           ])  ; (t)ext (r)oman
+    ("tb"      ["\\mathbf{"           ])  ; (t)ext (b)old
+    ("ti"      ["\\mathit{"           ])  ; (t)ext (i)talics
     ;; Structural: Sub-sup-scripts
     ("^"      ["^{"             ])  ("_"      ["_{"             ])
     ("pp"     ["^{"             ])  ("ll"     ["_{"             ])
