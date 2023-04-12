@@ -170,7 +170,7 @@
     ("xd"     ["\\dot{x}"       ])  ("Xd"     ["\\dot{X}"       ])
     ("yd"     ["\\dot{y}"       ])  ("Yd"     ["\\dot{Y}"       ])
     ("zd"     ["\\dot{z}"       ])  ("Zd"     ["\\dot{Z}"       ])
-    ;; DDot  
+    ;; DDot
     ("ad."    ["\\ddot{a}"      ])  ("Ad."    ["\\ddot{A}"      ])
     ("bd."    ["\\ddot{b}"      ])  ("Bd."    ["\\ddot{B}"      ])
     ("cd."    ["\\ddot{c}"      ])  ("Cd."    ["\\ddot{C}"      ])
@@ -214,6 +214,12 @@
     ("paran"   ["\\nparallel"         ])  ; 
     ("ang"     ["\\angle"             ])  ; 
     ("ang."    ["\\measuredangle"     ])  ; 
+    ("tri"     ["\\vartriangle"       ])  ; 
+    ("trin"    ["\\triangledown"      ])  ; 
+    ("squ"     ["\\square"            ])  ; 
+    ("tri."    ["\\blacktriangle"     ])  ; 
+    ("trin."   ["\\blacktriangledown" ])  ; 
+    ("squ."    ["\\blacksquare"       ])  ; 
     ;; Symbols
     ("inf"     ["\\infty"             ])  ; 
     ("ex"      ["\\exists"            ])  ; 
@@ -243,7 +249,7 @@
     ("<->"     ["\\nleftrightarrow"   ])  ; not left-right arrow
     ("-->"     ["\\longrightarrow"    ])  ; 
     ("<--"     ["\\longleftarrow"     ])  ; 
-    ("\\vert ->"  ["\\mapsto"            ])  ; 
+    ("|->"     ["\\mapsto"            ])  ; 
     ;; Symbols arrow2
     ("<="      ["\\Leftarrow"         ])  ; left arrow
     ("=>"      ["\\Rightarrow"        ])  ; right arrow
@@ -399,8 +405,8 @@
     ("{}.."    ["\\left\\{ \\middle\\vert  \\right\\}"])  ; parenthesis (set maker)
     ("<>."     ["\\left< \\right>"    ])  ; parenthesis
     ("<>.."    ["\\left< \\middle\\vert \\right>"])  ; parenthesis
-    ("\\vert\\vert ."  ["\\left\\vert \\right\\vert"])  ; parenthesis (abs)
-    ("\\vert\\vert .."  ["\\left\\Vert \\right\\Vert"])  ; parenthesis (abs)
+    ("||."     ["\\left\\vert \\right\\vert"])  ; parenthesis (abs)
+    ("||.."    ["\\left\\Vert \\right\\Vert"])  ; parenthesis (abs)
     ("(."      ["\\left("             ])  ; half-parenthesis
     (")."      ["\\right)"            ])  ; half-parenthesis
     ("[."      ["\\left["             ])  ; half-parenthesis
@@ -409,7 +415,7 @@
     ("}."      ["\\right\\}"          ])  ; half-parenthesis
     ("<."      ["\\left<"             ])  ; half-parenthesis
     (">."      ["\\right>"            ])  ; half-parenthesis
-    ("\\vert ."  ["\\Bigg\\vert_{ }^{ }"])  ; definite integral range
+    ("|."      ["\\Bigg\\vert_{ }^{ }"])  ; definite integral range
     ;; Structural: Text
     ("te"      ["\\text{"             ])  ; normal text
     ("tr"      ["\\mathrm{"           ])  ; math roman (used for sin,cos,tan ...)
