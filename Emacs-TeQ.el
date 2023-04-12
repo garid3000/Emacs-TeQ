@@ -249,9 +249,7 @@
     ("<->"     ["\\nleftrightarrow"   ])  ; 
     ("-->"     ["\\longrightarrow"    ])  ; longer arrows, with 2 dashes
     ("<--"     ["\\longleftarrow"     ])  ; 
-    ("|->"     ["\\mapsto"            ])  ; vertical-bar + ~->~
-    (""        [""                    ])  ; (this rendered wrong on Github)
-    (""        [""                    ])  ; (check from PDF file)
+    ("|->"     ["\\mapsto"            ])  ; vertical-bar + ~->~  (this might rendered wrongly on Github)
     ;; Symbols arrow2
     ("<="      ["\\Leftarrow"         ])  ; compared to single arrrow
     ("=>"      ["\\Rightarrow"        ])  ; these uses ~=~ as the arrow shaft
@@ -292,7 +290,6 @@
     ("::"      ["\\div"               ])  ; 
     ("**"      ["\\cdot"              ])  ; 
     ;; Operation: arith
-    ("=."      ["\\equiv"             ])  ; Variation on
     ("<."      ["\\leq"               ])  ; < = >
     (">."      ["\\geq"               ])  ; symbols
     ("<<"      ["\\ll"                ])  ; 
@@ -317,8 +314,9 @@
     (">.y"     ["\\stackrel{\\checkmark}{\\geq}"])  ; 
     ("<<y"     ["\\stackrel{\\checkmark}{\\ll}"])  ; 
     (">>y"     ["\\stackrel{\\checkmark}{\\gg}"])  ; 
-    ("."       ["\\sim"               ])  ; Another variations
-    (""        ["\\approx"            ])  ; on =
+    ("=."      ["\\equiv"             ])  ; Variation on
+    ("-."      ["\\sim"               ])  ; Another variations
+    ("=.."     ["\\approx"            ])  ; on =
     ("3="      ["\\equiv"             ])  ; 
     ("=:"      ["\\coloneqq"          ])  ; 
     (":="      ["\\coloneqq"          ])  ; 
