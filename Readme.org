@@ -286,25 +286,25 @@
 #+caption: Single Line arrows
 #+name: tbl-3-sym-arrow-1
 #+attr_latex: :align |llll| :placement [H]
-|------------+--------------------+--------------------+----------------------|
-| key        | trans              | sym                | description          |
-|------------+--------------------+--------------------+----------------------|
-| ~<-~       | ~\leftarrow~       | $\leftarrow$       | left arrow           |
-| ~->~       | ~\rightarrow~      | $\rightarrow$      | right arrow          |
-| ~-^~       | ~\uparrow~         | $\uparrow$         | up arrow             |
-| ~-v~       | ~\downarrow~       | $\downarrow$       | down arrow           |
-| ~<->~      | ~\leftrightarrow~  | $\leftrightarrow$  | left-right arrow     |
-|------------+--------------------+--------------------+----------------------|
-| ~<-n~      | ~\nleftarrow~      | $\nleftarrow$      | not left arrow       |
-| ~->n~      | ~\nrightarrow~     | $\nrightarrow$     | not right arrow      |
-| ~-^n~      | ~\nuparrow~        | $\nuparrow$        | not up arrow         |
-| ~-vn~      | ~\ndownarrow~      | $\ndownarrow$      | not down arrow       |
-| ~<->~      | ~\nleftrightarrow~ | $\nleftrightarrow$ | not left-right arrow |
-|------------+--------------------+--------------------+----------------------|
-| ~-->~      | ~\longrightarrow~  | $\longrightarrow$  |                      |
-| ~<--~      | ~\longleftarrow~   | $\longleftarrow$   |                      |
-| \vert ~->~ | ~\mapsto~          | $\mapsto$          |                      |
-|------------+--------------------+--------------------+----------------------|
+|------------------------+--------------------+--------------------+----------------------|
+| key                    | trans              | sym                | description          |
+|------------------------+--------------------+--------------------+----------------------|
+| ~<-~                   | ~\leftarrow~       | $\leftarrow$       | left arrow           |
+| ~->~                   | ~\rightarrow~      | $\rightarrow$      | right arrow          |
+| ~-^~                   | ~\uparrow~         | $\uparrow$         | up arrow             |
+| ~-v~                   | ~\downarrow~       | $\downarrow$       | down arrow           |
+| ~<->~                  | ~\leftrightarrow~  | $\leftrightarrow$  | left-right arrow     |
+|------------------------+--------------------+--------------------+----------------------|
+| ~<-n~                  | ~\nleftarrow~      | $\nleftarrow$      | not left arrow       |
+| ~->n~                  | ~\nrightarrow~     | $\nrightarrow$     | not right arrow      |
+| ~-^n~                  | ~\nuparrow~        | $\nuparrow$        | not up arrow         |
+| ~-vn~                  | ~\ndownarrow~      | $\ndownarrow$      | not down arrow       |
+| ~<->~                  | ~\nleftrightarrow~ | $\nleftrightarrow$ | not left-right arrow |
+|------------------------+--------------------+--------------------+----------------------|
+| ~-->~                  | ~\longrightarrow~  | $\longrightarrow$  |                      |
+| ~<--~                  | ~\longleftarrow~   | $\longleftarrow$   |                      |
+| \texttt{\textbar} ~->~ | ~\mapsto~          | $\mapsto$          |                      |
+|------------------------+--------------------+--------------------+----------------------|
 
 *** Double:
 #+caption: Double Line arrows
@@ -572,32 +572,32 @@
 #+caption:  
 #+name: tbl_7_parenthesis
 #+attr_latex: :align |llcl| :placement [H]
-|-----------------+----------------------------------+-------------------------------------------+-------------------------|
-| key             | trans                            | sym                                       | description             |
-|-----------------+----------------------------------+-------------------------------------------+-------------------------|
-| ~().~           | ~\left( \right)~                 | $\left( \Box \right)$                     | parenthesis             |
-| ~()..~          | ~\left( \middle\vert  \right)~   | $\left( \Box \middle\vert \Box \right)$   | parenthesis             |
-| ~[].~           | ~\left[ \right]~                 | $\left[ \Box \right]$                     | parenthesis             |
-| ~[]..~          | ~\left[ \middle\vert  \right]~   | $\left[ \Box \middle\vert \Box \right]$   | parenthesis             |
-| ~[].c~          | ~\lceil \rceil~                  | $\lceil \Box \rceil$                      | parenthesis (ceil)      |
-| ~[].f~          | ~\lfloor \rfloor~                | $\lfloor \Box \rfloor$                    | parenthesis (floor)     |
-| ~{}.~           | ~\left\{ \right\}~               | $\left\{ \Box \right\}$                   | parenthesis             |
-| ~{}..~          | ~\left\{ \middle\vert  \right\}~ | $\left\{ \Box \middle\vert \Box \right\}$ | parenthesis (set maker) |
-| ~<>.~           | ~\left< \right>~                 | $\left< \Box \right>$                     | parenthesis             |
-| ~<>..~          | ~\left< \middle\vert \right>~    | $\left< \Box \middle\vert \Box \right>$   | parenthesis             |
-| \vert\vert ~.~  | ~\left\vert \right\vert~         | $\left\vert \Box \right\vert$             | parenthesis (abs)       |
-| \vert\vert ~..~ | ~\left\Vert \right\Vert~         | $\left\Vert \Box \right\Vert$             | parenthesis (abs)       |
-|-----------------+----------------------------------+-------------------------------------------+-------------------------|
-| ~(.~            | ~\left(~                         | \(\left( \Box \right.\)                   | half-parenthesis        |
-| ~).~            | ~\right)~                        | $\left. \Box \right)$                     | half-parenthesis        |
-| ~[.~            | ~\left[~                         | \(\left[ \Box \right.\)                   | half-parenthesis        |
-| ~].~            | ~\right]~                        | $\left. \Box \right]$                     | half-parenthesis        |
-| ~{.~            | ~\left\{~                        | \(\left\{ \Box \right.\)                  | half-parenthesis        |
-| ~}.~            | ~\right\}~                       | $\left. \Box \right\}$                    | half-parenthesis        |
-| ~<.~            | ~\left<~                         | \(\left< \Box \right.\)                   | half-parenthesis        |
-| ~>.~            | ~\right>~                        | $\left. \Box \right>$                     | half-parenthesis        |
-| \vert ~.~       | ~\Bigg\vert_{ }^{ }~             | $\Box\Bigg\vert_{\Box}^{\Box}$            | definite integral range |
-|-----------------+----------------------------------+-------------------------------------------+-------------------------|
+|-----------------------------------------+----------------------------------+-------------------------------------------+-------------------------|
+| key                                     | trans                            | sym                                       | description             |
+|-----------------------------------------+----------------------------------+-------------------------------------------+-------------------------|
+| ~().~                                   | ~\left( \right)~                 | $\left( \Box \right)$                     | parenthesis             |
+| ~()..~                                  | ~\left( \middle\vert  \right)~   | $\left( \Box \middle\vert \Box \right)$   | parenthesis             |
+| ~[].~                                   | ~\left[ \right]~                 | $\left[ \Box \right]$                     | parenthesis             |
+| ~[]..~                                  | ~\left[ \middle\vert  \right]~   | $\left[ \Box \middle\vert \Box \right]$   | parenthesis             |
+| ~[].c~                                  | ~\lceil \rceil~                  | $\lceil \Box \rceil$                      | parenthesis (ceil)      |
+| ~[].f~                                  | ~\lfloor \rfloor~                | $\lfloor \Box \rfloor$                    | parenthesis (floor)     |
+| ~{}.~                                   | ~\left\{ \right\}~               | $\left\{ \Box \right\}$                   | parenthesis             |
+| ~{}..~                                  | ~\left\{ \middle\vert  \right\}~ | $\left\{ \Box \middle\vert \Box \right\}$ | parenthesis (set maker) |
+| ~<>.~                                   | ~\left< \right>~                 | $\left< \Box \right>$                     | parenthesis             |
+| ~<>..~                                  | ~\left< \middle\vert \right>~    | $\left< \Box \middle\vert \Box \right>$   | parenthesis             |
+| \texttt{\textbar}\texttt{\textbar} ~.~  | ~\left\vert \right\vert~         | $\left\vert \Box \right\vert$             | parenthesis (abs)       |
+| \texttt{\textbar}\texttt{\textbar} ~..~ | ~\left\Vert \right\Vert~         | $\left\Vert \Box \right\Vert$             | parenthesis (abs)       |
+|-----------------------------------------+----------------------------------+-------------------------------------------+-------------------------|
+| ~(.~                                    | ~\left(~                         | \(\left( \Box \right.\)                   | half-parenthesis        |
+| ~).~                                    | ~\right)~                        | $\left. \Box \right)$                     | half-parenthesis        |
+| ~[.~                                    | ~\left[~                         | \(\left[ \Box \right.\)                   | half-parenthesis        |
+| ~].~                                    | ~\right]~                        | $\left. \Box \right]$                     | half-parenthesis        |
+| ~{.~                                    | ~\left\{~                        | \(\left\{ \Box \right.\)                  | half-parenthesis        |
+| ~}.~                                    | ~\right\}~                       | $\left. \Box \right\}$                    | half-parenthesis        |
+| ~<.~                                    | ~\left<~                         | \(\left< \Box \right.\)                   | half-parenthesis        |
+| ~>.~                                    | ~\right>~                        | $\left. \Box \right>$                     | half-parenthesis        |
+| \texttt{\textbar} ~.~                   | ~\Bigg\vert_{ }^{ }~             | $\Box\Bigg\vert_{\Box}^{\Box}$            | definite integral range |
+|-----------------------------------------+----------------------------------+-------------------------------------------+-------------------------|
 
 **  Texts:
 #+caption:  
@@ -651,8 +651,8 @@ def format_table_to_elisp_type6col(headcomment, table):
     table = table[1:]
     for line in table:
         key, sym, trans, key1, sym, trans1 = line
-        key   = repr(key).replace("\'", "\"").replace("~", "")
-        key1  = repr(key1).replace("\'", "\"").replace("~", "")
+        key   = repr(key).replace("\'", "\"").replace("~", "").replace("\\\\texttt{\\\\textbar}", "|").replace(" ", "")
+        key1  = repr(key1).replace("\'", "\"").replace("~", "").replace("\\\\texttt{\\\\textbar}", "|").replace(" ", "")
         trans = repr(trans).replace("\'", "\"").replace("~", "")
         trans1 = repr(trans1).replace("\'", "\"").replace("~", "")
         
@@ -663,7 +663,7 @@ def format_table_to_elisp_type3col_type1(headcomment, table):
     table = table[1:]
     for line in table:
         key, trans, sym, description = line
-        key   = repr(key).replace("\'", "\"").replace("~", "")
+        key   = repr(key).replace("\'", "\"").replace("~", "").replace("\\\\texttt{\\\\textbar}", "|").replace(" ", "")
         trans = repr(trans).replace("\'", "\"").replace("~", "")
         
         print(f"({key:<8}  [{trans:<22}])  ; {description}")
@@ -673,7 +673,7 @@ def format_table_to_elisp_type3col_type2(headcomment, table):
     table = table[1:]
     for line in table:
         key, trans, sym, description = line
-        key   = repr(key).replace("\'", "\"").replace("~", "")
+        key   = repr(key).replace("\'", "\"").replace("~", "").replace("\\\\texttt{\\\\textbar}", "|").replace(" ", "")
         trans = trans.replace("~", "")
         
         print(f"({key:<8}  {trans:<22})  ; {description}")
