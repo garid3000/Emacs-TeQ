@@ -32,12 +32,16 @@
 
 (defun quail-TeQ-next (key idx)
   (quail-func-init)
-  (evil-find-char 1 32)
+  ;; (evil-find-char 1 32)
+  (right-char)
+  (right-char)
   (quail-func-end))
 
 (defun quail-TeQ-prev (key idx)
   (quail-func-init)
-  (evil-find-char-backward 1 32)
+  ;; (evil-find-char-backward 1 32)
+  (left-char)
+  (left-char)
   (quail-func-end))
 
 (defun quail-TeQ-frac (key idx)
