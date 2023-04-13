@@ -357,15 +357,15 @@
 | ~bar~    | $\bar{\Box}$    | ~\bar{~     |             |
 | ~hat~    | $\hat{\Box}$    | ~\hat{~     |             |
 | ~dot~    | $\dot{\Box}$    | ~\dot{~     |             |
-| ~dot.~   | $\ddot{\Box}$   | ~\ddot{~    |             |
-| ~dot..~  | $\dddot{\Box}$  | ~\dddot{~   |             |
-| ~dot...~ | $\ddddot{\Box}$ | ~\ddddot{~  |             |
+| ~dot.~   | $\ddot{\Box}$   | ~\ddot{~    | (var)       |
+| ~dot..~  | $\dddot{\Box}$  | ~\dddot{~   | (var)       |
+| ~dot...~ | $\ddddot{\Box}$ | ~\ddddot{~  | (var)       |
 | ~dag~    | $\Box^\dagger$  | ~^\dagger~  |             |
-| ~dag.~   | $\Box^\ddagger$ | ~^\ddagger~ |             |
+| ~dag.~   | $\Box^\ddagger$ | ~^\ddagger~ | (var)       |
 | ~*..~    | $\Box^*$        | ~^*~        |             |
 | ~deg~    | $\Box^\circ$    | ~^\circ~    |             |
 | ~tr~     | $\Box^T$        | ~^T~        |             |
-| ~tr.~    | $\Box^{-T}$     | ~^{-T}~     |             |
+| ~trn~    | \({\Box}^{-T}\) | ~^{-T}~     | (neg)       |
 |----------+-----------------+-------------+-------------|
 
 **  Superscripts & Subsripts (power & lower)
