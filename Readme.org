@@ -651,17 +651,15 @@
 #+caption:  
 #+name: tbl_7_misc
 #+attr_latex: :align |llll| :placement [H]
-|---------+----------------------+-------------+---------------------------|
-| key     | sym                  | latex       | description               |
-|---------+----------------------+-------------+---------------------------|
-| ~binom~ | $\binom{\Box}{\Box}$ | ~\binom{}{~ | Binom                     |
-| ~box~   | $\boxed{\Box}$       | ~\boxed{}{~ | Putting box around object |
-| ~fr~    | $\frac{\Box}{\Box}$  | ~\frac{}{~  | Fractions                 |
-| ~can~   | $\cancel{\Box}$      | ~\cancel~   |                           |
-| ~==~    |                      | ~&=\n\\\\~  | helps in align env.       |
-| ~&=~    |                      | ~&=\n\\\\~  |                           |
-| ~=&~    |                      | ~&=\n\\\\~  |                           |
-|---------+----------------------+-------------+---------------------------|
+|---------+----------------------+------------+---------------------------|
+| key     | sym                  | latex      | description               |
+|---------+----------------------+------------+---------------------------|
+| ~binom~ | $\binom{\Box}{\Box}$ | ~\binom{~  | Binom                     |
+| ~box~   | $\boxed{\Box}$       | ~\boxed{~  | Putting box around object |
+| ~ff~    | $\frac{\Box}{\Box}$  | ~\frac{~   | Fractions                 |
+| ~can~   | $\cancel{\Box}$      | ~\cancel{~ |                           |
+| ~==~    |                      | ~&=\\n~    | helps in align env.       |
+|---------+----------------------+------------+---------------------------|
 
 **  xy Diagram related
 #+caption:  
