@@ -158,32 +158,32 @@
 |-------+------------+-------------+-------+------------+-------------|
 | key   | sym        | latex (vec) | key   | sym        | latex (hat) |
 |-------+------------+-------------+-------+------------+-------------|
-| ~ad.~ | $\ddot{a}$ | ~\ddot{a}~  | ~Ad.~ | $\ddot{A}$ | ~\ddot{A}~  |
-| ~bd.~ | $\ddot{b}$ | ~\ddot{b}~  | ~Bd.~ | $\ddot{B}$ | ~\ddot{B}~  |
-| ~cd.~ | $\ddot{c}$ | ~\ddot{c}~  | ~Cd.~ | $\ddot{C}$ | ~\ddot{C}~  |
-| ~dd.~ | $\ddot{d}$ | ~\ddot{d}~  | ~Dd.~ | $\ddot{D}$ | ~\ddot{D}~  |
-| ~ed.~ | $\ddot{e}$ | ~\ddot{e}~  | ~Ed.~ | $\ddot{E}$ | ~\ddot{E}~  |
-| ~fd.~ | $\ddot{f}$ | ~\ddot{f}~  | ~Fd.~ | $\ddot{F}$ | ~\ddot{F}~  |
-| ~gd.~ | $\ddot{g}$ | ~\ddot{g}~  | ~Gd.~ | $\ddot{G}$ | ~\ddot{G}~  |
-| ~hd.~ | $\ddot{h}$ | ~\ddot{h}~  | ~Hd.~ | $\ddot{H}$ | ~\ddot{H}~  |
-| ~id.~ | $\ddot{i}$ | ~\ddot{i}~  | ~Id.~ | $\ddot{I}$ | ~\ddot{I}~  |
-| ~jd.~ | $\ddot{j}$ | ~\ddot{j}~  | ~Jd.~ | $\ddot{J}$ | ~\ddot{J}~  |
-| ~kd.~ | $\ddot{k}$ | ~\ddot{k}~  | ~Kd.~ | $\ddot{K}$ | ~\ddot{K}~  |
-| ~ld.~ | $\ddot{l}$ | ~\ddot{l}~  | ~Ld.~ | $\ddot{L}$ | ~\ddot{L}~  |
-| ~md.~ | $\ddot{m}$ | ~\ddot{m}~  | ~Md.~ | $\ddot{M}$ | ~\ddot{M}~  |
-| ~nd.~ | $\ddot{n}$ | ~\ddot{n}~  | ~Nd.~ | $\ddot{N}$ | ~\ddot{N}~  |
-| ~od.~ | $\ddot{o}$ | ~\ddot{o}~  | ~Od.~ | $\ddot{O}$ | ~\ddot{O}~  |
-| ~pd.~ | $\ddot{p}$ | ~\ddot{p}~  | ~Pd.~ | $\ddot{P}$ | ~\ddot{P}~  |
-| ~qd.~ | $\ddot{q}$ | ~\ddot{q}~  | ~Qd.~ | $\ddot{Q}$ | ~\ddot{Q}~  |
-| ~rd.~ | $\ddot{r}$ | ~\ddot{r}~  | ~Rd.~ | $\ddot{R}$ | ~\ddot{R}~  |
-| ~sd.~ | $\ddot{s}$ | ~\ddot{s}~  | ~Sd.~ | $\ddot{S}$ | ~\ddot{S}~  |
-| ~td.~ | $\ddot{t}$ | ~\ddot{t}~  | ~Td.~ | $\ddot{T}$ | ~\ddot{T}~  |
-| ~ud.~ | $\ddot{u}$ | ~\ddot{u}~  | ~Ud.~ | $\ddot{U}$ | ~\ddot{U}~  |
-| ~vd.~ | $\ddot{v}$ | ~\ddot{v}~  | ~Vd.~ | $\ddot{V}$ | ~\ddot{V}~  |
-| ~wd.~ | $\ddot{w}$ | ~\ddot{w}~  | ~Wd.~ | $\ddot{W}$ | ~\ddot{W}~  |
-| ~xd.~ | $\ddot{x}$ | ~\ddot{x}~  | ~Xd.~ | $\ddot{X}$ | ~\ddot{X}~  |
-| ~yd.~ | $\ddot{y}$ | ~\ddot{y}~  | ~Yd.~ | $\ddot{Y}$ | ~\ddot{Y}~  |
-| ~zd.~ | $\ddot{z}$ | ~\ddot{z}~  | ~Zd.~ | $\ddot{Z}$ | ~\ddot{Z}~  |
+| ~add~ | $\ddot{a}$ | ~\ddot{a}~  | ~Add~ | $\ddot{A}$ | ~\ddot{A}~  |
+| ~bdd~ | $\ddot{b}$ | ~\ddot{b}~  | ~Bdd~ | $\ddot{B}$ | ~\ddot{B}~  |
+| ~cdd~ | $\ddot{c}$ | ~\ddot{c}~  | ~Cdd~ | $\ddot{C}$ | ~\ddot{C}~  |
+| ~ddd~ | $\ddot{d}$ | ~\ddot{d}~  | ~Ddd~ | $\ddot{D}$ | ~\ddot{D}~  |
+| ~edd~ | $\ddot{e}$ | ~\ddot{e}~  | ~Edd~ | $\ddot{E}$ | ~\ddot{E}~  |
+| ~fdd~ | $\ddot{f}$ | ~\ddot{f}~  | ~Fdd~ | $\ddot{F}$ | ~\ddot{F}~  |
+| ~gdd~ | $\ddot{g}$ | ~\ddot{g}~  | ~Gdd~ | $\ddot{G}$ | ~\ddot{G}~  |
+| ~hdd~ | $\ddot{h}$ | ~\ddot{h}~  | ~Hdd~ | $\ddot{H}$ | ~\ddot{H}~  |
+| ~idd~ | $\ddot{i}$ | ~\ddot{i}~  | ~Idd~ | $\ddot{I}$ | ~\ddot{I}~  |
+| ~jdd~ | $\ddot{j}$ | ~\ddot{j}~  | ~Jdd~ | $\ddot{J}$ | ~\ddot{J}~  |
+| ~kdd~ | $\ddot{k}$ | ~\ddot{k}~  | ~Kdd~ | $\ddot{K}$ | ~\ddot{K}~  |
+| ~ldd~ | $\ddot{l}$ | ~\ddot{l}~  | ~Ldd~ | $\ddot{L}$ | ~\ddot{L}~  |
+| ~mdd~ | $\ddot{m}$ | ~\ddot{m}~  | ~Mdd~ | $\ddot{M}$ | ~\ddot{M}~  |
+| ~ndd~ | $\ddot{n}$ | ~\ddot{n}~  | ~Ndd~ | $\ddot{N}$ | ~\ddot{N}~  |
+| ~odd~ | $\ddot{o}$ | ~\ddot{o}~  | ~Odd~ | $\ddot{O}$ | ~\ddot{O}~  |
+| ~pdd~ | $\ddot{p}$ | ~\ddot{p}~  | ~Pdd~ | $\ddot{P}$ | ~\ddot{P}~  |
+| ~qdd~ | $\ddot{q}$ | ~\ddot{q}~  | ~Qdd~ | $\ddot{Q}$ | ~\ddot{Q}~  |
+| ~rdd~ | $\ddot{r}$ | ~\ddot{r}~  | ~Rdd~ | $\ddot{R}$ | ~\ddot{R}~  |
+| ~sdd~ | $\ddot{s}$ | ~\ddot{s}~  | ~Sdd~ | $\ddot{S}$ | ~\ddot{S}~  |
+| ~tdd~ | $\ddot{t}$ | ~\ddot{t}~  | ~Tdd~ | $\ddot{T}$ | ~\ddot{T}~  |
+| ~udd~ | $\ddot{u}$ | ~\ddot{u}~  | ~Udd~ | $\ddot{U}$ | ~\ddot{U}~  |
+| ~vdd~ | $\ddot{v}$ | ~\ddot{v}~  | ~Vdd~ | $\ddot{V}$ | ~\ddot{V}~  |
+| ~wdd~ | $\ddot{w}$ | ~\ddot{w}~  | ~Wdd~ | $\ddot{W}$ | ~\ddot{W}~  |
+| ~xdd~ | $\ddot{x}$ | ~\ddot{x}~  | ~Xdd~ | $\ddot{X}$ | ~\ddot{X}~  |
+| ~ydd~ | $\ddot{y}$ | ~\ddot{y}~  | ~Ydd~ | $\ddot{Y}$ | ~\ddot{Y}~  |
+| ~zdd~ | $\ddot{z}$ | ~\ddot{z}~  | ~Zdd~ | $\ddot{Z}$ | ~\ddot{Z}~  |
 |-------+------------+-------------+-------+------------+-------------|
 
 
