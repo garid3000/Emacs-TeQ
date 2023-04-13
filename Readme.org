@@ -717,6 +717,7 @@ def format_table_to_elisp_type3col_type2(headcomment, table):
 format_table_to_elisp_type6col("Greek", tbl_1_greek)
 format_table_to_elisp_type6col("Matrix", tbl_1_matrix)
 format_table_to_elisp_type6col("Vector & Hat", tbl_1_vec)
+format_table_to_elisp_type6col("Vector & Hat", tbl_1_hat)
 format_table_to_elisp_type6col("Dot", tbl_alphabet_dot_6column)
 format_table_to_elisp_type6col("DDot", tbl_alphabet_ddot_6column)
 
