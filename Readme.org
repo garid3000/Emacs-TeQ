@@ -628,6 +628,7 @@
 | ~box~   | $\boxed{\Box}$       | ~\boxed{}{~ | Putting box around object |
 | ~fr~    | $\frac{\Box}{\Box}$  | ~\frac{}{~  | Fractions                 |
 | ~can~   | $\cancel{\Box}$      | ~\cancel~   |                           |
+| ~==~    |                      | ~&=\n\\\\~  | helps in align env.       |
 | ~&=~    |                      | ~&=\n\\\\~  |                           |
 | ~=&~    |                      | ~&=\n\\\\~  |                           |
 |---------+----------------------+-------------+---------------------------|
