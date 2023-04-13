@@ -86,36 +86,36 @@
 #+caption: Vectors
 #+name: tbl-alphabet-vec-6column
 #+attr_latex: :align |lll|lll| :placement [H]
-|------+-----------+---------------+------+------------+---------------|
-| key  | sym       | latex (upper) | key  | sym        | latex (lower) |
-|------+-----------+---------------+------+------------+---------------|
-| ~Av~ | $\vec{A}$ | ~\vec{A}~     | ~av~ | $\vect{a}$ | ~\vect{a}~    |
-| ~Bv~ | $\vec{B}$ | ~\vec{B}~     | ~bv~ | $\vect{b}$ | ~\vect{b}~    |
-| ~Cv~ | $\vec{C}$ | ~\vec{C}~     | ~cv~ | $\vect{c}$ | ~\vect{c}~    |
-| ~Dv~ | $\vec{D}$ | ~\vec{D}~     | ~dv~ | $\vect{d}$ | ~\vect{d}~    |
-| ~Ev~ | $\vec{E}$ | ~\vec{E}~     | ~ev~ | $\vect{e}$ | ~\vect{e}~    |
-| ~Fv~ | $\vec{F}$ | ~\vec{F}~     | ~fv~ | $\vect{f}$ | ~\vect{f}~    |
-| ~Gv~ | $\vec{G}$ | ~\vec{G}~     | ~gv~ | $\vect{g}$ | ~\vect{g}~    |
-| ~Hv~ | $\vec{H}$ | ~\vec{H}~     | ~hv~ | $\vect{h}$ | ~\vect{h}~    |
-| ~Iv~ | $\vec{I}$ | ~\vec{I}~     | ~iv~ | $\vect{i}$ | ~\vect{i}~    |
-| ~Jv~ | $\vec{J}$ | ~\vec{J}~     | ~jv~ | $\vect{j}$ | ~\vect{j}~    |
-| ~Kv~ | $\vec{K}$ | ~\vec{K}~     | ~kv~ | $\vect{k}$ | ~\vect{k}~    |
-| ~Lv~ | $\vec{L}$ | ~\vec{L}~     | ~lv~ | $\vect{l}$ | ~\vect{l}~    |
-| ~Mv~ | $\vec{M}$ | ~\vec{M}~     | ~mv~ | $\vect{m}$ | ~\vect{m}~    |
-| ~Nv~ | $\vec{N}$ | ~\vec{N}~     | ~nv~ | $\vect{n}$ | ~\vect{n}~    |
-| ~Ov~ | $\vec{O}$ | ~\vec{O}~     | ~ov~ | $\vect{o}$ | ~\vect{o}~    |
-| ~Pv~ | $\vec{P}$ | ~\vec{P}~     | ~pv~ | $\vect{p}$ | ~\vect{p}~    |
-| ~Qv~ | $\vec{Q}$ | ~\vec{Q}~     | ~qv~ | $\vect{q}$ | ~\vect{q}~    |
-| ~Rv~ | $\vec{R}$ | ~\vec{R}~     | ~rv~ | $\vect{r}$ | ~\vect{r}~    |
-| ~Sv~ | $\vec{S}$ | ~\vec{S}~     | ~sv~ | $\vect{s}$ | ~\vect{s}~    |
-| ~Tv~ | $\vec{T}$ | ~\vec{T}~     | ~tv~ | $\vect{t}$ | ~\vect{t}~    |
-| ~Uv~ | $\vec{U}$ | ~\vec{U}~     | ~uv~ | $\vect{u}$ | ~\vect{u}~    |
-| ~Vv~ | $\vec{V}$ | ~\vec{V}~     | ~vv~ | $\vect{v}$ | ~\vect{v}~    |
-| ~Wv~ | $\vec{W}$ | ~\vec{W}~     | ~wv~ | $\vect{w}$ | ~\vect{w}~    |
-| ~Xv~ | $\vec{X}$ | ~\vec{X}~     | ~xv~ | $\vect{x}$ | ~\vect{x}~    |
-| ~Yv~ | $\vec{Y}$ | ~\vec{Y}~     | ~yv~ | $\vect{y}$ | ~\vect{y}~    |
-| ~Zv~ | $\vec{Z}$ | ~\vec{Z}~     | ~zv~ | $\vect{z}$ | ~\vect{z}~    |
-|------+-----------+---------------+------+------------+---------------|
+|------+-----------+---------------+------+-----------+---------------|
+| key  | sym       | latex (upper) | key  | sym       | latex (lower) |
+|------+-----------+---------------+------+-----------+---------------|
+| ~Av~ | $\vec{A}$ | ~\vec{A}~     | ~av~ | $\vec{a}$ | ~\vec{a}~     |
+| ~Bv~ | $\vec{B}$ | ~\vec{B}~     | ~bv~ | $\vec{b}$ | ~\vec{b}~     |
+| ~Cv~ | $\vec{C}$ | ~\vec{C}~     | ~cv~ | $\vec{c}$ | ~\vec{c}~     |
+| ~Dv~ | $\vec{D}$ | ~\vec{D}~     | ~dv~ | $\vec{d}$ | ~\vec{d}~     |
+| ~Ev~ | $\vec{E}$ | ~\vec{E}~     | ~ev~ | $\vec{e}$ | ~\vec{e}~     |
+| ~Fv~ | $\vec{F}$ | ~\vec{F}~     | ~fv~ | $\vec{f}$ | ~\vec{f}~     |
+| ~Gv~ | $\vec{G}$ | ~\vec{G}~     | ~gv~ | $\vec{g}$ | ~\vec{g}~     |
+| ~Hv~ | $\vec{H}$ | ~\vec{H}~     | ~hv~ | $\vec{h}$ | ~\vec{h}~     |
+| ~Iv~ | $\vec{I}$ | ~\vec{I}~     | ~iv~ | $\vec{i}$ | ~\vec{i}~     |
+| ~Jv~ | $\vec{J}$ | ~\vec{J}~     | ~jv~ | $\vec{j}$ | ~\vec{j}~     |
+| ~Kv~ | $\vec{K}$ | ~\vec{K}~     | ~kv~ | $\vec{k}$ | ~\vec{k}~     |
+| ~Lv~ | $\vec{L}$ | ~\vec{L}~     | ~lv~ | $\vec{l}$ | ~\vec{l}~     |
+| ~Mv~ | $\vec{M}$ | ~\vec{M}~     | ~mv~ | $\vec{m}$ | ~\vec{m}~     |
+| ~Nv~ | $\vec{N}$ | ~\vec{N}~     | ~nv~ | $\vec{n}$ | ~\vec{n}~     |
+| ~Ov~ | $\vec{O}$ | ~\vec{O}~     | ~ov~ | $\vec{o}$ | ~\vec{o}~     |
+| ~Pv~ | $\vec{P}$ | ~\vec{P}~     | ~pv~ | $\vec{p}$ | ~\vec{p}~     |
+| ~Qv~ | $\vec{Q}$ | ~\vec{Q}~     | ~qv~ | $\vec{q}$ | ~\vec{q}~     |
+| ~Rv~ | $\vec{R}$ | ~\vec{R}~     | ~rv~ | $\vec{r}$ | ~\vec{r}~     |
+| ~Sv~ | $\vec{S}$ | ~\vec{S}~     | ~sv~ | $\vec{s}$ | ~\vec{s}~     |
+| ~Tv~ | $\vec{T}$ | ~\vec{T}~     | ~tv~ | $\vec{t}$ | ~\vec{t}~     |
+| ~Uv~ | $\vec{U}$ | ~\vec{U}~     | ~uv~ | $\vec{u}$ | ~\vec{u}~     |
+| ~Vv~ | $\vec{V}$ | ~\vec{V}~     | ~vv~ | $\vec{v}$ | ~\vec{v}~     |
+| ~Wv~ | $\vec{W}$ | ~\vec{W}~     | ~wv~ | $\vec{w}$ | ~\vec{w}~     |
+| ~Xv~ | $\vec{X}$ | ~\vec{X}~     | ~xv~ | $\vec{x}$ | ~\vec{x}~     |
+| ~Yv~ | $\vec{Y}$ | ~\vec{Y}~     | ~yv~ | $\vec{y}$ | ~\vec{y}~     |
+| ~Zv~ | $\vec{Z}$ | ~\vec{Z}~     | ~zv~ | $\vec{z}$ | ~\vec{z}~     |
+|------+-----------+---------------+------+-----------+---------------|
 
 **  Hat
 #+caption: Vectors and Hats
@@ -810,32 +810,32 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("Zm"     ["\\mathbf{Z}"    ])  ("zm"     ["\\mathbf{z}"    ])
 ("Om"     ["\\mathbf{0}"    ])  ("0m"     ["\\mathbf{0}"    ])
 ;; Vector & Hat
-("Av"     ["\\vec{A}"       ])  ("av"     ["\\vect{a}"      ])
-("Bv"     ["\\vec{B}"       ])  ("bv"     ["\\vect{b}"      ])
-("Cv"     ["\\vec{C}"       ])  ("cv"     ["\\vect{c}"      ])
-("Dv"     ["\\vec{D}"       ])  ("dv"     ["\\vect{d}"      ])
-("Ev"     ["\\vec{E}"       ])  ("ev"     ["\\vect{e}"      ])
-("Fv"     ["\\vec{F}"       ])  ("fv"     ["\\vect{f}"      ])
-("Gv"     ["\\vec{G}"       ])  ("gv"     ["\\vect{g}"      ])
-("Hv"     ["\\vec{H}"       ])  ("hv"     ["\\vect{h}"      ])
-("Iv"     ["\\vec{I}"       ])  ("iv"     ["\\vect{i}"      ])
-("Jv"     ["\\vec{J}"       ])  ("jv"     ["\\vect{j}"      ])
-("Kv"     ["\\vec{K}"       ])  ("kv"     ["\\vect{k}"      ])
-("Lv"     ["\\vec{L}"       ])  ("lv"     ["\\vect{l}"      ])
-("Mv"     ["\\vec{M}"       ])  ("mv"     ["\\vect{m}"      ])
-("Nv"     ["\\vec{N}"       ])  ("nv"     ["\\vect{n}"      ])
-("Ov"     ["\\vec{O}"       ])  ("ov"     ["\\vect{o}"      ])
-("Pv"     ["\\vec{P}"       ])  ("pv"     ["\\vect{p}"      ])
-("Qv"     ["\\vec{Q}"       ])  ("qv"     ["\\vect{q}"      ])
-("Rv"     ["\\vec{R}"       ])  ("rv"     ["\\vect{r}"      ])
-("Sv"     ["\\vec{S}"       ])  ("sv"     ["\\vect{s}"      ])
-("Tv"     ["\\vec{T}"       ])  ("tv"     ["\\vect{t}"      ])
-("Uv"     ["\\vec{U}"       ])  ("uv"     ["\\vect{u}"      ])
-("Vv"     ["\\vec{V}"       ])  ("vv"     ["\\vect{v}"      ])
-("Wv"     ["\\vec{W}"       ])  ("wv"     ["\\vect{w}"      ])
-("Xv"     ["\\vec{X}"       ])  ("xv"     ["\\vect{x}"      ])
-("Yv"     ["\\vec{Y}"       ])  ("yv"     ["\\vect{y}"      ])
-("Zv"     ["\\vec{Z}"       ])  ("zv"     ["\\vect{z}"      ])
+("Av"     ["\\vec{A}"       ])  ("av"     ["\\vec{a}"       ])
+("Bv"     ["\\vec{B}"       ])  ("bv"     ["\\vec{b}"       ])
+("Cv"     ["\\vec{C}"       ])  ("cv"     ["\\vec{c}"       ])
+("Dv"     ["\\vec{D}"       ])  ("dv"     ["\\vec{d}"       ])
+("Ev"     ["\\vec{E}"       ])  ("ev"     ["\\vec{e}"       ])
+("Fv"     ["\\vec{F}"       ])  ("fv"     ["\\vec{f}"       ])
+("Gv"     ["\\vec{G}"       ])  ("gv"     ["\\vec{g}"       ])
+("Hv"     ["\\vec{H}"       ])  ("hv"     ["\\vec{h}"       ])
+("Iv"     ["\\vec{I}"       ])  ("iv"     ["\\vec{i}"       ])
+("Jv"     ["\\vec{J}"       ])  ("jv"     ["\\vec{j}"       ])
+("Kv"     ["\\vec{K}"       ])  ("kv"     ["\\vec{k}"       ])
+("Lv"     ["\\vec{L}"       ])  ("lv"     ["\\vec{l}"       ])
+("Mv"     ["\\vec{M}"       ])  ("mv"     ["\\vec{m}"       ])
+("Nv"     ["\\vec{N}"       ])  ("nv"     ["\\vec{n}"       ])
+("Ov"     ["\\vec{O}"       ])  ("ov"     ["\\vec{o}"       ])
+("Pv"     ["\\vec{P}"       ])  ("pv"     ["\\vec{p}"       ])
+("Qv"     ["\\vec{Q}"       ])  ("qv"     ["\\vec{q}"       ])
+("Rv"     ["\\vec{R}"       ])  ("rv"     ["\\vec{r}"       ])
+("Sv"     ["\\vec{S}"       ])  ("sv"     ["\\vec{s}"       ])
+("Tv"     ["\\vec{T}"       ])  ("tv"     ["\\vec{t}"       ])
+("Uv"     ["\\vec{U}"       ])  ("uv"     ["\\vec{u}"       ])
+("Vv"     ["\\vec{V}"       ])  ("vv"     ["\\vec{v}"       ])
+("Wv"     ["\\vec{W}"       ])  ("wv"     ["\\vec{w}"       ])
+("Xv"     ["\\vec{X}"       ])  ("xv"     ["\\vec{x}"       ])
+("Yv"     ["\\vec{Y}"       ])  ("yv"     ["\\vec{y}"       ])
+("Zv"     ["\\vec{Z}"       ])  ("zv"     ["\\vec{z}"       ])
 ;; Vector & Hat
 ("Ah"     ["\\hat{A}"       ])  ("ah"     ["\\hat{a}"       ])
 ("Bh"     ["\\hat{B}"       ])  ("bh"     ["\\hat{b}"       ])
