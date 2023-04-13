@@ -677,9 +677,10 @@
 
 * Formatting Table into Elisp
   :PROPERTIES:
-  :header-args:  :var tbl_1_greek=tbl-alphabet-greek-6column tbl_1_matrix=tbl-alphabet-matrix-6column tbl_1_vec=tbl-alphabet-vec-6column tbl_alphabet_dot_6column=tbl-alphabet-dot-6column tbl_alphabet_ddot_6column=tbl_alphabet_ddot_6column tbl2_exec_func=tbl-2-execute-function tbl_3_sym_dots=tbl-3-sym-dots tbl_3_sym_geo=tbl-3-sym-geo tbl_3_sym_letter=tbl-3-sym-letter tbl_3_sym_spc=tbl-3-sym-spc tbl_3_sym_arrow_1=tbl-3-sym-arrow-1 tbl_3_sym_arrow_2=tbl-3-sym-arrow-2 tbl_3_sym_arrow_3=tbl-3-sym-arrow-3 tbl_4_sym_mod_1=tbl_4_sym_mod_1 tbl_5_op_arith=tbl_5_op_arith tbl_5_op_bin=tbl_5_op_bin tbl_5_op_set=tbl_5_op_set tbl_5_op_logic=tbl_5_op_logic tbl_6_func=tbl_6_func tbl_6_func_trig_6col=tbl_6_func_trig_6col tbl_6_func_iter=tbl_6_func_iter tbl_7_parenthesis=tbl_7_parenthesis tbl_7_text=tbl_7_text tbl_7_supsubscripts=tbl_7_supsubscripts tbl_7_misc=tbl_7_misc tbl_7_xy=tbl_7_xy
+  :header-args:  :var tbl_1_greek=tbl-alphabet-greek-6column tbl_1_matrix=tbl-alphabet-matrix-6column tbl_1_vec=tbl-alphabet-vec-6column tbl_1_hat=tbl-alphabet-hat-6column tbl_alphabet_dot_6column=tbl-alphabet-dot-6column tbl_alphabet_ddot_6column=tbl_alphabet_ddot_6column tbl2_exec_func=tbl-2-execute-function tbl_3_sym_dots=tbl-3-sym-dots tbl_3_sym_geo=tbl-3-sym-geo tbl_3_sym_letter=tbl-3-sym-letter tbl_3_sym_spc=tbl-3-sym-spc tbl_3_sym_arrow_1=tbl-3-sym-arrow-1 tbl_3_sym_arrow_2=tbl-3-sym-arrow-2 tbl_3_sym_arrow_3=tbl-3-sym-arrow-3 tbl_4_sym_mod_1=tbl_4_sym_mod_1 tbl_5_op_arith=tbl_5_op_arith tbl_5_op_bin=tbl_5_op_bin tbl_5_op_set=tbl_5_op_set tbl_5_op_logic=tbl_5_op_logic tbl_6_func=tbl_6_func tbl_6_func_trig_6col=tbl_6_func_trig_6col tbl_6_func_iter=tbl_6_func_iter tbl_7_parenthesis=tbl_7_parenthesis tbl_7_text=tbl_7_text tbl_7_supsubscripts=tbl_7_supsubscripts tbl_7_misc=tbl_7_misc tbl_7_xy=tbl_7_xy
   :END:
 
+  
 #+BEGIN_SRC python  :hlines no :results output code :wrap SRC elisp :results_switches ":tangle no :noweb yes" :exports both
 def format_table_to_elisp_type6col(headcomment, table):
     print(f";; {headcomment}")
