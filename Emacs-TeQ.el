@@ -227,8 +227,8 @@
     ("fa"      ["\\forall"            ])  ; 
     ("hb"      ["\\hbar"              ])  ; 
     ("hb."     ["\\hslash"            ])  ; $\hbar$ + _._  (var)
-    ("dd"      ["\\mathrm{d}"         ])  ; 
-    ("dd."     ["\\partial"           ])  ; $\mathrm{d}$  + _._ (var)
+    ("dd."     ["\\mathrm{d}"         ])  ; (dd is already registred as \dot{d} so dd variation)
+    ("dd.."    ["\\partial"           ])  ; $\mathrm{d}$  + _._ (var)
     ("ii"      ["\\imath"             ])  ; 
     ("jj"      ["\\jmath"             ])  ; 
     ("nab"     ["\\nabla"             ])  ; 
@@ -375,25 +375,25 @@
     ("asin"   ["\\arcsin("      ])  ("sin."   ["\\arcsin("      ])
     ("atan"   ["\\arctan("      ])  ("tan."   ["\\arctan("      ])
     ;; Func: iter
-    ("il"      ["\\limits_{ }"        ])  ; 
-    ("il"      ["\\limits_{ }^{ }"    ])  ; 
+    ("il"      ["\\limits_{ }"        ])  ; (limits apparently doesn't render on Github page)
+    ("il."     ["\\limits_{ }^{ }"    ])  ; . (var)
     ("lim"     ["\\lim"               ])  ; 
     ("sum"     ["\\sum"               ])  ; 
     ("prod"    ["\\prod"              ])  ; 
     ("int"     ["\\int"               ])  ; 
-    ("inti"    ["\\iint"              ])  ; 
-    ("intii"   ["\\iiint"             ])  ; 
-    ("intiii"  ["\\iiiint"            ])  ; 
-    ("into"    ["\\oint"              ])  ; 
-    ("sum."    ["\\sum\\limits_{ i=1 }^{ n }"])  ; 
-    ("prod."   ["\\prod\\limits_{ i=1 }^{ n }"])  ; 
-    ("int."    ["\\int\\limits_{ }^{ }"])  ; 
-    ("int.."   ["\\int\\limits_{ 0 }^{ +\\infty }"])  ; 
-    ("int..."  ["\\int\\limits_{ -\\infty }^{ +\\infty }"])  ; 
-    ("inti."   ["\\iint\\limits_{ }"  ])  ; 
-    ("intii."  ["\\iiint\\limits_{ }" ])  ; 
-    ("intiii."  ["\\iiiint\\limits_{ }"])  ; 
-    ("into."   ["\\oint\\limits_{ }"  ])  ; 
+    ("inti"    ["\\iint"              ])  ; $\int$ + i
+    ("intii"   ["\\iiint"             ])  ; $\int$ + ii
+    ("intiii"  ["\\iiiint"            ])  ; $\int$ + iii
+    ("into"    ["\\oint"              ])  ; $\int$ + o
+    ("sum."    ["\\sum\\limits_{ i=1 }^{ n }"])  ; . (var)
+    ("prod."   ["\\prod\\limits_{ i=1 }^{ n }"])  ; . (var)
+    ("int."    ["\\int\\limits_{ }^{ }"])  ; . (var)
+    ("int.."   ["\\int\\limits_{ 0 }^{ +\\infty }"])  ; . (var)
+    ("int..."  ["\\int\\limits_{ -\\infty }^{ +\\infty }"])  ; . (var)
+    ("inti."   ["\\iint\\limits_{ }"  ])  ; . (var)
+    ("intii."  ["\\iiint\\limits_{ }" ])  ; . (var)
+    ("intiii."  ["\\iiiint\\limits_{ }"])  ; . (var)
+    ("into."   ["\\oint\\limits_{ }"  ])  ; . (var)
     ;; Structural: Parenthesis
     ("()."     ["\\left( \\right)"    ])  ; 
     ("().."    ["\\left( \\middle\\vert  \\right)"])  ; 
@@ -405,8 +405,6 @@
     ("{}.."    ["\\left\\{ \\middle\\vert  \\right\\}"])  ; (var)
     ("<>."     ["\\left< \\right>"    ])  ; 
     ("<>.."    ["\\left< \\middle\\vert \\right>"])  ; (var)
-    ("||."     ["\\left\\vert \\right\\vert"])  ; 
-    ("||.."    ["\\left\\Vert \\right\\Vert"])  ; (var)
     ("(."      ["\\left("             ])  ; half (
     (")."      ["\\right)"            ])  ; half )
     ("[."      ["\\left["             ])  ; half [
@@ -417,7 +415,9 @@
     (">."      ["\\right>"            ])  ; half >
     ("(.."     ["\\left."             ])  ; half left .
     (").."     ["\\right."            ])  ; half right .
-    ("|."      ["\\Bigg\\vert_{ }^{ }"])  ; definite integral range
+    ("|."      ["\\Bigg\\vert_{ }^{ }"])  ; These are vertical bar in the key
+    ("||."     ["\\left\\vert \\right\\vert"])  ; (not rendered correctly in github page)
+    ("||.."    ["\\left\\Vert \\right\\Vert"])  ; 
     ;; Structural: Text
     ("te"      ["\\text{"             ])  ; (te)xt
     ("tr"      ["\\mathrm{"           ])  ; (t)ext (r)oman
@@ -446,6 +446,7 @@
     ("box"     ["\\boxed{}{"          ])  ; Putting box around object
     ("fr"      ["\\frac{}{"           ])  ; Fractions
     ("can"     ["\\cancel"            ])  ; 
+    ("=="      ["&=\\n\\\\\\\\"       ])  ; helps in align env.
     ("&="      ["&=\\n\\\\\\\\"       ])  ; 
     ("=&"      ["&=\\n\\\\\\\\"       ])  ; 
     ;; Structural: xy
