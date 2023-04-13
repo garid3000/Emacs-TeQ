@@ -236,7 +236,7 @@
 | key     | sym                  | latex                | description                   |
 |---------+----------------------+----------------------+-------------------------------|
 | ~perp~  | $\perp$              | ~\perp~              |                               |
-| ~perpn~ | $\not\perp$          | ~\perp~              | $\perp$  ~n~ (neg)            |
+| ~perpn~ | $\not\perp$          | ~\not\perp~          | $\perp$  ~n~ (neg)            |
 | ~para~  | $\parallel$          | ~\parallel~          |                               |
 | ~paran~ | $\nparallel$         | ~\nparallel~         | $\parallel$ ~n~  (neg)        |
 | ~ang~   | $\angle$             | ~\angle~             |                               |
@@ -409,44 +409,44 @@
 #+caption:  
 #+name: tbl_5_op_bin
 #+attr_latex: :align |llll| :placement [H]
-|-------+-------------------------------+-------------------------------+--------------------|
-| key   | sym                           | latex                         | description        |
-|-------+-------------------------------+-------------------------------+--------------------|
-| ~<.~  | $\leq$                        | ~\leq~                        | < = >              |
-| ~>.~  | $\geq$                        | ~\geq~                        | symbols            |
-| ~<<~  | $\ll$                         | ~\ll~                         |                    |
-| ~>>~  | $\gg$                         | ~\gg~                         |                    |
-|-------+-------------------------------+-------------------------------+--------------------|
-| ~=n~  | $\neq$                        | ~\neq~                        | negation           |
-| ~~n~  | $\nsim$                       | ~\nsim~                       |                    |
-| ~<n~  | $\nless$                      | ~\nless~                      |                    |
-| ~>n~  | $\ngtr$                       | ~\ngtr~                       |                    |
-| ~<.n~ | $\nleq$                       | ~\nleq~                       |                    |
-| ~>.n~ | $\ngeq$                       | ~\ngeq~                       |                    |
-|-------+-------------------------------+-------------------------------+--------------------|
-| ~=?~  | $\stackrel{?}{ = }$          | ~\stackrel{?}{=}~             | with question mark |
-| ~<?~  | $\stackrel{?}{<}$             | ~\stackrel{?}{<}~             |                    |
-| ~>?~  | $\stackrel{?}{>}$             | ~\stackrel{?}{>}~             |                    |
-| ~<.?~ | $\stackrel{?}{\leq}$          | ~\stackrel{?}{\leq}~          |                    |
-| ~>.?~ | $\stackrel{?}{\geq}$          | ~\stackrel{?}{\geq}~          |                    |
-| ~<<?~ | $\stackrel{?}{\ll}$           | ~\stackrel{?}{\ll}~           |                    |
-| ~>>?~ | $\stackrel{?}{\gg}$           | ~\stackrel{?}{\gg}~           |                    |
-|-------+-------------------------------+-------------------------------+--------------------|
-| ~=y~  | $\stackrel{\checkmark}{ = }$  | ~\stackrel{\checkmark}{=}~    | with check mark    |
-| ~<y~  | $\stackrel{\checkmark}{<}$    | ~\stackrel{\checkmark}{<}~    |                    |
-| ~>y~  | $\stackrel{\checkmark}{>}$    | ~\stackrel{\checkmark}{>}~    |                    |
-| ~<.y~ | $\stackrel{\checkmark}{\leq}$ | ~\stackrel{\checkmark}{\leq}~ |                    |
-| ~>.y~ | $\stackrel{\checkmark}{\geq}$ | ~\stackrel{\checkmark}{\geq}~ |                    |
-| ~<<y~ | $\stackrel{\checkmark}{\ll}$  | ~\stackrel{\checkmark}{\ll}~  |                    |
-| ~>>y~ | $\stackrel{\checkmark}{\gg}$  | ~\stackrel{\checkmark}{\gg}~  |                    |
-|-------+-------------------------------+-------------------------------+--------------------|
-| ~=.~  | $\equiv$                      | ~\equiv~                      | Variations of =    |
-| ~-.~  | $\sim$                        | ~\sim~                        |                    |
-| ~=..~ | $\approx$                     | ~\approx~                     |                    |
-| ~3=~  | $\equiv$                      | ~\equiv~                      |                    |
-| ~=:~  | $\coloneqq$                   | ~\coloneqq~                   |                    |
-| ~:=~  | $\coloneqq$                   | ~\coloneqq~                   |                    |
-|-------+-------------------------------+-------------------------------+--------------------|
+|--------+-------------------------------+-------------------------------+--------------------|
+| key    | sym                           | latex                         | description        |
+|--------+-------------------------------+-------------------------------+--------------------|
+| ~<.~   | $\leq$                        | ~\leq~                        | < = >              |
+| ~>.~   | $\geq$                        | ~\geq~                        | symbols            |
+| ~<<~   | $\ll$                         | ~\ll~                         |                    |
+| ~>>~   | $\gg$                         | ~\gg~                         |                    |
+|--------+-------------------------------+-------------------------------+--------------------|
+| ~=n~   | $\neq$                        | ~\neq~                        | negation           |
+| ~<n~   | $\nless$                      | ~\nless~                      |                    |
+| ~>n~   | $\ngtr$                       | ~\ngtr~                       |                    |
+| ~<.n~  | $\nleq$                       | ~\nleq~                       |                    |
+| ~>.n~  | $\ngeq$                       | ~\ngeq~                       |                    |
+|--------+-------------------------------+-------------------------------+--------------------|
+| ~=?~   | $\stackrel{?}{ = }$           | ~\stackrel{?}{=}~             | with question mark |
+| ~<?~   | $\stackrel{?}{<}$             | ~\stackrel{?}{<}~             |                    |
+| ~>?~   | $\stackrel{?}{>}$             | ~\stackrel{?}{>}~             |                    |
+| ~<.?~  | $\stackrel{?}{\leq}$          | ~\stackrel{?}{\leq}~          |                    |
+| ~>.?~  | $\stackrel{?}{\geq}$          | ~\stackrel{?}{\geq}~          |                    |
+| ~<<?~  | $\stackrel{?}{\ll}$           | ~\stackrel{?}{\ll}~           |                    |
+| ~>>?~  | $\stackrel{?}{\gg}$           | ~\stackrel{?}{\gg}~           |                    |
+|--------+-------------------------------+-------------------------------+--------------------|
+| ~=y~   | $\stackrel{\checkmark}{ = }$  | ~\stackrel{\checkmark}{=}~    | with check mark    |
+| ~<y~   | $\stackrel{\checkmark}{<}$    | ~\stackrel{\checkmark}{<}~    |                    |
+| ~>y~   | $\stackrel{\checkmark}{>}$    | ~\stackrel{\checkmark}{>}~    |                    |
+| ~<.y~  | $\stackrel{\checkmark}{\leq}$ | ~\stackrel{\checkmark}{\leq}~ |                    |
+| ~>.y~  | $\stackrel{\checkmark}{\geq}$ | ~\stackrel{\checkmark}{\geq}~ |                    |
+| ~<<y~  | $\stackrel{\checkmark}{\ll}$  | ~\stackrel{\checkmark}{\ll}~  |                    |
+| ~>>y~  | $\stackrel{\checkmark}{\gg}$  | ~\stackrel{\checkmark}{\gg}~  |                    |
+|--------+-------------------------------+-------------------------------+--------------------|
+| ~=.~   | $\equiv$                      | ~\equiv~                      | Variations of =    |
+| ~sim~  | $\sim$                        | ~\sim~                        |                    |
+| ~simn~ | $\nsim$                       | ~\nsim~                       |                    |
+| ~=..~  | $\approx$                     | ~\approx~                     |                    |
+| ~3=~   | $\equiv$                      | ~\equiv~                      |                    |
+| ~=:~   | $\coloneqq$                   | ~\coloneqq~                   |                    |
+| ~:=~   | $\coloneqq$                   | ~\coloneqq~                   |                    |
+|--------+-------------------------------+-------------------------------+--------------------|
 
 **  Set symbols
 #+caption:  
@@ -868,7 +868,7 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 (".l"      ["\\ldots"             ])  ; low dots
 ;; Symbols-geo
 ("perp"    ["\\perp"              ])  ; 
-("perpn"   ["\\perp"              ])  ; $\perp$  ~n~ (neg)
+("perpn"   ["\\not\\perp"         ])  ; $\perp$  ~n~ (neg)
 ("para"    ["\\parallel"          ])  ; 
 ("paran"   ["\\nparallel"         ])  ; $\parallel$ ~n~  (neg)
 ("ang"     ["\\angle"             ])  ; 
@@ -933,15 +933,15 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("bar"     ["\\bar{"              ])  ; 
 ("hat"     ["\\hat{"              ])  ; 
 ("dot"     ["\\dot{"              ])  ; 
-("dot."    ["\\ddot{"             ])  ; 
-("dot.."   ["\\dddot{"            ])  ; 
-("dot..."  ["\\ddddot{"           ])  ; 
+("dot."    ["\\ddot{"             ])  ; (var)
+("dot.."   ["\\dddot{"            ])  ; (var)
+("dot..."  ["\\ddddot{"           ])  ; (var)
 ("dag"     ["^\\dagger"           ])  ; 
-("dag."    ["^\\ddagger"          ])  ; 
+("dag."    ["^\\ddagger"          ])  ; (var)
 ("*.."     ["^*"                  ])  ; 
 ("deg"     ["^\\circ"             ])  ; 
 ("tr"      ["^T"                  ])  ; 
-("tr."     ["^{-T}"               ])  ; 
+("trn"     ["^{-T}"               ])  ; (neg)
 ;; Operation: arith
 ("+-"      ["\\pm"                ])  ; 
 ("-+"      ["\\mp"                ])  ; 
@@ -954,7 +954,6 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("<<"      ["\\ll"                ])  ; 
 (">>"      ["\\gg"                ])  ; 
 ("=n"      ["\\neq"               ])  ; negation
-("n"       ["\\nsim"              ])  ; 
 ("<n"      ["\\nless"             ])  ; 
 (">n"      ["\\ngtr"              ])  ; 
 ("<.n"     ["\\nleq"              ])  ; 
@@ -973,9 +972,10 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 (">.y"     ["\\stackrel{\\checkmark}{\\geq}"])  ; 
 ("<<y"     ["\\stackrel{\\checkmark}{\\ll}"])  ; 
 (">>y"     ["\\stackrel{\\checkmark}{\\gg}"])  ; 
-("=."      ["\\equiv"             ])  ; Variation on
-("-."      ["\\sim"               ])  ; Another variations
-("=.."     ["\\approx"            ])  ; on =
+("=."      ["\\equiv"             ])  ; Variations of =
+("sim"     ["\\sim"               ])  ; 
+("simn"    ["\\nsim"              ])  ; 
+("=.."     ["\\approx"            ])  ; 
 ("3="      ["\\equiv"             ])  ; 
 ("=:"      ["\\coloneqq"          ])  ; 
 (":="      ["\\coloneqq"          ])  ; 

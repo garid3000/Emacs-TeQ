@@ -209,7 +209,7 @@
     (".l"      ["\\ldots"             ])  ; low dots
     ;; Symbols-geo
     ("perp"    ["\\perp"              ])  ; 
-    ("perpn"   ["\\perp"              ])  ; $\perp$  ~n~ (neg)
+    ("perpn"   ["\\not\\perp"         ])  ; $\perp$  ~n~ (neg)
     ("para"    ["\\parallel"          ])  ; 
     ("paran"   ["\\nparallel"         ])  ; $\parallel$ ~n~  (neg)
     ("ang"     ["\\angle"             ])  ; 
@@ -274,15 +274,15 @@
     ("bar"     ["\\bar{"              ])  ; 
     ("hat"     ["\\hat{"              ])  ; 
     ("dot"     ["\\dot{"              ])  ; 
-    ("dot."    ["\\ddot{"             ])  ; 
-    ("dot.."   ["\\dddot{"            ])  ; 
-    ("dot..."  ["\\ddddot{"           ])  ; 
+    ("dot."    ["\\ddot{"             ])  ; (var)
+    ("dot.."   ["\\dddot{"            ])  ; (var)
+    ("dot..."  ["\\ddddot{"           ])  ; (var)
     ("dag"     ["^\\dagger"           ])  ; 
-    ("dag."    ["^\\ddagger"          ])  ; 
+    ("dag."    ["^\\ddagger"          ])  ; (var)
     ("*.."     ["^*"                  ])  ; 
     ("deg"     ["^\\circ"             ])  ; 
     ("tr"      ["^T"                  ])  ; 
-    ("tr."     ["^{-T}"               ])  ; 
+    ("trn"     ["^{-T}"               ])  ; (neg)
     ;; Operation: arith
     ("+-"      ["\\pm"                ])  ; 
     ("-+"      ["\\mp"                ])  ; 
@@ -295,7 +295,6 @@
     ("<<"      ["\\ll"                ])  ; 
     (">>"      ["\\gg"                ])  ; 
     ("=n"      ["\\neq"               ])  ; negation
-    ("n"       ["\\nsim"              ])  ; 
     ("<n"      ["\\nless"             ])  ; 
     (">n"      ["\\ngtr"              ])  ; 
     ("<.n"     ["\\nleq"              ])  ; 
@@ -314,9 +313,10 @@
     (">.y"     ["\\stackrel{\\checkmark}{\\geq}"])  ; 
     ("<<y"     ["\\stackrel{\\checkmark}{\\ll}"])  ; 
     (">>y"     ["\\stackrel{\\checkmark}{\\gg}"])  ; 
-    ("=."      ["\\equiv"             ])  ; Variation on
-    ("-."      ["\\sim"               ])  ; Another variations
-    ("=.."     ["\\approx"            ])  ; on =
+    ("=."      ["\\equiv"             ])  ; Variations of =
+    ("sim"     ["\\sim"               ])  ; 
+    ("simn"    ["\\nsim"              ])  ; 
+    ("=.."     ["\\approx"            ])  ; 
     ("3="      ["\\equiv"             ])  ; 
     ("=:"      ["\\coloneqq"          ])  ; 
     (":="      ["\\coloneqq"          ])  ; 
