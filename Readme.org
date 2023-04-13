@@ -604,35 +604,36 @@
 #+caption:  
 #+name: tbl_7_parenthesis
 #+attr_latex: :align |llll| :placement [H]
-|-----------------------------------------+-------------------------------------------+----------------------------------+-----------------------------------------|
-| key                                     | sym                                       | latex                            | description                             |
-|-----------------------------------------+-------------------------------------------+----------------------------------+-----------------------------------------|
-| ~().~                                   | $\left( \Box \right)$                     | ~\left( \right)~                 |                                         |
-| ~()..~                                  | $\left( \Box \middle\vert \Box \right)$   | ~\left( \middle\vert  \right)~   |                                         |
-| ~[].~                                   | $\left[ \Box \right]$                     | ~\left[ \right]~                 |                                         |
-| ~[]..~                                  | $\left[ \Box \middle\vert \Box \right]$   | ~\left[ \middle\vert  \right]~   | (var)                                   |
-| ~[].c~                                  | $\lceil \Box \rceil$                      | ~\lceil \rceil~                  | (var) (ceil)                            |
-| ~[].f~                                  | $\lfloor \Box \rfloor$                    | ~\lfloor \rfloor~                | (var) (floor)                           |
-| ~{}.~                                   | $\left\{ \Box \right\}$                   | ~\left\{ \right\}~               |                                         |
-| ~{}..~                                  | $\left\{ \Box \middle\vert \Box \right\}$ | ~\left\{ \middle\vert  \right\}~ | (var)                                   |
-| ~<>.~                                   | $\left< \Box \right>$                     | ~\left< \right>~                 |                                         |
-| ~<>..~                                  | $\left< \Box \middle\vert \Box \right>$   | ~\left< \middle\vert \right>~    | (var)                                   |
-|-----------------------------------------+-------------------------------------------+----------------------------------+-----------------------------------------|
-| ~(.~                                    | \( \left( \Box \right. \)                 | ~\left(~                         | half (                                  |
-| ~).~                                    | $\left. \Box \right)$                     | ~\right)~                        | half )                                  |
-| ~[.~                                    | \( \left[ \Box \right. \)                 | ~\left[~                         | half [                                  |
-| ~].~                                    | $\left. \Box \right]$                     | ~\right]~                        | half ]                                  |
-| ~{.~                                    | \( \left\{ \Box \right. \)                | ~\left\{~                        | half {                                  |
-| ~}.~                                    | $\left. \Box \right\}$                    | ~\right\}~                       | half }                                  |
-| ~<.~                                    | \( \left< \Box \right. \)                 | ~\left<~                         | half <                                  |
-| ~>.~                                    | $\left. \Box \right>$                     | ~\right>~                        | half >                                  |
-| ~(..~                                   |                                           | ~\left.~                         | half left .                             |
-| ~)..~                                   |                                           | ~\right.~                        | half right .                            |
-|-----------------------------------------+-------------------------------------------+----------------------------------+-----------------------------------------|
-| \texttt{\textbar} ~.~                   | \(\Box \Bigg\vert_{\Box}^{\Box}\)         | ~\Bigg\vert_{ }^{ }~             | These are vertical bar in the key       |
-| \texttt{\textbar}\texttt{\textbar} ~.~  | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~         | (not rendered correctly in github page) |
-| \texttt{\textbar}\texttt{\textbar} ~..~ | $\left\Vert \Box \right\Vert$             | ~\left\Vert \right\Vert~         |                                         |
-|-----------------------------------------+-------------------------------------------+----------------------------------+-----------------------------------------|
+|-----------------------------------------+-------------------------------------------+----------------------------------+----------------------|
+| key                                     | sym                                       | latex                            | description          |
+|-----------------------------------------+-------------------------------------------+----------------------------------+----------------------|
+| ~().~                                   | $\left( \Box \right)$                     | ~\left( \right)~                 |                      |
+| ~()..~                                  | $\left( \Box \middle\vert \Box \right)$   | ~\left( \middle\vert  \right)~   |                      |
+| ~[].~                                   | $\left[ \Box \right]$                     | ~\left[ \right]~                 |                      |
+| ~[]..~                                  | $\left[ \Box \middle\vert \Box \right]$   | ~\left[ \middle\vert  \right]~   | (var)                |
+| ~[].c~                                  | $\lceil \Box \rceil$                      | ~\lceil \rceil~                  | (var) (ceil)         |
+| ~[].f~                                  | $\lfloor \Box \rfloor$                    | ~\lfloor \rfloor~                | (var) (floor)        |
+| ~{}.~                                   | $\left\{ \Box \right\}$                   | ~\left\{ \right\}~               |                      |
+| ~{}..~                                  | $\left\{ \Box \middle\vert \Box \right\}$ | ~\left\{ \middle\vert  \right\}~ | (var)                |
+| ~<>.~                                   | $\left< \Box \right>$                     | ~\left< \right>~                 |                      |
+| ~<>..~                                  | $\left< \Box \middle\vert \Box \right>$   | ~\left< \middle\vert \right>~    | (var)                |
+|-----------------------------------------+-------------------------------------------+----------------------------------+----------------------|
+| ~(.~                                    | \( \left( \Box \right. \)                 | ~\left(~                         | half (               |
+| ~).~                                    | $\left. \Box \right)$                     | ~\right)~                        | half )               |
+| ~[.~                                    | \( \left[ \Box \right. \)                 | ~\left[~                         | half [               |
+| ~].~                                    | $\left. \Box \right]$                     | ~\right]~                        | half ]               |
+| ~{.~                                    | \( \left\{ \Box \right. \)                | ~\left\{~                        | half {               |
+| ~}.~                                    | $\left. \Box \right\}$                    | ~\right\}~                       | half }               |
+| ~<.~                                    | \( \left< \Box \right. \)                 | ~\left<~                         | half <               |
+| ~>.~                                    | $\left. \Box \right>$                     | ~\right>~                        | half >               |
+| ~(..~                                   |                                           | ~\left.~                         | half left .          |
+| ~)..~                                   |                                           | ~\right.~                        | half right .         |
+|-----------------------------------------+-------------------------------------------+----------------------------------+----------------------|
+| \texttt{\textbar} ~.~                   |                                           | ~\middle\vert~                   | Vertical bar related |
+| \texttt{\textbar} ~..~                  | \(\Box \Bigg\vert_{\Box}^{\Box}\)         | ~\Bigg\vert_{ }^{ }~             | Vertical bar related |
+| \texttt{\textbar}\texttt{\textbar} ~.~  | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~         | Vertical bar related |
+| \texttt{\textbar}\texttt{\textbar} ~..~ | $\left\Vert \Box \right\Vert$             | ~\left\Vert \right\Vert~         | Vertical bar related |
+|-----------------------------------------+-------------------------------------------+----------------------------------+----------------------|
 
 **  Texts:
 #+caption:  
