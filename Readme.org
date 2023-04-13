@@ -13,49 +13,38 @@
 #+caption: Main Greek letters 
 #+name: tbl-alphabet-greek-6column
 #+attr_latex: :align |lll|lll|  :placement [H]
-|-------+------------+---------------------+-------+------------+---------------------|
-|   key | sym        | latex (lower greek) |   key | sym        | latex (upper greek) |
-|-------+------------+---------------------+-------+------------+---------------------|
-|  ~a.~ | $\alpha$   | ~\alpha~            |  ~A.~ | $A$        | ~A~                 |
-|  ~b.~ | $\beta$    | ~\beta~             |  ~B.~ | $B$        | ~B~                 |
-|  ~c.~ | $\psi$     | ~\psi~              |  ~C.~ | $\Psi$     | ~\Psi~              |
-|  ~d.~ | $\delta$   | ~\delta~            |  ~D.~ | $\Delta$   | ~\Delta~            |
-|  ~e.~ | $\epsilon$ | ~\epsilon~          |  ~E.~ | $E$        | ~E~                 |
-|  ~f.~ | $\phi$     | ~\phi~              |  ~F.~ | $\Phi$     | ~\Phi~              |
-|  ~g.~ | $\gamma$   | ~\gamma~            |  ~G.~ | $\Gamma$   | ~\Gamma~            |
-|  ~h.~ | $\eta$     | ~\eta~              |  ~H.~ | $H$        | ~H~                 |
-|  ~i.~ | $\iota$    | ~\iota~             |  ~I.~ | $I$        | ~I~                 |
-|  ~j.~ | $\xi$      | ~\xi~               |  ~J.~ | $\Xi$      | ~\Xi~               |
-|  ~k.~ | $\kappa$   | ~\kappa~            |  ~K.~ | $K$        | ~K~                 |
-|  ~l.~ | $\lambda$  | ~\lambda~           |  ~L.~ | $\Lambda$  | ~\Lambda~           |
-|  ~m.~ | $\mu$      | ~\mu~               |  ~M.~ | $M$        | ~M~                 |
-|  ~n.~ | $\nu$      | ~\nu~               |  ~N.~ | $N$        | ~N~                 |
-|  ~o.~ | $o$        | ~o~                 |  ~O.~ | $O$        | ~O~                 |
-|  ~p.~ | $\pi$      | ~\pi~               |  ~P.~ | $\Pi$      | ~\Pi~               |
-|  ~r.~ | $\rho$     | ~\rho~              |  ~R.~ | $P$        | ~P~                 |
-|  ~s.~ | $\sigma$   | ~\sigma~            |  ~S.~ | $\Sigma$   | ~\Sigma~            |
-|  ~t.~ | $\tau$     | ~\tau~              |  ~T.~ | $T$        | ~T~                 |
-| ~th.~ | $\theta$   | ~\theta~            | ~Th.~ | $\Theta$   | ~\Theta~            |
-|  ~u.~ | $\upsilon$ | ~\upsilon~          |  ~U.~ | $\Upsilon$ | ~\Upsilon~          |
-|  ~w.~ | $\omega$   | ~\omega~            |  ~W.~ | $\Omega$   | ~\Omega~            |
-|  ~x.~ | $\chi$     | ~\chi~              |  ~X.~ | $X$        | ~X~                 |
-|  ~z.~ | $\zeta$    | ~\zeta~             |  ~Z.~ | $Z$        | ~Z~                 |
-|-------+------------+---------------------+-------+------------+---------------------|
-
-#+caption: Variation Greek letters 
-#+name: tbl-greek-var
-#+attr_latex: :align |ccl| :placement [H]
-|-------+---------------+---------------------|
-| key   | sym           | latex (lower greek) |
-|-------+---------------+---------------------|
-| ~e..~ | $\varepsilon$ | ~\varepsilon~       |
-| ~f..~ | $\varphi$     | ~\varphi~           |
-| ~s..~ | $\varsigma$   | ~\varsigma~         |
-| ~t..~ | $\vartheta$   | ~\vartheta~         |
-| ~r..~ | $\varrho$     | ~\varrho~           |
-| ~p..~ | $\varpi$      | ~\varpi~            |
-| ~k..~ | $\varkappa$   | ~\varkappa~         |
-|-------+---------------+---------------------|
+|-------+---------------+---------------------+-------+-------------+---------------------|
+| key   | sym           | latex (lower greek) | key   | sym         | latex (upper greek) |
+|-------+---------------+---------------------+-------+-------------+---------------------|
+| ~a.~  | $\alpha$      | ~\alpha~            | ~A.~  | $A$         | ~A~                 |
+| ~b.~  | $\beta$       | ~\beta~             | ~B.~  | $B$         | ~B~                 |
+| ~c.~  | $\psi$        | ~\psi~              | ~C.~  | $\Psi$      | ~\Psi~              |
+| ~d.~  | $\delta$      | ~\delta~            | ~D.~  | $\Delta$    | ~\Delta~            |
+| ~e.~  | $\epsilon$    | ~\epsilon~          | ~E.~  | $E$         | ~E~                 |
+| ~f.~  | $\phi$        | ~\phi~              | ~F.~  | $\Phi$      | ~\Phi~              |
+| ~g.~  | $\gamma$      | ~\gamma~            | ~G.~  | $\Gamma$    | ~\Gamma~            |
+| ~h.~  | $\eta$        | ~\eta~              | ~H.~  | $H$         | ~H~                 |
+| ~i.~  | $\iota$       | ~\iota~             | ~I.~  | $I$         | ~I~                 |
+| ~j.~  | $\xi$         | ~\xi~               | ~J.~  | $\Xi$       | ~\Xi~               |
+| ~k.~  | $\kappa$      | ~\kappa~            | ~K.~  | $K$         | ~K~                 |
+| ~l.~  | $\lambda$     | ~\lambda~           | ~L.~  | $\Lambda$   | ~\Lambda~           |
+| ~m.~  | $\mu$         | ~\mu~               | ~M.~  | $M$         | ~M~                 |
+| ~n.~  | $\nu$         | ~\nu~               | ~N.~  | $N$         | ~N~                 |
+| ~o.~  | $o$           | ~o~                 | ~O.~  | $O$         | ~O~                 |
+| ~p.~  | $\pi$         | ~\pi~               | ~P.~  | $\Pi$       | ~\Pi~               |
+| ~r.~  | $\rho$        | ~\rho~              | ~R.~  | $P$         | ~P~                 |
+| ~s.~  | $\sigma$      | ~\sigma~            | ~S.~  | $\Sigma$    | ~\Sigma~            |
+| ~t.~  | $\tau$        | ~\tau~              | ~T.~  | $T$         | ~T~                 |
+| ~th.~ | $\theta$      | ~\theta~            | ~Th.~ | $\Theta$    | ~\Theta~            |
+| ~u.~  | $\upsilon$    | ~\upsilon~          | ~U.~  | $\Upsilon$  | ~\Upsilon~          |
+| ~w.~  | $\omega$      | ~\omega~            | ~W.~  | $\Omega$    | ~\Omega~            |
+| ~x.~  | $\chi$        | ~\chi~              | ~X.~  | $X$         | ~X~                 |
+| ~z.~  | $\zeta$       | ~\zeta~             | ~Z.~  | $Z$         | ~Z~                 |
+|-------+---------------+---------------------+-------+-------------+---------------------|
+| ~e..~ | $\varepsilon$ | ~\varepsilon~       | ~r..~ | $\varrho$   | ~\varrho~           |
+| ~f..~ | $\varphi$     | ~\varphi~           | ~p..~ | $\varpi$    | ~\varpi~            |
+| ~s..~ | $\varsigma$   | ~\varsigma~         | ~t..~ | $\vartheta$ | ~\vartheta~         |
+|-------+---------------+---------------------+-------+-------------+---------------------|
 
 **  Matrix (aka  bold)
 #+caption: Matrix
