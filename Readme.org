@@ -236,6 +236,8 @@
 | ~eq~ |                     | ~quail-TeQ-equation~  | equation environment |
 | ~al~ |                     | ~quail-TeQ-aligned~   | aligned environment  |
 | ~el~ |                     | ~quail-TeQ-endofline~ | end of line          |
+| ~gg~ |                     | ~quail-TeQ-next~      | go to next space     |
+| ~GG~ |                     | ~quail-TeQ-prev~      | go to prev space     |
 |------+---------------------+-----------------------+----------------------|
 
 
@@ -278,22 +280,25 @@
 #+caption: Letter-like Symbold  
 #+name: tbl-3-sym-letter
 #+attr_latex: :align |llll| :placement [H]
-|--------+--------------+--------------+----------------------------------------------------|
-| key    | sym          | latex        | description                                        |
-|--------+--------------+--------------+----------------------------------------------------|
-| ~inf~  | $\infty$     | ~\infty~     |                                                    |
-| ~ex~   | $\exists$    | ~\exists~    |                                                    |
-| ~exn~  | $\nexists$   | ~\nexists~   | $\exists$ + _n_ (neg)                              |
-| ~fa~   | $\forall$    | ~\forall~    |                                                    |
-| ~hb~   | $\hbar$      | ~\hbar~      |                                                    |
-| ~hb.~  | $\hslash$    | ~\hslash~    | $\hbar$ + _._  (var)                               |
-| ~dd.~  | $\mathrm{d}$ | ~\mathrm{d}~ | (~dd~ is already registred as $\dot{d}$, so ~dd.~) |
-| ~dd..~ | $\partial$   | ~\partial~   | $\mathrm{d}$  + _._ (var)                          |
-| ~ii~   | $\imath$     | ~\imath~     |                                                    |
-| ~jj~   | $\jmath$     | ~\jmath~     |                                                    |
-| ~nab~  | $\nabla$     | ~\nabla~     |                                                    |
-| ~cm~   | $\checkmark$ | ~\checkmark~ |                                                    |
-|--------+--------------+--------------+----------------------------------------------------|
+|--------+-------------------------------------+--------------------------------+----------------------------------------------|
+| key    | sym                                 | latex                          | description                                  |
+|        |                                     |                                |                                              |
+|--------+-------------------------------------+--------------------------------+----------------------------------------------|
+| ~inf~  | $\infty$                            | ~\infty~                       |                                              |
+| ~ex~   | $\exists$                           | ~\exists~                      |                                              |
+| ~exn~  | $\nexists$                          | ~\nexists~                     | $\exists$ + _n_ (neg)                        |
+| ~fa~   | $\forall$                           | ~\forall~                      |                                              |
+| ~hb~   | $\hbar$                             | ~\hbar~                        |                                              |
+| ~hb.~  | $\hslash$                           | ~\hslash~                      | $\hbar$ + _._  (var)                         |
+| ~dfd~  | $\mathrm{d}$                        | ~\mathrm{d}~                   |                                              |
+| ~dfd.~ | $\partial$                          | ~\partial~                     | $\mathrm{d}$  + _._ (var)                    |
+| ~dff~  | $\frac{\mathrm{d}}{\mathrm{d}\Box}$ | ~\frac{\mathrm{d}}{\mathrm{d}~ |                                              |
+| ~dff.~ | $\frac{\partial}{\partial\Box}$     | ~\frac{\partial}{\partial~     | $\frac{\mathrm{d}}{\mathrm{d}\Box}$ + .(var) |
+| ~ii~   | $\imath$                            | ~\imath~                       |                                              |
+| ~jj~   | $\jmath$                            | ~\jmath~                       |                                              |
+| ~nab~  | $\nabla$                            | ~\nabla~                       |                                              |
+| ~cm~   | $\checkmark$                        | ~\checkmark~                   |                                              |
+|--------+-------------------------------------+--------------------------------+----------------------------------------------|
 
 **  Spaces
 #+caption: Space Symbold  
@@ -1170,6 +1175,16 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
   (quail-func-init)
   (end-of-line)
   (insert "\\\\\n")
+  (quail-func-end))
+
+(defun quail-TeQ-next (key idx)
+  (quail-func-init)
+  (evil-find-char 1 32)
+  (quail-func-end))
+
+(defun quail-TeQ-prev (key idx)
+  (quail-func-init)
+  (evil-find-char-backward 1 32)
   (quail-func-end))
 
 (defun quail-TeQ-frac (key idx)
