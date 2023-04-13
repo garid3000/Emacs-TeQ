@@ -424,7 +424,7 @@
 | ~<.n~ | $\nleq$                       | ~\nleq~                       |                    |
 | ~>.n~ | $\ngeq$                       | ~\ngeq~                       |                    |
 |-------+-------------------------------+-------------------------------+--------------------|
-| ~=?~  | $\stackrel{?}{=}$             | ~\stackrel{?}{=}~             | with question mark |
+| ~=?~  | $\stackrel{?}{ = }$          | ~\stackrel{?}{=}~             | with question mark |
 | ~<?~  | $\stackrel{?}{<}$             | ~\stackrel{?}{<}~             |                    |
 | ~>?~  | $\stackrel{?}{>}$             | ~\stackrel{?}{>}~             |                    |
 | ~<.?~ | $\stackrel{?}{\leq}$          | ~\stackrel{?}{\leq}~          |                    |
@@ -432,7 +432,7 @@
 | ~<<?~ | $\stackrel{?}{\ll}$           | ~\stackrel{?}{\ll}~           |                    |
 | ~>>?~ | $\stackrel{?}{\gg}$           | ~\stackrel{?}{\gg}~           |                    |
 |-------+-------------------------------+-------------------------------+--------------------|
-| ~=y~  | $\stackrel{\checkmark}{=}$    | ~\stackrel{\checkmark}{=}~    | with check mark    |
+| ~=y~  | $\stackrel{\checkmark}{ = }$  | ~\stackrel{\checkmark}{=}~    | with check mark    |
 | ~<y~  | $\stackrel{\checkmark}{<}$    | ~\stackrel{\checkmark}{<}~    |                    |
 | ~>y~  | $\stackrel{\checkmark}{>}$    | ~\stackrel{\checkmark}{>}~    |                    |
 | ~<.y~ | $\stackrel{\checkmark}{\leq}$ | ~\stackrel{\checkmark}{\leq}~ |                    |
@@ -588,18 +588,18 @@
 | ~<>.~                                   | $\left< \Box \right>$                     | ~\left< \right>~                 |                                         |
 | ~<>..~                                  | $\left< \Box \middle\vert \Box \right>$   | ~\left< \middle\vert \right>~    | (var)                                   |
 |-----------------------------------------+-------------------------------------------+----------------------------------+-----------------------------------------|
-| ~(.~                                    | \( \left \Box \right. \)             | ~\left(~                         | half (                                  |
+| ~(.~                                    | \( \left \Box \right. \)                  | ~\left(~                         | half (                                  |
 | ~).~                                    | $\left. \Box \right)$                     | ~\right)~                        | half )                                  |
-| ~[.~                                    | \( \left[ \Box \right. \)             | ~\left[~                         | half [                                  |
+| ~[.~                                    | \( \left[ \Box \right. \)                 | ~\left[~                         | half [                                  |
 | ~].~                                    | $\left. \Box \right]$                     | ~\right]~                        | half ]                                  |
-| ~{.~                                    | \( \left\{ \Box \right. \)             | ~\left\{~                        | half {                                  |
+| ~{.~                                    | \( \left\{ \Box \right. \)                | ~\left\{~                        | half {                                  |
 | ~}.~                                    | $\left. \Box \right\}$                    | ~\right\}~                       | half }                                  |
-| ~<.~                                    | \( \left< \Box \right. \)              | ~\left<~                         | half <                                  |
+| ~<.~                                    | \( \left< \Box \right. \)                 | ~\left<~                         | half <                                  |
 | ~>.~                                    | $\left. \Box \right>$                     | ~\right>~                        | half >                                  |
 | ~(..~                                   |                                           | ~\left.~                         | half left .                             |
 | ~)..~                                   |                                           | ~\right.~                        | half right .                            |
 |-----------------------------------------+-------------------------------------------+----------------------------------+-----------------------------------------|
-| \texttt{\textbar} ~.~                   | $\Box\Bigg\vert_{\Box}^{\Box}$            | ~\Bigg\vert_{ }^{ }~             | These are vertical bar in the key       |
+| \texttt{\textbar} ~.~                   | \(\Box \Bigg\vert_{\Box}^{\Box}\)         | ~\Bigg\vert_{ }^{ }~             | These are vertical bar in the key       |
 | \texttt{\textbar}\texttt{\textbar} ~.~  | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~         | (not rendered correctly in github page) |
 | \texttt{\textbar}\texttt{\textbar} ~..~ | $\left\Vert \Box \right\Vert$             | ~\left\Vert \right\Vert~         |                                         |
 |-----------------------------------------+-------------------------------------------+----------------------------------+-----------------------------------------|
