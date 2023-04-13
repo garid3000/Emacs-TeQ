@@ -253,22 +253,22 @@
 #+caption: Letter-like Symbold  
 #+name: tbl-3-sym-letter
 #+attr_latex: :align |llll| :placement [H]
-|--------+--------------+--------------+------------------------------------------------------|
-| key    | sym          | latex        | description                                          |
-|--------+--------------+--------------+------------------------------------------------------|
-| ~inf~  | $\infty$     | ~\infty~     |                                                      |
-| ~ex~   | $\exists$    | ~\exists~    |                                                      |
-| ~exn~  | $\nexists$   | ~\nexists~   | $\exists$ + _n_ (neg)                                |
-| ~fa~   | $\forall$    | ~\forall~    |                                                      |
-| ~hb~   | $\hbar$      | ~\hbar~      |                                                      |
-| ~hb.~  | $\hslash$    | ~\hslash~    | $\hbar$ + _._  (var)                                 |
-| ~dd.~  | $\mathrm{d}$ | ~\mathrm{d}~ | (dd is already registred as \dot{d} so dd variation) |
-| ~dd..~ | $\partial$   | ~\partial~   | $\mathrm{d}$  + _._ (var)                            |
-| ~ii~   | $\imath$     | ~\imath~     |                                                      |
-| ~jj~   | $\jmath$     | ~\jmath~     |                                                      |
-| ~nab~  | $\nabla$     | ~\nabla~     |                                                      |
-| ~cm~   | $\checkmark$ | ~\checkmark~ |                                                      |
-|--------+--------------+--------------+------------------------------------------------------|
+|--------+--------------+--------------+----------------------------------------------------|
+| key    | sym          | latex        | description                                        |
+|--------+--------------+--------------+----------------------------------------------------|
+| ~inf~  | $\infty$     | ~\infty~     |                                                    |
+| ~ex~   | $\exists$    | ~\exists~    |                                                    |
+| ~exn~  | $\nexists$   | ~\nexists~   | $\exists$ + _n_ (neg)                              |
+| ~fa~   | $\forall$    | ~\forall~    |                                                    |
+| ~hb~   | $\hbar$      | ~\hbar~      |                                                    |
+| ~hb.~  | $\hslash$    | ~\hslash~    | $\hbar$ + _._  (var)                               |
+| ~dd.~  | $\mathrm{d}$ | ~\mathrm{d}~ | (~dd~ is already registred as $\dot{d}$, so ~dd.~) |
+| ~dd..~ | $\partial$   | ~\partial~   | $\mathrm{d}$  + _._ (var)                          |
+| ~ii~   | $\imath$     | ~\imath~     |                                                    |
+| ~jj~   | $\jmath$     | ~\jmath~     |                                                    |
+| ~nab~  | $\nabla$     | ~\nabla~     |                                                    |
+| ~cm~   | $\checkmark$ | ~\checkmark~ |                                                    |
+|--------+--------------+--------------+----------------------------------------------------|
 
 **  Spaces
 #+caption: Space Symbold  
@@ -588,7 +588,7 @@
 | ~<>.~                                   | $\left< \Box \right>$                     | ~\left< \right>~                 |                                         |
 | ~<>..~                                  | $\left< \Box \middle\vert \Box \right>$   | ~\left< \middle\vert \right>~    | (var)                                   |
 |-----------------------------------------+-------------------------------------------+----------------------------------+-----------------------------------------|
-| ~(.~                                    | \( \left \Box \right. \)                  | ~\left(~                         | half (                                  |
+| ~(.~                                    | \( \left( \Box \right. \)                 | ~\left(~                         | half (                                  |
 | ~).~                                    | $\left. \Box \right)$                     | ~\right)~                        | half )                                  |
 | ~[.~                                    | \( \left[ \Box \right. \)                 | ~\left[~                         | half [                                  |
 | ~].~                                    | $\left. \Box \right]$                     | ~\right]~                        | half ]                                  |
@@ -886,7 +886,7 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("fa"      ["\\forall"            ])  ; 
 ("hb"      ["\\hbar"              ])  ; 
 ("hb."     ["\\hslash"            ])  ; $\hbar$ + _._  (var)
-("dd."     ["\\mathrm{d}"         ])  ; (dd is already registred as \dot{d} so dd variation)
+("dd."     ["\\mathrm{d}"         ])  ; (~dd~ is already registred as $\dot{d}$, so ~dd.~)
 ("dd.."    ["\\partial"           ])  ; $\mathrm{d}$  + _._ (var)
 ("ii"      ["\\imath"             ])  ; 
 ("jj"      ["\\jmath"             ])  ; 

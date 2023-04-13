@@ -227,7 +227,7 @@
     ("fa"      ["\\forall"            ])  ; 
     ("hb"      ["\\hbar"              ])  ; 
     ("hb."     ["\\hslash"            ])  ; $\hbar$ + _._  (var)
-    ("dd."     ["\\mathrm{d}"         ])  ; (dd is already registred as \dot{d} so dd variation)
+    ("dd."     ["\\mathrm{d}"         ])  ; (~dd~ is already registred as $\dot{d}$, so ~dd.~)
     ("dd.."    ["\\partial"           ])  ; $\mathrm{d}$  + _._ (var)
     ("ii"      ["\\imath"             ])  ; 
     ("jj"      ["\\jmath"             ])  ; 
