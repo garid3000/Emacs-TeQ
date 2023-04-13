@@ -409,44 +409,44 @@
 #+caption:  
 #+name: tbl_5_op_bin
 #+attr_latex: :align |llll| :placement [H]
-|-------+-------------------------------+-------------------------------+--------------------|
-| key   | sym                           | latex                         | description        |
-|-------+-------------------------------+-------------------------------+--------------------|
-| ~<.~  | $\leq$                        | ~\leq~                        | < = >              |
-| ~>.~  | $\geq$                        | ~\geq~                        | symbols            |
-| ~<<~  | $\ll$                         | ~\ll~                         |                    |
-| ~>>~  | $\gg$                         | ~\gg~                         |                    |
-|-------+-------------------------------+-------------------------------+--------------------|
-| ~=n~  | $\neq$                        | ~\neq~                        | negation           |
-| ~~n~  | $\nsim$                       | ~\nsim~                       |                    |
-| ~<n~  | $\nless$                      | ~\nless~                      |                    |
-| ~>n~  | $\ngtr$                       | ~\ngtr~                       |                    |
-| ~<.n~ | $\nleq$                       | ~\nleq~                       |                    |
-| ~>.n~ | $\ngeq$                       | ~\ngeq~                       |                    |
-|-------+-------------------------------+-------------------------------+--------------------|
-| ~=?~  | $\stackrel{?}{=}$             | ~\stackrel{?}{=}~             | with question mark |
-| ~<?~  | $\stackrel{?}{<}$             | ~\stackrel{?}{<}~             |                    |
-| ~>?~  | $\stackrel{?}{>}$             | ~\stackrel{?}{>}~             |                    |
-| ~<.?~ | $\stackrel{?}{\leq}$          | ~\stackrel{?}{\leq}~          |                    |
-| ~>.?~ | $\stackrel{?}{\geq}$          | ~\stackrel{?}{\geq}~          |                    |
-| ~<<?~ | $\stackrel{?}{\ll}$           | ~\stackrel{?}{\ll}~           |                    |
-| ~>>?~ | $\stackrel{?}{\gg}$           | ~\stackrel{?}{\gg}~           |                    |
-|-------+-------------------------------+-------------------------------+--------------------|
-| ~=y~  | $\stackrel{\checkmark}{=}$    | ~\stackrel{\checkmark}{=}~    | with check mark    |
-| ~<y~  | $\stackrel{\checkmark}{<}$    | ~\stackrel{\checkmark}{<}~    |                    |
-| ~>y~  | $\stackrel{\checkmark}{>}$    | ~\stackrel{\checkmark}{>}~    |                    |
-| ~<.y~ | $\stackrel{\checkmark}{\leq}$ | ~\stackrel{\checkmark}{\leq}~ |                    |
-| ~>.y~ | $\stackrel{\checkmark}{\geq}$ | ~\stackrel{\checkmark}{\geq}~ |                    |
-| ~<<y~ | $\stackrel{\checkmark}{\ll}$  | ~\stackrel{\checkmark}{\ll}~  |                    |
-| ~>>y~ | $\stackrel{\checkmark}{\gg}$  | ~\stackrel{\checkmark}{\gg}~  |                    |
-|-------+-------------------------------+-------------------------------+--------------------|
-| ~=.~  | $\equiv$                      | ~\equiv~                      | Variation on       |
-| ~-.~  | $\sim$                        | ~\sim~                        | Another variations |
-| ~=..~ | $\approx$                     | ~\approx~                     | on =               |
-| ~3=~  | $\equiv$                      | ~\equiv~                      |                    |
-| ~=:~  | $\coloneqq$                   | ~\coloneqq~                   |                    |
-| ~:=~  | $\coloneqq$                   | ~\coloneqq~                   |                    |
-|-------+-------------------------------+-------------------------------+--------------------|
+|-------+---------------------------------+-------------------------------+--------------------|
+| key   | sym                             | latex                         | description        |
+|-------+---------------------------------+-------------------------------+--------------------|
+| ~<.~  | $\leq$                          | ~\leq~                        | < = >              |
+| ~>.~  | $\geq$                          | ~\geq~                        | symbols            |
+| ~<<~  | $\ll$                           | ~\ll~                         |                    |
+| ~>>~  | $\gg$                           | ~\gg~                         |                    |
+|-------+---------------------------------+-------------------------------+--------------------|
+| ~=n~  | $\neq$                          | ~\neq~                        | negation           |
+| ~~n~  | $\nsim$                         | ~\nsim~                       |                    |
+| ~<n~  | $\nless$                        | ~\nless~                      |                    |
+| ~>n~  | $\ngtr$                         | ~\ngtr~                       |                    |
+| ~<.n~ | $\nleq$                         | ~\nleq~                       |                    |
+| ~>.n~ | $\ngeq$                         | ~\ngeq~                       |                    |
+|-------+---------------------------------+-------------------------------+--------------------|
+| ~=?~  | \(\stackrel{?}{=}\)             | ~\stackrel{?}{=}~             | with question mark |
+| ~<?~  | \(\stackrel{?}{<}\)             | ~\stackrel{?}{<}~             |                    |
+| ~>?~  | \(\stackrel{?}{>}\)             | ~\stackrel{?}{>}~             |                    |
+| ~<.?~ | \(\stackrel{?}{\leq}\)          | ~\stackrel{?}{\leq}~          |                    |
+| ~>.?~ | \(\stackrel{?}{\geq}\)          | ~\stackrel{?}{\geq}~          |                    |
+| ~<<?~ | \(\stackrel{?}{\ll}\)           | ~\stackrel{?}{\ll}~           |                    |
+| ~>>?~ | \(\stackrel{?}{\gg}\)           | ~\stackrel{?}{\gg}~           |                    |
+|-------+---------------------------------+-------------------------------+--------------------|
+| ~=y~  | \(\stackrel{\checkmark}{=}\)    | ~\stackrel{\checkmark}{=}~    | with check mark    |
+| ~<y~  | \(\stackrel{\checkmark}{<}\)    | ~\stackrel{\checkmark}{<}~    |                    |
+| ~>y~  | \(\stackrel{\checkmark}{>}\)    | ~\stackrel{\checkmark}{>}~    |                    |
+| ~<.y~ | \(\stackrel{\checkmark}{\leq}\) | ~\stackrel{\checkmark}{\leq}~ |                    |
+| ~>.y~ | \(\stackrel{\checkmark}{\geq}\) | ~\stackrel{\checkmark}{\geq}~ |                    |
+| ~<<y~ | \(\stackrel{\checkmark}{\ll}\)  | ~\stackrel{\checkmark}{\ll}~  |                    |
+| ~>>y~ | \(\stackrel{\checkmark}{\gg}\)  | ~\stackrel{\checkmark}{\gg}~  |                    |
+|-------+---------------------------------+-------------------------------+--------------------|
+| ~=.~  | $\equiv$                        | ~\equiv~                      | Variations of =    |
+| ~-.~  | $\sim$                          | ~\sim~                        |                    |
+| ~=..~ | $\approx$                       | ~\approx~                     |                    |
+| ~3=~  | $\equiv$                        | ~\equiv~                      |                    |
+| ~=:~  | $\coloneqq$                     | ~\coloneqq~                   |                    |
+| ~:=~  | $\coloneqq$                     | ~\coloneqq~                   |                    |
+|-------+---------------------------------+-------------------------------+--------------------|
 
 **  Set symbols
 #+caption:  
