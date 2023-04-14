@@ -229,16 +229,17 @@
 #+caption: Keys that will execute some elisp functions
 #+name: tbl-2-execute-function
 #+attr_latex: :align |llll| :placement [H]
-|------+---------------------+-----------------------+----------------------|
-| key  | sym                 | latex                 | description          |
-|------+---------------------+-----------------------+----------------------|
-| ~/~  | $\frac{\Box}{\Box}$ | ~quail-TeQ-frac~      | fraction on previous |
-| ~eq~ |                     | ~quail-TeQ-equation~  | equation environment |
-| ~al~ |                     | ~quail-TeQ-aligned~   | aligned environment  |
-| ~el~ |                     | ~quail-TeQ-endofline~ | end of line          |
-| ~gg~ |                     | ~quail-TeQ-next~      | go to next space     |
-| ~GG~ |                     | ~quail-TeQ-prev~      | go to prev space     |
-|------+---------------------+-----------------------+----------------------|
+|-------+---------------------+-----------------------+----------------------|
+| key   | sym                 | latex                 | description          |
+|-------+---------------------+-----------------------+----------------------|
+| ~/~   | $\frac{\Box}{\Box}$ | ~quail-TeQ-frac~      | fraction on previous |
+| ~eq~  |                     | ~quail-TeQ-equation~  | equation environment |
+| ~mat~ |                     | ~quail-TeQ-matrix~    | pmatrix environment  |
+| ~al~  |                     | ~quail-TeQ-aligned~   | aligned environment  |
+| ~el~  |                     | ~quail-TeQ-endofline~ | end of line          |
+| ~gg~  |                     | ~quail-TeQ-next~      | go to next space     |
+| ~GG~  |                     | ~quail-TeQ-prev~      | go to prev space     |
+|-------+---------------------+-----------------------+----------------------|
 
 
 *  Symbols :
@@ -1204,6 +1205,13 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
   (quail-func-init)
   (insert "\\begin{aligned}\n\n\\end{aligned}")
   (previous-line)
+  (quail-func-end))
+
+(defun quail-TeQ-matrix (key idx)
+  (quail-func-init)
+  (insert "\\begin{pmatrix}\n & & \\\\ \n & & \\\\ \n & & \\\\ \n\\end{pmatrix}")
+  (previous-line) (previous-line) (previous-line)
+  (beginning-of-line)
   (quail-func-end))
 
 (defun quail-TeQ-endofline (key idx)
