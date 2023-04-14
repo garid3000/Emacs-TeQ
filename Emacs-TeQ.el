@@ -14,6 +14,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defun quail-TeQ-equation (key idx)
   (quail-func-init)
+  (if (eq major-mode 'org-mode)
+    (org-return) (message "not org"))
   (insert "\\begin{equation}\n\n\\end{equation}")
   (previous-line)
   (quail-func-end))
@@ -46,9 +48,9 @@
 
 (defun quail-TeQ-prev (key idx)
   (quail-func-init)
-  ;; (evil-find-char-backward 1 32)
-  (left-char)
-  (left-char)
+  (evil-find-char-backward 1 32)
+  ;(left-char)
+  ;(left-char)
   (quail-func-end))
 
 (defun quail-TeQ-frac (key idx)
@@ -140,6 +142,7 @@
     ("Ym"     ["\\mathbf{Y}"    ])  ("ym"     ["\\mathbf{y}"    ])
     ("Zm"     ["\\mathbf{Z}"    ])  ("zm"     ["\\mathbf{z}"    ])
     ("Om"     ["\\mathbf{0}"    ])  ("0m"     ["\\mathbf{0}"    ])
+    ("im."    ["\\mathbf{\\imath}"])  ("jm."    ["\\mathbf{\\jmath}"])
     ;; Vector & Hat
     ("Av"     ["\\vec{A}"       ])  ("av"     ["\\vec{a}"       ])
     ("Bv"     ["\\vec{B}"       ])  ("bv"     ["\\vec{b}"       ])
@@ -167,6 +170,7 @@
     ("Xv"     ["\\vec{X}"       ])  ("xv"     ["\\vec{x}"       ])
     ("Yv"     ["\\vec{Y}"       ])  ("yv"     ["\\vec{y}"       ])
     ("Zv"     ["\\vec{Z}"       ])  ("zv"     ["\\vec{z}"       ])
+    ("iv."    ["\\vec{\\imath}" ])  ("jv."    ["\\vec{\\jmath}" ])
     ;; Vector & Hat
     ("Ah"     ["\\hat{A}"       ])  ("ah"     ["\\hat{a}"       ])
     ("Bh"     ["\\hat{B}"       ])  ("bh"     ["\\hat{b}"       ])
@@ -194,6 +198,7 @@
     ("Xh"     ["\\hat{X}"       ])  ("xh"     ["\\hat{x}"       ])
     ("Yh"     ["\\hat{Y}"       ])  ("yh"     ["\\hat{y}"       ])
     ("Zh"     ["\\hat{Z}"       ])  ("zh"     ["\\hat{z}"       ])
+    ("ih."    ["\\hat{\\imath}" ])  ("jh."    ["\\hat{\\jmath}" ])
     ;; Dot
     ("ad"     ["\\dot{a}"       ])  ("Ad"     ["\\dot{A}"       ])
     ("bd"     ["\\dot{b}"       ])  ("Bd"     ["\\dot{B}"       ])
@@ -221,6 +226,7 @@
     ("xd"     ["\\dot{x}"       ])  ("Xd"     ["\\dot{X}"       ])
     ("yd"     ["\\dot{y}"       ])  ("Yd"     ["\\dot{Y}"       ])
     ("zd"     ["\\dot{z}"       ])  ("Zd"     ["\\dot{Z}"       ])
+    ("id."    ["\\dot{\\imath}" ])  ("jd."    ["\\dot{\\jmath}" ])
     ;; DDot
     ("add"    ["\\ddot{a}"      ])  ("Add"    ["\\ddot{A}"      ])
     ("bdd"    ["\\ddot{b}"      ])  ("Bdd"    ["\\ddot{B}"      ])
@@ -248,6 +254,7 @@
     ("xdd"    ["\\ddot{x}"      ])  ("Xdd"    ["\\ddot{X}"      ])
     ("ydd"    ["\\ddot{y}"      ])  ("Ydd"    ["\\ddot{Y}"      ])
     ("zdd"    ["\\ddot{z}"      ])  ("Zdd"    ["\\ddot{Z}"      ])
+    ("idd."   ["\\dot{\\imath}" ])  ("jdd."   ["\\dot{\\jmath}" ])
     ;; Expanding Func
     ("/"       quail-TeQ-frac        )  ; fraction on previous
     ("eq"      quail-TeQ-equation    )  ; equation environment
@@ -318,18 +325,18 @@
     ("<=="     ["\\Longleftarrow"     ])  ; 
     ("==>"     ["\\Longrightarrow"    ])  ; 
     ;; Symbols arrow3
-    ("<---"    ["\\xleftarrow[ ]{ }"  ])  ; these uses triple - or =
-    ("--->"    ["\\xrightarrow[ ]{ }" ])  ; 
+    ("<---"    ["\\xleftarrow[ ]{ }"  ])  ; these uses triple ~-~
+    ("--->"    ["\\xrightarrow[ ]{ }" ])  ; these uses triple ~-~
     ("===>"    ["\\xRightarrow[ ]{ }" ])  ; ~mathtools~ lib required
     ("<==="    ["\\xLeftarrow[ ]{ }"  ])  ; ~mathtools~ lib required
     ;; Symbols arrow3
-    ("vec"     ["\\vec{"              ])  ; 
-    ("bar"     ["\\bar{"              ])  ; 
-    ("hat"     ["\\hat{"              ])  ; 
-    ("dot"     ["\\dot{"              ])  ; 
-    ("dot."    ["\\ddot{"             ])  ; (var)
-    ("dot.."   ["\\dddot{"            ])  ; (var)
-    ("dot..."  ["\\ddddot{"           ])  ; (var)
+    ("vec"     ["\\vec{ }"            ])  ; 
+    ("bar"     ["\\bar{ }"            ])  ; 
+    ("hat"     ["\\hat{ }"            ])  ; 
+    ("dot"     ["\\dot{ }"            ])  ; 
+    ("dot."    ["\\ddot{ }"           ])  ; (var)
+    ("dot.."   ["\\dddot{ }"          ])  ; (var)
+    ("dot..."  ["\\ddddot{ }"         ])  ; (var)
     ("dag"     ["^\\dagger"           ])  ; 
     ("dag."    ["^\\ddagger"          ])  ; (var)
     ("*.."     ["^*"                  ])  ; 
@@ -408,25 +415,26 @@
     ("det"     ["\\det"               ])  ; 
     ("dim"     ["\\dim"               ])  ; 
     ("exp"     ["\\exp("              ])  ; 
-    ("Im"      ["\\mathrm{Im}("       ])  ; 
-    ("Re"      ["\\mathrm{Re}("       ])  ; 
-    ("ln"      ["\\ln("               ])  ; 
-    ("log"     ["\\log("              ])  ; 
-    ("max"     ["\\max("              ])  ; 
-    ("min"     ["\\min("              ])  ; 
-    ("dim"     ["\\dim("              ])  ; 
-    ("sqrt"    ["\\sqrt("             ])  ; 
-    ("mod"     ["\\pmod("             ])  ; 
+    ("Im"      ["\\mathrm{Im}"        ])  ; 
+    ("Re"      ["\\mathrm{Re}"        ])  ; 
+    ("ln"      ["\\ln"                ])  ; 
+    ("log"     ["\\log"               ])  ; 
+    ("max"     ["\\max"               ])  ; 
+    ("min"     ["\\min"               ])  ; 
+    ("dim"     ["\\dim"               ])  ; 
+    ("sqrt"    ["\\sqrt{ }"           ])  ; 
+    ("sqrt."   ["\\sqrt[ ]{ }"        ])  ; 
+    ("mod"     ["\\pmod"              ])  ; 
     ("mod."    ["\\mod"               ])  ; 
     ("mod.."   ["\\bmod"              ])  ; 
     ;; Func: Trig
-    ("cos"    ["\\cos("         ])  ("cosh"   ["\\cosh("        ])
-    ("sin"    ["\\sin("         ])  ("sinh"   ["\\sinh("        ])
-    ("tan"    ["\\tan("         ])  ("tanh"   ["\\tanh("        ])
-    ("cot"    ["\\cot("         ])  ("coth"   ["\\coth("        ])
-    ("acos"   ["\\arccos("      ])  ("cos."   ["\\arccos("      ])
-    ("asin"   ["\\arcsin("      ])  ("sin."   ["\\arcsin("      ])
-    ("atan"   ["\\arctan("      ])  ("tan."   ["\\arctan("      ])
+    ("cos"    ["\\cos"          ])  ("cosh"   ["\\cosh"         ])
+    ("sin"    ["\\sin"          ])  ("sinh"   ["\\sinh"         ])
+    ("tan"    ["\\tan"          ])  ("tanh"   ["\\tanh"         ])
+    ("cot"    ["\\cot"          ])  ("coth"   ["\\coth"         ])
+    ("acos"   ["\\arccos"       ])  ("cosn"   ["\\arccos"       ])
+    ("asin"   ["\\arcsin"       ])  ("sinn"   ["\\arcsin"       ])
+    ("atan"   ["\\arctan"       ])  ("tann"   ["\\arctan"       ])
     ;; Func: iter
     ("il"      ["\\limits_{ }"        ])  ; (limits apparently doesn't render on Github page)
     ("il."     ["\\limits_{ }^{ }"    ])  ; . (var)
@@ -434,10 +442,10 @@
     ("sum"     ["\\sum"               ])  ; 
     ("prod"    ["\\prod"              ])  ; 
     ("int"     ["\\int"               ])  ; 
-    ("inti"    ["\\iint"              ])  ; $\int$ + i
-    ("intii"   ["\\iiint"             ])  ; $\int$ + ii
-    ("intiii"  ["\\iiiint"            ])  ; $\int$ + iii
-    ("into"    ["\\oint"              ])  ; $\int$ + o
+    ("inti"    ["\\iint"              ])  ; $\int$ + ~i~
+    ("intii"   ["\\iiint"             ])  ; $\int$ + ~ii~
+    ("intiii"  ["\\iiiint"            ])  ; $\int$ + ~iii~
+    ("into"    ["\\oint"              ])  ; $\int$ + ~o~
     ("sum."    ["\\sum\\limits_{ i=1 }^{ n }"])  ; . (var)
     ("prod."   ["\\prod\\limits_{ i=1 }^{ n }"])  ; . (var)
     ("int."    ["\\int\\limits_{ }^{ }"])  ; . (var)
@@ -448,25 +456,31 @@
     ("intiii."  ["\\iiiint\\limits_{ }"])  ; . (var)
     ("into."   ["\\oint\\limits_{ }"  ])  ; . (var)
     ;; Func: iter
-    ("dx"      ["\\mathrm{d}"         ])  ; 
+    ("dx"      ["\\mathrm{d}x"        ])  ; 
+    ("dy"      ["\\mathrm{d}y"        ])  ; 
+    ("dz"      ["\\mathrm{d}z"        ])  ; 
+    ("dt"      ["\\mathrm{d}t"        ])  ; 
+    ("dx."     ["\\partial x"         ])  ; $\mathrm{d} x$  + _._ (var)
+    ("dy."     ["\\partial y"         ])  ; $\mathrm{d} y$  + _._ (var)
+    ("dz."     ["\\partial z"         ])  ; $\mathrm{d} z$  + _._ (var)
+    ("dt."     ["\\partial t"         ])  ; $\mathrm{d} t$  + _._ (var)
     ("df"      ["\\frac{\\mathrm{d}}{\\mathrm{d} x}"])  ; 
-    ("df2"     ["\\frac{\\mathrm{d}^2}{\\mathrm{d}^2 x}"])  ; 
-    ("df3"     ["\\frac{\\mathrm{d}^3}{\\mathrm{d}^3 x}"])  ; 
-    ("df4"     ["\\frac{\\mathrm{d}^4}{\\mathrm{d}^4 x}"])  ; 
-    ("dx."     ["\\partial"           ])  ; $\mathrm{d}$  + _._ (var)
-    ("df."     ["\\frac{\\partial}{\\partial x}"])  ; 
-    ("df.2"    ["\\frac{\\partial^2}{\\partial^2 x}"])  ; 
-    ("df.3"    ["\\frac{\\partial^3}{\\partial^3 x}"])  ; 
-    ("df.4"    ["\\frac{\\partial^4}{\\partial^4 x}"])  ; 
+    ("df2"     ["\\frac{\\mathrm{d}^2}{\\mathrm{d}^2 x}"])  ; $\frac{\mathrm{d}}{\mathrm{d} x}$ + 2
+    ("df3"     ["\\frac{\\mathrm{d}^3}{\\mathrm{d}^3 x}"])  ; $\frac{\mathrm{d}}{\mathrm{d} x}$ + 3
+    ("df4"     ["\\frac{\\mathrm{d}^4}{\\mathrm{d}^4 x}"])  ; $\frac{\mathrm{d}}{\mathrm{d} x}$ + 4
+    ("df."     ["\\frac{\\partial}{\\partial x}"])  ; $\frac{\mathrm{d}}{\mathrm{d} x}$  + .(var)
+    ("df.2"    ["\\frac{\\partial^2}{\\partial^2 x}"])  ; $\frac{\mathrm{d}}{\mathrm{d} x}$  + .(var) + 2
+    ("df.3"    ["\\frac{\\partial^3}{\\partial^3 x}"])  ; $\frac{\mathrm{d}}{\mathrm{d} x}$  + .(var) + 3
+    ("df.4"    ["\\frac{\\partial^4}{\\partial^4 x}"])  ; $\frac{\mathrm{d}}{\mathrm{d} x}$  + .(var) + 4
     ;; Structural: Parenthesis
     ("()."     ["\\left( \\right)"    ])  ; 
-    ("().."    ["\\left( \\middle\\vert  \\right)"])  ; 
+    ("().."    ["\\left( \\middle\\vert \\right)"])  ; 
     ("[]."     ["\\left[ \\right]"    ])  ; 
-    ("[].."    ["\\left[ \\middle\\vert  \\right]"])  ; (var)
+    ("[].."    ["\\left[ \\middle\\vert \\right]"])  ; (var)
     ("[].c"    ["\\lceil \\rceil"     ])  ; (var) (ceil)
     ("[].f"    ["\\lfloor \\rfloor"   ])  ; (var) (floor)
     ("{}."     ["\\left\\{ \\right\\}"])  ; 
-    ("{}.."    ["\\left\\{ \\middle\\vert  \\right\\}"])  ; (var)
+    ("{}.."    ["\\left\\{ \\middle\\vert \\right\\}"])  ; (var)
     ("<>."     ["\\left< \\right>"    ])  ; 
     ("<>.."    ["\\left< \\middle\\vert \\right>"])  ; (var)
     ("(."      ["\\left("             ])  ; half (
@@ -475,8 +489,8 @@
     ("]."      ["\\right]"            ])  ; half ]
     ("{."      ["\\left\\{"           ])  ; half {
     ("}."      ["\\right\\}"          ])  ; half }
-    ("<."      ["\\left<"             ])  ; half <
-    (">."      ["\\right>"            ])  ; half >
+    ("<.."     ["\\left<"             ])  ; half <
+    (">.."     ["\\right>"            ])  ; half >
     ("(.."     ["\\left."             ])  ; half left .
     (").."     ["\\right."            ])  ; half right .
     ("|."      ["\\middle\\vert"      ])  ; Vertical bar related
@@ -484,15 +498,15 @@
     ("||."     ["\\left\\vert \\right\\vert"])  ; Vertical bar related
     ("||.."    ["\\left\\Vert \\right\\Vert"])  ; Vertical bar related
     ;; Structural: Text
-    ("te"      ["\\text{"             ])  ; (te)xt
-    ("tr"      ["\\mathrm{"           ])  ; (t)ext (r)oman
-    ("tb"      ["\\mathbf{"           ])  ; (t)ext (b)old
-    ("ti"      ["\\mathit{"           ])  ; (t)ext (i)talics
+    ("te"      ["\\text{ }"           ])  ; (te)xt
+    ("tr"      ["\\mathrm{ }"         ])  ; (t)ext (r)oman
+    ("tb"      ["\\mathbf{ }"         ])  ; (t)ext (b)old
+    ("ti"      ["\\mathit{ }"         ])  ; (t)ext (i)talics
     ;; Structural: Text
-    ("te"      ["\\text{"             ])  ; (te)xt
-    ("tr"      ["\\mathrm{"           ])  ; (t)ext (r)oman
-    ("tb"      ["\\mathbf{"           ])  ; (t)ext (b)old
-    ("ti"      ["\\mathit{"           ])  ; (t)ext (i)talics
+    ("te"      ["\\text{ }"           ])  ; (te)xt
+    ("tr"      ["\\mathrm{ }"         ])  ; (t)ext (r)oman
+    ("tb"      ["\\mathbf{ }"         ])  ; (t)ext (b)old
+    ("ti"      ["\\mathit{ }"         ])  ; (t)ext (i)talics
     ;; Structural: Sub-sup-scripts
     ("^"      ["^{"             ])  ("_"      ["_{"             ])
     ("pp"     ["^{"             ])  ("ll"     ["_{"             ])
@@ -507,11 +521,11 @@
     ("__."    ["\\underbrace{ }_{ }"])  ("^^."    ["\\overbrace{ }^{ }"])
     ("__.."   ["\\underline{ }" ])  ("^^.."   ["\\overline{ }"  ])
     ;; Structural: misc
-    ("binom"   ["\\binom{"            ])  ; Binom
-    ("box"     ["\\boxed{"            ])  ; Putting box around object
-    ("ff"      ["\\frac{"             ])  ; Fractions
-    ("can"     ["\\cancel{"           ])  ; 
-    ("=="      ["&=\\\\n"             ])  ; helps in align env.
+    ("binom"   ["\\binom{ }"          ])  ; Binom
+    ("box"     ["\\boxed{ }"          ])  ; Putting box around object
+    ("ff"      ["\\frac{ }"           ])  ; Fractions
+    ("can"     ["\\cancel{ }"         ])  ; 
+    ("=="      ["&=\\n"               ])  ; helps in align env.
     ;; Structural: xy
     ("xy"      ["\\xymatrix{\\n\\n}"  ])  ; 
     ("bu"      ["\\bullet"            ])  ; 
