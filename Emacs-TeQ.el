@@ -24,6 +24,13 @@
   (previous-line)
   (quail-func-end))
 
+(defun quail-TeQ-matrix (key idx)
+  (quail-func-init)
+  (insert "\\begin{pmatrix}\n & & \\\\ \n & & \\\\ \n & & \\\\ \n\\end{pmatrix}")
+  (previous-line) (previous-line) (previous-line)
+  (beginning-of-line)
+  (quail-func-end))
+
 (defun quail-TeQ-endofline (key idx)
   (quail-func-init)
   (end-of-line)
@@ -244,6 +251,7 @@
     ;; Expanding Func
     ("/"       quail-TeQ-frac        )  ; fraction on previous
     ("eq"      quail-TeQ-equation    )  ; equation environment
+    ("mat"     quail-TeQ-matrix      )  ; pmatrix environment
     ("al"      quail-TeQ-aligned     )  ; aligned environment
     ("el"      quail-TeQ-endofline   )  ; end of line
     ("gg"      quail-TeQ-next        )  ; go to next space
@@ -274,10 +282,6 @@
     ("fa"      ["\\forall"            ])  ; 
     ("hb"      ["\\hbar"              ])  ; 
     ("hb."     ["\\hslash"            ])  ; $\hbar$ + _._  (var)
-    ("dfd"     ["\\mathrm{d}"         ])  ; 
-    ("dfd."    ["\\partial"           ])  ; $\mathrm{d}$  + _._ (var)
-    ("dff"     ["\\frac{\\mathrm{d}}{\\mathrm{d}"])  ; 
-    ("dff."    ["\\frac{\\partial}{\\partial"])  ; $\frac{\mathrm{d}}{\mathrm{d}\Box}$ + .(var)
     ("ii"      ["\\imath"             ])  ; 
     ("jj"      ["\\jmath"             ])  ; 
     ("nab"     ["\\nabla"             ])  ; 
@@ -443,6 +447,17 @@
     ("intii."  ["\\iiint\\limits_{ }" ])  ; . (var)
     ("intiii."  ["\\iiiint\\limits_{ }"])  ; . (var)
     ("into."   ["\\oint\\limits_{ }"  ])  ; . (var)
+    ;; Func: iter
+    ("dx"      ["\\mathrm{d}"         ])  ; 
+    ("df"      ["\\frac{\\mathrm{d}}{\\mathrm{d} x}"])  ; 
+    ("df2"     ["\\frac{\\mathrm{d}^2}{\\mathrm{d}^2 x}"])  ; 
+    ("df3"     ["\\frac{\\mathrm{d}^3}{\\mathrm{d}^3 x}"])  ; 
+    ("df4"     ["\\frac{\\mathrm{d}^4}{\\mathrm{d}^4 x}"])  ; 
+    ("dx."     ["\\partial"           ])  ; $\mathrm{d}$  + _._ (var)
+    ("df."     ["\\frac{\\partial}{\\partial x}"])  ; 
+    ("df.2"    ["\\frac{\\partial^2}{\\partial^2 x}"])  ; 
+    ("df.3"    ["\\frac{\\partial^3}{\\partial^3 x}"])  ; 
+    ("df.4"    ["\\frac{\\partial^4}{\\partial^4 x}"])  ; 
     ;; Structural: Parenthesis
     ("()."     ["\\left( \\right)"    ])  ; 
     ("().."    ["\\left( \\middle\\vert  \\right)"])  ; 
