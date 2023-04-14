@@ -276,12 +276,14 @@
 | ~paran~ | $\nparallel$         | ~\nparallel~         | $\parallel$ ~n~  (neg)        |
 | ~ang~   | $\angle$             | ~\angle~             |                               |
 | ~ang.~  | $\measuredangle$     | ~\measuredangle~     | $\angle$ ~.~ (var)            |
+|---------+----------------------+----------------------+-------------------------------|
 | ~tri~   | $\vartriangle$       | ~\vartriangle~       |                               |
-| ~trin~  | $\triangledown$      | ~\triangledown~      | $\vartriangle$ ~n~ (neg)      |
+| ~tri.~  | $\triangledown$      | ~\triangledown~      | $\vartriangle$ ~n~ (neg)      |
 | ~squ~   | $\square$            | ~\square~            |                               |
-| ~tri.~  | $\blacktriangle$     | ~\blacktriangle~     | $\vartriangle$ ~.~ (var)      |
+| ~trin~  | $\blacktriangle$     | ~\blacktriangle~     | $\vartriangle$ ~.~ (var)      |
+| ~tri.n~ | $\blacktriangledown$ | ~\blacktriangledown~ | $\vartriangle$ ~n.~ (neg,var) |
 | ~trin.~ | $\blacktriangledown$ | ~\blacktriangledown~ | $\vartriangle$ ~n.~ (neg,var) |
-| ~squ.~  | $\blacksquare$       | ~\blacksquare~       | $\square$ ~.~ (var)           |
+| ~squn~  | $\blacksquare$       | ~\blacksquare~       | $\square$ ~.~ (var)           |
 |---------+----------------------+----------------------+-------------------------------|
 
 **  Letter like
@@ -976,11 +978,12 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("ang"     ["\\angle"             ])  ; 
 ("ang."    ["\\measuredangle"     ])  ; $\angle$ ~.~ (var)
 ("tri"     ["\\vartriangle"       ])  ; 
-("trin"    ["\\triangledown"      ])  ; $\vartriangle$ ~n~ (neg)
+("tri."    ["\\triangledown"      ])  ; $\vartriangle$ ~n~ (neg)
 ("squ"     ["\\square"            ])  ; 
-("tri."    ["\\blacktriangle"     ])  ; $\vartriangle$ ~.~ (var)
+("trin"    ["\\blacktriangle"     ])  ; $\vartriangle$ ~.~ (var)
+("tri.n"   ["\\blacktriangledown" ])  ; $\vartriangle$ ~n.~ (neg,var)
 ("trin."   ["\\blacktriangledown" ])  ; $\vartriangle$ ~n.~ (neg,var)
-("squ."    ["\\blacksquare"       ])  ; $\square$ ~.~ (var)
+("squn"    ["\\blacksquare"       ])  ; $\square$ ~.~ (var)
 ;; Symbols
 (""        [""                    ])  ; 
 ("inf"     ["\\infty"             ])  ; 

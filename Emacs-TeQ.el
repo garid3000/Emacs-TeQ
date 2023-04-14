@@ -276,11 +276,12 @@
     ("ang"     ["\\angle"             ])  ; 
     ("ang."    ["\\measuredangle"     ])  ; $\angle$ ~.~ (var)
     ("tri"     ["\\vartriangle"       ])  ; 
-    ("trin"    ["\\triangledown"      ])  ; $\vartriangle$ ~n~ (neg)
+    ("tri."    ["\\triangledown"      ])  ; $\vartriangle$ ~n~ (neg)
     ("squ"     ["\\square"            ])  ; 
-    ("tri."    ["\\blacktriangle"     ])  ; $\vartriangle$ ~.~ (var)
+    ("trin"    ["\\blacktriangle"     ])  ; $\vartriangle$ ~.~ (var)
+    ("tri.n"   ["\\blacktriangledown" ])  ; $\vartriangle$ ~n.~ (neg,var)
     ("trin."   ["\\blacktriangledown" ])  ; $\vartriangle$ ~n.~ (neg,var)
-    ("squ."    ["\\blacksquare"       ])  ; $\square$ ~.~ (var)
+    ("squn"    ["\\blacksquare"       ])  ; $\square$ ~.~ (var)
     ;; Symbols
     (""        [""                    ])  ; 
     ("inf"     ["\\infty"             ])  ; 
