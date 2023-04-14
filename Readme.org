@@ -50,179 +50,186 @@
 #+caption: Matrix
 #+name: tbl-alphabet-matrix-6column
 #+attr_latex: :align |lll|lll| :placement [H]
-|------+--------------+--------------------+------+--------------+--------------------|
-| key  | sym          | latex (upper bold) | key  | sym          | latex (lower bold) |
-|------+--------------+--------------------+------+--------------+--------------------|
-| ~Am~ | $\mathbf{A}$ | ~\mathbf{A}~       | ~am~ | $\mathbf{a}$ | ~\mathbf{a}~       |
-| ~Bm~ | $\mathbf{B}$ | ~\mathbf{B}~       | ~bm~ | $\mathbf{b}$ | ~\mathbf{b}~       |
-| ~Cm~ | $\mathbf{C}$ | ~\mathbf{C}~       | ~cm~ | $\mathbf{c}$ | ~\mathbf{c}~       |
-| ~Dm~ | $\mathbf{D}$ | ~\mathbf{D}~       | ~dm~ | $\mathbf{d}$ | ~\mathbf{d}~       |
-| ~Em~ | $\mathbf{E}$ | ~\mathbf{E}~       | ~em~ | $\mathbf{e}$ | ~\mathbf{e}~       |
-| ~Fm~ | $\mathbf{F}$ | ~\mathbf{F}~       | ~fm~ | $\mathbf{f}$ | ~\mathbf{f}~       |
-| ~Gm~ | $\mathbf{G}$ | ~\mathbf{G}~       | ~gm~ | $\mathbf{g}$ | ~\mathbf{g}~       |
-| ~Hm~ | $\mathbf{H}$ | ~\mathbf{H}~       | ~hm~ | $\mathbf{h}$ | ~\mathbf{h}~       |
-| ~Im~ | $\mathbf{I}$ | ~\mathbf{I}~       | ~im~ | $\mathbf{i}$ | ~\mathbf{i}~       |
-| ~Jm~ | $\mathbf{J}$ | ~\mathbf{J}~       | ~jm~ | $\mathbf{j}$ | ~\mathbf{j}~       |
-| ~Km~ | $\mathbf{K}$ | ~\mathbf{K}~       | ~km~ | $\mathbf{k}$ | ~\mathbf{k}~       |
-| ~Lm~ | $\mathbf{L}$ | ~\mathbf{L}~       | ~lm~ | $\mathbf{l}$ | ~\mathbf{l}~       |
-| ~Mm~ | $\mathbf{M}$ | ~\mathbf{M}~       | ~mm~ | $\mathbf{m}$ | ~\mathbf{m}~       |
-| ~Nm~ | $\mathbf{N}$ | ~\mathbf{N}~       | ~nm~ | $\mathbf{n}$ | ~\mathbf{n}~       |
-| ~Om~ | $\mathbf{O}$ | ~\mathbf{O}~       | ~om~ | $\mathbf{o}$ | ~\mathbf{o}~       |
-| ~Pm~ | $\mathbf{P}$ | ~\mathbf{P}~       | ~pm~ | $\mathbf{p}$ | ~\mathbf{p}~       |
-| ~Qm~ | $\mathbf{Q}$ | ~\mathbf{Q}~       | ~qm~ | $\mathbf{q}$ | ~\mathbf{q}~       |
-| ~Rm~ | $\mathbf{R}$ | ~\mathbf{R}~       | ~rm~ | $\mathbf{r}$ | ~\mathbf{r}~       |
-| ~Sm~ | $\mathbf{S}$ | ~\mathbf{S}~       | ~sm~ | $\mathbf{s}$ | ~\mathbf{s}~       |
-| ~Tm~ | $\mathbf{T}$ | ~\mathbf{T}~       | ~tm~ | $\mathbf{t}$ | ~\mathbf{t}~       |
-| ~Um~ | $\mathbf{U}$ | ~\mathbf{U}~       | ~um~ | $\mathbf{u}$ | ~\mathbf{u}~       |
-| ~Vm~ | $\mathbf{V}$ | ~\mathbf{V}~       | ~vm~ | $\mathbf{v}$ | ~\mathbf{v}~       |
-| ~Wm~ | $\mathbf{W}$ | ~\mathbf{W}~       | ~wm~ | $\mathbf{w}$ | ~\mathbf{w}~       |
-| ~Xm~ | $\mathbf{X}$ | ~\mathbf{X}~       | ~xm~ | $\mathbf{x}$ | ~\mathbf{x}~       |
-| ~Ym~ | $\mathbf{Y}$ | ~\mathbf{Y}~       | ~ym~ | $\mathbf{y}$ | ~\mathbf{y}~       |
-| ~Zm~ | $\mathbf{Z}$ | ~\mathbf{Z}~       | ~zm~ | $\mathbf{z}$ | ~\mathbf{z}~       |
-| ~Om~ | $\mathbf{0}$ | ~\mathbf{0}~       | ~0m~ | $\mathbf{0}$ | ~\mathbf{0}~       |
-|------+--------------+--------------------+------+--------------+--------------------|
+|-------+-------------------+--------------------+-------+-------------------+--------------------|
+| key   | sym               | latex (upper bold) | key   | sym               | latex (lower bold) |
+|-------+-------------------+--------------------+-------+-------------------+--------------------|
+| ~Am~  | $\mathbf{A}$      | ~\mathbf{A}~       | ~am~  | $\mathbf{a}$      | ~\mathbf{a}~       |
+| ~Bm~  | $\mathbf{B}$      | ~\mathbf{B}~       | ~bm~  | $\mathbf{b}$      | ~\mathbf{b}~       |
+| ~Cm~  | $\mathbf{C}$      | ~\mathbf{C}~       | ~cm~  | $\mathbf{c}$      | ~\mathbf{c}~       |
+| ~Dm~  | $\mathbf{D}$      | ~\mathbf{D}~       | ~dm~  | $\mathbf{d}$      | ~\mathbf{d}~       |
+| ~Em~  | $\mathbf{E}$      | ~\mathbf{E}~       | ~em~  | $\mathbf{e}$      | ~\mathbf{e}~       |
+| ~Fm~  | $\mathbf{F}$      | ~\mathbf{F}~       | ~fm~  | $\mathbf{f}$      | ~\mathbf{f}~       |
+| ~Gm~  | $\mathbf{G}$      | ~\mathbf{G}~       | ~gm~  | $\mathbf{g}$      | ~\mathbf{g}~       |
+| ~Hm~  | $\mathbf{H}$      | ~\mathbf{H}~       | ~hm~  | $\mathbf{h}$      | ~\mathbf{h}~       |
+| ~Im~  | $\mathbf{I}$      | ~\mathbf{I}~       | ~im~  | $\mathbf{i}$      | ~\mathbf{i}~       |
+| ~Jm~  | $\mathbf{J}$      | ~\mathbf{J}~       | ~jm~  | $\mathbf{j}$      | ~\mathbf{j}~       |
+| ~Km~  | $\mathbf{K}$      | ~\mathbf{K}~       | ~km~  | $\mathbf{k}$      | ~\mathbf{k}~       |
+| ~Lm~  | $\mathbf{L}$      | ~\mathbf{L}~       | ~lm~  | $\mathbf{l}$      | ~\mathbf{l}~       |
+| ~Mm~  | $\mathbf{M}$      | ~\mathbf{M}~       | ~mm~  | $\mathbf{m}$      | ~\mathbf{m}~       |
+| ~Nm~  | $\mathbf{N}$      | ~\mathbf{N}~       | ~nm~  | $\mathbf{n}$      | ~\mathbf{n}~       |
+| ~Om~  | $\mathbf{O}$      | ~\mathbf{O}~       | ~om~  | $\mathbf{o}$      | ~\mathbf{o}~       |
+| ~Pm~  | $\mathbf{P}$      | ~\mathbf{P}~       | ~pm~  | $\mathbf{p}$      | ~\mathbf{p}~       |
+| ~Qm~  | $\mathbf{Q}$      | ~\mathbf{Q}~       | ~qm~  | $\mathbf{q}$      | ~\mathbf{q}~       |
+| ~Rm~  | $\mathbf{R}$      | ~\mathbf{R}~       | ~rm~  | $\mathbf{r}$      | ~\mathbf{r}~       |
+| ~Sm~  | $\mathbf{S}$      | ~\mathbf{S}~       | ~sm~  | $\mathbf{s}$      | ~\mathbf{s}~       |
+| ~Tm~  | $\mathbf{T}$      | ~\mathbf{T}~       | ~tm~  | $\mathbf{t}$      | ~\mathbf{t}~       |
+| ~Um~  | $\mathbf{U}$      | ~\mathbf{U}~       | ~um~  | $\mathbf{u}$      | ~\mathbf{u}~       |
+| ~Vm~  | $\mathbf{V}$      | ~\mathbf{V}~       | ~vm~  | $\mathbf{v}$      | ~\mathbf{v}~       |
+| ~Wm~  | $\mathbf{W}$      | ~\mathbf{W}~       | ~wm~  | $\mathbf{w}$      | ~\mathbf{w}~       |
+| ~Xm~  | $\mathbf{X}$      | ~\mathbf{X}~       | ~xm~  | $\mathbf{x}$      | ~\mathbf{x}~       |
+| ~Ym~  | $\mathbf{Y}$      | ~\mathbf{Y}~       | ~ym~  | $\mathbf{y}$      | ~\mathbf{y}~       |
+| ~Zm~  | $\mathbf{Z}$      | ~\mathbf{Z}~       | ~zm~  | $\mathbf{z}$      | ~\mathbf{z}~       |
+| ~Om~  | $\mathbf{0}$      | ~\mathbf{0}~       | ~0m~  | $\mathbf{0}$      | ~\mathbf{0}~       |
+|-------+-------------------+--------------------+-------+-------------------+--------------------|
+| ~im.~ | $\mathbf{\imath}$ | ~\mathbf{\imath}~  | ~jm.~ | $\mathbf{\jmath}$ | ~\mathbf{\jmath}~  |
+|-------+-------------------+--------------------+-------+-------------------+--------------------|
 
 **  Vector
 #+caption: Vectors
 #+name: tbl-alphabet-vec-6column
 #+attr_latex: :align |lll|lll| :placement [H]
-|------+-----------+---------------+------+-----------+---------------|
-| key  | sym       | latex (upper) | key  | sym       | latex (lower) |
-|------+-----------+---------------+------+-----------+---------------|
-| ~Av~ | $\vec{A}$ | ~\vec{A}~     | ~av~ | $\vec{a}$ | ~\vec{a}~     |
-| ~Bv~ | $\vec{B}$ | ~\vec{B}~     | ~bv~ | $\vec{b}$ | ~\vec{b}~     |
-| ~Cv~ | $\vec{C}$ | ~\vec{C}~     | ~cv~ | $\vec{c}$ | ~\vec{c}~     |
-| ~Dv~ | $\vec{D}$ | ~\vec{D}~     | ~dv~ | $\vec{d}$ | ~\vec{d}~     |
-| ~Ev~ | $\vec{E}$ | ~\vec{E}~     | ~ev~ | $\vec{e}$ | ~\vec{e}~     |
-| ~Fv~ | $\vec{F}$ | ~\vec{F}~     | ~fv~ | $\vec{f}$ | ~\vec{f}~     |
-| ~Gv~ | $\vec{G}$ | ~\vec{G}~     | ~gv~ | $\vec{g}$ | ~\vec{g}~     |
-| ~Hv~ | $\vec{H}$ | ~\vec{H}~     | ~hv~ | $\vec{h}$ | ~\vec{h}~     |
-| ~Iv~ | $\vec{I}$ | ~\vec{I}~     | ~iv~ | $\vec{i}$ | ~\vec{i}~     |
-| ~Jv~ | $\vec{J}$ | ~\vec{J}~     | ~jv~ | $\vec{j}$ | ~\vec{j}~     |
-| ~Kv~ | $\vec{K}$ | ~\vec{K}~     | ~kv~ | $\vec{k}$ | ~\vec{k}~     |
-| ~Lv~ | $\vec{L}$ | ~\vec{L}~     | ~lv~ | $\vec{l}$ | ~\vec{l}~     |
-| ~Mv~ | $\vec{M}$ | ~\vec{M}~     | ~mv~ | $\vec{m}$ | ~\vec{m}~     |
-| ~Nv~ | $\vec{N}$ | ~\vec{N}~     | ~nv~ | $\vec{n}$ | ~\vec{n}~     |
-| ~Ov~ | $\vec{O}$ | ~\vec{O}~     | ~ov~ | $\vec{o}$ | ~\vec{o}~     |
-| ~Pv~ | $\vec{P}$ | ~\vec{P}~     | ~pv~ | $\vec{p}$ | ~\vec{p}~     |
-| ~Qv~ | $\vec{Q}$ | ~\vec{Q}~     | ~qv~ | $\vec{q}$ | ~\vec{q}~     |
-| ~Rv~ | $\vec{R}$ | ~\vec{R}~     | ~rv~ | $\vec{r}$ | ~\vec{r}~     |
-| ~Sv~ | $\vec{S}$ | ~\vec{S}~     | ~sv~ | $\vec{s}$ | ~\vec{s}~     |
-| ~Tv~ | $\vec{T}$ | ~\vec{T}~     | ~tv~ | $\vec{t}$ | ~\vec{t}~     |
-| ~Uv~ | $\vec{U}$ | ~\vec{U}~     | ~uv~ | $\vec{u}$ | ~\vec{u}~     |
-| ~Vv~ | $\vec{V}$ | ~\vec{V}~     | ~vv~ | $\vec{v}$ | ~\vec{v}~     |
-| ~Wv~ | $\vec{W}$ | ~\vec{W}~     | ~wv~ | $\vec{w}$ | ~\vec{w}~     |
-| ~Xv~ | $\vec{X}$ | ~\vec{X}~     | ~xv~ | $\vec{x}$ | ~\vec{x}~     |
-| ~Yv~ | $\vec{Y}$ | ~\vec{Y}~     | ~yv~ | $\vec{y}$ | ~\vec{y}~     |
-| ~Zv~ | $\vec{Z}$ | ~\vec{Z}~     | ~zv~ | $\vec{z}$ | ~\vec{z}~     |
-|------+-----------+---------------+------+-----------+---------------|
+|-------+----------------+----------------+-------+----------------+----------------|
+| key   | sym            | latex (upper)  | key   | sym            | latex (lower)  |
+|-------+----------------+----------------+-------+----------------+----------------|
+| ~Av~  | $\vec{A}$      | ~\vec{A}~      | ~av~  | $\vec{a}$      | ~\vec{a}~      |
+| ~Bv~  | $\vec{B}$      | ~\vec{B}~      | ~bv~  | $\vec{b}$      | ~\vec{b}~      |
+| ~Cv~  | $\vec{C}$      | ~\vec{C}~      | ~cv~  | $\vec{c}$      | ~\vec{c}~      |
+| ~Dv~  | $\vec{D}$      | ~\vec{D}~      | ~dv~  | $\vec{d}$      | ~\vec{d}~      |
+| ~Ev~  | $\vec{E}$      | ~\vec{E}~      | ~ev~  | $\vec{e}$      | ~\vec{e}~      |
+| ~Fv~  | $\vec{F}$      | ~\vec{F}~      | ~fv~  | $\vec{f}$      | ~\vec{f}~      |
+| ~Gv~  | $\vec{G}$      | ~\vec{G}~      | ~gv~  | $\vec{g}$      | ~\vec{g}~      |
+| ~Hv~  | $\vec{H}$      | ~\vec{H}~      | ~hv~  | $\vec{h}$      | ~\vec{h}~      |
+| ~Iv~  | $\vec{I}$      | ~\vec{I}~      | ~iv~  | $\vec{i}$      | ~\vec{i}~      |
+| ~Jv~  | $\vec{J}$      | ~\vec{J}~      | ~jv~  | $\vec{j}$      | ~\vec{j}~      |
+| ~Kv~  | $\vec{K}$      | ~\vec{K}~      | ~kv~  | $\vec{k}$      | ~\vec{k}~      |
+| ~Lv~  | $\vec{L}$      | ~\vec{L}~      | ~lv~  | $\vec{l}$      | ~\vec{l}~      |
+| ~Mv~  | $\vec{M}$      | ~\vec{M}~      | ~mv~  | $\vec{m}$      | ~\vec{m}~      |
+| ~Nv~  | $\vec{N}$      | ~\vec{N}~      | ~nv~  | $\vec{n}$      | ~\vec{n}~      |
+| ~Ov~  | $\vec{O}$      | ~\vec{O}~      | ~ov~  | $\vec{o}$      | ~\vec{o}~      |
+| ~Pv~  | $\vec{P}$      | ~\vec{P}~      | ~pv~  | $\vec{p}$      | ~\vec{p}~      |
+| ~Qv~  | $\vec{Q}$      | ~\vec{Q}~      | ~qv~  | $\vec{q}$      | ~\vec{q}~      |
+| ~Rv~  | $\vec{R}$      | ~\vec{R}~      | ~rv~  | $\vec{r}$      | ~\vec{r}~      |
+| ~Sv~  | $\vec{S}$      | ~\vec{S}~      | ~sv~  | $\vec{s}$      | ~\vec{s}~      |
+| ~Tv~  | $\vec{T}$      | ~\vec{T}~      | ~tv~  | $\vec{t}$      | ~\vec{t}~      |
+| ~Uv~  | $\vec{U}$      | ~\vec{U}~      | ~uv~  | $\vec{u}$      | ~\vec{u}~      |
+| ~Vv~  | $\vec{V}$      | ~\vec{V}~      | ~vv~  | $\vec{v}$      | ~\vec{v}~      |
+| ~Wv~  | $\vec{W}$      | ~\vec{W}~      | ~wv~  | $\vec{w}$      | ~\vec{w}~      |
+| ~Xv~  | $\vec{X}$      | ~\vec{X}~      | ~xv~  | $\vec{x}$      | ~\vec{x}~      |
+| ~Yv~  | $\vec{Y}$      | ~\vec{Y}~      | ~yv~  | $\vec{y}$      | ~\vec{y}~      |
+| ~Zv~  | $\vec{Z}$      | ~\vec{Z}~      | ~zv~  | $\vec{z}$      | ~\vec{z}~      |
+|-------+----------------+----------------+-------+----------------+----------------|
+| ~iv.~ | $\vec{\imath}$ | ~\vec{\imath}~ | ~jv.~ | $\vec{\jmath}$ | ~\vec{\jmath}~ |
+|-------+----------------+----------------+-------+----------------+----------------|
 
 **  Hat
 #+caption: Vectors and Hats
 #+name: tbl-alphabet-hat-6column
 #+attr_latex: :align |lll|lll| :placement [H]
-|------+-----------+-------------+------+-----------+-------------|
-| key  | sym       | latex (hat) | key  | sym       | latex (hat) |
-|------+-----------+-------------+------+-----------+-------------|
-| ~Ah~ | $\hat{A}$ | ~\hat{A}~   | ~ah~ | $\hat{a}$ | ~\hat{a}~   |
-| ~Bh~ | $\hat{B}$ | ~\hat{B}~   | ~bh~ | $\hat{b}$ | ~\hat{b}~   |
-| ~Ch~ | $\hat{C}$ | ~\hat{C}~   | ~ch~ | $\hat{c}$ | ~\hat{c}~   |
-| ~Dh~ | $\hat{D}$ | ~\hat{D}~   | ~dh~ | $\hat{d}$ | ~\hat{d}~   |
-| ~Eh~ | $\hat{E}$ | ~\hat{E}~   | ~eh~ | $\hat{e}$ | ~\hat{e}~   |
-| ~Fh~ | $\hat{F}$ | ~\hat{F}~   | ~fh~ | $\hat{f}$ | ~\hat{f}~   |
-| ~Gh~ | $\hat{G}$ | ~\hat{G}~   | ~gh~ | $\hat{g}$ | ~\hat{g}~   |
-| ~Hh~ | $\hat{H}$ | ~\hat{H}~   | ~hh~ | $\hat{h}$ | ~\hat{h}~   |
-| ~Ih~ | $\hat{I}$ | ~\hat{I}~   | ~ih~ | $\hat{i}$ | ~\hat{i}~   |
-| ~Jh~ | $\hat{J}$ | ~\hat{J}~   | ~jh~ | $\hat{j}$ | ~\hat{j}~   |
-| ~Kh~ | $\hat{K}$ | ~\hat{K}~   | ~kh~ | $\hat{k}$ | ~\hat{k}~   |
-| ~Lh~ | $\hat{L}$ | ~\hat{L}~   | ~lh~ | $\hat{l}$ | ~\hat{l}~   |
-| ~Mh~ | $\hat{M}$ | ~\hat{M}~   | ~mh~ | $\hat{m}$ | ~\hat{m}~   |
-| ~Nh~ | $\hat{N}$ | ~\hat{N}~   | ~nh~ | $\hat{n}$ | ~\hat{n}~   |
-| ~Oh~ | $\hat{O}$ | ~\hat{O}~   | ~oh~ | $\hat{o}$ | ~\hat{o}~   |
-| ~Ph~ | $\hat{P}$ | ~\hat{P}~   | ~ph~ | $\hat{p}$ | ~\hat{p}~   |
-| ~Qh~ | $\hat{Q}$ | ~\hat{Q}~   | ~qh~ | $\hat{q}$ | ~\hat{q}~   |
-| ~Rh~ | $\hat{R}$ | ~\hat{R}~   | ~rh~ | $\hat{r}$ | ~\hat{r}~   |
-| ~Sh~ | $\hat{S}$ | ~\hat{S}~   | ~sh~ | $\hat{s}$ | ~\hat{s}~   |
-| ~Th~ | $\hat{T}$ | ~\hat{T}~   | ~th~ | $\hat{t}$ | ~\hat{t}~   |
-| ~Uh~ | $\hat{U}$ | ~\hat{U}~   | ~uh~ | $\hat{u}$ | ~\hat{u}~   |
-| ~Vh~ | $\hat{V}$ | ~\hat{V}~   | ~vh~ | $\hat{v}$ | ~\hat{v}~   |
-| ~Wh~ | $\hat{W}$ | ~\hat{W}~   | ~wh~ | $\hat{w}$ | ~\hat{w}~   |
-| ~Xh~ | $\hat{X}$ | ~\hat{X}~   | ~xh~ | $\hat{x}$ | ~\hat{x}~   |
-| ~Yh~ | $\hat{Y}$ | ~\hat{Y}~   | ~yh~ | $\hat{y}$ | ~\hat{y}~   |
-| ~Zh~ | $\hat{Z}$ | ~\hat{Z}~   | ~zh~ | $\hat{z}$ | ~\hat{z}~   |
-|------+-----------+-------------+------+-----------+-------------|
-
+|-------+----------------+----------------+-------+----------------+----------------|
+| key   | sym            | latex (hat)    | key   | sym            | latex (hat)    |
+|-------+----------------+----------------+-------+----------------+----------------|
+| ~Ah~  | $\hat{A}$      | ~\hat{A}~      | ~ah~  | $\hat{a}$      | ~\hat{a}~      |
+| ~Bh~  | $\hat{B}$      | ~\hat{B}~      | ~bh~  | $\hat{b}$      | ~\hat{b}~      |
+| ~Ch~  | $\hat{C}$      | ~\hat{C}~      | ~ch~  | $\hat{c}$      | ~\hat{c}~      |
+| ~Dh~  | $\hat{D}$      | ~\hat{D}~      | ~dh~  | $\hat{d}$      | ~\hat{d}~      |
+| ~Eh~  | $\hat{E}$      | ~\hat{E}~      | ~eh~  | $\hat{e}$      | ~\hat{e}~      |
+| ~Fh~  | $\hat{F}$      | ~\hat{F}~      | ~fh~  | $\hat{f}$      | ~\hat{f}~      |
+| ~Gh~  | $\hat{G}$      | ~\hat{G}~      | ~gh~  | $\hat{g}$      | ~\hat{g}~      |
+| ~Hh~  | $\hat{H}$      | ~\hat{H}~      | ~hh~  | $\hat{h}$      | ~\hat{h}~      |
+| ~Ih~  | $\hat{I}$      | ~\hat{I}~      | ~ih~  | $\hat{i}$      | ~\hat{i}~      |
+| ~Jh~  | $\hat{J}$      | ~\hat{J}~      | ~jh~  | $\hat{j}$      | ~\hat{j}~      |
+| ~Kh~  | $\hat{K}$      | ~\hat{K}~      | ~kh~  | $\hat{k}$      | ~\hat{k}~      |
+| ~Lh~  | $\hat{L}$      | ~\hat{L}~      | ~lh~  | $\hat{l}$      | ~\hat{l}~      |
+| ~Mh~  | $\hat{M}$      | ~\hat{M}~      | ~mh~  | $\hat{m}$      | ~\hat{m}~      |
+| ~Nh~  | $\hat{N}$      | ~\hat{N}~      | ~nh~  | $\hat{n}$      | ~\hat{n}~      |
+| ~Oh~  | $\hat{O}$      | ~\hat{O}~      | ~oh~  | $\hat{o}$      | ~\hat{o}~      |
+| ~Ph~  | $\hat{P}$      | ~\hat{P}~      | ~ph~  | $\hat{p}$      | ~\hat{p}~      |
+| ~Qh~  | $\hat{Q}$      | ~\hat{Q}~      | ~qh~  | $\hat{q}$      | ~\hat{q}~      |
+| ~Rh~  | $\hat{R}$      | ~\hat{R}~      | ~rh~  | $\hat{r}$      | ~\hat{r}~      |
+| ~Sh~  | $\hat{S}$      | ~\hat{S}~      | ~sh~  | $\hat{s}$      | ~\hat{s}~      |
+| ~Th~  | $\hat{T}$      | ~\hat{T}~      | ~th~  | $\hat{t}$      | ~\hat{t}~      |
+| ~Uh~  | $\hat{U}$      | ~\hat{U}~      | ~uh~  | $\hat{u}$      | ~\hat{u}~      |
+| ~Vh~  | $\hat{V}$      | ~\hat{V}~      | ~vh~  | $\hat{v}$      | ~\hat{v}~      |
+| ~Wh~  | $\hat{W}$      | ~\hat{W}~      | ~wh~  | $\hat{w}$      | ~\hat{w}~      |
+| ~Xh~  | $\hat{X}$      | ~\hat{X}~      | ~xh~  | $\hat{x}$      | ~\hat{x}~      |
+| ~Yh~  | $\hat{Y}$      | ~\hat{Y}~      | ~yh~  | $\hat{y}$      | ~\hat{y}~      |
+| ~Zh~  | $\hat{Z}$      | ~\hat{Z}~      | ~zh~  | $\hat{z}$      | ~\hat{z}~      |
+|-------+----------------+----------------+-------+----------------+----------------|
+| ~ih.~ | $\hat{\imath}$ | ~\hat{\imath}~ | ~jh.~ | $\hat{\jmath}$ | ~\hat{\jmath}~ |
+|-------+----------------+----------------+-------+----------------+----------------|
 
 **  Dots
 #+caption: Dots
 #+name: tbl-alphabet-dot-6column
 #+attr_latex: :align |lll|lll| :placement [H]
-|------+-----------+-------------+------+-----------+-------------|
-| key  | sym       | latex (vec) | key  | sym       | latex (hat) |
-|------+-----------+-------------+------+-----------+-------------|
-| ~ad~ | $\dot{a}$ | ~\dot{a}~   | ~Ad~ | $\dot{A}$ | ~\dot{A}~   |
-| ~bd~ | $\dot{b}$ | ~\dot{b}~   | ~Bd~ | $\dot{B}$ | ~\dot{B}~   |
-| ~cd~ | $\dot{c}$ | ~\dot{c}~   | ~Cd~ | $\dot{C}$ | ~\dot{C}~   |
-| ~dd~ | $\dot{d}$ | ~\dot{d}~   | ~Dd~ | $\dot{D}$ | ~\dot{D}~   |
-| ~ed~ | $\dot{e}$ | ~\dot{e}~   | ~Ed~ | $\dot{E}$ | ~\dot{E}~   |
-| ~fd~ | $\dot{f}$ | ~\dot{f}~   | ~Fd~ | $\dot{F}$ | ~\dot{F}~   |
-| ~gd~ | $\dot{g}$ | ~\dot{g}~   | ~Gd~ | $\dot{G}$ | ~\dot{G}~   |
-| ~hd~ | $\dot{h}$ | ~\dot{h}~   | ~Hd~ | $\dot{H}$ | ~\dot{H}~   |
-| ~id~ | $\dot{i}$ | ~\dot{i}~   | ~Id~ | $\dot{I}$ | ~\dot{I}~   |
-| ~jd~ | $\dot{j}$ | ~\dot{j}~   | ~Jd~ | $\dot{J}$ | ~\dot{J}~   |
-| ~kd~ | $\dot{k}$ | ~\dot{k}~   | ~Kd~ | $\dot{K}$ | ~\dot{K}~   |
-| ~ld~ | $\dot{l}$ | ~\dot{l}~   | ~Ld~ | $\dot{L}$ | ~\dot{L}~   |
-| ~md~ | $\dot{m}$ | ~\dot{m}~   | ~Md~ | $\dot{M}$ | ~\dot{M}~   |
-| ~nd~ | $\dot{n}$ | ~\dot{n}~   | ~Nd~ | $\dot{N}$ | ~\dot{N}~   |
-| ~od~ | $\dot{o}$ | ~\dot{o}~   | ~Od~ | $\dot{O}$ | ~\dot{O}~   |
-| ~pd~ | $\dot{p}$ | ~\dot{p}~   | ~Pd~ | $\dot{P}$ | ~\dot{P}~   |
-| ~qd~ | $\dot{q}$ | ~\dot{q}~   | ~Qd~ | $\dot{Q}$ | ~\dot{Q}~   |
-| ~rd~ | $\dot{r}$ | ~\dot{r}~   | ~Rd~ | $\dot{R}$ | ~\dot{R}~   |
-| ~sd~ | $\dot{s}$ | ~\dot{s}~   | ~Sd~ | $\dot{S}$ | ~\dot{S}~   |
-| ~td~ | $\dot{t}$ | ~\dot{t}~   | ~Td~ | $\dot{T}$ | ~\dot{T}~   |
-| ~ud~ | $\dot{u}$ | ~\dot{u}~   | ~Ud~ | $\dot{U}$ | ~\dot{U}~   |
-| ~vd~ | $\dot{v}$ | ~\dot{v}~   | ~Vd~ | $\dot{V}$ | ~\dot{V}~   |
-| ~wd~ | $\dot{w}$ | ~\dot{w}~   | ~Wd~ | $\dot{W}$ | ~\dot{W}~   |
-| ~xd~ | $\dot{x}$ | ~\dot{x}~   | ~Xd~ | $\dot{X}$ | ~\dot{X}~   |
-| ~yd~ | $\dot{y}$ | ~\dot{y}~   | ~Yd~ | $\dot{Y}$ | ~\dot{Y}~   |
-| ~zd~ | $\dot{z}$ | ~\dot{z}~   | ~Zd~ | $\dot{Z}$ | ~\dot{Z}~   |
-|------+-----------+-------------+------+-----------+-------------|
+|-------+----------------+----------------+-------+----------------+----------------|
+| key   | sym            | latex (vec)    | key   | sym            | latex (hat)    |
+|-------+----------------+----------------+-------+----------------+----------------|
+| ~ad~  | $\dot{a}$      | ~\dot{a}~      | ~Ad~  | $\dot{A}$      | ~\dot{A}~      |
+| ~bd~  | $\dot{b}$      | ~\dot{b}~      | ~Bd~  | $\dot{B}$      | ~\dot{B}~      |
+| ~cd~  | $\dot{c}$      | ~\dot{c}~      | ~Cd~  | $\dot{C}$      | ~\dot{C}~      |
+| ~dd~  | $\dot{d}$      | ~\dot{d}~      | ~Dd~  | $\dot{D}$      | ~\dot{D}~      |
+| ~ed~  | $\dot{e}$      | ~\dot{e}~      | ~Ed~  | $\dot{E}$      | ~\dot{E}~      |
+| ~fd~  | $\dot{f}$      | ~\dot{f}~      | ~Fd~  | $\dot{F}$      | ~\dot{F}~      |
+| ~gd~  | $\dot{g}$      | ~\dot{g}~      | ~Gd~  | $\dot{G}$      | ~\dot{G}~      |
+| ~hd~  | $\dot{h}$      | ~\dot{h}~      | ~Hd~  | $\dot{H}$      | ~\dot{H}~      |
+| ~id~  | $\dot{i}$      | ~\dot{i}~      | ~Id~  | $\dot{I}$      | ~\dot{I}~      |
+| ~jd~  | $\dot{j}$      | ~\dot{j}~      | ~Jd~  | $\dot{J}$      | ~\dot{J}~      |
+| ~kd~  | $\dot{k}$      | ~\dot{k}~      | ~Kd~  | $\dot{K}$      | ~\dot{K}~      |
+| ~ld~  | $\dot{l}$      | ~\dot{l}~      | ~Ld~  | $\dot{L}$      | ~\dot{L}~      |
+| ~md~  | $\dot{m}$      | ~\dot{m}~      | ~Md~  | $\dot{M}$      | ~\dot{M}~      |
+| ~nd~  | $\dot{n}$      | ~\dot{n}~      | ~Nd~  | $\dot{N}$      | ~\dot{N}~      |
+| ~od~  | $\dot{o}$      | ~\dot{o}~      | ~Od~  | $\dot{O}$      | ~\dot{O}~      |
+| ~pd~  | $\dot{p}$      | ~\dot{p}~      | ~Pd~  | $\dot{P}$      | ~\dot{P}~      |
+| ~qd~  | $\dot{q}$      | ~\dot{q}~      | ~Qd~  | $\dot{Q}$      | ~\dot{Q}~      |
+| ~rd~  | $\dot{r}$      | ~\dot{r}~      | ~Rd~  | $\dot{R}$      | ~\dot{R}~      |
+| ~sd~  | $\dot{s}$      | ~\dot{s}~      | ~Sd~  | $\dot{S}$      | ~\dot{S}~      |
+| ~td~  | $\dot{t}$      | ~\dot{t}~      | ~Td~  | $\dot{T}$      | ~\dot{T}~      |
+| ~ud~  | $\dot{u}$      | ~\dot{u}~      | ~Ud~  | $\dot{U}$      | ~\dot{U}~      |
+| ~vd~  | $\dot{v}$      | ~\dot{v}~      | ~Vd~  | $\dot{V}$      | ~\dot{V}~      |
+| ~wd~  | $\dot{w}$      | ~\dot{w}~      | ~Wd~  | $\dot{W}$      | ~\dot{W}~      |
+| ~xd~  | $\dot{x}$      | ~\dot{x}~      | ~Xd~  | $\dot{X}$      | ~\dot{X}~      |
+| ~yd~  | $\dot{y}$      | ~\dot{y}~      | ~Yd~  | $\dot{Y}$      | ~\dot{Y}~      |
+| ~zd~  | $\dot{z}$      | ~\dot{z}~      | ~Zd~  | $\dot{Z}$      | ~\dot{Z}~      |
+|-------+----------------+----------------+-------+----------------+----------------|
+| ~id.~ | $\dot{\imath}$ | ~\dot{\imath}~ | ~jd.~ | $\dot{\jmath}$ | ~\dot{\jmath}~ |
+|-------+----------------+----------------+-------+----------------+----------------|
 **  DDots
 #+caption: DDots
 #+name: tbl_alphabet_ddot_6column
 #+attr_latex: :align |lll|lll| :placement [H]
-|-------+------------+-------------+-------+------------+-------------|
-| key   | sym        | latex (vec) | key   | sym        | latex (hat) |
-|-------+------------+-------------+-------+------------+-------------|
-| ~add~ | $\ddot{a}$ | ~\ddot{a}~  | ~Add~ | $\ddot{A}$ | ~\ddot{A}~  |
-| ~bdd~ | $\ddot{b}$ | ~\ddot{b}~  | ~Bdd~ | $\ddot{B}$ | ~\ddot{B}~  |
-| ~cdd~ | $\ddot{c}$ | ~\ddot{c}~  | ~Cdd~ | $\ddot{C}$ | ~\ddot{C}~  |
-| ~ddd~ | $\ddot{d}$ | ~\ddot{d}~  | ~Ddd~ | $\ddot{D}$ | ~\ddot{D}~  |
-| ~edd~ | $\ddot{e}$ | ~\ddot{e}~  | ~Edd~ | $\ddot{E}$ | ~\ddot{E}~  |
-| ~fdd~ | $\ddot{f}$ | ~\ddot{f}~  | ~Fdd~ | $\ddot{F}$ | ~\ddot{F}~  |
-| ~gdd~ | $\ddot{g}$ | ~\ddot{g}~  | ~Gdd~ | $\ddot{G}$ | ~\ddot{G}~  |
-| ~hdd~ | $\ddot{h}$ | ~\ddot{h}~  | ~Hdd~ | $\ddot{H}$ | ~\ddot{H}~  |
-| ~idd~ | $\ddot{i}$ | ~\ddot{i}~  | ~Idd~ | $\ddot{I}$ | ~\ddot{I}~  |
-| ~jdd~ | $\ddot{j}$ | ~\ddot{j}~  | ~Jdd~ | $\ddot{J}$ | ~\ddot{J}~  |
-| ~kdd~ | $\ddot{k}$ | ~\ddot{k}~  | ~Kdd~ | $\ddot{K}$ | ~\ddot{K}~  |
-| ~ldd~ | $\ddot{l}$ | ~\ddot{l}~  | ~Ldd~ | $\ddot{L}$ | ~\ddot{L}~  |
-| ~mdd~ | $\ddot{m}$ | ~\ddot{m}~  | ~Mdd~ | $\ddot{M}$ | ~\ddot{M}~  |
-| ~ndd~ | $\ddot{n}$ | ~\ddot{n}~  | ~Ndd~ | $\ddot{N}$ | ~\ddot{N}~  |
-| ~odd~ | $\ddot{o}$ | ~\ddot{o}~  | ~Odd~ | $\ddot{O}$ | ~\ddot{O}~  |
-| ~pdd~ | $\ddot{p}$ | ~\ddot{p}~  | ~Pdd~ | $\ddot{P}$ | ~\ddot{P}~  |
-| ~qdd~ | $\ddot{q}$ | ~\ddot{q}~  | ~Qdd~ | $\ddot{Q}$ | ~\ddot{Q}~  |
-| ~rdd~ | $\ddot{r}$ | ~\ddot{r}~  | ~Rdd~ | $\ddot{R}$ | ~\ddot{R}~  |
-| ~sdd~ | $\ddot{s}$ | ~\ddot{s}~  | ~Sdd~ | $\ddot{S}$ | ~\ddot{S}~  |
-| ~tdd~ | $\ddot{t}$ | ~\ddot{t}~  | ~Tdd~ | $\ddot{T}$ | ~\ddot{T}~  |
-| ~udd~ | $\ddot{u}$ | ~\ddot{u}~  | ~Udd~ | $\ddot{U}$ | ~\ddot{U}~  |
-| ~vdd~ | $\ddot{v}$ | ~\ddot{v}~  | ~Vdd~ | $\ddot{V}$ | ~\ddot{V}~  |
-| ~wdd~ | $\ddot{w}$ | ~\ddot{w}~  | ~Wdd~ | $\ddot{W}$ | ~\ddot{W}~  |
-| ~xdd~ | $\ddot{x}$ | ~\ddot{x}~  | ~Xdd~ | $\ddot{X}$ | ~\ddot{X}~  |
-| ~ydd~ | $\ddot{y}$ | ~\ddot{y}~  | ~Ydd~ | $\ddot{Y}$ | ~\ddot{Y}~  |
-| ~zdd~ | $\ddot{z}$ | ~\ddot{z}~  | ~Zdd~ | $\ddot{Z}$ | ~\ddot{Z}~  |
-|-------+------------+-------------+-------+------------+-------------|
-
-
+|--------+----------------+----------------+--------+----------------+----------------|
+| key    | sym            | latex (vec)    | key    | sym            | latex (hat)    |
+|--------+----------------+----------------+--------+----------------+----------------|
+| ~add~  | $\ddot{a}$     | ~\ddot{a}~     | ~Add~  | $\ddot{A}$     | ~\ddot{A}~     |
+| ~bdd~  | $\ddot{b}$     | ~\ddot{b}~     | ~Bdd~  | $\ddot{B}$     | ~\ddot{B}~     |
+| ~cdd~  | $\ddot{c}$     | ~\ddot{c}~     | ~Cdd~  | $\ddot{C}$     | ~\ddot{C}~     |
+| ~ddd~  | $\ddot{d}$     | ~\ddot{d}~     | ~Ddd~  | $\ddot{D}$     | ~\ddot{D}~     |
+| ~edd~  | $\ddot{e}$     | ~\ddot{e}~     | ~Edd~  | $\ddot{E}$     | ~\ddot{E}~     |
+| ~fdd~  | $\ddot{f}$     | ~\ddot{f}~     | ~Fdd~  | $\ddot{F}$     | ~\ddot{F}~     |
+| ~gdd~  | $\ddot{g}$     | ~\ddot{g}~     | ~Gdd~  | $\ddot{G}$     | ~\ddot{G}~     |
+| ~hdd~  | $\ddot{h}$     | ~\ddot{h}~     | ~Hdd~  | $\ddot{H}$     | ~\ddot{H}~     |
+| ~idd~  | $\ddot{i}$     | ~\ddot{i}~     | ~Idd~  | $\ddot{I}$     | ~\ddot{I}~     |
+| ~jdd~  | $\ddot{j}$     | ~\ddot{j}~     | ~Jdd~  | $\ddot{J}$     | ~\ddot{J}~     |
+| ~kdd~  | $\ddot{k}$     | ~\ddot{k}~     | ~Kdd~  | $\ddot{K}$     | ~\ddot{K}~     |
+| ~ldd~  | $\ddot{l}$     | ~\ddot{l}~     | ~Ldd~  | $\ddot{L}$     | ~\ddot{L}~     |
+| ~mdd~  | $\ddot{m}$     | ~\ddot{m}~     | ~Mdd~  | $\ddot{M}$     | ~\ddot{M}~     |
+| ~ndd~  | $\ddot{n}$     | ~\ddot{n}~     | ~Ndd~  | $\ddot{N}$     | ~\ddot{N}~     |
+| ~odd~  | $\ddot{o}$     | ~\ddot{o}~     | ~Odd~  | $\ddot{O}$     | ~\ddot{O}~     |
+| ~pdd~  | $\ddot{p}$     | ~\ddot{p}~     | ~Pdd~  | $\ddot{P}$     | ~\ddot{P}~     |
+| ~qdd~  | $\ddot{q}$     | ~\ddot{q}~     | ~Qdd~  | $\ddot{Q}$     | ~\ddot{Q}~     |
+| ~rdd~  | $\ddot{r}$     | ~\ddot{r}~     | ~Rdd~  | $\ddot{R}$     | ~\ddot{R}~     |
+| ~sdd~  | $\ddot{s}$     | ~\ddot{s}~     | ~Sdd~  | $\ddot{S}$     | ~\ddot{S}~     |
+| ~tdd~  | $\ddot{t}$     | ~\ddot{t}~     | ~Tdd~  | $\ddot{T}$     | ~\ddot{T}~     |
+| ~udd~  | $\ddot{u}$     | ~\ddot{u}~     | ~Udd~  | $\ddot{U}$     | ~\ddot{U}~     |
+| ~vdd~  | $\ddot{v}$     | ~\ddot{v}~     | ~Vdd~  | $\ddot{V}$     | ~\ddot{V}~     |
+| ~wdd~  | $\ddot{w}$     | ~\ddot{w}~     | ~Wdd~  | $\ddot{W}$     | ~\ddot{W}~     |
+| ~xdd~  | $\ddot{x}$     | ~\ddot{x}~     | ~Xdd~  | $\ddot{X}$     | ~\ddot{X}~     |
+| ~ydd~  | $\ddot{y}$     | ~\ddot{y}~     | ~Ydd~  | $\ddot{Y}$     | ~\ddot{Y}~     |
+| ~zdd~  | $\ddot{z}$     | ~\ddot{z}~     | ~Zdd~  | $\ddot{Z}$     | ~\ddot{Z}~     |
+|--------+----------------+----------------+--------+----------------+----------------|
+| ~idd.~ | $\dot{\imath}$ | ~\dot{\imath}~ | ~jdd.~ | $\dot{\jmath}$ | ~\dot{\jmath}~ |
+|--------+----------------+----------------+--------+----------------+----------------|
 
 
 *  Function Expansion
@@ -853,6 +860,7 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("Xv"     ["\\vec{X}"       ])  ("xv"     ["\\vec{x}"       ])
 ("Yv"     ["\\vec{Y}"       ])  ("yv"     ["\\vec{y}"       ])
 ("Zv"     ["\\vec{Z}"       ])  ("zv"     ["\\vec{z}"       ])
+("iv."    ["\\vec{\\imath}" ])  ("jv."    ["\\vec{\\jmath}" ])
 ;; Vector & Hat
 ("Ah"     ["\\hat{A}"       ])  ("ah"     ["\\hat{a}"       ])
 ("Bh"     ["\\hat{B}"       ])  ("bh"     ["\\hat{b}"       ])
@@ -880,6 +888,7 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("Xh"     ["\\hat{X}"       ])  ("xh"     ["\\hat{x}"       ])
 ("Yh"     ["\\hat{Y}"       ])  ("yh"     ["\\hat{y}"       ])
 ("Zh"     ["\\hat{Z}"       ])  ("zh"     ["\\hat{z}"       ])
+("ih."    ["\\hat{\\imath}" ])  ("jh."    ["\\hat{\\jmath}" ])
 ;; Dot
 ("ad"     ["\\dot{a}"       ])  ("Ad"     ["\\dot{A}"       ])
 ("bd"     ["\\dot{b}"       ])  ("Bd"     ["\\dot{B}"       ])
@@ -907,6 +916,7 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("xd"     ["\\dot{x}"       ])  ("Xd"     ["\\dot{X}"       ])
 ("yd"     ["\\dot{y}"       ])  ("Yd"     ["\\dot{Y}"       ])
 ("zd"     ["\\dot{z}"       ])  ("Zd"     ["\\dot{Z}"       ])
+("id."    ["\\dot{\\imath}" ])  ("jd."    ["\\dot{\\jmath}" ])
 ;; DDot
 ("add"    ["\\ddot{a}"      ])  ("Add"    ["\\ddot{A}"      ])
 ("bdd"    ["\\ddot{b}"      ])  ("Bdd"    ["\\ddot{B}"      ])
@@ -934,6 +944,7 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("xdd"    ["\\ddot{x}"      ])  ("Xdd"    ["\\ddot{X}"      ])
 ("ydd"    ["\\ddot{y}"      ])  ("Ydd"    ["\\ddot{Y}"      ])
 ("zdd"    ["\\ddot{z}"      ])  ("Zdd"    ["\\ddot{Z}"      ])
+("idd."   ["\\dot{\\imath}" ])  ("jdd."   ["\\dot{\\jmath}" ])
 ;; Expanding Func
 ("/"       quail-TeQ-frac        )  ; fraction on previous
 ("eq"      quail-TeQ-equation    )  ; equation environment
