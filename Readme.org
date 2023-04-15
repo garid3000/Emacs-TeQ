@@ -327,26 +327,26 @@
 #+caption: Single Line arrows
 #+name: tbl-3-sym-arrow-1
 #+attr_latex: :align |llll| :placement [H]
-|------------------------+-----------------------+--------------------+--------------------------------------------------------------|
-| key                    | sym                   | latex              | description                                                  |
-|------------------------+-----------------------+--------------------+--------------------------------------------------------------|
-| ~<-~                   | $\leftarrow$          | ~\leftarrow~       |                                                              |
-| ~->~                   | $\rightarrow$         | ~\rightarrow~      |                                                              |
-| ~-^~                   | $\uparrow$            | ~\uparrow~         | ~^~ looks like up arrow head                                 |
-| ~-v~                   | $\downarrow$          | ~\downarrow~       | ~v~ looks like down arrow head                               |
-| ~<->~                  | \( \leftrightarrow \) | ~\leftrightarrow~  |                                                              |
-|------------------------+-----------------------+--------------------+--------------------------------------------------------------|
-| ~<-n~                  | $\nleftarrow$         | ~\nleftarrow~      | negate (~n~) of prev. section                                |
-| ~->n~                  | $\nrightarrow$        | ~\nrightarrow~     | arrows + _n_                                                 |
-| ~-^n~                  | $\nuparrow$           | ~\nuparrow~        |                                                              |
-| ~-vn~                  | $\ndownarrow$         | ~\ndownarrow~      |                                                              |
-| ~<->~                  | $\nleftrightarrow$    | ~\nleftrightarrow~ |                                                              |
-|------------------------+-----------------------+--------------------+--------------------------------------------------------------|
-| ~-->~                  | $\longrightarrow$     | ~\longrightarrow~  | longer arrows, with 2 dashes                                 |
-| ~<--~                  | $\longleftarrow$      | ~\longleftarrow~   |                                                              |
-|------------------------+-----------------------+--------------------+--------------------------------------------------------------|
-| \texttt{\textbar} ~->~ | $\mapsto$             | ~\mapsto~          | vertical-bar + ~->~  (this might rendered wrongly on Github) |
-|------------------------+-----------------------+--------------------+--------------------------------------------------------------|
+|--------------------------+-----------------------+--------------------+--------------------------------------------------------------|
+| key                      | sym                   | latex              | description                                                  |
+|--------------------------+-----------------------+--------------------+--------------------------------------------------------------|
+| ~<-~                     | $\leftarrow$          | ~\leftarrow~       |                                                              |
+| ~->~                     | $\rightarrow$         | ~\rightarrow~      |                                                              |
+| ~-^~                     | $\uparrow$            | ~\uparrow~         | ~^~ looks like up arrow head                                 |
+| ~-v~                     | $\downarrow$          | ~\downarrow~       | ~v~ looks like down arrow head                               |
+| ~<->~                    | \( \leftrightarrow \) | ~\leftrightarrow~  |                                                              |
+|--------------------------+-----------------------+--------------------+--------------------------------------------------------------|
+| ~<-n~                    | $\nleftarrow$         | ~\nleftarrow~      | negate (~n~) of prev. section                                |
+| ~->n~                    | $\nrightarrow$        | ~\nrightarrow~     | arrows + _n_                                                 |
+| ~-^n~                    | $\nuparrow$           | ~\nuparrow~        |                                                              |
+| ~-vn~                    | $\ndownarrow$         | ~\ndownarrow~      |                                                              |
+| ~<->~                    | $\nleftrightarrow$    | ~\nleftrightarrow~ |                                                              |
+|--------------------------+-----------------------+--------------------+--------------------------------------------------------------|
+| ~-->~                    | $\longrightarrow$     | ~\longrightarrow~  | longer arrows, with 2 dashes                                 |
+| ~<--~                    | $\longleftarrow$      | ~\longleftarrow~   |                                                              |
+|--------------------------+-----------------------+--------------------+--------------------------------------------------------------|
+| $\texttt{\textbar}$ ~->~ | $\mapsto$             | ~\mapsto~          | vertical-bar + ~->~  (this might rendered wrongly on Github) |
+|--------------------------+-----------------------+--------------------+--------------------------------------------------------------|
 
 *** Double:
 #+caption: Double Line arrows
@@ -780,7 +780,7 @@ def format_table_to_elisp_type6col(headcomment, table):
     table = table[1:]
     for line in table:
         key, sym, trans, key1, sym, trans1 = line
-        key   = repr(key).replace("\'", "\"").replace("~", "").replace("\\\\texttt{\\\\textbar}", "|").replace(" ", "")
+        key   = repr(key).replace("\'", "\"").replace("$", "").replace("~", "").replace("\\\\texttt{\\\\textbar}", "|").replace(" ", "")
         key1  = repr(key1).replace("\'", "\"").replace("~", "").replace("\\\\texttt{\\\\textbar}", "|").replace(" ", "")
         trans = repr(trans).replace("\'", "\"").replace("~", "")
         trans1 = repr(trans1).replace("\'", "\"").replace("~", "")
@@ -792,7 +792,7 @@ def format_table_to_elisp_type3col_type1(headcomment, table):
     table = table[1:]
     for line in table:
         key,  sym, trans, description = line
-        key   = repr(key).replace("\'", "\"").replace("~", "").replace("\\\\texttt{\\\\textbar}", "|").replace(" ", "")
+        key   = repr(key).replace("\'", "\"").replace("$", "").replace("~", "").replace("\\\\texttt{\\\\textbar}", "|").replace(" ", "")
         trans = repr(trans).replace("\'", "\"").replace("~", "")
         
         print(f"({key:<8}  [{trans:<22}])  ; {description}")
@@ -802,7 +802,7 @@ def format_table_to_elisp_type3col_type2(headcomment, table):
     table = table[1:]
     for line in table:
         key, sym, trans, description = line
-        key   = repr(key).replace("\'", "\"").replace("~", "").replace("\\\\texttt{\\\\textbar}", "|").replace(" ", "")
+        key   = repr(key).replace("\'", "\"").replace("$", "").replace("~", "").replace("\\\\texttt{\\\\textbar}", "|").replace(" ", "")
         trans = trans.replace("~", "")
         
         print(f"({key:<8}  {trans:<22})  ; {description}")
@@ -824,7 +824,7 @@ format_table_to_elisp_type3col_type1("Symbols arrow1", tbl_3_sym_arrow_1)
 format_table_to_elisp_type3col_type1("Symbols arrow2", tbl_3_sym_arrow_2)
 format_table_to_elisp_type3col_type1("Symbols arrow3", tbl_3_sym_arrow_3)
 
-format_table_to_elisp_type3col_type1("Symbols arrow3", tbl_4_sym_mod_1)
+format_table_to_elisp_type3col_type1("Symbols mods", tbl_4_sym_mod_1)
 
 format_table_to_elisp_type3col_type1("Operation: arith", tbl_5_op_arith)
 format_table_to_elisp_type3col_type1("Operation: arith", tbl_5_op_bin)
@@ -834,7 +834,9 @@ format_table_to_elisp_type3col_type1("Operation: arith", tbl_5_op_logic)
 format_table_to_elisp_type3col_type1("Func: main", tbl_6_func)
 format_table_to_elisp_type6col("Func: Trig", tbl_6_func_trig_6col)
 format_table_to_elisp_type3col_type1("Func: iter", tbl_6_func_iter)
-format_table_to_elisp_type3col_type1("Func: iter", tbl_6_func_diff)
+# format_table_to_elisp_type3col_type1("Func: iter", tbl_6_func_diff)
+format_table_to_elisp_type6col("Func: differentials", tbl_6_func_diff)
+format_table_to_elisp_type6col("Func: derivatives", tbl_6_func_deriv)
 
 format_table_to_elisp_type3col_type1("Structural: Parenthesis",  tbl_7_parenthesis)
 format_table_to_elisp_type3col_type1("Structural: Text",  tbl_7_text)
