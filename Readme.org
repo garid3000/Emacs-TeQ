@@ -203,38 +203,38 @@
 #+caption: DDots
 #+name: tbl_alphabet_ddot_6column
 #+attr_latex: :align |lll|lll| :placement [H]
-|--------+----------------+----------------+--------+----------------+----------------|
-| key    | sym            | latex (vec)    | key    | sym            | latex (hat)    |
-|--------+----------------+----------------+--------+----------------+----------------|
-| ~add~  | $\ddot{a}$     | ~\ddot{a}~     | ~Add~  | $\ddot{A}$     | ~\ddot{A}~     |
-| ~bdd~  | $\ddot{b}$     | ~\ddot{b}~     | ~Bdd~  | $\ddot{B}$     | ~\ddot{B}~     |
-| ~cdd~  | $\ddot{c}$     | ~\ddot{c}~     | ~Cdd~  | $\ddot{C}$     | ~\ddot{C}~     |
-| ~ddd~  | $\ddot{d}$     | ~\ddot{d}~     | ~Ddd~  | $\ddot{D}$     | ~\ddot{D}~     |
-| ~edd~  | $\ddot{e}$     | ~\ddot{e}~     | ~Edd~  | $\ddot{E}$     | ~\ddot{E}~     |
-| ~fdd~  | $\ddot{f}$     | ~\ddot{f}~     | ~Fdd~  | $\ddot{F}$     | ~\ddot{F}~     |
-| ~gdd~  | $\ddot{g}$     | ~\ddot{g}~     | ~Gdd~  | $\ddot{G}$     | ~\ddot{G}~     |
-| ~hdd~  | $\ddot{h}$     | ~\ddot{h}~     | ~Hdd~  | $\ddot{H}$     | ~\ddot{H}~     |
-| ~idd~  | $\ddot{i}$     | ~\ddot{i}~     | ~Idd~  | $\ddot{I}$     | ~\ddot{I}~     |
-| ~jdd~  | $\ddot{j}$     | ~\ddot{j}~     | ~Jdd~  | $\ddot{J}$     | ~\ddot{J}~     |
-| ~kdd~  | $\ddot{k}$     | ~\ddot{k}~     | ~Kdd~  | $\ddot{K}$     | ~\ddot{K}~     |
-| ~ldd~  | $\ddot{l}$     | ~\ddot{l}~     | ~Ldd~  | $\ddot{L}$     | ~\ddot{L}~     |
-| ~mdd~  | $\ddot{m}$     | ~\ddot{m}~     | ~Mdd~  | $\ddot{M}$     | ~\ddot{M}~     |
-| ~ndd~  | $\ddot{n}$     | ~\ddot{n}~     | ~Ndd~  | $\ddot{N}$     | ~\ddot{N}~     |
-| ~odd~  | $\ddot{o}$     | ~\ddot{o}~     | ~Odd~  | $\ddot{O}$     | ~\ddot{O}~     |
-| ~pdd~  | $\ddot{p}$     | ~\ddot{p}~     | ~Pdd~  | $\ddot{P}$     | ~\ddot{P}~     |
-| ~qdd~  | $\ddot{q}$     | ~\ddot{q}~     | ~Qdd~  | $\ddot{Q}$     | ~\ddot{Q}~     |
-| ~rdd~  | $\ddot{r}$     | ~\ddot{r}~     | ~Rdd~  | $\ddot{R}$     | ~\ddot{R}~     |
-| ~sdd~  | $\ddot{s}$     | ~\ddot{s}~     | ~Sdd~  | $\ddot{S}$     | ~\ddot{S}~     |
-| ~tdd~  | $\ddot{t}$     | ~\ddot{t}~     | ~Tdd~  | $\ddot{T}$     | ~\ddot{T}~     |
-| ~udd~  | $\ddot{u}$     | ~\ddot{u}~     | ~Udd~  | $\ddot{U}$     | ~\ddot{U}~     |
-| ~vdd~  | $\ddot{v}$     | ~\ddot{v}~     | ~Vdd~  | $\ddot{V}$     | ~\ddot{V}~     |
-| ~wdd~  | $\ddot{w}$     | ~\ddot{w}~     | ~Wdd~  | $\ddot{W}$     | ~\ddot{W}~     |
-| ~xdd~  | $\ddot{x}$     | ~\ddot{x}~     | ~Xdd~  | $\ddot{X}$     | ~\ddot{X}~     |
-| ~ydd~  | $\ddot{y}$     | ~\ddot{y}~     | ~Ydd~  | $\ddot{Y}$     | ~\ddot{Y}~     |
-| ~zdd~  | $\ddot{z}$     | ~\ddot{z}~     | ~Zdd~  | $\ddot{Z}$     | ~\ddot{Z}~     |
-|--------+----------------+----------------+--------+----------------+----------------|
-| ~idd.~ | $\dot{\imath}$ | ~\dot{\imath}~ | ~jdd.~ | $\dot{\jmath}$ | ~\dot{\jmath}~ |
-|--------+----------------+----------------+--------+----------------+----------------|
+|--------+-----------------+-----------------+--------+-----------------+-----------------|
+| key    | sym             | latex (vec)     | key    | sym             | latex (hat)     |
+|--------+-----------------+-----------------+--------+-----------------+-----------------|
+| ~add~  | $\ddot{a}$      | ~\ddot{a}~      | ~Add~  | $\ddot{A}$      | ~\ddot{A}~      |
+| ~bdd~  | $\ddot{b}$      | ~\ddot{b}~      | ~Bdd~  | $\ddot{B}$      | ~\ddot{B}~      |
+| ~cdd~  | $\ddot{c}$      | ~\ddot{c}~      | ~Cdd~  | $\ddot{C}$      | ~\ddot{C}~      |
+| ~ddd~  | $\ddot{d}$      | ~\ddot{d}~      | ~Ddd~  | $\ddot{D}$      | ~\ddot{D}~      |
+| ~edd~  | $\ddot{e}$      | ~\ddot{e}~      | ~Edd~  | $\ddot{E}$      | ~\ddot{E}~      |
+| ~fdd~  | $\ddot{f}$      | ~\ddot{f}~      | ~Fdd~  | $\ddot{F}$      | ~\ddot{F}~      |
+| ~gdd~  | $\ddot{g}$      | ~\ddot{g}~      | ~Gdd~  | $\ddot{G}$      | ~\ddot{G}~      |
+| ~hdd~  | $\ddot{h}$      | ~\ddot{h}~      | ~Hdd~  | $\ddot{H}$      | ~\ddot{H}~      |
+| ~idd~  | $\ddot{i}$      | ~\ddot{i}~      | ~Idd~  | $\ddot{I}$      | ~\ddot{I}~      |
+| ~jdd~  | $\ddot{j}$      | ~\ddot{j}~      | ~Jdd~  | $\ddot{J}$      | ~\ddot{J}~      |
+| ~kdd~  | $\ddot{k}$      | ~\ddot{k}~      | ~Kdd~  | $\ddot{K}$      | ~\ddot{K}~      |
+| ~ldd~  | $\ddot{l}$      | ~\ddot{l}~      | ~Ldd~  | $\ddot{L}$      | ~\ddot{L}~      |
+| ~mdd~  | $\ddot{m}$      | ~\ddot{m}~      | ~Mdd~  | $\ddot{M}$      | ~\ddot{M}~      |
+| ~ndd~  | $\ddot{n}$      | ~\ddot{n}~      | ~Ndd~  | $\ddot{N}$      | ~\ddot{N}~      |
+| ~odd~  | $\ddot{o}$      | ~\ddot{o}~      | ~Odd~  | $\ddot{O}$      | ~\ddot{O}~      |
+| ~pdd~  | $\ddot{p}$      | ~\ddot{p}~      | ~Pdd~  | $\ddot{P}$      | ~\ddot{P}~      |
+| ~qdd~  | $\ddot{q}$      | ~\ddot{q}~      | ~Qdd~  | $\ddot{Q}$      | ~\ddot{Q}~      |
+| ~rdd~  | $\ddot{r}$      | ~\ddot{r}~      | ~Rdd~  | $\ddot{R}$      | ~\ddot{R}~      |
+| ~sdd~  | $\ddot{s}$      | ~\ddot{s}~      | ~Sdd~  | $\ddot{S}$      | ~\ddot{S}~      |
+| ~tdd~  | $\ddot{t}$      | ~\ddot{t}~      | ~Tdd~  | $\ddot{T}$      | ~\ddot{T}~      |
+| ~udd~  | $\ddot{u}$      | ~\ddot{u}~      | ~Udd~  | $\ddot{U}$      | ~\ddot{U}~      |
+| ~vdd~  | $\ddot{v}$      | ~\ddot{v}~      | ~Vdd~  | $\ddot{V}$      | ~\ddot{V}~      |
+| ~wdd~  | $\ddot{w}$      | ~\ddot{w}~      | ~Wdd~  | $\ddot{W}$      | ~\ddot{W}~      |
+| ~xdd~  | $\ddot{x}$      | ~\ddot{x}~      | ~Xdd~  | $\ddot{X}$      | ~\ddot{X}~      |
+| ~ydd~  | $\ddot{y}$      | ~\ddot{y}~      | ~Ydd~  | $\ddot{Y}$      | ~\ddot{Y}~      |
+| ~zdd~  | $\ddot{z}$      | ~\ddot{z}~      | ~Zdd~  | $\ddot{Z}$      | ~\ddot{Z}~      |
+|--------+-----------------+-----------------+--------+-----------------+-----------------|
+| ~idd.~ | $\ddot{\imath}$ | ~\ddot{\imath}~ | ~jdd.~ | $\ddot{\jmath}$ | ~\ddot{\jmath}~ |
+|--------+-----------------+-----------------+--------+-----------------+-----------------|
 
 
 *  Function Expansion
