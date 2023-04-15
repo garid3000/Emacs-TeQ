@@ -18,12 +18,14 @@
     (org-return) (message "not org"))
   (insert "\\begin{equation}\n\n\\end{equation}")
   (previous-line)
+  (when (require 'org-indent nil 'noerror) (org-indent-mode 1))
   (quail-func-end))
 
 (defun quail-TeQ-aligned (key idx)
   (quail-func-init)
   (insert "\\begin{aligned}\n\n\\end{aligned}")
   (previous-line)
+  (when (require 'org-indent nil 'noerror) (org-indent-mode 1))
   (quail-func-end))
 
 (defun quail-TeQ-matrix (key idx)
@@ -31,6 +33,7 @@
   (insert "\\begin{pmatrix}\n & & \\\\ \n & & \\\\ \n & & \\\\ \n\\end{pmatrix}")
   (previous-line) (previous-line) (previous-line)
   (beginning-of-line)
+  (when (require 'org-indent nil 'noerror) (org-indent-mode 1))
   (quail-func-end))
 
 (defun quail-TeQ-case (key idx)
@@ -38,12 +41,14 @@
   (insert "\\begin{case}\n & \\text{ if } \\\\ \n & \\text{ else } \\\\ \n\\end{case}")
   (previous-line) (previous-line)
   (beginning-of-line)
+  (when (require 'org-indent nil 'noerror) (org-indent-mode 1))
   (quail-func-end))
 
 (defun quail-TeQ-endofline (key idx)
   (quail-func-init)
   (end-of-line)
   (insert "\\\\\n")
+  (when (require 'org-indent nil 'noerror) (org-indent-mode 1))
   (quail-func-end))
 
 (defun quail-TeQ-next (key idx)
