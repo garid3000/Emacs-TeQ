@@ -781,8 +781,8 @@ def format_table_to_elisp_type6col(headcomment, table):
     table = table[1:]
     for line in table:
         key, sym, trans, key1, sym, trans1 = line
-        key   = repr(key).replace("\'", "\"").replace("$", "").replace("~", "").replace("\\\\texttt{\\\\textbar}", "|").replace(" ", "")
-        key1  = repr(key1).replace("\'", "\"").replace("~", "").replace("\\\\texttt{\\\\textbar}", "|").replace(" ", "")
+        key   = repr(key).replace("\'", "\"").replace("~", "").replace("\\\\vert", "|").replace(" ", "")
+        key1  = repr(key1).replace("\'", "\"").replace("~", "").replace("\\\\vert", "|").replace(" ", "")
         trans = repr(trans).replace("\'", "\"").replace("~", "")
         trans1 = repr(trans1).replace("\'", "\"").replace("~", "")
         
@@ -793,7 +793,7 @@ def format_table_to_elisp_type3col_type1(headcomment, table):
     table = table[1:]
     for line in table:
         key,  sym, trans, description = line
-        key   = repr(key).replace("\'", "\"").replace("$", "").replace("~", "").replace("\\\\texttt{\\\\textbar}", "|").replace(" ", "")
+        key   = repr(key).replace("\'", "\"").replace("~", "").replace("\\\\vert", "|").replace(" ", "")
         trans = repr(trans).replace("\'", "\"").replace("~", "")
         
         print(f"({key:<8}  [{trans:<22}])  ; {description}")
@@ -803,7 +803,7 @@ def format_table_to_elisp_type3col_type2(headcomment, table):
     table = table[1:]
     for line in table:
         key, sym, trans, description = line
-        key   = repr(key).replace("\'", "\"").replace("$", "").replace("~", "").replace("\\\\texttt{\\\\textbar}", "|").replace(" ", "")
+        key   = repr(key).replace("\'", "\"").replace("~", "").replace("\\\\vert", "|").replace(" ", "")
         trans = trans.replace("~", "")
         
         print(f"({key:<8}  {trans:<22})  ; {description}")
@@ -1018,7 +1018,7 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("xdd"    ["\\ddot{x}"      ])  ("Xdd"    ["\\ddot{X}"      ])
 ("ydd"    ["\\ddot{y}"      ])  ("Ydd"    ["\\ddot{Y}"      ])
 ("zdd"    ["\\ddot{z}"      ])  ("Zdd"    ["\\ddot{Z}"      ])
-("idd."   ["\\dot{\\imath}" ])  ("jdd."   ["\\dot{\\jmath}" ])
+("idd."   ["\\ddot{\\imath}"])  ("jdd."   ["\\ddot{\\jmath}"])
 ;; Expanding Func
 ("/"       quail-TeQ-frac        )  ; fraction on previous
 ("eq"      quail-TeQ-equation    )  ; equation environment
@@ -1066,48 +1066,48 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("->"      ["\\rightarrow"        ])  ; 
 ("-^"      ["\\uparrow"           ])  ; ~^~ looks like up arrow head
 ("-v"      ["\\downarrow"         ])  ; ~v~ looks like down arrow head
-("<->"     ["\\leftrightarrow"    ])  ; 
-("<-n"     ["\\nleftarrow"        ])  ; negate (~n~) of prev. section
-("->n"     ["\\nrightarrow"       ])  ; arrows + _n_
-("-^n"     ["\\nuparrow"          ])  ; 
-("-vn"     ["\\ndownarrow"        ])  ; 
-("<->"     ["\\nleftrightarrow"   ])  ; 
-("-->"     ["\\longrightarrow"    ])  ; longer arrows, with 2 dashes
-("<--"     ["\\longleftarrow"     ])  ; 
-("|->"     ["\\mapsto"            ])  ; vertical-bar + ~->~  (this might rendered wrongly on Github)
+("<->"     ["\\leftrightarrow"    ])  ; Sorry, Github won't render correctly
+("<-n"     ["\\nleftarrow"        ])  ; $\leftarrow$          + ~n~  (neg)
+("->n"     ["\\nrightarrow"       ])  ; $\rightarrow$         + ~n~  (neg)
+("-^n"     ["\\nuparrow"          ])  ; $\uparrow$            + ~n~  (neg)
+("-vn"     ["\\ndownarrow"        ])  ; $\downarrow$          + ~n~  (neg)
+("<->"     ["\\nleftrightarrow"   ])  ; ...
+("-->"     ["\\longrightarrow"    ])  ; longer with 2 ~-~
+("<--"     ["\\longleftarrow"     ])  ; longer with 2 ~-~
+("mapsto"  ["\\mapsto"            ])  ; 
 ;; Symbols arrow2
-("<="      ["\\Leftarrow"         ])  ; compared to single arrrow
-("=>"      ["\\Rightarrow"        ])  ; these uses ~=~ as the arrow shaft
+("<="      ["\\Leftarrow"         ])  ; 
+("=>"      ["\\Rightarrow"        ])  ; 
 ("=^"      ["\\Uparrow"           ])  ; 
 ("=v"      ["\\Downarrow"         ])  ; 
 ("<=>"     ["\\Leftrightarrow"    ])  ; 
 ("iff"     ["\\Leftrightarrow"    ])  ; 
-("<=n"     ["\\nLeftarrow"        ])  ; negate (~n~) of prev. section
-("=>n"     ["\\nRightarrow"       ])  ; arrows + _n_
-("<=>n"    ["\\nLeftrightarrow"   ])  ; 
-("iffn"    ["\\nLeftrightarrow"   ])  ; 
-("<==>"    ["\\Longleftrightarrow"])  ; longer arrows, with 2 dashes
-("<=="     ["\\Longleftarrow"     ])  ; 
-("==>"     ["\\Longrightarrow"    ])  ; 
+("<=n"     ["\\nLeftarrow"        ])  ; $\Leftarrow$      + ~n~  (neg)
+("=>n"     ["\\nRightarrow"       ])  ; $\Rightarrow$     + ~n~  (neg)
+("<=>n"    ["\\nLeftrightarrow"   ])  ; $\Leftrightarrow$ + ~n~  (neg)
+("iffn"    ["\\nLeftrightarrow"   ])  ; $\Leftrightarrow$ + ~n~  (neg)
+("<==>"    ["\\Longleftrightarrow"])  ; longer arrows, with 2 ~==~
+("<=="     ["\\Longleftarrow"     ])  ; longer arrows, with 2 ~==~
+("==>"     ["\\Longrightarrow"    ])  ; longer arrows, with 2 ~==~
 ;; Symbols arrow3
-("<---"    ["\\xleftarrow[ ]{ }"  ])  ; these uses triple ~-~
-("--->"    ["\\xrightarrow[ ]{ }" ])  ; these uses triple ~-~
-("===>"    ["\\xRightarrow[ ]{ }" ])  ; ~mathtools~ lib required
-("<==="    ["\\xLeftarrow[ ]{ }"  ])  ; ~mathtools~ lib required
+("<---"    ["\\xleftarrow[ ]{ }"  ])  ; 3 ~-~ (On PDF this expored wrongly)
+("--->"    ["\\xrightarrow[ ]{ }" ])  ; 3 ~-~ (On PDF this expored wrongly)
+("===>"    ["\\xRightarrow[ ]{ }" ])  ; 3 ~=~, (~mathtools~ lib required)
+("<==="    ["\\xLeftarrow[ ]{ }"  ])  ; 3 ~=~, (~mathtools~ lib required)
 ;; Symbols mods
 ("vec"     ["\\vec{"              ])  ; 
 ("bar"     ["\\bar{"              ])  ; 
 ("hat"     ["\\hat{"              ])  ; 
 ("dot"     ["\\dot{"              ])  ; 
-("dot."    ["\\ddot{"             ])  ; (var)
-("dot.."   ["\\dddot{"            ])  ; (var)
-("dot..."  ["\\ddddot{"           ])  ; (var)
+("dot."    ["\\ddot{"             ])  ; $\dot{\Box}$ + ~.~  (var)
+("dot.."   ["\\dddot{"            ])  ; $\dot{\Box}$ + ~..~ (var)
+("dot..."  ["\\ddddot{"           ])  ; $\dot{\Box}$ + ~..~ (var)
 ("dag"     ["^\\dagger"           ])  ; 
-("dag."    ["^\\ddagger"          ])  ; (var)
-("*.."     ["^*"                  ])  ; 
+("dag."    ["^\\ddagger"          ])  ; $\dagger$  + ~.~ (var)
+("*."      ["^*"                  ])  ; 
 ("deg"     ["^\\circ"             ])  ; 
 ("tr"      ["^T"                  ])  ; 
-("trn"     ["^{-T}"               ])  ; (neg)
+("trn"     ["^{-T}"               ])  ; $\Box^T$ + ~n~ (neg)
 ;; Operation: arith
 ("+-"      ["\\pm"                ])  ; 
 ("-+"      ["\\mp"                ])  ; 
@@ -1138,13 +1138,13 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 (">.y"     ["\\stackrel{\\checkmark}{\\geq}"])  ; 
 ("<<y"     ["\\stackrel{\\checkmark}{\\ll}"])  ; 
 (">>y"     ["\\stackrel{\\checkmark}{\\gg}"])  ; 
-("=."      ["\\equiv"             ])  ; Variations of =
 ("sim"     ["\\sim"               ])  ; 
 ("simn"    ["\\nsim"              ])  ; 
-("=.."     ["\\approx"            ])  ; 
 ("3="      ["\\equiv"             ])  ; 
-("=:"      ["\\coloneqq"          ])  ; 
-(":="      ["\\coloneqq"          ])  ; 
+("=."      ["\\equiv"             ])  ; Variations of =
+("=.."     ["\\approx"            ])  ; 
+("=:"      ["\\coloneqq"          ])  ; requires ~mathtools~ lib
+(":="      ["\\coloneqq"          ])  ; requires ~mathtools~ lib
 ;; Operation: arith
 ("in"      ["\\in"                ])  ; 
 ("in."     ["\\ni"                ])  ; 
@@ -1201,7 +1201,7 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("asin"   ["\\arcsin"       ])  ("sinn"   ["\\arcsin"       ])
 ("atan"   ["\\arctan"       ])  ("tann"   ["\\arctan"       ])
 ;; Func: iter
-("il"      ["\\limits_{"          ])  ; (limits apparently doesn't render on Github page)
+("il"      ["\\limits_{"          ])  ; 
 ("il."     ["\\limits_{0}^{ }"    ])  ; . (var)
 ("lim"     ["\\lim"               ])  ; 
 ("sum"     ["\\sum"               ])  ; 
@@ -1211,15 +1211,15 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("intii"   ["\\iiint"             ])  ; $\int$ + ~ii~
 ("intiii"  ["\\iiiint"            ])  ; $\int$ + ~iii~
 ("into"    ["\\oint"              ])  ; $\int$ + ~o~
-("sum."    ["\\sum\\limits_{ i=1 }^{ n }"])  ; . (var)
-("prod."   ["\\prod\\limits_{ i=1 }^{ n }"])  ; . (var)
-("int."    ["\\int\\limits_{ }^{ }"])  ; . (var)
-("int.."   ["\\int\\limits_{ 0 }^{ +\\infty }"])  ; . (var)
-("int..."  ["\\int\\limits_{ -\\infty }^{ +\\infty }"])  ; . (var)
-("inti."   ["\\iint\\limits_{ }"  ])  ; . (var)
-("intii."  ["\\iiint\\limits_{ }" ])  ; . (var)
-("intiii."  ["\\iiiint\\limits_{ }"])  ; . (var)
-("into."   ["\\oint\\limits_{ }"  ])  ; . (var)
+("sum."    ["\\sum\\limits_{ i=1 }^n"])  ; $\sum$     ~.~ (var)
+("prod."   ["\\prod\\limits_{ i=1 }^n"])  ; $\prod$    ~.~ (var)
+("int."    ["\\int\\limits_{ }^{ }"])  ; $\int$     ~.~ (var)
+("int.."   ["\\int\\limits_0^\\infty"])  ; $\int$     ~..~ (var)
+("int..."  ["\\int\\limits_{ -\\infty }^{ +\\infty }"])  ; $\int$     ~...~ (var)
+("inti."   ["\\iint\\limits_{ }"  ])  ; $\int$     ~i.~ (var)
+("intii."  ["\\iiint\\limits_{ }" ])  ; $\iint$    ~ii.~ (var)
+("intiii."  ["\\iiiint\\limits_{ }"])  ; $\int$     ~iii.~ (var)
+("into."   ["\\oint\\limits_{ }"  ])  ; $\oint$     ~o.~ (var)
 ;; Func: differentials
 ("dif"    ["\\dd[ ]{"       ])  ("dif."   ["\\pd[ ]{"       ])
 ("dx"     ["\\dd{x}"        ])  ("dx."    ["\\pd{x}"        ])
@@ -1273,12 +1273,12 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("h}"      ["\\right\\}"          ])  ; half }
 ("h<"      ["\\left<"             ])  ; half <
 ("h>"      ["\\right>"            ])  ; half >
-("h.l"     ["\\left."             ])  ; half left .
-("h.r"     ["\\right."            ])  ; half right .
-("h|"      ["\\middle\\vert"      ])  ; Vertical bar related
-("|.."     ["\\Bigg\\vert_{"      ])  ; Vertical bar related
-("||."     ["\\left\\vert \\right\\vert"])  ; Vertical bar related
-("||.."    ["\\left\\Vert \\right\\Vert"])  ; Vertical bar related
+("h.l"     ["\\left."             ])  ; half  . left
+("h.r"     ["\\right."            ])  ; half  . right
+("h|"      ["\\middle\\vert"      ])  ; middle vertical bar
+("|.."     ["\\Bigg\\vert_{"      ])  ; for definite integral
+("||."     ["\\left\\vert \\right\\vert"])  ; absolute
+("||.."    ["\\left\\Vert \\right\\Vert"])  ; norm
 ;; Structural: Text
 ("te"      ["\\text{"             ])  ; (te)xt
 ("tt"      ["\\mathrm{"           ])  ; (t)ext (m)ath
