@@ -503,32 +503,32 @@
 #+caption:  
 #+name: tbl_5_op_set
 #+attr_latex: :align |llll| :placement [H]
-|---------+--------------+---------------+--------------------------|
-| key     | sym          | latex         | description              |
-|---------+--------------+---------------+--------------------------|
-| ~in~    | $\in$        | ~\in~         |                          |
-| ~in.~   | $\ni$        | ~\ni~         |                          |
-| ~ni~    | $\ni$        | ~\ni~         |                          |
-| ~inn~   | $\notin$     | ~\notin~      | (neg)                    |
-| ~0/~    | $\emptyset$  | ~\emptyset~   |                          |
-| ~nsr~   | $\mathbb{R}$ | ~\mathbb{R}~  | (n)umber (s)et (r)eal    |
-| ~nsc~   | $\mathbb{C}$ | ~\mathbb{C}~  | (n)umber (s)et (c)omplex |
-| ~nsn~   | $\mathbb{N}$ | ~\mathbb{N}~  | ...                      |
-| ~nsp~   | $\mathbb{P}$ | ~\mathbb{P}~  | ...                      |
-| ~nsz~   | $\mathbb{Z}$ | ~\mathbb{Z}~  | ...                      |
-| ~nsi~   | $\mathbb{I}$ | ~\mathbb{I}~  | ...                      |
-|---------+--------------+---------------+--------------------------|
-| ~sub~   | $\subset$    | ~\subset~     |                          |
-| ~subn~  | $\nsubseteq$ | ~\nssubseteq~ | (neg)                    |
-| ~sub.~  | $\subseteq$  | ~\subseteq~   | (var)                    |
-| ~sub.n~ | $\nsubseteq$ | ~\nsubseteq~  | (var, neg)               |
-| ~subn.~ | $\nsubseteq$ | ~\nsubseteq~  | (neg, var)               |
-| ~sup~   | $\supset$    | ~\supset~     |                          |
-| ~supn~  | $\nsupseteq$ | ~\nsupseteq~  | (neg)                    |
-| ~sup.~  | $\supseteq$  | ~\supeseteq~  | (var)                    |
-| ~sup.n~ | $\nsupseteq$ | ~\nsupseteq~  | (var, neg)               |
-| ~supn.~ | $\nsupseteq$ | ~\nsupseteq~  | (neg, var)               |
-|---------+--------------+---------------+--------------------------|
+|---------+--------------+---------------+------------------------------------|
+| key     | sym          | latex         | description                        |
+|---------+--------------+---------------+------------------------------------|
+| ~in~    | $\in$        | ~\in~         | $\in$                              |
+| ~in.~   | $\ni$        | ~\ni~         | $\in$ + ~.~  (var)                 |
+| ~ni~    | $\ni$        | ~\ni~         |                                    |
+| ~inn~   | $\notin$     | ~\notin~      | $\in$ + ~n~ (neg)                  |
+| ~0/~    | $\emptyset$  | ~\emptyset~   |                                    |
+| ~nsr~   | $\mathbb{R}$ | ~\mathbb{R}~  | (~n~)umber (~s~)et (~r~)eal        |
+| ~nsc~   | $\mathbb{C}$ | ~\mathbb{C}~  | (~n~)umber (~s~)et (~c~)omplex     |
+| ~nsn~   | $\mathbb{N}$ | ~\mathbb{N}~  | (~n~)umber (~s~)et (~n~)atural     |
+| ~nsp~   | $\mathbb{P}$ | ~\mathbb{P}~  | (~n~)umber (~s~)et (~p~)rime       |
+| ~nsz~   | $\mathbb{Z}$ | ~\mathbb{Z}~  | (~n~)umber (~s~)et (~z~)           |
+| ~nsi~   | $\mathbb{I}$ | ~\mathbb{I}~  | (~n~)umber (~s~)et (~i~)rriational |
+|---------+--------------+---------------+------------------------------------|
+| ~sub~   | $\subset$    | ~\subset~     |                                    |
+| ~subn~  | $\nsubseteq$ | ~\nssubseteq~ | $\subset$ + ~n~ (neg)              |
+| ~sub.~  | $\subseteq$  | ~\subseteq~   | $\subset$ + ~.~ (var)              |
+| ~sub.n~ | $\nsubseteq$ | ~\nsubseteq~  | $\subset$ + ~.n~ (var, neg)        |
+| ~subn.~ | $\nsubseteq$ | ~\nsubseteq~  | $\subset$ + ~n.~ (neg, var)        |
+| ~sup~   | $\supset$    | ~\supset~     |                                    |
+| ~supn~  | $\nsupseteq$ | ~\nsupseteq~  | $\supset$ + ~n~ (neg)              |
+| ~sup.~  | $\supseteq$  | ~\supeseteq~  | $\supset$ + ~.~ (var)              |
+| ~sup.n~ | $\nsupseteq$ | ~\nsupseteq~  | $\supset$ + ~.n~ (var, neg)        |
+| ~supn.~ | $\nsupseteq$ | ~\nsupseteq~  | $\supset$ + ~n.~ (neg, var)        |
+|---------+--------------+---------------+------------------------------------|
 
 **  Logic
 #+caption:  
@@ -540,9 +540,9 @@
 | ~or~   | $\lor$         | ~\lor~         |             |
 | ~and~  | $\land$        | ~\lnd~         |             |
 | ~not~  | $\neg$         | ~\neg~         |             |
-| ~or.~  | $\text{ or }$  | ~\text{ or }~  | (var)       |
-| ~and.~ | $\text{ and }$ | ~\text{ and }~ | (var)       |
-| ~not.~ | $\text{ not }$ | ~\text{ not }~ | (var)       |
+| ~or.~  | $\text{ or }$  | ~\text{ or }~  | + ~.~ (var) |
+| ~and.~ | $\text{ and }$ | ~\text{ and }~ | + ~.~ (var) |
+| ~not.~ | $\text{ not }$ | ~\text{ not }~ | + ~.~ (var) |
 |--------+----------------+----------------+-------------|
 
 
@@ -708,36 +708,36 @@ Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of d
 #+caption:  
 #+name: tbl_7_parenthesis
 #+attr_latex: :align |llll| :placement [H]
-|----------------+-------------------------------------------+---------------------------------+-----------------------|
-| key            | sym                                       | latex                           | description           |
-|----------------+-------------------------------------------+---------------------------------+-----------------------|
-| ~f()~          | $\left( \Box \right)$                     | ~\left( \right)~                |                       |
-| ~f().~         | $\left( \Box \middle\vert \Box \right)$   | ~\left( \middle\vert \right)~   |                       |
-| ~f[]~          | $\left[ \Box \right]$                     | ~\left[ \right]~                |                       |
-| ~f[].~         | $\left[ \Box \middle\vert \Box \right]$   | ~\left[ \middle\vert \right]~   | (var)                 |
-| ~f[]c~         | $\lceil \Box \rceil$                      | ~\lceil \rceil~                 | (var) (ceil)          |
-| ~f[]f~         | $\lfloor \Box \rfloor$                    | ~\lfloor \rfloor~               | (var) (floor)         |
-| ~f{}~          | $\left\{ \Box \right\}$                   | ~\left\{ \right\}~              |                       |
-| ~f{}.~         | $\left\{ \Box \middle\vert \Box \right\}$ | ~\left\{ \middle\vert \right\}~ | (var)                 |
-| ~f<>~          | $\left< \Box \right>$                     | ~\left< \right>~                |                       |
-| ~f<>.~         | $\left< \Box \middle\vert \Box \right>$   | ~\left< \middle\vert \right>~   | (var)                 |
-|----------------+-------------------------------------------+---------------------------------+-----------------------|
-| ~h(~           | $\left( \Box \right.{}$                   | ~\left(~                        | half (                |
-| ~h)~           | $\left. \Box \right)$                     | ~\right)~                       | half )                |
-| ~h[~           | $\left[ \Box \right.{}$                   | ~\left[~                        | half [                |
-| ~h]~           | $\left. \Box \right]$                     | ~\right]~                       | half ]                |
-| ~h{~           | $\left\{ \Box \right.{}$                  | ~\left\{~                       | half {                |
-| ~h}~           | $\left. \Box \right\}$                    | ~\right\}~                      | half }                |
-| ~h<~           | $\left< \Box \right.{}$                   | ~\left<~                        | half <                |
-| ~h>~           | $\left. \Box \right>$                     | ~\right>~                       | half >                |
-| ~h.l~          |                                           | ~\left.~                        | half  . left          |
-| ~h.r~          |                                           | ~\right.~                       | half  . right         |
-| ~h~ \vert      |                                           | ~\middle\vert~                  | middle vertical bar   |
-|----------------+-------------------------------------------+---------------------------------+-----------------------|
-| \vert ..       | $\Box \Bigg\vert_\Box^\Box$               | ~\Bigg\vert_{~                  | for definite integral |
-| \vert \vert .  | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~        | absolute              |
-| \vert \vert .. | $\left\Vert \Box \right\Vert$             | ~\left\Vert \right\Vert~        | norm                  |
-|----------------+-------------------------------------------+---------------------------------+-----------------------|
+|----------------+-------------------------------------------+---------------------------------+----------------------------|
+| key            | sym                                       | latex                           | description                |
+|----------------+-------------------------------------------+---------------------------------+----------------------------|
+| ~f()~          | $\left( \Box \right)$                     | ~\left( \right)~                |                            |
+| ~f().~         | $\left( \Box \middle\vert \Box \right)$   | ~\left( \middle\vert \right)~   |                            |
+| ~f[]~          | $\left[ \Box \right]$                     | ~\left[ \right]~                |                            |
+| ~f[].~         | $\left[ \Box \middle\vert \Box \right]$   | ~\left[ \middle\vert \right]~   | (var)                      |
+| ~f[]c~         | $\lceil \Box \rceil$                      | ~\lceil \rceil~                 | (var) (ceil)               |
+| ~f[]f~         | $\lfloor \Box \rfloor$                    | ~\lfloor \rfloor~               | (var) (floor)              |
+| ~f{}~          | $\left\{ \Box \right\}$                   | ~\left\{ \right\}~              |                            |
+| ~f{}.~         | $\left\{ \Box \middle\vert \Box \right\}$ | ~\left\{ \middle\vert \right\}~ | (var)                      |
+| ~f<>~          | $\left< \Box \right>$                     | ~\left< \right>~                |                            |
+| ~f<>.~         | $\left< \Box \middle\vert \Box \right>$   | ~\left< \middle\vert \right>~   | (var)                      |
+|----------------+-------------------------------------------+---------------------------------+----------------------------|
+| ~h(~           | $\left( \Box \right.{}$                   | ~\left(~                        | (~h~)alf + ~(~             |
+| ~h)~           | $\left. \Box \right)$                     | ~\right)~                       | (~h~)alf + ~)~             |
+| ~h[~           | $\left[ \Box \right.{}$                   | ~\left[~                        | (~h~)alf + ~[~             |
+| ~h]~           | $\left. \Box \right]$                     | ~\right]~                       | (~h~)alf + ~]~             |
+| ~h{~           | $\left\{ \Box \right.{}$                  | ~\left\{~                       | (~h~)alf + ~{~             |
+| ~h}~           | $\left. \Box \right\}$                    | ~\right\}~                      | (~h~)alf + ~}~             |
+| ~h<~           | $\left< \Box \right.{}$                   | ~\left<~                        | (~h~)alf + ~<~             |
+| ~h>~           | $\left. \Box \right>$                     | ~\right>~                       | (~h~)alf + ~>~             |
+| ~h.l~          |                                           | ~\left.~                        | (~h~)alf + ~.~ + (~l~)eft  |
+| ~h.r~          |                                           | ~\right.~                       | (~h~)alf + ~.~ + (~r~)ight |
+| ~h~ \vert      |                                           | ~\middle\vert~                  | middle vertical bar        |
+|----------------+-------------------------------------------+---------------------------------+----------------------------|
+| \vert .        | $\Box \Bigg\vert_\Box^\Box$               | ~\Bigg\vert_{~                  | for definite integral      |
+| \vert \vert .  | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~        | absolute                   |
+| \vert \vert .. | $\left\Vert \Box \right\Vert$             | ~\left\Vert \right\Vert~        | norm                       |
+|----------------+-------------------------------------------+---------------------------------+----------------------------|
 
 **  Texts:
 #+caption:  
