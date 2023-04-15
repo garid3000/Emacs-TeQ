@@ -33,6 +33,13 @@
   (beginning-of-line)
   (quail-func-end))
 
+(defun quail-TeQ-case (key idx)
+  (quail-func-init)
+  (insert "\\begin{case}\n & \\text{ if } \\\\ \n & \\text{ else } \\\\ \n\\end{case}")
+  (previous-line) (previous-line)
+  (beginning-of-line)
+  (quail-func-end))
+
 (defun quail-TeQ-endofline (key idx)
   (quail-func-init)
   (end-of-line)
@@ -259,6 +266,7 @@
     ("/"       quail-TeQ-frac        )  ; fraction on previous
     ("eq"      quail-TeQ-equation    )  ; equation environment
     ("mat"     quail-TeQ-matrix      )  ; pmatrix environment
+    ("case"    quail-TeQ-case        )  ; case environment
     ("al"      quail-TeQ-aligned     )  ; aligned environment
     ("el"      quail-TeQ-endofline   )  ; end of line
     ("gg"      quail-TeQ-next        )  ; go to next space
