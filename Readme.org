@@ -723,7 +723,7 @@ Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of d
 | ~h.r~          |                                           | ~\right.~                       | half right .         |
 | ~h~ \vert      |                                           | ~\middle\vert~                  | Vertical bar related |
 |----------------+-------------------------------------------+---------------------------------+----------------------|
-| \vert ..       | $\Box \vert_{\Box}^{\Box}$                | ~\Bigg\vert_{~                  | Vertical bar related |
+| \vert ..       | $\Box \vert_\Box^\Box$                    | ~\Bigg\vert_{~                  | Vertical bar related |
 | \vert \vert .  | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~        | Vertical bar related |
 | \vert \vert .. | $\left\Vert \Box \right\Vert$             | ~\left\Vert \right\Vert~        | Vertical bar related |
 |----------------+-------------------------------------------+---------------------------------+----------------------|
