@@ -517,12 +517,12 @@
     ("||.."    ["\\left\\Vert \\right\\Vert"])  ; Vertical bar related
     ;; Structural: Text
     ("te"      ["\\text{"             ])  ; (te)xt
-    ("tm"      ["\\mathrm{"           ])  ; (t)ext (m)ath
+    ("tt"      ["\\mathrm{"           ])  ; (t)ext (m)ath
     ("tb"      ["\\mathbf{"           ])  ; (t)ext (b)old
     ("ti"      ["\\mathit{"           ])  ; (t)ext (i)talics
     ;; Structural: Text
     ("te"      ["\\text{"             ])  ; (te)xt
-    ("tm"      ["\\mathrm{"           ])  ; (t)ext (m)ath
+    ("tt"      ["\\mathrm{"           ])  ; (t)ext (m)ath
     ("tb"      ["\\mathbf{"           ])  ; (t)ext (b)old
     ("ti"      ["\\mathit{"           ])  ; (t)ext (i)talics
     ;; Structural: Sub-sup-scripts

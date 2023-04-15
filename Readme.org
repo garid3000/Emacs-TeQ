@@ -736,7 +736,7 @@ Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of d
 | key  | sym                      | latex      | description      |
 |------+--------------------------+------------+------------------|
 | ~te~ | $\Box + \text{text}$     | ~\text{~   | (te)xt           |
-| ~tm~ | $\Box + \mathrm{mathrm}$ | ~\mathrm{~ | (t)ext (m)ath    |
+| ~tt~ | $\Box + \mathrm{mathrm}$ | ~\mathrm{~ | (t)ext (m)ath    |
 | ~tb~ | $\Box + \mathbf{mathbf}$ | ~\mathbf{~ | (t)ext (b)old    |
 | ~ti~ | $\Box + \mathit{mathit}$ | ~\mathit{~ | (t)ext (i)talics |
 |------+--------------------------+------------+------------------|
@@ -1280,12 +1280,12 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("||.."    ["\\left\\Vert \\right\\Vert"])  ; Vertical bar related
 ;; Structural: Text
 ("te"      ["\\text{"             ])  ; (te)xt
-("tm"      ["\\mathrm{"           ])  ; (t)ext (m)ath
+("tt"      ["\\mathrm{"           ])  ; (t)ext (m)ath
 ("tb"      ["\\mathbf{"           ])  ; (t)ext (b)old
 ("ti"      ["\\mathit{"           ])  ; (t)ext (i)talics
 ;; Structural: Text
 ("te"      ["\\text{"             ])  ; (te)xt
-("tm"      ["\\mathrm{"           ])  ; (t)ext (m)ath
+("tt"      ["\\mathrm{"           ])  ; (t)ext (m)ath
 ("tb"      ["\\mathbf{"           ])  ; (t)ext (b)old
 ("ti"      ["\\mathit{"           ])  ; (t)ext (i)talics
 ;; Structural: Sub-sup-scripts
