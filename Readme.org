@@ -327,26 +327,26 @@
 #+caption: Single Line arrows
 #+name: tbl-3-sym-arrow-1
 #+attr_latex: :align |llll| :placement [H]
-|--------------------------+-----------------------+--------------------+--------------------------------------------------------------|
-| key                      | sym                   | latex              | description                                                  |
-|--------------------------+-----------------------+--------------------+--------------------------------------------------------------|
-| ~<-~                     | $\leftarrow$          | ~\leftarrow~       |                                                              |
-| ~->~                     | $\rightarrow$         | ~\rightarrow~      |                                                              |
-| ~-^~                     | $\uparrow$            | ~\uparrow~         | ~^~ looks like up arrow head                                 |
-| ~-v~                     | $\downarrow$          | ~\downarrow~       | ~v~ looks like down arrow head                               |
-| ~<->~                    | \( \leftrightarrow \) | ~\leftrightarrow~  |                                                              |
-|--------------------------+-----------------------+--------------------+--------------------------------------------------------------|
-| ~<-n~                    | $\nleftarrow$         | ~\nleftarrow~      | negate (~n~) of prev. section                                |
-| ~->n~                    | $\nrightarrow$        | ~\nrightarrow~     | arrows + _n_                                                 |
-| ~-^n~                    | $\nuparrow$           | ~\nuparrow~        |                                                              |
-| ~-vn~                    | $\ndownarrow$         | ~\ndownarrow~      |                                                              |
-| ~<->~                    | $\nleftrightarrow$    | ~\nleftrightarrow~ |                                                              |
-|--------------------------+-----------------------+--------------------+--------------------------------------------------------------|
-| ~-->~                    | $\longrightarrow$     | ~\longrightarrow~  | longer arrows, with 2 dashes                                 |
-| ~<--~                    | $\longleftarrow$      | ~\longleftarrow~   |                                                              |
-|--------------------------+-----------------------+--------------------+--------------------------------------------------------------|
-| $\texttt{\textbar}$ ~->~ | $\mapsto$             | ~\mapsto~          | vertical-bar + ~->~  (this might rendered wrongly on Github) |
-|--------------------------+-----------------------+--------------------+--------------------------------------------------------------|
+|----------+--------------------+--------------------+--------------------------------|
+| key      | sym                | latex              | description                    |
+|----------+--------------------+--------------------+--------------------------------|
+| ~<-~     | $\leftarrow$       | ~\leftarrow~       |                                |
+| ~->~     | $\rightarrow$      | ~\rightarrow~      |                                |
+| ~-^~     | $\uparrow$         | ~\uparrow~         | ~^~ looks like up arrow head   |
+| ~-v~     | $\downarrow$       | ~\downarrow~       | ~v~ looks like down arrow head |
+| ~<->~    | $\leftrightarrow$  | ~\leftrightarrow~  |                                |
+|----------+--------------------+--------------------+--------------------------------|
+| ~<-n~    | $\nleftarrow$      | ~\nleftarrow~      | negate (~n~) of prev. section  |
+| ~->n~    | $\nrightarrow$     | ~\nrightarrow~     | arrows + _n_                   |
+| ~-^n~    | $\nuparrow$        | ~\nuparrow~        |                                |
+| ~-vn~    | $\ndownarrow$      | ~\ndownarrow~      |                                |
+| ~<->~    | $\nleftrightarrow$ | ~\nleftrightarrow~ |                                |
+|----------+--------------------+--------------------+--------------------------------|
+| ~-->~    | $\longrightarrow$  | ~\longrightarrow~  | longer arrows, with 2 dashes   |
+| ~<--~    | $\longleftarrow$   | ~\longleftarrow~   |                                |
+|----------+--------------------+--------------------+--------------------------------|
+| ~mapsto~ | $\mapsto$          | ~\mapsto~          |                                |
+|----------+--------------------+--------------------+--------------------------------|
 
 *** Double:
 #+caption: Double Line arrows
