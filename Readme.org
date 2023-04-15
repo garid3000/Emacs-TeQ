@@ -650,27 +650,27 @@ Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of d
 #+caption: Derivatives
 #+name: tbl_6_func_deriv
 #+attr_latex: :align |lll|lll| :placement [H]
-|--------+------------------------+-------------+---------+-------------------------+--------------|
-| key    | sym                    | latex       | key     | sym                     | latex        |
-|--------+------------------------+-------------+---------+-------------------------+--------------|
-| ~df~   | $\dv[\Box]{\Box} \Box$ | ~\dv[ ]{ }~ | ~df.~   | $\pdv[\Box]{\Box} \Box$ | ~\pdv[ ]{ }~ |
-| ~dfx~  | $\dv{x }    \Box$      | ~\dv{x}~    | ~df.x~  | $\pdv{x }    \Box$      | ~\pdv{x}~    |
-| ~dfy~  | $\dv{y}    \Box$       | ~\dv{y}~    | ~df.y~  | $\pdv{y}    \Box$       | ~\pdv{y}~    |
-| ~dfz~  | $\dv{z}    \Box$       | ~\dv{z}~    | ~df.z~  | $\pdv{z}    \Box$       | ~\pdv{z}~    |
-| ~dft~  | $\dv{t}    \Box$       | ~\dv{t}~    | ~df.t~  | $\pdv{t}    \Box$       | ~\pdv{t}~    |
-|--------+------------------------+-------------+---------+-------------------------+--------------|
-| ~df2~  | $\dv[2]{\Box} \Box$    | ~\dv[2]{ }~ | ~df.2~  | $\pdv[2]{\Box} \Box$    | ~\pdv[2]{ }~ |
-| ~dfx2~ | $\dv[2]{ x } \Box$     | ~\dv[2]{x}~ | ~df.x2~ | $\pdv[2]{ x } \Box$     | ~\pdv[2]{x}~ |
-| ~dfy2~ | $\dv[2]{y} \Box$       | ~\dv[2]{y}~ | ~df.y2~ | $\pdv[2]{y} \Box$       | ~\pdv[2]{y}~ |
-| ~dfz2~ | $\dv[2]{z} \Box$       | ~\dv[2]{z}~ | ~df.z2~ | $\pdv[2]{z} \Box$       | ~\pdv[2]{z}~ |
-| ~dft2~ | $\dv[2]{t} \Box$       | ~\dv[2]{t}~ | ~df.t2~ | $\pdv[2]{t} \Box$       | ~\pdv[2]{t}~ |
-|--------+------------------------+-------------+---------+-------------------------+--------------|
-| ~df3~  | $\dv[3]{\Box} \Box$    | ~\dv[3]{ }~ | ~df.3~  | $\pdv[3]{\Box} \Box$    | ~\pdv[3]{ }~ |
-| ~dfx3~ | $\dv[3]{ x } \Box$     | ~\dv[3]{x}~ | ~df.x3~ | $\pdv[3]{ x } \Box$     | ~\pdv[3]{x}~ |
-| ~dfy3~ | $\dv[3]{y} \Box$       | ~\dv[3]{y}~ | ~df.y3~ | $\pdv[3]{y} \Box$       | ~\pdv[3]{y}~ |
-| ~dfz3~ | $\dv[3]{z} \Box$       | ~\dv[3]{z}~ | ~df.z3~ | $\pdv[3]{z} \Box$       | ~\pdv[3]{z}~ |
-| ~dft3~ | $\dv[3]{t} \Box$       | ~\dv[3]{t}~ | ~df.t3~ | $\pdv[3]{t} \Box$       | ~\pdv[3]{t}~ |
-|--------+------------------------+-------------+---------+-------------------------+--------------|
+|--------+-----------------------------------------------------+-------------+---------+-------------------------------------------------+--------------|
+| key    | sym                                                 | latex       | key     | sym                                             | latex        |
+|--------+-----------------------------------------------------+-------------+---------+-------------------------------------------------+--------------|
+| ~df~   | $\frac{\mathrm{d}^{\Box}}{\mathrm{d}{\Box}^{\Box}}$ | ~\dv[ ]{ }~ | ~df.~   | $\frac{\partial^{\Box}}{\partial{\Box}^{\Box}}$ | ~\pdv[ ]{ }~ |
+| ~dfx~  | $\frac{\mathrm{d}}{\mathrm{d}x}$                    | ~\dv{x}~    | ~df.x~  | $\frac{\partial}{\partial x}$                   | ~\pdv{x}~    |
+| ~dfy~  | $\frac{\mathrm{d}}{\mathrm{d}y}$                    | ~\dv{y}~    | ~df.y~  | $\frac{\partial}{\partial y}$                   | ~\pdv{y}~    |
+| ~dfz~  | $\frac{\mathrm{d}}{\mathrm{d}z}$                    | ~\dv{z}~    | ~df.z~  | $\frac{\partial}{\partial z}$                   | ~\pdv{z}~    |
+| ~dft~  | $\frac{\mathrm{d}}{\mathrm{d}t}$                    | ~\dv{t}~    | ~df.t~  | $\frac{\partial}{\partial t}$                   | ~\pdv{t}~    |
+|--------+-----------------------------------------------------+-------------+---------+-------------------------------------------------+--------------|
+| ~df2~  | $\frac{\mathrm{d}^{2}}{\mathrm{d}{\Box}^{2}}$       | ~\dv[2]{ }~ | ~df.2~  | $\frac{\partial^{2}}{\partial{\Box}^{2}}$       | ~\pdv[2]{ }~ |
+| ~dfx2~ | $\frac{\mathrm{d}^{2}}{\mathrm{d}x^{2}}$            | ~\dv[2]{x}~ | ~df.x2~ | $\frac{\partial^{2}}{\partial x^{2}}$           | ~\pdv[2]{x}~ |
+| ~dfy2~ | $\frac{\mathrm{d}^{2}}{\mathrm{d}y^{2}}$            | ~\dv[2]{y}~ | ~df.y2~ | $\frac{\partial^{2}}{\partial y^{2}}$           | ~\pdv[2]{y}~ |
+| ~dfz2~ | $\frac{\mathrm{d}^{2}}{\mathrm{d}z^{2}}$            | ~\dv[2]{z}~ | ~df.z2~ | $\frac{\partial^{2}}{\partial z^{2}}$           | ~\pdv[2]{z}~ |
+| ~dft2~ | $\frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}$            | ~\dv[2]{t}~ | ~df.t2~ | $\frac{\partial^{2}}{\partial t^{2}}$           | ~\pdv[2]{t}~ |
+|--------+-----------------------------------------------------+-------------+---------+-------------------------------------------------+--------------|
+| ~df3~  | $\frac{\mathrm{d}^{3}}{\mathrm{d}{\Box}^{3}}$       | ~\dv[3]{ }~ | ~df.3~  | $\frac{\partial^{3}}{\partial{\Box}^{3}}$       | ~\pdv[3]{ }~ |
+| ~dfx3~ | $\frac{\mathrm{d}^{3}}{\mathrm{d}x^{3}}$            | ~\dv[3]{x}~ | ~df.x3~ | $\frac{\partial^{3}}{\partial x^{3}}$           | ~\pdv[3]{x}~ |
+| ~dfy3~ | $\frac{\mathrm{d}^{3}}{\mathrm{d}y^{3}}$            | ~\dv[3]{y}~ | ~df.y3~ | $\frac{\partial^{3}}{\partial y^{3}}$           | ~\pdv[3]{y}~ |
+| ~dfz3~ | $\frac{\mathrm{d}^{3}}{\mathrm{d}z^{3}}$            | ~\dv[3]{z}~ | ~df.z3~ | $\frac{\partial^{3}}{\partial z^{3}}$           | ~\pdv[3]{z}~ |
+| ~dft3~ | $\frac{\mathrm{d}^{3}}{\mathrm{d}t^{3}}$            | ~\dv[3]{t}~ | ~df.t3~ | $\frac{\partial^{3}}{\partial t^{3}}$           | ~\pdv[3]{t}~ |
+|--------+-----------------------------------------------------+-------------+---------+-------------------------------------------------+--------------|
 
 **  Definition of differential and derivatives command in latex
 :PROPERTIES:
@@ -697,36 +697,36 @@ Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of d
 #+caption:  
 #+name: tbl_7_parenthesis
 #+attr_latex: :align |llll| :placement [H]
-|----------------+-------------------------------------------+---------------------------------+----------------------|
-| key            | sym                                       | latex                           | description          |
-|----------------+-------------------------------------------+---------------------------------+----------------------|
-| ~f()~          | $\left( \Box \right)$                     | ~\left( \right)~                |                      |
-| ~f().~         | $\left( \Box \middle\vert \Box \right)$   | ~\left( \middle\vert \right)~   |                      |
-| ~f[]~          | $\left[ \Box \right]$                     | ~\left[ \right]~                |                      |
-| ~f[].~         | $\left[ \Box \middle\vert \Box \right]$   | ~\left[ \middle\vert \right]~   | (var)                |
-| ~f[]c~         | $\lceil \Box \rceil$                      | ~\lceil \rceil~                 | (var) (ceil)         |
-| ~f[]f~         | $\lfloor \Box \rfloor$                    | ~\lfloor \rfloor~               | (var) (floor)        |
-| ~f{}~          | $\left\{ \Box \right\}$                   | ~\left\{ \right\}~              |                      |
-| ~f{}.~         | $\left\{ \Box \middle\vert \Box \right\}$ | ~\left\{ \middle\vert \right\}~ | (var)                |
-| ~f<>~          | $\left< \Box \right>$                     | ~\left< \right>~                |                      |
-| ~f<>.~         | $\left< \Box \middle\vert \Box \right>$   | ~\left< \middle\vert \right>~   | (var)                |
-|----------------+-------------------------------------------+---------------------------------+----------------------|
-| ~h(~           | $\left( \Box \right.{}$                   | ~\left(~                        | half (               |
-| ~h)~           | $\left. \Box \right)$                     | ~\right)~                       | half )               |
-| ~h[~           | $\left[ \Box \right.{}$                   | ~\left[~                        | half [               |
-| ~h]~           | $\left. \Box \right]$                     | ~\right]~                       | half ]               |
-| ~h{~           | $\left\{ \Box \right.{}$                  | ~\left\{~                       | half {               |
-| ~h}~           | $\left. \Box \right\}$                    | ~\right\}~                      | half }               |
-| ~h<~           | $\left< \Box \right.{}$                   | ~\left<~                        | half <               |
-| ~h>~           | $\left. \Box \right>$                     | ~\right>~                       | half >               |
-| ~h.l~          |                                           | ~\left.~                        | half  . left         |
-| ~h.r~          |                                           | ~\right.~                       | half  . right        |
-| ~h~ \vert      |                                           | ~\middle\vert~                  | middle vertical bar  |
-|----------------+-------------------------------------------+---------------------------------+----------------------|
-| \vert ..       | $\Box \Bigg\vert_\Box^\Box$              | ~\Bigg\vert_{~                  | Vertical bar related |
-| \vert \vert .  | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~        | Vertical bar related |
-| \vert \vert .. | $\left\Vert \Box \right\Vert$             | ~\left\Vert \right\Vert~        | Vertical bar related |
-|----------------+-------------------------------------------+---------------------------------+----------------------|
+|----------------+-------------------------------------------+---------------------------------+-----------------------|
+| key            | sym                                       | latex                           | description           |
+|----------------+-------------------------------------------+---------------------------------+-----------------------|
+| ~f()~          | $\left( \Box \right)$                     | ~\left( \right)~                |                       |
+| ~f().~         | $\left( \Box \middle\vert \Box \right)$   | ~\left( \middle\vert \right)~   |                       |
+| ~f[]~          | $\left[ \Box \right]$                     | ~\left[ \right]~                |                       |
+| ~f[].~         | $\left[ \Box \middle\vert \Box \right]$   | ~\left[ \middle\vert \right]~   | (var)                 |
+| ~f[]c~         | $\lceil \Box \rceil$                      | ~\lceil \rceil~                 | (var) (ceil)          |
+| ~f[]f~         | $\lfloor \Box \rfloor$                    | ~\lfloor \rfloor~               | (var) (floor)         |
+| ~f{}~          | $\left\{ \Box \right\}$                   | ~\left\{ \right\}~              |                       |
+| ~f{}.~         | $\left\{ \Box \middle\vert \Box \right\}$ | ~\left\{ \middle\vert \right\}~ | (var)                 |
+| ~f<>~          | $\left< \Box \right>$                     | ~\left< \right>~                |                       |
+| ~f<>.~         | $\left< \Box \middle\vert \Box \right>$   | ~\left< \middle\vert \right>~   | (var)                 |
+|----------------+-------------------------------------------+---------------------------------+-----------------------|
+| ~h(~           | $\left( \Box \right.{}$                   | ~\left(~                        | half (                |
+| ~h)~           | $\left. \Box \right)$                     | ~\right)~                       | half )                |
+| ~h[~           | $\left[ \Box \right.{}$                   | ~\left[~                        | half [                |
+| ~h]~           | $\left. \Box \right]$                     | ~\right]~                       | half ]                |
+| ~h{~           | $\left\{ \Box \right.{}$                  | ~\left\{~                       | half {                |
+| ~h}~           | $\left. \Box \right\}$                    | ~\right\}~                      | half }                |
+| ~h<~           | $\left< \Box \right.{}$                   | ~\left<~                        | half <                |
+| ~h>~           | $\left. \Box \right>$                     | ~\right>~                       | half >                |
+| ~h.l~          |                                           | ~\left.~                        | half  . left          |
+| ~h.r~          |                                           | ~\right.~                       | half  . right         |
+| ~h~ \vert      |                                           | ~\middle\vert~                  | middle vertical bar   |
+|----------------+-------------------------------------------+---------------------------------+-----------------------|
+| \vert ..       | $\Box \Bigg\vert_\Box^\Box$               | ~\Bigg\vert_{~                  | for definite integral |
+| \vert \vert .  | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~        | absolute              |
+| \vert \vert .. | $\left\Vert \Box \right\Vert$             | ~\left\Vert \right\Vert~        | norm                  |
+|----------------+-------------------------------------------+---------------------------------+-----------------------|
 
 **  Texts:
 #+caption:  
