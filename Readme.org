@@ -277,7 +277,7 @@
 | key     | sym                  | latex                | description                   |
 |---------+----------------------+----------------------+-------------------------------|
 | ~perp~  | $\perp$              | ~\perp~              |                               |
-| ~perpn~ | $\not\perp$          | ~\not\perp~          | $\perp$  ~n~ (neg)            |
+| ~perpn~ | $\cancel{\perp}$     | ~\not\perp~          | $\perp$  ~n~ (neg)            |
 | ~para~  | $\parallel$          | ~\parallel~          |                               |
 | ~paran~ | $\nparallel$         | ~\nparallel~         | $\parallel$ ~n~  (neg)        |
 | ~ang~   | $\angle$             | ~\angle~             |                               |
@@ -287,7 +287,7 @@
 | ~tri.~  | $\triangledown$      | ~\triangledown~      | $\vartriangle$ ~n~ (neg)      |
 | ~squ~   | $\square$            | ~\square~            |                               |
 | ~trin~  | $\blacktriangle$     | ~\blacktriangle~     | $\vartriangle$ ~.~ (var)      |
-| ~tri.n~ | $\blacktriangledown$ | ~\blacktriangledown~ | $\vartriangle$ ~n.~ (neg,var) |
+| ~tri.n~ | $\blacktriangledown$ | ~\blacktriangledown~ | $\vartriangle$ ~.n~ (neg,var) |
 | ~trin.~ | $\blacktriangledown$ | ~\blacktriangledown~ | $\vartriangle$ ~n.~ (neg,var) |
 | ~squn~  | $\blacksquare$       | ~\blacksquare~       | $\square$ ~.~ (var)           |
 |---------+----------------------+----------------------+-------------------------------|
