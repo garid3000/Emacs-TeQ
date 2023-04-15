@@ -736,7 +736,7 @@ Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of d
 | key  | sym                      | latex      | description      |
 |------+--------------------------+------------+------------------|
 | ~te~ | $\Box + \text{text}$     | ~\text{~   | (te)xt           |
-| ~tr~ | $\Box + \mathrm{mathrm}$ | ~\mathrm{~ | (t)ext (r)oman   |
+| ~tm~ | $\Box + \mathrm{mathrm}$ | ~\mathrm{~ | (t)ext (m)ath    |
 | ~tb~ | $\Box + \mathbf{mathbf}$ | ~\mathbf{~ | (t)ext (b)old    |
 | ~ti~ | $\Box + \mathit{mathit}$ | ~\mathit{~ | (t)ext (i)talics |
 |------+--------------------------+------------+------------------|
@@ -752,7 +752,7 @@ Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of d
 | ~box~   | $\boxed{\Box}$       | ~\boxed{~      | Putting box around object |
 | ~ff~    | $\frac{\Box}{\Box}$  | ~\frac{~       | Fractions                 |
 | ~can~   | $\cancel{\Box}$      | ~\cancel{~     |                           |
-| ~==~    |                      | ~&=\n~         | helps in align env.       |
+| ~==~    |                      | ~&=~           | helps in align env.       |
 |---------+----------------------+----------------+---------------------------|
 
 **  xy Diagram related
@@ -1093,7 +1093,7 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("--->"    ["\\xrightarrow[ ]{ }" ])  ; these uses triple ~-~
 ("===>"    ["\\xRightarrow[ ]{ }" ])  ; ~mathtools~ lib required
 ("<==="    ["\\xLeftarrow[ ]{ }"  ])  ; ~mathtools~ lib required
-;; Symbols arrow3
+;; Symbols mods
 ("vec"     ["\\vec{"              ])  ; 
 ("bar"     ["\\bar{"              ])  ; 
 ("hat"     ["\\hat{"              ])  ; 
@@ -1219,23 +1219,40 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("intii."  ["\\iiint\\limits_{ }" ])  ; . (var)
 ("intiii."  ["\\iiiint\\limits_{ }"])  ; . (var)
 ("into."   ["\\oint\\limits_{ }"  ])  ; . (var)
-;; Func: iter
-("dx"      ["\\mathrm{d}x"        ])  ; 
-("dy"      ["\\mathrm{d}y"        ])  ; 
-("dz"      ["\\mathrm{d}z"        ])  ; 
-("dt"      ["\\mathrm{d}t"        ])  ; 
-("dx."     ["\\partial x"         ])  ; $\mathrm{d} x$  + _._ (var)
-("dy."     ["\\partial y"         ])  ; $\mathrm{d} y$  + _._ (var)
-("dz."     ["\\partial z"         ])  ; $\mathrm{d} z$  + _._ (var)
-("dt."     ["\\partial t"         ])  ; $\mathrm{d} t$  + _._ (var)
-("df"      ["\\frac{\\mathrm{d}}{\\mathrm{d} x}"])  ; 
-("df2"     ["\\frac{\\mathrm{d}^2}{\\mathrm{d}^2 x}"])  ; $\frac{\mathrm{d}}{\mathrm{d} x}$ + 2
-("df3"     ["\\frac{\\mathrm{d}^3}{\\mathrm{d}^3 x}"])  ; $\frac{\mathrm{d}}{\mathrm{d} x}$ + 3
-("df4"     ["\\frac{\\mathrm{d}^4}{\\mathrm{d}^4 x}"])  ; $\frac{\mathrm{d}}{\mathrm{d} x}$ + 4
-("df."     ["\\frac{\\partial}{\\partial x}"])  ; $\frac{\mathrm{d}}{\mathrm{d} x}$  + .(var)
-("df.2"    ["\\frac{\\partial^2}{\\partial^2 x}"])  ; $\frac{\mathrm{d}}{\mathrm{d} x}$  + .(var) + 2
-("df.3"    ["\\frac{\\partial^3}{\\partial^3 x}"])  ; $\frac{\mathrm{d}}{\mathrm{d} x}$  + .(var) + 3
-("df.4"    ["\\frac{\\partial^4}{\\partial^4 x}"])  ; $\frac{\mathrm{d}}{\mathrm{d} x}$  + .(var) + 4
+;; Func: differentials
+("dif"    ["\\dd[ ]{"       ])  ("dif."   ["\\pd[ ]{"       ])
+("dx"     ["\\dd{x}"        ])  ("dx."    ["\\pd{x}"        ])
+("dy"     ["\\dd{y}"        ])  ("dy."    ["\\pd{y}"        ])
+("dz"     ["\\dd{z}"        ])  ("dz."    ["\\pd{z}"        ])
+("dt"     ["\\dd{t}"        ])  ("dt."    ["\\pd{t}"        ])
+("dx2"    ["\\dd[2]{x}"     ])  ("dx.2"   ["\\pd[2]{x}"     ])
+("dy2"    ["\\dd[2]{y}"     ])  ("dy.2"   ["\\pd[2]{y}"     ])
+("dz2"    ["\\dd[2]{z}"     ])  ("dz.2"   ["\\pd[2]{z}"     ])
+("dt2"    ["\\dd[2]{t}"     ])  ("dt.2"   ["\\pd[2]{t}"     ])
+("dx3"    ["\\dd[3]{x}"     ])  ("dx.3"   ["\\pd[3]{x}"     ])
+("dy3"    ["\\dd[3]{y}"     ])  ("dy.3"   ["\\pd[3]{y}"     ])
+("dz3"    ["\\dd[3]{z}"     ])  ("dz.3"   ["\\pd[3]{z}"     ])
+("dt3"    ["\\dd[3]{t}"     ])  ("dt.3"   ["\\pd[3]{t}"     ])
+("dxn"    ["\\dd[n]{x}"     ])  ("dx.n"   ["\\pd[n]{x}"     ])
+("dyn"    ["\\dd[n]{y}"     ])  ("dy.n"   ["\\pd[n]{y}"     ])
+("dzn"    ["\\dd[n]{z}"     ])  ("dz.n"   ["\\pd[n]{z}"     ])
+("dtn"    ["\\dd[n]{t}"     ])  ("dt.n"   ["\\pd[n]{t}"     ])
+;; Func: derivatives
+("df"     ["\\dv[ ]{ }"     ])  ("df."    ["\\pdv[ ]{ }"    ])
+("dfx"    ["\\dv{x}"        ])  ("df.x"   ["\\pdv{x}"       ])
+("dfy"    ["\\dv{y}"        ])  ("df.y"   ["\\pdv{y}"       ])
+("dfz"    ["\\dv{z}"        ])  ("df.z"   ["\\pdv{z}"       ])
+("dft"    ["\\dv{t}"        ])  ("df.t"   ["\\pdv{t}"       ])
+("df2"    ["\\dv[2]{ }"     ])  ("df.2"   ["\\pdv[2]{ }"    ])
+("dfx2"   ["\\dv[2]{x}"     ])  ("df.x2"  ["\\pdv[2]{x}"    ])
+("dfy2"   ["\\dv[2]{y}"     ])  ("df.y2"  ["\\pdv[2]{y}"    ])
+("dfz2"   ["\\dv[2]{z}"     ])  ("df.z2"  ["\\pdv[2]{z}"    ])
+("dft2"   ["\\dv[2]{t}"     ])  ("df.t2"  ["\\pdv[2]{t}"    ])
+("df3"    ["\\dv[3]{ }"     ])  ("df.3"   ["\\pdv[3]{ }"    ])
+("dfx3"   ["\\dv[3]{x}"     ])  ("df.x3"  ["\\pdv[3]{x}"    ])
+("dfy3"   ["\\dv[3]{y}"     ])  ("df.y3"  ["\\pdv[3]{y}"    ])
+("dfz3"   ["\\dv[3]{z}"     ])  ("df.z3"  ["\\pdv[3]{z}"    ])
+("dft3"   ["\\dv[3]{t}"     ])  ("df.t3"  ["\\pdv[3]{t}"    ])
 ;; Structural: Parenthesis
 ("f()"     ["\\left( \\right)"    ])  ; 
 ("f()."    ["\\left( \\middle\\vert \\right)"])  ; 
@@ -1247,28 +1264,28 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("f{}."    ["\\left\\{ \\middle\\vert \\right\\}"])  ; (var)
 ("f<>"     ["\\left< \\right>"    ])  ; 
 ("f<>."    ["\\left< \\middle\\vert \\right>"])  ; (var)
-("l("      ["\\left("             ])  ; half (
-("r)"      ["\\right)"            ])  ; half )
-("l["      ["\\left["             ])  ; half [
-("r]"      ["\\right]"            ])  ; half ]
-("l{"      ["\\left\\{"           ])  ; half {
-("r}"      ["\\right\\}"          ])  ; half }
-("l<"      ["\\left<"             ])  ; half <
-("r>"      ["\\right>"            ])  ; half >
-("l.."     ["\\left."             ])  ; half left .
-("r.."     ["\\right."            ])  ; half right .
-("m|"      ["\\middle\\vert"      ])  ; Vertical bar related
+("h("      ["\\left("             ])  ; half (
+("h)"      ["\\right)"            ])  ; half )
+("h["      ["\\left["             ])  ; half [
+("h]"      ["\\right]"            ])  ; half ]
+("h{"      ["\\left\\{"           ])  ; half {
+("h}"      ["\\right\\}"          ])  ; half }
+("h<"      ["\\left<"             ])  ; half <
+("h>"      ["\\right>"            ])  ; half >
+("h.l"     ["\\left."             ])  ; half left .
+("h.r"     ["\\right."            ])  ; half right .
+("h|"      ["\\middle\\vert"      ])  ; Vertical bar related
 ("|.."     ["\\Bigg\\vert_{"      ])  ; Vertical bar related
 ("||."     ["\\left\\vert \\right\\vert"])  ; Vertical bar related
 ("||.."    ["\\left\\Vert \\right\\Vert"])  ; Vertical bar related
 ;; Structural: Text
 ("te"      ["\\text{"             ])  ; (te)xt
-("tr"      ["\\mathrm{"           ])  ; (t)ext (r)oman
+("tm"      ["\\mathrm{"           ])  ; (t)ext (m)ath
 ("tb"      ["\\mathbf{"           ])  ; (t)ext (b)old
 ("ti"      ["\\mathit{"           ])  ; (t)ext (i)talics
 ;; Structural: Text
 ("te"      ["\\text{"             ])  ; (te)xt
-("tr"      ["\\mathrm{"           ])  ; (t)ext (r)oman
+("tm"      ["\\mathrm{"           ])  ; (t)ext (m)ath
 ("tb"      ["\\mathbf{"           ])  ; (t)ext (b)old
 ("ti"      ["\\mathit{"           ])  ; (t)ext (i)talics
 ;; Structural: Sub-sup-scripts
@@ -1289,7 +1306,7 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ("box"     ["\\boxed{"            ])  ; Putting box around object
 ("ff"      ["\\frac{"             ])  ; Fractions
 ("can"     ["\\cancel{"           ])  ; 
-("=="      ["&=\\n"               ])  ; helps in align env.
+("=="      ["&="                  ])  ; helps in align env.
 ;; Structural: xy
 ("xy"      ["\\xymatrix{"         ])  ; 
 ("bu"      ["\\bullet"            ])  ; 
