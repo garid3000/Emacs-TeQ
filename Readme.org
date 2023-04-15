@@ -391,23 +391,23 @@
 #+caption:  
 #+name: tbl_4_sym_mod_1
 #+attr_latex: :align |llll| :placement [H]
-|----------+-----------------+-------------+-------------|
-| key      | sym             | latex       | description |
-|----------+-----------------+-------------+-------------|
-| ~vec~    | $\vec{\Box}$    | ~\vec{~     |             |
-| ~bar~    | $\bar{\Box}$    | ~\bar{~     |             |
-| ~hat~    | $\hat{\Box}$    | ~\hat{~     |             |
-| ~dot~    | $\dot{\Box}$    | ~\dot{~     |             |
-| ~dot.~   | $\ddot{\Box}$   | ~\ddot{~    | (var)       |
-| ~dot..~  | $\dddot{\Box}$  | ~\dddot{~   | (var)       |
-| ~dot...~ | $\ddddot{\Box}$ | ~\ddddot{~  | (var)       |
-| ~dag~    | $\Box^\dagger$  | ~^\dagger~  |             |
-| ~dag.~   | $\Box^\ddagger$ | ~^\ddagger~ | (var)       |
-| ~*..~    | $\Box^*$        | ~^*~        |             |
-| ~deg~    | $\Box^\circ$    | ~^\circ~    |             |
-| ~tr~     | $\Box^T$        | ~^T~        |             |
-| ~trn~    | \({\Box}^{-T}\) | ~^{-T}~     | (neg)       |
-|----------+-----------------+-------------+-------------|
+|----------+-----------------+-------------+----------------------|
+| key      | sym             | latex       | description          |
+|----------+-----------------+-------------+----------------------|
+| ~vec~    | $\vec{\Box}$    | ~\vec{~     |                      |
+| ~bar~    | $\bar{\Box}$    | ~\bar{~     |                      |
+| ~hat~    | $\hat{\Box}$    | ~\hat{~     |                      |
+| ~dot~    | $\dot{\Box}$    | ~\dot{~     |                      |
+| ~dot.~   | $\ddot{\Box}$   | ~\ddot{~    | $\dot{\Box}$ + ~.~   |
+| ~dot..~  | $\dddot{\Box}$  | ~\dddot{~   | $\dot{\Box}$ + ~..~  |
+| ~dot...~ | $\ddddot{\Box}$ | ~\ddddot{~  | $\dot{\Box}$ + ~..~  |
+| ~dag~    | $\Box^\dagger$  | ~^\dagger~  |                      |
+| ~dag.~   | $\Box^\ddagger$ | ~^\ddagger~ | $\dagger$  + ~.~     |
+| ~*.~     | $\Box^*$        | ~^*~        |                      |
+| ~deg~    | $\Box^\circ$    | ~^\circ~    |                      |
+| ~tr~     | $\Box^T$        | ~^T~        |                      |
+| ~trn~    | $\Box^-T$       | ~^{-T}~     | $\Box^T$ + ~n~ (neg) |
+|----------+-----------------+-------------+----------------------|
 
 **  Superscripts & Subsripts (power & lower)
 #+caption:  
