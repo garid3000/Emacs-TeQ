@@ -659,7 +659,7 @@ Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of d
 | ~dfz~  | $\frac{\mathrm{d}}{\mathrm{d}z}$                | ~\dv{z}~    | ~df.z~  | $\frac{\partial}{\partial z}$               | ~\pdv{z}~    |
 | ~dft~  | $\frac{\mathrm{d}}{\mathrm{d}t}$                | ~\dv{t}~    | ~df.t~  | $\frac{\partial}{\partial t}$               | ~\pdv{t}~    |
 |--------+-------------------------------------------------+-------------+---------+---------------------------------------------+--------------|
-| ~df2~  | $\frac{\mathrm{d}^2}{\mathrm{d} \Box^{2}}$      | ~\dv[2]{ }~ | ~df.2~  | $\frac{\partial^2}{\partial \Box^2}$        | ~\pdv[2]{ }~ |
+| ~df2~  | $\frac{\mathrm{d}^2}{\mathrm{d}{\Box}^2}$       | ~\dv[2]{ }~ | ~df.2~  | $\frac{\partial^2}{\partial \Box^2}$        | ~\pdv[2]{ }~ |
 | ~dfx2~ | $\frac{\mathrm{d}^2}{\mathrm{d}x^2}$            | ~\dv[2]{x}~ | ~df.x2~ | $\frac{\partial^2}{\partial x^2}$           | ~\pdv[2]{x}~ |
 | ~dfy2~ | $\frac{\mathrm{d}^2}{\mathrm{d}y^2}$            | ~\dv[2]{y}~ | ~df.y2~ | $\frac{\partial^2}{\partial y^2}$           | ~\pdv[2]{y}~ |
 | ~dfz2~ | $\frac{\mathrm{d}^2}{\mathrm{d}z^2}$            | ~\dv[2]{z}~ | ~df.z2~ | $\frac{\partial^2}{\partial z^2}$           | ~\pdv[2]{z}~ |
