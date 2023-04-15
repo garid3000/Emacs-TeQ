@@ -263,14 +263,14 @@
     ("zdd"   ["\\ddot{z}"      ])  ("Zdd"   ["\\ddot{Z}"      ])
     ("idd."  ["\\ddot{\\imath}"])  ("jdd."  ["\\ddot{\\jmath}"])
     ;; Expanding Func
-    ("/"       ~quail-TeQ-frac~      )  ; fraction on previous
-    ("eq"      ~quail-TeQ-equation~  )  ; equation environment
-    ("mat"     ~quail-TeQ-matrix~    )  ; pmatrix environment
-    ("case"    ~quail-TeQ-case~      )  ; case environment
-    ("al"      ~quail-TeQ-aligned~   )  ; aligned environment
-    ("el"      ~quail-TeQ-endofline~ )  ; end of line
-    ("gg"      ~quail-TeQ-next~      )  ; go to next space
-    ("GG"      ~quail-TeQ-prev~      )  ; go to prev space
+    ("/"       quail-TeQ-frac        )  ; fraction on previous
+    ("eq"      quail-TeQ-equation    )  ; equation environment
+    ("mat"     quail-TeQ-matrix      )  ; pmatrix environment
+    ("case"    quail-TeQ-case        )  ; case environment
+    ("al"      quail-TeQ-aligned     )  ; aligned environment
+    ("el"      quail-TeQ-endofline   )  ; end of line
+    ("gg"      quail-TeQ-next        )  ; go to next space
+    ("GG"      quail-TeQ-prev        )  ; go to prev space
     ;; Symbols-dots
     ("..."     ["\\dots"              ])  ; 3 dots
     (".v"      ["\\vdots"             ])  ; vertical dots
@@ -432,7 +432,7 @@
     ("det"     ["\\det"               ])  ; 
     ("dim"     ["\\dim"               ])  ; 
     ("exp"     ["\\exp"               ])  ; 
-    ("Im"      ["\\mathrm{Im}"        ])  ; 
+    ("Im."     ["\\mathrm{Im}"        ])  ; 
     ("Re"      ["\\mathrm{Re}"        ])  ; 
     ("ln"      ["\\ln"                ])  ; 
     ("log"     ["\\log"               ])  ; 

@@ -559,7 +559,7 @@
 | ~det~   | $\det$              | ~\det~          |             |
 | ~dim~   | $\dim$              | ~\dim~          |             |
 | ~exp~   | $\exp$              | ~\exp~          |             |
-| ~Im~    | $\mathrm{Im}$       | ~\mathrm{Im}~   |             |
+| ~Im.~   | $\mathrm{Im}$       | ~\mathrm{Im}~   |             |
 | ~Re~    | $\mathrm{Re}$       | ~\mathrm{Re}~   |             |
 | ~ln~    | $\ln$               | ~\ln~           |             |
 | ~log~   | $\log$              | ~\log~          |             |
@@ -816,6 +816,7 @@ def table_format_3col_2(headcomment, table):
         key, sym, trans, description = line
         key = repr(key).replace("\'", "\"").replace("~", "")
         key = key.replace("\\\\vert", "|").replace(" ", "")
+        trans = trans.replace("~", "")
         print(f"({key:<8}  {trans:<22})  ; {description}")
 
 table_format_6col("Greek", tbl_1_greek)
@@ -1030,14 +1031,14 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ("zdd"   ["\\ddot{z}"      ])  ("Zdd"   ["\\ddot{Z}"      ])
 ("idd."  ["\\ddot{\\imath}"])  ("jdd."  ["\\ddot{\\jmath}"])
 ;; Expanding Func
-("/"       ~quail-TeQ-frac~      )  ; fraction on previous
-("eq"      ~quail-TeQ-equation~  )  ; equation environment
-("mat"     ~quail-TeQ-matrix~    )  ; pmatrix environment
-("case"    ~quail-TeQ-case~      )  ; case environment
-("al"      ~quail-TeQ-aligned~   )  ; aligned environment
-("el"      ~quail-TeQ-endofline~ )  ; end of line
-("gg"      ~quail-TeQ-next~      )  ; go to next space
-("GG"      ~quail-TeQ-prev~      )  ; go to prev space
+("/"       quail-TeQ-frac        )  ; fraction on previous
+("eq"      quail-TeQ-equation    )  ; equation environment
+("mat"     quail-TeQ-matrix      )  ; pmatrix environment
+("case"    quail-TeQ-case        )  ; case environment
+("al"      quail-TeQ-aligned     )  ; aligned environment
+("el"      quail-TeQ-endofline   )  ; end of line
+("gg"      quail-TeQ-next        )  ; go to next space
+("GG"      quail-TeQ-prev        )  ; go to prev space
 ;; Symbols-dots
 ("..."     ["\\dots"              ])  ; 3 dots
 (".v"      ["\\vdots"             ])  ; vertical dots
@@ -1199,7 +1200,7 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ("det"     ["\\det"               ])  ; 
 ("dim"     ["\\dim"               ])  ; 
 ("exp"     ["\\exp"               ])  ; 
-("Im"      ["\\mathrm{Im}"        ])  ; 
+("Im."     ["\\mathrm{Im}"        ])  ; 
 ("Re"      ["\\mathrm{Re}"        ])  ; 
 ("ln"      ["\\ln"                ])  ; 
 ("log"     ["\\log"               ])  ; 
