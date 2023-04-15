@@ -711,17 +711,17 @@ Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of d
 | ~f<>~                                   | $\left< \Box \right>$                     | ~\left< \right>~                |                      |
 | ~f<>.~                                  | $\left< \Box \middle\vert \Box \right>$   | ~\left< \middle\vert \right>~   | (var)                |
 |-----------------------------------------+-------------------------------------------+---------------------------------+----------------------|
-| ~l(~                                    | \( \left( \Box \right. \)                 | ~\left(~                        | half (               |
-| ~r)~                                    | $\left. \Box \right)$                     | ~\right)~                       | half )               |
-| ~l[~                                    | \( \left[ \Box \right. \)                 | ~\left[~                        | half [               |
-| ~r]~                                    | $\left. \Box \right]$                     | ~\right]~                       | half ]               |
-| ~l{~                                    | \( \left\{ \Box \right. \)                | ~\left\{~                       | half {               |
-| ~r}~                                    | $\left. \Box \right\}$                    | ~\right\}~                      | half }               |
-| ~l<~                                    | \( \left< \Box \right. \)                 | ~\left<~                        | half <               |
-| ~r>~                                    | $\left. \Box \right>$                     | ~\right>~                       | half >               |
-| ~l..~                                   |                                           | ~\left.~                        | half left .          |
-| ~r..~                                   |                                           | ~\right.~                       | half right .         |
-| m \texttt{\textbar}                     |                                           | ~\middle\vert~                  | Vertical bar related |
+| ~h(~                                    | \( \left( \Box \right. \)                 | ~\left(~                        | half (               |
+| ~h)~                                    | $\left. \Box \right)$                     | ~\right)~                       | half )               |
+| ~h[~                                    | \( \left[ \Box \right. \)                 | ~\left[~                        | half [               |
+| ~h]~                                    | $\left. \Box \right]$                     | ~\right]~                       | half ]               |
+| ~h{~                                    | \( \left\{ \Box \right. \)                | ~\left\{~                       | half {               |
+| ~h}~                                    | $\left. \Box \right\}$                    | ~\right\}~                      | half }               |
+| ~h<~                                    | \( \left< \Box \right. \)                 | ~\left<~                        | half <               |
+| ~h>~                                    | $\left. \Box \right>$                     | ~\right>~                       | half >               |
+| ~h.l~                                   |                                           | ~\left.~                        | half left .          |
+| ~h.r~                                   |                                           | ~\right.~                       | half right .         |
+| h \texttt{\textbar}                     |                                           | ~\middle\vert~                  | Vertical bar related |
 |-----------------------------------------+-------------------------------------------+---------------------------------+----------------------|
 | \texttt{\textbar} ~..~                  | \(\Box \Bigg\vert_{\Box}^{\Box}\)         | ~\Bigg\vert_{~                  | Vertical bar related |
 | \texttt{\textbar}\texttt{\textbar} ~.~  | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~        | Vertical bar related |
