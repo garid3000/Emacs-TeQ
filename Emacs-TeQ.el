@@ -287,7 +287,7 @@
     ("tri."    ["\\triangledown"      ])  ; $\vartriangle$ ~n~ (neg)
     ("squ"     ["\\square"            ])  ; 
     ("trin"    ["\\blacktriangle"     ])  ; $\vartriangle$ ~.~ (var)
-    ("tri.n"   ["\\blacktriangledown" ])  ; $\vartriangle$ ~n.~ (neg,var)
+    ("tri.n"   ["\\blacktriangledown" ])  ; $\vartriangle$ ~.n~ (neg,var)
     ("trin."   ["\\blacktriangledown" ])  ; $\vartriangle$ ~n.~ (neg,var)
     ("squn"    ["\\blacksquare"       ])  ; $\square$ ~.~ (var)
     ;; Symbols
@@ -305,6 +305,12 @@
     ;; Symbols spaces
     ("qu"      ["\\quad"              ])  ; 
     ("quu"     ["\\qquad"             ])  ; 
+    ("spn"     ["\\!"                 ])  ; -3/18 of ~\quad~ (= -3 mu)
+    ("sp"      ["\\,"                 ])  ; 3/18 of ~\quad~ (= 3 mu)
+    ("sp."     ["\\:"                 ])  ; 4/18 of ~\quad~ (= 4 mu)
+    ("sp.."    ["\\;"                 ])  ; 5/18 of ~\quad~ (= 5 mu)
+    ("sp..."   ["\\quad"              ])  ; 1 of ~\quad~ (= 18 mu)
+    ("sp...."  ["\\qquad"             ])  ; 2 of ~\qquad~ (= 36 mu)
     ;; Symbols arrow1
     ("<-"      ["\\leftarrow"         ])  ; 
     ("->"      ["\\rightarrow"        ])  ; 
@@ -359,34 +365,34 @@
     ("::"      ["\\div"               ])  ; 
     ("**"      ["\\cdot"              ])  ; 
     ;; Operation: arith
-    ("<."      ["\\leq"               ])  ; < = >
-    (">."      ["\\geq"               ])  ; symbols
-    ("<<"      ["\\ll"                ])  ; 
-    (">>"      ["\\gg"                ])  ; 
-    ("=n"      ["\\neq"               ])  ; negation
-    ("<n"      ["\\nless"             ])  ; 
-    (">n"      ["\\ngtr"              ])  ; 
-    ("<.n"     ["\\nleq"              ])  ; 
-    (">.n"     ["\\ngeq"              ])  ; 
-    ("=?"      ["\\stackrel{?}{=}"    ])  ; with question mark
-    ("<?"      ["\\stackrel{?}{<}"    ])  ; 
-    (">?"      ["\\stackrel{?}{>}"    ])  ; 
-    ("<.?"     ["\\stackrel{?}{\\leq}"])  ; 
-    (">.?"     ["\\stackrel{?}{\\geq}"])  ; 
-    ("<<?"     ["\\stackrel{?}{\\ll}" ])  ; 
-    (">>?"     ["\\stackrel{?}{\\gg}" ])  ; 
-    ("=y"      ["\\stackrel{\\checkmark}{=}"])  ; with check mark
-    ("<y"      ["\\stackrel{\\checkmark}{<}"])  ; 
-    (">y"      ["\\stackrel{\\checkmark}{>}"])  ; 
-    ("<.y"     ["\\stackrel{\\checkmark}{\\leq}"])  ; 
-    (">.y"     ["\\stackrel{\\checkmark}{\\geq}"])  ; 
-    ("<<y"     ["\\stackrel{\\checkmark}{\\ll}"])  ; 
-    (">>y"     ["\\stackrel{\\checkmark}{\\gg}"])  ; 
+    ("<."      ["\\leq"               ])  ; ~<~      + ~.~
+    (">."      ["\\geq"               ])  ; ~>~      + ~.~
+    ("<<"      ["\\ll"                ])  ; ~<~      + ~<~
+    (">>"      ["\\gg"                ])  ; ~>~      + ~>~
+    ("=n"      ["\\neq"               ])  ; ~=~      + ~n~
+    ("<n"      ["\\nless"             ])  ; ~<~      + ~n~
+    (">n"      ["\\ngtr"              ])  ; ~>~      + ~n~
+    ("<.n"     ["\\nleq"              ])  ; $\leq$ + ~n~
+    (">.n"     ["\\ngeq"              ])  ; $\geq$  + ~n~
+    ("=?"      ["\\stackrel{?}{=}"    ])  ; ~=~      + ~?~
+    ("<?"      ["\\stackrel{?}{<}"    ])  ; ~<~      + ~?~
+    (">?"      ["\\stackrel{?}{>}"    ])  ; ~>~      + ~?~
+    ("<.?"     ["\\stackrel{?}{\\leq}"])  ; $\leq$ + ~?~
+    (">.?"     ["\\stackrel{?}{\\geq}"])  ; $\geq$  + ~?~
+    ("<<?"     ["\\stackrel{?}{\\ll}" ])  ; $\ll$    + ~?~
+    (">>?"     ["\\stackrel{?}{\\gg}" ])  ; $\gg$    + ~?~
+    ("=y"      ["\\stackrel{\\checkmark}{=}"])  ; ~=~      + ~y~
+    ("<y"      ["\\stackrel{\\checkmark}{<}"])  ; ~<~      + ~y~
+    (">y"      ["\\stackrel{\\checkmark}{>}"])  ; ~>~      + ~y~
+    ("<.y"     ["\\stackrel{\\checkmark}{\\leq}"])  ; $\leq$ + ~y~
+    (">.y"     ["\\stackrel{\\checkmark}{\\geq}"])  ; $\geq$  + ~y~
+    ("<<y"     ["\\stackrel{\\checkmark}{\\ll}"])  ; $\ll$    + ~y~
+    (">>y"     ["\\stackrel{\\checkmark}{\\gg}"])  ; $\gg$    + ~y~
     ("sim"     ["\\sim"               ])  ; 
-    ("simn"    ["\\nsim"              ])  ; 
-    ("3="      ["\\equiv"             ])  ; 
-    ("=."      ["\\equiv"             ])  ; Variations of =
-    ("=.."     ["\\approx"            ])  ; 
+    ("simn"    ["\\nsim"              ])  ; $\sim$ + ~n~
+    ("3="      ["\\equiv"             ])  ; ~3~    + ~.~
+    ("=."      ["\\equiv"             ])  ; ~=~    + ~.~
+    ("=.."     ["\\approx"            ])  ; ~=~    + ~..~
     ("=:"      ["\\coloneqq"          ])  ; requires ~mathtools~ lib
     (":="      ["\\coloneqq"          ])  ; requires ~mathtools~ lib
     ;; Operation: arith
