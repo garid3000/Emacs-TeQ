@@ -406,7 +406,7 @@
 | ~*.~     | $\Box^*$        | ~^*~        |                      |
 | ~deg~    | $\Box^\circ$    | ~^\circ~    |                      |
 | ~tr~     | $\Box^T$        | ~^T~        |                      |
-| ~trn~    | $\Box^-T$       | ~^{-T}~     | $\Box^T$ + ~n~ (neg) |
+| ~trn~    | $\Box^{-T}$     | ~^{-T}~     | $\Box^T$ + ~n~ (neg) |
 |----------+-----------------+-------------+----------------------|
 
 **  Superscripts & Subsripts (power & lower)
