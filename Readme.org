@@ -584,31 +584,31 @@
 #+caption: Integrals, Sums, Products
 #+name: tbl_6_func_iter
 #+attr_latex: :align |llll| :placement [H]
-|-----------+----------------------------------------+---------------------------------------+---------------------------------------------------|
-| key       | sym                                    | latex                                 | description                                       |
-|-----------+----------------------------------------+---------------------------------------+---------------------------------------------------|
-| ~il~      | $\sum \limits_{\Box}$                  | ~\limits_{~                           | (limits apparently doesn't render on Github page) |
-| ~il.~     | $\sum \limits_{ \Box }^{ \Box}$        | ~\limits_{0}^{ }~                     | . (var)                                           |
-|-----------+----------------------------------------+---------------------------------------+---------------------------------------------------|
-| ~lim~     | $\lim$                                 | ~\lim~                                |                                                   |
-| ~sum~     | $\sum$                                 | ~\sum~                                |                                                   |
-| ~prod~    | $\prod$                                | ~\prod~                               |                                                   |
-| ~int~     | $\int$                                 | ~\int~                                |                                                   |
-| ~inti~    | $\iint$                                | ~\iint~                               | $\int$ + ~i~                                      |
-| ~intii~   | $\iiint$                               | ~\iiint~                              | $\int$ + ~ii~                                     |
-| ~intiii~  | $\iiiint$                              | ~\iiiint~                             | $\int$ + ~iii~                                    |
-| ~into~    | $\oint$                                | ~\oint~                               | $\int$ + ~o~                                      |
-|-----------+----------------------------------------+---------------------------------------+---------------------------------------------------|
-| ~sum.~    | $\sum \limits_{ i=1 }^{ n }$           | ~\sum\limits_{ i=1 }^{ n }~           | . (var)                                           |
-| ~prod.~   | $\prod \limits_{ i=1 }^{ n }$          | ~\prod\limits_{ i=1 }^{ n }~          | . (var)                                           |
-| ~int.~    | $\int \limits_{ \Box }^{ \Box }$       | ~\int\limits_{ }^{ }~                 | . (var)                                           |
-| ~int..~   | $\int \limits_{ 0 }^{ +\infty }$       | ~\int\limits_{ 0 }^{ +\infty }~       | . (var)                                           |
-| ~int...~  | $\int \limits_{ -\infty }^{ +\infty }$ | ~\int\limits_{ -\infty }^{ +\infty }~ | . (var)                                           |
-| ~inti.~   | $\iint \limits_{ \Box }$               | ~\iint\limits_{ }~                    | . (var)                                           |
-| ~intii.~  | $\iiint \limits_{ \Box }$              | ~\iiint\limits_{ }~                   | . (var)                                           |
-| ~intiii.~ | $\iiiint \limits_{ \Box }$             | ~\iiiint\limits_{ }~                  | . (var)                                           |
-| ~into.~   | $\oint \limits_{ \Box }$               | ~\oint\limits_{ }~                    | . (var)                                           |
-|-----------+----------------------------------------+---------------------------------------+---------------------------------------------------|
+|-----------+----------------------------------------+---------------------------------------+-------------------------|
+| key       | sym                                    | latex                                 | description             |
+|-----------+----------------------------------------+---------------------------------------+-------------------------|
+| ~il~      | $\sum \limits_{\Box}$                  | ~\limits_{~                           | (bad github rendering)  |
+| ~il.~     | $\sum \limits_{ \Box }^{ \Box}$        | ~\limits_{0}^{ }~                     | . (var)                 |
+|-----------+----------------------------------------+---------------------------------------+-------------------------|
+| ~lim~     | $\lim$                                 | ~\lim~                                |                         |
+| ~sum~     | $\sum$                                 | ~\sum~                                |                         |
+| ~prod~    | $\prod$                                | ~\prod~                               |                         |
+| ~int~     | $\int$                                 | ~\int~                                |                         |
+| ~inti~    | $\iint$                                | ~\iint~                               | $\int$ + ~i~            |
+| ~intii~   | $\iiint$                               | ~\iiint~                              | $\int$ + ~ii~           |
+| ~intiii~  | $\iiiint$                              | ~\iiiint~                             | $\int$ + ~iii~          |
+| ~into~    | $\oint$                                | ~\oint~                               | $\int$ + ~o~            |
+|-----------+----------------------------------------+---------------------------------------+-------------------------|
+| ~sum.~    | $\sum \limits_{ i=1 }^{ n }$           | ~\sum\limits_{ i=1 }^{ n }~           | $\sum$     ~.~ (var)    |
+| ~prod.~   | $\prod \limits_{ i=1 }^{ n }$          | ~\prod\limits_{ i=1 }^{ n }~          | $\prod$    ~.~ (var)    |
+| ~int.~    | $\int \limits_{ \Box }^{ \Box }$       | ~\int\limits_{ }^{ }~                 | $\int$     ~.~ (var)    |
+| ~int..~   | $\int \limits_{ 0 }^{ +\infty }$       | ~\int\limits_{ 0 }^{ +\infty }~       | $\int$     ~..~ (var)   |
+| ~int...~  | $\int \limits_{ -\infty }^{ +\infty }$ | ~\int\limits_{ -\infty }^{ +\infty }~ | $\int$     ~...~ (var)  |
+| ~inti.~   | $\iint \limits_{ \Box }$               | ~\iint\limits_{ }~                    | $\int$     ~i.~ (var)   |
+| ~intii.~  | $\iiint \limits_{ \Box }$              | ~\iiint\limits_{ }~                   | $\iint$    ~ii.~ (var)  |
+| ~intiii.~ | $\iiiint \limits_{ \Box }$             | ~\iiiint\limits_{ }~                  | $\int$     ~iii.~ (var) |
+| ~into.~   | $\oint \limits_{ \Box }$               | ~\oint\limits_{ }~                    | $\ont$     ~o.~ (var)   |
+|-----------+----------------------------------------+---------------------------------------+-------------------------|
 
 **  Differentials
 Please note that this table uses user-defined command (~\dd~ and ~\pd~).
@@ -691,6 +691,7 @@ Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of d
 #+LATEX_HEADER: \newcommand{\dv}[2][]{\frac{\mathrm{d}^{#1}}{\mathrm{d}{#2}^{#1}}}
 #+LATEX_HEADER: \newcommand{\pdv}[2][]{\frac{\partial^{#1}}{\partial{#2}^{#1}}}
 #+end_example
+
 
 * Structural:
 **  Parenthesis Related
