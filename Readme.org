@@ -340,6 +340,7 @@
 |----------+--------------------+--------------------+--------------------------------------|
 | ~<-~     | $\leftarrow$       | ~\leftarrow~       |                                      |
 | ~->~     | $\rightarrow$      | ~\rightarrow~      |                                      |
+| ~to~     | $\to$              | ~\to~              | same as ~->~                         |
 | ~-^~     | $\uparrow$         | ~\uparrow~         | ~^~ looks like up arrow head         |
 | ~-v~     | $\downarrow$       | ~\downarrow~       | ~v~ looks like down arrow head       |
 | ~<->~    | $\leftrightarrow$  | ~\leftrightarrow~  | Sorry, Github won't render correctly |
@@ -1081,6 +1082,7 @@ format_table_to_elisp_type3col_type1("Structural: xy",  tbl_7_xy)
 ;; Symbols arrow1
 ("<-"      ["\\leftarrow "        ])  ; 
 ("->"      ["\\rightarrow "       ])  ; 
+("to"      ["\\to "               ])  ; same as ~->~
 ("-^"      ["\\uparrow "          ])  ; ~^~ looks like up arrow head
 ("-v"      ["\\downarrow "        ])  ; ~v~ looks like down arrow head
 ("<->"     ["\\leftrightarrow "   ])  ; Sorry, Github won't render correctly

@@ -314,6 +314,7 @@
     ;; Symbols arrow1
     ("<-"      ["\\leftarrow "        ])  ; 
     ("->"      ["\\rightarrow "       ])  ; 
+    ("to"      ["\\to "               ])  ; same as ~->~
     ("-^"      ["\\uparrow "          ])  ; ~^~ looks like up arrow head
     ("-v"      ["\\downarrow "        ])  ; ~v~ looks like down arrow head
     ("<->"     ["\\leftrightarrow "   ])  ; Sorry, Github won't render correctly
