@@ -463,38 +463,38 @@
 |--------+-------------------------------+-------------------------------+--------------------------|
 | key    | sym                           | latex                         | description              |
 |--------+-------------------------------+-------------------------------+--------------------------|
-| ~<.~   | $\leq$                        | ~\leq~                        | < = >                    |
-| ~>.~   | $\geq$                        | ~\geq~                        | symbols                  |
-| ~<<~   | $\ll$                         | ~\ll~                         |                          |
-| ~>>~   | $\gg$                         | ~\gg~                         |                          |
+| ~<.~   | $\leq$                        | ~\leq~                        | ~<~      + ~n~           |
+| ~>.~   | $\geq$                        | ~\geq~                        | ~>~      + ~n~           |
+| ~<<~   | $\ll$                         | ~\ll~                         | ~<~      + ~<~           |
+| ~>>~   | $\gg$                         | ~\gg~                         | ~>~      + ~>~           |
 |--------+-------------------------------+-------------------------------+--------------------------|
-| ~=n~   | $\neq$                        | ~\neq~                        | negation                 |
-| ~<n~   | $\nless$                      | ~\nless~                      |                          |
-| ~>n~   | $\ngtr$                       | ~\ngtr~                       |                          |
-| ~<.n~  | $\nleq$                       | ~\nleq~                       |                          |
-| ~>.n~  | $\ngeq$                       | ~\ngeq~                       |                          |
+| ~=n~   | $\neq$                        | ~\neq~                        | ~=~      + ~n~           |
+| ~<n~   | $\nless$                      | ~\nless~                      | ~<~      + ~n~           |
+| ~>n~   | $\ngtr$                       | ~\ngtr~                       | ~>~      + ~n~           |
+| ~<.n~  | $\nleq$                       | ~\nleq~                       | $\nless$ + ~n~           |
+| ~>.n~  | $\ngeq$                       | ~\ngeq~                       | $\ngtr$  + ~n~           |
 |--------+-------------------------------+-------------------------------+--------------------------|
-| ~=?~   | $\stackrel{?}{ = }$           | ~\stackrel{?}{=}~             | with question mark       |
-| ~<?~   | $\stackrel{?}{<}$             | ~\stackrel{?}{<}~             |                          |
-| ~>?~   | $\stackrel{?}{>}$             | ~\stackrel{?}{>}~             |                          |
-| ~<.?~  | $\stackrel{?}{\leq}$          | ~\stackrel{?}{\leq}~          |                          |
-| ~>.?~  | $\stackrel{?}{\geq}$          | ~\stackrel{?}{\geq}~          |                          |
-| ~<<?~  | $\stackrel{?}{\ll}$           | ~\stackrel{?}{\ll}~           |                          |
-| ~>>?~  | $\stackrel{?}{\gg}$           | ~\stackrel{?}{\gg}~           |                          |
+| ~=?~   | $\stackrel{?}{ = }$           | ~\stackrel{?}{=}~             | ~=~      + ~?~           |
+| ~<?~   | $\stackrel{?}{<}$             | ~\stackrel{?}{<}~             | ~<~      + ~?~           |
+| ~>?~   | $\stackrel{?}{>}$             | ~\stackrel{?}{>}~             | ~>~      + ~?~           |
+| ~<.?~  | $\stackrel{?}{\leq}$          | ~\stackrel{?}{\leq}~          | $\nless$ + ~?~           |
+| ~>.?~  | $\stackrel{?}{\geq}$          | ~\stackrel{?}{\geq}~          | $\ngtr$  + ~?~           |
+| ~<<?~  | $\stackrel{?}{\ll}$           | ~\stackrel{?}{\ll}~           | $\ll$    + ~?~           |
+| ~>>?~  | $\stackrel{?}{\gg}$           | ~\stackrel{?}{\gg}~           | $\gg$    + ~?~           |
 |--------+-------------------------------+-------------------------------+--------------------------|
-| ~=y~   | $\stackrel{\checkmark}{ = }$  | ~\stackrel{\checkmark}{=}~    | with check mark          |
-| ~<y~   | $\stackrel{\checkmark}{<}$    | ~\stackrel{\checkmark}{<}~    |                          |
-| ~>y~   | $\stackrel{\checkmark}{>}$    | ~\stackrel{\checkmark}{>}~    |                          |
-| ~<.y~  | $\stackrel{\checkmark}{\leq}$ | ~\stackrel{\checkmark}{\leq}~ |                          |
-| ~>.y~  | $\stackrel{\checkmark}{\geq}$ | ~\stackrel{\checkmark}{\geq}~ |                          |
-| ~<<y~  | $\stackrel{\checkmark}{\ll}$  | ~\stackrel{\checkmark}{\ll}~  |                          |
-| ~>>y~  | $\stackrel{\checkmark}{\gg}$  | ~\stackrel{\checkmark}{\gg}~  |                          |
+| ~=y~   | $\stackrel{\checkmark}{ = }$  | ~\stackrel{\checkmark}{=}~    | ~=~      + ~y~           |
+| ~<y~   | $\stackrel{\checkmark}{<}$    | ~\stackrel{\checkmark}{<}~    | ~<~      + ~y~           |
+| ~>y~   | $\stackrel{\checkmark}{>}$    | ~\stackrel{\checkmark}{>}~    | ~>~      + ~y~           |
+| ~<.y~  | $\stackrel{\checkmark}{\leq}$ | ~\stackrel{\checkmark}{\leq}~ | $\nless$ + ~y~           |
+| ~>.y~  | $\stackrel{\checkmark}{\geq}$ | ~\stackrel{\checkmark}{\geq}~ | $\ngtr$  + ~y~           |
+| ~<<y~  | $\stackrel{\checkmark}{\ll}$  | ~\stackrel{\checkmark}{\ll}~  | $\ll$    + ~y~           |
+| ~>>y~  | $\stackrel{\checkmark}{\gg}$  | ~\stackrel{\checkmark}{\gg}~  | $\gg$    + ~y~           |
 |--------+-------------------------------+-------------------------------+--------------------------|
 | ~sim~  | $\sim$                        | ~\sim~                        |                          |
-| ~simn~ | $\nsim$                       | ~\nsim~                       |                          |
-| ~3=~   | $\equiv$                      | ~\equiv~                      |                          |
-| ~=.~   | $\equiv$                      | ~\equiv~                      | Variations of =          |
-| ~=..~  | $\approx$                     | ~\approx~                     |                          |
+| ~simn~ | $\nsim$                       | ~\nsim~                       | $\sim$ + ~n~             |
+| ~3=~   | $\equiv$                      | ~\equiv~                      | ~3~    + ~.~             |
+| ~=.~   | $\equiv$                      | ~\equiv~                      | ~=~    + ~.~             |
+| ~=..~  | $\approx$                     | ~\approx~                     | ~=~    + ~..~            |
 | ~=:~   | $\coloneqq$                   | ~\coloneqq~                   | requires ~mathtools~ lib |
 | ~:=~   | $\coloneqq$                   | ~\coloneqq~                   | requires ~mathtools~ lib |
 |--------+-------------------------------+-------------------------------+--------------------------|
