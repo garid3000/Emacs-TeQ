@@ -316,13 +316,22 @@
 #+caption: Space Symbold  
 #+name: tbl-3-sym-spc
 #+attr_latex: :align |llll| :placement [H]
-|-------+----------+----------+-------------|
-| key   | sym      | latex    | description |
-|-------+----------+----------+-------------|
-| ~qu~  | $\quad$  | ~\quad~  |             |
-| ~quu~ | $\qquad$ | ~\qquad~ |             |
-|-------+----------+----------+-------------|
+|----------+------------------+----------+----------------------------|
+| key      | sym              | latex    | description                |
+|----------+------------------+----------+----------------------------|
+| ~qu~     | $\Box\quad\Box$  | ~\quad~  |                            |
+| ~quu~    | $\Box\qquad\Box$ | ~\qquad~ |                            |
+|----------+------------------+----------+----------------------------|
+| ~spn~    | $\Box\!\Box$     | ~\!~     | -3/18 of ~\quad~ (= -3 mu) |
+| ~sp~     | $\Box\,\Box$     | ~\,~     | 3/18 of ~\quad~ (= 3 mu)   |
+| ~sp.~    | $\Box\:\Box$     | ~\:~     | 4/18 of ~\quad~ (= 4 mu)   |
+| ~sp..~   | $\Box\;\Box$     | ~\;~     | 5/18 of ~\quad~ (= 5 mu)   |
+| ~sp...~  | $\Box\quad\Box$  | ~\quad~  | 1 of ~\quad~ (= 18 mu)     |
+| ~sp....~ | $\Box\qquad\Box$ | ~\qquad~ | 2 of ~\qquad~ (= 36 mu)    |
+|----------+------------------+----------+----------------------------|
 
+
+	
 **  Arrows:
 *** Single:
 #+caption: Single Line arrows
