@@ -327,63 +327,63 @@
 #+caption: Single Line arrows
 #+name: tbl-3-sym-arrow-1
 #+attr_latex: :align |llll| :placement [H]
-|----------+--------------------+--------------------+--------------------------------|
-| key      | sym                | latex              | description                    |
-|----------+--------------------+--------------------+--------------------------------|
-| ~<-~     | $\leftarrow$       | ~\leftarrow~       |                                |
-| ~->~     | $\rightarrow$      | ~\rightarrow~      |                                |
-| ~-^~     | $\uparrow$         | ~\uparrow~         | ~^~ looks like up arrow head   |
-| ~-v~     | $\downarrow$       | ~\downarrow~       | ~v~ looks like down arrow head |
-| ~<->~    | $\leftrightarrow$  | ~\leftrightarrow~  |                                |
-|----------+--------------------+--------------------+--------------------------------|
-| ~<-n~    | $\nleftarrow$      | ~\nleftarrow~      | negate (~n~) of prev. section  |
-| ~->n~    | $\nrightarrow$     | ~\nrightarrow~     | arrows + _n_                   |
-| ~-^n~    | $\nuparrow$        | ~\nuparrow~        |                                |
-| ~-vn~    | $\ndownarrow$      | ~\ndownarrow~      |                                |
-| ~<->~    | $\nleftrightarrow$ | ~\nleftrightarrow~ |                                |
-|----------+--------------------+--------------------+--------------------------------|
-| ~-->~    | $\longrightarrow$  | ~\longrightarrow~  | longer arrows, with 2 dashes   |
-| ~<--~    | $\longleftarrow$   | ~\longleftarrow~   |                                |
-|----------+--------------------+--------------------+--------------------------------|
-| ~mapsto~ | $\mapsto$          | ~\mapsto~          |                                |
-|----------+--------------------+--------------------+--------------------------------|
+|----------+--------------------+--------------------+--------------------------------------|
+| key      | sym                | latex              | description                          |
+|----------+--------------------+--------------------+--------------------------------------|
+| ~<-~     | $\leftarrow$       | ~\leftarrow~       |                                      |
+| ~->~     | $\rightarrow$      | ~\rightarrow~      |                                      |
+| ~-^~     | $\uparrow$         | ~\uparrow~         | ~^~ looks like up arrow head         |
+| ~-v~     | $\downarrow$       | ~\downarrow~       | ~v~ looks like down arrow head       |
+| ~<->~    | $\leftrightarrow$  | ~\leftrightarrow~  | Sorry, Github won't render correctly |
+|----------+--------------------+--------------------+--------------------------------------|
+| ~<-n~    | $\nleftarrow$      | ~\nleftarrow~      | $\leftarrow$          + ~n~  (neg)   |
+| ~->n~    | $\nrightarrow$     | ~\nrightarrow~     | $\rightarrow$         + ~n~  (neg)   |
+| ~-^n~    | $\nuparrow$        | ~\nuparrow~        | $\uparrow$            + ~n~  (neg)   |
+| ~-vn~    | $\ndownarrow$      | ~\ndownarrow~      | $\downarrow$          + ~n~  (neg)   |
+| ~<->~    | $\nleftrightarrow$ | ~\nleftrightarrow~ | $\leftrightarrow$     + ~n~  (neg)   |
+|----------+--------------------+--------------------+--------------------------------------|
+| ~-->~    | $\longrightarrow$  | ~\longrightarrow~  | longer with 2 ~-~                    |
+| ~<--~    | $\longleftarrow$   | ~\longleftarrow~   | longer with 2 ~-~                    |
+|----------+--------------------+--------------------+--------------------------------------|
+| ~mapsto~ | $\mapsto$          | ~\mapsto~          |                                      |
+|----------+--------------------+--------------------+--------------------------------------|
 
 *** Double:
 #+caption: Double Line arrows
 #+name: tbl-3-sym-arrow-2
 #+attr_latex: :align |llll| :placement [H]
-|--------+-----------------------+-----------------------+-----------------------------------|
-| key    | sym                   | latex                 | description                       |
-|--------+-----------------------+-----------------------+-----------------------------------|
-| ~<=~   | $\Leftarrow$          | ~\Leftarrow~          | compared to single arrrow         |
-| ~=>~   | $\Rightarrow$         | ~\Rightarrow~         | these uses ~=~ as the arrow shaft |
-| ~=^~   | $\Uparrow$            | ~\Uparrow~            |                                   |
-| ~=v~   | $\Downarrow$          | ~\Downarrow~          |                                   |
-| ~<=>~  | $\Leftrightarrow$     | ~\Leftrightarrow~     |                                   |
-| ~iff~  | $\Leftrightarrow$     | ~\Leftrightarrow~     |                                   |
-|--------+-----------------------+-----------------------+-----------------------------------|
-| ~<=n~  | $\nLeftarrow$         | ~\nLeftarrow~         | negate (~n~) of prev. section     |
-| ~=>n~  | $\nRightarrow$        | ~\nRightarrow~        | arrows + _n_                      |
-| ~<=>n~ | $\nLeftrightarrow$    | ~\nLeftrightarrow~    |                                   |
-| ~iffn~ | $\nLeftrightarrow$    | ~\nLeftrightarrow~    |                                   |
-|--------+-----------------------+-----------------------+-----------------------------------|
-| ~<==>~ | $\Longleftrightarrow$ | ~\Longleftrightarrow~ | longer arrows, with 2 dashes      |
-| ~<==~  | $\Longleftarrow$      | ~\Longleftarrow~      |                                   |
-| ~==>~  | $\Longrightarrow$     | ~\Longrightarrow~     |                                   |
-|--------+-----------------------+-----------------------+-----------------------------------|
+|--------+-----------------------+-----------------------+---------------------------------|
+| key    | sym                   | latex                 | description                     |
+|--------+-----------------------+-----------------------+---------------------------------|
+| ~<=~   | $\Leftarrow$          | ~\Leftarrow~          |                                 |
+| ~=>~   | $\Rightarrow$         | ~\Rightarrow~         |                                 |
+| ~=^~   | $\Uparrow$            | ~\Uparrow~            |                                 |
+| ~=v~   | $\Downarrow$          | ~\Downarrow~          |                                 |
+| ~<=>~  | $\Leftrightarrow$     | ~\Leftrightarrow~     |                                 |
+| ~iff~  | $\Leftrightarrow$     | ~\Leftrightarrow~     |                                 |
+|--------+-----------------------+-----------------------+---------------------------------|
+| ~<=n~  | $\nLeftarrow$         | ~\nLeftarrow~         | $\nLeftarrow$      + ~n~  (neg) |
+| ~=>n~  | $\nRightarrow$        | ~\nRightarrow~        | $\nRightarrow$     + ~n~  (neg) |
+| ~<=>n~ | $\nLeftrightarrow$    | ~\nLeftrightarrow~    | $\nLeftrightarrow$ + ~n~  (neg) |
+| ~iffn~ | $\nLeftrightarrow$    | ~\nLeftrightarrow~    | $\nLeftrightarrow$ + ~n~  (neg) |
+|--------+-----------------------+-----------------------+---------------------------------|
+| ~<==>~ | $\Longleftrightarrow$ | ~\Longleftrightarrow~ | longer arrows, with 2 ~==~      |
+| ~<==~  | $\Longleftarrow$      | ~\Longleftarrow~      | longer arrows, with 2 ~==~      |
+| ~==>~  | $\Longrightarrow$     | ~\Longrightarrow~     | longer arrows, with 2 ~==~      |
+|--------+-----------------------+-----------------------+---------------------------------|
 
 *** Long arrow with top-bottom entries 
 #+caption: Long arrow Line arrows
 #+name: tbl-3-sym-arrow-3
 #+attr_latex: :align |llll| :placement [H]
-|--------+----------------------------+----------------------+--------------------------|
-| key    | sym                        | latex                | description              |
-|--------+----------------------------+----------------------+--------------------------|
-| ~<---~ | $\xleftarrow[\Box]{\Box}$  | ~\xleftarrow[ ]{ }~  | these uses triple ~-~    |
-| ~--->~ | $\xrightarrow[\Box]{\Box}$ | ~\xrightarrow[ ]{ }~ | these uses triple ~-~    |
-| ~===>~ | $\xRightarrow[\Box]{\Box}$ | ~\xRightarrow[ ]{ }~ | ~mathtools~ lib required |
-| ~<===~ | $\xLeftarrow[\Box]{\Box}$  | ~\xLeftarrow[ ]{ }~  | ~mathtools~ lib required |
-|--------+----------------------------+----------------------+--------------------------|
+|--------+----------------------------+----------------------+-------------------------------------|
+| key    | sym                        | latex                | description                         |
+|--------+----------------------------+----------------------+-------------------------------------|
+| ~<---~ | $\xleftarrow[\Box]{\Box}$  | ~\xleftarrow[ ]{ }~  | 3 ~-~ (On PDF this expored wrongly) |
+| ~--->~ | $\xrightarrow[\Box]{\Box}$ | ~\xrightarrow[ ]{ }~ | 3 ~-~ (On PDF this expored wrongly) |
+| ~===>~ | $\xRightarrow[\Box]{\Box}$ | ~\xRightarrow[ ]{ }~ | 3 ~=~, (~mathtools~ lib required)   |
+| ~<===~ | $\xLeftarrow[\Box]{\Box}$  | ~\xLeftarrow[ ]{ }~  | 3 ~=~, (~mathtools~ lib required)   |
+|--------+----------------------------+----------------------+-------------------------------------|
 
 
 *  Symbol Modification
