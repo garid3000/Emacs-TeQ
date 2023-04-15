@@ -340,7 +340,7 @@
 | ~->n~    | $\nrightarrow$     | ~\nrightarrow~     | $\rightarrow$         + ~n~  (neg)   |
 | ~-^n~    | $\nuparrow$        | ~\nuparrow~        | $\uparrow$            + ~n~  (neg)   |
 | ~-vn~    | $\ndownarrow$      | ~\ndownarrow~      | $\downarrow$          + ~n~  (neg)   |
-| ~<->~    | $\nleftrightarrow$ | ~\nleftrightarrow~ | $\leftrightarrow$     + ~n~  (neg)   |
+| ~<->~    | $\nleftrightarrow$ | ~\nleftrightarrow~ | ...                                  |
 |----------+--------------------+--------------------+--------------------------------------|
 | ~-->~    | $\longrightarrow$  | ~\longrightarrow~  | longer with 2 ~-~                    |
 | ~<--~    | $\longleftarrow$   | ~\longleftarrow~   | longer with 2 ~-~                    |
@@ -352,25 +352,25 @@
 #+caption: Double Line arrows
 #+name: tbl-3-sym-arrow-2
 #+attr_latex: :align |llll| :placement [H]
-|--------+-----------------------+-----------------------+---------------------------------|
-| key    | sym                   | latex                 | description                     |
-|--------+-----------------------+-----------------------+---------------------------------|
-| ~<=~   | $\Leftarrow$          | ~\Leftarrow~          |                                 |
-| ~=>~   | $\Rightarrow$         | ~\Rightarrow~         |                                 |
-| ~=^~   | $\Uparrow$            | ~\Uparrow~            |                                 |
-| ~=v~   | $\Downarrow$          | ~\Downarrow~          |                                 |
-| ~<=>~  | $\Leftrightarrow$     | ~\Leftrightarrow~     |                                 |
-| ~iff~  | $\Leftrightarrow$     | ~\Leftrightarrow~     |                                 |
-|--------+-----------------------+-----------------------+---------------------------------|
-| ~<=n~  | $\nLeftarrow$         | ~\nLeftarrow~         | $\nLeftarrow$      + ~n~  (neg) |
-| ~=>n~  | $\nRightarrow$        | ~\nRightarrow~        | $\nRightarrow$     + ~n~  (neg) |
-| ~<=>n~ | $\nLeftrightarrow$    | ~\nLeftrightarrow~    | $\nLeftrightarrow$ + ~n~  (neg) |
-| ~iffn~ | $\nLeftrightarrow$    | ~\nLeftrightarrow~    | $\nLeftrightarrow$ + ~n~  (neg) |
-|--------+-----------------------+-----------------------+---------------------------------|
-| ~<==>~ | $\Longleftrightarrow$ | ~\Longleftrightarrow~ | longer arrows, with 2 ~==~      |
-| ~<==~  | $\Longleftarrow$      | ~\Longleftarrow~      | longer arrows, with 2 ~==~      |
-| ~==>~  | $\Longrightarrow$     | ~\Longrightarrow~     | longer arrows, with 2 ~==~      |
-|--------+-----------------------+-----------------------+---------------------------------|
+|--------+-----------------------+-----------------------+--------------------------------|
+| key    | sym                   | latex                 | description                    |
+|--------+-----------------------+-----------------------+--------------------------------|
+| ~<=~   | $\Leftarrow$          | ~\Leftarrow~          |                                |
+| ~=>~   | $\Rightarrow$         | ~\Rightarrow~         |                                |
+| ~=^~   | $\Uparrow$            | ~\Uparrow~            |                                |
+| ~=v~   | $\Downarrow$          | ~\Downarrow~          |                                |
+| ~<=>~  | $\Leftrightarrow$     | ~\Leftrightarrow~     |                                |
+| ~iff~  | $\Leftrightarrow$     | ~\Leftrightarrow~     |                                |
+|--------+-----------------------+-----------------------+--------------------------------|
+| ~<=n~  | $\nLeftarrow$         | ~\nLeftarrow~         | $\Leftarrow$      + ~n~  (neg) |
+| ~=>n~  | $\nRightarrow$        | ~\nRightarrow~        | $\Rightarrow$     + ~n~  (neg) |
+| ~<=>n~ | $\nLeftrightarrow$    | ~\nLeftrightarrow~    | $\Leftrightarrow$ + ~n~  (neg) |
+| ~iffn~ | $\nLeftrightarrow$    | ~\nLeftrightarrow~    | $\Leftrightarrow$ + ~n~  (neg) |
+|--------+-----------------------+-----------------------+--------------------------------|
+| ~<==>~ | $\Longleftrightarrow$ | ~\Longleftrightarrow~ | longer arrows, with 2 ~==~     |
+| ~<==~  | $\Longleftarrow$      | ~\Longleftarrow~      | longer arrows, with 2 ~==~     |
+| ~==>~  | $\Longrightarrow$     | ~\Longrightarrow~     | longer arrows, with 2 ~==~     |
+|--------+-----------------------+-----------------------+--------------------------------|
 
 *** Long arrow with top-bottom entries 
 #+caption: Long arrow Line arrows
