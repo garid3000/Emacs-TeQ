@@ -78,84 +78,85 @@
 | ~z~ | $\mathbf{z}$ | $\bar{z}$ | $\vec{z}$ | $\hat{z}$ | $\dot{z}$ | $\ddot{z}$ | $\dddot{z}$ | $\ddddot{z}$ | $\mathring{z}$ |
 |-----+--------------+-----------+-----------+-----------+-----------+------------+-------------+--------------+----------------|
 
-#+attr_latex: :align |l|cccccccc|  :placement [H]
-|-------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
-|       | ~+b~                | ~+v~                | ~+h~                | ~+d~                | ~+dd~                | ~+ddd~                | ~+dddd~                | ~+o~                     |
-|-------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
-| ~i..~ | $\bar{\imath}$      | $\vec{\imath}$      | $\hat{\imath}$      | $\dot{\imath}$      | $\ddot{\imath}$      | $\dddot{\imath}$      | $\ddddot{\imath}$      | $\mathring{\imath}$      |
-| ~j..~ | $\bar{\jmath}$      | $\vec{\jmath}$      | $\hat{\jmath}$      | $\dot{\jmath}$      | $\ddot{\jmath}$      | $\dddot{\jmath}$      | $\ddddot{\jmath}$      | $\mathring{\jmath}$      |
-|-------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
+#+attr_latex: :align |l|ccccccccc|  :placement [H]
+|-------+----------+----------------+----------------+----------------+----------------+-----------------+------------------+-------------------+---------------------|
+|       |          | ~+b~           | ~+v~           | ~+h~           | ~+d~           | ~+dd~           | ~+ddd~           | ~+dddd~           | ~+o~                |
+|-------+----------+----------------+----------------+----------------+----------------+-----------------+------------------+-------------------+---------------------|
+| ~i..~ | $\imath$ | $\bar{\imath}$ | $\vec{\imath}$ | $\hat{\imath}$ | $\dot{\imath}$ | $\ddot{\imath}$ | $\dddot{\imath}$ | $\ddddot{\imath}$ | $\mathring{\imath}$ |
+| ~j..~ | $\jmath$ | $\bar{\jmath}$ | $\vec{\jmath}$ | $\hat{\jmath}$ | $\dot{\jmath}$ | $\ddot{\jmath}$ | $\dddot{\jmath}$ | $\ddddot{\jmath}$ | $\mathring{\jmath}$ |
+|-------+----------+----------------+----------------+----------------+----------------+-----------------+------------------+-------------------+---------------------|
 
 ** Greek Uppercase letter
-#+attr_latex: :align |l|cccccccc|  :placement [H]
-|-------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
-|       | ~+b~             | ~+v~             | ~+h~             | ~+d~             | ~+dd~             | ~+ddd~             | ~+dddd~             | ~+o~                  |
-|-------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
-| ~A.~  | $\bar{A}$        | $\vec{A}$        | $\hat{A}$        | $\dot{A}$        | $\ddot{A}$        | $\dddot{A}$        | $\ddddot{A}$        | $\mathring{A}$        |
-| ~B.~  | $\bar{B}$        | $\vec{B}$        | $\hat{B}$        | $\dot{B}$        | $\ddot{B}$        | $\dddot{B}$        | $\ddddot{B}$        | $\mathring{B}$        |
-| ~C.~  | $\bar{\Psi}$     | $\vec{\Psi}$     | $\hat{\Psi}$     | $\dot{\Psi}$     | $\ddot{\Psi}$     | $\dddot{\Psi}$     | $\ddddot{\Psi}$     | $\mathring{\Psi}$     |
-| ~D.~  | $\bar{\Delta}$   | $\vec{\Delta}$   | $\hat{\Delta}$   | $\dot{\Delta}$   | $\ddot{\Delta}$   | $\dddot{\Delta}$   | $\ddddot{\Delta}$   | $\mathring{\Delta}$   |
-| ~E.~  | $\bar{E}$        | $\vec{E}$        | $\hat{E}$        | $\dot{E}$        | $\ddot{E}$        | $\dddot{E}$        | $\ddddot{E}$        | $\mathring{E}$        |
-| ~F.~  | $\bar{\Phi}$     | $\vec{\Phi}$     | $\hat{\Phi}$     | $\dot{\Phi}$     | $\ddot{\Phi}$     | $\dddot{\Phi}$     | $\ddddot{\Phi}$     | $\mathring{\Phi}$     |
-| ~G.~  | $\bar{\Gamma}$   | $\vec{\Gamma}$   | $\hat{\Gamma}$   | $\dot{\Gamma}$   | $\ddot{\Gamma}$   | $\dddot{\Gamma}$   | $\ddddot{\Gamma}$   | $\mathring{\Gamma}$   |
-| ~H.~  | $\bar{H}$        | $\vec{H}$        | $\hat{H}$        | $\dot{H}$        | $\ddot{H}$        | $\dddot{H}$        | $\ddddot{H}$        | $\mathring{H}$        |
-| ~I.~  | $\bar{I}$        | $\vec{I}$        | $\hat{I}$        | $\dot{I}$        | $\ddot{I}$        | $\dddot{I}$        | $\ddddot{I}$        | $\mathring{I}$        |
-| ~J.~  | $\bar{\Xi}$      | $\vec{\Xi}$      | $\hat{\Xi}$      | $\dot{\Xi}$      | $\ddot{\Xi}$      | $\dddot{\Xi}$      | $\ddddot{\Xi}$      | $\mathring{\Xi}$      |
-| ~K.~  | $\bar{K}$        | $\vec{K}$        | $\hat{K}$        | $\dot{K}$        | $\ddot{K}$        | $\dddot{K}$        | $\ddddot{K}$        | $\mathring{K}$        |
-| ~L.~  | $\bar{\Lambda}$  | $\vec{\Lambda}$  | $\hat{\Lambda}$  | $\dot{\Lambda}$  | $\ddot{\Lambda}$  | $\dddot{\Lambda}$  | $\ddddot{\Lambda}$  | $\mathring{\Lambda}$  |
-| ~M.~  | $\bar{M}$        | $\vec{M}$        | $\hat{M}$        | $\dot{M}$        | $\ddot{M}$        | $\dddot{M}$        | $\ddddot{M}$        | $\mathring{M}$        |
-| ~N.~  | $\bar{N}$        | $\vec{N}$        | $\hat{N}$        | $\dot{N}$        | $\ddot{N}$        | $\dddot{N}$        | $\ddddot{N}$        | $\mathring{N}$        |
-| ~O.~  | $\bar{O}$        | $\vec{O}$        | $\hat{O}$        | $\dot{O}$        | $\ddot{O}$        | $\dddot{O}$        | $\ddddot{O}$        | $\mathring{O}$        |
-| ~P.~  | $\bar{\Pi}$      | $\vec{\Pi}$      | $\hat{\Pi}$      | $\dot{\Pi}$      | $\ddot{\Pi}$      | $\dddot{\Pi}$      | $\ddddot{\Pi}$      | $\mathring{\Pi}$      |
-| ~R.~  | $\bar{P}$        | $\vec{P}$        | $\hat{P}$        | $\dot{P}$        | $\ddot{P}$        | $\dddot{P}$        | $\ddddot{P}$        | $\mathring{P}$        |
-| ~S.~  | $\bar{\Sigma}$   | $\vec{\Sigma}$   | $\hat{\Sigma}$   | $\dot{\Sigma}$   | $\ddot{\Sigma}$   | $\dddot{\Sigma}$   | $\ddddot{\Sigma}$   | $\mathring{\Sigma}$   |
-| ~T.~  | $\bar{T}$        | $\vec{T}$        | $\hat{T}$        | $\dot{T}$        | $\ddot{T}$        | $\dddot{T}$        | $\ddddot{T}$        | $\mathring{T}$        |
-| ~Th.~ | $\bar{\Theta}$   | $\vec{\Theta}$   | $\hat{\Theta}$   | $\dot{\Theta}$   | $\ddot{\Theta}$   | $\dddot{\Theta}$   | $\ddddot{\Theta}$   | $\mathring{\Theta}$   |
-| ~U.~  | $\bar{\Upsilon}$ | $\vec{\Upsilon}$ | $\hat{\Upsilon}$ | $\dot{\Upsilon}$ | $\ddot{\Upsilon}$ | $\dddot{\Upsilon}$ | $\ddddot{\Upsilon}$ | $\mathring{\Upsilon}$ |
-| ~W.~  | $\bar{\Omega}$   | $\vec{\Omega}$   | $\hat{\Omega}$   | $\dot{\Omega}$   | $\ddot{\Omega}$   | $\dddot{\Omega}$   | $\ddddot{\Omega}$   | $\mathring{\Omega}$   |
-| ~X.~  | $\bar{X}$        | $\vec{X}$        | $\hat{X}$        | $\dot{X}$        | $\ddot{X}$        | $\dddot{X}$        | $\ddddot{X}$        | $\mathring{X}$        |
-| ~Z.~  | $\bar{Z}$        | $\vec{Z}$        | $\hat{Z}$        | $\dot{Z}$        | $\ddot{Z}$        | $\dddot{Z}$        | $\ddddot{Z}$        | $\mathring{Z}$        |
-|-------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
-
+#+attr_latex: :align |l|ccccccccc|  :placement [H]
+|-------+------------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
+|       |            | ~+b~             | ~+v~             | ~+h~             | ~+d~             | ~+dd~             | ~+ddd~             | ~+dddd~             | ~+o~                  |
+|-------+------------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
+| ~A.~  | $A$        | $\bar{A}$        | $\vec{A}$        | $\hat{A}$        | $\dot{A}$        | $\ddot{A}$        | $\dddot{A}$        | $\ddddot{A}$        | $\mathring{A}$        |
+| ~B.~  | $B$        | $\bar{B}$        | $\vec{B}$        | $\hat{B}$        | $\dot{B}$        | $\ddot{B}$        | $\dddot{B}$        | $\ddddot{B}$        | $\mathring{B}$        |
+| ~C.~  | $\Psi$     | $\bar{\Psi}$     | $\vec{\Psi}$     | $\hat{\Psi}$     | $\dot{\Psi}$     | $\ddot{\Psi}$     | $\dddot{\Psi}$     | $\ddddot{\Psi}$     | $\mathring{\Psi}$     |
+| ~D.~  | $\Delta$   | $\bar{\Delta}$   | $\vec{\Delta}$   | $\hat{\Delta}$   | $\dot{\Delta}$   | $\ddot{\Delta}$   | $\dddot{\Delta}$   | $\ddddot{\Delta}$   | $\mathring{\Delta}$   |
+| ~E.~  | $E$        | $\bar{E}$        | $\vec{E}$        | $\hat{E}$        | $\dot{E}$        | $\ddot{E}$        | $\dddot{E}$        | $\ddddot{E}$        | $\mathring{E}$        |
+| ~F.~  | $\Phi$     | $\bar{\Phi}$     | $\vec{\Phi}$     | $\hat{\Phi}$     | $\dot{\Phi}$     | $\ddot{\Phi}$     | $\dddot{\Phi}$     | $\ddddot{\Phi}$     | $\mathring{\Phi}$     |
+| ~G.~  | $\Gamma$   | $\bar{\Gamma}$   | $\vec{\Gamma}$   | $\hat{\Gamma}$   | $\dot{\Gamma}$   | $\ddot{\Gamma}$   | $\dddot{\Gamma}$   | $\ddddot{\Gamma}$   | $\mathring{\Gamma}$   |
+| ~H.~  | $H$        | $\bar{H}$        | $\vec{H}$        | $\hat{H}$        | $\dot{H}$        | $\ddot{H}$        | $\dddot{H}$        | $\ddddot{H}$        | $\mathring{H}$        |
+| ~I.~  | $I$        | $\bar{I}$        | $\vec{I}$        | $\hat{I}$        | $\dot{I}$        | $\ddot{I}$        | $\dddot{I}$        | $\ddddot{I}$        | $\mathring{I}$        |
+| ~J.~  | $\Xi$      | $\bar{\Xi}$      | $\vec{\Xi}$      | $\hat{\Xi}$      | $\dot{\Xi}$      | $\ddot{\Xi}$      | $\dddot{\Xi}$      | $\ddddot{\Xi}$      | $\mathring{\Xi}$      |
+| ~K.~  | $K$        | $\bar{K}$        | $\vec{K}$        | $\hat{K}$        | $\dot{K}$        | $\ddot{K}$        | $\dddot{K}$        | $\ddddot{K}$        | $\mathring{K}$        |
+| ~L.~  | $\Lambda$  | $\bar{\Lambda}$  | $\vec{\Lambda}$  | $\hat{\Lambda}$  | $\dot{\Lambda}$  | $\ddot{\Lambda}$  | $\dddot{\Lambda}$  | $\ddddot{\Lambda}$  | $\mathring{\Lambda}$  |
+| ~M.~  | $M$        | $\bar{M}$        | $\vec{M}$        | $\hat{M}$        | $\dot{M}$        | $\ddot{M}$        | $\dddot{M}$        | $\ddddot{M}$        | $\mathring{M}$        |
+| ~N.~  | $N$        | $\bar{N}$        | $\vec{N}$        | $\hat{N}$        | $\dot{N}$        | $\ddot{N}$        | $\dddot{N}$        | $\ddddot{N}$        | $\mathring{N}$        |
+| ~O.~  | $O$        | $\bar{O}$        | $\vec{O}$        | $\hat{O}$        | $\dot{O}$        | $\ddot{O}$        | $\dddot{O}$        | $\ddddot{O}$        | $\mathring{O}$        |
+| ~P.~  | $\Pi$      | $\bar{\Pi}$      | $\vec{\Pi}$      | $\hat{\Pi}$      | $\dot{\Pi}$      | $\ddot{\Pi}$      | $\dddot{\Pi}$      | $\ddddot{\Pi}$      | $\mathring{\Pi}$      |
+| ~R.~  | $P$        | $\bar{P}$        | $\vec{P}$        | $\hat{P}$        | $\dot{P}$        | $\ddot{P}$        | $\dddot{P}$        | $\ddddot{P}$        | $\mathring{P}$        |
+| ~S.~  | $\Sigma$   | $\bar{\Sigma}$   | $\vec{\Sigma}$   | $\hat{\Sigma}$   | $\dot{\Sigma}$   | $\ddot{\Sigma}$   | $\dddot{\Sigma}$   | $\ddddot{\Sigma}$   | $\mathring{\Sigma}$   |
+| ~T.~  | $T$        | $\bar{T}$        | $\vec{T}$        | $\hat{T}$        | $\dot{T}$        | $\ddot{T}$        | $\dddot{T}$        | $\ddddot{T}$        | $\mathring{T}$        |
+| ~Th.~ | $\Theta$   | $\bar{\Theta}$   | $\vec{\Theta}$   | $\hat{\Theta}$   | $\dot{\Theta}$   | $\ddot{\Theta}$   | $\dddot{\Theta}$   | $\ddddot{\Theta}$   | $\mathring{\Theta}$   |
+| ~U.~  | $\Upsilon$ | $\bar{\Upsilon}$ | $\vec{\Upsilon}$ | $\hat{\Upsilon}$ | $\dot{\Upsilon}$ | $\ddot{\Upsilon}$ | $\dddot{\Upsilon}$ | $\ddddot{\Upsilon}$ | $\mathring{\Upsilon}$ |
+| ~W.~  | $\Omega$   | $\bar{\Omega}$   | $\vec{\Omega}$   | $\hat{\Omega}$   | $\dot{\Omega}$   | $\ddot{\Omega}$   | $\dddot{\Omega}$   | $\ddddot{\Omega}$   | $\mathring{\Omega}$   |
+| ~X.~  | $X$        | $\bar{X}$        | $\vec{X}$        | $\hat{X}$        | $\dot{X}$        | $\ddot{X}$        | $\dddot{X}$        | $\ddddot{X}$        | $\mathring{X}$        |
+| ~Z.~  | $Z$        | $\bar{Z}$        | $\vec{Z}$        | $\hat{Z}$        | $\dot{Z}$        | $\ddot{Z}$        | $\dddot{Z}$        | $\ddddot{Z}$        | $\mathring{Z}$        |
+|-------+------------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
+ 
 ** Greek Lower letter
-#+attr_latex: :align |l|cccccccc|  :placement [H]
-|-------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
-|       | ~+b~             | ~+v~             | ~+h~             | ~+d~             | ~+dd~             | ~+ddd~             | ~+dddd~             | ~+o~                  |
-|-------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
-| ~a.~  | $\bar{\alpha}$   | $\vec{\alpha}$   | $\hat{\alpha}$   | $\dot{\alpha}$   | $\ddot{\alpha}$   | $\dddot{\alpha}$   | $\ddddot{\alpha}$   | $\mathring{\alpha}$   |
-| ~a.~  | $\bar{\beta}$    | $\vec{\beta}$    | $\hat{\beta}$    | $\dot{\beta}$    | $\ddot{\beta}$    | $\dddot{\beta}$    | $\ddddot{\beta}$    | $\mathring{\beta}$    |
-| ~c.~  | $\bar{\psi}$     | $\vec{\psi}$     | $\hat{\psi}$     | $\dot{\psi}$     | $\ddot{\psi}$     | $\dddot{\psi}$     | $\ddddot{\psi}$     | $\mathring{\psi}$     |
-| ~d.~  | $\bar{\delta}$   | $\vec{\delta}$   | $\hat{\delta}$   | $\dot{\delta}$   | $\ddot{\delta}$   | $\dddot{\delta}$   | $\ddddot{\delta}$   | $\mathring{\delta}$   |
-| ~e.~  | $\bar{\epsilon}$ | $\vec{\epsilon}$ | $\hat{\epsilon}$ | $\dot{\epsilon}$ | $\ddot{\epsilon}$ | $\dddot{\epsilon}$ | $\ddddot{\epsilon}$ | $\mathring{\epsilon}$ |
-| ~f.~  | $\bar{\phi}$     | $\vec{\phi}$     | $\hat{\phi}$     | $\dot{\phi}$     | $\ddot{\phi}$     | $\dddot{\phi}$     | $\ddddot{\phi}$     | $\mathring{\phi}$     |
-| ~g.~  | $\bar{\gamma}$   | $\vec{\gamma}$   | $\hat{\gamma}$   | $\dot{\gamma}$   | $\ddot{\gamma}$   | $\dddot{\gamma}$   | $\ddddot{\gamma}$   | $\mathring{\gamma}$   |
-| ~h.~  | $\bar{\eta}$     | $\vec{\eta}$     | $\hat{\eta}$     | $\dot{\eta}$     | $\ddot{\eta}$     | $\dddot{\eta}$     | $\ddddot{\eta}$     | $\mathring{\eta}$     |
-| ~i.~  | $\bar{\iota}$    | $\vec{\iota}$    | $\hat{\iota}$    | $\dot{\iota}$    | $\ddot{\iota}$    | $\dddot{\iota}$    | $\ddddot{\iota}$    | $\mathring{\iota}$    |
-| ~j.~  | $\bar{\xi}$      | $\vec{\xi}$      | $\hat{\xi}$      | $\dot{\xi}$      | $\ddot{\xi}$      | $\dddot{\xi}$      | $\ddddot{\xi}$      | $\mathring{\xi}$      |
-| ~k.~  | $\bar{\kappa}$   | $\vec{\kappa}$   | $\hat{\kappa}$   | $\dot{\kappa}$   | $\ddot{\kappa}$   | $\dddot{\kappa}$   | $\ddddot{\kappa}$   | $\mathring{\kappa}$   |
-| ~l.~  | $\bar{\lambda}$  | $\vec{\lambda}$  | $\hat{\lambda}$  | $\dot{\lambda}$  | $\ddot{\lambda}$  | $\dddot{\lambda}$  | $\ddddot{\lambda}$  | $\mathring{\lambda}$  |
-| ~m.~  | $\bar{\mu}$      | $\vec{\mu}$      | $\hat{\mu}$      | $\dot{\mu}$      | $\ddot{\mu}$      | $\dddot{\mu}$      | $\ddddot{\mu}$      | $\mathring{\mu}$      |
-| ~n.~  | $\bar{\nu}$      | $\vec{\nu}$      | $\hat{\nu}$      | $\dot{\nu}$      | $\ddot{\nu}$      | $\dddot{\nu}$      | $\ddddot{\nu}$      | $\mathring{\nu}$      |
-| ~o.~  | $\bar{o}$        | $\vec{o}$        | $\hat{o}$        | $\dot{o}$        | $\ddot{o}$        | $\dddot{o}$        | $\ddddot{o}$        | $\mathring{o}$        |
-| ~p.~  | $\bar{\pi}$      | $\vec{\pi}$      | $\hat{\pi}$      | $\dot{\pi}$      | $\ddot{\pi}$      | $\dddot{\pi}$      | $\ddddot{\pi}$      | $\mathring{\pi}$      |
-| ~r.~  | $\bar{\rho}$     | $\vec{\rho}$     | $\hat{\rho}$     | $\dot{\rho}$     | $\ddot{\rho}$     | $\dddot{\rho}$     | $\ddddot{\rho}$     | $\mathring{\rho}$     |
-| ~s.~  | $\bar{\sigma}$   | $\vec{\sigma}$   | $\hat{\sigma}$   | $\dot{\sigma}$   | $\ddot{\sigma}$   | $\dddot{\sigma}$   | $\ddddot{\sigma}$   | $\mathring{\sigma}$   |
-| ~t.~  | $\bar{\tau}$     | $\vec{\tau}$     | $\hat{\tau}$     | $\dot{\tau}$     | $\ddot{\tau}$     | $\dddot{\tau}$     | $\ddddot{\tau}$     | $\mathring{\tau}$     |
-| ~th.~ | $\bar{\theta}$   | $\vec{\theta}$   | $\hat{\theta}$   | $\dot{\theta}$   | $\ddot{\theta}$   | $\dddot{\theta}$   | $\ddddot{\theta}$   | $\mathring{\theta}$   |
-| ~u.~  | $\bar{\upsilon}$ | $\vec{\upsilon}$ | $\hat{\upsilon}$ | $\dot{\upsilon}$ | $\ddot{\upsilon}$ | $\dddot{\upsilon}$ | $\ddddot{\upsilon}$ | $\mathring{\upsilon}$ |
-| ~w.~  | $\bar{\omega}$   | $\vec{\omega}$   | $\hat{\omega}$   | $\dot{\omega}$   | $\ddot{\omega}$   | $\dddot{\omega}$   | $\ddddot{\omega}$   | $\mathring{\omega}$   |
-| ~x.~  | $\bar{\chi}$     | $\vec{\chi}$     | $\hat{\chi}$     | $\dot{\chi}$     | $\ddot{\chi}$     | $\dddot{\chi}$     | $\ddddot{\chi}$     | $\mathring{\chi}$     |
-| ~z.~  | $\bar{\zeta}$    | $\vec{\zeta}$    | $\hat{\zeta}$    | $\dot{\zeta}$    | $\ddot{\zeta}$    | $\dddot{\zeta}$    | $\ddddot{\zeta}$    | $\mathring{\zeta}$    |
-|-------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
+#+attr_latex: :align |l|ccccccccc|  :placement [H]
+|-------+------------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
+|       |            | ~+b~             | ~+v~             | ~+h~             | ~+d~             | ~+dd~             | ~+ddd~             | ~+dddd~             | ~+o~                  |
+|-------+------------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
+| ~a.~  | $\alpha$   | $\bar{\alpha}$   | $\vec{\alpha}$   | $\hat{\alpha}$   | $\dot{\alpha}$   | $\ddot{\alpha}$   | $\dddot{\alpha}$   | $\ddddot{\alpha}$   | $\mathring{\alpha}$   |
+| ~a.~  | $\beta$    | $\bar{\beta}$    | $\vec{\beta}$    | $\hat{\beta}$    | $\dot{\beta}$    | $\ddot{\beta}$    | $\dddot{\beta}$    | $\ddddot{\beta}$    | $\mathring{\beta}$    |
+| ~c.~  | $\psi$     | $\bar{\psi}$     | $\vec{\psi}$     | $\hat{\psi}$     | $\dot{\psi}$     | $\ddot{\psi}$     | $\dddot{\psi}$     | $\ddddot{\psi}$     | $\mathring{\psi}$     |
+| ~d.~  | $\delta$   | $\bar{\delta}$   | $\vec{\delta}$   | $\hat{\delta}$   | $\dot{\delta}$   | $\ddot{\delta}$   | $\dddot{\delta}$   | $\ddddot{\delta}$   | $\mathring{\delta}$   |
+| ~e.~  | $\epsilon$ | $\bar{\epsilon}$ | $\vec{\epsilon}$ | $\hat{\epsilon}$ | $\dot{\epsilon}$ | $\ddot{\epsilon}$ | $\dddot{\epsilon}$ | $\ddddot{\epsilon}$ | $\mathring{\epsilon}$ |
+| ~f.~  | $\phi$     | $\bar{\phi}$     | $\vec{\phi}$     | $\hat{\phi}$     | $\dot{\phi}$     | $\ddot{\phi}$     | $\dddot{\phi}$     | $\ddddot{\phi}$     | $\mathring{\phi}$     |
+| ~g.~  | $\gamma$   | $\bar{\gamma}$   | $\vec{\gamma}$   | $\hat{\gamma}$   | $\dot{\gamma}$   | $\ddot{\gamma}$   | $\dddot{\gamma}$   | $\ddddot{\gamma}$   | $\mathring{\gamma}$   |
+| ~h.~  | $\eta$     | $\bar{\eta}$     | $\vec{\eta}$     | $\hat{\eta}$     | $\dot{\eta}$     | $\ddot{\eta}$     | $\dddot{\eta}$     | $\ddddot{\eta}$     | $\mathring{\eta}$     |
+| ~i.~  | $\iota$    | $\bar{\iota}$    | $\vec{\iota}$    | $\hat{\iota}$    | $\dot{\iota}$    | $\ddot{\iota}$    | $\dddot{\iota}$    | $\ddddot{\iota}$    | $\mathring{\iota}$    |
+| ~j.~  | $\xi$      | $\bar{\xi}$      | $\vec{\xi}$      | $\hat{\xi}$      | $\dot{\xi}$      | $\ddot{\xi}$      | $\dddot{\xi}$      | $\ddddot{\xi}$      | $\mathring{\xi}$      |
+| ~k.~  | $\kappa$   | $\bar{\kappa}$   | $\vec{\kappa}$   | $\hat{\kappa}$   | $\dot{\kappa}$   | $\ddot{\kappa}$   | $\dddot{\kappa}$   | $\ddddot{\kappa}$   | $\mathring{\kappa}$   |
+| ~l.~  | $\lambda$  | $\bar{\lambda}$  | $\vec{\lambda}$  | $\hat{\lambda}$  | $\dot{\lambda}$  | $\ddot{\lambda}$  | $\dddot{\lambda}$  | $\ddddot{\lambda}$  | $\mathring{\lambda}$  |
+| ~m.~  | $\mu$      | $\bar{\mu}$      | $\vec{\mu}$      | $\hat{\mu}$      | $\dot{\mu}$      | $\ddot{\mu}$      | $\dddot{\mu}$      | $\ddddot{\mu}$      | $\mathring{\mu}$      |
+| ~n.~  | $\nu$      | $\bar{\nu}$      | $\vec{\nu}$      | $\hat{\nu}$      | $\dot{\nu}$      | $\ddot{\nu}$      | $\dddot{\nu}$      | $\ddddot{\nu}$      | $\mathring{\nu}$      |
+| ~o.~  | $o$        | $\bar{o}$        | $\vec{o}$        | $\hat{o}$        | $\dot{o}$        | $\ddot{o}$        | $\dddot{o}$        | $\ddddot{o}$        | $\mathring{o}$        |
+| ~p.~  | $\pi$      | $\bar{\pi}$      | $\vec{\pi}$      | $\hat{\pi}$      | $\dot{\pi}$      | $\ddot{\pi}$      | $\dddot{\pi}$      | $\ddddot{\pi}$      | $\mathring{\pi}$      |
+| ~r.~  | $\rho$     | $\bar{\rho}$     | $\vec{\rho}$     | $\hat{\rho}$     | $\dot{\rho}$     | $\ddot{\rho}$     | $\dddot{\rho}$     | $\ddddot{\rho}$     | $\mathring{\rho}$     |
+| ~s.~  | $\sigma$   | $\bar{\sigma}$   | $\vec{\sigma}$   | $\hat{\sigma}$   | $\dot{\sigma}$   | $\ddot{\sigma}$   | $\dddot{\sigma}$   | $\ddddot{\sigma}$   | $\mathring{\sigma}$   |
+| ~t.~  | $\tau$     | $\bar{\tau}$     | $\vec{\tau}$     | $\hat{\tau}$     | $\dot{\tau}$     | $\ddot{\tau}$     | $\dddot{\tau}$     | $\ddddot{\tau}$     | $\mathring{\tau}$     |
+| ~th.~ | $\theta$   | $\bar{\theta}$   | $\vec{\theta}$   | $\hat{\theta}$   | $\dot{\theta}$   | $\ddot{\theta}$   | $\dddot{\theta}$   | $\ddddot{\theta}$   | $\mathring{\theta}$   |
+| ~u.~  | $\upsilon$ | $\bar{\upsilon}$ | $\vec{\upsilon}$ | $\hat{\upsilon}$ | $\dot{\upsilon}$ | $\ddot{\upsilon}$ | $\dddot{\upsilon}$ | $\ddddot{\upsilon}$ | $\mathring{\upsilon}$ |
+| ~w.~  | $\omega$   | $\bar{\omega}$   | $\vec{\omega}$   | $\hat{\omega}$   | $\dot{\omega}$   | $\ddot{\omega}$   | $\dddot{\omega}$   | $\ddddot{\omega}$   | $\mathring{\omega}$   |
+| ~x.~  | $\chi$     | $\bar{\chi}$     | $\vec{\chi}$     | $\hat{\chi}$     | $\dot{\chi}$     | $\ddot{\chi}$     | $\dddot{\chi}$     | $\ddddot{\chi}$     | $\mathring{\chi}$     |
+| ~z.~  | $\zeta$    | $\bar{\zeta}$    | $\vec{\zeta}$    | $\hat{\zeta}$    | $\dot{\zeta}$    | $\ddot{\zeta}$    | $\dddot{\zeta}$    | $\ddddot{\zeta}$    | $\mathring{\zeta}$    |
+|-------+------------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
 
-#+attr_latex: :align |l|cccccccc|  :placement [H]
-|-------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
-|       | ~+b~                | ~+v~                | ~+h~                | ~+d~                | ~+dd~                | ~+ddd~                | ~+dddd~                | ~+o~                     |
-|-------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
-| ~e..~ | $\bar{\varepsilon}$ | $\vec{\varepsilon}$ | $\hat{\varepsilon}$ | $\dot{\varepsilon}$ | $\ddot{\varepsilon}$ | $\dddot{\varepsilon}$ | $\ddddot{\varepsilon}$ | $\mathring{\varepsilon}$ |
-| ~f..~ | $\bar{\varphi}$     | $\vec{\varphi}$     | $\hat{\varphi}$     | $\dot{\varphi}$     | $\ddot{\varphi}$     | $\dddot{\varphi}$     | $\ddddot{\varphi}$     | $\mathring{\varphi}$     |
-| ~s..~ | $\bar{\varsigma}$   | $\vec{\varsigma}$   | $\hat{\varsigma}$   | $\dot{\varsigma}$   | $\ddot{\varsigma}$   | $\dddot{\varsigma}$   | $\ddddot{\varsigma}$   | $\mathring{\varsigma}$   |
-|-------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
+
+#+attr_latex: :align |l|ccccccccc|  :placement [H]
+|-------+---------------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
+|       |               | ~+b~                | ~+v~                | ~+h~                | ~+d~                | ~+dd~                | ~+ddd~                | ~+dddd~                | ~+o~                     |
+|-------+---------------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
+| ~e..~ | $\varepsilon$ | $\bar{\varepsilon}$ | $\vec{\varepsilon}$ | $\hat{\varepsilon}$ | $\dot{\varepsilon}$ | $\ddot{\varepsilon}$ | $\dddot{\varepsilon}$ | $\ddddot{\varepsilon}$ | $\mathring{\varepsilon}$ |
+| ~f..~ | $\varphi$     | $\bar{\varphi}$     | $\vec{\varphi}$     | $\hat{\varphi}$     | $\dot{\varphi}$     | $\ddot{\varphi}$     | $\dddot{\varphi}$     | $\ddddot{\varphi}$     | $\mathring{\varphi}$     |
+| ~s..~ | $\varsigma$   | $\bar{\varsigma}$   | $\vec{\varsigma}$   | $\hat{\varsigma}$   | $\dot{\varsigma}$   | $\ddot{\varsigma}$   | $\dddot{\varsigma}$   | $\ddddot{\varsigma}$   | $\mathring{\varsigma}$   |
+|-------+---------------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
 
 
 *  Function Expansion
