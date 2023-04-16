@@ -196,25 +196,23 @@
 **  Geometry
 #+caption:  
 #+name: tbl-3-sym-geo
-#+attr_latex: :align |llll| :placement [H]
-|---------+----------------------+----------------------+-------------------------------|
-| key     | sym                  | latex                | description                   |
-|---------+----------------------+----------------------+-------------------------------|
-| ~perp~  | $\perp$              | ~\perp~              |                               |
-| ~perpn~ | $\cancel{\perp}$     | ~\not\perp~          | $\perp$  ~n~ (neg)            |
-| ~para~  | $\parallel$          | ~\parallel~          |                               |
-| ~paran~ | $\nparallel$         | ~\nparallel~         | $\parallel$ ~n~  (neg)        |
-| ~ang~   | $\angle$             | ~\angle~             |                               |
-| ~ang.~  | $\measuredangle$     | ~\measuredangle~     | $\angle$ ~.~ (var)            |
-|---------+----------------------+----------------------+-------------------------------|
-| ~tri~   | $\vartriangle$       | ~\vartriangle~       |                               |
-| ~tri.~  | $\triangledown$      | ~\triangledown~      | $\vartriangle$ ~n~ (neg)      |
-| ~squ~   | $\square$            | ~\square~            |                               |
-| ~trin~  | $\blacktriangle$     | ~\blacktriangle~     | $\vartriangle$ ~.~ (var)      |
-| ~tri.n~ | $\blacktriangledown$ | ~\blacktriangledown~ | $\vartriangle$ ~.n~ (neg,var) |
-| ~trin.~ | $\blacktriangledown$ | ~\blacktriangledown~ | $\vartriangle$ ~n.~ (neg,var) |
-| ~squn~  | $\blacksquare$       | ~\blacksquare~       | $\square$ ~.~ (var)           |
-|---------+----------------------+----------------------+-------------------------------|
+#+attr_latex: :align |l|ll| :placement [H]
+|--------+------------------+----------------------|
+| key    | sym              | ~n~                  |
+|--------+------------------+----------------------|
+| ~perp~ | $\perp$          | $\cancel{\perp}$     |
+| ~para~ | $\parallel$      | $\nparallel$         |
+| ~ang~  | $\angle$         |                      |
+| ~ang.~ | $\measuredangle$ |                      |
+|--------+------------------+----------------------|
+| ~tri~  | $\vartriangle$   | $\blacktriangle$     |
+| ~tri.~ | $\triangledown$  | $\blacktriangledown$ |
+| ~squ~  | $\square$        | $\blacksquare$       |
+|--------+------------------+----------------------|
+
+
+
+
 
 **  Letter like
 #+caption: Letter-like Symbold  
@@ -258,77 +256,43 @@
 *** Single:
 #+caption: Single Line arrows
 #+name: tbl-3-sym-arrow-1
-#+attr_latex: :align |llll| :placement [H]
-|--------+--------------------+--------------------+--------------------------------------|
-| key    | sym                | latex              | description                          |
-|--------+--------------------+--------------------+--------------------------------------|
-| ~<-~   | $\leftarrow$       | ~\leftarrow~       |                                      |
-| ~->~   | $\rightarrow$      | ~\rightarrow~      |                                      |
-| ~-^~   | $\uparrow$         | ~\uparrow~         | ~^~ looks like up arrow head         |
-| ~-v~   | $\downarrow$       | ~\downarrow~       | ~v~ looks like down arrow head       |
-| ~<->~  | $\leftrightarrow$  | ~\leftrightarrow~  | Sorry, Github won't render correctly |
-|--------+--------------------+--------------------+--------------------------------------|
-| ~<-n~  | $\nleftarrow$      | ~\nleftarrow~      | $\leftarrow$          + ~n~  (neg)   |
-| ~->n~  | $\nrightarrow$     | ~\nrightarrow~     | $\rightarrow$         + ~n~  (neg)   |
-| ~-^n~  | $\nuparrow$        | ~\nuparrow~        | $\uparrow$            + ~n~  (neg)   |
-| ~-vn~  | $\ndownarrow$      | ~\ndownarrow~      | $\downarrow$          + ~n~  (neg)   |
-| ~<->n~ | $\nleftrightarrow$ | ~\nleftrightarrow~ | ...                                  |
-|--------+--------------------+--------------------+--------------------------------------|
-| ~-->~  | $\longrightarrow$  | ~\longrightarrow~  | longer with 2 ~-~                    |
-| ~<--~  | $\longleftarrow$   | ~\longleftarrow~   | longer with 2 ~-~                    |
-|--------+--------------------+--------------------+--------------------------------------|
-| ~to~   | $\to$              | ~\to~              | same as ~->~                         |
-| ~mto~  | $\mapsto$          | ~\mapsto~          |                                      |
-|--------+--------------------+--------------------+--------------------------------------|
-
-|-------+-------------------+--------------------|
-| key   |                   | ~+n~  (neg)        |
-|-------+-------------------+--------------------|
-| ~<-~  | $\leftarrow$      | $\nleftarrow$      |
-| ~->~  | $\rightarrow$     | $\nrightarrow$     |
-| ~-^~  | $\uparrow$        | $\nuparrow$        |
-| ~-v~  | $\downarrow$      | $\ndownarrow$      |
-| ~<->~ | $\leftrightarrow$ | $\nleftrightarrow$ |
-|-------+-------------------+--------------------|
+#+attr_latex: :align |l|ll| :placement [H]
+|--------+-------------------+----------------------------|
+| key    |                   | ~+n~  (neg)                |
+|--------+-------------------+----------------------------|
+| ~<-~   | $\leftarrow$      | $\nleftarrow$              |
+| ~->~   | $\rightarrow$     | $\nrightarrow$             |
+| ~-^~   | $\uparrow$        | $\nuparrow$                |
+| ~-v~   | $\downarrow$      | $\ndownarrow$              |
+| ~<->~  | $\leftrightarrow$ | $\nleftrightarrow$         |
+|--------+-------------------+----------------------------|
+| ~-->~  | $\longrightarrow$ | $\cancel{\longrightarrow}$ |
+| ~<--~  | $\longleftarrow$  | $\cancel{\longleftarrow}$  |
+|--------+-------------------+----------------------------|
+| ~to~   | $\to$             | $\nrightarrow$             |
+| ~mto~  | $\mapsto$         | $\cancel{\mapsto}$         |
+| ~mto.~ | $\longmapsto$     | $\cancel{\longmapsto}$     |
+|--------+-------------------+----------------------------|
 
 *** Double:
 #+caption: Double Line arrows
 #+name: tbl-3-sym-arrow-2
-#+attr_latex: :align |llll| :placement [H]
-|--------+-----------------------+-----------------------+--------------------------------|
-| key    | sym                   | latex                 | description                    |
-|--------+-----------------------+-----------------------+--------------------------------|
-| ~<=~   | $\Leftarrow$          | ~\Leftarrow~          |                                |
-| ~=>~   | $\Rightarrow$         | ~\Rightarrow~         |                                |
-| ~=^~   | $\Uparrow$            | ~\Uparrow~            |                                |
-| ~=v~   | $\Downarrow$          | ~\Downarrow~          |                                |
-| ~<=>~  | $\Leftrightarrow$     | ~\Leftrightarrow~     |                                |
-| ~iff~  | $\Leftrightarrow$     | ~\Leftrightarrow~     |                                |
-|--------+-----------------------+-----------------------+--------------------------------|
-| ~<=n~  | $\nLeftarrow$         | ~\nLeftarrow~         | $\Leftarrow$      + ~n~  (neg) |
-| ~=>n~  | $\nRightarrow$        | ~\nRightarrow~        | $\Rightarrow$     + ~n~  (neg) |
-| ~<=>n~ | $\nLeftrightarrow$    | ~\nLeftrightarrow~    | $\Leftrightarrow$ + ~n~  (neg) |
-| ~iffn~ | $\nLeftrightarrow$    | ~\nLeftrightarrow~    | $\Leftrightarrow$ + ~n~  (neg) |
-|--------+-----------------------+-----------------------+--------------------------------|
-| ~<==>~ | $\Longleftrightarrow$ | ~\Longleftrightarrow~ | longer arrows, with 2 ~==~     |
-| ~<==~  | $\Longleftarrow$      | ~\Longleftarrow~      | longer arrows, with 2 ~==~     |
-| ~==>~  | $\Longrightarrow$     | ~\Longrightarrow~     | longer arrows, with 2 ~==~     |
-|--------+-----------------------+-----------------------+--------------------------------|
-
-|--------+-----------------------+------------------------|
-| key    |                       | ~+n~  (neg)            |
-|--------+-----------------------+------------------------|
-| ~<=~   | $\Leftarrow$          | $\nLeftarrow$          |
-| ~=>~   | $\Rightarrow$         | $\nRightarrow$         |
-| ~=^~   | $\Uparrow$            | $\nUparrow$            |
-| ~=v~   | $\Downarrow$          | $\nDownarrow$          |
-| ~<=>~  | $\Leftrightarrow$     | $\nLeftrightarrow$     |
-| ~iff~  | $\Leftrightarrow$     | $\nLeftrightarrow$     |
-|--------+-----------------------+------------------------|
-| ~<==~  | $\Longleftarrow$      | $\nLongleftarrow$      |
-| ~==>~  | $\Longrightarrow$     | $\nLongrightarrow$     |
-| ~<==>~ | $\Longleftrightarrow$ | $\nLongleftrightarrow$ |
-|--------+-----------------------+------------------------|
+#+attr_latex: :align |l|ll| :placement [H]
+|--------+-----------------------+--------------------------------|
+| key    |                       | ~+n~  (neg)                    |
+|--------+-----------------------+--------------------------------|
+| ~<=~   | $\Leftarrow$          | $\nLeftarrow$                  |
+| ~=>~   | $\Rightarrow$         | $\nRightarrow$                 |
+| ~=^~   | $\Uparrow$            | $\cancel{\Uparrow}$            |
+| ~=v~   | $\Downarrow$          | $\cancel{\Downarrow}$          |
+| ~<=>~  | $\Leftrightarrow$     | $\nLeftrightarrow$             |
+| ~iff~  | $\Leftrightarrow$     | $\nLeftrightarrow$             |
+|--------+-----------------------+--------------------------------|
+| ~<==~  | $\Longleftarrow$      | $\cancel{\Longleftarrow}$      |
+| ~==>~  | $\Longrightarrow$     | $\cancel{\Longrightarrow}$     |
+| ~<==>~ | $\Longleftrightarrow$ | $\cancel{\Longleftrightarrow}$ |
+| ~iff.~ | $\Longleftrightarrow$ | $\cancel{\Longleftrightarrow}$ |
+|--------+-----------------------+--------------------------------|
 
 
 *** Long arrow with top-bottom entries 
@@ -489,18 +453,15 @@
 **  Logic
 #+caption:  
 #+name: tbl_5_op_logic
-#+attr_latex: :align |llll| :placement [H]
-|--------+----------------+----------------+-------------|
-| key    | sym            | latex          | description |
-|--------+----------------+----------------+-------------|
-| ~or~   | $\lor$         | ~\lor~         |             |
-| ~and~  | $\land$        | ~\land~        |             |
-| ~neg~  | $\neg$         | ~\neg~         |             |
-| ~not~  | $\not\Box$     | ~\not~         |             |
-| ~or.~  | $\text{ or }$  | ~\text{ or }~  | + ~.~ (var) |
-| ~and.~ | $\text{ and }$ | ~\text{ and }~ | + ~.~ (var) |
-| ~not.~ | $\text{ not }$ | ~\text{ not }~ | + ~.~ (var) |
-|--------+----------------+----------------+-------------|
+#+attr_latex: :align |l|ll| :placement [H]
+|--------+------------+----------------|
+| key    | sym        |   ~.~          |
+|--------+------------+----------------|
+| ~or~   | $\lor$     | $\text{ or }$  |
+| ~and~  | $\land$    | $\text{ and }$ |
+| ~neg~  | $\neg$     | $\text{ not }$ |
+| ~not~  | $\not\Box$ |                |
+|--------+------------+----------------|
 
 
 *  Functions
@@ -533,50 +494,32 @@
 **  Trignometry: function
 #+caption:  
 #+name: tbl_6_func_trig_6col
-#+attr_latex: :align |lll|lll| :placement [H]
-|--------+---------------+-----------+--------+---------------+-----------|
-| key    | sym           | latex     | key    | sym           | latex     |
-|--------+---------------+-----------+--------+---------------+-----------|
-| ~cos~  | $\cos\Box$    | ~\cos~    | ~cosh~ | $\cosh\Box$   | ~\cosh~   |
-| ~sin~  | $\sin\Box$    | ~\sin~    | ~sinh~ | $\sinh\Box$   | ~\sinh~   |
-| ~tan~  | $\tan\Box$    | ~\tan~    | ~tanh~ | $\tanh\Box$   | ~\tanh~   |
-| ~cot~  | $\cot\Box$    | ~\cot~    | ~coth~ | $\coth\Box$   | ~\coth~   |
-|--------+---------------+-----------+--------+---------------+-----------|
-| ~acos~ | $\arccos\Box$ | ~\arccos~ | ~cosn~ | $\arccos\Box$ | ~\arccos~ |
-| ~asin~ | $\arcsin\Box$ | ~\arcsin~ | ~sinn~ | $\arcsin\Box$ | ~\arcsin~ |
-| ~atan~ | $\arctan\Box$ | ~\arctan~ | ~tann~ | $\arctan\Box$ | ~\arctan~ |
-|--------+---------------+-----------+--------+---------------+-----------|
+#+attr_latex: :align |l|lll| :placement [H]
+|--------+-----------+---------+------------------|
+| key    |           | ~+h~    | ~n~              |
+|--------+-----------+---------+------------------|
+| ~cos~  | $\cos$    | $\cosh$ | $\arccos$        |
+| ~sin~  | $\sin$    | $\sinh$ | $\arcsin$        |
+| ~tan~  | $\tan$    | $\tanh$ | $\arctan$        |
+| ~cot~  | $\cot$    | $\coth$ |                  |
+|--------+-----------+---------+------------------|
+| ~acos~ | $\arccos$ |         | $\arccos^ {-1}}$ |
+| ~asin~ | $\arcsin$ |         | $\arcsin^ {-1}}$ |
+| ~atan~ | $\arctan$ |         | $\arctan^ {-1}}$ |
+|--------+-----------+---------+------------------|
+
 
 **  Integrals & Iterative (sum/prod/lim) operation:
 #+caption: Integrals, Sums, Products
 #+name: tbl_6_func_iter
 #+attr_latex: :align |llll| :placement [H]
-|-----------+--------------------------------------+---------------------------------------+-------------------------|
-| key       | sym                                  | latex                                 | description             |
-|-----------+--------------------------------------+---------------------------------------+-------------------------|
-| ~il~      | $\sum\limits_\Box$                   | ~\limits_{~                           |                         |
-| ~il.~     | $\sum\limits_\Box^\Box$              | ~\limits_{0}^{ }~                     | . (var)                 |
-| \vert .   | $\Box \Bigg\vert_\Box^\Box$          | ~\Bigg\vert_{~                        | for definite integral   |
-|-----------+--------------------------------------+---------------------------------------+-------------------------|
-| ~lim~     | $\lim$                               | ~\lim~                                |                         |
-| ~sum~     | $\sum$                               | ~\sum~                                |                         |
-| ~prod~    | $\prod$                              | ~\prod~                               |                         |
-| ~int~     | $\int$                               | ~\int~                                |                         |
-| ~inti~    | $\iint$                              | ~\iint~                               | $\int$ + ~i~            |
-| ~intii~   | $\iiint$                             | ~\iiint~                              | $\int$ + ~ii~           |
-| ~intiii~  | $\iiiint$                            | ~\iiiint~                             | $\int$ + ~iii~          |
-| ~into~    | $\oint$                              | ~\oint~                               | $\int$ + ~o~            |
-|-----------+--------------------------------------+---------------------------------------+-------------------------|
-| ~sum.~    | $\sum \limits_ {i=1} ^n$             | ~\sum\limits_{ i=1 }^n~               | $\sum$     ~.~ (var)    |
-| ~prod.~   | $\prod \limits_ {i=1} ^n$            | ~\prod\limits_{ i=1 }^n~              | $\prod$    ~.~ (var)    |
-| ~int.~    | $\int \limits_\Box^\Box$             | ~\int\limits_{ }^{ }~                 | $\int$     ~.~ (var)    |
-| ~int..~   | $\int \limits_0^\infty$              | ~\int\limits_0^\infty~                | $\int$     ~..~ (var)   |
-| ~int...~  | $\int \limits_ {-\infty}^ {+\infty}$ | ~\int\limits_{ -\infty }^{ +\infty }~ | $\int$     ~...~ (var)  |
-| ~inti.~   | $\iint \limits_\Box$                 | ~\iint\limits_{ }~                    | $\int$     ~i.~ (var)   |
-| ~intii.~  | $\iiint \limits_\Box$                | ~\iiint\limits_{ }~                   | $\int$    ~ii.~ (var)   |
-| ~intiii.~ | $\iiiint \limits_\Box$               | ~\iiiint\limits_{ }~                  | $\int$     ~iii.~ (var) |
-| ~into.~   | $\oint \limits_\Box$                 | ~\oint\limits_{ }~                    | $\oint$     ~o.~ (var)  |
-|-----------+--------------------------------------+---------------------------------------+-------------------------|
+|---------+-----------------------------+-------------------+-----------------------|
+| key     | sym                         | latex             | description           |
+|---------+-----------------------------+-------------------+-----------------------|
+| ~il~    | $\sum\limits_\Box$          | ~\limits_{~       |                       |
+| ~il.~   | $\sum\limits_\Box^\Box$     | ~\limits_{0}^{ }~ | . (var)               |
+| \vert . | $\Box \Bigg\vert_\Box^\Box$ | ~\Bigg\vert_{~    | for definite integral |
+|---------+-----------------------------+-------------------+-----------------------|
 
 
 #+attr_latex: :align |l|llll| :placement [H]
@@ -595,17 +538,6 @@
 
 
  
-
-
-
-
-
-
-
-
-
-
- 
 **  Differentials
 Please note that this table uses user-defined command (~\dd~ and ~\pd~).
 Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of differential and derivatives command in latex]]
@@ -613,49 +545,89 @@ Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of d
 #+caption: Differentials
 #+name: tbl_6_func_diff
 #+attr_latex: :align |lll|lll| :placement [H]
-|-------+------------------+-------------+--------+----------------+-------------|
-| key   | sym              | latex       | key    | sym            | latex       |
-|-------+------------------+-------------+--------+----------------+-------------|
-| ~dif~ | $\mathrm{d}$     | ~\dd{}~     | ~dif.~ | $\partial$     | ~\pd{}~     |
-|-------+------------------+-------------+--------+----------------+-------------|
-|-------+------------------+-------------+--------+----------------+-------------|
-| ~dx~  | $\mathrm{d} x$   | ~\dd{x}~    | ~dx.~  | $\partial x$   | ~\pd{x}~    |
-| ~dy~  | $\mathrm{d} y$   | ~\dd{y}~    | ~dy.~  | $\partial y$   | ~\pd{y}~    |
-| ~dz~  | $\mathrm{d} z$   | ~\dd{z}~    | ~dz.~  | $\partial z$   | ~\pd{z}~    |
-| ~dt~  | $\mathrm{d} t$   | ~\dd{t}~    | ~dt.~  | $\partial t$   | ~\pd{t}~    |
-|-------+------------------+-------------+--------+----------------+-------------|
-|-------+------------------+-------------+--------+----------------+-------------|
-| ~d2x~ | $\mathrm{d}^2 x$ | ~\dd[2]{x}~ | ~d2x.~ | $\partial^2 x$ | ~\pd[2]{x}~ |
-| ~d2y~ | $\mathrm{d}^2 y$ | ~\dd[2]{y}~ | ~d2y.~ | $\partial^2 y$ | ~\pd[2]{y}~ |
-| ~d2z~ | $\mathrm{d}^2 z$ | ~\dd[2]{z}~ | ~d2z.~ | $\partial^2 z$ | ~\pd[2]{z}~ |
-| ~d2t~ | $\mathrm{d}^2 t$ | ~\dd[2]{t}~ | ~d2t.~ | $\partial^2 t$ | ~\pd[2]{t}~ |
-|-------+------------------+-------------+--------+----------------+-------------|
-| ~d3x~ | $\mathrm{d}^3 x$ | ~\dd[3]{x}~ | ~d3x.~ | $\partial^3 x$ | ~\pd[3]{x}~ |
-| ~d3y~ | $\mathrm{d}^3 y$ | ~\dd[3]{y}~ | ~d3y.~ | $\partial^3 y$ | ~\pd[3]{y}~ |
-| ~d3z~ | $\mathrm{d}^3 z$ | ~\dd[3]{z}~ | ~d3z.~ | $\partial^3 z$ | ~\pd[3]{z}~ |
-| ~d3t~ | $\mathrm{d}^3 t$ | ~\dd[3]{t}~ | ~d3t.~ | $\partial^3 t$ | ~\pd[3]{t}~ |
-|-------+------------------+-------------+--------+----------------+-------------|
-| ~dnx~ | $\mathrm{d}^n x$ | ~\dd[n]{x}~ | ~dnx.~ | $\partial^n x$ | ~\pd[n]{x}~ |
-| ~dny~ | $\mathrm{d}^n y$ | ~\dd[n]{y}~ | ~dny.~ | $\partial^n y$ | ~\pd[n]{y}~ |
-| ~dnz~ | $\mathrm{d}^n z$ | ~\dd[n]{z}~ | ~dnz.~ | $\partial^n z$ | ~\pd[n]{z}~ |
-| ~dnt~ | $\mathrm{d}^n t$ | ~\dd[n]{t}~ | ~dnt.~ | $\partial^n t$ | ~\pd[n]{t}~ |
-|-------+------------------+-------------+--------+----------------+-------------|
-|-------+------------------+-------------+--------+----------------+-------------|
-| ~dx2~ | $\mathrm{d} x^2$ | ~\dd{x}^2~  | ~dx.2~ | $\partial x^2$ | ~\pd{x}^2~  |
-| ~dy2~ | $\mathrm{d} y^2$ | ~\dd{y}^2~  | ~dy.2~ | $\partial y^2$ | ~\pd{y}^2~  |
-| ~dz2~ | $\mathrm{d} z^2$ | ~\dd{z}^2~  | ~dz.2~ | $\partial z^2$ | ~\pd{z}^2~  |
-| ~dt2~ | $\mathrm{d} t^2$ | ~\dd{t}^2~  | ~dt.2~ | $\partial t^2$ | ~\pd{t}^2~  |
-|-------+------------------+-------------+--------+----------------+-------------|
-| ~dx3~ | $\mathrm{d} x^3$ | ~\dd{x}^3~  | ~dx.3~ | $\partial x^3$ | ~\pd{x}^3~  |
-| ~dy3~ | $\mathrm{d} y^3$ | ~\dd{y}^3~  | ~dy.3~ | $\partial y^3$ | ~\pd{y}^3~  |
-| ~dz3~ | $\mathrm{d} z^3$ | ~\dd{z}^3~  | ~dz.3~ | $\partial z^3$ | ~\pd{z}^3~  |
-| ~dt3~ | $\mathrm{d} t^3$ | ~\dd{t}^3~  | ~dt.3~ | $\partial t^3$ | ~\pd{t}^3~  |
-|-------+------------------+-------------+--------+----------------+-------------|
-| ~dxn~ | $\mathrm{d} x^n$ | ~\dd{x}^n~  | ~dx.n~ | $\partial x^n$ | ~\pd{x}^n~  |
-| ~dyn~ | $\mathrm{d} y^n$ | ~\dd{y}^n~  | ~dy.n~ | $\partial y^n$ | ~\pd{y}^n~  |
-| ~dzn~ | $\mathrm{d} z^n$ | ~\dd{z}^n~  | ~dz.n~ | $\partial z^n$ | ~\pd{z}^n~  |
-| ~dtn~ | $\mathrm{d} t^n$ | ~\dd{t}^n~  | ~dt.n~ | $\partial t^n$ | ~\pd{t}^n~  |
-|-------+------------------+-------------+--------+----------------+-------------|
+|-------+-------------------+-------------------+-------------------+-------------------+-------------------|
+| key   | sym               | ~x~               | ~y~               | ~z~               | ~t~               |
+|-------+-------------------+-------------------+-------------------+-------------------+-------------------|
+| ~dif~ | $\mathrm{d}$      |                   |                   |                   |                   |
+|-------+-------------------+-------------------+-------------------+-------------------+-------------------|
+| ~d~   |                   | $\mathrm{d} x$    | $\mathrm{d} y$    | $\mathrm{d} z$    | $\mathrm{d} t$    |
+| ~d2~  | $\mathrm{d} ^2 x$ | $\mathrm{d} ^2 x$ | $\mathrm{d} ^2 y$ | $\mathrm{d} ^2 z$ | $\mathrm{d} ^2 t$ |
+| ~d3~  | $\mathrm{d} ^3 x$ | $\mathrm{d} ^3 x$ | $\mathrm{d} ^3 y$ | $\mathrm{d} ^3 z$ | $\mathrm{d} ^3 t$ |
+| ~dn~  | $\mathrm{d} ^n x$ | $\mathrm{d} ^n x$ | $\mathrm{d} ^n y$ | $\mathrm{d} ^n z$ | $\mathrm{d} ^n t$ |
+|-------+-------------------+-------------------+-------------------+-------------------+-------------------|
+
+
+
+|-------+------------------+---|
+| ~dx2~ | $\mathrm{d} x^2$ |   |
+| ~dy2~ | $\mathrm{d} y^2$ |   |
+| ~dz2~ | $\mathrm{d} z^2$ |   |
+| ~dt2~ | $\mathrm{d} t^2$ |   |
+|-------+------------------+---|
+| ~dx3~ | $\mathrm{d} x^3$ |   |
+| ~dy3~ | $\mathrm{d} y^3$ |   |
+| ~dz3~ | $\mathrm{d} z^3$ |   |
+| ~dt3~ | $\mathrm{d} t^3$ |   |
+|-------+------------------+---|
+| ~dxn~ | $\mathrm{d} x^n$ |   |
+| ~dyn~ | $\mathrm{d} y^n$ |   |
+| ~dzn~ | $\mathrm{d} z^n$ |   |
+| ~dtn~ | $\mathrm{d} t^n$ |   |
+|-------+------------------+---|
+
+
+ |--------+----------------+-------------|
+ | key    | sym            | latex       |
+ |--------+----------------+-------------|
+ | ~dif.~ | $\partial$     | ~\pd{}~     |
+ |--------+----------------+-------------|
+ |--------+----------------+-------------|
+ | ~dx.~  | $\partial x$   | ~\pd{x}~    |
+ | ~dy.~  | $\partial y$   | ~\pd{y}~    |
+ | ~dz.~  | $\partial z$   | ~\pd{z}~    |
+ | ~dt.~  | $\partial t$   | ~\pd{t}~    |
+ |--------+----------------+-------------|
+ |--------+----------------+-------------|
+ | ~d2x.~ | $\partial^2 x$ | ~\pd[2]{x}~ |
+ | ~d2y.~ | $\partial^2 y$ | ~\pd[2]{y}~ |
+ | ~d2z.~ | $\partial^2 z$ | ~\pd[2]{z}~ |
+ | ~d2t.~ | $\partial^2 t$ | ~\pd[2]{t}~ |
+ |--------+----------------+-------------|
+ | ~d3x.~ | $\partial^3 x$ | ~\pd[3]{x}~ |
+ | ~d3y.~ | $\partial^3 y$ | ~\pd[3]{y}~ |
+ | ~d3z.~ | $\partial^3 z$ | ~\pd[3]{z}~ |
+ | ~d3t.~ | $\partial^3 t$ | ~\pd[3]{t}~ |
+ |--------+----------------+-------------|
+ | ~dnx.~ | $\partial^n x$ | ~\pd[n]{x}~ |
+ | ~dny.~ | $\partial^n y$ | ~\pd[n]{y}~ |
+ | ~dnz.~ | $\partial^n z$ | ~\pd[n]{z}~ |
+ | ~dnt.~ | $\partial^n t$ | ~\pd[n]{t}~ |
+ |--------+----------------+-------------|
+ |--------+----------------+-------------|
+ | ~dx.2~ | $\partial x^2$ | ~\pd{x}^2~  |
+ | ~dy.2~ | $\partial y^2$ | ~\pd{y}^2~  |
+ | ~dz.2~ | $\partial z^2$ | ~\pd{z}^2~  |
+ | ~dt.2~ | $\partial t^2$ | ~\pd{t}^2~  |
+ |--------+----------------+-------------|
+ | ~dx.3~ | $\partial x^3$ | ~\pd{x}^3~  |
+ | ~dy.3~ | $\partial y^3$ | ~\pd{y}^3~  |
+ | ~dz.3~ | $\partial z^3$ | ~\pd{z}^3~  |
+ | ~dt.3~ | $\partial t^3$ | ~\pd{t}^3~  |
+ |--------+----------------+-------------|
+ | ~dx.n~ | $\partial x^n$ | ~\pd{x}^n~  |
+ | ~dy.n~ | $\partial y^n$ | ~\pd{y}^n~  |
+ | ~dz.n~ | $\partial z^n$ | ~\pd{z}^n~  |
+ | ~dt.n~ | $\partial t^n$ | ~\pd{t}^n~  |
+ |--------+----------------+-------------|
+
+
+
+
+
+
+
+
+
 
 **  Derivatives
 Please note that this table uses user-defined command (~\dv~ and ~\pdv~).
