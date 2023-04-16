@@ -281,6 +281,16 @@
 | ~mto~  | $\mapsto$          | ~\mapsto~          |                                      |
 |--------+--------------------+--------------------+--------------------------------------|
 
+|-------+-------------------+--------------------|
+| key   |                   | ~+n~  (neg)        |
+|-------+-------------------+--------------------|
+| ~<-~  | $\leftarrow$      | $\nleftarrow$      |
+| ~->~  | $\rightarrow$     | $\nrightarrow$     |
+| ~-^~  | $\uparrow$        | $\nuparrow$        |
+| ~-v~  | $\downarrow$      | $\ndownarrow$      |
+| ~<->~ | $\leftrightarrow$ | $\nleftrightarrow$ |
+|-------+-------------------+--------------------|
+
 *** Double:
 #+caption: Double Line arrows
 #+name: tbl-3-sym-arrow-2
@@ -304,6 +314,22 @@
 | ~<==~  | $\Longleftarrow$      | ~\Longleftarrow~      | longer arrows, with 2 ~==~     |
 | ~==>~  | $\Longrightarrow$     | ~\Longrightarrow~     | longer arrows, with 2 ~==~     |
 |--------+-----------------------+-----------------------+--------------------------------|
+
+|--------+-----------------------+------------------------|
+| key    |                       | ~+n~  (neg)            |
+|--------+-----------------------+------------------------|
+| ~<=~   | $\Leftarrow$          | $\nLeftarrow$          |
+| ~=>~   | $\Rightarrow$         | $\nRightarrow$         |
+| ~=^~   | $\Uparrow$            | $\nUparrow$            |
+| ~=v~   | $\Downarrow$          | $\nDownarrow$          |
+| ~<=>~  | $\Leftrightarrow$     | $\nLeftrightarrow$     |
+| ~iff~  | $\Leftrightarrow$     | $\nLeftrightarrow$     |
+|--------+-----------------------+------------------------|
+| ~<==~  | $\Longleftarrow$      | $\nLongleftarrow$      |
+| ~==>~  | $\Longrightarrow$     | $\nLongrightarrow$     |
+| ~<==>~ | $\Longleftrightarrow$ | $\nLongleftrightarrow$ |
+|--------+-----------------------+------------------------|
+
 
 *** Long arrow with top-bottom entries 
 #+caption: Long arrow Line arrows
@@ -422,6 +448,31 @@
 | ~=:~   | $\coloneqq$                   | ~\coloneqq~                   | requires ~mathtools~ lib |
 | ~:=~   | $\coloneqq$                   | ~\coloneqq~                   | requires ~mathtools~ lib |
 |--------+-------------------------------+-------------------------------+--------------------------|
+
+
+|------+--------+-----------+----------------------+-------------------------------|
+|      |        | ~+n~      | ~+?~                 | ~+y~                          |
+|------+--------+-----------+----------------------+-------------------------------|
+| ~=~  | $=$    | $\neq$    | $\stackrel{?}{ = }$  | $\stackrel{\checkmark}{ = }$  |
+| ~<~  | $<$    | $\nless$  | $\stackrel{?}{<}$    | $\stackrel{\checkmark}{<}$    |
+| ~>~  | $>$    | $\ngtr$   | $\stackrel{?}{>}$    | $\stackrel{\checkmark}{>}$    |
+| ~<.~ | $\leq$ | $\nleq$   | $\stackrel{?}{\leq}$ | $\stackrel{\checkmark}{\leq}$ |
+| ~>.~ | $\geq$ | $\ngeq$   | $\stackrel{?}{\geq}$ | $\stackrel{\checkmark}{\geq}$ |
+| ~<<~ | $\ll$  | $\not\ll$ | $\stackrel{?}{\ll}$  | $\stackrel{\checkmark}{\ll}$  |
+| ~>>~ | $\gg$  | $\not\gg$ | $\stackrel{?}{\gg}$  | $\stackrel{\checkmark}{\gg}$  |
+|------+--------+-----------+----------------------+-------------------------------|
+
+
+
+
+
+
+
+
+
+
+
+
 
 **  Set symbols
 #+caption:  
