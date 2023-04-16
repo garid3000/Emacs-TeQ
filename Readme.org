@@ -629,31 +629,49 @@ Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of d
 #+caption: Differentials
 #+name: tbl_6_func_diff
 #+attr_latex: :align |lll|lll| :placement [H]
-|-------+------------------------+-------------+--------+----------------------+-------------|
-| key   | sym                    | latex       | key    | sym                  | latex       |
-|-------+------------------------+-------------+--------+----------------------+-------------|
-| ~dif~ | $\mathrm{d}^\Box \Box$ | ~\dd[ ]{~   | ~dif.~ | $\partial^\Box \Box$ | ~\pd[ ]{~   |
-|-------+------------------------+-------------+--------+----------------------+-------------|
-| ~dx~  | $\mathrm{d} x$         | ~\dd{x}~    | ~dx.~  | $\partial x$         | ~\pd{x}~    |
-| ~dy~  | $\mathrm{d} y$         | ~\dd{y}~    | ~dy.~  | $\partial y$         | ~\pd{y}~    |
-| ~dz~  | $\mathrm{d} z$         | ~\dd{z}~    | ~dz.~  | $\partial z$         | ~\pd{z}~    |
-| ~dt~  | $\mathrm{d} t$         | ~\dd{t}~    | ~dt.~  | $\partial t$         | ~\pd{t}~    |
-|-------+------------------------+-------------+--------+----------------------+-------------|
-| ~dx2~ | $\mathrm{d}^2 x$       | ~\dd[2]{x}~ | ~dx.2~ | $\partial^2 x$       | ~\pd[2]{x}~ |
-| ~dy2~ | $\mathrm{d}^2 y$       | ~\dd[2]{y}~ | ~dy.2~ | $\partial^2 y$       | ~\pd[2]{y}~ |
-| ~dz2~ | $\mathrm{d}^2 z$       | ~\dd[2]{z}~ | ~dz.2~ | $\partial^2 z$       | ~\pd[2]{z}~ |
-| ~dt2~ | $\mathrm{d}^2 t$       | ~\dd[2]{t}~ | ~dt.2~ | $\partial^2 t$       | ~\pd[2]{t}~ |
-|-------+------------------------+-------------+--------+----------------------+-------------|
-| ~dx3~ | $\mathrm{d}^n x$       | ~\dd[3]{x}~ | ~dx.3~ | $\partial^n x$       | ~\pd[3]{x}~ |
-| ~dy3~ | $\mathrm{d}^n y$       | ~\dd[3]{y}~ | ~dy.3~ | $\partial^n y$       | ~\pd[3]{y}~ |
-| ~dz3~ | $\mathrm{d}^n z$       | ~\dd[3]{z}~ | ~dz.3~ | $\partial^n z$       | ~\pd[3]{z}~ |
-| ~dt3~ | $\mathrm{d}^n t$       | ~\dd[3]{t}~ | ~dt.3~ | $\partial^n t$       | ~\pd[3]{t}~ |
-|-------+------------------------+-------------+--------+----------------------+-------------|
-| ~dxn~ | $\mathrm{d}^n x$       | ~\dd[n]{x}~ | ~dx.n~ | $\partial^n x$       | ~\pd[n]{x}~ |
-| ~dyn~ | $\mathrm{d}^n y$       | ~\dd[n]{y}~ | ~dy.n~ | $\partial^n y$       | ~\pd[n]{y}~ |
-| ~dzn~ | $\mathrm{d}^n z$       | ~\dd[n]{z}~ | ~dz.n~ | $\partial^n z$       | ~\pd[n]{z}~ |
-| ~dtn~ | $\mathrm{d}^n t$       | ~\dd[n]{t}~ | ~dt.n~ | $\partial^n t$       | ~\pd[n]{t}~ |
-|-------+------------------------+-------------+--------+----------------------+-------------|
+|-------+------------------+-------------+--------+----------------+-------------|
+| key   | sym              | latex       | key    | sym            | latex       |
+|-------+------------------+-------------+--------+----------------+-------------|
+| ~dif~ | $\mathrm{d}$     | ~\dd{}~     | ~dif.~ | $\partial$     | ~\pd{}~     |
+|-------+------------------+-------------+--------+----------------+-------------|
+|-------+------------------+-------------+--------+----------------+-------------|
+| ~dx~  | $\mathrm{d} x$   | ~\dd{x}~    | ~dx.~  | $\partial x$   | ~\pd{x}~    |
+| ~dy~  | $\mathrm{d} y$   | ~\dd{y}~    | ~dy.~  | $\partial y$   | ~\pd{y}~    |
+| ~dz~  | $\mathrm{d} z$   | ~\dd{z}~    | ~dz.~  | $\partial z$   | ~\pd{z}~    |
+| ~dt~  | $\mathrm{d} t$   | ~\dd{t}~    | ~dt.~  | $\partial t$   | ~\pd{t}~    |
+|-------+------------------+-------------+--------+----------------+-------------|
+|-------+------------------+-------------+--------+----------------+-------------|
+| ~d2x~ | $\mathrm{d}^2 x$ | ~\dd[2]{x}~ | ~d2x.~ | $\partial^2 x$ | ~\pd[2]{x}~ |
+| ~d2y~ | $\mathrm{d}^2 y$ | ~\dd[2]{y}~ | ~d2y.~ | $\partial^2 y$ | ~\pd[2]{y}~ |
+| ~d2z~ | $\mathrm{d}^2 z$ | ~\dd[2]{z}~ | ~d2z.~ | $\partial^2 z$ | ~\pd[2]{z}~ |
+| ~d2t~ | $\mathrm{d}^2 t$ | ~\dd[2]{t}~ | ~d2t.~ | $\partial^2 t$ | ~\pd[2]{t}~ |
+|-------+------------------+-------------+--------+----------------+-------------|
+| ~d3x~ | $\mathrm{d}^3 x$ | ~\dd[3]{x}~ | ~d3x.~ | $\partial^3 x$ | ~\pd[3]{x}~ |
+| ~d3y~ | $\mathrm{d}^3 y$ | ~\dd[3]{y}~ | ~d3y.~ | $\partial^3 y$ | ~\pd[3]{y}~ |
+| ~d3z~ | $\mathrm{d}^3 z$ | ~\dd[3]{z}~ | ~d3z.~ | $\partial^3 z$ | ~\pd[3]{z}~ |
+| ~d3t~ | $\mathrm{d}^3 t$ | ~\dd[3]{t}~ | ~d3t.~ | $\partial^3 t$ | ~\pd[3]{t}~ |
+|-------+------------------+-------------+--------+----------------+-------------|
+| ~dnx~ | $\mathrm{d}^n x$ | ~\dd[n]{x}~ | ~dnx.~ | $\partial^n x$ | ~\pd[n]{x}~ |
+| ~dny~ | $\mathrm{d}^n y$ | ~\dd[n]{y}~ | ~dny.~ | $\partial^n y$ | ~\pd[n]{y}~ |
+| ~dnz~ | $\mathrm{d}^n z$ | ~\dd[n]{z}~ | ~dnz.~ | $\partial^n z$ | ~\pd[n]{z}~ |
+| ~dnt~ | $\mathrm{d}^n t$ | ~\dd[n]{t}~ | ~dnt.~ | $\partial^n t$ | ~\pd[n]{t}~ |
+|-------+------------------+-------------+--------+----------------+-------------|
+|-------+------------------+-------------+--------+----------------+-------------|
+| ~dx2~ | $\mathrm{d} x^2$ | ~\dd{x}^2~  | ~dx.2~ | $\partial x^2$ | ~\pd{x}^2~  |
+| ~dy2~ | $\mathrm{d} y^2$ | ~\dd{y}^2~  | ~dy.2~ | $\partial y^2$ | ~\pd{y}^2~  |
+| ~dz2~ | $\mathrm{d} z^2$ | ~\dd{z}^2~  | ~dz.2~ | $\partial z^2$ | ~\pd{z}^2~  |
+| ~dt2~ | $\mathrm{d} t^2$ | ~\dd{t}^2~  | ~dt.2~ | $\partial t^2$ | ~\pd{t}^2~  |
+|-------+------------------+-------------+--------+----------------+-------------|
+| ~dx3~ | $\mathrm{d} x^3$ | ~\dd{x}^3~  | ~dx.3~ | $\partial x^3$ | ~\pd{x}^3~  |
+| ~dy3~ | $\mathrm{d} y^3$ | ~\dd{y}^3~  | ~dy.3~ | $\partial y^3$ | ~\pd{y}^3~  |
+| ~dz3~ | $\mathrm{d} z^3$ | ~\dd{z}^3~  | ~dz.3~ | $\partial z^3$ | ~\pd{z}^3~  |
+| ~dt3~ | $\mathrm{d} t^3$ | ~\dd{t}^3~  | ~dt.3~ | $\partial t^3$ | ~\pd{t}^3~  |
+|-------+------------------+-------------+--------+----------------+-------------|
+| ~dxn~ | $\mathrm{d} x^n$ | ~\dd{x}^n~  | ~dx.n~ | $\partial x^n$ | ~\pd{x}^n~  |
+| ~dyn~ | $\mathrm{d} y^n$ | ~\dd{y}^n~  | ~dy.n~ | $\partial y^n$ | ~\pd{y}^n~  |
+| ~dzn~ | $\mathrm{d} z^n$ | ~\dd{z}^n~  | ~dz.n~ | $\partial z^n$ | ~\pd{z}^n~  |
+| ~dtn~ | $\mathrm{d} t^n$ | ~\dd{t}^n~  | ~dt.n~ | $\partial t^n$ | ~\pd{t}^n~  |
+|-------+------------------+-------------+--------+----------------+-------------|
 
 **  Derivatives
 Please note that this table uses user-defined command (~\dv~ and ~\pdv~).
@@ -1192,7 +1210,8 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ;; Operation: arith
 ("or"      ["\\lor"               ])  ; 
 ("and"     ["\\land"              ])  ; 
-("not"     ["\\neg"               ])  ; 
+("neg"     ["\\neg"               ])  ; 
+("not"     ["\\not"               ])  ; 
 ("or."     ["\\text{ or }"        ])  ; + ~.~ (var)
 ("and."    ["\\text{ and }"       ])  ; + ~.~ (var)
 ("not."    ["\\text{ not }"       ])  ; + ~.~ (var)
@@ -1240,27 +1259,39 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ("int.."   ["\\int\\limits_0^\\infty"])  ; $\int$     ~..~ (var)
 ("int..."  ["\\int\\limits_{ -\\infty }^{ +\\infty }"])  ; $\int$     ~...~ (var)
 ("inti."   ["\\iint\\limits_{ }"  ])  ; $\int$     ~i.~ (var)
-("intii."  ["\\iiint\\limits_{ }" ])  ; $\iint$    ~ii.~ (var)
+("intii."  ["\\iiint\\limits_{ }" ])  ; $\int$    ~ii.~ (var)
 ("intiii."  ["\\iiiint\\limits_{ }"])  ; $\int$     ~iii.~ (var)
 ("into."   ["\\oint\\limits_{ }"  ])  ; $\oint$     ~o.~ (var)
 ;; Func: differentials
-("dif"   ["\\dd[ ]{"       ])  ("dif."  ["\\pd[ ]{"       ])
+("dif"   ["\\dd{}"         ])  ("dif."  ["\\pd{}"         ])
 ("dx"    ["\\dd{x}"        ])  ("dx."   ["\\pd{x}"        ])
 ("dy"    ["\\dd{y}"        ])  ("dy."   ["\\pd{y}"        ])
 ("dz"    ["\\dd{z}"        ])  ("dz."   ["\\pd{z}"        ])
 ("dt"    ["\\dd{t}"        ])  ("dt."   ["\\pd{t}"        ])
-("dx2"   ["\\dd[2]{x}"     ])  ("dx.2"  ["\\pd[2]{x}"     ])
-("dy2"   ["\\dd[2]{y}"     ])  ("dy.2"  ["\\pd[2]{y}"     ])
-("dz2"   ["\\dd[2]{z}"     ])  ("dz.2"  ["\\pd[2]{z}"     ])
-("dt2"   ["\\dd[2]{t}"     ])  ("dt.2"  ["\\pd[2]{t}"     ])
-("dx3"   ["\\dd[3]{x}"     ])  ("dx.3"  ["\\pd[3]{x}"     ])
-("dy3"   ["\\dd[3]{y}"     ])  ("dy.3"  ["\\pd[3]{y}"     ])
-("dz3"   ["\\dd[3]{z}"     ])  ("dz.3"  ["\\pd[3]{z}"     ])
-("dt3"   ["\\dd[3]{t}"     ])  ("dt.3"  ["\\pd[3]{t}"     ])
-("dxn"   ["\\dd[n]{x}"     ])  ("dx.n"  ["\\pd[n]{x}"     ])
-("dyn"   ["\\dd[n]{y}"     ])  ("dy.n"  ["\\pd[n]{y}"     ])
-("dzn"   ["\\dd[n]{z}"     ])  ("dz.n"  ["\\pd[n]{z}"     ])
-("dtn"   ["\\dd[n]{t}"     ])  ("dt.n"  ["\\pd[n]{t}"     ])
+("d2x"   ["\\dd[2]{x}"     ])  ("d2x."  ["\\pd[2]{x}"     ])
+("d2y"   ["\\dd[2]{y}"     ])  ("d2y."  ["\\pd[2]{y}"     ])
+("d2z"   ["\\dd[2]{z}"     ])  ("d2z."  ["\\pd[2]{z}"     ])
+("d2t"   ["\\dd[2]{t}"     ])  ("d2t."  ["\\pd[2]{t}"     ])
+("d3x"   ["\\dd[3]{x}"     ])  ("d3x."  ["\\pd[3]{x}"     ])
+("d3y"   ["\\dd[3]{y}"     ])  ("d3y."  ["\\pd[3]{y}"     ])
+("d3z"   ["\\dd[3]{z}"     ])  ("d3z."  ["\\pd[3]{z}"     ])
+("d3t"   ["\\dd[3]{t}"     ])  ("d3t."  ["\\pd[3]{t}"     ])
+("dnx"   ["\\dd[n]{x}"     ])  ("dnx."  ["\\pd[n]{x}"     ])
+("dny"   ["\\dd[n]{y}"     ])  ("dny."  ["\\pd[n]{y}"     ])
+("dnz"   ["\\dd[n]{z}"     ])  ("dnz."  ["\\pd[n]{z}"     ])
+("dnt"   ["\\dd[n]{t}"     ])  ("dnt."  ["\\pd[n]{t}"     ])
+("dx2"   ["\\dd{x}^2"      ])  ("dx.2"  ["\\pd{x}^2"      ])
+("dy2"   ["\\dd{y}^2"      ])  ("dy.2"  ["\\pd{y}^2"      ])
+("dz2"   ["\\dd{z}^2"      ])  ("dz.2"  ["\\pd{z}^2"      ])
+("dt2"   ["\\dd{t}^2"      ])  ("dt.2"  ["\\pd{t}^2"      ])
+("dx3"   ["\\dd{x}^3"      ])  ("dx.3"  ["\\pd{x}^3"      ])
+("dy3"   ["\\dd{y}^3"      ])  ("dy.3"  ["\\pd{y}^3"      ])
+("dz3"   ["\\dd{z}^3"      ])  ("dz.3"  ["\\pd{z}^3"      ])
+("dt3"   ["\\dd{t}^3"      ])  ("dt.3"  ["\\pd{t}^3"      ])
+("dxn"   ["\\dd{x}^n"      ])  ("dx.n"  ["\\pd{x}^n"      ])
+("dyn"   ["\\dd{y}^n"      ])  ("dy.n"  ["\\pd{y}^n"      ])
+("dzn"   ["\\dd{z}^n"      ])  ("dz.n"  ["\\pd{z}^n"      ])
+("dtn"   ["\\dd{t}^n"      ])  ("dt.n"  ["\\pd{t}^n"      ])
 ;; Func: derivatives
 ("df"    ["\\dv[ ]{ }"     ])  ("df."   ["\\pdv[ ]{ }"    ])
 ("dfx"   ["\\dv{x}"        ])  ("df.x"  ["\\pdv{x}"       ])
