@@ -274,34 +274,34 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 (".d"      ["\\ddots"             ])  ; diagonale dots
 (".l"      ["\\ldots"             ])  ; low dots
 ;; Symbols-geo
-("perp"    ["\\perp"              ])  ; 
+("perp"    ["\\perp"              ])  ;
 ("perpn"   ["\\not\\perp"         ])  ; $\perp$  ~n~ (neg)
-("para"    ["\\parallel"          ])  ; 
+("para"    ["\\parallel"          ])  ;
 ("paran"   ["\\nparallel"         ])  ; $\parallel$ ~n~  (neg)
-("ang"     ["\\angle"             ])  ; 
+("ang"     ["\\angle"             ])  ;
 ("ang."    ["\\measuredangle"     ])  ; $\angle$ ~.~ (var)
-("tri"     ["\\vartriangle"       ])  ; 
+("tri"     ["\\vartriangle"       ])  ;
 ("tri."    ["\\triangledown"      ])  ; $\vartriangle$ ~n~ (neg)
-("squ"     ["\\square"            ])  ; 
+("squ"     ["\\square"            ])  ;
 ("trin"    ["\\blacktriangle"     ])  ; $\vartriangle$ ~.~ (var)
 ("tri.n"   ["\\blacktriangledown" ])  ; $\vartriangle$ ~.n~ (neg,var)
 ("trin."   ["\\blacktriangledown" ])  ; $\vartriangle$ ~n.~ (neg,var)
 ("squn"    ["\\blacksquare"       ])  ; $\square$ ~.~ (var)
 ;; Symbols
-(""        [""                    ])  ; 
-("inf"     ["\\infty"             ])  ; 
-("ex"      ["\\exists"            ])  ; 
+(""        [""                    ])  ;
+("inf"     ["\\infty"             ])  ;
+("ex"      ["\\exists"            ])  ;
 ("exn"     ["\\nexists"           ])  ; $\exists$ + _n_ (neg)
-("fa"      ["\\forall"            ])  ; 
-("hb"      ["\\hbar"              ])  ; 
+("fa"      ["\\forall"            ])  ;
+("hb"      ["\\hbar"              ])  ;
 ("hb."     ["\\hslash"            ])  ; $\hbar$ + _._  (var)
-("ii"      ["\\imath"             ])  ; 
-("jj"      ["\\jmath"             ])  ; 
-("nab"     ["\\nabla"             ])  ; 
-("cm"      ["\\checkmark"         ])  ; 
+("ii"      ["\\imath"             ])  ;
+("jj"      ["\\jmath"             ])  ;
+("nab"     ["\\nabla"             ])  ;
+("cm"      ["\\checkmark"         ])  ;
 ;; Symbols spaces
-("qu"      ["\\quad"              ])  ; 
-("quu"     ["\\qquad"             ])  ; 
+("qu"      ["\\quad"              ])  ;
+("quu"     ["\\qquad"             ])  ;
 ("spn"     ["\\!"                 ])  ; -3/18 of ~\quad~ (= -3 mu)
 ("sp"      ["\\,"                 ])  ; 3/18 of ~\quad~ (= 3 mu)
 ("sp."     ["\\:"                 ])  ; 4/18 of ~\quad~ (= 4 mu)
@@ -309,8 +309,8 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ("sp..."   ["\\quad"              ])  ; 1 of ~\quad~ (= 18 mu)
 ("sp...."  ["\\qquad"             ])  ; 2 of ~\qquad~ (= 36 mu)
 ;; Symbols arrow1
-("<-"      ["\\leftarrow"         ])  ; 
-("->"      ["\\rightarrow"        ])  ; 
+("<-"      ["\\leftarrow"         ])  ;
+("->"      ["\\rightarrow"        ])  ;
 ("-^"      ["\\uparrow"           ])  ; ~^~ looks like up arrow head
 ("-v"      ["\\downarrow"         ])  ; ~v~ looks like down arrow head
 ("<->"     ["\\leftrightarrow"    ])  ; Sorry, Github won't render correctly
@@ -322,14 +322,14 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ("-->"     ["\\longrightarrow"    ])  ; longer with 2 ~-~
 ("<--"     ["\\longleftarrow"     ])  ; longer with 2 ~-~
 ("to"      ["\\to"                ])  ; same as ~->~
-("mto"     ["\\mapsto"            ])  ; 
+("mto"     ["\\mapsto"            ])  ;
 ;; Symbols arrow2
-("<="      ["\\Leftarrow"         ])  ; 
-("=>"      ["\\Rightarrow"        ])  ; 
-("=^"      ["\\Uparrow"           ])  ; 
-("=v"      ["\\Downarrow"         ])  ; 
-("<=>"     ["\\Leftrightarrow"    ])  ; 
-("iff"     ["\\Leftrightarrow"    ])  ; 
+("<="      ["\\Leftarrow"         ])  ;
+("=>"      ["\\Rightarrow"        ])  ;
+("=^"      ["\\Uparrow"           ])  ;
+("=v"      ["\\Downarrow"         ])  ;
+("<=>"     ["\\Leftrightarrow"    ])  ;
+("iff"     ["\\Leftrightarrow"    ])  ;
 ("<=n"     ["\\nLeftarrow"        ])  ; $\Leftarrow$      + ~n~  (neg)
 ("=>n"     ["\\nRightarrow"       ])  ; $\Rightarrow$     + ~n~  (neg)
 ("<=>n"    ["\\nLeftrightarrow"   ])  ; $\Leftrightarrow$ + ~n~  (neg)
@@ -343,26 +343,26 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ("===>"    ["\\xRightarrow[ ]{ }" ])  ; 3 ~=~, (~mathtools~ lib required)
 ("<==="    ["\\xLeftarrow[ ]{ }"  ])  ; 3 ~=~, (~mathtools~ lib required)
 ;; Symbols mods
-("vec"     ["\\vec{"              ])  ; 
-("bar"     ["\\bar{"              ])  ; 
-("hat"     ["\\hat{"              ])  ; 
-("dot"     ["\\dot{"              ])  ; 
+("vec"     ["\\vec{"              ])  ;
+("bar"     ["\\bar{"              ])  ;
+("hat"     ["\\hat{"              ])  ;
+("dot"     ["\\dot{"              ])  ;
 ("dot."    ["\\ddot{"             ])  ; $\dot{\Box}$ + ~.~  (var)
 ("dot.."   ["\\dddot{"            ])  ; $\dot{\Box}$ + ~..~ (var)
 ("dot..."  ["\\ddddot{"           ])  ; $\dot{\Box}$ + ~..~ (var)
-("dag"     ["^\\dagger"           ])  ; 
+("dag"     ["^\\dagger"           ])  ;
 ("dag."    ["^\\ddagger"          ])  ; $\dagger$  + ~.~ (var)
-("*."      ["^*"                  ])  ; 
-("deg"     ["^\\circ"             ])  ; 
-("tr"      ["^T"                  ])  ; 
+("*."      ["^*"                  ])  ;
+("deg"     ["^\\circ"             ])  ;
+("tr"      ["^T"                  ])  ;
 ("trn"     ["^{-T}"               ])  ; $\Box^T$ + ~n~ (neg)
-("inv"     ["^{-1}"               ])  ; 
+("inv"     ["^{-1}"               ])  ;
 ;; Operation: arith
-("+-"      ["\\pm"                ])  ; 
-("-+"      ["\\mp"                ])  ; 
-("*x"      ["\\times"             ])  ; 
-("::"      ["\\div"               ])  ; 
-("**"      ["\\cdot"              ])  ; 
+("+-"      ["\\pm"                ])  ;
+("-+"      ["\\mp"                ])  ;
+("*x"      ["\\times"             ])  ;
+("::"      ["\\div"               ])  ;
+("**"      ["\\cdot"              ])  ;
 ;; Operation: arith
 ("<."      ["\\leq"               ])  ; ~<~      + ~.~
 (">."      ["\\geq"               ])  ; ~>~      + ~.~
@@ -387,7 +387,7 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 (">.y"     ["\\stackrel{\\checkmark}{\\geq}"])  ; $\geq$  + ~y~
 ("<<y"     ["\\stackrel{\\checkmark}{\\ll}"])  ; $\ll$    + ~y~
 (">>y"     ["\\stackrel{\\checkmark}{\\gg}"])  ; $\gg$    + ~y~
-("sim"     ["\\sim"               ])  ; 
+("sim"     ["\\sim"               ])  ;
 ("simn"    ["\\nsim"              ])  ; $\sim$ + ~n~
 ("3="      ["\\equiv"             ])  ; ~3~    + ~.~
 ("=."      ["\\equiv"             ])  ; ~=~    + ~.~
@@ -397,51 +397,51 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ;; Operation: arith
 ("in"      ["\\in"                ])  ; $\in$
 ("in."     ["\\ni"                ])  ; $\in$ + ~.~  (var)
-("ni"      ["\\ni"                ])  ; 
+("ni"      ["\\ni"                ])  ;
 ("inn"     ["\\notin"             ])  ; $\in$ + ~n~ (neg)
-("0/"      ["\\emptyset"          ])  ; 
+("0/"      ["\\emptyset"          ])  ;
 ("nsr"     ["\\mathbb{R}"         ])  ; (~n~)umber (~s~)et (~r~)eal
 ("nsc"     ["\\mathbb{C}"         ])  ; (~n~)umber (~s~)et (~c~)omplex
 ("nsn"     ["\\mathbb{N}"         ])  ; (~n~)umber (~s~)et (~n~)atural
 ("nsp"     ["\\mathbb{P}"         ])  ; (~n~)umber (~s~)et (~p~)rime
 ("nsz"     ["\\mathbb{Z}"         ])  ; (~n~)umber (~s~)et (~z~)
 ("nsi"     ["\\mathbb{I}"         ])  ; (~n~)umber (~s~)et (~i~)rriational
-("sub"     ["\\subset"            ])  ; 
+("sub"     ["\\subset"            ])  ;
 ("subn"    ["\\nssubseteq"        ])  ; $\subset$ + ~n~ (neg)
 ("sub."    ["\\subseteq"          ])  ; $\subset$ + ~.~ (var)
 ("sub.n"   ["\\nsubseteq"         ])  ; $\subset$ + ~.n~ (var, neg)
 ("subn."   ["\\nsubseteq"         ])  ; $\subset$ + ~n.~ (neg, var)
-("sup"     ["\\supset"            ])  ; 
+("sup"     ["\\supset"            ])  ;
 ("supn"    ["\\nsupseteq"         ])  ; $\supset$ + ~n~ (neg)
 ("sup."    ["\\supeseteq"         ])  ; $\supset$ + ~.~ (var)
 ("sup.n"   ["\\nsupseteq"         ])  ; $\supset$ + ~.n~ (var, neg)
 ("supn."   ["\\nsupseteq"         ])  ; $\supset$ + ~n.~ (neg, var)
 ;; Operation: arith
-("or"      ["\\lor"               ])  ; 
-("and"     ["\\land"              ])  ; 
-("neg"     ["\\neg"               ])  ; 
-("not"     ["\\not"               ])  ; 
+("or"      ["\\lor"               ])  ;
+("and"     ["\\land"              ])  ;
+("neg"     ["\\neg"               ])  ;
+("not"     ["\\not"               ])  ;
 ("or."     ["\\text{ or }"        ])  ; + ~.~ (var)
 ("and."    ["\\text{ and }"       ])  ; + ~.~ (var)
 ("not."    ["\\text{ not }"       ])  ; + ~.~ (var)
 ;; Func: main
-("rank"    ["\\mathrm{rank}"      ])  ; 
-("arg"     ["\\arg"               ])  ; 
-("det"     ["\\det"               ])  ; 
-("dim"     ["\\dim"               ])  ; 
-("exp"     ["\\exp"               ])  ; 
-("Im."     ["\\mathrm{Im}"        ])  ; 
-("Re"      ["\\mathrm{Re}"        ])  ; 
-("ln"      ["\\ln"                ])  ; 
-("log"     ["\\log"               ])  ; 
-("max"     ["\\max"               ])  ; 
-("min"     ["\\min"               ])  ; 
-("dim"     ["\\dim"               ])  ; 
-("sqrt"    ["\\sqrt{"             ])  ; 
-("sqrt."   ["\\sqrt[ ]{"          ])  ; 
-("mod"     ["\\pmod"              ])  ; 
-("mod."    ["\\mod"               ])  ; 
-("mod.."   ["\\bmod"              ])  ; 
+("rank"    ["\\mathrm{rank}"      ])  ;
+("arg"     ["\\arg"               ])  ;
+("det"     ["\\det"               ])  ;
+("dim"     ["\\dim"               ])  ;
+("exp"     ["\\exp"               ])  ;
+("Im."     ["\\mathrm{Im}"        ])  ;
+("Re"      ["\\mathrm{Re}"        ])  ;
+("ln"      ["\\ln"                ])  ;
+("log"     ["\\log"               ])  ;
+("max"     ["\\max"               ])  ;
+("min"     ["\\min"               ])  ;
+("dim"     ["\\dim"               ])  ;
+("sqrt"    ["\\sqrt{"             ])  ;
+("sqrt."   ["\\sqrt[ ]{"          ])  ;
+("mod"     ["\\pmod"              ])  ;
+("mod."    ["\\mod"               ])  ;
+("mod.."   ["\\bmod"              ])  ;
 ;; Func: Trig
 ("cos"   ["\\cos"          ])  ("cosh"  ["\\cosh"         ])
 ("sin"   ["\\sin"          ])  ("sinh"  ["\\sinh"         ])
@@ -451,13 +451,13 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ("asin"  ["\\arcsin"       ])  ("sinn"  ["\\arcsin"       ])
 ("atan"  ["\\arctan"       ])  ("tann"  ["\\arctan"       ])
 ;; Func: iter
-("il"      ["\\limits_{"          ])  ; 
+("il"      ["\\limits_{"          ])  ;
 ("il."     ["\\limits_{0}^{ }"    ])  ; . (var)
 ("|."      ["\\Bigg\\vert_{"      ])  ; for definite integral
-("lim"     ["\\lim"               ])  ; 
-("sum"     ["\\sum"               ])  ; 
-("prod"    ["\\prod"              ])  ; 
-("int"     ["\\int"               ])  ; 
+("lim"     ["\\lim"               ])  ;
+("sum"     ["\\sum"               ])  ;
+("prod"    ["\\prod"              ])  ;
+("int"     ["\\int"               ])  ;
 ("inti"    ["\\iint"              ])  ; $\int$ + ~i~
 ("intii"   ["\\iiint"             ])  ; $\int$ + ~ii~
 ("intiii"  ["\\iiiint"            ])  ; $\int$ + ~iii~
@@ -518,15 +518,15 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ("dfz3"  ["\\dv[3]{z}"     ])  ("df.z3" ["\\pdv[3]{z}"    ])
 ("dft3"  ["\\dv[3]{t}"     ])  ("df.t3" ["\\pdv[3]{t}"    ])
 ;; Structural: Parenthesis
-("f()"     ["\\left( \\right)"    ])  ; 
-("f()."    ["\\left( \\middle\\vert \\right)"])  ; 
-("f[]"     ["\\left[ \\right]"    ])  ; 
+("f()"     ["\\left( \\right)"    ])  ;
+("f()."    ["\\left( \\middle\\vert \\right)"])  ;
+("f[]"     ["\\left[ \\right]"    ])  ;
 ("f[]."    ["\\left[ \\middle\\vert \\right]"])  ; (var)
 ("f[]c"    ["\\lceil \\rceil"     ])  ; (var) (ceil)
 ("f[]f"    ["\\lfloor \\rfloor"   ])  ; (var) (floor)
-("f{}"     ["\\left\\{ \\right\\}"])  ; 
+("f{}"     ["\\left\\{ \\right\\}"])  ;
 ("f{}."    ["\\left\\{ \\middle\\vert \\right\\}"])  ; (var)
-("f<>"     ["\\left< \\right>"    ])  ; 
+("f<>"     ["\\left< \\right>"    ])  ;
 ("f<>."    ["\\left< \\middle\\vert \\right>"])  ; (var)
 ("||."     ["\\left\\vert \\right\\vert"])  ; absolute
 ("||.."    ["\\left\\Vert \\right\\Vert"])  ; norm
@@ -568,12 +568,12 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ("binom"   ["\\binom{ }{ }"       ])  ; Binom
 ("box"     ["\\boxed{"            ])  ; Putting box around object
 ("ff"      ["\\frac{"             ])  ; Fractions
-("can"     ["\\cancel{"           ])  ; 
+("can"     ["\\cancel{"           ])  ;
 ("=="      ["&="                  ])  ; helps in align env.
 ;; Structural: xy
-("xy"      ["\\xymatrix{"         ])  ; 
-("bu"      ["\\bullet"            ])  ; 
-("ar"      ["\\ar"                ])  ; 
+("xy"      ["\\xymatrix{"         ])  ;
+("bu"      ["\\bullet"            ])  ;
+("ar"      ["\\ar"                ])  ;
 #+end_SRC
 
 
@@ -711,5 +711,3 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 #+end_src
 
 #+RESULTS:
-
- 
