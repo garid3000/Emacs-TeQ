@@ -12,229 +12,219 @@
 #+startup: show2levels
 
 *  Alphabet related stuff :
-**  Greek
-[[file:gifs/example-greek.gif]]
+** Roman Uppercase letter
+#+attr_latex: :align |l|lllllllll|  :placement [H]
+|-----+--------------+-----------+-----------+-----------+-----------+------------+-------------+--------------+----------------|
+|     | ~+m~         | ~+b~      | ~+v~      | ~+h~      | ~+d~      | ~+dd~      | ~+ddd~      | ~+dddd~      | ~+o~           |
+|-----+--------------+-----------+-----------+-----------+-----------+------------+-------------+--------------+----------------|
+| ~A~ | $\mathbf{A}$ | $\bar{A}$ | $\vec{A}$ | $\hat{A}$ | $\dot{A}$ | $\ddot{A}$ | $\dddot{A}$ | $\ddddot{A}$ | $\mathring{A}$ |
+| ~B~ | $\mathbf{B}$ | $\bar{B}$ | $\vec{B}$ | $\hat{B}$ | $\dot{B}$ | $\ddot{B}$ | $\dddot{B}$ | $\ddddot{B}$ | $\mathring{B}$ |
+| ~C~ | $\mathbf{C}$ | $\bar{C}$ | $\vec{C}$ | $\hat{C}$ | $\dot{C}$ | $\ddot{C}$ | $\dddot{C}$ | $\ddddot{C}$ | $\mathring{C}$ |
+| ~D~ | $\mathbf{D}$ | $\bar{D}$ | $\vec{D}$ | $\hat{D}$ | $\dot{D}$ | $\ddot{D}$ | $\dddot{D}$ | $\ddddot{D}$ | $\mathring{D}$ |
+| ~E~ | $\mathbf{E}$ | $\bar{E}$ | $\vec{E}$ | $\hat{E}$ | $\dot{E}$ | $\ddot{E}$ | $\dddot{E}$ | $\ddddot{E}$ | $\mathring{E}$ |
+| ~F~ | $\mathbf{F}$ | $\bar{F}$ | $\vec{F}$ | $\hat{F}$ | $\dot{F}$ | $\ddot{F}$ | $\dddot{F}$ | $\ddddot{F}$ | $\mathring{F}$ |
+| ~G~ | $\mathbf{G}$ | $\bar{G}$ | $\vec{G}$ | $\hat{G}$ | $\dot{G}$ | $\ddot{G}$ | $\dddot{G}$ | $\ddddot{G}$ | $\mathring{G}$ |
+| ~H~ | $\mathbf{H}$ | $\bar{H}$ | $\vec{H}$ | $\hat{H}$ | $\dot{H}$ | $\ddot{H}$ | $\dddot{H}$ | $\ddddot{H}$ | $\mathring{H}$ |
+| ~I~ | $\mathbf{I}$ | $\bar{I}$ | $\vec{I}$ | $\hat{I}$ | $\dot{I}$ | $\ddot{I}$ | $\dddot{I}$ | $\ddddot{I}$ | $\mathring{I}$ |
+| ~J~ | $\mathbf{J}$ | $\bar{J}$ | $\vec{J}$ | $\hat{J}$ | $\dot{J}$ | $\ddot{J}$ | $\dddot{J}$ | $\ddddot{J}$ | $\mathring{J}$ |
+| ~K~ | $\mathbf{K}$ | $\bar{K}$ | $\vec{K}$ | $\hat{K}$ | $\dot{K}$ | $\ddot{K}$ | $\dddot{K}$ | $\ddddot{K}$ | $\mathring{K}$ |
+| ~L~ | $\mathbf{L}$ | $\bar{L}$ | $\vec{L}$ | $\hat{L}$ | $\dot{L}$ | $\ddot{L}$ | $\dddot{L}$ | $\ddddot{L}$ | $\mathring{L}$ |
+| ~M~ | $\mathbf{M}$ | $\bar{M}$ | $\vec{M}$ | $\hat{M}$ | $\dot{M}$ | $\ddot{M}$ | $\dddot{M}$ | $\ddddot{M}$ | $\mathring{M}$ |
+| ~N~ | $\mathbf{N}$ | $\bar{N}$ | $\vec{N}$ | $\hat{N}$ | $\dot{N}$ | $\ddot{N}$ | $\dddot{N}$ | $\ddddot{N}$ | $\mathring{N}$ |
+| ~O~ | $\mathbf{O}$ | $\bar{O}$ | $\vec{O}$ | $\hat{O}$ | $\dot{O}$ | $\ddot{O}$ | $\dddot{O}$ | $\ddddot{O}$ | $\mathring{O}$ |
+| ~P~ | $\mathbf{P}$ | $\bar{P}$ | $\vec{P}$ | $\hat{P}$ | $\dot{P}$ | $\ddot{P}$ | $\dddot{P}$ | $\ddddot{P}$ | $\mathring{P}$ |
+| ~Q~ | $\mathbf{Q}$ | $\bar{Q}$ | $\vec{Q}$ | $\hat{Q}$ | $\dot{Q}$ | $\ddot{Q}$ | $\dddot{Q}$ | $\ddddot{Q}$ | $\mathring{Q}$ |
+| ~R~ | $\mathbf{R}$ | $\bar{R}$ | $\vec{R}$ | $\hat{R}$ | $\dot{R}$ | $\ddot{R}$ | $\dddot{R}$ | $\ddddot{R}$ | $\mathring{R}$ |
+| ~S~ | $\mathbf{S}$ | $\bar{S}$ | $\vec{S}$ | $\hat{S}$ | $\dot{S}$ | $\ddot{S}$ | $\dddot{S}$ | $\ddddot{S}$ | $\mathring{S}$ |
+| ~T~ | $\mathbf{T}$ | $\bar{T}$ | $\vec{T}$ | $\hat{T}$ | $\dot{T}$ | $\ddot{T}$ | $\dddot{T}$ | $\ddddot{T}$ | $\mathring{T}$ |
+| ~U~ | $\mathbf{U}$ | $\bar{U}$ | $\vec{U}$ | $\hat{U}$ | $\dot{U}$ | $\ddot{U}$ | $\dddot{U}$ | $\ddddot{U}$ | $\mathring{U}$ |
+| ~V~ | $\mathbf{V}$ | $\bar{V}$ | $\vec{V}$ | $\hat{V}$ | $\dot{V}$ | $\ddot{V}$ | $\dddot{V}$ | $\ddddot{V}$ | $\mathring{V}$ |
+| ~W~ | $\mathbf{W}$ | $\bar{W}$ | $\vec{W}$ | $\hat{W}$ | $\dot{W}$ | $\ddot{W}$ | $\dddot{W}$ | $\ddddot{W}$ | $\mathring{W}$ |
+| ~X~ | $\mathbf{X}$ | $\bar{X}$ | $\vec{X}$ | $\hat{X}$ | $\dot{X}$ | $\ddot{X}$ | $\dddot{X}$ | $\ddddot{X}$ | $\mathring{X}$ |
+| ~Y~ | $\mathbf{Y}$ | $\bar{Y}$ | $\vec{Y}$ | $\hat{Y}$ | $\dot{Y}$ | $\ddot{Y}$ | $\dddot{Y}$ | $\ddddot{Y}$ | $\mathring{Y}$ |
+| ~Z~ | $\mathbf{Z}$ | $\bar{Z}$ | $\vec{Z}$ | $\hat{Z}$ | $\dot{Z}$ | $\ddot{Z}$ | $\dddot{Z}$ | $\ddddot{Z}$ | $\mathring{Z}$ |
+|-----+--------------+-----------+-----------+-----------+-----------+------------+-------------+--------------+----------------|
 
-#+caption: Main Greek letters 
-#+name: tbl-alphabet-greek-6column
-#+attr_latex: :align |lll|lll|  :placement [H]
-|-------+---------------+---------------------+-------+-------------+---------------------|
-| key   | sym           | latex (lower greek) | key   | sym         | latex (upper greek) |
-|-------+---------------+---------------------+-------+-------------+---------------------|
-| ~a.~  | $\alpha$      | ~\alpha~            | ~A.~  | $A$         | ~A~                 |
-| ~b.~  | $\beta$       | ~\beta~             | ~B.~  | $B$         | ~B~                 |
-| ~c.~  | $\psi$        | ~\psi~              | ~C.~  | $\Psi$      | ~\Psi~              |
-| ~d.~  | $\delta$      | ~\delta~            | ~D.~  | $\Delta$    | ~\Delta~            |
-| ~e.~  | $\epsilon$    | ~\epsilon~          | ~E.~  | $E$         | ~E~                 |
-| ~f.~  | $\phi$        | ~\phi~              | ~F.~  | $\Phi$      | ~\Phi~              |
-| ~g.~  | $\gamma$      | ~\gamma~            | ~G.~  | $\Gamma$    | ~\Gamma~            |
-| ~h.~  | $\eta$        | ~\eta~              | ~H.~  | $H$         | ~H~                 |
-| ~i.~  | $\iota$       | ~\iota~             | ~I.~  | $I$         | ~I~                 |
-| ~j.~  | $\xi$         | ~\xi~               | ~J.~  | $\Xi$       | ~\Xi~               |
-| ~k.~  | $\kappa$      | ~\kappa~            | ~K.~  | $K$         | ~K~                 |
-| ~l.~  | $\lambda$     | ~\lambda~           | ~L.~  | $\Lambda$   | ~\Lambda~           |
-| ~m.~  | $\mu$         | ~\mu~               | ~M.~  | $M$         | ~M~                 |
-| ~n.~  | $\nu$         | ~\nu~               | ~N.~  | $N$         | ~N~                 |
-| ~o.~  | $o$           | ~o~                 | ~O.~  | $O$         | ~O~                 |
-| ~p.~  | $\pi$         | ~\pi~               | ~P.~  | $\Pi$       | ~\Pi~               |
-| ~r.~  | $\rho$        | ~\rho~              | ~R.~  | $P$         | ~P~                 |
-| ~s.~  | $\sigma$      | ~\sigma~            | ~S.~  | $\Sigma$    | ~\Sigma~            |
-| ~t.~  | $\tau$        | ~\tau~              | ~T.~  | $T$         | ~T~                 |
-| ~th.~ | $\theta$      | ~\theta~            | ~Th.~ | $\Theta$    | ~\Theta~            |
-| ~u.~  | $\upsilon$    | ~\upsilon~          | ~U.~  | $\Upsilon$  | ~\Upsilon~          |
-| ~w.~  | $\omega$      | ~\omega~            | ~W.~  | $\Omega$    | ~\Omega~            |
-| ~x.~  | $\chi$        | ~\chi~              | ~X.~  | $X$         | ~X~                 |
-| ~z.~  | $\zeta$       | ~\zeta~             | ~Z.~  | $Z$         | ~Z~                 |
-|-------+---------------+---------------------+-------+-------------+---------------------|
-| ~e..~ | $\varepsilon$ | ~\varepsilon~       | ~r..~ | $\varrho$   | ~\varrho~           |
-| ~f..~ | $\varphi$     | ~\varphi~           | ~p..~ | $\varpi$    | ~\varpi~            |
-| ~s..~ | $\varsigma$   | ~\varsigma~         | ~t..~ | $\vartheta$ | ~\vartheta~         |
-|-------+---------------+---------------------+-------+-------------+---------------------|
+** Roman Lowercase letter
+#+attr_latex: :align |l|lllllllll|  :placement [H]
+|-----+--------------+-----------+-----------+-----------+-----------+------------+-------------+--------------+----------------|
+|     | ~+m~         | ~+b~      | ~+v~      | ~+h~      | ~+d~      | ~+dd~      | ~+ddd~      | ~+dddd~      | ~+o~           |
+|-----+--------------+-----------+-----------+-----------+-----------+------------+-------------+--------------+----------------|
+| ~a~ | $\mathbf{a}$ | $\bar{a}$ | $\vec{a}$ | $\hat{a}$ | $\dot{a}$ | $\ddot{a}$ | $\dddot{a}$ | $\ddddot{a}$ | $\mathring{a}$ |
+| ~b~ | $\mathbf{b}$ | $\bar{b}$ | $\vec{b}$ | $\hat{b}$ | $\dot{b}$ | $\ddot{b}$ | $\dddot{b}$ | $\ddddot{b}$ | $\mathring{b}$ |
+| ~c~ | $\mathbf{c}$ | $\bar{c}$ | $\vec{c}$ | $\hat{c}$ | $\dot{c}$ | $\ddot{c}$ | $\dddot{c}$ | $\ddddot{c}$ | $\mathring{c}$ |
+| ~d~ | $\mathbf{d}$ | $\bar{d}$ | $\vec{d}$ | $\hat{d}$ | $\dot{d}$ | $\ddot{d}$ | $\dddot{d}$ | $\ddddot{d}$ | $\mathring{d}$ |
+| ~e~ | $\mathbf{e}$ | $\bar{e}$ | $\vec{e}$ | $\hat{e}$ | $\dot{e}$ | $\ddot{e}$ | $\dddot{e}$ | $\ddddot{e}$ | $\mathring{e}$ |
+| ~f~ | $\mathbf{f}$ | $\bar{f}$ | $\vec{f}$ | $\hat{f}$ | $\dot{f}$ | $\ddot{f}$ | $\dddot{f}$ | $\ddddot{f}$ | $\mathring{f}$ |
+| ~g~ | $\mathbf{g}$ | $\bar{g}$ | $\vec{g}$ | $\hat{g}$ | $\dot{g}$ | $\ddot{g}$ | $\dddot{g}$ | $\ddddot{g}$ | $\mathring{g}$ |
+| ~h~ | $\mathbf{h}$ | $\bar{h}$ | $\vec{h}$ | $\hat{h}$ | $\dot{h}$ | $\ddot{h}$ | $\dddot{h}$ | $\ddddot{h}$ | $\mathring{h}$ |
+| ~i~ | $\mathbf{i}$ | $\bar{i}$ | $\vec{i}$ | $\hat{i}$ | $\dot{i}$ | $\ddot{i}$ | $\dddot{i}$ | $\ddddot{i}$ | $\mathring{i}$ |
+| ~j~ | $\mathbf{j}$ | $\bar{j}$ | $\vec{j}$ | $\hat{j}$ | $\dot{j}$ | $\ddot{j}$ | $\dddot{j}$ | $\ddddot{j}$ | $\mathring{j}$ |
+| ~k~ | $\mathbf{k}$ | $\bar{k}$ | $\vec{k}$ | $\hat{k}$ | $\dot{k}$ | $\ddot{k}$ | $\dddot{k}$ | $\ddddot{k}$ | $\mathring{k}$ |
+| ~l~ | $\mathbf{l}$ | $\bar{l}$ | $\vec{l}$ | $\hat{l}$ | $\dot{l}$ | $\ddot{l}$ | $\dddot{l}$ | $\ddddot{l}$ | $\mathring{l}$ |
+| ~m~ | $\mathbf{m}$ | $\bar{m}$ | $\vec{m}$ | $\hat{m}$ | $\dot{m}$ | $\ddot{m}$ | $\dddot{m}$ | $\ddddot{m}$ | $\mathring{m}$ |
+| ~n~ | $\mathbf{n}$ | $\bar{n}$ | $\vec{n}$ | $\hat{n}$ | $\dot{n}$ | $\ddot{n}$ | $\dddot{n}$ | $\ddddot{n}$ | $\mathring{n}$ |
+| ~o~ | $\mathbf{o}$ | $\bar{o}$ | $\vec{o}$ | $\hat{o}$ | $\dot{o}$ | $\ddot{o}$ | $\dddot{o}$ | $\ddddot{o}$ | $\mathring{o}$ |
+| ~p~ | $\mathbf{p}$ | $\bar{p}$ | $\vec{p}$ | $\hat{p}$ | $\dot{p}$ | $\ddot{p}$ | $\dddot{p}$ | $\ddddot{p}$ | $\mathring{p}$ |
+| ~q~ | $\mathbf{q}$ | $\bar{q}$ | $\vec{q}$ | $\hat{q}$ | $\dot{q}$ | $\ddot{q}$ | $\dddot{q}$ | $\ddddot{q}$ | $\mathring{q}$ |
+| ~r~ | $\mathbf{r}$ | $\bar{r}$ | $\vec{r}$ | $\hat{r}$ | $\dot{r}$ | $\ddot{r}$ | $\dddot{r}$ | $\ddddot{r}$ | $\mathring{r}$ |
+| ~s~ | $\mathbf{s}$ | $\bar{s}$ | $\vec{s}$ | $\hat{s}$ | $\dot{s}$ | $\ddot{s}$ | $\dddot{s}$ | $\ddddot{s}$ | $\mathring{s}$ |
+| ~t~ | $\mathbf{t}$ | $\bar{t}$ | $\vec{t}$ | $\hat{t}$ | $\dot{t}$ | $\ddot{t}$ | $\dddot{t}$ | $\ddddot{t}$ | $\mathring{t}$ |
+| ~u~ | $\mathbf{u}$ | $\bar{u}$ | $\vec{u}$ | $\hat{u}$ | $\dot{u}$ | $\ddot{u}$ | $\dddot{u}$ | $\ddddot{u}$ | $\mathring{u}$ |
+| ~v~ | $\mathbf{v}$ | $\bar{v}$ | $\vec{v}$ | $\hat{v}$ | $\dot{v}$ | $\ddot{v}$ | $\dddot{v}$ | $\ddddot{v}$ | $\mathring{v}$ |
+| ~w~ | $\mathbf{w}$ | $\bar{w}$ | $\vec{w}$ | $\hat{w}$ | $\dot{w}$ | $\ddot{w}$ | $\dddot{w}$ | $\ddddot{w}$ | $\mathring{w}$ |
+| ~x~ | $\mathbf{x}$ | $\bar{x}$ | $\vec{x}$ | $\hat{x}$ | $\dot{x}$ | $\ddot{x}$ | $\dddot{x}$ | $\ddddot{x}$ | $\mathring{x}$ |
+| ~y~ | $\mathbf{y}$ | $\bar{y}$ | $\vec{y}$ | $\hat{y}$ | $\dot{y}$ | $\ddot{y}$ | $\dddot{y}$ | $\ddddot{y}$ | $\mathring{y}$ |
+| ~z~ | $\mathbf{z}$ | $\bar{z}$ | $\vec{z}$ | $\hat{z}$ | $\dot{z}$ | $\ddot{z}$ | $\dddot{z}$ | $\ddddot{z}$ | $\mathring{z}$ |
+|-----+--------------+-----------+-----------+-----------+-----------+------------+-------------+--------------+----------------|
 
-**  Matrix (aka  bold)
-#+caption: Matrix
-#+name: tbl-alphabet-matrix-6column
-#+attr_latex: :align |lll|lll| :placement [H]
-|-------+-------------------+--------------------+-------+-------------------+--------------------|
-| key   | sym               | latex (upper bold) | key   | sym               | latex (lower bold) |
-|-------+-------------------+--------------------+-------+-------------------+--------------------|
-| ~Am~  | $\mathbf{A}$      | ~\mathbf{A}~       | ~am~  | $\mathbf{a}$      | ~\mathbf{a}~       |
-| ~Bm~  | $\mathbf{B}$      | ~\mathbf{B}~       | ~bm~  | $\mathbf{b}$      | ~\mathbf{b}~       |
-| ~Cm~  | $\mathbf{C}$      | ~\mathbf{C}~       | ~cm~  | $\mathbf{c}$      | ~\mathbf{c}~       |
-| ~Dm~  | $\mathbf{D}$      | ~\mathbf{D}~       | ~dm~  | $\mathbf{d}$      | ~\mathbf{d}~       |
-| ~Em~  | $\mathbf{E}$      | ~\mathbf{E}~       | ~em~  | $\mathbf{e}$      | ~\mathbf{e}~       |
-| ~Fm~  | $\mathbf{F}$      | ~\mathbf{F}~       | ~fm~  | $\mathbf{f}$      | ~\mathbf{f}~       |
-| ~Gm~  | $\mathbf{G}$      | ~\mathbf{G}~       | ~gm~  | $\mathbf{g}$      | ~\mathbf{g}~       |
-| ~Hm~  | $\mathbf{H}$      | ~\mathbf{H}~       | ~hm~  | $\mathbf{h}$      | ~\mathbf{h}~       |
-| ~Im~  | $\mathbf{I}$      | ~\mathbf{I}~       | ~im~  | $\mathbf{i}$      | ~\mathbf{i}~       |
-| ~Jm~  | $\mathbf{J}$      | ~\mathbf{J}~       | ~jm~  | $\mathbf{j}$      | ~\mathbf{j}~       |
-| ~Km~  | $\mathbf{K}$      | ~\mathbf{K}~       | ~km~  | $\mathbf{k}$      | ~\mathbf{k}~       |
-| ~Lm~  | $\mathbf{L}$      | ~\mathbf{L}~       | ~lm~  | $\mathbf{l}$      | ~\mathbf{l}~       |
-| ~Mm~  | $\mathbf{M}$      | ~\mathbf{M}~       | ~mm~  | $\mathbf{m}$      | ~\mathbf{m}~       |
-| ~Nm~  | $\mathbf{N}$      | ~\mathbf{N}~       | ~nm~  | $\mathbf{n}$      | ~\mathbf{n}~       |
-| ~Om~  | $\mathbf{O}$      | ~\mathbf{O}~       | ~om~  | $\mathbf{o}$      | ~\mathbf{o}~       |
-| ~Pm~  | $\mathbf{P}$      | ~\mathbf{P}~       | ~pm~  | $\mathbf{p}$      | ~\mathbf{p}~       |
-| ~Qm~  | $\mathbf{Q}$      | ~\mathbf{Q}~       | ~qm~  | $\mathbf{q}$      | ~\mathbf{q}~       |
-| ~Rm~  | $\mathbf{R}$      | ~\mathbf{R}~       | ~rm~  | $\mathbf{r}$      | ~\mathbf{r}~       |
-| ~Sm~  | $\mathbf{S}$      | ~\mathbf{S}~       | ~sm~  | $\mathbf{s}$      | ~\mathbf{s}~       |
-| ~Tm~  | $\mathbf{T}$      | ~\mathbf{T}~       | ~tm~  | $\mathbf{t}$      | ~\mathbf{t}~       |
-| ~Um~  | $\mathbf{U}$      | ~\mathbf{U}~       | ~um~  | $\mathbf{u}$      | ~\mathbf{u}~       |
-| ~Vm~  | $\mathbf{V}$      | ~\mathbf{V}~       | ~vm~  | $\mathbf{v}$      | ~\mathbf{v}~       |
-| ~Wm~  | $\mathbf{W}$      | ~\mathbf{W}~       | ~wm~  | $\mathbf{w}$      | ~\mathbf{w}~       |
-| ~Xm~  | $\mathbf{X}$      | ~\mathbf{X}~       | ~xm~  | $\mathbf{x}$      | ~\mathbf{x}~       |
-| ~Ym~  | $\mathbf{Y}$      | ~\mathbf{Y}~       | ~ym~  | $\mathbf{y}$      | ~\mathbf{y}~       |
-| ~Zm~  | $\mathbf{Z}$      | ~\mathbf{Z}~       | ~zm~  | $\mathbf{z}$      | ~\mathbf{z}~       |
-| ~Om~  | $\mathbf{0}$      | ~\mathbf{0}~       | ~0m~  | $\mathbf{0}$      | ~\mathbf{0}~       |
-|-------+-------------------+--------------------+-------+-------------------+--------------------|
+** Greek Uppercase letter
+#+attr_latex: :align |l|llllllll|  :placement [H]
+|-------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
+|       | ~+b~             | ~+v~             | ~+h~             | ~+d~             | ~+dd~             | ~+ddd~             | ~+dddd~             | ~+o~                  |
+|-------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
+| ~A.~  | $\bar{A}$        | $\vec{A}$        | $\hat{A}$        | $\dot{A}$        | $\ddot{A}$        | $\dddot{A}$        | $\ddddot{A}$        | $\mathring{A}$        |
+| ~B.~  | $\bar{B}$        | $\vec{B}$        | $\hat{B}$        | $\dot{B}$        | $\ddot{B}$        | $\dddot{B}$        | $\ddddot{B}$        | $\mathring{B}$        |
+| ~C.~  | $\bar{\Psi}$     | $\vec{\Psi}$     | $\hat{\Psi}$     | $\dot{\Psi}$     | $\ddot{\Psi}$     | $\dddot{\Psi}$     | $\ddddot{\Psi}$     | $\mathring{\Psi}$     |
+| ~D.~  | $\bar{\Delta}$   | $\vec{\Delta}$   | $\hat{\Delta}$   | $\dot{\Delta}$   | $\ddot{\Delta}$   | $\dddot{\Delta}$   | $\ddddot{\Delta}$   | $\mathring{\Delta}$   |
+| ~E.~  | $\bar{E}$        | $\vec{E}$        | $\hat{E}$        | $\dot{E}$        | $\ddot{E}$        | $\dddot{E}$        | $\ddddot{E}$        | $\mathring{E}$        |
+| ~F.~  | $\bar{\Phi}$     | $\vec{\Phi}$     | $\hat{\Phi}$     | $\dot{\Phi}$     | $\ddot{\Phi}$     | $\dddot{\Phi}$     | $\ddddot{\Phi}$     | $\mathring{\Phi}$     |
+| ~G.~  | $\bar{\Gamma}$   | $\vec{\Gamma}$   | $\hat{\Gamma}$   | $\dot{\Gamma}$   | $\ddot{\Gamma}$   | $\dddot{\Gamma}$   | $\ddddot{\Gamma}$   | $\mathring{\Gamma}$   |
+| ~H.~  | $\bar{H}$        | $\vec{H}$        | $\hat{H}$        | $\dot{H}$        | $\ddot{H}$        | $\dddot{H}$        | $\ddddot{H}$        | $\mathring{H}$        |
+| ~I.~  | $\bar{I}$        | $\vec{I}$        | $\hat{I}$        | $\dot{I}$        | $\ddot{I}$        | $\dddot{I}$        | $\ddddot{I}$        | $\mathring{I}$        |
+| ~J.~  | $\bar{\Xi}$      | $\vec{\Xi}$      | $\hat{\Xi}$      | $\dot{\Xi}$      | $\ddot{\Xi}$      | $\dddot{\Xi}$      | $\ddddot{\Xi}$      | $\mathring{\Xi}$      |
+| ~K.~  | $\bar{K}$        | $\vec{K}$        | $\hat{K}$        | $\dot{K}$        | $\ddot{K}$        | $\dddot{K}$        | $\ddddot{K}$        | $\mathring{K}$        |
+| ~L.~  | $\bar{\Lambda}$  | $\vec{\Lambda}$  | $\hat{\Lambda}$  | $\dot{\Lambda}$  | $\ddot{\Lambda}$  | $\dddot{\Lambda}$  | $\ddddot{\Lambda}$  | $\mathring{\Lambda}$  |
+| ~M.~  | $\bar{M}$        | $\vec{M}$        | $\hat{M}$        | $\dot{M}$        | $\ddot{M}$        | $\dddot{M}$        | $\ddddot{M}$        | $\mathring{M}$        |
+| ~N.~  | $\bar{N}$        | $\vec{N}$        | $\hat{N}$        | $\dot{N}$        | $\ddot{N}$        | $\dddot{N}$        | $\ddddot{N}$        | $\mathring{N}$        |
+| ~O.~  | $\bar{O}$        | $\vec{O}$        | $\hat{O}$        | $\dot{O}$        | $\ddot{O}$        | $\dddot{O}$        | $\ddddot{O}$        | $\mathring{O}$        |
+| ~P.~  | $\bar{\Pi}$      | $\vec{\Pi}$      | $\hat{\Pi}$      | $\dot{\Pi}$      | $\ddot{\Pi}$      | $\dddot{\Pi}$      | $\ddddot{\Pi}$      | $\mathring{\Pi}$      |
+| ~R.~  | $\bar{P}$        | $\vec{P}$        | $\hat{P}$        | $\dot{P}$        | $\ddot{P}$        | $\dddot{P}$        | $\ddddot{P}$        | $\mathring{P}$        |
+| ~S.~  | $\bar{\Sigma}$   | $\vec{\Sigma}$   | $\hat{\Sigma}$   | $\dot{\Sigma}$   | $\ddot{\Sigma}$   | $\dddot{\Sigma}$   | $\ddddot{\Sigma}$   | $\mathring{\Sigma}$   |
+| ~T.~  | $\bar{T}$        | $\vec{T}$        | $\hat{T}$        | $\dot{T}$        | $\ddot{T}$        | $\dddot{T}$        | $\ddddot{T}$        | $\mathring{T}$        |
+| ~Th.~ | $\bar{\Theta}$   | $\vec{\Theta}$   | $\hat{\Theta}$   | $\dot{\Theta}$   | $\ddot{\Theta}$   | $\dddot{\Theta}$   | $\ddddot{\Theta}$   | $\mathring{\Theta}$   |
+| ~U.~  | $\bar{\Upsilon}$ | $\vec{\Upsilon}$ | $\hat{\Upsilon}$ | $\dot{\Upsilon}$ | $\ddot{\Upsilon}$ | $\dddot{\Upsilon}$ | $\ddddot{\Upsilon}$ | $\mathring{\Upsilon}$ |
+| ~W.~  | $\bar{\Omega}$   | $\vec{\Omega}$   | $\hat{\Omega}$   | $\dot{\Omega}$   | $\ddot{\Omega}$   | $\dddot{\Omega}$   | $\ddddot{\Omega}$   | $\mathring{\Omega}$   |
+| ~X.~  | $\bar{X}$        | $\vec{X}$        | $\hat{X}$        | $\dot{X}$        | $\ddot{X}$        | $\dddot{X}$        | $\ddddot{X}$        | $\mathring{X}$        |
+| ~Z.~  | $\bar{Z}$        | $\vec{Z}$        | $\hat{Z}$        | $\dot{Z}$        | $\ddot{Z}$        | $\dddot{Z}$        | $\ddddot{Z}$        | $\mathring{Z}$        |
+|-------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
 
-**  Vector
-#+caption: Vectors
-#+name: tbl-alphabet-vec-6column
-#+attr_latex: :align |lll|lll| :placement [H]
-|-------+----------------+----------------+-------+----------------+----------------|
-| key   | sym            | latex (upper)  | key   | sym            | latex (lower)  |
-|-------+----------------+----------------+-------+----------------+----------------|
-| ~Av~  | $\vec{A}$      | ~\vec{A}~      | ~av~  | $\vec{a}$      | ~\vec{a}~      |
-| ~Bv~  | $\vec{B}$      | ~\vec{B}~      | ~bv~  | $\vec{b}$      | ~\vec{b}~      |
-| ~Cv~  | $\vec{C}$      | ~\vec{C}~      | ~cv~  | $\vec{c}$      | ~\vec{c}~      |
-| ~Dv~  | $\vec{D}$      | ~\vec{D}~      | ~dv~  | $\vec{d}$      | ~\vec{d}~      |
-| ~Ev~  | $\vec{E}$      | ~\vec{E}~      | ~ev~  | $\vec{e}$      | ~\vec{e}~      |
-| ~Fv~  | $\vec{F}$      | ~\vec{F}~      | ~fv~  | $\vec{f}$      | ~\vec{f}~      |
-| ~Gv~  | $\vec{G}$      | ~\vec{G}~      | ~gv~  | $\vec{g}$      | ~\vec{g}~      |
-| ~Hv~  | $\vec{H}$      | ~\vec{H}~      | ~hv~  | $\vec{h}$      | ~\vec{h}~      |
-| ~Iv~  | $\vec{I}$      | ~\vec{I}~      | ~iv~  | $\vec{i}$      | ~\vec{i}~      |
-| ~Jv~  | $\vec{J}$      | ~\vec{J}~      | ~jv~  | $\vec{j}$      | ~\vec{j}~      |
-| ~Kv~  | $\vec{K}$      | ~\vec{K}~      | ~kv~  | $\vec{k}$      | ~\vec{k}~      |
-| ~Lv~  | $\vec{L}$      | ~\vec{L}~      | ~lv~  | $\vec{l}$      | ~\vec{l}~      |
-| ~Mv~  | $\vec{M}$      | ~\vec{M}~      | ~mv~  | $\vec{m}$      | ~\vec{m}~      |
-| ~Nv~  | $\vec{N}$      | ~\vec{N}~      | ~nv~  | $\vec{n}$      | ~\vec{n}~      |
-| ~Ov~  | $\vec{O}$      | ~\vec{O}~      | ~ov~  | $\vec{o}$      | ~\vec{o}~      |
-| ~Pv~  | $\vec{P}$      | ~\vec{P}~      | ~pv~  | $\vec{p}$      | ~\vec{p}~      |
-| ~Qv~  | $\vec{Q}$      | ~\vec{Q}~      | ~qv~  | $\vec{q}$      | ~\vec{q}~      |
-| ~Rv~  | $\vec{R}$      | ~\vec{R}~      | ~rv~  | $\vec{r}$      | ~\vec{r}~      |
-| ~Sv~  | $\vec{S}$      | ~\vec{S}~      | ~sv~  | $\vec{s}$      | ~\vec{s}~      |
-| ~Tv~  | $\vec{T}$      | ~\vec{T}~      | ~tv~  | $\vec{t}$      | ~\vec{t}~      |
-| ~Uv~  | $\vec{U}$      | ~\vec{U}~      | ~uv~  | $\vec{u}$      | ~\vec{u}~      |
-| ~Vv~  | $\vec{V}$      | ~\vec{V}~      | ~vv~  | $\vec{v}$      | ~\vec{v}~      |
-| ~Wv~  | $\vec{W}$      | ~\vec{W}~      | ~wv~  | $\vec{w}$      | ~\vec{w}~      |
-| ~Xv~  | $\vec{X}$      | ~\vec{X}~      | ~xv~  | $\vec{x}$      | ~\vec{x}~      |
-| ~Yv~  | $\vec{Y}$      | ~\vec{Y}~      | ~yv~  | $\vec{y}$      | ~\vec{y}~      |
-| ~Zv~  | $\vec{Z}$      | ~\vec{Z}~      | ~zv~  | $\vec{z}$      | ~\vec{z}~      |
-|-------+----------------+----------------+-------+----------------+----------------|
-| ~iv.~ | $\vec{\imath}$ | ~\vec{\imath}~ | ~jv.~ | $\vec{\jmath}$ | ~\vec{\jmath}~ |
-|-------+----------------+----------------+-------+----------------+----------------|
+** Greek Lower letter
+#+attr_latex: :align |l|llllllll|  :placement [H]
+|-------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
+|       | ~+b~             | ~+v~             | ~+h~             | ~+d~             | ~+dd~             | ~+ddd~             | ~+dddd~             | ~+o~                  |
+|-------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
+| ~a.~  | $\bar{\alpha}$   | $\vec{\alpha}$   | $\hat{\alpha}$   | $\dot{\alpha}$   | $\ddot{\alpha}$   | $\dddot{\alpha}$   | $\ddddot{\alpha}$   | $\mathring{\alpha}$   |
+| ~a.~  | $\bar{\beta}$    | $\vec{\beta}$    | $\hat{\beta}$    | $\dot{\beta}$    | $\ddot{\beta}$    | $\dddot{\beta}$    | $\ddddot{\beta}$    | $\mathring{\beta}$    |
+| ~c.~  | $\bar{\psi}$     | $\vec{\psi}$     | $\hat{\psi}$     | $\dot{\psi}$     | $\ddot{\psi}$     | $\dddot{\psi}$     | $\ddddot{\psi}$     | $\mathring{\psi}$     |
+| ~d.~  | $\bar{\delta}$   | $\vec{\delta}$   | $\hat{\delta}$   | $\dot{\delta}$   | $\ddot{\delta}$   | $\dddot{\delta}$   | $\ddddot{\delta}$   | $\mathring{\delta}$   |
+| ~e.~  | $\bar{\epsilon}$ | $\vec{\epsilon}$ | $\hat{\epsilon}$ | $\dot{\epsilon}$ | $\ddot{\epsilon}$ | $\dddot{\epsilon}$ | $\ddddot{\epsilon}$ | $\mathring{\epsilon}$ |
+| ~f.~  | $\bar{\phi}$     | $\vec{\phi}$     | $\hat{\phi}$     | $\dot{\phi}$     | $\ddot{\phi}$     | $\dddot{\phi}$     | $\ddddot{\phi}$     | $\mathring{\phi}$     |
+| ~g.~  | $\bar{\gamma}$   | $\vec{\gamma}$   | $\hat{\gamma}$   | $\dot{\gamma}$   | $\ddot{\gamma}$   | $\dddot{\gamma}$   | $\ddddot{\gamma}$   | $\mathring{\gamma}$   |
+| ~h.~  | $\bar{\eta}$     | $\vec{\eta}$     | $\hat{\eta}$     | $\dot{\eta}$     | $\ddot{\eta}$     | $\dddot{\eta}$     | $\ddddot{\eta}$     | $\mathring{\eta}$     |
+| ~i.~  | $\bar{\iota}$    | $\vec{\iota}$    | $\hat{\iota}$    | $\dot{\iota}$    | $\ddot{\iota}$    | $\dddot{\iota}$    | $\ddddot{\iota}$    | $\mathring{\iota}$    |
+| ~j.~  | $\bar{\xi}$      | $\vec{\xi}$      | $\hat{\xi}$      | $\dot{\xi}$      | $\ddot{\xi}$      | $\dddot{\xi}$      | $\ddddot{\xi}$      | $\mathring{\xi}$      |
+| ~k.~  | $\bar{\kappa}$   | $\vec{\kappa}$   | $\hat{\kappa}$   | $\dot{\kappa}$   | $\ddot{\kappa}$   | $\dddot{\kappa}$   | $\ddddot{\kappa}$   | $\mathring{\kappa}$   |
+| ~l.~  | $\bar{\lambda}$  | $\vec{\lambda}$  | $\hat{\lambda}$  | $\dot{\lambda}$  | $\ddot{\lambda}$  | $\dddot{\lambda}$  | $\ddddot{\lambda}$  | $\mathring{\lambda}$  |
+| ~m.~  | $\bar{\mu}$      | $\vec{\mu}$      | $\hat{\mu}$      | $\dot{\mu}$      | $\ddot{\mu}$      | $\dddot{\mu}$      | $\ddddot{\mu}$      | $\mathring{\mu}$      |
+| ~n.~  | $\bar{\nu}$      | $\vec{\nu}$      | $\hat{\nu}$      | $\dot{\nu}$      | $\ddot{\nu}$      | $\dddot{\nu}$      | $\ddddot{\nu}$      | $\mathring{\nu}$      |
+| ~o.~  | $\bar{o}$        | $\vec{o}$        | $\hat{o}$        | $\dot{o}$        | $\ddot{o}$        | $\dddot{o}$        | $\ddddot{o}$        | $\mathring{o}$        |
+| ~p.~  | $\bar{\pi}$      | $\vec{\pi}$      | $\hat{\pi}$      | $\dot{\pi}$      | $\ddot{\pi}$      | $\dddot{\pi}$      | $\ddddot{\pi}$      | $\mathring{\pi}$      |
+| ~r.~  | $\bar{\rho}$     | $\vec{\rho}$     | $\hat{\rho}$     | $\dot{\rho}$     | $\ddot{\rho}$     | $\dddot{\rho}$     | $\ddddot{\rho}$     | $\mathring{\rho}$     |
+| ~s.~  | $\bar{\sigma}$   | $\vec{\sigma}$   | $\hat{\sigma}$   | $\dot{\sigma}$   | $\ddot{\sigma}$   | $\dddot{\sigma}$   | $\ddddot{\sigma}$   | $\mathring{\sigma}$   |
+| ~t.~  | $\bar{\tau}$     | $\vec{\tau}$     | $\hat{\tau}$     | $\dot{\tau}$     | $\ddot{\tau}$     | $\dddot{\tau}$     | $\ddddot{\tau}$     | $\mathring{\tau}$     |
+| ~th.~ | $\bar{\theta}$   | $\vec{\theta}$   | $\hat{\theta}$   | $\dot{\theta}$   | $\ddot{\theta}$   | $\dddot{\theta}$   | $\ddddot{\theta}$   | $\mathring{\theta}$   |
+| ~u.~  | $\bar{\upsilon}$ | $\vec{\upsilon}$ | $\hat{\upsilon}$ | $\dot{\upsilon}$ | $\ddot{\upsilon}$ | $\dddot{\upsilon}$ | $\ddddot{\upsilon}$ | $\mathring{\upsilon}$ |
+| ~w.~  | $\bar{\omega}$   | $\vec{\omega}$   | $\hat{\omega}$   | $\dot{\omega}$   | $\ddot{\omega}$   | $\dddot{\omega}$   | $\ddddot{\omega}$   | $\mathring{\omega}$   |
+| ~x.~  | $\bar{\chi}$     | $\vec{\chi}$     | $\hat{\chi}$     | $\dot{\chi}$     | $\ddot{\chi}$     | $\dddot{\chi}$     | $\ddddot{\chi}$     | $\mathring{\chi}$     |
+| ~z.~  | $\bar{\zeta}$    | $\vec{\zeta}$    | $\hat{\zeta}$    | $\dot{\zeta}$    | $\ddot{\zeta}$    | $\dddot{\zeta}$    | $\ddddot{\zeta}$    | $\mathring{\zeta}$    |
+|-------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
 
-**  Hat
-#+caption: Vectors and Hats
-#+name: tbl-alphabet-hat-6column
-#+attr_latex: :align |lll|lll| :placement [H]
-|-------+----------------+----------------+-------+----------------+----------------|
-| key   | sym            | latex (hat)    | key   | sym            | latex (hat)    |
-|-------+----------------+----------------+-------+----------------+----------------|
-| ~Ah~  | $\hat{A}$      | ~\hat{A}~      | ~ah~  | $\hat{a}$      | ~\hat{a}~      |
-| ~Bh~  | $\hat{B}$      | ~\hat{B}~      | ~bh~  | $\hat{b}$      | ~\hat{b}~      |
-| ~Ch~  | $\hat{C}$      | ~\hat{C}~      | ~ch~  | $\hat{c}$      | ~\hat{c}~      |
-| ~Dh~  | $\hat{D}$      | ~\hat{D}~      | ~dh~  | $\hat{d}$      | ~\hat{d}~      |
-| ~Eh~  | $\hat{E}$      | ~\hat{E}~      | ~eh~  | $\hat{e}$      | ~\hat{e}~      |
-| ~Fh~  | $\hat{F}$      | ~\hat{F}~      | ~fh~  | $\hat{f}$      | ~\hat{f}~      |
-| ~Gh~  | $\hat{G}$      | ~\hat{G}~      | ~gh~  | $\hat{g}$      | ~\hat{g}~      |
-| ~Hh~  | $\hat{H}$      | ~\hat{H}~      | ~hh~  | $\hat{h}$      | ~\hat{h}~      |
-| ~Ih~  | $\hat{I}$      | ~\hat{I}~      | ~ih~  | $\hat{i}$      | ~\hat{i}~      |
-| ~Jh~  | $\hat{J}$      | ~\hat{J}~      | ~jh~  | $\hat{j}$      | ~\hat{j}~      |
-| ~Kh~  | $\hat{K}$      | ~\hat{K}~      | ~kh~  | $\hat{k}$      | ~\hat{k}~      |
-| ~Lh~  | $\hat{L}$      | ~\hat{L}~      | ~lh~  | $\hat{l}$      | ~\hat{l}~      |
-| ~Mh~  | $\hat{M}$      | ~\hat{M}~      | ~mh~  | $\hat{m}$      | ~\hat{m}~      |
-| ~Nh~  | $\hat{N}$      | ~\hat{N}~      | ~nh~  | $\hat{n}$      | ~\hat{n}~      |
-| ~Oh~  | $\hat{O}$      | ~\hat{O}~      | ~oh~  | $\hat{o}$      | ~\hat{o}~      |
-| ~Ph~  | $\hat{P}$      | ~\hat{P}~      | ~ph~  | $\hat{p}$      | ~\hat{p}~      |
-| ~Qh~  | $\hat{Q}$      | ~\hat{Q}~      | ~qh~  | $\hat{q}$      | ~\hat{q}~      |
-| ~Rh~  | $\hat{R}$      | ~\hat{R}~      | ~rh~  | $\hat{r}$      | ~\hat{r}~      |
-| ~Sh~  | $\hat{S}$      | ~\hat{S}~      | ~sh~  | $\hat{s}$      | ~\hat{s}~      |
-| ~Th~  | $\hat{T}$      | ~\hat{T}~      | ~th~  | $\hat{t}$      | ~\hat{t}~      |
-| ~Uh~  | $\hat{U}$      | ~\hat{U}~      | ~uh~  | $\hat{u}$      | ~\hat{u}~      |
-| ~Vh~  | $\hat{V}$      | ~\hat{V}~      | ~vh~  | $\hat{v}$      | ~\hat{v}~      |
-| ~Wh~  | $\hat{W}$      | ~\hat{W}~      | ~wh~  | $\hat{w}$      | ~\hat{w}~      |
-| ~Xh~  | $\hat{X}$      | ~\hat{X}~      | ~xh~  | $\hat{x}$      | ~\hat{x}~      |
-| ~Yh~  | $\hat{Y}$      | ~\hat{Y}~      | ~yh~  | $\hat{y}$      | ~\hat{y}~      |
-| ~Zh~  | $\hat{Z}$      | ~\hat{Z}~      | ~zh~  | $\hat{z}$      | ~\hat{z}~      |
-|-------+----------------+----------------+-------+----------------+----------------|
-| ~ih.~ | $\hat{\imath}$ | ~\hat{\imath}~ | ~jh.~ | $\hat{\jmath}$ | ~\hat{\jmath}~ |
-|-------+----------------+----------------+-------+----------------+----------------|
-
-**  Dots
-#+caption: Dots
-#+name: tbl-alphabet-dot-6column
-#+attr_latex: :align |lll|lll| :placement [H]
-|-------+----------------+----------------+-------+----------------+----------------|
-| key   | sym            | latex (vec)    | key   | sym            | latex (hat)    |
-|-------+----------------+----------------+-------+----------------+----------------|
-| ~ad~  | $\dot{a}$      | ~\dot{a}~      | ~Ad~  | $\dot{A}$      | ~\dot{A}~      |
-| ~bd~  | $\dot{b}$      | ~\dot{b}~      | ~Bd~  | $\dot{B}$      | ~\dot{B}~      |
-| ~cd~  | $\dot{c}$      | ~\dot{c}~      | ~Cd~  | $\dot{C}$      | ~\dot{C}~      |
-| ~dd~  | $\dot{d}$      | ~\dot{d}~      | ~Dd~  | $\dot{D}$      | ~\dot{D}~      |
-| ~ed~  | $\dot{e}$      | ~\dot{e}~      | ~Ed~  | $\dot{E}$      | ~\dot{E}~      |
-| ~fd~  | $\dot{f}$      | ~\dot{f}~      | ~Fd~  | $\dot{F}$      | ~\dot{F}~      |
-| ~gd~  | $\dot{g}$      | ~\dot{g}~      | ~Gd~  | $\dot{G}$      | ~\dot{G}~      |
-| ~hd~  | $\dot{h}$      | ~\dot{h}~      | ~Hd~  | $\dot{H}$      | ~\dot{H}~      |
-| ~id~  | $\dot{i}$      | ~\dot{i}~      | ~Id~  | $\dot{I}$      | ~\dot{I}~      |
-| ~jd~  | $\dot{j}$      | ~\dot{j}~      | ~Jd~  | $\dot{J}$      | ~\dot{J}~      |
-| ~kd~  | $\dot{k}$      | ~\dot{k}~      | ~Kd~  | $\dot{K}$      | ~\dot{K}~      |
-| ~ld~  | $\dot{l}$      | ~\dot{l}~      | ~Ld~  | $\dot{L}$      | ~\dot{L}~      |
-| ~md~  | $\dot{m}$      | ~\dot{m}~      | ~Md~  | $\dot{M}$      | ~\dot{M}~      |
-| ~nd~  | $\dot{n}$      | ~\dot{n}~      | ~Nd~  | $\dot{N}$      | ~\dot{N}~      |
-| ~od~  | $\dot{o}$      | ~\dot{o}~      | ~Od~  | $\dot{O}$      | ~\dot{O}~      |
-| ~pd~  | $\dot{p}$      | ~\dot{p}~      | ~Pd~  | $\dot{P}$      | ~\dot{P}~      |
-| ~qd~  | $\dot{q}$      | ~\dot{q}~      | ~Qd~  | $\dot{Q}$      | ~\dot{Q}~      |
-| ~rd~  | $\dot{r}$      | ~\dot{r}~      | ~Rd~  | $\dot{R}$      | ~\dot{R}~      |
-| ~sd~  | $\dot{s}$      | ~\dot{s}~      | ~Sd~  | $\dot{S}$      | ~\dot{S}~      |
-| ~td~  | $\dot{t}$      | ~\dot{t}~      | ~Td~  | $\dot{T}$      | ~\dot{T}~      |
-| ~ud~  | $\dot{u}$      | ~\dot{u}~      | ~Ud~  | $\dot{U}$      | ~\dot{U}~      |
-| ~vd~  | $\dot{v}$      | ~\dot{v}~      | ~Vd~  | $\dot{V}$      | ~\dot{V}~      |
-| ~wd~  | $\dot{w}$      | ~\dot{w}~      | ~Wd~  | $\dot{W}$      | ~\dot{W}~      |
-| ~xd~  | $\dot{x}$      | ~\dot{x}~      | ~Xd~  | $\dot{X}$      | ~\dot{X}~      |
-| ~yd~  | $\dot{y}$      | ~\dot{y}~      | ~Yd~  | $\dot{Y}$      | ~\dot{Y}~      |
-| ~zd~  | $\dot{z}$      | ~\dot{z}~      | ~Zd~  | $\dot{Z}$      | ~\dot{Z}~      |
-|-------+----------------+----------------+-------+----------------+----------------|
-| ~id.~ | $\dot{\imath}$ | ~\dot{\imath}~ | ~jd.~ | $\dot{\jmath}$ | ~\dot{\jmath}~ |
-|-------+----------------+----------------+-------+----------------+----------------|
-**  DDots
-#+caption: DDots
-#+name: tbl_alphabet_ddot_6column
-#+attr_latex: :align |lll|lll| :placement [H]
-|--------+-----------------+-----------------+--------+-----------------+-----------------|
-| key    | sym             | latex (vec)     | key    | sym             | latex (hat)     |
-|--------+-----------------+-----------------+--------+-----------------+-----------------|
-| ~add~  | $\ddot{a}$      | ~\ddot{a}~      | ~Add~  | $\ddot{A}$      | ~\ddot{A}~      |
-| ~bdd~  | $\ddot{b}$      | ~\ddot{b}~      | ~Bdd~  | $\ddot{B}$      | ~\ddot{B}~      |
-| ~cdd~  | $\ddot{c}$      | ~\ddot{c}~      | ~Cdd~  | $\ddot{C}$      | ~\ddot{C}~      |
-| ~ddd~  | $\ddot{d}$      | ~\ddot{d}~      | ~Ddd~  | $\ddot{D}$      | ~\ddot{D}~      |
-| ~edd~  | $\ddot{e}$      | ~\ddot{e}~      | ~Edd~  | $\ddot{E}$      | ~\ddot{E}~      |
-| ~fdd~  | $\ddot{f}$      | ~\ddot{f}~      | ~Fdd~  | $\ddot{F}$      | ~\ddot{F}~      |
-| ~gdd~  | $\ddot{g}$      | ~\ddot{g}~      | ~Gdd~  | $\ddot{G}$      | ~\ddot{G}~      |
-| ~hdd~  | $\ddot{h}$      | ~\ddot{h}~      | ~Hdd~  | $\ddot{H}$      | ~\ddot{H}~      |
-| ~idd~  | $\ddot{i}$      | ~\ddot{i}~      | ~Idd~  | $\ddot{I}$      | ~\ddot{I}~      |
-| ~jdd~  | $\ddot{j}$      | ~\ddot{j}~      | ~Jdd~  | $\ddot{J}$      | ~\ddot{J}~      |
-| ~kdd~  | $\ddot{k}$      | ~\ddot{k}~      | ~Kdd~  | $\ddot{K}$      | ~\ddot{K}~      |
-| ~ldd~  | $\ddot{l}$      | ~\ddot{l}~      | ~Ldd~  | $\ddot{L}$      | ~\ddot{L}~      |
-| ~mdd~  | $\ddot{m}$      | ~\ddot{m}~      | ~Mdd~  | $\ddot{M}$      | ~\ddot{M}~      |
-| ~ndd~  | $\ddot{n}$      | ~\ddot{n}~      | ~Ndd~  | $\ddot{N}$      | ~\ddot{N}~      |
-| ~odd~  | $\ddot{o}$      | ~\ddot{o}~      | ~Odd~  | $\ddot{O}$      | ~\ddot{O}~      |
-| ~pdd~  | $\ddot{p}$      | ~\ddot{p}~      | ~Pdd~  | $\ddot{P}$      | ~\ddot{P}~      |
-| ~qdd~  | $\ddot{q}$      | ~\ddot{q}~      | ~Qdd~  | $\ddot{Q}$      | ~\ddot{Q}~      |
-| ~rdd~  | $\ddot{r}$      | ~\ddot{r}~      | ~Rdd~  | $\ddot{R}$      | ~\ddot{R}~      |
-| ~sdd~  | $\ddot{s}$      | ~\ddot{s}~      | ~Sdd~  | $\ddot{S}$      | ~\ddot{S}~      |
-| ~tdd~  | $\ddot{t}$      | ~\ddot{t}~      | ~Tdd~  | $\ddot{T}$      | ~\ddot{T}~      |
-| ~udd~  | $\ddot{u}$      | ~\ddot{u}~      | ~Udd~  | $\ddot{U}$      | ~\ddot{U}~      |
-| ~vdd~  | $\ddot{v}$      | ~\ddot{v}~      | ~Vdd~  | $\ddot{V}$      | ~\ddot{V}~      |
-| ~wdd~  | $\ddot{w}$      | ~\ddot{w}~      | ~Wdd~  | $\ddot{W}$      | ~\ddot{W}~      |
-| ~xdd~  | $\ddot{x}$      | ~\ddot{x}~      | ~Xdd~  | $\ddot{X}$      | ~\ddot{X}~      |
-| ~ydd~  | $\ddot{y}$      | ~\ddot{y}~      | ~Ydd~  | $\ddot{Y}$      | ~\ddot{Y}~      |
-| ~zdd~  | $\ddot{z}$      | ~\ddot{z}~      | ~Zdd~  | $\ddot{Z}$      | ~\ddot{Z}~      |
-|--------+-----------------+-----------------+--------+-----------------+-----------------|
-| ~idd.~ | $\ddot{\imath}$ | ~\ddot{\imath}~ | ~jdd.~ | $\ddot{\jmath}$ | ~\ddot{\jmath}~ |
-|--------+-----------------+-----------------+--------+-----------------+-----------------|
+#+attr_latex: :align |l|llllllll|  :placement [H]
+|-------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
+|       | ~+b~                | ~+v~                | ~+h~                | ~+d~                | ~+dd~                | ~+ddd~                | ~+dddd~                | ~+o~                     |
+|-------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
+| ~e..~ | $\bar{\varepsilon}$ | $\vec{\varepsilon}$ | $\hat{\varepsilon}$ | $\dot{\varepsilon}$ | $\ddot{\varepsilon}$ | $\dddot{\varepsilon}$ | $\ddddot{\varepsilon}$ | $\mathring{\varepsilon}$ |
+| ~f..~ | $\bar{\varphi}$     | $\vec{\varphi}$     | $\hat{\varphi}$     | $\dot{\varphi}$     | $\ddot{\varphi}$     | $\dddot{\varphi}$     | $\ddddot{\varphi}$     | $\mathring{\varphi}$     |
+| ~s..~ | $\bar{\varsigma}$   | $\vec{\varsigma}$   | $\hat{\varsigma}$   | $\dot{\varsigma}$   | $\ddot{\varsigma}$   | $\dddot{\varsigma}$   | $\ddddot{\varsigma}$   | $\mathring{\varsigma}$   |
+|-------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
 
 
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 *  Function Expansion
 #+caption: Keys that will execute some elisp functions
 #+name: tbl-2-execute-function
