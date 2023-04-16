@@ -47,9 +47,26 @@
 (defun quail-TeQ-endofline (key idx)
   (quail-func-init)
   (end-of-line)
-  (insert "\\\\\n")
-  (when (require 'org-indent nil 'noerror) (org-indent-mode 1))
+  (insert "\\\\")
+  (when (require 'evil nil 'noerror) (evil-normal-state))
   (quail-func-end))
+
+(defun quail-TeQ-nextline (key idx)
+  (quail-func-init)
+  (end-of-line)
+  (insert "\n")
+  ;; (when (require 'evil nil 'noerror) (evil-normal-state))
+  (quail-func-end))
+
+(defun quail-TeQ-prevline (key idx)
+  (quail-func-init)
+  ;; (end-of-line)
+  (beginning-of-line)
+  (insert "\n")
+  (previous-line)
+  ;; (when (require 'evil nil 'noerror) (evil-normal-state))
+  (quail-func-end))
+
 
 (defun quail-TeQ-next (key idx)
   (quail-func-init)
@@ -272,9 +289,11 @@
     ("mat"     quail-TeQ-matrix      )  ; pmatrix environment
     ("case"    quail-TeQ-case        )  ; case environment
     ("al"      quail-TeQ-aligned     )  ; aligned environment
-    ("el"      quail-TeQ-endofline   )  ; end of line
     ("gg"      quail-TeQ-next        )  ; go to next space
     ("GG"      quail-TeQ-prev        )  ; go to prev space
+    ("el"      quail-TeQ-endofline   )  ; end of line
+    ("nl"      quail-TeQ-nextline    )  ; new line below
+    ("pl"      quail-TeQ-prevline    )  ; new line above
     ;; Symbols-dots
     ("..."     ["\\dots"              ])  ; 3 dots
     (".v"      ["\\vdots"             ])  ; vertical dots
