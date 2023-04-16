@@ -357,19 +357,6 @@
 | ~mto~  | $\mapsto$          | ~\mapsto~          |                                      |
 |--------+--------------------+--------------------+--------------------------------------|
 
-#+attr_latex: :align |l|ll| :placement [H]
-|-------+-------------------+--------------------|
-| key   |                   | ~+n~  (neg)        |
-|-------+-------------------+--------------------|
-| ~<-~  | $\leftarrow$      | $\nleftarrow$      |
-| ~->~  | $\rightarrow$     | $\nrightarrow$     |
-| ~-^~  | $\uparrow$        | $\nuparrow$        |
-| ~-v~  | $\downarrow$      | $\ndownarrow$      |
-| ~<->~ | $\leftrightarrow$ | $\nleftrightarrow$ |
-|-------+-------------------+--------------------|
-
-
-
 *** Double:
 #+caption: Double Line arrows
 #+name: tbl-3-sym-arrow-2
@@ -511,18 +498,6 @@
 | ~=:~   | $\coloneqq$                   | ~\coloneqq~                   | requires ~mathtools~ lib |
 | ~:=~   | $\coloneqq$                   | ~\coloneqq~                   | requires ~mathtools~ lib |
 |--------+-------------------------------+-------------------------------+--------------------------|
-
-|------+--------+-----------+----------------------+-------------------------------|
-|      |        | ~+n~      | ~+?~                 | ~+y~                          |
-|------+--------+-----------+----------------------+-------------------------------|
-| ~=~  | $=$    | $\neq$    | $\stackrel{?}{ = }$  | $\stackrel{\checkmark}{ = }$  |
-| ~<~  | $<$    | $\nless$  | $\stackrel{?}{<}$    | $\stackrel{\checkmark}{<}$    |
-| ~>~  | $>$    | $\ngtr$   | $\stackrel{?}{>}$    | $\stackrel{\checkmark}{>}$    |
-| ~<.~ | $\leq$ | $\nleq$   | $\stackrel{?}{\leq}$ | $\stackrel{\checkmark}{\leq}$ |
-| ~>.~ | $\geq$ | $\ngeq$   | $\stackrel{?}{\geq}$ | $\stackrel{\checkmark}{\geq}$ |
-| ~<<~ | $\ll$  | $\not\ll$ | $\stackrel{?}{\ll}$  | $\stackrel{\checkmark}{\ll}$  |
-| ~>>~ | $\gg$  | $\not\gg$ | $\stackrel{?}{\gg}$  | $\stackrel{\checkmark}{\gg}$  |
-|------+--------+-----------+----------------------+-------------------------------|
 
 **  Set symbols
 #+caption:  
