@@ -437,19 +437,6 @@
 |--------+-------------+--------------------|
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 **  Logic
 #+caption:  
 #+name: tbl_5_op_logic
@@ -494,19 +481,19 @@
 **  Trignometry: function
 #+caption:  
 #+name: tbl_6_func_trig_6col
-#+attr_latex: :align |l|lll| :placement [H]
-|--------+-----------+---------+------------------|
-| key    |           | ~+h~    | ~n~              |
-|--------+-----------+---------+------------------|
-| ~cos~  | $\cos$    | $\cosh$ | $\arccos$        |
-| ~sin~  | $\sin$    | $\sinh$ | $\arcsin$        |
-| ~tan~  | $\tan$    | $\tanh$ | $\arctan$        |
-| ~cot~  | $\cot$    | $\coth$ |                  |
-|--------+-----------+---------+------------------|
-| ~acos~ | $\arccos$ |         | $\arccos^ {-1}}$ |
-| ~asin~ | $\arcsin$ |         | $\arcsin^ {-1}}$ |
-| ~atan~ | $\arctan$ |         | $\arctan^ {-1}}$ |
-|--------+-----------+---------+------------------|
+#+attr_latex: :align |l|lllll| :placement [H]
+|--------+-----------+------------------+---------+----------+----------|
+| key    |           | ~n~              | ~+h~    | ~2~      | ~3~      |
+|--------+-----------+------------------+---------+----------+----------|
+| ~cos~  | $\cos$    | $\arccos$        | $\cosh$ | $\cos^2$ | $\cos^3$ |
+| ~sin~  | $\sin$    | $\arcsin$        | $\sinh$ | $\sin^2$ | $\sin^3$ |
+| ~tan~  | $\tan$    | $\arctan$        | $\tanh$ | $\tan^2$ | $\tan^3$ |
+| ~cot~  | $\cot$    |                  | $\coth$ | $\cot^2$ | $\cot^3$ |
+|--------+-----------+------------------+---------+----------+----------|
+| ~acos~ | $\arccos$ | $\arccos^ {-1}}$ |         |          |          |
+| ~asin~ | $\arcsin$ | $\arcsin^ {-1}}$ |         |          |          |
+| ~atan~ | $\arctan$ | $\arctan^ {-1}}$ |         |          |          |
+|--------+-----------+------------------+---------+----------+----------|
 
 
 **  Integrals & Iterative (sum/prod/lim) operation:
@@ -535,98 +522,6 @@
 | ~intiii~ | $\iiiint$ | $\iiiint \limits_\Box$   | $\iiiint \limits_C$       | $\iiiint \limits_\gamma$        |
 | ~into~   | $\oint$   | $\oint \limits_\Box$     | $\oint \limits_C$         | $\oint \limits_\gamma$          |
 |----------+-----------+--------------------------+---------------------------+---------------------------------|
-
-
- 
-**  Differentials
-Please note that this table uses user-defined command (~\dd~ and ~\pd~).
-Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of differential and derivatives command in latex]]
-
-#+caption: Differentials
-#+name: tbl_6_func_diff
-#+attr_latex: :align |lll|lll| :placement [H]
-|-------+-------------------+-------------------+-------------------+-------------------+-------------------|
-| key   | sym               | ~x~               | ~y~               | ~z~               | ~t~               |
-|-------+-------------------+-------------------+-------------------+-------------------+-------------------|
-| ~dif~ | $\mathrm{d}$      |                   |                   |                   |                   |
-|-------+-------------------+-------------------+-------------------+-------------------+-------------------|
-| ~d~   |                   | $\mathrm{d} x$    | $\mathrm{d} y$    | $\mathrm{d} z$    | $\mathrm{d} t$    |
-| ~d2~  | $\mathrm{d} ^2 x$ | $\mathrm{d} ^2 x$ | $\mathrm{d} ^2 y$ | $\mathrm{d} ^2 z$ | $\mathrm{d} ^2 t$ |
-| ~d3~  | $\mathrm{d} ^3 x$ | $\mathrm{d} ^3 x$ | $\mathrm{d} ^3 y$ | $\mathrm{d} ^3 z$ | $\mathrm{d} ^3 t$ |
-| ~dn~  | $\mathrm{d} ^n x$ | $\mathrm{d} ^n x$ | $\mathrm{d} ^n y$ | $\mathrm{d} ^n z$ | $\mathrm{d} ^n t$ |
-|-------+-------------------+-------------------+-------------------+-------------------+-------------------|
-
-
-
-|-------+------------------+---|
-| ~dx2~ | $\mathrm{d} x^2$ |   |
-| ~dy2~ | $\mathrm{d} y^2$ |   |
-| ~dz2~ | $\mathrm{d} z^2$ |   |
-| ~dt2~ | $\mathrm{d} t^2$ |   |
-|-------+------------------+---|
-| ~dx3~ | $\mathrm{d} x^3$ |   |
-| ~dy3~ | $\mathrm{d} y^3$ |   |
-| ~dz3~ | $\mathrm{d} z^3$ |   |
-| ~dt3~ | $\mathrm{d} t^3$ |   |
-|-------+------------------+---|
-| ~dxn~ | $\mathrm{d} x^n$ |   |
-| ~dyn~ | $\mathrm{d} y^n$ |   |
-| ~dzn~ | $\mathrm{d} z^n$ |   |
-| ~dtn~ | $\mathrm{d} t^n$ |   |
-|-------+------------------+---|
-
-
- |--------+----------------+-------------|
- | key    | sym            | latex       |
- |--------+----------------+-------------|
- | ~dif.~ | $\partial$     | ~\pd{}~     |
- |--------+----------------+-------------|
- |--------+----------------+-------------|
- | ~dx.~  | $\partial x$   | ~\pd{x}~    |
- | ~dy.~  | $\partial y$   | ~\pd{y}~    |
- | ~dz.~  | $\partial z$   | ~\pd{z}~    |
- | ~dt.~  | $\partial t$   | ~\pd{t}~    |
- |--------+----------------+-------------|
- |--------+----------------+-------------|
- | ~d2x.~ | $\partial^2 x$ | ~\pd[2]{x}~ |
- | ~d2y.~ | $\partial^2 y$ | ~\pd[2]{y}~ |
- | ~d2z.~ | $\partial^2 z$ | ~\pd[2]{z}~ |
- | ~d2t.~ | $\partial^2 t$ | ~\pd[2]{t}~ |
- |--------+----------------+-------------|
- | ~d3x.~ | $\partial^3 x$ | ~\pd[3]{x}~ |
- | ~d3y.~ | $\partial^3 y$ | ~\pd[3]{y}~ |
- | ~d3z.~ | $\partial^3 z$ | ~\pd[3]{z}~ |
- | ~d3t.~ | $\partial^3 t$ | ~\pd[3]{t}~ |
- |--------+----------------+-------------|
- | ~dnx.~ | $\partial^n x$ | ~\pd[n]{x}~ |
- | ~dny.~ | $\partial^n y$ | ~\pd[n]{y}~ |
- | ~dnz.~ | $\partial^n z$ | ~\pd[n]{z}~ |
- | ~dnt.~ | $\partial^n t$ | ~\pd[n]{t}~ |
- |--------+----------------+-------------|
- |--------+----------------+-------------|
- | ~dx.2~ | $\partial x^2$ | ~\pd{x}^2~  |
- | ~dy.2~ | $\partial y^2$ | ~\pd{y}^2~  |
- | ~dz.2~ | $\partial z^2$ | ~\pd{z}^2~  |
- | ~dt.2~ | $\partial t^2$ | ~\pd{t}^2~  |
- |--------+----------------+-------------|
- | ~dx.3~ | $\partial x^3$ | ~\pd{x}^3~  |
- | ~dy.3~ | $\partial y^3$ | ~\pd{y}^3~  |
- | ~dz.3~ | $\partial z^3$ | ~\pd{z}^3~  |
- | ~dt.3~ | $\partial t^3$ | ~\pd{t}^3~  |
- |--------+----------------+-------------|
- | ~dx.n~ | $\partial x^n$ | ~\pd{x}^n~  |
- | ~dy.n~ | $\partial y^n$ | ~\pd{y}^n~  |
- | ~dz.n~ | $\partial z^n$ | ~\pd{z}^n~  |
- | ~dt.n~ | $\partial t^n$ | ~\pd{t}^n~  |
- |--------+----------------+-------------|
-
-
-
-
-
-
-
-
 
 
 **  Derivatives
