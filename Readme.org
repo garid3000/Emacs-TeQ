@@ -410,68 +410,36 @@
 #+caption:  
 #+name: tbl_5_op_bin
 #+attr_latex: :align |llll| :placement [H]
-|--------+-------------------------------+-------------------------------+--------------------------|
-| key    | sym                           | latex                         | description              |
-|--------+-------------------------------+-------------------------------+--------------------------|
-| ~<.~   | $\leq$                        | ~\leq~                        | ~<~      + ~.~           |
-| ~>.~   | $\geq$                        | ~\geq~                        | ~>~      + ~.~           |
-| ~<<~   | $\ll$                         | ~\ll~                         | ~<~      + ~<~           |
-| ~>>~   | $\gg$                         | ~\gg~                         | ~>~      + ~>~           |
-|--------+-------------------------------+-------------------------------+--------------------------|
-| ~=n~   | $\neq$                        | ~\neq~                        | ~=~      + ~n~           |
-| ~<n~   | $\nless$                      | ~\nless~                      | ~<~      + ~n~           |
-| ~>n~   | $\ngtr$                       | ~\ngtr~                       | ~>~      + ~n~           |
-| ~<.n~  | $\nleq$                       | ~\nleq~                       | $\leq$ + ~n~             |
-| ~>.n~  | $\ngeq$                       | ~\ngeq~                       | $\geq$  + ~n~            |
-|--------+-------------------------------+-------------------------------+--------------------------|
-| ~=?~   | $\stackrel{?}{ = }$           | ~\stackrel{?}{=}~             | ~=~      + ~?~           |
-| ~<?~   | $\stackrel{?}{<}$             | ~\stackrel{?}{<}~             | ~<~      + ~?~           |
-| ~>?~   | $\stackrel{?}{>}$             | ~\stackrel{?}{>}~             | ~>~      + ~?~           |
-| ~<.?~  | $\stackrel{?}{\leq}$          | ~\stackrel{?}{\leq}~          | $\leq$ + ~?~             |
-| ~>.?~  | $\stackrel{?}{\geq}$          | ~\stackrel{?}{\geq}~          | $\geq$  + ~?~            |
-| ~<<?~  | $\stackrel{?}{\ll}$           | ~\stackrel{?}{\ll}~           | $\ll$    + ~?~           |
-| ~>>?~  | $\stackrel{?}{\gg}$           | ~\stackrel{?}{\gg}~           | $\gg$    + ~?~           |
-|--------+-------------------------------+-------------------------------+--------------------------|
-| ~=y~   | $\stackrel{\checkmark}{ = }$  | ~\stackrel{\checkmark}{=}~    | ~=~      + ~y~           |
-| ~<y~   | $\stackrel{\checkmark}{<}$    | ~\stackrel{\checkmark}{<}~    | ~<~      + ~y~           |
-| ~>y~   | $\stackrel{\checkmark}{>}$    | ~\stackrel{\checkmark}{>}~    | ~>~      + ~y~           |
-| ~<.y~  | $\stackrel{\checkmark}{\leq}$ | ~\stackrel{\checkmark}{\leq}~ | $\leq$ + ~y~             |
-| ~>.y~  | $\stackrel{\checkmark}{\geq}$ | ~\stackrel{\checkmark}{\geq}~ | $\geq$  + ~y~            |
-| ~<<y~  | $\stackrel{\checkmark}{\ll}$  | ~\stackrel{\checkmark}{\ll}~  | $\ll$    + ~y~           |
-| ~>>y~  | $\stackrel{\checkmark}{\gg}$  | ~\stackrel{\checkmark}{\gg}~  | $\gg$    + ~y~           |
-|--------+-------------------------------+-------------------------------+--------------------------|
-| ~sim~  | $\sim$                        | ~\sim~                        |                          |
-| ~simn~ | $\nsim$                       | ~\nsim~                       | $\sim$ + ~n~             |
-| ~3=~   | $\equiv$                      | ~\equiv~                      | ~3~    + ~.~             |
-| ~=.~   | $\equiv$                      | ~\equiv~                      | ~=~    + ~.~             |
-| ~=..~  | $\approx$                     | ~\approx~                     | ~=~    + ~..~            |
-| ~=:~   | $\coloneqq$                   | ~\coloneqq~                   | requires ~mathtools~ lib |
-| ~:=~   | $\coloneqq$                   | ~\coloneqq~                   | requires ~mathtools~ lib |
-|--------+-------------------------------+-------------------------------+--------------------------|
+|--------+-------------+-------------+--------------------------|
+| key    | sym         | latex       | description              |
+|--------+-------------+-------------+--------------------------|
+| ~3=~   | $\equiv$    | ~\equiv~    | ~3~    + ~.~             |
+| ~=.~   | $\equiv$    | ~\equiv~    | ~=~    + ~.~             |
+| ~=..~  | $\approx$   | ~\approx~   | ~=~    + ~..~            |
+| ~=:~   | $\coloneqq$ | ~\coloneqq~ | requires ~mathtools~ lib |
+| ~:=~   | $\coloneqq$ | ~\coloneqq~ | requires ~mathtools~ lib |
+|--------+-------------+-------------+--------------------------|
 
-
-|------+--------+-----------+----------------------+-------------------------------|
-|      |        | ~+n~      | ~+?~                 | ~+y~                          |
-|------+--------+-----------+----------------------+-------------------------------|
-| ~=~  | $=$    | $\neq$    | $\stackrel{?}{ = }$  | $\stackrel{\checkmark}{ = }$  |
-| ~<~  | $<$    | $\nless$  | $\stackrel{?}{<}$    | $\stackrel{\checkmark}{<}$    |
-| ~>~  | $>$    | $\ngtr$   | $\stackrel{?}{>}$    | $\stackrel{\checkmark}{>}$    |
-| ~<.~ | $\leq$ | $\nleq$   | $\stackrel{?}{\leq}$ | $\stackrel{\checkmark}{\leq}$ |
-| ~>.~ | $\geq$ | $\ngeq$   | $\stackrel{?}{\geq}$ | $\stackrel{\checkmark}{\geq}$ |
-| ~<<~ | $\ll$  | $\not\ll$ | $\stackrel{?}{\ll}$  | $\stackrel{\checkmark}{\ll}$  |
-| ~>>~ | $\gg$  | $\not\gg$ | $\stackrel{?}{\gg}$  | $\stackrel{\checkmark}{\gg}$  |
-|------+--------+-----------+----------------------+-------------------------------|
-
-
-
-
-
-
-
-
-
-
-
+#+attr_latex: :align |l|llll| :placement [H]
+|----------+-------------+----------------------+---------------------------+------------------------------------|
+|          |             | ~+n~                 | ~+?~                      | ~+y~                               |
+|----------+-------------+----------------------+---------------------------+------------------------------------|
+| ~=~      | $=$         | $\neq$               | $\stackrel{?}{ = }$       | $\stackrel{\checkmark}{ = }$       |
+| ~<~      | $<$         | $\nless$             | $\stackrel{?}{<}$         | $\stackrel{\checkmark}{<}$         |
+| ~>~      | $>$         | $\ngtr$              | $\stackrel{?}{>}$         | $\stackrel{\checkmark}{>}$         |
+| ~<.~     | $\leq$      | $\nleq$              | $\stackrel{?}{\leq}$      | $\stackrel{\checkmark}{\leq}$      |
+| ~>.~     | $\geq$      | $\ngeq$              | $\stackrel{?}{\geq}$      | $\stackrel{\checkmark}{\geq}$      |
+| ~<<~     | $\ll$       | $\cancel{\ll}$       | $\stackrel{?}{\ll}$       | $\stackrel{\checkmark}{\ll}$       |
+| ~>>~     | $\gg$       | $\cancel{\gg}$       | $\stackrel{?}{\gg}$       | $\stackrel{\checkmark}{\gg}$       |
+|----------+-------------+----------------------+---------------------------+------------------------------------|
+| ~sim~    | $\sim$      | $\nsim$              | $\stackrel{?}{\sim}$      | $\stackrel{\checkmark}{\sim}$      |
+| ~3=~     | $\equiv$    | $\cancel{\equiv}$    | $\stackrel{?}{\equiv}$    | $\stackrel{\checkmark}{\equiv}$    |
+| ~=.~     | $\equiv$    | $\cancel{\equiv}$    | $\stackrel{?}{\equiv}$    | $\stackrel{\checkmark}{\equiv}$    |
+| ~=..~    | $\approx$   | $\cancel{\approx}$   | $\stackrel{?}{\approx}$   | $\stackrel{\checkmark}{\approx}$   |
+| ~=:~     | $\coloneqq$ | $\cancel{\coloneqq}$ | $\stackrel{?}{\coloneqq}$ | $\stackrel{\checkmark}{\coloneqq}$ |
+| ~:=~     | $\coloneqq$ | $\cancel{\coloneqq}$ | $\stackrel{?}{\coloneqq}$ | $\stackrel{\checkmark}{\coloneqq}$ |
+| ~propto~ | $\propto$   | $\cancel{\propto}$   | $\stackrel{?}{\propto}$   | $\stackrel{\checkmark}{\propto}$   |
+|----------+-------------+----------------------+---------------------------+------------------------------------|
 
 
 **  Set symbols
@@ -493,17 +461,30 @@
 | ~nsz~   | $\mathbb{Z}$ | ~\mathbb{Z}~  | (~n~)umber (~s~)et (~z~)           |
 | ~nsi~   | $\mathbb{I}$ | ~\mathbb{I}~  | (~n~)umber (~s~)et (~i~)rriational |
 |---------+--------------+---------------+------------------------------------|
-| ~sub~   | $\subset$    | ~\subset~     |                                    |
-| ~subn~  | $\nsubseteq$ | ~\nssubseteq~ | $\subset$ + ~n~ (neg)              |
-| ~sub.~  | $\subseteq$  | ~\subseteq~   | $\subset$ + ~.~ (var)              |
-| ~sub.n~ | $\nsubseteq$ | ~\nsubseteq~  | $\subset$ + ~.n~ (var, neg)        |
-| ~subn.~ | $\nsubseteq$ | ~\nsubseteq~  | $\subset$ + ~n.~ (neg, var)        |
-| ~sup~   | $\supset$    | ~\supset~     |                                    |
-| ~supn~  | $\nsupseteq$ | ~\nsupseteq~  | $\supset$ + ~n~ (neg)              |
-| ~sup.~  | $\supseteq$  | ~\supeseteq~  | $\supset$ + ~.~ (var)              |
-| ~sup.n~ | $\nsupseteq$ | ~\nsupseteq~  | $\supset$ + ~.n~ (var, neg)        |
-| ~supn.~ | $\nsupseteq$ | ~\nsupseteq~  | $\supset$ + ~n.~ (neg, var)        |
-|---------+--------------+---------------+------------------------------------|
+
+
+|--------+-------------+--------------------|
+|        |             | ~n~                |
+|--------+-------------+--------------------|
+| ~sub~  | $\subset$   | $\cancel{\subset}$ |
+| ~sub.~ | $\subseteq$ | $\nsubseteq$       |
+| ~sup~  | $\supset$   | $\cancel{\supset}$ |
+| ~sup.~ | $\supseteq$ | $\nsupseteq$       |
+|--------+-------------+--------------------|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 **  Logic
 #+caption:  
@@ -597,6 +578,34 @@
 | ~into.~   | $\oint \limits_\Box$                 | ~\oint\limits_{ }~                    | $\oint$     ~o.~ (var)  |
 |-----------+--------------------------------------+---------------------------------------+-------------------------|
 
+
+#+attr_latex: :align |l|llll| :placement [H]
+|----------+-----------+--------------------------+---------------------------+---------------------------------|
+|          |           | ~.~                      | ~..~                      | ~...~                           |
+|----------+-----------+--------------------------+---------------------------+---------------------------------|
+| ~lim~    | $\lim$    | $\lim \limits_ \Box$     | $\lim \limits_ {x \to 0}$ | $\lim \limits_ {x \to \infty}$  |
+| ~sum~    | $\sum$    | $\sum \limits_ \Box$     | $\sum \limits_ {i=1} ^n$  | $\sum \limits_ {i=1} ^\infty$   |
+| ~prod~   | $\prod$   | $\prod \limits_ \Box$    | $\prod \limits_ {i=1} ^n$ | $\prod \limits_ {i=1} ^\infty$  |
+| ~int~    | $\int$    | $\int \limits_\Box^\Box$ | $\int \limits_0^\infty$   | $\int \limits_{-\infty}^\infty$ |
+| ~inti~   | $\iint$   | $\iint \limits_\Box$     | $\iint \limits_C$         | $\iint \limits_\gamma$          |
+| ~intii~  | $\iiint$  | $\iiint \limits_\Box$    | $\iiint \limits_C$        | $\iiint \limits_\gamma$         |
+| ~intiii~ | $\iiiint$ | $\iiiint \limits_\Box$   | $\iiiint \limits_C$       | $\iiiint \limits_\gamma$        |
+| ~into~   | $\oint$   | $\oint \limits_\Box$     | $\oint \limits_C$         | $\oint \limits_\gamma$          |
+|----------+-----------+--------------------------+---------------------------+---------------------------------|
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
 **  Differentials
 Please note that this table uses user-defined command (~\dd~ and ~\pd~).
 Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of differential and derivatives command in latex]]
