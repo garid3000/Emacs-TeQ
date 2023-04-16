@@ -539,7 +539,8 @@
 |--------+----------------+----------------+-------------|
 | ~or~   | $\lor$         | ~\lor~         |             |
 | ~and~  | $\land$        | ~\land~        |             |
-| ~not~  | $\neg$         | ~\neg~         |             |
+| ~neg~  | $\neg$         | ~\neg~         |             |
+| ~not~  | $\not\Box$     | ~\not~         |             |
 | ~or.~  | $\text{ or }$  | ~\text{ or }~  | + ~.~ (var) |
 | ~and.~ | $\text{ and }$ | ~\text{ and }~ | + ~.~ (var) |
 | ~not.~ | $\text{ not }$ | ~\text{ not }~ | + ~.~ (var) |
@@ -616,7 +617,7 @@
 | ~int..~   | $\int \limits_0^\infty$              | ~\int\limits_0^\infty~                | $\int$     ~..~ (var)   |
 | ~int...~  | $\int \limits_ {-\infty}^ {+\infty}$ | ~\int\limits_{ -\infty }^{ +\infty }~ | $\int$     ~...~ (var)  |
 | ~inti.~   | $\iint \limits_\Box$                 | ~\iint\limits_{ }~                    | $\int$     ~i.~ (var)   |
-| ~intii.~  | $\iiint \limits_\Box$                | ~\iiint\limits_{ }~                   | $\iint$    ~ii.~ (var)  |
+| ~intii.~  | $\iiint \limits_\Box$                | ~\iiint\limits_{ }~                   | $\int$    ~ii.~ (var)   |
 | ~intiii.~ | $\iiiint \limits_\Box$               | ~\iiiint\limits_{ }~                  | $\int$     ~iii.~ (var) |
 | ~into.~   | $\oint \limits_\Box$                 | ~\oint\limits_{ }~                    | $\oint$     ~o.~ (var)  |
 |-----------+--------------------------------------+---------------------------------------+-------------------------|
