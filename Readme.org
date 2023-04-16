@@ -86,8 +86,6 @@
 | ~Zm~  | $\mathbf{Z}$      | ~\mathbf{Z}~       | ~zm~  | $\mathbf{z}$      | ~\mathbf{z}~       |
 | ~Om~  | $\mathbf{0}$      | ~\mathbf{0}~       | ~0m~  | $\mathbf{0}$      | ~\mathbf{0}~       |
 |-------+-------------------+--------------------+-------+-------------------+--------------------|
-| ~im.~ | $\mathbf{\imath}$ | ~\mathbf{\imath}~  | ~jm.~ | $\mathbf{\jmath}$ | ~\mathbf{\jmath}~  |
-|-------+-------------------+--------------------+-------+-------------------+--------------------|
 
 **  Vector
 #+caption: Vectors
@@ -335,27 +333,27 @@
 #+caption: Single Line arrows
 #+name: tbl-3-sym-arrow-1
 #+attr_latex: :align |llll| :placement [H]
-|----------+--------------------+--------------------+--------------------------------------|
-| key      | sym                | latex              | description                          |
-|----------+--------------------+--------------------+--------------------------------------|
-| ~<-~     | $\leftarrow$       | ~\leftarrow~       |                                      |
-| ~->~     | $\rightarrow$      | ~\rightarrow~      |                                      |
-| ~to~     | $\to$              | ~\to~              | same as ~->~                         |
-| ~-^~     | $\uparrow$         | ~\uparrow~         | ~^~ looks like up arrow head         |
-| ~-v~     | $\downarrow$       | ~\downarrow~       | ~v~ looks like down arrow head       |
-| ~<->~    | $\leftrightarrow$  | ~\leftrightarrow~  | Sorry, Github won't render correctly |
-|----------+--------------------+--------------------+--------------------------------------|
-| ~<-n~    | $\nleftarrow$      | ~\nleftarrow~      | $\leftarrow$          + ~n~  (neg)   |
-| ~->n~    | $\nrightarrow$     | ~\nrightarrow~     | $\rightarrow$         + ~n~  (neg)   |
-| ~-^n~    | $\nuparrow$        | ~\nuparrow~        | $\uparrow$            + ~n~  (neg)   |
-| ~-vn~    | $\ndownarrow$      | ~\ndownarrow~      | $\downarrow$          + ~n~  (neg)   |
-| ~<->~    | $\nleftrightarrow$ | ~\nleftrightarrow~ | ...                                  |
-|----------+--------------------+--------------------+--------------------------------------|
-| ~-->~    | $\longrightarrow$  | ~\longrightarrow~  | longer with 2 ~-~                    |
-| ~<--~    | $\longleftarrow$   | ~\longleftarrow~   | longer with 2 ~-~                    |
-|----------+--------------------+--------------------+--------------------------------------|
-| ~mapsto~ | $\mapsto$          | ~\mapsto~          |                                      |
-|----------+--------------------+--------------------+--------------------------------------|
+|--------+--------------------+--------------------+--------------------------------------|
+| key    | sym                | latex              | description                          |
+|--------+--------------------+--------------------+--------------------------------------|
+| ~<-~   | $\leftarrow$       | ~\leftarrow~       |                                      |
+| ~->~   | $\rightarrow$      | ~\rightarrow~      |                                      |
+| ~-^~   | $\uparrow$         | ~\uparrow~         | ~^~ looks like up arrow head         |
+| ~-v~   | $\downarrow$       | ~\downarrow~       | ~v~ looks like down arrow head       |
+| ~<->~  | $\leftrightarrow$  | ~\leftrightarrow~  | Sorry, Github won't render correctly |
+|--------+--------------------+--------------------+--------------------------------------|
+| ~<-n~  | $\nleftarrow$      | ~\nleftarrow~      | $\leftarrow$          + ~n~  (neg)   |
+| ~->n~  | $\nrightarrow$     | ~\nrightarrow~     | $\rightarrow$         + ~n~  (neg)   |
+| ~-^n~  | $\nuparrow$        | ~\nuparrow~        | $\uparrow$            + ~n~  (neg)   |
+| ~-vn~  | $\ndownarrow$      | ~\ndownarrow~      | $\downarrow$          + ~n~  (neg)   |
+| ~<->n~ | $\nleftrightarrow$ | ~\nleftrightarrow~ | ...                                  |
+|--------+--------------------+--------------------+--------------------------------------|
+| ~-->~  | $\longrightarrow$  | ~\longrightarrow~  | longer with 2 ~-~                    |
+| ~<--~  | $\longleftarrow$   | ~\longleftarrow~   | longer with 2 ~-~                    |
+|--------+--------------------+--------------------+--------------------------------------|
+| ~to~   | $\to$              | ~\to~              | same as ~->~                         |
+| ~mto~  | $\mapsto$          | ~\mapsto~          |                                      |
+|--------+--------------------+--------------------+--------------------------------------|
 
 *** Double:
 #+caption: Double Line arrows
@@ -538,7 +536,7 @@
 | key    | sym            | latex          | description |
 |--------+----------------+----------------+-------------|
 | ~or~   | $\lor$         | ~\lor~         |             |
-| ~and~  | $\land$        | ~\lnd~         |             |
+| ~and~  | $\land$        | ~\land~        |             |
 | ~not~  | $\neg$         | ~\neg~         |             |
 | ~or.~  | $\text{ or }$  | ~\text{ or }~  | + ~.~ (var) |
 | ~and.~ | $\text{ and }$ | ~\text{ and }~ | + ~.~ (var) |
@@ -597,8 +595,9 @@
 |-----------+--------------------------------------+---------------------------------------+-------------------------|
 | key       | sym                                  | latex                                 | description             |
 |-----------+--------------------------------------+---------------------------------------+-------------------------|
-| ~il~      | $\sum_\Box$                          | ~\limits_{~                           |                         |
+| ~il~      | $\sum\limits_\Box$                   | ~\limits_{~                           |                         |
 | ~il.~     | $\sum\limits_\Box^\Box$              | ~\limits_{0}^{ }~                     | . (var)                 |
+| \vert .   | $\Box \Bigg\vert_\Box^\Box$          | ~\Bigg\vert_{~                        | for definite integral   |
 |-----------+--------------------------------------+---------------------------------------+-------------------------|
 | ~lim~     | $\lim$                               | ~\lim~                                |                         |
 | ~sum~     | $\sum$                               | ~\sum~                                |                         |
@@ -722,6 +721,9 @@ Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of d
 | ~f<>~          | $\left< \Box \right>$                     | ~\left< \right>~                |                            |
 | ~f<>.~         | $\left< \Box \middle\vert \Box \right>$   | ~\left< \middle\vert \right>~   | (var)                      |
 |----------------+-------------------------------------------+---------------------------------+----------------------------|
+| \vert \vert .  | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~        | absolute                   |
+| \vert \vert .. | $\left\Vert \Box \right\Vert$             | ~\left\Vert \right\Vert~        | norm                       |
+|----------------+-------------------------------------------+---------------------------------+----------------------------|
 | ~h(~           | $\left( \Box \right.{}$                   | ~\left(~                        | (~h~)alf + ~(~             |
 | ~h)~           | $\left. \Box \right)$                     | ~\right)~                       | (~h~)alf + ~)~             |
 | ~h[~           | $\left[ \Box \right.{}$                   | ~\left[~                        | (~h~)alf + ~[~             |
@@ -733,10 +735,6 @@ Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of d
 | ~h.l~          |                                           | ~\left.~                        | (~h~)alf + ~.~ + (~l~)eft  |
 | ~h.r~          |                                           | ~\right.~                       | (~h~)alf + ~.~ + (~r~)ight |
 | ~h~ \vert      |                                           | ~\middle\vert~                  | middle vertical bar        |
-|----------------+-------------------------------------------+---------------------------------+----------------------------|
-| \vert .        | $\Box \Bigg\vert_\Box^\Box$               | ~\Bigg\vert_{~                  | for definite integral      |
-| \vert \vert .  | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~        | absolute                   |
-| \vert \vert .. | $\left\Vert \Box \right\Vert$             | ~\left\Vert \right\Vert~        | norm                       |
 |----------------+-------------------------------------------+---------------------------------+----------------------------|
 
 **  Texts:
@@ -917,7 +915,6 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ("Ym"    ["\\mathbf{Y}"    ])  ("ym"    ["\\mathbf{y}"    ])
 ("Zm"    ["\\mathbf{Z}"    ])  ("zm"    ["\\mathbf{z}"    ])
 ("Om"    ["\\mathbf{0}"    ])  ("0m"    ["\\mathbf{0}"    ])
-("im."   ["\\mathbf{\\imath}"])  ("jm."   ["\\mathbf{\\jmath}"])
 ;; Vector & Hat
 ("Av"    ["\\vec{A}"       ])  ("av"    ["\\vec{a}"       ])
 ("Bv"    ["\\vec{B}"       ])  ("bv"    ["\\vec{b}"       ])
@@ -1082,7 +1079,6 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ;; Symbols arrow1
 ("<-"      ["\\leftarrow"         ])  ; 
 ("->"      ["\\rightarrow"        ])  ; 
-("to"      ["\\to"                ])  ; same as ~->~
 ("-^"      ["\\uparrow"           ])  ; ~^~ looks like up arrow head
 ("-v"      ["\\downarrow"         ])  ; ~v~ looks like down arrow head
 ("<->"     ["\\leftrightarrow"    ])  ; Sorry, Github won't render correctly
@@ -1090,10 +1086,11 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ("->n"     ["\\nrightarrow"       ])  ; $\rightarrow$         + ~n~  (neg)
 ("-^n"     ["\\nuparrow"          ])  ; $\uparrow$            + ~n~  (neg)
 ("-vn"     ["\\ndownarrow"        ])  ; $\downarrow$          + ~n~  (neg)
-("<->"     ["\\nleftrightarrow"   ])  ; ...
+("<->n"    ["\\nleftrightarrow"   ])  ; ...
 ("-->"     ["\\longrightarrow"    ])  ; longer with 2 ~-~
 ("<--"     ["\\longleftarrow"     ])  ; longer with 2 ~-~
-("mapsto"  ["\\mapsto"            ])  ; 
+("to"      ["\\to"                ])  ; same as ~->~
+("mto"     ["\\mapsto"            ])  ; 
 ;; Symbols arrow2
 ("<="      ["\\Leftarrow"         ])  ; 
 ("=>"      ["\\Rightarrow"        ])  ; 
@@ -1189,7 +1186,7 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ("supn."   ["\\nsupseteq"         ])  ; $\supset$ + ~n.~ (neg, var)
 ;; Operation: arith
 ("or"      ["\\lor"               ])  ; 
-("and"     ["\\lnd"               ])  ; 
+("and"     ["\\land"              ])  ; 
 ("not"     ["\\neg"               ])  ; 
 ("or."     ["\\text{ or }"        ])  ; + ~.~ (var)
 ("and."    ["\\text{ and }"       ])  ; + ~.~ (var)
@@ -1223,6 +1220,7 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ;; Func: iter
 ("il"      ["\\limits_{"          ])  ; 
 ("il."     ["\\limits_{0}^{ }"    ])  ; . (var)
+("|."      ["\\Bigg\\vert_{"      ])  ; for definite integral
 ("lim"     ["\\lim"               ])  ; 
 ("sum"     ["\\sum"               ])  ; 
 ("prod"    ["\\prod"              ])  ; 
@@ -1285,6 +1283,8 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ("f{}."    ["\\left\\{ \\middle\\vert \\right\\}"])  ; (var)
 ("f<>"     ["\\left< \\right>"    ])  ; 
 ("f<>."    ["\\left< \\middle\\vert \\right>"])  ; (var)
+("||."     ["\\left\\vert \\right\\vert"])  ; absolute
+("||.."    ["\\left\\Vert \\right\\Vert"])  ; norm
 ("h("      ["\\left("             ])  ; (~h~)alf + ~(~
 ("h)"      ["\\right)"            ])  ; (~h~)alf + ~)~
 ("h["      ["\\left["             ])  ; (~h~)alf + ~[~
@@ -1296,9 +1296,6 @@ table_format_3col_1("Structural: xy",  tbl_7_xy)
 ("h.l"     ["\\left."             ])  ; (~h~)alf + ~.~ + (~l~)eft
 ("h.r"     ["\\right."            ])  ; (~h~)alf + ~.~ + (~r~)ight
 ("h|"      ["\\middle\\vert"      ])  ; middle vertical bar
-("|."      ["\\Bigg\\vert_{"      ])  ; for definite integral
-("||."     ["\\left\\vert \\right\\vert"])  ; absolute
-("||.."    ["\\left\\Vert \\right\\Vert"])  ; norm
 ;; Structural: Text
 ("te"      ["\\text{"             ])  ; (te)xt
 ("tt"      ["\\mathrm{"           ])  ; (t)ext (m)ath

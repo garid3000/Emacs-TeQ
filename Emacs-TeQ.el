@@ -154,7 +154,6 @@
     ("Ym"    ["\\mathbf{Y}"    ])  ("ym"    ["\\mathbf{y}"    ])
     ("Zm"    ["\\mathbf{Z}"    ])  ("zm"    ["\\mathbf{z}"    ])
     ("Om"    ["\\mathbf{0}"    ])  ("0m"    ["\\mathbf{0}"    ])
-    ("im."   ["\\mathbf{\\imath}"])  ("jm."   ["\\mathbf{\\jmath}"])
     ;; Vector & Hat
     ("Av"    ["\\vec{A}"       ])  ("av"    ["\\vec{a}"       ])
     ("Bv"    ["\\vec{B}"       ])  ("bv"    ["\\vec{b}"       ])
@@ -319,7 +318,6 @@
     ;; Symbols arrow1
     ("<-"      ["\\leftarrow"         ])  ; 
     ("->"      ["\\rightarrow"        ])  ; 
-    ("to"      ["\\to"                ])  ; same as ~->~
     ("-^"      ["\\uparrow"           ])  ; ~^~ looks like up arrow head
     ("-v"      ["\\downarrow"         ])  ; ~v~ looks like down arrow head
     ("<->"     ["\\leftrightarrow"    ])  ; Sorry, Github won't render correctly
@@ -327,10 +325,11 @@
     ("->n"     ["\\nrightarrow"       ])  ; $\rightarrow$         + ~n~  (neg)
     ("-^n"     ["\\nuparrow"          ])  ; $\uparrow$            + ~n~  (neg)
     ("-vn"     ["\\ndownarrow"        ])  ; $\downarrow$          + ~n~  (neg)
-    ("<->"     ["\\nleftrightarrow"   ])  ; ...
+    ("<->n"    ["\\nleftrightarrow"   ])  ; ...
     ("-->"     ["\\longrightarrow"    ])  ; longer with 2 ~-~
     ("<--"     ["\\longleftarrow"     ])  ; longer with 2 ~-~
-    ("mapsto"  ["\\mapsto"            ])  ; 
+    ("to"      ["\\to"                ])  ; same as ~->~
+    ("mto"     ["\\mapsto"            ])  ; 
     ;; Symbols arrow2
     ("<="      ["\\Leftarrow"         ])  ; 
     ("=>"      ["\\Rightarrow"        ])  ; 
@@ -426,7 +425,7 @@
     ("supn."   ["\\nsupseteq"         ])  ; $\supset$ + ~n.~ (neg, var)
     ;; Operation: arith
     ("or"      ["\\lor"               ])  ; 
-    ("and"     ["\\lnd"               ])  ; 
+    ("and"     ["\\land"              ])  ; 
     ("not"     ["\\neg"               ])  ; 
     ("or."     ["\\text{ or }"        ])  ; + ~.~ (var)
     ("and."    ["\\text{ and }"       ])  ; + ~.~ (var)
@@ -460,6 +459,7 @@
     ;; Func: iter
     ("il"      ["\\limits_{"          ])  ; 
     ("il."     ["\\limits_{0}^{ }"    ])  ; . (var)
+    ("|."      ["\\Bigg\\vert_{"      ])  ; for definite integral
     ("lim"     ["\\lim"               ])  ; 
     ("sum"     ["\\sum"               ])  ; 
     ("prod"    ["\\prod"              ])  ; 
@@ -522,6 +522,8 @@
     ("f{}."    ["\\left\\{ \\middle\\vert \\right\\}"])  ; (var)
     ("f<>"     ["\\left< \\right>"    ])  ; 
     ("f<>."    ["\\left< \\middle\\vert \\right>"])  ; (var)
+    ("||."     ["\\left\\vert \\right\\vert"])  ; absolute
+    ("||.."    ["\\left\\Vert \\right\\Vert"])  ; norm
     ("h("      ["\\left("             ])  ; (~h~)alf + ~(~
     ("h)"      ["\\right)"            ])  ; (~h~)alf + ~)~
     ("h["      ["\\left["             ])  ; (~h~)alf + ~[~
@@ -533,9 +535,6 @@
     ("h.l"     ["\\left."             ])  ; (~h~)alf + ~.~ + (~l~)eft
     ("h.r"     ["\\right."            ])  ; (~h~)alf + ~.~ + (~r~)ight
     ("h|"      ["\\middle\\vert"      ])  ; middle vertical bar
-    ("|."      ["\\Bigg\\vert_{"      ])  ; for definite integral
-    ("||."     ["\\left\\vert \\right\\vert"])  ; absolute
-    ("||.."    ["\\left\\Vert \\right\\Vert"])  ; norm
     ;; Structural: Text
     ("te"      ["\\text{"             ])  ; (te)xt
     ("tt"      ["\\mathrm{"           ])  ; (t)ext (m)ath
