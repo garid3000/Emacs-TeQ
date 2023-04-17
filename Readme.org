@@ -148,15 +148,18 @@
 | ~z.~  | $\zeta$    | $\bar{\zeta}$    | $\vec{\zeta}$    | $\hat{\zeta}$    | $\dot{\zeta}$    | $\ddot{\zeta}$    | $\dddot{\zeta}$    | $\ddddot{\zeta}$    | $\mathring{\zeta}$    |
 |-------+------------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
 
-
 #+attr_latex: :align |l|ccccccccc|  :placement [H]
-|-------+---------------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
-|       |               | ~+b~                | ~+v~                | ~+h~                | ~+d~                | ~+dd~                | ~+ddd~                | ~+dddd~                | ~+o~                     |
-|-------+---------------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
-| ~e..~ | $\varepsilon$ | $\bar{\varepsilon}$ | $\vec{\varepsilon}$ | $\hat{\varepsilon}$ | $\dot{\varepsilon}$ | $\ddot{\varepsilon}$ | $\dddot{\varepsilon}$ | $\ddddot{\varepsilon}$ | $\mathring{\varepsilon}$ |
-| ~f..~ | $\varphi$     | $\bar{\varphi}$     | $\vec{\varphi}$     | $\hat{\varphi}$     | $\dot{\varphi}$     | $\ddot{\varphi}$     | $\dddot{\varphi}$     | $\ddddot{\varphi}$     | $\mathring{\varphi}$     |
-| ~s..~ | $\varsigma$   | $\bar{\varsigma}$   | $\vec{\varsigma}$   | $\hat{\varsigma}$   | $\dot{\varsigma}$   | $\ddot{\varsigma}$   | $\dddot{\varsigma}$   | $\ddddot{\varsigma}$   | $\mathring{\varsigma}$   |
-|-------+---------------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
+|--------+---------------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
+|        |               | ~+b~                | ~+v~                | ~+h~                | ~+d~                | ~+dd~                | ~+ddd~                | ~+dddd~                | ~+o~                     |
+|--------+---------------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
+| ~r..~  | $\varrho$     | $\bar{\varrho}$     | $\vec{\varrho}$     | $\hat{\varrho}$     | $\dot{\varrho}$     | $\ddot{\varrho}$     | $\dddot{\varrho}$     | $\ddddot{\varrho}$     | $\mathring{\varrho}$     |
+| ~e..~  | $\varepsilon$ | $\bar{\varepsilon}$ | $\vec{\varepsilon}$ | $\hat{\varepsilon}$ | $\dot{\varepsilon}$ | $\ddot{\varepsilon}$ | $\dddot{\varepsilon}$ | $\ddddot{\varepsilon}$ | $\mathring{\varepsilon}$ |
+| ~k..~  | $\varkappa$   | $\bar{\varkappa}$   | $\vec{\varkappa}$   | $\hat{\varkappa}$   | $\dot{\varkappa}$   | $\ddot{\varkappa}$   | $\dddot{\varkappa}$   | $\ddddot{\varkappa}$   | $\mathring{\varkappa}$   |
+| ~p..~  | $\varpi$      | $\bar{\varpi}$      | $\vec{\varpi}$      | $\hat{\varpi}$      | $\dot{\varpi}$      | $\ddot{\varpi}$      | $\dddot{\varpi}$      | $\ddddot{\varpi}$      | $\mathring{\varpi}$      |
+| ~f..~  | $\varphi$     | $\bar{\varphi}$     | $\vec{\varphi}$     | $\hat{\varphi}$     | $\dot{\varphi}$     | $\ddot{\varphi}$     | $\dddot{\varphi}$     | $\ddddot{\varphi}$     | $\mathring{\varphi}$     |
+| ~s..~  | $\varsigma$   | $\bar{\varsigma}$   | $\vec{\varsigma}$   | $\hat{\varsigma}$   | $\dot{\varsigma}$   | $\ddot{\varsigma}$   | $\dddot{\varsigma}$   | $\ddddot{\varsigma}$   | $\mathring{\varsigma}$   |
+| ~th..~ | $\vartheta$   | $\bar{\vartheta}$   | $\vec{\vartheta}$   | $\hat{\vartheta}$   | $\dot{\vartheta}$   | $\ddot{\vartheta}$   | $\dddot{\vartheta}$   | $\ddddot{\vartheta}$   | $\mathring{\vartheta}$   |
+|--------+---------------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
 
 
 *  Function Expansion
