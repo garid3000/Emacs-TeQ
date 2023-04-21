@@ -2,9 +2,9 @@
 #+LATEX_HEADER: \usepackage{cancel}
 
 
-*  Function Expansion
-#+caption: Keys that will execute some elisp functions
-#+name: tbl-2-execute-function
+*  Function Execution
+#+caption: Keys that will execute some elisp functions (name: ~table_elisp_func~)
+#+name: table_elisp_func
 #+attr_latex: :align |llll| :placement [H]
 |--------+---------------------+-----------------------+----------------------|
 | key    | sym                 | latex                 | description          |
@@ -21,11 +21,9 @@
 | ~pl~   |                     | ~quail-TeQ-prevline~  | new line above       |
 |--------+---------------------+-----------------------+----------------------|
 
-
-
-*  Full and Half Parentheses
-#+caption:  
-#+name: tbl_7_parenthesis
+*  Parentheses
+#+caption:  Parentheses (name: ~table_parentheses~)
+#+name: table_parentheses
 #+attr_latex: :align |l|ll| :placement [H]
 |---------------+-------------------------------+-------------------------------------------|
 | key           |                               | ~+.~                                      |
@@ -50,9 +48,9 @@
 | ~[].f~        | $\lfloor \Box \rfloor$        |                                           |
 | ~[].c~        | $\lceil \Box \rceil$          |                                           |
 |---------------+-------------------------------+-------------------------------------------|
-*  Texts:
-#+caption:  
-#+name: tbl_7_text
+*  Texts
+#+caption: Text types in equation (name: ~table_text~)
+#+name: table_text
 #+attr_latex: :align |llll| :placement [H]
 |------+------------------------+------------+------------------|
 | key  | sym                    | latex      | description      |
@@ -63,27 +61,26 @@
 | ~ti~ | $\mathit{Lorem Ipsum}$ | ~\mathit{~ | (t)ext (i)talics |
 |------+------------------------+------------+------------------|
 
-
 *  Misc.
-#+caption:  
-#+name: tbl_7_misc
+#+caption: Misc. Table (name: ~table_misc~)
+#+name: table_misc
 #+attr_latex: :align |llll| :placement [H]
-|-------+-----------------------+-----------+---------------------------|
-| key   | sym                   | latex     | description               |
-|-------+-----------------------+-----------+---------------------------|
-| ~box~ | $\boxed{Lorem Ipsum}$ | ~\boxed{~ | Putting box around object |
-| ~ff~  | $\frac{\Box}{\Box}$   | ~\frac{~  | Fractions                 |
-| ~==~  |                       | ~&=~      | helps in align env.       |
-|-------+-----------------------+-----------+---------------------------|
+|--------+-----------+---------------------------+-------------|
+| key    | sym       | latex                     | description |
+|--------+-----------+---------------------------+-------------|
+| ~ff~   | ~\frac{~  | Fractions                 |             |
+| ~box.~ | ~\boxed{~ | Putting box around object |             |
+| ~==~   | ~&=~      | helps in align env.       |             |
+|--------+-----------+---------------------------+-------------|
 
-*  xy Diagram related
-#+caption:  
-#+name: tbl_7_xy
+*  XY Diagram related
+#+caption:  XY diagram related (name: ~table_xy~)
+#+name: table_xy
 #+attr_latex: :align |llll| :placement [H]
-|------+-----------+--------------+-------------|
-| key  | sym       | latex        | description |
-|------+-----------+--------------+-------------|
-| ~xy~ |           | ~\xymatrix{~ |             |
-| ~ar~ |           | ~\ar~        |             |
-|------+-----------+--------------+-------------|
+|------+--------------+-------+-------------|
+| key  | sym          | latex | description |
+|------+--------------+-------+-------------|
+| ~xy~ | ~\xymatrix{~ |       |             |
+| ~ar~ | ~\ar~        |       |             |
+|------+--------------+-------+-------------|
 

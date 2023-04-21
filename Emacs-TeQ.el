@@ -792,7 +792,7 @@
     ("trn"   [" ^{-T}"         ]) ("inv"   [" ^{-1}"         ])
     ("can"   ["\\cancel{ }"    ]) 
     ;; --------------- Super/Sub-scripts --------------- ;;
-    ("pp"    ["~^{~"           ]) ("pl"    [""               ])
+    ("pp"    ["^{"             ]) ("pl"    [""               ])
     ("p0"    [" ^0"            ]) ("p1"    [" ^1"            ])
     ("p2"    [" ^2"            ]) ("p3"    [" ^3"            ])
     ("p4"    [" ^4"            ]) ("p5"    [" ^5"            ])
@@ -800,7 +800,7 @@
     ("p8"    [" ^8"            ]) ("p9"    [" ^9"            ])
     ("pn"    [" ^n"            ]) ("px"    [" ^x"            ])
     ("pi"    [""               ]) 
-    ("lp"    [""               ]) ("ll"    ["~_{~"           ])
+    ("lp"    [""               ]) ("ll"    ["_{"             ])
     ("l0"    [" _0"            ]) ("l1"    [" _1"            ])
     ("l2"    [" _2"            ]) ("l3"    [" _3"            ])
     ("l4"    [" _4"            ]) ("l5"    [" _5"            ])
@@ -914,5 +914,32 @@
     ("df.zn" ["\\pdv[n]{z}"    ]) 
     ("df.t"  ["\\pdv{t}"       ]) ("df.t2" ["\\pdv[2]{t}"    ])
     ("df.t3" ["\\pdv[3]{t}"    ]) ("df.t4" ["\\pdv[4]{t}"    ])
-    ("df.tn" ["\\pdv[n]{t}"    ])
+    ("df.tn" ["\\pdv[n]{t}"    ]) 
+    
+    ;; --------------- Parentheses --------------- ;;
+    ("()."   ["\\left( \\right)"]) ("().."  ["\\left( \\middle\\vert \\right)"])
+    ("{}."   ["\\left\\{ \\right\\}"]) ("{}.."  ["\\left\\{ \\middle\\vert \\right\\}"])
+    ("<>."   ["\\left< \\right>"]) ("<>.."  ["\\left< \\middle\\vert \\right>"])
+    ("[]."   ["\\left[ \\right]"]) ("[].."  ["\\left[ \\middle\\vert \\right]"])
+    ("| | ." ["\\left\\vert \\right\\vert"]) ("| | .." ["\\left\\Vert \\right\\Vert"])
+    ("(."    ["\\left( \\right."]) ("(.."   ["\\left( \\right\\vert"])
+    ("[."    ["\\left[ \\right."]) ("[.."   ["\\left[ \\right\\vert"])
+    ("{."    ["\\left\\{ \\right."]) ("{.."   ["\\left\\{ \\right\\vert"])
+    ("<."    ["\\left< \\right."]) ("<.."   ["\\left< \\right\\vert"])
+    (".)"    ["\\left. \\right)"]) (".)."   ["\\left\\vert \\right)"])
+    (".]"    ["\\left. \\right]"]) (".]."   ["\\left\\vert \\right]"])
+    (".}"    ["\\left. \\right\\}"]) (".}."   ["\\left\\vert \\right\\}"])
+    (".>"    ["\\left. \\right>"]) (".>."   ["\\left\\vert \\right>"])
+    ("[].f"  ["\\lfloor \\rfloor"]) ("[].f." [""               ])
+    ("[].c"  ["\\lceil \\rceil"]) ("[].c." [""               ])
+    
+    ;; --------------- Math Text --------------- ;;
+    ("te"    ["\\text{LoremIpsum}"]) ("tt"    ["\\mathrm{LoremIpsum}"])
+    ("tb"    ["\\mathbf{LoremIpsum}"]) ("ti"    ["\\mathit{LoremIpsum}"])
+    
+    ;; --------------- Misc --------------- ;;
+    ("ff"    ["\\frac{"        ]) ("box."  ["\\boxed{"       ])
+    ("=="    ["&="             ]) 
+    ;; --------------- XY diagram --------------- ;;
+    ("xy"    ["\\xymatrix{"    ]) ("ar"    ["\\ar"           ])
 )

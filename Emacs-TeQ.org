@@ -43,7 +43,9 @@ def translation_formatter(inputstr:str) -> str:
     inputstr = inputstr.replace(
         '$', '').replace(
             ' ', '').replace(
-                '\\Box', ' ').replace('{}', '')
+                '\\Box', ' ').replace(
+                    '{}', '').replace(
+                        '~', '')
     return inputstr
 #+end_src
 
@@ -114,6 +116,11 @@ def process_t2(table, comment):
 :header-args+: :var tbl3_iter_funcs=./Resources/03-Functions-Sum-Integral-Differential.org:table_iter_functions
 :header-args+: :var tbl3_differential=./Resources/03-Functions-Sum-Integral-Differential.org:table_differential_d
 :header-args+: :var tbl3_derivatives=./Resources/03-Functions-Sum-Integral-Differential.org:table_derivatives
+:header-args+: :var tbl4_elsip_func=./Resources/04-Structural-and-Parentheses.org:table_elisp_func
+:header-args+: :var tbl4_parentheses=./Resources/04-Structural-and-Parentheses.org:table_parentheses
+:header-args+: :var tbl4_text=./Resources/04-Structural-and-Parentheses.org:table_text
+:header-args+: :var tbl4_misc=./Resources/04-Structural-and-Parentheses.org:table_misc
+:header-args+: :var tbl4_xy=./Resources/04-Structural-and-Parentheses.org:table_xy
 :END:
 
 #+BEGIN_SRC python :session mysess :hlines no :results output code :wrap SRC elisp :results_switches ":tangle no :noweb yes" :exports none
@@ -146,6 +153,11 @@ process_t2(tbl3_iter_tools, "Iteration Tools")
 process_t1(tbl3_iter_funcs, "Iteration Functions")
 process_t1(tbl3_differential, "Differential d")
 process_t1(tbl3_derivatives, "Derivatives")
+
+process_t1(tbl4_parentheses, "Parentheses")
+process_t2(tbl4_text, "Math Text")
+process_t2(tbl4_misc, "Misc")
+process_t2(tbl4_xy, "XY diagram")
 #+END_SRC
 
 #+name: el-from-table
@@ -828,7 +840,7 @@ process_t1(tbl3_derivatives, "Derivatives")
 ("trn"   [" ^{-T}"         ]) ("inv"   [" ^{-1}"         ])
 ("can"   ["\\cancel{ }"    ]) 
 ;; --------------- Super/Sub-scripts --------------- ;;
-("pp"    ["~^{~"           ]) ("pl"    [""               ])
+("pp"    ["^{"             ]) ("pl"    [""               ])
 ("p0"    [" ^0"            ]) ("p1"    [" ^1"            ])
 ("p2"    [" ^2"            ]) ("p3"    [" ^3"            ])
 ("p4"    [" ^4"            ]) ("p5"    [" ^5"            ])
@@ -836,7 +848,7 @@ process_t1(tbl3_derivatives, "Derivatives")
 ("p8"    [" ^8"            ]) ("p9"    [" ^9"            ])
 ("pn"    [" ^n"            ]) ("px"    [" ^x"            ])
 ("pi"    [""               ]) 
-("lp"    [""               ]) ("ll"    ["~_{~"           ])
+("lp"    [""               ]) ("ll"    ["_{"             ])
 ("l0"    [" _0"            ]) ("l1"    [" _1"            ])
 ("l2"    [" _2"            ]) ("l3"    [" _3"            ])
 ("l4"    [" _4"            ]) ("l5"    [" _5"            ])
@@ -950,7 +962,34 @@ process_t1(tbl3_derivatives, "Derivatives")
 ("df.zn" ["\\pdv[n]{z}"    ]) 
 ("df.t"  ["\\pdv{t}"       ]) ("df.t2" ["\\pdv[2]{t}"    ])
 ("df.t3" ["\\pdv[3]{t}"    ]) ("df.t4" ["\\pdv[4]{t}"    ])
-("df.tn" ["\\pdv[n]{t}"    ])
+("df.tn" ["\\pdv[n]{t}"    ]) 
+
+;; --------------- Parentheses --------------- ;;
+("()."   ["\\left( \\right)"]) ("().."  ["\\left( \\middle\\vert \\right)"])
+("{}."   ["\\left\\{ \\right\\}"]) ("{}.."  ["\\left\\{ \\middle\\vert \\right\\}"])
+("<>."   ["\\left< \\right>"]) ("<>.."  ["\\left< \\middle\\vert \\right>"])
+("[]."   ["\\left[ \\right]"]) ("[].."  ["\\left[ \\middle\\vert \\right]"])
+("| | ." ["\\left\\vert \\right\\vert"]) ("| | .." ["\\left\\Vert \\right\\Vert"])
+("(."    ["\\left( \\right."]) ("(.."   ["\\left( \\right\\vert"])
+("[."    ["\\left[ \\right."]) ("[.."   ["\\left[ \\right\\vert"])
+("{."    ["\\left\\{ \\right."]) ("{.."   ["\\left\\{ \\right\\vert"])
+("<."    ["\\left< \\right."]) ("<.."   ["\\left< \\right\\vert"])
+(".)"    ["\\left. \\right)"]) (".)."   ["\\left\\vert \\right)"])
+(".]"    ["\\left. \\right]"]) (".]."   ["\\left\\vert \\right]"])
+(".}"    ["\\left. \\right\\}"]) (".}."   ["\\left\\vert \\right\\}"])
+(".>"    ["\\left. \\right>"]) (".>."   ["\\left\\vert \\right>"])
+("[].f"  ["\\lfloor \\rfloor"]) ("[].f." [""               ])
+("[].c"  ["\\lceil \\rceil"]) ("[].c." [""               ])
+
+;; --------------- Math Text --------------- ;;
+("te"    ["\\text{LoremIpsum}"]) ("tt"    ["\\mathrm{LoremIpsum}"])
+("tb"    ["\\mathbf{LoremIpsum}"]) ("ti"    ["\\mathit{LoremIpsum}"])
+
+;; --------------- Misc --------------- ;;
+("ff"    ["\\frac{"        ]) ("box."  ["\\boxed{"       ])
+("=="    ["&="             ]) 
+;; --------------- XY diagram --------------- ;;
+("xy"    ["\\xymatrix{"    ]) ("ar"    ["\\ar"           ])
 #+end_SRC
 
 
