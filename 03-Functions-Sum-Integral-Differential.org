@@ -2,6 +2,10 @@
 #+subtitle: Input Method written in Quail for entering LaTeX math expressions
 #+author:   Garid Zorigoo
 
+#+LATEX_HEADER: \newcommand{\dd}{\mathop{}\!\mathrm{d}}
+#+LATEX_HEADER: \newcommand{\dv}[2][]{\frac{\mathrm{d}^{#1}}{\mathrm{d}{#2}^{#1}}}
+#+LATEX_HEADER: \newcommand{\pdv}[2][]{\frac{\partial^{#1}}{\partial{#2}^{#1}}}
+
 *  Function
 #+caption:  
 #+name: tbl_6_func
@@ -74,51 +78,48 @@
 |----------+-----------+--------------------------+---------------------------+---------------------------------|
 
 *  Derivatives
-Please note that this table uses user-defined command (~\dv~ and ~\pdv~).
-Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of differential and derivatives command in latex]]
+#+begin_example
+#+LATEX_HEADER: \newcommand{\dd}{\mathop{}\!\mathrm{d}}
+#+LATEX_HEADER: \newcommand{\dv}[2][]{\frac{\mathrm{d}^{#1}}{\mathrm{d}{#2}^{#1}}}
+#+LATEX_HEADER: \newcommand{\pdv}[2][]{\frac{\partial^{#1}}{\partial{#2}^{#1}}}
+#+end_example
+
+
+|--------+--------------+-----------------+-----------------+-----------------+-----------------|
+|        |              | ~+2~            | ~+3~            | ~+4~            | ~+n~            |
+|--------+--------------+-----------------+-----------------+-----------------+-----------------|
+| ~dd.~  | $\dd$        | $\dd  ^ 2$      | $\dd  ^ 3$      | $\dd  ^ 4$      | $\dd  ^ n$      |
+| ~dx~   | $\dd x$      | $\dd x^ 2$      | $\dd x^ 3$      | $\dd x^ 4$      | $\dd x^ n$      |
+| ~dy~   | $\dd y$      | $\dd y^ 2$      | $\dd y^ 3$      | $\dd y^ 4$      | $\dd y^ n$      |
+| ~dz~   | $\dd z$      | $\dd z^ 2$      | $\dd z^ 3$      | $\dd z^ 4$      | $\dd z^ n$      |
+| ~dt~   | $\dd t$      | $\dd t^ 2$      | $\dd t^ 3$      | $\dd t^ 4$      | $\dd t^ n$      |
+|--------+--------------+-----------------+-----------------+-----------------+-----------------|
+| ~dd..~ | $\partial$   | $\partial  ^ 2$ | $\partial  ^ 3$ | $\partial  ^ 4$ | $\partial  ^ n$ |
+| ~dx.~  | $\partial x$ | $\partial x^ 2$ | $\partial x^ 3$ | $\partial x^ 4$ | $\partial x^ n$ |
+| ~dy.~  | $\partial y$ | $\partial y^ 2$ | $\partial y^ 3$ | $\partial y^ 4$ | $\partial y^ n$ |
+| ~dz.~  | $\partial z$ | $\partial z^ 2$ | $\partial z^ 3$ | $\partial z^ 4$ | $\partial z^ n$ |
+| ~dt.~  | $\partial t$ | $\partial t^ 2$ | $\partial t^ 3$ | $\partial t^ 4$ | $\partial t^ n$ |
+|--------+--------------+-----------------+-----------------+-----------------+-----------------|
+
+
+
 
 #+caption: Derivatives
 #+name: tbl_6_func_deriv
 #+attr_latex: :align |lll|lll| :placement [H]
-|--------+-------------------------------------------------+-------------+---------+---------------------------------------------+--------------|
-| key    | sym                                             | latex       | key     | sym                                         | latex        |
-|--------+-------------------------------------------------+-------------+---------+---------------------------------------------+--------------|
-| ~df~   | $\frac{\mathrm{d}^\Box}{\mathrm{d}{\Box}^\Box}$ | ~\dv[ ]{ }~ | ~df.~   | $\frac{\partial^\Box}{\partial{\Box}^\Box}$ | ~\pdv[ ]{ }~ |
-| ~dfx~  | $\frac{\mathrm{d}}{\mathrm{d}x}$                | ~\dv{x}~    | ~df.x~  | $\frac{\partial}{\partial x}$               | ~\pdv{x}~    |
-| ~dfy~  | $\frac{\mathrm{d}}{\mathrm{d}y}$                | ~\dv{y}~    | ~df.y~  | $\frac{\partial}{\partial y}$               | ~\pdv{y}~    |
-| ~dfz~  | $\frac{\mathrm{d}}{\mathrm{d}z}$                | ~\dv{z}~    | ~df.z~  | $\frac{\partial}{\partial z}$               | ~\pdv{z}~    |
-| ~dft~  | $\frac{\mathrm{d}}{\mathrm{d}t}$                | ~\dv{t}~    | ~df.t~  | $\frac{\partial}{\partial t}$               | ~\pdv{t}~    |
-|--------+-------------------------------------------------+-------------+---------+---------------------------------------------+--------------|
-| ~df2~  | $\frac{\mathrm{d}^2}{\mathrm{d}\Box^2}$         | ~\dv[2]{ }~ | ~df.2~  | $\frac{\partial^2}{\partial \Box^2}$        | ~\pdv[2]{ }~ |
-| ~dfx2~ | $\frac{\mathrm{d}^2}{\mathrm{d}x^2}$            | ~\dv[2]{x}~ | ~df.x2~ | $\frac{\partial^2}{\partial x^2}$           | ~\pdv[2]{x}~ |
-| ~dfy2~ | $\frac{\mathrm{d}^2}{\mathrm{d}y^2}$            | ~\dv[2]{y}~ | ~df.y2~ | $\frac{\partial^2}{\partial y^2}$           | ~\pdv[2]{y}~ |
-| ~dfz2~ | $\frac{\mathrm{d}^2}{\mathrm{d}z^2}$            | ~\dv[2]{z}~ | ~df.z2~ | $\frac{\partial^2}{\partial z^2}$           | ~\pdv[2]{z}~ |
-| ~dft2~ | $\frac{\mathrm{d}^2}{\mathrm{d}t^2}$            | ~\dv[2]{t}~ | ~df.t2~ | $\frac{\partial^2}{\partial t^2}$           | ~\pdv[2]{t}~ |
-|--------+-------------------------------------------------+-------------+---------+---------------------------------------------+--------------|
-| ~df3~  | $\frac{\mathrm{d}^3}{\mathrm{d}\Box^3}$         | ~\dv[3]{ }~ | ~df.3~  | $\frac{\partial^3}{\partial \Box^3}$        | ~\pdv[3]{ }~ |
-| ~dfx3~ | $\frac{\mathrm{d}^3}{\mathrm{d}x^3}$            | ~\dv[3]{x}~ | ~df.x3~ | $\frac{\partial^3}{\partial x^3}$           | ~\pdv[3]{x}~ |
-| ~dfy3~ | $\frac{\mathrm{d}^3}{\mathrm{d}y^3}$            | ~\dv[3]{y}~ | ~df.y3~ | $\frac{\partial^3}{\partial y^3}$           | ~\pdv[3]{y}~ |
-| ~dfz3~ | $\frac{\mathrm{d}^3}{\mathrm{d}z^3}$            | ~\dv[3]{z}~ | ~df.z3~ | $\frac{\partial^3}{\partial z^3}$           | ~\pdv[3]{z}~ |
-| ~dft3~ | $\frac{\mathrm{d}^3}{\mathrm{d}t^3}$            | ~\dv[3]{t}~ | ~df.t3~ | $\frac{\partial^3}{\partial t^3}$           | ~\pdv[3]{t}~ |
-|--------+-------------------------------------------------+-------------+---------+---------------------------------------------+--------------|
-
-*  Definition of differential and derivatives command in latex
-:PROPERTIES:
-:ID:       c5dfb0a9-892c-46fd-8541-1c8475300dad
-:END:
-** For Latex
-#+begin_example
-\newcommand{\dd}[2][]{\,\mathrm{d}^{#1}{#2}}
-\newcommand{\pd}[2][]{\,\partial^{#1}{#2}}
-\newcommand{\dv}[2][]{\frac{\mathrm{d}^{#1}}{\mathrm{d}{#2}^{#1}}}
-\newcommand{\pdv}[2][]{\frac{\partial^{#1}}{\partial{#2}^{#1}}}
-#+end_example
-
-** For Org mode
-#+begin_example
-#+LATEX_HEADER: \newcommand{\dd}[2][]{\,\mathrm{d}^{#1}{#2}}
-#+LATEX_HEADER: \newcommand{\pd}[2][]{\,\partial^{#1}{#2}}
-#+LATEX_HEADER: \newcommand{\dv}[2][]{\frac{\mathrm{d}^{#1}}{\mathrm{d}{#2}^{#1}}}
-#+LATEX_HEADER: \newcommand{\pdv}[2][]{\frac{\partial^{#1}}{\partial{#2}^{#1}}}
-#+end_example
+|--------+--------------+-----------------+-----------------+-----------------+-----------------|
+| key    |              | ~+2~            | ~+3~            | ~+4~            | ~+n~            |
+|--------+--------------+-----------------+-----------------+-----------------+-----------------|
+| ~df~   | $\dv{\Box}$  | $\dv[2]{\Box}$  | $\dv[3]{\Box}$  | $\dv[4]{\Box}$  | $\dv[n]{\Box}$  |
+| ~dfx~  | $\dv{x}$     | $\dv[2]{x}$     | $\dv[3]{x}$     | $\dv[4]{x}$     | $\dv[n]{x}$     |
+| ~dfy~  | $\dv{y}$     | $\dv[2]{y}$     | $\dv[3]{y}$     | $\dv[4]{y}$     | $\dv[n]{y}$     |
+| ~dfz~  | $\dv{z}$     | $\dv[2]{z}$     | $\dv[3]{z}$     | $\dv[4]{z}$     | $\dv[n]{z}$     |
+| ~dft~  | $\dv{t}$     | $\dv[2]{t}$     | $\dv[3]{t}$     | $\dv[4]{t}$     | $\dv[n]{t}$     |
+|--------+--------------+-----------------+-----------------+-----------------+-----------------|
+| ~df.~  | $\pdv{\Box}$ | $\pdv[2]{\Box}$ | $\pdv[3]{\Box}$ | $\pdv[4]{\Box}$ | $\pdv[n]{\Box}$ |
+| ~df.x~ | $\pdv{x}$    | $\pdv[2]{x}$    | $\pdv[3]{x}$    | $\pdv[4]{x}$    | $\pdv[n]{x}$    |
+| ~df.y~ | $\pdv{y}$    | $\pdv[2]{y}$    | $\pdv[3]{y}$    | $\pdv[4]{y}$    | $\pdv[n]{y}$    |
+| ~df.z~ | $\pdv{z}$    | $\pdv[2]{z}$    | $\pdv[3]{z}$    | $\pdv[4]{z}$    | $\pdv[n]{z}$    |
+| ~df.t~ | $\pdv{t}$    | $\pdv[2]{t}$    | $\pdv[3]{t}$    | $\pdv[4]{t}$    | $\pdv[n]{t}$    |
+|--------+--------------+-----------------+-----------------+-----------------+-----------------|
 
