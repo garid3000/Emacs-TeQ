@@ -12,7 +12,7 @@
 #+startup: show2levels
 * Formatting Table into Elisp
 
-  
+
 #+BEGIN_SRC python  :hlines no :results output code :wrap SRC elisp :results_switches ":tangle no :noweb yes" :exports none
 def table_format_6col(headcomment, table):
     print(f";; {headcomment}")

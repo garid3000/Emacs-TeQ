@@ -7,3 +7,13 @@
 * Structure
 #+INCLUDE: "./04-Structural.org"                          
 
+* Testing
+
+#+BEGIN_SRC python  :hlines no :results output code :wrap SRC elisp :results_switches ":tangle no :noweb yes" :exports none :var tbl=02-Symbols.org:tbl-3-sym-letter
+print(tbl)
+#+END_SRC
+
+#+RESULTS:
+#+begin_SRC elisp
+[['key', 'sym', 'latex', 'description'], ['~inf~', '$\\infty$', '~\\infty~', ''], ['~ex~', '$\\exists$', '~\\exists~', ''], ['~exn~', '$\\nexists$', '~\\nexists~', '$\\exists$ + _n_ (neg)'], ['~fa~', '$\\forall$', '~\\forall~', ''], ['~hb~', '$\\hbar$', '~\\hbar~', ''], ['~hb.~', '$\\hslash$', '~\\hslash~', '$\\hbar$ + _._  (var)'], ['~ii~', '$\\imath$', '~\\imath~', ''], ['~jj~', '$\\jmath$', '~\\jmath~', ''], ['~nab~', '$\\nabla$', '~\\nabla~', ''], ['~cm~', '$\\checkmark$', '~\\checkmark~', ''], ['~bu~', '$\\bullet$', '~\\bullet~', '']]
+#+end_SRC
