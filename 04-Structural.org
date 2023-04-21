@@ -27,53 +27,55 @@
 *  Full and Half Parentheses
 #+caption:  
 #+name: tbl_7_parenthesis
-#+attr_latex: :align |l|llll| :placement [H]
-|----------------+-------------------------------+-------------------------------------------+----------------------+------------------------|
-| key            |                               | ~m~                                       | ~c~                  | ~f~                    |
-|----------------+-------------------------------+-------------------------------------------+----------------------+------------------------|
-| ~().~          | $\left( \Box \right)$         | $\left( \Box \middle\vert \Box \right)$   |                      |                        |
-| ~{}.~          | $\left\{ \Box \right\}$       | $\left\{ \Box \middle\vert \Box \right\}$ |                      |                        |
-| ~<>.~          | $\left< \Box \right>$         | $\left< \Box \middle\vert \Box \right>$   |                      |                        |
-| ~[].~          | $\left[ \Box \right]$         | $\left[ \Box \middle\vert \Box \right]$   | $\lceil \Box \rceil$ | $\lfloor \Box \rfloor$ |
-|----------------+-------------------------------+-------------------------------------------+----------------------+------------------------|
-| \vert \vert .  | $\left\vert \Box \right\vert$ |                                           |                      |                        |
-| \vert \vert .. | $\left\Vert \Box \right\Vert$ |                                           |                      |                        |
-|----------------+-------------------------------+-------------------------------------------+----------------------+------------------------|
-| ~(.~           | $\left( \Box \right.{}$       |                                           |                      |                        |
-| ~.)~           | $\left. \Box \right)$         |                                           |                      |                        |
-| ~[.~           | $\left[ \Box \right.{}$       |                                           |                      |                        |
-| ~.]~           | $\left. \Box \right]$         |                                           |                      |                        |
-| ~{.~           | $\left\{ \Box \right.{}$      |                                           |                      |                        |
-| ~.}~           | $\left. \Box \right\}$        |                                           |                      |                        |
-| ~<.~           | $\left< \Box \right.{}$       |                                           |                      |                        |
-| ~.>~           | $\left. \Box \right>$         |                                           |                      |                        |
-|----------------+-------------------------------+-------------------------------------------+----------------------+------------------------|
-
+#+attr_latex: :align |l|ll| :placement [H]
+|---------------+-------------------------------+-------------------------------------------|
+| key           |                               | ~+.~                                      |
+|---------------+-------------------------------+-------------------------------------------|
+| ~().~         | $\left( \Box \right)$         | $\left( \Box \middle\vert \Box \right)$   |
+| ~{}.~         | $\left\{ \Box \right\}$       | $\left\{ \Box \middle\vert \Box \right\}$ |
+| ~<>.~         | $\left< \Box \right>$         | $\left< \Box \middle\vert \Box \right>$   |
+| ~[].~         | $\left[ \Box \right]$         | $\left[ \Box \middle\vert \Box \right]$   |
+|---------------+-------------------------------+-------------------------------------------|
+| \vert \vert . | $\left\vert \Box \right\vert$ | $\left\Vert \Box \right\Vert$             |
+|---------------+-------------------------------+-------------------------------------------|
+| ~(.~          | $\left( \Box \right.{}$       | $\left( \Box \right\vert$                 |
+| ~[.~          | $\left[ \Box \right.{}$       | $\left[ \Box \right\vert$                 |
+| ~{.~          | $\left\{ \Box \right.{}$      | $\left\{ \Box \right\vert$                |
+| ~<.~          | $\left< \Box \right.{}$       | $\left< \Box \right\vert$                 |
+|---------------+-------------------------------+-------------------------------------------|
+| ~.)~          | $\left. \Box \right)$         | $\left\vert \Box \right)$                 |
+| ~.]~          | $\left. \Box \right]$         | $\left\vert \Box \right]$                 |
+| ~.}~          | $\left. \Box \right\}$        | $\left\vert \Box \right\}$                |
+| ~.>~          | $\left. \Box \right>$         | $\left\vert \Box \right>$                 |
+|---------------+-------------------------------+-------------------------------------------|
+| ~[].f~        | $\lfloor \Box \rfloor$        |                                           |
+| ~[].c~        | $\lceil \Box \rceil$          |                                           |
+|---------------+-------------------------------+-------------------------------------------|
 *  Texts:
 #+caption:  
 #+name: tbl_7_text
 #+attr_latex: :align |llll| :placement [H]
-|------+--------------------------+------------+------------------|
-| key  | sym                      | latex      | description      |
-|------+--------------------------+------------+------------------|
-| ~te~ | $\Box + \text{text}$     | ~\text{~   | (te)xt           |
-| ~tt~ | $\Box + \mathrm{mathrm}$ | ~\mathrm{~ | (t)ext (m)ath    |
-| ~tb~ | $\Box + \mathbf{mathbf}$ | ~\mathbf{~ | (t)ext (b)old    |
-| ~ti~ | $\Box + \mathit{mathit}$ | ~\mathit{~ | (t)ext (i)talics |
-|------+--------------------------+------------+------------------|
+|------+------------------------+------------+------------------|
+| key  | sym                    | latex      | description      |
+|------+------------------------+------------+------------------|
+| ~te~ | $\text{Lorem Ipsum}$   | ~\text{~   | (te)xt           |
+| ~tt~ | $\mathrm{Lorem Ipsum}$ | ~\mathrm{~ | (t)ext (m)ath    |
+| ~tb~ | $\mathbf{Lorem Ipsum}$ | ~\mathbf{~ | (t)ext (b)old    |
+| ~ti~ | $\mathit{Lorem Ipsum}$ | ~\mathit{~ | (t)ext (i)talics |
+|------+------------------------+------------+------------------|
 
 
 *  Misc.
 #+caption:  
 #+name: tbl_7_misc
 #+attr_latex: :align |llll| :placement [H]
-|-------+---------------------+-----------+---------------------------|
-| key   | sym                 | latex     | description               |
-|-------+---------------------+-----------+---------------------------|
-| ~box~ | $\boxed{\Box}$      | ~\boxed{~ | Putting box around object |
-| ~ff~  | $\frac{\Box}{\Box}$ | ~\frac{~  | Fractions                 |
-| ~==~  |                     | ~&=~      | helps in align env.       |
-|-------+---------------------+-----------+---------------------------|
+|-------+-----------------------+-----------+---------------------------|
+| key   | sym                   | latex     | description               |
+|-------+-----------------------+-----------+---------------------------|
+| ~box~ | $\boxed{Lorem Ipsum}$ | ~\boxed{~ | Putting box around object |
+| ~ff~  | $\frac{\Box}{\Box}$   | ~\frac{~  | Fractions                 |
+| ~==~  |                       | ~&=~      | helps in align env.       |
+|-------+-----------------------+-----------+---------------------------|
 
 *  xy Diagram related
 #+caption:  
