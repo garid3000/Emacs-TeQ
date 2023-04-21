@@ -2,9 +2,9 @@
 #+LATEX_HEADER: \newcommand{\dv}[2][]{\frac{\mathrm{d}^{#1}}{\mathrm{d}{#2}^{#1}}}
 #+LATEX_HEADER: \newcommand{\pdv}[2][]{\frac{\partial^{#1}}{\partial{#2}^{#1}}}
 
-*  Function
-#+caption:  
-#+name: tbl_6_func
+* Named Functions
+#+caption: Named Functions (name: ~table_named_functions~)
+#+name: table_named_functions
 #+attr_latex: :align |llll| :placement [H]
 |---------+----------------------+-----------------+-------------|
 | key     | sym                  | latex           | description |
@@ -29,9 +29,9 @@
 | ~binom~ | $\binom{\Box}{\Box}$ | ~\binom{ }{ }~  |             |
 |---------+----------------------+-----------------+-------------|
 
-*  Trignometry: function
-#+caption:  
-#+name: tbl_6_func_trig_6col
+* Trignometry Functions
+#+caption: Trignometric Functions (name: ~table_trig_functions~)
+#+name: table_trig_functions
 #+attr_latex: :align |l|lllll| :placement [H]
 |--------+-----------+-----------------+---------+----------+----------|
 | key    |           | ~+n~            | ~+h~    | ~+2~     | ~+3~     |
@@ -46,9 +46,9 @@
 | ~atan~ | $\arctan$ | $\arctan^ {-1}$ |         |          |          |
 |--------+-----------+-----------------+---------+----------+----------|
 
-*  Integrals & Iterative (sum/prod/lim) operation:
-#+caption: Integrals, Sums, Products
-#+name: tbl_6_func_iter
+* Integrals & Iterative (sum/prod/lim) operation:
+#+caption: Sum/Integral/Prod's helper (name: ~table_iter_tools~)
+#+name: table_iter_tools
 #+attr_latex: :align |llll| :placement [H]
 |---------+-----------------------------+-------------------+-----------------------|
 | key     | sym                         | latex             | description           |
@@ -59,6 +59,8 @@
 |---------+-----------------------------+-------------------+-----------------------|
 
 
+#+caption: Sum/Integral/Prod (name: ~table_iter_functions~)
+#+name: table_iter_functions
 #+attr_latex: :align |l|llll| :placement [H]
 |----------+-----------+--------------------------+---------------------------+---------------------------------|
 |          |           | ~.~                      | ~..~                      | ~...~                           |
@@ -73,7 +75,7 @@
 | ~into~   | $\oint$   | $\oint \limits_\Box$     | $\oint \limits_C$         | $\oint \limits_\gamma$          |
 |----------+-----------+--------------------------+---------------------------+---------------------------------|
 
-*  Derivatives
+* Derivatives & Differential
 #+begin_example
 #+LATEX_HEADER: \newcommand{\dd}{\mathop{}\!\mathrm{d}}
 #+LATEX_HEADER: \newcommand{\dv}[2][]{\frac{\mathrm{d}^{#1}}{\mathrm{d}{#2}^{#1}}}
@@ -81,6 +83,9 @@
 #+end_example
 
 
+#+caption: Differential symbols (name: ~table_differential_d~)
+#+name: table_differential_d
+#+attr_latex: :align |l|lllll| :placement [H]
 |--------+--------------+-----------------+-----------------+-----------------+-----------------|
 |        |              | ~+2~            | ~+3~            | ~+4~            | ~+n~            |
 |--------+--------------+-----------------+-----------------+-----------------+-----------------|
@@ -98,10 +103,8 @@
 |--------+--------------+-----------------+-----------------+-----------------+-----------------|
 
 
-
-
-#+caption: Derivatives
-#+name: tbl_6_func_deriv
+#+caption: Derivatives (name: ~table_derivatives~)
+#+name: table_derivatives
 #+attr_latex: :align |lll|lll| :placement [H]
 |--------+--------------+-----------------+-----------------+-----------------+-----------------|
 | key    |              | ~+2~            | ~+3~            | ~+4~            | ~+n~            |
