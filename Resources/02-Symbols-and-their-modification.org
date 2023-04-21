@@ -1,7 +1,3 @@
-#+title:    Emacs TeQ: Symbols
-#+subtitle: Input Method written in Quail for entering LaTeX math expressions
-#+author:   Garid Zorigoo
-
 #+LATEX_HEADER: \usepackage{cancel}
 #+LATEX_HEADER: \usepackage{mathtools}
 
