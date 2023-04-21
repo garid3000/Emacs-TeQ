@@ -6,44 +6,45 @@
 #+caption:  
 #+name: tbl_6_func
 #+attr_latex: :align |llll| :placement [H]
-|---------+---------------------+-----------------+-------------|
-| key     | sym                 | latex           | description |
-|---------+---------------------+-----------------+-------------|
-| ~rank~  | $\mathrm{rank}$     | ~\mathrm{rank}~ |             |
-| ~arg~   | $\arg$              | ~\arg~          |             |
-| ~det~   | $\det$              | ~\det~          |             |
-| ~dim~   | $\dim$              | ~\dim~          |             |
-| ~exp~   | $\exp$              | ~\exp~          |             |
-| ~Im.~   | $\mathrm{Im}$       | ~\mathrm{Im}~   |             |
-| ~Re~    | $\mathrm{Re}$       | ~\mathrm{Re}~   |             |
-| ~ln~    | $\ln$               | ~\ln~           |             |
-| ~log~   | $\log$              | ~\log~          |             |
-| ~max~   | $\max$              | ~\max~          |             |
-| ~min~   | $\min$              | ~\min~          |             |
-| ~dim~   | $\dim$              | ~\dim~          |             |
-| ~sqrt~  | $\sqrt{\Box}$       | ~\sqrt{~        |             |
-| ~sqrt.~ | $\sqrt[\Box]{\Box}$ | ~\sqrt[ ]{~     |             |
-| ~mod~   | $\Box \pmod \Box$   | ~\pmod~         |             |
-| ~mod.~  | $\Box \mod \Box$    | ~\mod~          |             |
-| ~mod..~ | $\Box \bmod \Box$   | ~\bmod~         |             |
-|---------+---------------------+-----------------+-------------|
+|---------+----------------------+-----------------+-------------|
+| key     | sym                  | latex           | description |
+|---------+----------------------+-----------------+-------------|
+| ~rank~  | $\mathrm{rank}$      | ~\mathrm{rank}~ |             |
+| ~arg~   | $\arg$               | ~\arg~          |             |
+| ~det~   | $\det$               | ~\det~          |             |
+| ~dim~   | $\dim$               | ~\dim~          |             |
+| ~exp~   | $\exp$               | ~\exp~          |             |
+| ~Im.~   | $\mathrm{Im}$        | ~\mathrm{Im}~   |             |
+| ~Re~    | $\mathrm{Re}$        | ~\mathrm{Re}~   |             |
+| ~ln~    | $\ln$                | ~\ln~           |             |
+| ~log~   | $\log$               | ~\log~          |             |
+| ~max~   | $\max$               | ~\max~          |             |
+| ~min~   | $\min$               | ~\min~          |             |
+| ~dim~   | $\dim$               | ~\dim~          |             |
+| ~sqrt~  | $\sqrt{\Box}$        | ~\sqrt{~        |             |
+| ~sqrt.~ | $\sqrt[\Box]{\Box}$  | ~\sqrt[ ]{~     |             |
+| ~mod~   | $\Box \pmod \Box$    | ~\pmod~         |             |
+| ~mod.~  | $\Box \mod \Box$     | ~\mod~          |             |
+| ~mod..~ | $\Box \bmod \Box$    | ~\bmod~         |             |
+| ~binom~ | $\binom{\Box}{\Box}$ | ~\binom{ }{ }~  |             |
+|---------+----------------------+-----------------+-------------|
 
 *  Trignometry: function
 #+caption:  
 #+name: tbl_6_func_trig_6col
 #+attr_latex: :align |l|lllll| :placement [H]
-|--------+-----------+------------------+---------+----------+----------|
-| key    |           | ~n~              | ~+h~    | ~2~      | ~3~      |
-|--------+-----------+------------------+---------+----------+----------|
-| ~cos~  | $\cos$    | $\arccos$        | $\cosh$ | $\cos^2$ | $\cos^3$ |
-| ~sin~  | $\sin$    | $\arcsin$        | $\sinh$ | $\sin^2$ | $\sin^3$ |
-| ~tan~  | $\tan$    | $\arctan$        | $\tanh$ | $\tan^2$ | $\tan^3$ |
-| ~cot~  | $\cot$    |                  | $\coth$ | $\cot^2$ | $\cot^3$ |
-|--------+-----------+------------------+---------+----------+----------|
-| ~acos~ | $\arccos$ | $\arccos^ {-1}}$ |         |          |          |
-| ~asin~ | $\arcsin$ | $\arcsin^ {-1}}$ |         |          |          |
-| ~atan~ | $\arctan$ | $\arctan^ {-1}}$ |         |          |          |
-|--------+-----------+------------------+---------+----------+----------|
+|--------+-----------+-----------------+---------+----------+----------|
+| key    |           | ~+n~            | ~+h~    | ~+2~     | ~+3~     |
+|--------+-----------+-----------------+---------+----------+----------|
+| ~cos~  | $\cos$    | $\arccos$       | $\cosh$ | $\cos^2$ | $\cos^3$ |
+| ~sin~  | $\sin$    | $\arcsin$       | $\sinh$ | $\sin^2$ | $\sin^3$ |
+| ~tan~  | $\tan$    | $\arctan$       | $\tanh$ | $\tan^2$ | $\tan^3$ |
+| ~cot~  | $\cot$    |                 | $\coth$ | $\cot^2$ | $\cot^3$ |
+|--------+-----------+-----------------+---------+----------+----------|
+| ~acos~ | $\arccos$ | $\arccos^ {-1}$ |         |          |          |
+| ~asin~ | $\arcsin$ | $\arcsin^ {-1}$ |         |          |          |
+| ~atan~ | $\arctan$ | $\arctan^ {-1}$ |         |          |          |
+|--------+-----------+-----------------+---------+----------+----------|
 
 *  Integrals & Iterative (sum/prod/lim) operation:
 #+caption: Integrals, Sums, Products
