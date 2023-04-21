@@ -9,21 +9,25 @@
 #+caption: Letter-like Symbold  
 #+name: tbl-3-sym-letter
 #+attr_latex: :align |llll| :placement [H]
-|-------+--------------+--------------+------------------------|
-| key   | sym          | latex        | note                   |
-|-------+--------------+--------------+------------------------|
-| ~inf~ | $\infty$     | ~\infty~     |                        |
-| ~ex~  | $\exists$    | ~\exists~    |                        |
-| ~exn~ | $\nexists$   | ~\nexists~   | $\exists$ _~+n~_ (neg) |
-| ~fa~  | $\forall$    | ~\forall~    |                        |
-| ~hb~  | $\hbar$      | ~\hbar~      |                        |
-| ~hb.~ | $\hslash$    | ~\hslash~    | $\hbar$  _~+.~_  (var) |
-| ~ii~  | $\imath$     | ~\imath~     |                        |
-| ~jj~  | $\jmath$     | ~\jmath~     |                        |
-| ~nab~ | $\nabla$     | ~\nabla~     |                        |
-| ~cm~  | $\checkmark$ | ~\checkmark~ |                        |
-| ~bu~  | $\bullet$    | ~\bullet~    |                        |
-|-------+--------------+--------------+------------------------|
+|---------+--------------+--------------+----------------------|
+| key     | sym          | latex        | note                 |
+|---------+--------------+--------------+----------------------|
+| ~inf~   | $\infty$     | ~\infty~     |                      |
+| ~ex~    | $\exists$    | ~\exists~    |                      |
+| ~exn~   | $\nexists$   | ~\nexists~   | $\exists$ ~+n~ (neg) |
+| ~fa~    | $\forall$    | ~\forall~    |                      |
+| ~hb~    | $\hbar$      | ~\hbar~      |                      |
+| ~hb.~   | $\hslash$    | ~\hslash~    | $\hbar$  ~+.~  (var) |
+| ~ii~    | $\imath$     | ~\imath~     |                      |
+| ~jj~    | $\jmath$     | ~\jmath~     |                      |
+| ~nab~   | $\nabla$     | ~\nabla~     |                      |
+| ~cm~    | $\checkmark$ | ~\checkmark~ |                      |
+| ~bu~    | $\bullet$    | ~\bullet~    |                      |
+| ~vee~   | $\vee$       | ~\vee~       |                      |
+| ~wedge~ | $\wedge$     | ~\wedge~     |                      |
+| ~ell~   | $\ell$       | ~\ell~       |                      |
+| ~aleph~ |  $\aleph$         |  ~\aleph~   |                      |
+|---------+--------------+--------------+----------------------|
 
 *  Binary Operation Symbols
 **  Simple Arithmetics:
@@ -41,19 +45,6 @@
 |------+----------+----------+------|
 
 **  Binary Relations:
-#+caption:  
-#+name: tbl_5_op_bin
-#+attr_latex: :align |llll| :placement [H]
-|--------+-------------+-------------+--------------------------|
-| key    | sym         | latex       | description              |
-|--------+-------------+-------------+--------------------------|
-| ~3=~   | $\equiv$    | ~\equiv~    | ~3~    + ~.~             |
-| ~=.~   | $\equiv$    | ~\equiv~    | ~=~    + ~.~             |
-| ~=..~  | $\approx$   | ~\approx~   | ~=~    + ~..~            |
-| ~=:~   | $\coloneqq$ | ~\coloneqq~ | requires ~mathtools~ lib |
-| ~:=~   | $\coloneqq$ | ~\coloneqq~ | requires ~mathtools~ lib |
-|--------+-------------+-------------+--------------------------|
-
 #+attr_latex: :align |l|llll| :placement [H]
 |----------+-------------+----------------------+---------------------------+------------------------------------|
 |          |             | ~+n~                 | ~+?~                      | ~+y~                               |
