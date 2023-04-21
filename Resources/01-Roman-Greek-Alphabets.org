@@ -1,7 +1,3 @@
-#+title:    Emacs TeQ: Alphabets
-#+subtitle: Input Method written in Quail for entering LaTeX math expressions
-#+author:   Garid Zorigoo
-
 * Roman Uppercase letter
 #+attr_latex: :align |l|ccccccccc|  :placement [H]
 #+caption: Roman uppercase letters (name: ~table_roman_upper~)
