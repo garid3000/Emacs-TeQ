@@ -11,3 +11,6 @@
 /Emacs-TeQ.tex
 /Emacs-TeQ.toc
 /Emacs-TeQ.out
+0*.pdf
+*.tex
+*~
