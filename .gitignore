@@ -11,7 +11,9 @@
 /Emacs-TeQ.tex
 /Emacs-TeQ.toc
 /Emacs-TeQ.out
-0*.pdf
-*.tex
 *~
-/_minted-Combiner/
+*.tex
+/01-Alphabets-Greek-Variables.pdf
+/02-Symbols.pdf
+/03-Functions-Sum-Integral-Differential.pdf
+/04-Structural.pdf
