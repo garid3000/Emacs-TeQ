@@ -9,36 +9,36 @@
 #+caption: Letter-like Symbold  
 #+name: tbl-3-sym-letter
 #+attr_latex: :align |llll| :placement [H]
-|-------+--------------+--------------+-----------------------|
-| key   | sym          | latex        | description           |
-|-------+--------------+--------------+-----------------------|
-| ~inf~ | $\infty$     | ~\infty~     |                       |
-| ~ex~  | $\exists$    | ~\exists~    |                       |
-| ~exn~ | $\nexists$   | ~\nexists~   | $\exists$ + _n_ (neg) |
-| ~fa~  | $\forall$    | ~\forall~    |                       |
-| ~hb~  | $\hbar$      | ~\hbar~      |                       |
-| ~hb.~ | $\hslash$    | ~\hslash~    | $\hbar$ + _._  (var)  |
-| ~ii~  | $\imath$     | ~\imath~     |                       |
-| ~jj~  | $\jmath$     | ~\jmath~     |                       |
-| ~nab~ | $\nabla$     | ~\nabla~     |                       |
-| ~cm~  | $\checkmark$ | ~\checkmark~ |                       |
-| ~bu~  | $\bullet$    | ~\bullet~    |                       |
-|-------+--------------+--------------+-----------------------|
+|-------+--------------+--------------+------------------------|
+| key   | sym          | latex        | note                   |
+|-------+--------------+--------------+------------------------|
+| ~inf~ | $\infty$     | ~\infty~     |                        |
+| ~ex~  | $\exists$    | ~\exists~    |                        |
+| ~exn~ | $\nexists$   | ~\nexists~   | $\exists$ _~+n~_ (neg) |
+| ~fa~  | $\forall$    | ~\forall~    |                        |
+| ~hb~  | $\hbar$      | ~\hbar~      |                        |
+| ~hb.~ | $\hslash$    | ~\hslash~    | $\hbar$  _~+.~_  (var) |
+| ~ii~  | $\imath$     | ~\imath~     |                        |
+| ~jj~  | $\jmath$     | ~\jmath~     |                        |
+| ~nab~ | $\nabla$     | ~\nabla~     |                        |
+| ~cm~  | $\checkmark$ | ~\checkmark~ |                        |
+| ~bu~  | $\bullet$    | ~\bullet~    |                        |
+|-------+--------------+--------------+------------------------|
 
 *  Binary Operation Symbols
 **  Simple Arithmetics:
 #+caption: Simple Arithmetics operations
 #+name: tbl_5_op_arith
 #+attr_latex: :align |llll| :placement [H]
-|------+----------+----------+---|
-| key  | sym      | latex    |   |
-|------+----------+----------+---|
-| ~+-~ | $\pm$    | ~\pm~    |   |
-| ~-+~ | $\mp$    | ~\mp~    |   |
-| ~xx~ | $\times$ | ~\times~ |   |
-| ~::~ | $\div$   | ~\div~   |   |
-| ~**~ | $\cdot$  | ~\cdot~  |   |
-|------+----------+----------+---|
+|------+----------+----------+------|
+| key  | sym      | latex    | note |
+|------+----------+----------+------|
+| ~+-~ | $\pm$    | ~\pm~    |      |
+| ~-+~ | $\mp$    | ~\mp~    |      |
+| ~xx~ | $\times$ | ~\times~ |      |
+| ~::~ | $\div$   | ~\div~   |      |
+| ~**~ | $\cdot$  | ~\cdot~  |      |
+|------+----------+----------+------|
 
 **  Binary Relations:
 #+caption:  
