@@ -3,10 +3,10 @@
 #+author:   Garid Zorigoo
 #+auto_tangle: t
 
-* Roman, Greek alphabets & their variations
+* Roman, Greek alphabets & their modification
 Location: [[file:Resources/01-Roman-Greek-Alphabets.org]]
 #+INCLUDE: "./Resources/01-Roman-Greek-Alphabets.org"           
-* COMMENT Symbols & their modification
+* Symbols & their modification
 Location: [[file:Resources/02-Symbols-and-their-modification.org]]
 #+INCLUDE: "./Resources/02-Symbols-and-their-modification.org"                             
 * COMMENT Function & Integral Differentials
@@ -17,7 +17,7 @@ Location: [[file:Resources/04-Structural-and-Parentheses.org]]
 #+INCLUDE: "./Resources/04-Structural-and-Parentheses.org"                          
 
 * Processing tables in org-files into elisp code
-** Type 1 tables
+** String formatters
 #+begin_src python :session mysess :cache no
 def prefix_formatter(inputstr:str) -> str:
     if inputstr == "":
@@ -44,8 +44,12 @@ def translation_formatter(inputstr:str) -> str:
             ' ', '').replace(
                 '\\Box', ' ').replace('{}', '')
     return inputstr
-    
+#+end_src
 
+#+RESULTS:
+
+** Type 1 tables
+#+begin_src python :session mysess :cache no
 def process_t1(table, comment):
     print(f"\n;; --------------- {comment} --------------- ;;")
     header = table[0]
@@ -59,38 +63,73 @@ def process_t1(table, comment):
             trans = repr(
                 translation_formatter(line[j])).replace("'", '"')
             print(f"({key:<7} [{trans:<17}])", end = ' ' if j % 2 == 1 else '\n')
-        print('')
-
-        # key, sym, trans, key1, sym, trans1 = line
-        # key   = repr(key).replace("\'", "\"").replace("~", "")
-        # key1  = repr(key1).replace("\'", "\"").replace("~", "")
-        # key = key.replace("\\\\vert", "|").replace(" ", "")
-        # key1 = key1.replace("\\\\vert", "|").replace(" ", "")
-        # trans = repr(trans).replace("\'", "\"").replace("~", "")
-        # trans1 = repr(trans1).replace("\'", "\"").replace("~", "")
-    
+        if (num_column%2 == 0):
+            print('')
 #+end_src
 
-#+RESULTS[2ea70c6afaf728abcc844b3114871214ab495ba7]:
+#+RESULTS:
 
+** Type 2 tables
+#+begin_src python :session mysess :cache no
+def process_t2(table, comment):
+    print(f"\n;; --------------- {comment} --------------- ;;")
+    header = table[0]
+    # num_column = len(header)
+    for i,line in enumerate(table[1:]):
+        key = repr(prefix_formatter(line[0])).replace("'", '"')
+        trans = repr(translation_formatter(line[1])).replace("'", '"')
+        print(f"({key:<7} [{trans:<17}])", end = ' ' if i % 2 == 0 else '\n')
+#+end_src
+
+#+RESULTS:
 
 ** Processing all above into el 
 :properties:
-:header-args:  :var tbl_roman_upper=./Resources/01-Roman-Greek-Alphabets.org:table_roman_upper
-:header-args+: :var tbl_roman_lower=./Resources/01-Roman-Greek-Alphabets.org:table_roman_lower
-:header-args+: :var tbl_roman_ijvar=./Resources/01-Roman-Greek-Alphabets.org:table_roman_ijvar
-:header-args+: :var tbl_greek_upper=./Resources/01-Roman-Greek-Alphabets.org:table_greek_upper
-:header-args+: :var tbl_greek_lower=./Resources/01-Roman-Greek-Alphabets.org:table_greek_lower
-:header-args+: :var tbl_greek_varia=./Resources/01-Roman-Greek-Alphabets.org:table_greek_varia
+:header-args:  :var tbl1_roman_upper=./Resources/01-Roman-Greek-Alphabets.org:table_roman_upper
+:header-args+: :var tbl1_roman_lower=./Resources/01-Roman-Greek-Alphabets.org:table_roman_lower
+:header-args+: :var tbl1_roman_ijvar=./Resources/01-Roman-Greek-Alphabets.org:table_roman_ijvar
+:header-args+: :var tbl1_greek_upper=./Resources/01-Roman-Greek-Alphabets.org:table_greek_upper
+:header-args+: :var tbl1_greek_lower=./Resources/01-Roman-Greek-Alphabets.org:table_greek_lower
+:header-args+: :var tbl1_greek_varia=./Resources/01-Roman-Greek-Alphabets.org:table_greek_varia
+:header-args+: :var tbl2_common_syms=./Resources/02-Symbols-and-their-modification.org:table_common_symbols
+:header-args+: :var tbl2_simple_arith=./Resources/02-Symbols-and-their-modification.org:table_simple_arith
+:header-args+: :var tbl2_bin_relation=./Resources/02-Symbols-and-their-modification.org:table_bin_relation
+:header-args+: :var tbl2_set_symbols=./Resources/02-Symbols-and-their-modification.org:table_set_symbols
+:header-args+: :var tbl2_set_rel_sym=./Resources/02-Symbols-and-their-modification.org:table_set_rel_sym
+:header-args+: :var tbl2_logic_symbol=./Resources/02-Symbols-and-their-modification.org:table_logic_symbol
+:header-args+: :var tbl2_single_arrow=./Resources/02-Symbols-and-their-modification.org:table_single_arrow
+:header-args+: :var tbl2_double_arrow=./Resources/02-Symbols-and-their-modification.org:table_double_arrow
+:header-args+: :var tbl2_long_arrow=./Resources/02-Symbols-and-their-modification.org:table_long_arrow
+:header-args+: :var tbl2_3dot_symbol=./Resources/02-Symbols-and-their-modification.org:table_3dot_symbol
+:header-args+: :var tbl2_geo_symbol=./Resources/02-Symbols-and-their-modification.org:table_geo_symbol
+:header-args+: :var tbl2_spacing_sym=./Resources/02-Symbols-and-their-modification.org:table_spaicing_sym
+:header-args+: :var tbl2_accent_names=./Resources/02-Symbols-and-their-modification.org:table_accent_names
+:header-args+: :var tbl2_super_sub_sym=./Resources/02-Symbols-and-their-modification.org:table_super_sub_sym
+:header-args+: :var tbl2_under_over_sym=./Resources/02-Symbols-and-their-modification.org:table_under_over_sym
 :end:
 
 #+BEGIN_SRC python :session mysess :hlines no :results output code :wrap SRC elisp :results_switches ":tangle no :noweb yes" :exports none
-process_t1(tbl_roman_upper, "Roman Upper")
-process_t1(tbl_roman_lower, "Roman Lower")
-process_t1(tbl_roman_ijvar, "Roman ij math variation")
-process_t1(tbl_greek_upper, "Greek Upper")
-process_t1(tbl_greek_lower, "Greek Lower")
-process_t1(tbl_greek_varia, "Greek variations")
+process_t1(tbl1_roman_upper, "Roman Upper")
+process_t1(tbl1_roman_lower, "Roman Lower")
+process_t1(tbl1_roman_ijvar, "Roman ij math variation")
+process_t1(tbl1_greek_upper, "Greek Upper")
+process_t1(tbl1_greek_lower, "Greek Lower")
+process_t1(tbl1_greek_varia, "Greek variations")
+process_t2(tbl2_common_syms, "Common Symbols")
+process_t2(tbl2_simple_arith, "Simple Arithmetics")
+process_t1(tbl2_bin_relation, "Binary Relation")
+process_t2(tbl2_set_symbols, "Set Symbols")
+process_t1(tbl2_set_rel_sym, "Set Relation Symbols")
+process_t1(tbl2_logic_symbol, "Logic Symbols")
+process_t1(tbl2_single_arrow, "Single Line Arrows")
+process_t1(tbl2_double_arrow, "Double Line Arrows")
+process_t2(tbl2_long_arrow, "Long Arrows")
+process_t2(tbl2_3dot_symbol, "3 Dot variation")
+process_t2(tbl2_geo_symbol, "Geometry Symbols")
+process_t2(tbl2_spacing_sym, "Spacing Symbols")
+process_t2(tbl2_accent_names, "Accent names")
+process_t1(tbl2_super_sub_sym, "Super/Sub-scripts")
+process_t1(tbl2_under_over_sym, "Under/Over")
 #+END_SRC
 
 #+name: el-from-table
@@ -652,7 +691,149 @@ process_t1(tbl_greek_varia, "Greek variations")
 ("th..v" ["\\vec{\\vartheta}"]) ("th..h" ["\\hat{\\vartheta}"])
 ("th..d" ["\\dot{\\vartheta}"]) ("th..dd" ["\\ddot{\\vartheta}"])
 ("th..ddd" ["\\dddot{\\vartheta}"]) ("th..dddd" ["\\ddddot{\\vartheta}"])
-("th..o" ["\\mathring{\\vartheta}"])
+("th..o" ["\\mathring{\\vartheta}"]) 
+
+;; --------------- Common Symbols --------------- ;;
+("inf"   ["\\infty"        ]) ("ex"    ["\\exists"       ])
+("exn"   ["\\nexists"      ]) ("fa"    ["\\forall"       ])
+("hb"    ["\\hbar"         ]) ("hb."   ["\\hslash"       ])
+("ii"    ["\\imath"        ]) ("jj"    ["\\jmath"        ])
+("nab"   ["\\nabla"        ]) ("cm"    ["\\checkmark"    ])
+("bu"    ["\\bullet"       ]) ("vee"   ["\\vee"          ])
+("wedge" ["\\wedge"        ]) ("ell"   ["\\ell"          ])
+("aleph" ["\\aleph"        ]) 
+;; --------------- Simple Arithmetics --------------- ;;
+("+-"    ["\\pm"           ]) ("-+"    ["\\mp"           ])
+("xx"    ["\\times"        ]) ("::"    ["\\div"          ])
+("**"    ["\\cdot"         ]) 
+;; --------------- Binary Relation --------------- ;;
+("="     ["="              ]) ("=n"    ["\\neq"          ])
+("=?"    ["\\stackrel{?}{=}"]) ("=y"    ["\\stackrel{\\checkmark}{=}"])
+("<"     ["<"              ]) ("<n"    ["\\nless"        ])
+("<?"    ["\\stackrel{?}{<}"]) ("<y"    ["\\stackrel{\\checkmark}{<}"])
+(">"     [">"              ]) (">n"    ["\\ngtr"         ])
+(">?"    ["\\stackrel{?}{>}"]) (">y"    ["\\stackrel{\\checkmark}{>}"])
+("<."    ["\\leq"          ]) ("<.n"   ["\\nleq"         ])
+("<.?"   ["\\stackrel{?}{\\leq}"]) ("<.y"   ["\\stackrel{\\checkmark}{\\leq}"])
+(">."    ["\\geq"          ]) (">.n"   ["\\ngeq"         ])
+(">.?"   ["\\stackrel{?}{\\geq}"]) (">.y"   ["\\stackrel{\\checkmark}{\\geq}"])
+("<<"    ["\\ll"           ]) ("<<n"   ["\\cancel{\\ll}" ])
+("<<?"   ["\\stackrel{?}{\\ll}"]) ("<<y"   ["\\stackrel{\\checkmark}{\\ll}"])
+(">>"    ["\\gg"           ]) (">>n"   ["\\cancel{\\gg}" ])
+(">>?"   ["\\stackrel{?}{\\gg}"]) (">>y"   ["\\stackrel{\\checkmark}{\\gg}"])
+("sim"   ["\\sim"          ]) ("simn"  ["\\nsim"         ])
+("sim?"  ["\\stackrel{?}{\\sim}"]) ("simy"  ["\\stackrel{\\checkmark}{\\sim}"])
+("3="    ["\\equiv"        ]) ("3=n"   ["\\cancel{\\equiv}"])
+("3=?"   ["\\stackrel{?}{\\equiv}"]) ("3=y"   ["\\stackrel{\\checkmark}{\\equiv}"])
+("=."    ["\\equiv"        ]) ("=.n"   ["\\cancel{\\equiv}"])
+("=.?"   ["\\stackrel{?}{\\equiv}"]) ("=.y"   ["\\stackrel{\\checkmark}{\\equiv}"])
+("=.."   ["\\approx"       ]) ("=..n"  ["\\cancel{\\approx}"])
+("=..?"  ["\\stackrel{?}{\\approx}"]) ("=..y"  ["\\stackrel{\\checkmark}{\\approx}"])
+("=:"    ["\\coloneqq"     ]) ("=:n"   ["\\cancel{\\coloneqq}"])
+("=:?"   ["\\stackrel{?}{\\coloneqq}"]) ("=:y"   ["\\stackrel{\\checkmark}{\\coloneqq}"])
+(":="    ["\\coloneqq"     ]) (":=n"   ["\\cancel{\\coloneqq}"])
+(":=?"   ["\\stackrel{?}{\\coloneqq}"]) (":=y"   ["\\stackrel{\\checkmark}{\\coloneqq}"])
+("propto" ["\\propto"       ]) ("propton" ["\\cancel{\\propto}"])
+("propto?" ["\\stackrel{?}{\\propto}"]) ("proptoy" ["\\stackrel{\\checkmark}{\\propto}"])
+
+;; --------------- Set Symbols --------------- ;;
+("0/"    ["\\emptyset"     ]) ("nsr"   ["\\mathbb{R}"    ])
+("nsc"   ["\\mathbb{C}"    ]) ("nsn"   ["\\mathbb{N}"    ])
+("nsp"   ["\\mathbb{P}"    ]) ("nsz"   ["\\mathbb{Z}"    ])
+("nsi"   ["\\mathbb{I}"    ]) 
+;; --------------- Set Relation Symbols --------------- ;;
+("in"    ["\\in"           ]) ("inn"   ["\\notin"        ])
+("in."   ["\\ni"           ]) ("in.n"  [""               ])
+("ni"    ["\\ni"           ]) ("nin"   [""               ])
+("sub"   ["\\subset"       ]) ("subn"  ["\\cancel{\\subset}"])
+("sub."  ["\\subseteq"     ]) ("sub.n" ["\\nsubseteq"    ])
+("sup"   ["\\supset"       ]) ("supn"  ["\\cancel{\\supset}"])
+("sup."  ["\\supseteq"     ]) ("sup.n" ["\\nsupseteq"    ])
+
+;; --------------- Logic Symbols --------------- ;;
+("or"    ["\\lor"          ]) ("or."   ["\\text{or}"     ])
+("and"   ["\\land"         ]) ("and."  ["\\text{and}"    ])
+("neg"   ["\\neg"          ]) ("neg."  [""               ])
+("not"   ["\\not "         ]) ("not."  ["\\text{not}"    ])
+("if"    [""               ]) ("if."   ["\\text{if}"     ])
+("else"  [""               ]) ("else." ["\\text{else}"   ])
+
+;; --------------- Single Line Arrows --------------- ;;
+("<-"    ["\\leftarrow"    ]) ("<-n  (neg)" ["\\nleftarrow"   ])
+("->"    ["\\rightarrow"   ]) ("->n  (neg)" ["\\nrightarrow"  ])
+("-^"    ["\\uparrow"      ]) ("-^n  (neg)" ["\\nuparrow"     ])
+("-v"    ["\\downarrow"    ]) ("-vn  (neg)" ["\\ndownarrow"   ])
+("<->"   ["\\leftrightarrow"]) ("<->n  (neg)" ["\\nleftrightarrow"])
+("-->"   ["\\longrightarrow"]) ("-->n  (neg)" ["\\cancel{\\longrightarrow}"])
+("<--"   ["\\longleftarrow"]) ("<--n  (neg)" ["\\cancel{\\longleftarrow}"])
+("to"    ["\\to"           ]) ("ton  (neg)" ["\\nrightarrow"  ])
+("mto"   ["\\mapsto"       ]) ("mton  (neg)" ["\\cancel{\\mapsto}"])
+("mto."  ["\\longmapsto"   ]) ("mto.n  (neg)" ["\\cancel{\\longmapsto}"])
+
+;; --------------- Double Line Arrows --------------- ;;
+("<="    ["\\Leftarrow"    ]) ("<=n  (neg)" ["\\nLeftarrow"   ])
+("=>"    ["\\Rightarrow"   ]) ("=>n  (neg)" ["\\nRightarrow"  ])
+("=^"    ["\\Uparrow"      ]) ("=^n  (neg)" ["\\cancel{\\Uparrow}"])
+("=v"    ["\\Downarrow"    ]) ("=vn  (neg)" ["\\cancel{\\Downarrow}"])
+("<=>"   ["\\Leftrightarrow"]) ("<=>n  (neg)" ["\\nLeftrightarrow"])
+("iff"   ["\\Leftrightarrow"]) ("iffn  (neg)" ["\\nLeftrightarrow"])
+("<=="   ["\\Longleftarrow"]) ("<==n  (neg)" ["\\cancel{\\Longleftarrow}"])
+("==>"   ["\\Longrightarrow"]) ("==>n  (neg)" ["\\cancel{\\Longrightarrow}"])
+("<==>"  ["\\Longleftrightarrow"]) ("<==>n  (neg)" ["\\cancel{\\Longleftrightarrow}"])
+("iff."  ["\\Longleftrightarrow"]) ("iff.n  (neg)" ["\\cancel{\\Longleftrightarrow}"])
+
+;; --------------- Long Arrows --------------- ;;
+("<---"  ["\\xleftarrow[ ]{ }"]) ("--->"  ["\\xrightarrow[ ]{ }"])
+("===>"  ["\\xRightarrow[ ]{ }"]) ("<==="  ["\\xLeftarrow[ ]{ }"])
+
+;; --------------- 3 Dot variation --------------- ;;
+("..."   ["\\dots"         ]) (".v"    ["\\vdots"        ])
+(".d"    ["\\ddots"        ]) (".l"    ["\\ldots"        ])
+
+;; --------------- Geometry Symbols --------------- ;;
+("perp"  ["\\perp"         ]) ("para"  ["\\parallel"     ])
+("ang"   ["\\angle"        ]) ("ang."  ["\\measuredangle"])
+("tri"   ["\\vartriangle"  ]) ("tri."  ["\\triangledown" ])
+("squ"   ["\\square"       ]) ("box"   [" "              ])
+
+;; --------------- Spacing Symbols --------------- ;;
+("qu"    [" \\quad "       ]) ("quu"   [" \\qquad "      ])
+("spn"   [" \\! "          ]) ("sp"    [" \\, "          ])
+("sp."   [" \\: "          ]) ("sp.."  [" \\; "          ])
+("sp..." [" \\quad "       ]) ("sp...." [" \\qquad "      ])
+
+;; --------------- Accent names --------------- ;;
+("vec"   ["\\vec{ }"       ]) ("bar"   ["\\bar{ }"       ])
+("hat"   ["\\hat{ }"       ]) ("dot"   ["\\dot{ }"       ])
+("dot."  ["\\ddot{ }"      ]) ("dot.." ["\\dddot{ }"     ])
+("dot..." ["\\ddddot{ }"    ]) ("dag"   [" ^\\dagger"     ])
+("dag."  [" ^\\ddagger"    ]) ("*."    [" ^*"            ])
+("deg"   [" ^\\circ"       ]) ("tr"    [" ^T"            ])
+("trn"   [" ^{-T}"         ]) ("inv"   [" ^{-1}"         ])
+("can"   ["\\cancel{ }"    ]) 
+;; --------------- Super/Sub-scripts --------------- ;;
+("pp"    ["~^{~"           ]) ("pl"    [""               ])
+("p0"    [" ^0"            ]) ("p1"    [" ^1"            ])
+("p2"    [" ^2"            ]) ("p3"    [" ^3"            ])
+("p4"    [" ^4"            ]) ("p5"    [" ^5"            ])
+("p6"    [" ^6"            ]) ("p7"    [" ^7"            ])
+("p8"    [" ^8"            ]) ("p9"    [" ^9"            ])
+("pn"    [" ^n"            ]) ("px"    [" ^x"            ])
+("pi"    [""               ]) 
+("lp"    [""               ]) ("ll"    ["~_{~"           ])
+("l0"    [" _0"            ]) ("l1"    [" _1"            ])
+("l2"    [" _2"            ]) ("l3"    [" _3"            ])
+("l4"    [" _4"            ]) ("l5"    [" _5"            ])
+("l6"    [" _6"            ]) ("l7"    [" _7"            ])
+("l8"    [" _8"            ]) ("l9"    [" _9"            ])
+("ln"    [" _n"            ]) ("lx"    [""               ])
+("li"    [" _i"            ]) 
+
+;; --------------- Under/Over --------------- ;;
+("__"    ["\\underset{ }{ }"]) ("__."   ["\\underbrace{ }_ "])
+("__.."  ["\\underline{ }" ]) 
+("^^"    ["\\overset{ }{ }"]) ("^^."   ["\\overbrace{ }^ "])
+("^^.."  ["\\overline{ }"  ])
 #+end_SRC
 
 
