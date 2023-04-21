@@ -1,0 +1,269 @@
+#+title:    Emacs TeQ: Symbols
+#+subtitle: Input Method written in Quail for entering LaTeX math expressions
+#+author:   Garid Zorigoo
+
+#+LATEX_HEADER: \usepackage{cancel}
+#+LATEX_HEADER: \usepackage{mathtools}
+
+*  Letter like symbols
+#+caption: Letter-like Symbold  
+#+name: tbl-3-sym-letter
+#+attr_latex: :align |llll| :placement [H]
+|-------+--------------+--------------+-----------------------|
+| key   | sym          | latex        | description           |
+|-------+--------------+--------------+-----------------------|
+| ~inf~ | $\infty$     | ~\infty~     |                       |
+| ~ex~  | $\exists$    | ~\exists~    |                       |
+| ~exn~ | $\nexists$   | ~\nexists~   | $\exists$ + _n_ (neg) |
+| ~fa~  | $\forall$    | ~\forall~    |                       |
+| ~hb~  | $\hbar$      | ~\hbar~      |                       |
+| ~hb.~ | $\hslash$    | ~\hslash~    | $\hbar$ + _._  (var)  |
+| ~ii~  | $\imath$     | ~\imath~     |                       |
+| ~jj~  | $\jmath$     | ~\jmath~     |                       |
+| ~nab~ | $\nabla$     | ~\nabla~     |                       |
+| ~cm~  | $\checkmark$ | ~\checkmark~ |                       |
+|-------+--------------+--------------+-----------------------|
+
+*  Binary Operation Symbols
+**  Simple Arithmetics:
+#+caption: Simple Arithmetics operations
+#+name: tbl_5_op_arith
+#+attr_latex: :align |llll| :placement [H]
+|------+----------+----------+---|
+| key  | sym      | latex    |   |
+|------+----------+----------+---|
+| ~+-~ | $\pm$    | ~\pm~    |   |
+| ~-+~ | $\mp$    | ~\mp~    |   |
+| ~*x~ | $\times$ | ~\times~ |   |
+| ~::~ | $\div$   | ~\div~   |   |
+| ~**~ | $\cdot$  | ~\cdot~  |   |
+|------+----------+----------+---|
+
+**  Binary Relations:
+#+caption:  
+#+name: tbl_5_op_bin
+#+attr_latex: :align |llll| :placement [H]
+|--------+-------------+-------------+--------------------------|
+| key    | sym         | latex       | description              |
+|--------+-------------+-------------+--------------------------|
+| ~3=~   | $\equiv$    | ~\equiv~    | ~3~    + ~.~             |
+| ~=.~   | $\equiv$    | ~\equiv~    | ~=~    + ~.~             |
+| ~=..~  | $\approx$   | ~\approx~   | ~=~    + ~..~            |
+| ~=:~   | $\coloneqq$ | ~\coloneqq~ | requires ~mathtools~ lib |
+| ~:=~   | $\coloneqq$ | ~\coloneqq~ | requires ~mathtools~ lib |
+|--------+-------------+-------------+--------------------------|
+
+#+attr_latex: :align |l|llll| :placement [H]
+|----------+-------------+----------------------+---------------------------+------------------------------------|
+|          |             | ~+n~                 | ~+?~                      | ~+y~                               |
+|----------+-------------+----------------------+---------------------------+------------------------------------|
+| ~=~      | $=$         | $\neq$               | $\stackrel{?}{ = }$       | $\stackrel{\checkmark}{ = }$       |
+| ~<~      | $<$         | $\nless$             | $\stackrel{?}{<}$         | $\stackrel{\checkmark}{<}$         |
+| ~>~      | $>$         | $\ngtr$              | $\stackrel{?}{>}$         | $\stackrel{\checkmark}{>}$         |
+| ~<.~     | $\leq$      | $\nleq$              | $\stackrel{?}{\leq}$      | $\stackrel{\checkmark}{\leq}$      |
+| ~>.~     | $\geq$      | $\ngeq$              | $\stackrel{?}{\geq}$      | $\stackrel{\checkmark}{\geq}$      |
+| ~<<~     | $\ll$       | $\cancel{\ll}$       | $\stackrel{?}{\ll}$       | $\stackrel{\checkmark}{\ll}$       |
+| ~>>~     | $\gg$       | $\cancel{\gg}$       | $\stackrel{?}{\gg}$       | $\stackrel{\checkmark}{\gg}$       |
+|----------+-------------+----------------------+---------------------------+------------------------------------|
+| ~sim~    | $\sim$      | $\nsim$              | $\stackrel{?}{\sim}$      | $\stackrel{\checkmark}{\sim}$      |
+| ~3=~     | $\equiv$    | $\cancel{\equiv}$    | $\stackrel{?}{\equiv}$    | $\stackrel{\checkmark}{\equiv}$    |
+| ~=.~     | $\equiv$    | $\cancel{\equiv}$    | $\stackrel{?}{\equiv}$    | $\stackrel{\checkmark}{\equiv}$    |
+| ~=..~    | $\approx$   | $\cancel{\approx}$   | $\stackrel{?}{\approx}$   | $\stackrel{\checkmark}{\approx}$   |
+| ~=:~     | $\coloneqq$ | $\cancel{\coloneqq}$ | $\stackrel{?}{\coloneqq}$ | $\stackrel{\checkmark}{\coloneqq}$ |
+| ~:=~     | $\coloneqq$ | $\cancel{\coloneqq}$ | $\stackrel{?}{\coloneqq}$ | $\stackrel{\checkmark}{\coloneqq}$ |
+| ~propto~ | $\propto$   | $\cancel{\propto}$   | $\stackrel{?}{\propto}$   | $\stackrel{\checkmark}{\propto}$   |
+|----------+-------------+----------------------+---------------------------+------------------------------------|
+
+**  Set symbols
+#+caption:  
+#+name: tbl_5_op_set
+#+attr_latex: :align |llll| :placement [H]
+|---------+--------------+---------------+------------------------------------|
+| key     | sym          | latex         | description                        |
+|---------+--------------+---------------+------------------------------------|
+| ~in~    | $\in$        | ~\in~         | $\in$                              |
+| ~in.~   | $\ni$        | ~\ni~         | $\in$ + ~.~  (var)                 |
+| ~ni~    | $\ni$        | ~\ni~         |                                    |
+| ~inn~   | $\notin$     | ~\notin~      | $\in$ + ~n~ (neg)                  |
+| ~0/~    | $\emptyset$  | ~\emptyset~   |                                    |
+| ~nsr~   | $\mathbb{R}$ | ~\mathbb{R}~  | (~n~)umber (~s~)et (~r~)eal        |
+| ~nsc~   | $\mathbb{C}$ | ~\mathbb{C}~  | (~n~)umber (~s~)et (~c~)omplex     |
+| ~nsn~   | $\mathbb{N}$ | ~\mathbb{N}~  | (~n~)umber (~s~)et (~n~)atural     |
+| ~nsp~   | $\mathbb{P}$ | ~\mathbb{P}~  | (~n~)umber (~s~)et (~p~)rime       |
+| ~nsz~   | $\mathbb{Z}$ | ~\mathbb{Z}~  | (~n~)umber (~s~)et (~z~)           |
+| ~nsi~   | $\mathbb{I}$ | ~\mathbb{I}~  | (~n~)umber (~s~)et (~i~)rriational |
+|---------+--------------+---------------+------------------------------------|
+
+
+|--------+-------------+--------------------|
+|        |             | ~n~                |
+|--------+-------------+--------------------|
+| ~sub~  | $\subset$   | $\cancel{\subset}$ |
+| ~sub.~ | $\subseteq$ | $\nsubseteq$       |
+| ~sup~  | $\supset$   | $\cancel{\supset}$ |
+| ~sup.~ | $\supseteq$ | $\nsupseteq$       |
+|--------+-------------+--------------------|
+
+**  Logic
+#+caption:  
+#+name: tbl_5_op_logic
+#+attr_latex: :align |l|ll| :placement [H]
+|--------+------------+----------------|
+| key    | sym        |   ~.~          |
+|--------+------------+----------------|
+| ~or~   | $\lor$     | $\text{ or }$  |
+| ~and~  | $\land$    | $\text{ and }$ |
+| ~neg~  | $\neg$     | $\text{ not }$ |
+| ~not~  | $\not\Box$ |                |
+|--------+------------+----------------|
+*  Arrows:
+** Single:
+#+caption: Single Line arrows
+#+name: tbl-3-sym-arrow-1
+#+attr_latex: :align |l|ll| :placement [H]
+|--------+-------------------+----------------------------|
+| key    |                   | ~+n~  (neg)                |
+|--------+-------------------+----------------------------|
+| ~<-~   | $\leftarrow$      | $\nleftarrow$              |
+| ~->~   | $\rightarrow$     | $\nrightarrow$             |
+| ~-^~   | $\uparrow$        | $\nuparrow$                |
+| ~-v~   | $\downarrow$      | $\ndownarrow$              |
+| ~<->~  | $\leftrightarrow$ | $\nleftrightarrow$         |
+|--------+-------------------+----------------------------|
+| ~-->~  | $\longrightarrow$ | $\cancel{\longrightarrow}$ |
+| ~<--~  | $\longleftarrow$  | $\cancel{\longleftarrow}$  |
+|--------+-------------------+----------------------------|
+| ~to~   | $\to$             | $\nrightarrow$             |
+| ~mto~  | $\mapsto$         | $\cancel{\mapsto}$         |
+| ~mto.~ | $\longmapsto$     | $\cancel{\longmapsto}$     |
+|--------+-------------------+----------------------------|
+
+** Double:
+#+caption: Double Line arrows
+#+name: tbl-3-sym-arrow-2
+#+attr_latex: :align |l|ll| :placement [H]
+|--------+-----------------------+--------------------------------|
+| key    |                       | ~+n~  (neg)                    |
+|--------+-----------------------+--------------------------------|
+| ~<=~   | $\Leftarrow$          | $\nLeftarrow$                  |
+| ~=>~   | $\Rightarrow$         | $\nRightarrow$                 |
+| ~=^~   | $\Uparrow$            | $\cancel{\Uparrow}$            |
+| ~=v~   | $\Downarrow$          | $\cancel{\Downarrow}$          |
+| ~<=>~  | $\Leftrightarrow$     | $\nLeftrightarrow$             |
+| ~iff~  | $\Leftrightarrow$     | $\nLeftrightarrow$             |
+|--------+-----------------------+--------------------------------|
+| ~<==~  | $\Longleftarrow$      | $\cancel{\Longleftarrow}$      |
+| ~==>~  | $\Longrightarrow$     | $\cancel{\Longrightarrow}$     |
+| ~<==>~ | $\Longleftrightarrow$ | $\cancel{\Longleftrightarrow}$ |
+| ~iff.~ | $\Longleftrightarrow$ | $\cancel{\Longleftrightarrow}$ |
+|--------+-----------------------+--------------------------------|
+
+** Long arrow with top-bottom entries 
+#+caption: Long arrow Line arrows
+#+name: tbl-3-sym-arrow-3
+#+attr_latex: :align |llll| :placement [H]
+|--------+----------------------------+----------------------+-------------------------------------|
+| key    | sym                        | latex                | description                         |
+|--------+----------------------------+----------------------+-------------------------------------|
+| ~<---~ | $\xleftarrow[\Box]{\Box}$  | ~\xleftarrow[ ]{ }~  | 3 ~-~ (On PDF this expored wrongly) |
+| ~--->~ | $\xrightarrow[\Box]{\Box}$ | ~\xrightarrow[ ]{ }~ | 3 ~-~ (On PDF this expored wrongly) |
+| ~===>~ | $\xRightarrow[\Box]{\Box}$ | ~\xRightarrow[ ]{ }~ | 3 ~=~, (~mathtools~ lib required)   |
+| ~<===~ | $\xLeftarrow[\Box]{\Box}$  | ~\xLeftarrow[ ]{ }~  | 3 ~=~, (~mathtools~ lib required)   |
+|--------+----------------------------+----------------------+-------------------------------------|
+
+*  Dots related
+#+caption: Multiple Dots Related
+#+name: tbl-3-sym-dots
+#+attr_latex: :align |llll| :placement [H]
+|-------+----------+----------+----------------|
+| key   | sym      | latex    | description    |
+|-------+----------+----------+----------------|
+| ~...~ | $\dots$  | ~\dots~  | 3 dots         |
+| ~.v~  | $\vdots$ | ~\vdots~ | vertical dots  |
+| ~.d~  | $\ddots$ | ~\ddots~ | diagonale dots |
+| ~.l~  | $\ldots$ | ~\ldots~ | low dots       |
+|-------+----------+----------+----------------|
+
+*  Geometry
+#+caption:  
+#+name: tbl-3-sym-geo
+#+attr_latex: :align |l|ll| :placement [H]
+|--------+------------------+----------------------|
+| key    | sym              | ~n~                  |
+|--------+------------------+----------------------|
+| ~perp~ | $\perp$          | $\cancel{\perp}$     |
+| ~para~ | $\parallel$      | $\nparallel$         |
+| ~ang~  | $\angle$         |                      |
+| ~ang.~ | $\measuredangle$ |                      |
+|--------+------------------+----------------------|
+| ~tri~  | $\vartriangle$   | $\blacktriangle$     |
+| ~tri.~ | $\triangledown$  | $\blacktriangledown$ |
+| ~squ~  | $\square$        | $\blacksquare$       |
+|--------+------------------+----------------------|
+
+*  Spaces
+#+caption: Space Symbold  
+#+name: tbl-3-sym-spc
+#+attr_latex: :align |llll| :placement [H]
+|----------+------------------+----------+----------------------------|
+| key      | sym              | latex    | description                |
+|----------+------------------+----------+----------------------------|
+| ~qu~     | $\Box\quad\Box$  | ~\quad~  |                            |
+| ~quu~    | $\Box\qquad\Box$ | ~\qquad~ |                            |
+|----------+------------------+----------+----------------------------|
+| ~spn~    | $\Box\!\Box$     | ~\!~     | -3/18 of ~\quad~ (= -3 mu) |
+| ~sp~     | $\Box\,\Box$     | ~\,~     | 3/18 of ~\quad~ (= 3 mu)   |
+| ~sp.~    | $\Box\:\Box$     | ~\:~     | 4/18 of ~\quad~ (= 4 mu)   |
+| ~sp..~   | $\Box\;\Box$     | ~\;~     | 5/18 of ~\quad~ (= 5 mu)   |
+| ~sp...~  | $\Box\quad\Box$  | ~\quad~  | 1 of ~\quad~ (= 18 mu)     |
+| ~sp....~ | $\Box\qquad\Box$ | ~\qquad~ | 2 of ~\qquad~ (= 36 mu)    |
+|----------+------------------+----------+----------------------------|
+
+
+
+
+*  Symbol Modification
+**  Accents (variable decoration?)
+#+caption:  
+#+name: tbl_4_sym_mod_1
+#+attr_latex: :align |llll| :placement [H]
+|----------+-----------------+-------------+---------------------------|
+| key      | sym             | latex       | description               |
+|----------+-----------------+-------------+---------------------------|
+| ~vec~    | $\vec{\Box}$    | ~\vec{~     |                           |
+| ~bar~    | $\bar{\Box}$    | ~\bar{~     |                           |
+| ~hat~    | $\hat{\Box}$    | ~\hat{~     |                           |
+| ~dot~    | $\dot{\Box}$    | ~\dot{~     |                           |
+| ~dot.~   | $\ddot{\Box}$   | ~\ddot{~    | $\dot{\Box}$ + ~.~  (var) |
+| ~dot..~  | $\dddot{\Box}$  | ~\dddot{~   | $\dot{\Box}$ + ~..~ (var) |
+| ~dot...~ | $\ddddot{\Box}$ | ~\ddddot{~  | $\dot{\Box}$ + ~..~ (var) |
+| ~dag~    | $\Box^\dagger$  | ~^\dagger~  |                           |
+| ~dag.~   | $\Box^\ddagger$ | ~^\ddagger~ | $\dagger$  + ~.~ (var)    |
+| ~*.~     | $\Box^*$        | ~^*~        |                           |
+| ~deg~    | $\Box^\circ$    | ~^\circ~    |                           |
+| ~tr~     | $\Box^T$        | ~^T~        |                           |
+| ~trn~    | $\Box^ {-T}$    | ~^{-T}~     | $\Box^T$ + ~n~ (neg)      |
+| ~inv~    | $\Box^ {-1}$    | ~^{-1}~     |                           |
+|----------+-----------------+-------------+---------------------------|
+
+**  Superscripts & Subsripts (power & lower)
+#+caption:  
+#+name: tbl_7_supsubscripts
+#+attr_latex: :align |lll|lll| :placement [H]
+|--------+--------------------------+----------------------+--------+-------------------------+---------------------|
+| key    | sym                      | latex                | key    | sym                     | latex               |
+|--------+--------------------------+----------------------+--------+-------------------------+---------------------|
+| ~^~    | $\Box^\Box$              | ~^{~                 | ~_~    | $\Box_\Box$             | ~_{~                |
+| ~pp~   | $\Box^\Box$              | ~^{~                 | ~ll~   | $\Box_\Box$             | ~_{~                |
+| ~p0~   | $\Box^0$                 | ~^0~                 | ~l0~   | $\Box_0$                | ~_0~                |
+| ~p1~   | $\Box^1$                 | ~^1~                 | ~l1~   | $\Box_1$                | ~_1~                |
+| ~p2~   | $\Box^2$                 | ~^2~                 | ~l2~   | $\Box_2$                | ~_2~                |
+| ~p3~   | $\Box^3$                 | ~^3~                 | ~l3~   | $\Box_3$                | ~_3~                |
+| ~p4~   | $\Box^4$                 | ~^4~                 | ~l4~   | $\Box_4$                | ~_4~                |
+| ~pn~   | $\Box^n$                 | ~^n~                 | ~lnn~  | $\Box_n$                | ~_n~                |
+| ~px~   | $\Box^x$                 | ~^x~                 | ~li~   | $\Box_i$                | ~_i~                |
+| ~__~   | $\underset{\Box}{\Box}$  | ~\underset{ }{ }~    | ~^^~   | $\overset{\Box}{\Box}$  | ~\overset{ }{ }~    |
+| ~__.~  | $\underbrace{\Box}_\Box$ | ~\underbrace{ }_{ }~ | ~^^.~  | $\overbrace{\Box}^\Box$ | ~\overbrace{ }^{ }~ |
+| ~__..~ | $\underline{\Box}$       | ~\underline{ }~      | ~^^..~ | $\overline{\Box}$       | ~\overline{ }~      |
+|--------+--------------------------+----------------------+--------+-------------------------+---------------------|
+

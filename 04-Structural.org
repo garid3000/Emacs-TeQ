@@ -1,0 +1,100 @@
+
+#+LATEX_HEADER: \usepackage{mathtools}
+#+LATEX_HEADER: \usepackage{cancel}
+
+
+*  Function Expansion
+#+caption: Keys that will execute some elisp functions
+#+name: tbl-2-execute-function
+#+attr_latex: :align |llll| :placement [H]
+|--------+---------------------+-----------------------+----------------------|
+| key    | sym                 | latex                 | description          |
+|--------+---------------------+-----------------------+----------------------|
+| ~/~    | $\frac{\Box}{\Box}$ | ~quail-TeQ-frac~      | fraction on previous |
+| ~eq~   |                     | ~quail-TeQ-equation~  | equation environment |
+| ~mat~  |                     | ~quail-TeQ-matrix~    | pmatrix environment  |
+| ~case~ |                     | ~quail-TeQ-case~      | case environment     |
+| ~al~   |                     | ~quail-TeQ-aligned~   | aligned environment  |
+| ~gg~   |                     | ~quail-TeQ-next~      | go to next space     |
+| ~GG~   |                     | ~quail-TeQ-prev~      | go to prev space     |
+| ~el~   |                     | ~quail-TeQ-endofline~ | end of line          |
+| ~nl~   |                     | ~quail-TeQ-nextline~  | new line below       |
+| ~pl~   |                     | ~quail-TeQ-prevline~  | new line above       |
+|--------+---------------------+-----------------------+----------------------|
+
+
+
+* Structural:
+**  Parenthesis Related
+#+caption:  
+#+name: tbl_7_parenthesis
+#+attr_latex: :align |llll| :placement [H]
+|----------------+-------------------------------------------+---------------------------------+----------------------------|
+| key            | sym                                       | latex                           | description                |
+|----------------+-------------------------------------------+---------------------------------+----------------------------|
+| ~f()~          | $\left( \Box \right)$                     | ~\left( \right)~                |                            |
+| ~f().~         | $\left( \Box \middle\vert \Box \right)$   | ~\left( \middle\vert \right)~   |                            |
+| ~f[]~          | $\left[ \Box \right]$                     | ~\left[ \right]~                |                            |
+| ~f[].~         | $\left[ \Box \middle\vert \Box \right]$   | ~\left[ \middle\vert \right]~   | (var)                      |
+| ~f[]c~         | $\lceil \Box \rceil$                      | ~\lceil \rceil~                 | (var) (ceil)               |
+| ~f[]f~         | $\lfloor \Box \rfloor$                    | ~\lfloor \rfloor~               | (var) (floor)              |
+| ~f{}~          | $\left\{ \Box \right\}$                   | ~\left\{ \right\}~              |                            |
+| ~f{}.~         | $\left\{ \Box \middle\vert \Box \right\}$ | ~\left\{ \middle\vert \right\}~ | (var)                      |
+| ~f<>~          | $\left< \Box \right>$                     | ~\left< \right>~                |                            |
+| ~f<>.~         | $\left< \Box \middle\vert \Box \right>$   | ~\left< \middle\vert \right>~   | (var)                      |
+|----------------+-------------------------------------------+---------------------------------+----------------------------|
+| \vert \vert .  | $\left\vert \Box \right\vert$             | ~\left\vert \right\vert~        | absolute                   |
+| \vert \vert .. | $\left\Vert \Box \right\Vert$             | ~\left\Vert \right\Vert~        | norm                       |
+|----------------+-------------------------------------------+---------------------------------+----------------------------|
+| ~h(~           | $\left( \Box \right.{}$                   | ~\left(~                        | (~h~)alf + ~(~             |
+| ~h)~           | $\left. \Box \right)$                     | ~\right)~                       | (~h~)alf + ~)~             |
+| ~h[~           | $\left[ \Box \right.{}$                   | ~\left[~                        | (~h~)alf + ~[~             |
+| ~h]~           | $\left. \Box \right]$                     | ~\right]~                       | (~h~)alf + ~]~             |
+| ~h{~           | $\left\{ \Box \right.{}$                  | ~\left\{~                       | (~h~)alf + ~{~             |
+| ~h}~           | $\left. \Box \right\}$                    | ~\right\}~                      | (~h~)alf + ~}~             |
+| ~h<~           | $\left< \Box \right.{}$                   | ~\left<~                        | (~h~)alf + ~<~             |
+| ~h>~           | $\left. \Box \right>$                     | ~\right>~                       | (~h~)alf + ~>~             |
+| ~h.l~          |                                           | ~\left.~                        | (~h~)alf + ~.~ + (~l~)eft  |
+| ~h.r~          |                                           | ~\right.~                       | (~h~)alf + ~.~ + (~r~)ight |
+| ~h~ \vert      |                                           | ~\middle\vert~                  | middle vertical bar        |
+|----------------+-------------------------------------------+---------------------------------+----------------------------|
+
+**  Texts:
+#+caption:  
+#+name: tbl_7_text
+#+attr_latex: :align |llll| :placement [H]
+|------+--------------------------+------------+------------------|
+| key  | sym                      | latex      | description      |
+|------+--------------------------+------------+------------------|
+| ~te~ | $\Box + \text{text}$     | ~\text{~   | (te)xt           |
+| ~tt~ | $\Box + \mathrm{mathrm}$ | ~\mathrm{~ | (t)ext (m)ath    |
+| ~tb~ | $\Box + \mathbf{mathbf}$ | ~\mathbf{~ | (t)ext (b)old    |
+| ~ti~ | $\Box + \mathit{mathit}$ | ~\mathit{~ | (t)ext (i)talics |
+|------+--------------------------+------------+------------------|
+
+**  Misc.
+#+caption:  
+#+name: tbl_7_misc
+#+attr_latex: :align |llll| :placement [H]
+|---------+----------------------+----------------+---------------------------|
+| key     | sym                  | latex          | description               |
+|---------+----------------------+----------------+---------------------------|
+| ~binom~ | $\binom{\Box}{\Box}$ | ~\binom{ }{ }~ | Binom                     |
+| ~box~   | $\boxed{\Box}$       | ~\boxed{~      | Putting box around object |
+| ~ff~    | $\frac{\Box}{\Box}$  | ~\frac{~       | Fractions                 |
+| ~can~   | $\cancel{\Box}$      | ~\cancel{~     |                           |
+| ~==~    |                      | ~&=~           | helps in align env.       |
+|---------+----------------------+----------------+---------------------------|
+
+**  xy Diagram related
+#+caption:  
+#+name: tbl_7_xy
+#+attr_latex: :align |llll| :placement [H]
+|------+-----------+--------------+-------------|
+| key  | sym       | latex        | description |
+|------+-----------+--------------+-------------|
+| ~xy~ |           | ~\xymatrix{~ |             |
+| ~bu~ | $\bullet$ | ~\bullet~    |             |
+| ~ar~ |           | ~\ar~        |             |
+|------+-----------+--------------+-------------|
+

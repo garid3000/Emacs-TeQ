@@ -1,0 +1,123 @@
+#+title:    Emacs TeQ: Functions and Sum/Integral/Differential
+#+subtitle: Input Method written in Quail for entering LaTeX math expressions
+#+author:   Garid Zorigoo
+
+*  Function
+#+caption:  
+#+name: tbl_6_func
+#+attr_latex: :align |llll| :placement [H]
+|---------+---------------------+-----------------+-------------|
+| key     | sym                 | latex           | description |
+|---------+---------------------+-----------------+-------------|
+| ~rank~  | $\mathrm{rank}$     | ~\mathrm{rank}~ |             |
+| ~arg~   | $\arg$              | ~\arg~          |             |
+| ~det~   | $\det$              | ~\det~          |             |
+| ~dim~   | $\dim$              | ~\dim~          |             |
+| ~exp~   | $\exp$              | ~\exp~          |             |
+| ~Im.~   | $\mathrm{Im}$       | ~\mathrm{Im}~   |             |
+| ~Re~    | $\mathrm{Re}$       | ~\mathrm{Re}~   |             |
+| ~ln~    | $\ln$               | ~\ln~           |             |
+| ~log~   | $\log$              | ~\log~          |             |
+| ~max~   | $\max$              | ~\max~          |             |
+| ~min~   | $\min$              | ~\min~          |             |
+| ~dim~   | $\dim$              | ~\dim~          |             |
+| ~sqrt~  | $\sqrt{\Box}$       | ~\sqrt{~        |             |
+| ~sqrt.~ | $\sqrt[\Box]{\Box}$ | ~\sqrt[ ]{~     |             |
+| ~mod~   | $\Box \pmod \Box$   | ~\pmod~         |             |
+| ~mod.~  | $\Box \mod \Box$    | ~\mod~          |             |
+| ~mod..~ | $\Box \bmod \Box$   | ~\bmod~         |             |
+|---------+---------------------+-----------------+-------------|
+
+*  Trignometry: function
+#+caption:  
+#+name: tbl_6_func_trig_6col
+#+attr_latex: :align |l|lllll| :placement [H]
+|--------+-----------+------------------+---------+----------+----------|
+| key    |           | ~n~              | ~+h~    | ~2~      | ~3~      |
+|--------+-----------+------------------+---------+----------+----------|
+| ~cos~  | $\cos$    | $\arccos$        | $\cosh$ | $\cos^2$ | $\cos^3$ |
+| ~sin~  | $\sin$    | $\arcsin$        | $\sinh$ | $\sin^2$ | $\sin^3$ |
+| ~tan~  | $\tan$    | $\arctan$        | $\tanh$ | $\tan^2$ | $\tan^3$ |
+| ~cot~  | $\cot$    |                  | $\coth$ | $\cot^2$ | $\cot^3$ |
+|--------+-----------+------------------+---------+----------+----------|
+| ~acos~ | $\arccos$ | $\arccos^ {-1}}$ |         |          |          |
+| ~asin~ | $\arcsin$ | $\arcsin^ {-1}}$ |         |          |          |
+| ~atan~ | $\arctan$ | $\arctan^ {-1}}$ |         |          |          |
+|--------+-----------+------------------+---------+----------+----------|
+
+*  Integrals & Iterative (sum/prod/lim) operation:
+#+caption: Integrals, Sums, Products
+#+name: tbl_6_func_iter
+#+attr_latex: :align |llll| :placement [H]
+|---------+-----------------------------+-------------------+-----------------------|
+| key     | sym                         | latex             | description           |
+|---------+-----------------------------+-------------------+-----------------------|
+| ~il~    | $\sum\limits_\Box$          | ~\limits_{~       |                       |
+| ~il.~   | $\sum\limits_\Box^\Box$     | ~\limits_{0}^{ }~ | . (var)               |
+| \vert . | $\Box \Bigg\vert_\Box^\Box$ | ~\Bigg\vert_{~    | for definite integral |
+|---------+-----------------------------+-------------------+-----------------------|
+
+
+#+attr_latex: :align |l|llll| :placement [H]
+|----------+-----------+--------------------------+---------------------------+---------------------------------|
+|          |           | ~.~                      | ~..~                      | ~...~                           |
+|----------+-----------+--------------------------+---------------------------+---------------------------------|
+| ~lim~    | $\lim$    | $\lim \limits_ \Box$     | $\lim \limits_ {x \to 0}$ | $\lim \limits_ {x \to \infty}$  |
+| ~sum~    | $\sum$    | $\sum \limits_ \Box$     | $\sum \limits_ {i=1} ^n$  | $\sum \limits_ {i=1} ^\infty$   |
+| ~prod~   | $\prod$   | $\prod \limits_ \Box$    | $\prod \limits_ {i=1} ^n$ | $\prod \limits_ {i=1} ^\infty$  |
+| ~int~    | $\int$    | $\int \limits_\Box^\Box$ | $\int \limits_0^\infty$   | $\int \limits_{-\infty}^\infty$ |
+| ~inti~   | $\iint$   | $\iint \limits_\Box$     | $\iint \limits_C$         | $\iint \limits_\gamma$          |
+| ~intii~  | $\iiint$  | $\iiint \limits_\Box$    | $\iiint \limits_C$        | $\iiint \limits_\gamma$         |
+| ~intiii~ | $\iiiint$ | $\iiiint \limits_\Box$   | $\iiiint \limits_C$       | $\iiiint \limits_\gamma$        |
+| ~into~   | $\oint$   | $\oint \limits_\Box$     | $\oint \limits_C$         | $\oint \limits_\gamma$          |
+|----------+-----------+--------------------------+---------------------------+---------------------------------|
+
+*  Derivatives
+Please note that this table uses user-defined command (~\dv~ and ~\pdv~).
+Please take a look at [[id:c5dfb0a9-892c-46fd-8541-1c8475300dad][Definition of differential and derivatives command in latex]]
+
+#+caption: Derivatives
+#+name: tbl_6_func_deriv
+#+attr_latex: :align |lll|lll| :placement [H]
+|--------+-------------------------------------------------+-------------+---------+---------------------------------------------+--------------|
+| key    | sym                                             | latex       | key     | sym                                         | latex        |
+|--------+-------------------------------------------------+-------------+---------+---------------------------------------------+--------------|
+| ~df~   | $\frac{\mathrm{d}^\Box}{\mathrm{d}{\Box}^\Box}$ | ~\dv[ ]{ }~ | ~df.~   | $\frac{\partial^\Box}{\partial{\Box}^\Box}$ | ~\pdv[ ]{ }~ |
+| ~dfx~  | $\frac{\mathrm{d}}{\mathrm{d}x}$                | ~\dv{x}~    | ~df.x~  | $\frac{\partial}{\partial x}$               | ~\pdv{x}~    |
+| ~dfy~  | $\frac{\mathrm{d}}{\mathrm{d}y}$                | ~\dv{y}~    | ~df.y~  | $\frac{\partial}{\partial y}$               | ~\pdv{y}~    |
+| ~dfz~  | $\frac{\mathrm{d}}{\mathrm{d}z}$                | ~\dv{z}~    | ~df.z~  | $\frac{\partial}{\partial z}$               | ~\pdv{z}~    |
+| ~dft~  | $\frac{\mathrm{d}}{\mathrm{d}t}$                | ~\dv{t}~    | ~df.t~  | $\frac{\partial}{\partial t}$               | ~\pdv{t}~    |
+|--------+-------------------------------------------------+-------------+---------+---------------------------------------------+--------------|
+| ~df2~  | $\frac{\mathrm{d}^2}{\mathrm{d}\Box^2}$         | ~\dv[2]{ }~ | ~df.2~  | $\frac{\partial^2}{\partial \Box^2}$        | ~\pdv[2]{ }~ |
+| ~dfx2~ | $\frac{\mathrm{d}^2}{\mathrm{d}x^2}$            | ~\dv[2]{x}~ | ~df.x2~ | $\frac{\partial^2}{\partial x^2}$           | ~\pdv[2]{x}~ |
+| ~dfy2~ | $\frac{\mathrm{d}^2}{\mathrm{d}y^2}$            | ~\dv[2]{y}~ | ~df.y2~ | $\frac{\partial^2}{\partial y^2}$           | ~\pdv[2]{y}~ |
+| ~dfz2~ | $\frac{\mathrm{d}^2}{\mathrm{d}z^2}$            | ~\dv[2]{z}~ | ~df.z2~ | $\frac{\partial^2}{\partial z^2}$           | ~\pdv[2]{z}~ |
+| ~dft2~ | $\frac{\mathrm{d}^2}{\mathrm{d}t^2}$            | ~\dv[2]{t}~ | ~df.t2~ | $\frac{\partial^2}{\partial t^2}$           | ~\pdv[2]{t}~ |
+|--------+-------------------------------------------------+-------------+---------+---------------------------------------------+--------------|
+| ~df3~  | $\frac{\mathrm{d}^3}{\mathrm{d}\Box^3}$         | ~\dv[3]{ }~ | ~df.3~  | $\frac{\partial^3}{\partial \Box^3}$        | ~\pdv[3]{ }~ |
+| ~dfx3~ | $\frac{\mathrm{d}^3}{\mathrm{d}x^3}$            | ~\dv[3]{x}~ | ~df.x3~ | $\frac{\partial^3}{\partial x^3}$           | ~\pdv[3]{x}~ |
+| ~dfy3~ | $\frac{\mathrm{d}^3}{\mathrm{d}y^3}$            | ~\dv[3]{y}~ | ~df.y3~ | $\frac{\partial^3}{\partial y^3}$           | ~\pdv[3]{y}~ |
+| ~dfz3~ | $\frac{\mathrm{d}^3}{\mathrm{d}z^3}$            | ~\dv[3]{z}~ | ~df.z3~ | $\frac{\partial^3}{\partial z^3}$           | ~\pdv[3]{z}~ |
+| ~dft3~ | $\frac{\mathrm{d}^3}{\mathrm{d}t^3}$            | ~\dv[3]{t}~ | ~df.t3~ | $\frac{\partial^3}{\partial t^3}$           | ~\pdv[3]{t}~ |
+|--------+-------------------------------------------------+-------------+---------+---------------------------------------------+--------------|
+
+*  Definition of differential and derivatives command in latex
+:PROPERTIES:
+:ID:       c5dfb0a9-892c-46fd-8541-1c8475300dad
+:END:
+** For Latex
+#+begin_example
+\newcommand{\dd}[2][]{\,\mathrm{d}^{#1}{#2}}
+\newcommand{\pd}[2][]{\,\partial^{#1}{#2}}
+\newcommand{\dv}[2][]{\frac{\mathrm{d}^{#1}}{\mathrm{d}{#2}^{#1}}}
+\newcommand{\pdv}[2][]{\frac{\partial^{#1}}{\partial{#2}^{#1}}}
+#+end_example
+
+** For Org mode
+#+begin_example
+#+LATEX_HEADER: \newcommand{\dd}[2][]{\,\mathrm{d}^{#1}{#2}}
+#+LATEX_HEADER: \newcommand{\pd}[2][]{\,\partial^{#1}{#2}}
+#+LATEX_HEADER: \newcommand{\dv}[2][]{\frac{\mathrm{d}^{#1}}{\mathrm{d}{#2}^{#1}}}
+#+LATEX_HEADER: \newcommand{\pdv}[2][]{\frac{\partial^{#1}}{\partial{#2}^{#1}}}
+#+end_example
+
