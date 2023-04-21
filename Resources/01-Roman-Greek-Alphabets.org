@@ -1,6 +1,10 @@
+#+title:    Emacs TeQ: Alphabets
+#+subtitle: Input Method written in Quail for entering LaTeX math expressions
+#+author:   Garid Zorigoo
+
 * Roman Uppercase letter
 #+attr_latex: :align |l|ccccccccc|  :placement [H]
-#+caption: Roman uppercase letters & their accented versions
+#+caption: Roman uppercase letters (name: ~table_roman_upper~)
 #+name: table_roman_upper
 |-----+--------------+-----------+-----------+-----------+-----------+------------+-------------+--------------+----------------|
 |     | ~+m~         | ~+b~      | ~+v~      | ~+h~      | ~+d~      | ~+dd~      | ~+ddd~      | ~+dddd~      | ~+o~           |
@@ -35,7 +39,7 @@
 
 * Roman Lowercase letter
 #+attr_latex: :align |l|ccccccccc|  :placement [H]
-#+caption: Roman lowercase letters & their accented versions
+#+caption: Roman lowercase letters (name: ~table_roman_lower~)
 #+name: table_roman_lower
 |-----+--------------+-----------+-----------+-----------+-----------+------------+-------------+--------------+----------------|
 |     | ~+m~         | ~+b~      | ~+v~      | ~+h~      | ~+d~      | ~+dd~      | ~+ddd~      | ~+dddd~      | ~+o~           |
@@ -69,6 +73,8 @@
 |-----+--------------+-----------+-----------+-----------+-----------+------------+-------------+--------------+----------------|
 
 #+attr_latex: :align |l|ccccccccc|  :placement [H]
+#+caption: Roman i, j math variation (name: ~table_roman_ijvar~)
+#+name: table_roman_ijvar
 |-------+----------+----------------+----------------+----------------+----------------+-----------------+------------------+-------------------+---------------------|
 |       |          | ~+b~           | ~+v~           | ~+h~           | ~+d~           | ~+dd~           | ~+ddd~           | ~+dddd~           | ~+o~                |
 |-------+----------+----------------+----------------+----------------+----------------+-----------------+------------------+-------------------+---------------------|
@@ -78,7 +84,7 @@
 
 * Greek Uppercase letter
 #+attr_latex: :align |l|ccccccccc|  :placement [H]
-#+caption: Greek uppercase letters & their accented versions
+#+caption: Greek uppercase letters (name: ~table_greek_upper~)
 #+name: table_greek_upper
 |-------+------------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
 |       |            | ~+b~             | ~+v~             | ~+h~             | ~+d~             | ~+dd~             | ~+ddd~             | ~+dddd~             | ~+o~                  |
@@ -111,7 +117,7 @@
  
 * Greek Lowercase letter
 #+attr_latex: :align |l|ccccccccc|  :placement [H]
-#+caption: Greek lowercase letters & their accented versions
+#+caption: Greek lowercase letters (name: ~table_greek_lower~)
 #+name: table_greek_lower
 |-------+------------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
 |       |            | ~+b~             | ~+v~             | ~+h~             | ~+d~             | ~+dd~             | ~+ddd~             | ~+dddd~             | ~+o~                  |
@@ -143,6 +149,8 @@
 |-------+------------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
 
 #+attr_latex: :align |l|ccccccccc|  :placement [H]
+#+caption: Greek lower case variations (name: ~table_greek_varia~)
+#+name: table_greek_varia
 |--------+---------------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
 |        |               | ~+b~                | ~+v~                | ~+h~                | ~+d~                | ~+dd~                | ~+ddd~                | ~+dddd~                | ~+o~                     |
 |--------+---------------+---------------------+---------------------+---------------------+---------------------+----------------------+-----------------------+------------------------+--------------------------|
