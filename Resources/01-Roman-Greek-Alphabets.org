@@ -119,7 +119,7 @@
 |       |            | ~+b~             | ~+v~             | ~+h~             | ~+d~             | ~+dd~             | ~+ddd~             | ~+dddd~             | ~+o~                  |
 |-------+------------+------------------+------------------+------------------+------------------+-------------------+--------------------+---------------------+-----------------------|
 | ~a.~  | $\alpha$   | $\bar{\alpha}$   | $\vec{\alpha}$   | $\hat{\alpha}$   | $\dot{\alpha}$   | $\ddot{\alpha}$   | $\dddot{\alpha}$   | $\ddddot{\alpha}$   | $\mathring{\alpha}$   |
-| ~a.~  | $\beta$    | $\bar{\beta}$    | $\vec{\beta}$    | $\hat{\beta}$    | $\dot{\beta}$    | $\ddot{\beta}$    | $\dddot{\beta}$    | $\ddddot{\beta}$    | $\mathring{\beta}$    |
+| ~b.~  | $\beta$    | $\bar{\beta}$    | $\vec{\beta}$    | $\hat{\beta}$    | $\dot{\beta}$    | $\ddot{\beta}$    | $\dddot{\beta}$    | $\ddddot{\beta}$    | $\mathring{\beta}$    |
 | ~c.~  | $\psi$     | $\bar{\psi}$     | $\vec{\psi}$     | $\hat{\psi}$     | $\dot{\psi}$     | $\ddot{\psi}$     | $\dddot{\psi}$     | $\ddddot{\psi}$     | $\mathring{\psi}$     |
 | ~d.~  | $\delta$   | $\bar{\delta}$   | $\vec{\delta}$   | $\hat{\delta}$   | $\dot{\delta}$   | $\ddot{\delta}$   | $\dddot{\delta}$   | $\ddddot{\delta}$   | $\mathring{\delta}$   |
 | ~e.~  | $\epsilon$ | $\bar{\epsilon}$ | $\vec{\epsilon}$ | $\hat{\epsilon}$ | $\dot{\epsilon}$ | $\ddot{\epsilon}$ | $\dddot{\epsilon}$ | $\ddddot{\epsilon}$ | $\mathring{\epsilon}$ |
