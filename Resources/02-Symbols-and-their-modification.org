@@ -258,7 +258,7 @@
 **  Superscripts & Subsripts (power & lower)
 #+caption: Superscripts and Subscripts (name: ~table_super_sub_sym~)
 #+name: table_super_sub_sym
-#+attr_latex: :align |l|llll| :placement [H]
+#+attr_latex: :align |l|lll| :placement [H]
 |--------+-----------------+-------------+------------------------|
 |        |                 |             |                        |
 |--------+-----------------+-------------+------------------------|
