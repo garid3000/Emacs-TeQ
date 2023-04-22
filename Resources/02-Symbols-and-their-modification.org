@@ -23,22 +23,29 @@
 | ~wedge~ | $\wedge$     | ~\wedge~     |                      |
 | ~ell~   | $\ell$       | ~\ell~       |                      |
 | ~aleph~ | $\aleph$     | ~\aleph~     |                      |
+| ~%~     | $\%$         | ~\%~         |                      |
 |---------+--------------+--------------+----------------------|
 
-* Binary (as symbols between 2 things)
+* Binary (symbol between 2 things)
 **  Binary Operation
 #+caption: Simple Arithmetics operations (name: ~table_simple_arith~)
 #+name: table_simple_arith
 #+attr_latex: :align |llll| :placement [H]
-|------+----------+----------+------|
-| key  | sym      | latex    | note |
-|------+----------+----------+------|
-| ~+-~ | $\pm$    | ~\pm~    |      |
-| ~-+~ | $\mp$    | ~\mp~    |      |
-| ~xx~ | $\times$ | ~\times~ |      |
-| ~::~ | $\div$   | ~\div~   |      |
-| ~**~ | $\cdot$  | ~\cdot~  |      |
-|------+----------+----------+------|
+|------+-----------+----------+------|
+| key  | sym       | latex    | note |
+|------+-----------+----------+------|
+| ~+-~ | $\pm$     | ~\pm~    |      |
+| ~-+~ | $\mp$     | ~\mp~    |      |
+| ~xx~ | $\times$  | ~\times~ |      |
+| ~::~ | $\div$    | ~\div~   |      |
+| ~**~ | $\cdot$   | ~\cdot~  |      |
+|------+-----------+----------+------|
+| ~o+~ | $\oplus$  |          |      |
+| ~o-~ | $\ominus$ |          |      |
+| ~ox~ | $\otimes$ |          |      |
+| ~o*~ | $\odot$   |          |      |
+| ~o/~ | $\oslash$ |          |      |
+|------+-----------+----------+------|
 
 **  Binary Relations
 #+attr_latex: :align |l|llll| :placement [H]
@@ -96,7 +103,7 @@
 | ~nsi~   | $\mathbb{I}$ | ~\mathbb{I}~  | (~n~)umber (~s~)et (~i~)rriational |
 |---------+--------------+---------------+------------------------------------|
 
-**  Set relation symbols
+**  Set relation/operation symbols
 #+caption: Set relation symbols (name: ~table_set_rel_sym~)
 #+name: table_set_rel_sym
 #+attr_latex: :align |l|ll| :placement [H]
@@ -112,6 +119,10 @@
 | ~sup~  | $\supset$   | $\cancel{\supset}$ |
 | ~sup.~ | $\supseteq$ | $\nsupseteq$       |
 |--------+-------------+--------------------|
+| ~sand~ | $\cap$      |                    |
+| ~sor~  | $\cup$      |                    |
+| ~s-~   | $\setminus$ |                    |
+|--------+-------------+--------------------|
 
 * Geometry/Arrow Related
 **  Single Arrows:
@@ -119,7 +130,7 @@
 #+name: table_single_arrow
 #+attr_latex: :align |l|ll| :placement [H]
 |--------+-------------------+----------------------------|
-| key    |                   | ~+n~  (neg)                |
+| key    |                   | ~+n~                       |
 |--------+-------------------+----------------------------|
 | ~<-~   | $\leftarrow$      | $\nleftarrow$              |
 | ~->~   | $\rightarrow$     | $\nrightarrow$             |
@@ -140,7 +151,7 @@
 #+name: table_double_arrow
 #+attr_latex: :align |l|ll| :placement [H]
 |--------+-----------------------+--------------------------------|
-| key    |                       | ~+n~  (neg)                    |
+| key    |                       | ~+n~                           |
 |--------+-----------------------+--------------------------------|
 | ~<=~   | $\Leftarrow$          | $\nLeftarrow$                  |
 | ~=>~   | $\Rightarrow$         | $\nRightarrow$                 |
@@ -223,38 +234,61 @@
 #+caption: Symbol modification / accents (name: ~table_accent_names~)
 #+name: table_accent_names
 #+attr_latex: :align |llll| :placement [H]
-|----------+-----------------+-------------+---------------------------|
-| key      | sym             | latex       | description               |
-|----------+-----------------+-------------+---------------------------|
-| ~vec~    | $\vec{\Box}$    | ~\vec{~     |                           |
-| ~bar~    | $\bar{\Box}$    | ~\bar{~     |                           |
-| ~hat~    | $\hat{\Box}$    | ~\hat{~     |                           |
-| ~dot~    | $\dot{\Box}$    | ~\dot{~     |                           |
-| ~dot.~   | $\ddot{\Box}$   | ~\ddot{~    | $\dot{\Box}$ + ~.~  (var) |
-| ~dot..~  | $\dddot{\Box}$  | ~\dddot{~   | $\dot{\Box}$ + ~..~ (var) |
-| ~dot...~ | $\ddddot{\Box}$ | ~\ddddot{~  | $\dot{\Box}$ + ~..~ (var) |
-| ~dag~    | $\Box^\dagger$  | ~^\dagger~  |                           |
-| ~dag.~   | $\Box^\ddagger$ | ~^\ddagger~ | $\dagger$  + ~.~ (var)    |
-| ~*.~     | $\Box^*$        | ~^*~        |                           |
-| ~deg~    | $\Box^\circ$    | ~^\circ~    |                           |
-| ~tr~     | $\Box^T$        | ~^T~        |                           |
-| ~trn~    | $\Box^ {-T}$    | ~^{-T}~     | $\Box^T$ + ~n~ (neg)      |
-| ~inv~    | $\Box^ {-1}$    | ~^{-1}~     |                           |
-| ~can~    | $\cancel{\Box}$ | ~\cancel{~  |                           |
-|----------+-----------------+-------------+---------------------------|
+|----------+-----------------------------+---------------------------+---------------------------|
+| key      | sym                         | latex                     | description               |
+|----------+-----------------------------+---------------------------+---------------------------|
+| ~vec~    | $\vec{\Box}$                | ~\vec{~                   |                           |
+| ~vec.~   | $\overrightarrow{\Box\Box}$ | ~\overrightarrow{~        |                           |
+| ~bar~    | $\bar{\Box}$                | ~\bar{~                   |                           |
+| ~bar.~   | $\overline{\Box\Box}$       | ~\overline{~              |                           |
+| ~hat~    | $\hat{\Box}$                | ~\hat{~                   |                           |
+| ~hat.~   | $\widehat{\Box\Box}$        | ~\widehat{~               |                           |
+| ~dot~    | $\dot{\Box}$                | ~\dot{~                   |                           |
+| ~dot.~   | $\ddot{\Box}$               | ~\ddot{~                  | $\dot{\Box}$ + ~.~  (var) |
+| ~dot..~  | $\dddot{\Box}$              | ~\dddot{~                 | $\dot{\Box}$ + ~..~ (var) |
+| ~dot...~ | $\ddddot{\Box}$             | ~\ddddot{~                | $\dot{\Box}$ + ~..~ (var) |
+| ~sqrt~   | $\sqrt{\Box}$               | ~\sqrt{~                  |                           |
+| ~sqrt.~  | $\sqrt[\Box]{\Box}$         | ~\sqrt[ ]{~               |                           |
+| ~can~    | $\cancel{\Box}$             | ~\cancel{~                |                           |
+| ~ff~     | ~\frac{~                    | Fractions                 |                           |
+| ~box.~   | ~\boxed{~                   | Putting box around object |                           |
+| ~==~     | ~&=~                        | helps in align env.       |                           |
+|----------+-----------------------------+---------------------------+---------------------------|
 
 **  Superscripts & Subsripts (power & lower)
-#+caption: Super-scripts and Subscripts (name: ~table_super_sub_sym~)
+#+caption: Superscripts and Subscripts (name: ~table_super_sub_sym~)
 #+name: table_super_sub_sym
-#+attr_latex: :align |l|lllllllllllllll| :placement [H]
-|-----+------+------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------|
-|     | ~+p~ | ~+l~ | ~+0~     | ~+1~     | ~+2~     | ~+3~     | ~+4~     | ~+5~     | ~+6~     | ~+7~     | ~+8~     | ~+9~     | ~+n~     | ~+x~     | ~+i~     |
-|-----+------+------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------|
-| ~p~ | ~^{~ |      | $\Box^0$ | $\Box^1$ | $\Box^2$ | $\Box^3$ | $\Box^4$ | $\Box^5$ | $\Box^6$ | $\Box^7$ | $\Box^8$ | $\Box^9$ | $\Box^n$ | $\Box^x$ |          |
-| ~l~ |      | ~_{~ | $\Box_0$ | $\Box_1$ | $\Box_2$ | $\Box_3$ | $\Box_4$ | $\Box_5$ | $\Box_6$ | $\Box_7$ | $\Box_8$ | $\Box_9$ | $\Box_n$ |          | $\Box_i$ |
-|-----+------+------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------|
+#+attr_latex: :align |l|llll| :placement [H]
+|--------+-----------------+-------------+------------------------|
+|        |                 |             |                        |
+|--------+-----------------+-------------+------------------------|
+| ~pp~   | ~^{~            |             |                        |
+| ~^~    | ~^{~            |             |                        |
+| ~ll~   | ~_{~            |             |                        |
+| ~_~    | ~_{~            |             |                        |
+|--------+-----------------+-------------+------------------------|
+| ~px~   | ~^x~            |             |                        |
+| ~li~   | ~_i~            |             |                        |
+| ~*.~   | $\Box^*$        | ~^*~        |                        |
+| ~deg~  | $\Box^\circ$    | ~^\circ~    |                        |
+| ~tr~   | $\Box^T$        | ~^T~        |                        |
+| ~trn~  | $\Box^ {-T}$    | ~^{-T}~     | $\Box^T$ + ~n~ (neg)   |
+| ~inv~  | $\Box^ {-1}$    | ~^{-1}~     |                        |
+| ~ham~  | $\Box^ {H}$     | ~^{H}~      |                        |
+| ~dag~  | $\Box^\dagger$  | ~^\dagger~  |                        |
+| ~dag.~ | $\Box^\ddagger$ | ~^\ddagger~ | $\dagger$  + ~.~ (var) |
+|--------+-----------------+-------------+------------------------|
 
-**  Under & Over
+#+caption: Superscripts and Subscripts with 0-9 (name: ~table_super_sub_09~)
+#+name: table_super_sub_09
+#+attr_latex: :align |l|lllllllllll| :placement [H]
+|-----+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------|
+|     | ~+0~     | ~+1~     | ~+2~     | ~+3~     | ~+4~     | ~+5~     | ~+6~     | ~+7~     | ~+8~     | ~+9~     | ~+n~     |
+|-----+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------|
+| ~p~ | $\Box^0$ | $\Box^1$ | $\Box^2$ | $\Box^3$ | $\Box^4$ | $\Box^5$ | $\Box^6$ | $\Box^7$ | $\Box^8$ | $\Box^9$ | $\Box^n$ |
+| ~l~ | $\Box_0$ | $\Box_1$ | $\Box_2$ | $\Box_3$ | $\Box_4$ | $\Box_5$ | $\Box_6$ | $\Box_7$ | $\Box_8$ | $\Box_9$ | $\Box_n$ |
+|-----+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------|
+
 #+caption: Under/Over the symbol (name: ~table_under_over_sym~)
 #+name: table_under_over_sym
 #+attr_latex: :align |l|lll| :placement [H]

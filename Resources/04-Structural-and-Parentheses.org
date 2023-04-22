@@ -45,9 +45,10 @@
 | ~.}~          | $\left. \Box \right\}$        | $\left\vert \Box \right\}$                |
 | ~.>~          | $\left. \Box \right>$         | $\left\vert \Box \right>$                 |
 |---------------+-------------------------------+-------------------------------------------|
-| ~[].f~        | $\lfloor \Box \rfloor$        |                                           |
-| ~[].c~        | $\lceil \Box \rceil$          |                                           |
+| ~[].f~        | $\lfloor \Box \rfloor$        | $\left\lfloor \Box \right\rfloor$         |
+| ~[].c~        | $\lceil \Box \rceil$          | $\left\lceil \Box  \right\rceil$          |
 |---------------+-------------------------------+-------------------------------------------|
+
 *  Texts
 #+caption: Text types in equation (name: ~table_text~)
 #+name: table_text
@@ -62,18 +63,7 @@
 |------+------------------------+------------+------------------|
 
 *  Misc.
-#+caption: Misc. Table (name: ~table_misc~)
-#+name: table_misc
-#+attr_latex: :align |llll| :placement [H]
-|--------+-----------+---------------------------+-------------|
-| key    | sym       | latex                     | description |
-|--------+-----------+---------------------------+-------------|
-| ~ff~   | ~\frac{~  | Fractions                 |             |
-| ~box.~ | ~\boxed{~ | Putting box around object |             |
-| ~==~   | ~&=~      | helps in align env.       |             |
-|--------+-----------+---------------------------+-------------|
-
-*  XY Diagram related
+**  XY Diagram related
 #+caption:  XY diagram related (name: ~table_xy~)
 #+name: table_xy
 #+attr_latex: :align |llll| :placement [H]

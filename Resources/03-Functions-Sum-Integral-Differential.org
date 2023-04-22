@@ -21,8 +21,6 @@
 | ~max~   | $\max$               | ~\max~          |             |
 | ~min~   | $\min$               | ~\min~          |             |
 | ~dim~   | $\dim$               | ~\dim~          |             |
-| ~sqrt~  | $\sqrt{\Box}$        | ~\sqrt{~        |             |
-| ~sqrt.~ | $\sqrt[\Box]{\Box}$  | ~\sqrt[ ]{~     |             |
 | ~mod~   | $\Box \pmod \Box$    | ~\pmod~         |             |
 | ~mod.~  | $\Box \mod \Box$     | ~\mod~          |             |
 | ~mod..~ | $\Box \bmod \Box$    | ~\bmod~         |             |
@@ -53,8 +51,8 @@
 |---------+-----------------------------+-------------------+-----------------------|
 | key     | sym                         | latex             | description           |
 |---------+-----------------------------+-------------------+-----------------------|
-| ~il~    | $\sum\limits_\Box$          | ~\limits_{~       |                       |
-| ~il.~   | $\sum\limits_\Box^\Box$     | ~\limits_{0}^{ }~ | . (var)               |
+| ~il~    | ~\limits_\Box~              | ~\limits_{~       |                       |
+| ~il.~   | ~\limits_\Box^\Box~         | ~\limits_{0}^{ }~ | . (var)               |
 | \vert . | $\Box \Bigg\vert_\Box^\Box$ | ~\Bigg\vert_{~    | for definite integral |
 |---------+-----------------------------+-------------------+-----------------------|
 
@@ -65,7 +63,7 @@
 |----------+-----------+--------------------------+---------------------------+---------------------------------|
 |          |           | ~.~                      | ~..~                      | ~...~                           |
 |----------+-----------+--------------------------+---------------------------+---------------------------------|
-| ~lim~    | $\lim$    | $\lim \limits_ \Box$     | $\lim \limits_ {x \to 0}$ | $\lim \limits_ {x \to \infty}$  |
+| ~lim~    | $\lim$    | $\lim _ \Box$            | $\lim \limits_ {x \to 0}$ | $\lim \limits_ {x \to \infty}$  |
 | ~sum~    | $\sum$    | $\sum \limits_ \Box$     | $\sum \limits_ {i=1} ^n$  | $\sum \limits_ {i=1} ^\infty$   |
 | ~prod~   | $\prod$   | $\prod \limits_ \Box$    | $\prod \limits_ {i=1} ^n$ | $\prod \limits_ {i=1} ^\infty$  |
 | ~int~    | $\int$    | $\int \limits_\Box^\Box$ | $\int \limits_0^\infty$   | $\int \limits_{-\infty}^\infty$ |
@@ -86,21 +84,21 @@
 #+caption: Differential symbols (name: ~table_differential_d~)
 #+name: table_differential_d
 #+attr_latex: :align |l|lllll| :placement [H]
-|--------+--------------+-----------------+-----------------+-----------------+-----------------|
-|        |              | ~+2~            | ~+3~            | ~+4~            | ~+n~            |
-|--------+--------------+-----------------+-----------------+-----------------+-----------------|
-| ~dd.~  | $\dd$        | $\dd  ^ 2$      | $\dd  ^ 3$      | $\dd  ^ 4$      | $\dd  ^ n$      |
-| ~dx~   | $\dd x$      | $\dd x^ 2$      | $\dd x^ 3$      | $\dd x^ 4$      | $\dd x^ n$      |
-| ~dy~   | $\dd y$      | $\dd y^ 2$      | $\dd y^ 3$      | $\dd y^ 4$      | $\dd y^ n$      |
-| ~dz~   | $\dd z$      | $\dd z^ 2$      | $\dd z^ 3$      | $\dd z^ 4$      | $\dd z^ n$      |
-| ~dt~   | $\dd t$      | $\dd t^ 2$      | $\dd t^ 3$      | $\dd t^ 4$      | $\dd t^ n$      |
-|--------+--------------+-----------------+-----------------+-----------------+-----------------|
-| ~dd..~ | $\partial$   | $\partial  ^ 2$ | $\partial  ^ 3$ | $\partial  ^ 4$ | $\partial  ^ n$ |
-| ~dx.~  | $\partial x$ | $\partial x^ 2$ | $\partial x^ 3$ | $\partial x^ 4$ | $\partial x^ n$ |
-| ~dy.~  | $\partial y$ | $\partial y^ 2$ | $\partial y^ 3$ | $\partial y^ 4$ | $\partial y^ n$ |
-| ~dz.~  | $\partial z$ | $\partial z^ 2$ | $\partial z^ 3$ | $\partial z^ 4$ | $\partial z^ n$ |
-| ~dt.~  | $\partial t$ | $\partial t^ 2$ | $\partial t^ 3$ | $\partial t^ 4$ | $\partial t^ n$ |
-|--------+--------------+-----------------+-----------------+-----------------+-----------------|
+|--------+---------------+------------------+------------------+------------------+------------------|
+|        |               | ~+2~             | ~+3~             | ~+4~             | ~+n~             |
+|--------+---------------+------------------+------------------+------------------+------------------|
+| ~dd.~  | $\dd$         | $\dd   ^ 2$      | $\dd   ^ 3$      | $\dd   ^ 4$      | $\dd   ^ n$      |
+| ~dx~   | $\dd{}x$      | $\dd{}x^ 2$      | $\dd{}x^ 3$      | $\dd{}x^ 4$      | $\dd{}x^ n$      |
+| ~dy~   | $\dd{}y$      | $\dd{}y^ 2$      | $\dd{}y^ 3$      | $\dd{}y^ 4$      | $\dd{}y^ n$      |
+| ~dz~   | $\dd{}z$      | $\dd{}z^ 2$      | $\dd{}z^ 3$      | $\dd{}z^ 4$      | $\dd{}z^ n$      |
+| ~dt~   | $\dd{}t$      | $\dd{}t^ 2$      | $\dd{}t^ 3$      | $\dd{}t^ 4$      | $\dd{}t^ n$      |
+|--------+---------------+------------------+------------------+------------------+------------------|
+| ~dd..~ | $\partial$    | $\partial   ^ 2$ | $\partial   ^ 3$ | $\partial   ^ 4$ | $\partial   ^ n$ |
+| ~dx.~  | $\partial{}x$ | $\partial{}x^ 2$ | $\partial{}x^ 3$ | $\partial{}x^ 4$ | $\partial{}x^ n$ |
+| ~dy.~  | $\partial{}y$ | $\partial{}y^ 2$ | $\partial{}y^ 3$ | $\partial{}y^ 4$ | $\partial{}y^ n$ |
+| ~dz.~  | $\partial{}z$ | $\partial{}z^ 2$ | $\partial{}z^ 3$ | $\partial{}z^ 4$ | $\partial{}z^ n$ |
+| ~dt.~  | $\partial{}t$ | $\partial{}t^ 2$ | $\partial{}t^ 3$ | $\partial{}t^ 4$ | $\partial{}t^ n$ |
+|--------+---------------+------------------+------------------+------------------+------------------|
 
 
 #+caption: Derivatives (name: ~table_derivatives~)

@@ -13,7 +13,7 @@ Location: [[file:Resources/02-Symbols-and-their-modification.org]]
 * Function & Integral Differentials
 Location: [[file:Resources/03-Functions-Sum-Integral-Differential.org]]
 #+INCLUDE: "./Resources/03-Functions-Sum-Integral-Differential.org" 
-* COMMENT Structure & Parentheses
+* Structure & Parentheses
 Location: [[file:Resources/04-Structural-and-Parentheses.org]]
 #+INCLUDE: "./Resources/04-Structural-and-Parentheses.org"                          
 
@@ -109,6 +109,7 @@ def process_t2(table, comment):
 :header-args+: :var tbl2_spacing_sym=./Resources/02-Symbols-and-their-modification.org:table_spaicing_sym
 :header-args+: :var tbl2_accent_names=./Resources/02-Symbols-and-their-modification.org:table_accent_names
 :header-args+: :var tbl2_super_sub_sym=./Resources/02-Symbols-and-their-modification.org:table_super_sub_sym
+:header-args+: :var tbl2_super_sub_09=./Resources/02-Symbols-and-their-modification.org:table_super_sub_09
 :header-args+: :var tbl2_under_over_sym=./Resources/02-Symbols-and-their-modification.org:table_under_over_sym
 :header-args+: :var tbl3_named_funcs=./Resources/03-Functions-Sum-Integral-Differential.org:table_named_functions
 :header-args+: :var tbl3_trig_funcs=./Resources/03-Functions-Sum-Integral-Differential.org:table_trig_functions
@@ -119,45 +120,44 @@ def process_t2(table, comment):
 :header-args+: :var tbl4_elsip_func=./Resources/04-Structural-and-Parentheses.org:table_elisp_func
 :header-args+: :var tbl4_parentheses=./Resources/04-Structural-and-Parentheses.org:table_parentheses
 :header-args+: :var tbl4_text=./Resources/04-Structural-and-Parentheses.org:table_text
-:header-args+: :var tbl4_misc=./Resources/04-Structural-and-Parentheses.org:table_misc
 :header-args+: :var tbl4_xy=./Resources/04-Structural-and-Parentheses.org:table_xy
 :END:
 
 #+BEGIN_SRC python :session mysess :hlines no :results output code :wrap SRC elisp :results_switches ":tangle no :noweb yes" :exports none
-process_t1(tbl1_roman_upper, "Roman Upper")
-process_t1(tbl1_roman_lower, "Roman Lower")  
-process_t1(tbl1_roman_ijvar, "Roman ij math variation")
-process_t1(tbl1_greek_upper, "Greek Upper")
-process_t1(tbl1_greek_lower, "Greek Lower")
-process_t1(tbl1_greek_varia, "Greek variations")
+process_t1(tbl1_roman_upper,     "Roman Upper")
+process_t1(tbl1_roman_lower,     "Roman Lower")  
+process_t1(tbl1_roman_ijvar,     "Roman ij math")
+process_t1(tbl1_greek_upper,     "Greek Upper")
+process_t1(tbl1_greek_lower,     "Greek Lower")
+process_t1(tbl1_greek_varia,     "Greek variations")
 
-process_t2(tbl2_common_syms, "Common Symbols")
-process_t2(tbl2_simple_arith, "Simple Arithmetics")
-process_t1(tbl2_bin_relation, "Binary Relation")
-process_t2(tbl2_set_symbols, "Set Symbols")
-process_t1(tbl2_set_rel_sym, "Set Relation Symbols")
-process_t1(tbl2_logic_symbol, "Logic Symbols")
-process_t1(tbl2_single_arrow, "Single Line Arrows")
-process_t1(tbl2_double_arrow, "Double Line Arrows")
-process_t2(tbl2_long_arrow, "Long Arrows")
-process_t2(tbl2_3dot_symbol, "3 Dot variation")
-process_t2(tbl2_geo_symbol, "Geometry Symbols")
-process_t2(tbl2_spacing_sym, "Spacing Symbols")
-process_t2(tbl2_accent_names, "Accent names")
-process_t1(tbl2_super_sub_sym, "Super/Sub-scripts")
-process_t1(tbl2_under_over_sym, "Under/Over")
+process_t2(tbl2_common_syms,     "Common Symbols")
+process_t2(tbl2_simple_arith,    "Simple Arithmetics")
+process_t1(tbl2_bin_relation,    "Binary Relation")
+process_t2(tbl2_set_symbols,     "Set Symbols")
+process_t1(tbl2_set_rel_sym,     "Set Relation Symbols")
+process_t1(tbl2_logic_symbol,    "Logic Symbols")
+process_t1(tbl2_single_arrow,    "Single Line Arrows")
+process_t1(tbl2_double_arrow,    "Double Line Arrows")
+process_t2(tbl2_long_arrow,      "Long Arrows")
+process_t2(tbl2_3dot_symbol,     "3 Dot variation")
+process_t2(tbl2_geo_symbol,      "Geometry Symbols")
+process_t2(tbl2_spacing_sym,     "Spacing Symbols")
+process_t2(tbl2_accent_names,    "Accent names")
+process_t2(tbl2_super_sub_sym,   "Super/Sub-scripts")
+process_t1(tbl2_super_sub_09,    "Super/Sub-scripts 09")
+process_t1(tbl2_under_over_sym,  "Under/Over")
 
-process_t2(tbl3_named_funcs, "Named Functinos")
-process_t2(tbl3_trig_funcs, "Trignometric Functinos")
-process_t2(tbl3_iter_tools, "Iteration Tools")
-process_t1(tbl3_iter_funcs, "Iteration Functions")
-process_t1(tbl3_differential, "Differential d")
-process_t1(tbl3_derivatives, "Derivatives")
+process_t2(tbl3_named_funcs,     "Named Functinos")
+process_t2(tbl3_trig_funcs,      "Trignometric Functinos")
+process_t2(tbl3_iter_tools,      "Iteration Tools")
+process_t1(tbl3_iter_funcs,      "Iteration Functions")
+process_t1(tbl3_differential,    "Differential d")
+process_t1(tbl3_derivatives,     "Derivatives")
 
-process_t1(tbl4_parentheses, "Parentheses")
-process_t2(tbl4_text, "Math Text")
-process_t2(tbl4_misc, "Misc")
-process_t2(tbl4_xy, "XY diagram")
+process_t1(tbl4_parentheses,     "Parentheses")
+process_t2(tbl4_text,            "Math Text")
+process_t2(tbl4_xy,              "XY diagram")
 #+END_SRC
 
 #+name: el-from-table
@@ -428,7 +428,7 @@ process_t2(tbl4_xy, "XY diagram")
 ("zddd"  ["\\dddot{z}"     ]) ("zdddd" ["\\ddddot{z}"    ])
 ("zo"    ["\\mathring{z}"  ]) 
 
-;; --------------- Roman ij math variation --------------- ;;
+;; --------------- Roman ij math --------------- ;;
 ("i.."   ["\\imath"        ]) ("i..b"  ["\\bar{\\imath}" ])
 ("i..v"  ["\\vec{\\imath}" ]) ("i..h"  ["\\hat{\\imath}" ])
 ("i..d"  ["\\dot{\\imath}" ]) ("i..dd" ["\\ddot{\\imath}"])
@@ -729,11 +729,15 @@ process_t2(tbl4_xy, "XY diagram")
 ("nab"   ["\\nabla"        ]) ("cm"    ["\\checkmark"    ])
 ("bu"    ["\\bullet"       ]) ("vee"   ["\\vee"          ])
 ("wedge" ["\\wedge"        ]) ("ell"   ["\\ell"          ])
-("aleph" ["\\aleph"        ]) 
+("aleph" ["\\aleph"        ]) ("%"     ["\\%"            ])
+
 ;; --------------- Simple Arithmetics --------------- ;;
 ("+-"    ["\\pm"           ]) ("-+"    ["\\mp"           ])
 ("xx"    ["\\times"        ]) ("::"    ["\\div"          ])
-("**"    ["\\cdot"         ]) 
+("**"    ["\\cdot"         ]) ("o+"    ["\\oplus"        ])
+("o-"    ["\\ominus"       ]) ("ox"    ["\\otimes"       ])
+("o*"    ["\\odot"         ]) ("o/"    ["\\oslash"       ])
+
 ;; --------------- Binary Relation --------------- ;;
 ("="     ["="              ]) ("=n"    ["\\neq"          ])
 ("=?"    ["\\stackrel{?}{=}"]) ("=y"    ["\\stackrel{\\checkmark}{=}"])
@@ -777,6 +781,9 @@ process_t2(tbl4_xy, "XY diagram")
 ("sub."  ["\\subseteq"     ]) ("sub.n" ["\\nsubseteq"    ])
 ("sup"   ["\\supset"       ]) ("supn"  ["\\cancel{\\supset}"])
 ("sup."  ["\\supseteq"     ]) ("sup.n" ["\\nsupseteq"    ])
+("sand"  ["\\cap"          ]) ("sandn" [""               ])
+("sor"   ["\\cup"          ]) ("sorn"  [""               ])
+("s-"    ["\\setminus"     ]) ("s-n"   [""               ])
 
 ;; --------------- Logic Symbols --------------- ;;
 ("or"    ["\\lor"          ]) ("or."   ["\\text{or}"     ])
@@ -787,28 +794,28 @@ process_t2(tbl4_xy, "XY diagram")
 ("else"  [""               ]) ("else." ["\\text{else}"   ])
 
 ;; --------------- Single Line Arrows --------------- ;;
-("<-"    ["\\leftarrow"    ]) ("<-n  (neg)" ["\\nleftarrow"   ])
-("->"    ["\\rightarrow"   ]) ("->n  (neg)" ["\\nrightarrow"  ])
-("-^"    ["\\uparrow"      ]) ("-^n  (neg)" ["\\nuparrow"     ])
-("-v"    ["\\downarrow"    ]) ("-vn  (neg)" ["\\ndownarrow"   ])
-("<->"   ["\\leftrightarrow"]) ("<->n  (neg)" ["\\nleftrightarrow"])
-("-->"   ["\\longrightarrow"]) ("-->n  (neg)" ["\\cancel{\\longrightarrow}"])
-("<--"   ["\\longleftarrow"]) ("<--n  (neg)" ["\\cancel{\\longleftarrow}"])
-("to"    ["\\to"           ]) ("ton  (neg)" ["\\nrightarrow"  ])
-("mto"   ["\\mapsto"       ]) ("mton  (neg)" ["\\cancel{\\mapsto}"])
-("mto."  ["\\longmapsto"   ]) ("mto.n  (neg)" ["\\cancel{\\longmapsto}"])
+("<-"    ["\\leftarrow"    ]) ("<-n"   ["\\nleftarrow"   ])
+("->"    ["\\rightarrow"   ]) ("->n"   ["\\nrightarrow"  ])
+("-^"    ["\\uparrow"      ]) ("-^n"   ["\\nuparrow"     ])
+("-v"    ["\\downarrow"    ]) ("-vn"   ["\\ndownarrow"   ])
+("<->"   ["\\leftrightarrow"]) ("<->n"  ["\\nleftrightarrow"])
+("-->"   ["\\longrightarrow"]) ("-->n"  ["\\cancel{\\longrightarrow}"])
+("<--"   ["\\longleftarrow"]) ("<--n"  ["\\cancel{\\longleftarrow}"])
+("to"    ["\\to"           ]) ("ton"   ["\\nrightarrow"  ])
+("mto"   ["\\mapsto"       ]) ("mton"  ["\\cancel{\\mapsto}"])
+("mto."  ["\\longmapsto"   ]) ("mto.n" ["\\cancel{\\longmapsto}"])
 
 ;; --------------- Double Line Arrows --------------- ;;
-("<="    ["\\Leftarrow"    ]) ("<=n  (neg)" ["\\nLeftarrow"   ])
-("=>"    ["\\Rightarrow"   ]) ("=>n  (neg)" ["\\nRightarrow"  ])
-("=^"    ["\\Uparrow"      ]) ("=^n  (neg)" ["\\cancel{\\Uparrow}"])
-("=v"    ["\\Downarrow"    ]) ("=vn  (neg)" ["\\cancel{\\Downarrow}"])
-("<=>"   ["\\Leftrightarrow"]) ("<=>n  (neg)" ["\\nLeftrightarrow"])
-("iff"   ["\\Leftrightarrow"]) ("iffn  (neg)" ["\\nLeftrightarrow"])
-("<=="   ["\\Longleftarrow"]) ("<==n  (neg)" ["\\cancel{\\Longleftarrow}"])
-("==>"   ["\\Longrightarrow"]) ("==>n  (neg)" ["\\cancel{\\Longrightarrow}"])
-("<==>"  ["\\Longleftrightarrow"]) ("<==>n  (neg)" ["\\cancel{\\Longleftrightarrow}"])
-("iff."  ["\\Longleftrightarrow"]) ("iff.n  (neg)" ["\\cancel{\\Longleftrightarrow}"])
+("<="    ["\\Leftarrow"    ]) ("<=n"   ["\\nLeftarrow"   ])
+("=>"    ["\\Rightarrow"   ]) ("=>n"   ["\\nRightarrow"  ])
+("=^"    ["\\Uparrow"      ]) ("=^n"   ["\\cancel{\\Uparrow}"])
+("=v"    ["\\Downarrow"    ]) ("=vn"   ["\\cancel{\\Downarrow}"])
+("<=>"   ["\\Leftrightarrow"]) ("<=>n"  ["\\nLeftrightarrow"])
+("iff"   ["\\Leftrightarrow"]) ("iffn"  ["\\nLeftrightarrow"])
+("<=="   ["\\Longleftarrow"]) ("<==n"  ["\\cancel{\\Longleftarrow}"])
+("==>"   ["\\Longrightarrow"]) ("==>n"  ["\\cancel{\\Longrightarrow}"])
+("<==>"  ["\\Longleftrightarrow"]) ("<==>n" ["\\cancel{\\Longleftrightarrow}"])
+("iff."  ["\\Longleftrightarrow"]) ("iff.n" ["\\cancel{\\Longleftrightarrow}"])
 
 ;; --------------- Long Arrows --------------- ;;
 ("<---"  ["\\xleftarrow[ ]{ }"]) ("--->"  ["\\xrightarrow[ ]{ }"])
@@ -831,31 +838,37 @@ process_t2(tbl4_xy, "XY diagram")
 ("sp..." [" \\quad "       ]) ("sp...." [" \\qquad "      ])
 
 ;; --------------- Accent names --------------- ;;
-("vec"   ["\\vec{ }"       ]) ("bar"   ["\\bar{ }"       ])
-("hat"   ["\\hat{ }"       ]) ("dot"   ["\\dot{ }"       ])
-("dot."  ["\\ddot{ }"      ]) ("dot.." ["\\dddot{ }"     ])
-("dot..." ["\\ddddot{ }"    ]) ("dag"   [" ^\\dagger"     ])
-("dag."  [" ^\\ddagger"    ]) ("*."    [" ^*"            ])
-("deg"   [" ^\\circ"       ]) ("tr"    [" ^T"            ])
-("trn"   [" ^{-T}"         ]) ("inv"   [" ^{-1}"         ])
-("can"   ["\\cancel{ }"    ]) 
+("vec"   ["\\vec{ }"       ]) ("vec."  ["\\overrightarrow{  }"])
+("bar"   ["\\bar{ }"       ]) ("bar."  ["\\overline{  }" ])
+("hat"   ["\\hat{ }"       ]) ("hat."  ["\\widehat{  }"  ])
+("dot"   ["\\dot{ }"       ]) ("dot."  ["\\ddot{ }"      ])
+("dot.." ["\\dddot{ }"     ]) ("dot..." ["\\ddddot{ }"    ])
+("sqrt"  ["\\sqrt{ }"      ]) ("sqrt." ["\\sqrt[ ]{ }"   ])
+("can"   ["\\cancel{ }"    ]) ("ff"    ["\\frac{"        ])
+("box."  ["\\boxed{"       ]) ("=="    ["&="             ])
+
 ;; --------------- Super/Sub-scripts --------------- ;;
-("pp"    ["^{"             ]) ("pl"    [""               ])
+("pp"    ["^{"             ]) ("^"     ["^{"             ])
+("ll"    ["_{"             ]) ("_"     ["_{"             ])
+("px"    ["^x"             ]) ("li"    ["_i"             ])
+("*."    [" ^*"            ]) ("deg"   [" ^\\circ"       ])
+("tr"    [" ^T"            ]) ("trn"   [" ^{-T}"         ])
+("inv"   [" ^{-1}"         ]) ("ham"   [" ^{H}"          ])
+("dag"   [" ^\\dagger"     ]) ("dag."  [" ^\\ddagger"    ])
+
+;; --------------- Super/Sub-scripts 09 --------------- ;;
 ("p0"    [" ^0"            ]) ("p1"    [" ^1"            ])
 ("p2"    [" ^2"            ]) ("p3"    [" ^3"            ])
 ("p4"    [" ^4"            ]) ("p5"    [" ^5"            ])
 ("p6"    [" ^6"            ]) ("p7"    [" ^7"            ])
 ("p8"    [" ^8"            ]) ("p9"    [" ^9"            ])
-("pn"    [" ^n"            ]) ("px"    [" ^x"            ])
-("pi"    [""               ]) 
-("lp"    [""               ]) ("ll"    ["_{"             ])
+("pn"    [" ^n"            ]) 
 ("l0"    [" _0"            ]) ("l1"    [" _1"            ])
 ("l2"    [" _2"            ]) ("l3"    [" _3"            ])
 ("l4"    [" _4"            ]) ("l5"    [" _5"            ])
 ("l6"    [" _6"            ]) ("l7"    [" _7"            ])
 ("l8"    [" _8"            ]) ("l9"    [" _9"            ])
-("ln"    [" _n"            ]) ("lx"    [""               ])
-("li"    [" _i"            ]) 
+("ln"    [" _n"            ]) 
 
 ;; --------------- Under/Over --------------- ;;
 ("__"    ["\\underset{ }{ }"]) ("__."   ["\\underbrace{ }_ "])
@@ -870,7 +883,6 @@ process_t2(tbl4_xy, "XY diagram")
 ("Re"    ["\\mathrm{Re}"   ]) ("ln"    ["\\ln"           ])
 ("log"   ["\\log"          ]) ("max"   ["\\max"          ])
 ("min"   ["\\min"          ]) ("dim"   ["\\dim"          ])
-("sqrt"  ["\\sqrt{ }"      ]) ("sqrt." ["\\sqrt[ ]{ }"   ])
 ("mod"   [" \\pmod "       ]) ("mod."  [" \\mod "        ])
 ("mod.." [" \\bmod "       ]) ("binom" ["\\binom{ }{ }"  ])
 
@@ -880,10 +892,10 @@ process_t2(tbl4_xy, "XY diagram")
 ("acos"  ["\\arccos"       ]) ("asin"  ["\\arcsin"       ])
 ("atan"  ["\\arctan"       ]) 
 ;; --------------- Iteration Tools --------------- ;;
-("il"    ["\\sum\\limits_ "]) ("il."   ["\\sum\\limits_ ^ "])
+("il"    ["\\limits_ "     ]) ("il."   ["\\limits_ ^ "   ])
 ("| ."   [" \\Bigg\\vert_ ^ "]) 
 ;; --------------- Iteration Functions --------------- ;;
-("lim"   ["\\lim"          ]) ("lim."  ["\\lim\\limits_ "])
+("lim"   ["\\lim"          ]) ("lim."  ["\\lim_ "        ])
 ("lim.." ["\\lim\\limits_{x\\to0}"]) ("lim..." ["\\lim\\limits_{x\\to\\infty}"])
 ("sum"   ["\\sum"          ]) ("sum."  ["\\sum\\limits_ "])
 ("sum.." ["\\sum\\limits_{i=1}^n"]) ("sum..." ["\\sum\\limits_{i=1}^\\infty"])
@@ -978,16 +990,13 @@ process_t2(tbl4_xy, "XY diagram")
 (".]"    ["\\left. \\right]"]) (".]."   ["\\left\\vert \\right]"])
 (".}"    ["\\left. \\right\\}"]) (".}."   ["\\left\\vert \\right\\}"])
 (".>"    ["\\left. \\right>"]) (".>."   ["\\left\\vert \\right>"])
-("[].f"  ["\\lfloor \\rfloor"]) ("[].f." [""               ])
-("[].c"  ["\\lceil \\rceil"]) ("[].c." [""               ])
+("[].f"  ["\\lfloor \\rfloor"]) ("[].f." ["\\left\\lfloor \\right\\rfloor"])
+("[].c"  ["\\lceil \\rceil"]) ("[].c." ["\\left\\lceil \\right\\rceil"])
 
 ;; --------------- Math Text --------------- ;;
 ("te"    ["\\text{LoremIpsum}"]) ("tt"    ["\\mathrm{LoremIpsum}"])
 ("tb"    ["\\mathbf{LoremIpsum}"]) ("ti"    ["\\mathit{LoremIpsum}"])
 
-;; --------------- Misc --------------- ;;
-("ff"    ["\\frac{"        ]) ("box."  ["\\boxed{"       ])
-("=="    ["&="             ]) 
 ;; --------------- XY diagram --------------- ;;
 ("xy"    ["\\xymatrix{"    ]) ("ar"    ["\\ar"           ])
 #+end_SRC

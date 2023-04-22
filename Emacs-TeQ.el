@@ -380,7 +380,7 @@
     ("zddd"  ["\\dddot{z}"     ]) ("zdddd" ["\\ddddot{z}"    ])
     ("zo"    ["\\mathring{z}"  ]) 
     
-    ;; --------------- Roman ij math variation --------------- ;;
+    ;; --------------- Roman ij math --------------- ;;
     ("i.."   ["\\imath"        ]) ("i..b"  ["\\bar{\\imath}" ])
     ("i..v"  ["\\vec{\\imath}" ]) ("i..h"  ["\\hat{\\imath}" ])
     ("i..d"  ["\\dot{\\imath}" ]) ("i..dd" ["\\ddot{\\imath}"])
@@ -681,11 +681,15 @@
     ("nab"   ["\\nabla"        ]) ("cm"    ["\\checkmark"    ])
     ("bu"    ["\\bullet"       ]) ("vee"   ["\\vee"          ])
     ("wedge" ["\\wedge"        ]) ("ell"   ["\\ell"          ])
-    ("aleph" ["\\aleph"        ]) 
+    ("aleph" ["\\aleph"        ]) ("%"     ["\\%"            ])
+    
     ;; --------------- Simple Arithmetics --------------- ;;
     ("+-"    ["\\pm"           ]) ("-+"    ["\\mp"           ])
     ("xx"    ["\\times"        ]) ("::"    ["\\div"          ])
-    ("**"    ["\\cdot"         ]) 
+    ("**"    ["\\cdot"         ]) ("o+"    ["\\oplus"        ])
+    ("o-"    ["\\ominus"       ]) ("ox"    ["\\otimes"       ])
+    ("o*"    ["\\odot"         ]) ("o/"    ["\\oslash"       ])
+    
     ;; --------------- Binary Relation --------------- ;;
     ("="     ["="              ]) ("=n"    ["\\neq"          ])
     ("=?"    ["\\stackrel{?}{=}"]) ("=y"    ["\\stackrel{\\checkmark}{=}"])
@@ -729,6 +733,9 @@
     ("sub."  ["\\subseteq"     ]) ("sub.n" ["\\nsubseteq"    ])
     ("sup"   ["\\supset"       ]) ("supn"  ["\\cancel{\\supset}"])
     ("sup."  ["\\supseteq"     ]) ("sup.n" ["\\nsupseteq"    ])
+    ("sand"  ["\\cap"          ]) ("sandn" [""               ])
+    ("sor"   ["\\cup"          ]) ("sorn"  [""               ])
+    ("s-"    ["\\setminus"     ]) ("s-n"   [""               ])
     
     ;; --------------- Logic Symbols --------------- ;;
     ("or"    ["\\lor"          ]) ("or."   ["\\text{or}"     ])
@@ -739,28 +746,28 @@
     ("else"  [""               ]) ("else." ["\\text{else}"   ])
     
     ;; --------------- Single Line Arrows --------------- ;;
-    ("<-"    ["\\leftarrow"    ]) ("<-n  (neg)" ["\\nleftarrow"   ])
-    ("->"    ["\\rightarrow"   ]) ("->n  (neg)" ["\\nrightarrow"  ])
-    ("-^"    ["\\uparrow"      ]) ("-^n  (neg)" ["\\nuparrow"     ])
-    ("-v"    ["\\downarrow"    ]) ("-vn  (neg)" ["\\ndownarrow"   ])
-    ("<->"   ["\\leftrightarrow"]) ("<->n  (neg)" ["\\nleftrightarrow"])
-    ("-->"   ["\\longrightarrow"]) ("-->n  (neg)" ["\\cancel{\\longrightarrow}"])
-    ("<--"   ["\\longleftarrow"]) ("<--n  (neg)" ["\\cancel{\\longleftarrow}"])
-    ("to"    ["\\to"           ]) ("ton  (neg)" ["\\nrightarrow"  ])
-    ("mto"   ["\\mapsto"       ]) ("mton  (neg)" ["\\cancel{\\mapsto}"])
-    ("mto."  ["\\longmapsto"   ]) ("mto.n  (neg)" ["\\cancel{\\longmapsto}"])
+    ("<-"    ["\\leftarrow"    ]) ("<-n"   ["\\nleftarrow"   ])
+    ("->"    ["\\rightarrow"   ]) ("->n"   ["\\nrightarrow"  ])
+    ("-^"    ["\\uparrow"      ]) ("-^n"   ["\\nuparrow"     ])
+    ("-v"    ["\\downarrow"    ]) ("-vn"   ["\\ndownarrow"   ])
+    ("<->"   ["\\leftrightarrow"]) ("<->n"  ["\\nleftrightarrow"])
+    ("-->"   ["\\longrightarrow"]) ("-->n"  ["\\cancel{\\longrightarrow}"])
+    ("<--"   ["\\longleftarrow"]) ("<--n"  ["\\cancel{\\longleftarrow}"])
+    ("to"    ["\\to"           ]) ("ton"   ["\\nrightarrow"  ])
+    ("mto"   ["\\mapsto"       ]) ("mton"  ["\\cancel{\\mapsto}"])
+    ("mto."  ["\\longmapsto"   ]) ("mto.n" ["\\cancel{\\longmapsto}"])
     
     ;; --------------- Double Line Arrows --------------- ;;
-    ("<="    ["\\Leftarrow"    ]) ("<=n  (neg)" ["\\nLeftarrow"   ])
-    ("=>"    ["\\Rightarrow"   ]) ("=>n  (neg)" ["\\nRightarrow"  ])
-    ("=^"    ["\\Uparrow"      ]) ("=^n  (neg)" ["\\cancel{\\Uparrow}"])
-    ("=v"    ["\\Downarrow"    ]) ("=vn  (neg)" ["\\cancel{\\Downarrow}"])
-    ("<=>"   ["\\Leftrightarrow"]) ("<=>n  (neg)" ["\\nLeftrightarrow"])
-    ("iff"   ["\\Leftrightarrow"]) ("iffn  (neg)" ["\\nLeftrightarrow"])
-    ("<=="   ["\\Longleftarrow"]) ("<==n  (neg)" ["\\cancel{\\Longleftarrow}"])
-    ("==>"   ["\\Longrightarrow"]) ("==>n  (neg)" ["\\cancel{\\Longrightarrow}"])
-    ("<==>"  ["\\Longleftrightarrow"]) ("<==>n  (neg)" ["\\cancel{\\Longleftrightarrow}"])
-    ("iff."  ["\\Longleftrightarrow"]) ("iff.n  (neg)" ["\\cancel{\\Longleftrightarrow}"])
+    ("<="    ["\\Leftarrow"    ]) ("<=n"   ["\\nLeftarrow"   ])
+    ("=>"    ["\\Rightarrow"   ]) ("=>n"   ["\\nRightarrow"  ])
+    ("=^"    ["\\Uparrow"      ]) ("=^n"   ["\\cancel{\\Uparrow}"])
+    ("=v"    ["\\Downarrow"    ]) ("=vn"   ["\\cancel{\\Downarrow}"])
+    ("<=>"   ["\\Leftrightarrow"]) ("<=>n"  ["\\nLeftrightarrow"])
+    ("iff"   ["\\Leftrightarrow"]) ("iffn"  ["\\nLeftrightarrow"])
+    ("<=="   ["\\Longleftarrow"]) ("<==n"  ["\\cancel{\\Longleftarrow}"])
+    ("==>"   ["\\Longrightarrow"]) ("==>n"  ["\\cancel{\\Longrightarrow}"])
+    ("<==>"  ["\\Longleftrightarrow"]) ("<==>n" ["\\cancel{\\Longleftrightarrow}"])
+    ("iff."  ["\\Longleftrightarrow"]) ("iff.n" ["\\cancel{\\Longleftrightarrow}"])
     
     ;; --------------- Long Arrows --------------- ;;
     ("<---"  ["\\xleftarrow[ ]{ }"]) ("--->"  ["\\xrightarrow[ ]{ }"])
@@ -783,31 +790,37 @@
     ("sp..." [" \\quad "       ]) ("sp...." [" \\qquad "      ])
     
     ;; --------------- Accent names --------------- ;;
-    ("vec"   ["\\vec{ }"       ]) ("bar"   ["\\bar{ }"       ])
-    ("hat"   ["\\hat{ }"       ]) ("dot"   ["\\dot{ }"       ])
-    ("dot."  ["\\ddot{ }"      ]) ("dot.." ["\\dddot{ }"     ])
-    ("dot..." ["\\ddddot{ }"    ]) ("dag"   [" ^\\dagger"     ])
-    ("dag."  [" ^\\ddagger"    ]) ("*."    [" ^*"            ])
-    ("deg"   [" ^\\circ"       ]) ("tr"    [" ^T"            ])
-    ("trn"   [" ^{-T}"         ]) ("inv"   [" ^{-1}"         ])
-    ("can"   ["\\cancel{ }"    ]) 
+    ("vec"   ["\\vec{ }"       ]) ("vec."  ["\\overrightarrow{  }"])
+    ("bar"   ["\\bar{ }"       ]) ("bar."  ["\\overline{  }" ])
+    ("hat"   ["\\hat{ }"       ]) ("hat."  ["\\widehat{  }"  ])
+    ("dot"   ["\\dot{ }"       ]) ("dot."  ["\\ddot{ }"      ])
+    ("dot.." ["\\dddot{ }"     ]) ("dot..." ["\\ddddot{ }"    ])
+    ("sqrt"  ["\\sqrt{ }"      ]) ("sqrt." ["\\sqrt[ ]{ }"   ])
+    ("can"   ["\\cancel{ }"    ]) ("ff"    ["\\frac{"        ])
+    ("box."  ["\\boxed{"       ]) ("=="    ["&="             ])
+    
     ;; --------------- Super/Sub-scripts --------------- ;;
-    ("pp"    ["^{"             ]) ("pl"    [""               ])
+    ("pp"    ["^{"             ]) ("^"     ["^{"             ])
+    ("ll"    ["_{"             ]) ("_"     ["_{"             ])
+    ("px"    ["^x"             ]) ("li"    ["_i"             ])
+    ("*."    [" ^*"            ]) ("deg"   [" ^\\circ"       ])
+    ("tr"    [" ^T"            ]) ("trn"   [" ^{-T}"         ])
+    ("inv"   [" ^{-1}"         ]) ("ham"   [" ^{H}"          ])
+    ("dag"   [" ^\\dagger"     ]) ("dag."  [" ^\\ddagger"    ])
+    
+    ;; --------------- Super/Sub-scripts 09 --------------- ;;
     ("p0"    [" ^0"            ]) ("p1"    [" ^1"            ])
     ("p2"    [" ^2"            ]) ("p3"    [" ^3"            ])
     ("p4"    [" ^4"            ]) ("p5"    [" ^5"            ])
     ("p6"    [" ^6"            ]) ("p7"    [" ^7"            ])
     ("p8"    [" ^8"            ]) ("p9"    [" ^9"            ])
-    ("pn"    [" ^n"            ]) ("px"    [" ^x"            ])
-    ("pi"    [""               ]) 
-    ("lp"    [""               ]) ("ll"    ["_{"             ])
+    ("pn"    [" ^n"            ]) 
     ("l0"    [" _0"            ]) ("l1"    [" _1"            ])
     ("l2"    [" _2"            ]) ("l3"    [" _3"            ])
     ("l4"    [" _4"            ]) ("l5"    [" _5"            ])
     ("l6"    [" _6"            ]) ("l7"    [" _7"            ])
     ("l8"    [" _8"            ]) ("l9"    [" _9"            ])
-    ("ln"    [" _n"            ]) ("lx"    [""               ])
-    ("li"    [" _i"            ]) 
+    ("ln"    [" _n"            ]) 
     
     ;; --------------- Under/Over --------------- ;;
     ("__"    ["\\underset{ }{ }"]) ("__."   ["\\underbrace{ }_ "])
@@ -822,7 +835,6 @@
     ("Re"    ["\\mathrm{Re}"   ]) ("ln"    ["\\ln"           ])
     ("log"   ["\\log"          ]) ("max"   ["\\max"          ])
     ("min"   ["\\min"          ]) ("dim"   ["\\dim"          ])
-    ("sqrt"  ["\\sqrt{ }"      ]) ("sqrt." ["\\sqrt[ ]{ }"   ])
     ("mod"   [" \\pmod "       ]) ("mod."  [" \\mod "        ])
     ("mod.." [" \\bmod "       ]) ("binom" ["\\binom{ }{ }"  ])
     
@@ -832,10 +844,10 @@
     ("acos"  ["\\arccos"       ]) ("asin"  ["\\arcsin"       ])
     ("atan"  ["\\arctan"       ]) 
     ;; --------------- Iteration Tools --------------- ;;
-    ("il"    ["\\sum\\limits_ "]) ("il."   ["\\sum\\limits_ ^ "])
+    ("il"    ["\\limits_ "     ]) ("il."   ["\\limits_ ^ "   ])
     ("| ."   [" \\Bigg\\vert_ ^ "]) 
     ;; --------------- Iteration Functions --------------- ;;
-    ("lim"   ["\\lim"          ]) ("lim."  ["\\lim\\limits_ "])
+    ("lim"   ["\\lim"          ]) ("lim."  ["\\lim_ "        ])
     ("lim.." ["\\lim\\limits_{x\\to0}"]) ("lim..." ["\\lim\\limits_{x\\to\\infty}"])
     ("sum"   ["\\sum"          ]) ("sum."  ["\\sum\\limits_ "])
     ("sum.." ["\\sum\\limits_{i=1}^n"]) ("sum..." ["\\sum\\limits_{i=1}^\\infty"])
@@ -930,16 +942,13 @@
     (".]"    ["\\left. \\right]"]) (".]."   ["\\left\\vert \\right]"])
     (".}"    ["\\left. \\right\\}"]) (".}."   ["\\left\\vert \\right\\}"])
     (".>"    ["\\left. \\right>"]) (".>."   ["\\left\\vert \\right>"])
-    ("[].f"  ["\\lfloor \\rfloor"]) ("[].f." [""               ])
-    ("[].c"  ["\\lceil \\rceil"]) ("[].c." [""               ])
+    ("[].f"  ["\\lfloor \\rfloor"]) ("[].f." ["\\left\\lfloor \\right\\rfloor"])
+    ("[].c"  ["\\lceil \\rceil"]) ("[].c." ["\\left\\lceil \\right\\rceil"])
     
     ;; --------------- Math Text --------------- ;;
     ("te"    ["\\text{LoremIpsum}"]) ("tt"    ["\\mathrm{LoremIpsum}"])
     ("tb"    ["\\mathbf{LoremIpsum}"]) ("ti"    ["\\mathit{LoremIpsum}"])
     
-    ;; --------------- Misc --------------- ;;
-    ("ff"    ["\\frac{"        ]) ("box."  ["\\boxed{"       ])
-    ("=="    ["&="             ]) 
     ;; --------------- XY diagram --------------- ;;
     ("xy"    ["\\xymatrix{"    ]) ("ar"    ["\\ar"           ])
 )
