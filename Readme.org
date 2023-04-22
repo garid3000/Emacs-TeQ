@@ -34,31 +34,46 @@
 
 1. To select input method: Do (~M-x set-input-method~) and select ~TeQ-Math~
 2. To turn on/off: (~M-x toggle-input-method~) or it's also bind to  (~C-\~)
-3. While it's on:
-   1. Try typing alphabet related symbols: ([[file:Resources/01-Roman-Greek-Alphabets.org][01-Roman-Greek]]):
-      - =a.dd= gives you =\ddot{\alpha}= ($\ddot{\alpha}$). Break-down:  (=a.= ($\alpha$) + =dd= ($\ddot{\Box}$))
-      - =Rv= gives you =\vec{R}= ($\vec{R}$). Break-down:  (=R= ($R$) + =v= ($\vec{\Box}$))
-   2. Try typing symbols ([[file:Resources/02-Symbols-and-their-modification.org][02-Symbols]]):
-      - ~=>~ gives you =\Rightarrow= ($\Rightarrow$).
-      - ~<=>n~ gives you =\nLeftrightarrow= ($\nLeftrightarrow$). Break-down: ( =<=>= = ($\Leftrightarrow$) + =n= (add: negate))
-      - ~exn~ gives you =\nexists= ($\nexists$). Break-down: ( =ex= = ($\exists$) + =n= (add: negate))
-      - ~inn~ gives you =\notin= ($\notin$). Break-down: ( =ex= = ($\exists$) + =n= (add: negate))
-   3. Try typing functions ([[file:Resources/03-Functions-Sum-Integral-Differential.org][03-Functions]]):
-      - =cosn= gives you =\arccos= ($\arccos$), Break-down:  =cos= ($\cos$) + =n= (add: negate)
-      - =sin2= gives you =\sin^2= ($\sin^2$), Break-down: =sin= ($\sin$) + =2= (add: power of 2)
-      - =int= gives you =\int= ($\int$) etc.
-   4. Try typing parenthesis ([[file:Resources/04-Structural-and-Parentheses.org][04-Structural]])
-      - ={}..= gives you =\left\{ \middle\vert \right\}= $\left\{ \middle\vert \right\}$. Break-down: ={}.=  ($\left\{ \right\}$) + =.= (add: variation)
+3. Try typing alphabet related symbols: ([[file:Resources/01-Roman-Greek-Alphabets.org][01-Roman-Greek]]):
+|------------------+-----------------------------------+----------------------------------------|
+| Type this column | Result:                           | Breakdown:                             |
+|------------------+-----------------------------------+----------------------------------------|
+| =a.dd=           | ~\ddot{\alpha}~ ($\ddot{\alpha}$) | ~a.~ ($\alpha$) + =dd= ($\ddot{\Box}$) |
+| =Rv=             | ~\vec{R}~       ($\vec{R}$)       | ~R~ ($R$) + ~v~ ($\vec{\Box}$)         |
+|------------------+-----------------------------------+----------------------------------------|
+4. Try typing symbols ([[file:Resources/02-Symbols-and-their-modification.org][02-Symbols]]):
+|------------------+-----------------------------------------+------------------------------------------------|
+| Type this column | Result:                                 | Breakdown:                                     |
+|------------------+-----------------------------------------+------------------------------------------------|
+| ~=>~             | ~\Rightarrow~      ($\Rightarrow$)      | ~=>~  looks like $\Rightarrow$                 |
+| ~<=>n~           | ~\nLeftrightarrow~ ($\nLeftrightarrow$) | ~<=>~ ($\Leftrightarrow$) + =n= (add: negate)) |
+| ~exn~            | ~\nexists~         ($\nexists$)         | ~ex~ ($\exists$) + =n= (add: negate))          |
+| ~inn~            | ~\notin~           ($\notin$)           | ~ex~ ($\exists$) + =n= (add: negate))          |
+|------------------+-----------------------------------------+------------------------------------------------|
+
+5. Try typing functions ([[file:Resources/03-Functions-Sum-Integral-Differential.org][03-Functions]]):
+|------------------+------------------------+-----------------------------------|
+| Type this column | Result:                | Breakdown:                        |
+|------------------+------------------------+-----------------------------------|
+| =cosn=           | ~\arccos~ ($\arccos$ ) | ~cos~ ($\cos$) + ~n~ (negate)     |
+| =sin2=           | ~\sin^2~  ($\sin^2$  ) | ~sin~ ($\sin$) + ~2~ (power of 2) |
+| =int=            | ~\int~    ($\int$    ) |                                   |
+|------------------+------------------------+-----------------------------------|
+
+6. Try typing parenthesis ([[file:Resources/04-Structural-and-Parentheses.org][04-Structural]])
+|------------------+-----------------------------------------------------------------+----------------------------------------------------|
+| Type this column | Result:                                                         | Breakdown:                                         |
+|------------------+-----------------------------------------------------------------+----------------------------------------------------|
+| ~{}..~           | ~\left\{ \middle\vert \right\}~ $\left\{ \middle\vert \right\}$ | ~{}.~  ($\left\{ \right\}$) + ~.~ (add: variation) |
+| ~[]..~           | ~\left[ \middle\vert \right]~ $\left[ \middle\vert \right]$     | ~{}.~  ($\left[ \right]$) + ~.~ (add: variation)   |
+|------------------+-----------------------------------------------------------------+----------------------------------------------------|
         
-4. Please check full translation key tables in the [[file:Emacs-TeQ.pdf][PDF manual]].
+7. Please check full translation key tables in the [[file:Emacs-TeQ.pdf][PDF manual]].
    Or you can check each seperate org files:
    1. [[file:Resources/01-Roman-Greek-Alphabets.org]]
    2. [[file:Resources/02-Symbols-and-their-modification.org]]
    3. [[file:Resources/03-Functions-Sum-Integral-Differential.org]]
    4. [[file:Resources/04-Structural-and-Parentheses.org]]
-   
-
-   
    
 
 * COMMENT Executable elisp function definition
